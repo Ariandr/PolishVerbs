@@ -1,0 +1,7941 @@
+[
+  {
+    "id": "001-byc",
+    "infinitive": "być",
+    "frequencyRank": 1,
+    "corpusRank": 54,
+    "frequencySource": "KWJP balanced contemporary Polish corpus frequency list, all subcorpora, lemma, infinitive POS",
+    "frequency": {
+      "absolute": 119853,
+      "ipm": 1467.62,
+      "arf": 68440.09
+    },
+    "translations": {
+      "en": [
+        "to be",
+        "to be, there be"
+      ],
+      "uk": [
+        "бути"
+      ]
+    },
+    "aspect": "imperfective",
+    "forms": {
+      "present": {
+        "ja": "będę",
+        "ty": "będziesz",
+        "on": "będzie",
+        "ona": "będzie",
+        "my": "będziemy",
+        "wy": "będziecie",
+        "oni": "będą",
+        "one": "będą"
+      },
+      "past": {
+        "ja": {
+          "masculine": "byłem",
+          "feminine": "byłam"
+        },
+        "ty": {
+          "masculine": "byłeś",
+          "feminine": "byłaś"
+        },
+        "on": {
+          "masculine": "był"
+        },
+        "ona": {
+          "feminine": "była"
+        },
+        "my": {
+          "virile": "byliśmy",
+          "nonvirile": "byłyśmy"
+        },
+        "wy": {
+          "virile": "byliście",
+          "nonvirile": "byłyście"
+        },
+        "oni": {
+          "virile": "byli"
+        },
+        "one": {
+          "nonvirile": "były"
+        }
+      }
+    },
+    "examples": [
+      {
+        "pl": "Uczę się, jak poprawnie być po polsku.",
+        "en": "I am learning how to be correctly in Polish.",
+        "uk": "Я вчуся правильно бути польською."
+      }
+    ],
+    "notes": [],
+    "sourceUrls": [
+      "https://kwjp.pl/lists/en",
+      "https://en.wiktionary.org/wiki/by%C4%87",
+      "https://pl.wiktionary.org/wiki/by%C4%87"
+    ],
+    "reviewStatus": "wiktionary-enriched"
+  },
+  {
+    "id": "002-miec",
+    "infinitive": "mieć",
+    "frequencyRank": 2,
+    "corpusRank": 274,
+    "frequencySource": "KWJP balanced contemporary Polish corpus frequency list, all subcorpora, lemma, infinitive POS",
+    "frequency": {
+      "absolute": 28145,
+      "ipm": 344.64,
+      "arf": 16139
+    },
+    "translations": {
+      "en": [
+        "to have",
+        "to be some age",
+        "to have, to have sex with"
+      ],
+      "uk": [
+        "ма́ти"
+      ]
+    },
+    "aspect": "imperfective",
+    "forms": {
+      "present": {
+        "ja": "mam",
+        "ty": "masz",
+        "on": "ma",
+        "ona": "ma",
+        "my": "mamy",
+        "wy": "macie",
+        "oni": "mają",
+        "one": "mają"
+      },
+      "past": {
+        "ja": {
+          "masculine": "miałem",
+          "feminine": "miałam"
+        },
+        "ty": {
+          "masculine": "miałeś",
+          "feminine": "miałaś"
+        },
+        "on": {
+          "masculine": "miał"
+        },
+        "ona": {
+          "feminine": "miała"
+        },
+        "my": {
+          "virile": "mieliśmy",
+          "nonvirile": "miałyśmy"
+        },
+        "wy": {
+          "virile": "mieliście",
+          "nonvirile": "miałyście"
+        },
+        "oni": {
+          "virile": "mieli"
+        },
+        "one": {
+          "nonvirile": "miały"
+        }
+      }
+    },
+    "examples": [
+      {
+        "pl": "Uczę się, jak poprawnie mieć po polsku.",
+        "en": "I am learning how to have correctly in Polish.",
+        "uk": "Я вчуся правильно ма́ти польською."
+      }
+    ],
+    "notes": [],
+    "sourceUrls": [
+      "https://kwjp.pl/lists/en",
+      "https://en.wiktionary.org/wiki/mie%C4%87",
+      "https://pl.wiktionary.org/wiki/mie%C4%87"
+    ],
+    "reviewStatus": "wiktionary-enriched"
+  },
+  {
+    "id": "003-powiedziec",
+    "infinitive": "powiedzieć",
+    "frequencyRank": 3,
+    "corpusRank": 357,
+    "frequencySource": "KWJP balanced contemporary Polish corpus frequency list, all subcorpora, lemma, infinitive POS",
+    "frequency": {
+      "absolute": 22392,
+      "ipm": 274.19,
+      "arf": 12130.87
+    },
+    "translations": {
+      "en": [
+        "to speak, to talk",
+        "to call, to name",
+        "to say"
+      ],
+      "uk": [
+        "сказати"
+      ]
+    },
+    "aspect": "perfective",
+    "forms": {
+      "present": {
+        "ja": "powiem",
+        "ty": "powiesz",
+        "on": "powie",
+        "ona": "powie",
+        "my": "powiemy",
+        "wy": "powiecie",
+        "oni": "powiedzą",
+        "one": "powiedzą"
+      },
+      "past": {
+        "ja": {
+          "masculine": "powiedziałem",
+          "feminine": "powiedziałam"
+        },
+        "ty": {
+          "masculine": "powiedziałeś",
+          "feminine": "powiedziałaś"
+        },
+        "on": {
+          "masculine": "powiedział"
+        },
+        "ona": {
+          "feminine": "powiedziała"
+        },
+        "my": {
+          "virile": "powiedzieliśmy",
+          "nonvirile": "powiedziałyśmy"
+        },
+        "wy": {
+          "virile": "powiedzieliście",
+          "nonvirile": "powiedziałyście"
+        },
+        "oni": {
+          "virile": "powiedzieli"
+        },
+        "one": {
+          "nonvirile": "powiedziały"
+        }
+      }
+    },
+    "examples": [
+      {
+        "pl": "Uczę się, jak poprawnie powiedzieć po polsku.",
+        "en": "I am learning how to speak, to talk correctly in Polish.",
+        "uk": "Я вчуся правильно сказати польською."
+      }
+    ],
+    "notes": [],
+    "sourceUrls": [
+      "https://kwjp.pl/lists/en",
+      "https://en.wiktionary.org/wiki/powiedzie%C4%87",
+      "https://pl.wiktionary.org/wiki/powiedzie%C4%87"
+    ],
+    "reviewStatus": "wiktionary-enriched"
+  },
+  {
+    "id": "004-zrobic",
+    "infinitive": "zrobić",
+    "frequencyRank": 4,
+    "corpusRank": 366,
+    "frequencySource": "KWJP balanced contemporary Polish corpus frequency list, all subcorpora, lemma, infinitive POS",
+    "frequency": {
+      "absolute": 22037,
+      "ipm": 269.85,
+      "arf": 12044.71
+    },
+    "translations": {
+      "en": [
+        "to make",
+        "to do",
+        "to throw"
+      ],
+      "uk": [
+        "зробити"
+      ]
+    },
+    "aspect": "perfective",
+    "forms": {
+      "present": {
+        "ja": "zrobię",
+        "ty": "zrobisz",
+        "on": "zrobi",
+        "ona": "zrobi",
+        "my": "zrobimy",
+        "wy": "zrobicie",
+        "oni": "zrobią",
+        "one": "zrobią"
+      },
+      "past": {
+        "ja": {
+          "masculine": "zrobiłem",
+          "feminine": "zrobiłam"
+        },
+        "ty": {
+          "masculine": "zrobiłeś",
+          "feminine": "zrobiłaś"
+        },
+        "on": {
+          "masculine": "zrobił"
+        },
+        "ona": {
+          "feminine": "zrobiła"
+        },
+        "my": {
+          "virile": "zrobiliśmy",
+          "nonvirile": "zrobiłyśmy"
+        },
+        "wy": {
+          "virile": "zrobiliście",
+          "nonvirile": "zrobiłyście"
+        },
+        "oni": {
+          "virile": "zrobili"
+        },
+        "one": {
+          "nonvirile": "zrobiły"
+        }
+      }
+    },
+    "examples": [
+      {
+        "pl": "Uczę się, jak poprawnie zrobić po polsku.",
+        "en": "I am learning how to make correctly in Polish.",
+        "uk": "Я вчуся правильно зробити польською."
+      }
+    ],
+    "notes": [],
+    "sourceUrls": [
+      "https://kwjp.pl/lists/en",
+      "https://en.wiktionary.org/wiki/zrobi%C4%87",
+      "https://pl.wiktionary.org/wiki/zrobi%C4%87"
+    ],
+    "reviewStatus": "wiktionary-enriched"
+  },
+  {
+    "id": "005-mowic",
+    "infinitive": "mówić",
+    "frequencyRank": 5,
+    "corpusRank": 701,
+    "frequencySource": "KWJP balanced contemporary Polish corpus frequency list, all subcorpora, lemma, infinitive POS",
+    "frequency": {
+      "absolute": 12929,
+      "ipm": 158.32,
+      "arf": 7165.1
+    },
+    "translations": {
+      "en": [
+        "to say, to tell",
+        "to call, to name",
+        "to say"
+      ],
+      "uk": [
+        "говорити",
+        "казати",
+        "мовити"
+      ]
+    },
+    "aspect": "imperfective",
+    "forms": {
+      "present": {
+        "ja": "mówię",
+        "ty": "mówisz",
+        "on": "mówi",
+        "ona": "mówi",
+        "my": "mówimy",
+        "wy": "mówicie",
+        "oni": "mówią",
+        "one": "mówią"
+      },
+      "past": {
+        "ja": {
+          "masculine": "mówiłem",
+          "feminine": "mówiłam"
+        },
+        "ty": {
+          "masculine": "mówiłeś",
+          "feminine": "mówiłaś"
+        },
+        "on": {
+          "masculine": "mówił"
+        },
+        "ona": {
+          "feminine": "mówiła"
+        },
+        "my": {
+          "virile": "mówiliśmy",
+          "nonvirile": "mówiłyśmy"
+        },
+        "wy": {
+          "virile": "mówiliście",
+          "nonvirile": "mówiłyście"
+        },
+        "oni": {
+          "virile": "mówili"
+        },
+        "one": {
+          "nonvirile": "mówiły"
+        }
+      }
+    },
+    "examples": [
+      {
+        "pl": "Uczę się, jak poprawnie mówić po polsku.",
+        "en": "I am learning how to say, to tell correctly in Polish.",
+        "uk": "Я вчуся правильно говорити польською."
+      }
+    ],
+    "notes": [],
+    "sourceUrls": [
+      "https://kwjp.pl/lists/en",
+      "https://en.wiktionary.org/wiki/m%C3%B3wi%C4%87",
+      "https://pl.wiktionary.org/wiki/m%C3%B3wi%C4%87"
+    ],
+    "reviewStatus": "wiktionary-enriched"
+  },
+  {
+    "id": "006-znalezc",
+    "infinitive": "znaleźć",
+    "frequencyRank": 6,
+    "corpusRank": 705,
+    "frequencySource": "KWJP balanced contemporary Polish corpus frequency list, all subcorpora, lemma, infinitive POS",
+    "frequency": {
+      "absolute": 12805,
+      "ipm": 156.8,
+      "arf": 7581.8
+    },
+    "translations": {
+      "en": [
+        "to find",
+        "to find, to come across, to run into",
+        "to find, to work up"
+      ],
+      "uk": [
+        "знайти",
+        "знайтися"
+      ]
+    },
+    "aspect": "perfective",
+    "forms": {
+      "present": {
+        "ja": "znajdę",
+        "ty": "znajdziesz",
+        "on": "znajdzie",
+        "ona": "znajdzie",
+        "my": "znajdziemy",
+        "wy": "znajdziecie",
+        "oni": "znajdą",
+        "one": "znajdą"
+      },
+      "past": {
+        "ja": {
+          "masculine": "znalazłem",
+          "feminine": "znalazłam"
+        },
+        "ty": {
+          "masculine": "znalazłeś",
+          "feminine": "znalazłaś"
+        },
+        "on": {
+          "masculine": "znalazł"
+        },
+        "ona": {
+          "feminine": "znalazła"
+        },
+        "my": {
+          "virile": "znaleźliśmy",
+          "nonvirile": "znalazłyśmy"
+        },
+        "wy": {
+          "virile": "znaleźliście",
+          "nonvirile": "znalazłyście"
+        },
+        "oni": {
+          "virile": "znaleźli"
+        },
+        "one": {
+          "nonvirile": "znalazły"
+        }
+      }
+    },
+    "examples": [
+      {
+        "pl": "Uczę się, jak poprawnie znaleźć po polsku.",
+        "en": "I am learning how to find correctly in Polish.",
+        "uk": "Я вчуся правильно знайти польською."
+      }
+    ],
+    "notes": [],
+    "sourceUrls": [
+      "https://kwjp.pl/lists/en",
+      "https://en.wiktionary.org/wiki/znale%C5%BA%C4%87",
+      "https://pl.wiktionary.org/wiki/znale%C5%BA%C4%87"
+    ],
+    "reviewStatus": "wiktionary-enriched"
+  },
+  {
+    "id": "007-zostac",
+    "infinitive": "zostać",
+    "frequencyRank": 7,
+    "corpusRank": 709,
+    "frequencySource": "KWJP balanced contemporary Polish corpus frequency list, all subcorpora, lemma, infinitive POS",
+    "frequency": {
+      "absolute": 12742,
+      "ipm": 156.03,
+      "arf": 7387.09
+    },
+    "translations": {
+      "en": [
+        "to stay, to remain",
+        "to remain, to be left",
+        "to remain"
+      ],
+      "uk": [
+        "залишитися",
+        "стати"
+      ]
+    },
+    "aspect": "perfective",
+    "forms": {
+      "present": {
+        "ja": "zostanę",
+        "ty": "zostaniesz",
+        "on": "zostanie",
+        "ona": "zostanie",
+        "my": "zostaniemy",
+        "wy": "zostaniecie",
+        "oni": "zostaną",
+        "one": "zostaną"
+      },
+      "past": {
+        "ja": {
+          "masculine": "zostałem",
+          "feminine": "zostałam"
+        },
+        "ty": {
+          "masculine": "zostałeś",
+          "feminine": "zostałaś"
+        },
+        "on": {
+          "masculine": "został"
+        },
+        "ona": {
+          "feminine": "została"
+        },
+        "my": {
+          "virile": "zostaliśmy",
+          "nonvirile": "zostałyśmy"
+        },
+        "wy": {
+          "virile": "zostaliście",
+          "nonvirile": "zostałyście"
+        },
+        "oni": {
+          "virile": "zostali"
+        },
+        "one": {
+          "nonvirile": "zostały"
+        }
+      }
+    },
+    "examples": [
+      {
+        "pl": "Uczę się, jak poprawnie zostać po polsku.",
+        "en": "I am learning how to stay, to remain correctly in Polish.",
+        "uk": "Я вчуся правильно залишитися польською."
+      }
+    ],
+    "notes": [],
+    "sourceUrls": [
+      "https://kwjp.pl/lists/en",
+      "https://en.wiktionary.org/wiki/zosta%C4%87",
+      "https://pl.wiktionary.org/wiki/zosta%C4%87"
+    ],
+    "reviewStatus": "wiktionary-enriched"
+  },
+  {
+    "id": "008-robic",
+    "infinitive": "robić",
+    "frequencyRank": 8,
+    "corpusRank": 723,
+    "frequencySource": "KWJP balanced contemporary Polish corpus frequency list, all subcorpora, lemma, infinitive POS",
+    "frequency": {
+      "absolute": 12553,
+      "ipm": 153.71,
+      "arf": 6861.2
+    },
+    "translations": {
+      "en": [
+        "to make",
+        "to do",
+        "to throw"
+      ],
+      "uk": [
+        "робити"
+      ]
+    },
+    "aspect": "imperfective",
+    "forms": {
+      "present": {
+        "ja": "robię",
+        "ty": "robisz",
+        "on": "robi",
+        "ona": "robi",
+        "my": "robimy",
+        "wy": "robicie",
+        "oni": "robią",
+        "one": "robią"
+      },
+      "past": {
+        "ja": {
+          "masculine": "robiłem",
+          "feminine": "robiłam"
+        },
+        "ty": {
+          "masculine": "robiłeś",
+          "feminine": "robiłaś"
+        },
+        "on": {
+          "masculine": "robił"
+        },
+        "ona": {
+          "feminine": "robiła"
+        },
+        "my": {
+          "virile": "robiliśmy",
+          "nonvirile": "robiłyśmy"
+        },
+        "wy": {
+          "virile": "robiliście",
+          "nonvirile": "robiłyście"
+        },
+        "oni": {
+          "virile": "robili"
+        },
+        "one": {
+          "nonvirile": "robiły"
+        }
+      }
+    },
+    "examples": [
+      {
+        "pl": "Uczę się, jak poprawnie robić po polsku.",
+        "en": "I am learning how to make correctly in Polish.",
+        "uk": "Я вчуся правильно робити польською."
+      }
+    ],
+    "notes": [],
+    "sourceUrls": [
+      "https://kwjp.pl/lists/en",
+      "https://en.wiktionary.org/wiki/robi%C4%87",
+      "https://pl.wiktionary.org/wiki/robi%C4%87"
+    ],
+    "reviewStatus": "wiktionary-enriched"
+  },
+  {
+    "id": "009-wiedziec",
+    "infinitive": "wiedzieć",
+    "frequencyRank": 9,
+    "corpusRank": 1121,
+    "frequencySource": "KWJP balanced contemporary Polish corpus frequency list, all subcorpora, lemma, infinitive POS",
+    "frequency": {
+      "absolute": 8491,
+      "ipm": 103.97,
+      "arf": 4448.66
+    },
+    "translations": {
+      "en": [
+        "to know"
+      ],
+      "uk": [
+        "знати"
+      ]
+    },
+    "aspect": "imperfective",
+    "forms": {
+      "present": {
+        "ja": "wiem",
+        "ty": "wiesz",
+        "on": "wie",
+        "ona": "wie",
+        "my": "wiemy",
+        "wy": "wiecie",
+        "oni": "wiedzą",
+        "one": "wiedzą"
+      },
+      "past": {
+        "ja": {
+          "masculine": "wiedziałem",
+          "feminine": "wiedziałam"
+        },
+        "ty": {
+          "masculine": "wiedziałeś",
+          "feminine": "wiedziałaś"
+        },
+        "on": {
+          "masculine": "wiedział"
+        },
+        "ona": {
+          "feminine": "wiedziała"
+        },
+        "my": {
+          "virile": "wiedzieliśmy",
+          "nonvirile": "wiedziałyśmy"
+        },
+        "wy": {
+          "virile": "wiedzieliście",
+          "nonvirile": "wiedziałyście"
+        },
+        "oni": {
+          "virile": "wiedzieli"
+        },
+        "one": {
+          "nonvirile": "wiedziały"
+        }
+      }
+    },
+    "examples": [
+      {
+        "pl": "Uczę się, jak poprawnie wiedzieć po polsku.",
+        "en": "I am learning how to know correctly in Polish.",
+        "uk": "Я вчуся правильно знати польською."
+      }
+    ],
+    "notes": [],
+    "sourceUrls": [
+      "https://kwjp.pl/lists/en",
+      "https://en.wiktionary.org/wiki/wiedzie%C4%87",
+      "https://pl.wiktionary.org/wiki/wiedzie%C4%87"
+    ],
+    "reviewStatus": "wiktionary-enriched"
+  },
+  {
+    "id": "010-zobaczyc",
+    "infinitive": "zobaczyć",
+    "frequencyRank": 10,
+    "corpusRank": 1126,
+    "frequencySource": "KWJP balanced contemporary Polish corpus frequency list, all subcorpora, lemma, infinitive POS",
+    "frequency": {
+      "absolute": 8463,
+      "ipm": 103.63,
+      "arf": 4747.62
+    },
+    "translations": {
+      "en": [
+        "to see",
+        "to see oneself",
+        "to see each other"
+      ],
+      "uk": [
+        "побачити",
+        "подивитися"
+      ]
+    },
+    "aspect": "perfective",
+    "forms": {
+      "present": {
+        "ja": "zobaczę",
+        "ty": "zobaczysz",
+        "on": "zobaczy",
+        "ona": "zobaczy",
+        "my": "zobaczymy",
+        "wy": "zobaczycie",
+        "oni": "zobaczą",
+        "one": "zobaczą"
+      },
+      "past": {
+        "ja": {
+          "masculine": "zobaczyłem",
+          "feminine": "zobaczyłam"
+        },
+        "ty": {
+          "masculine": "zobaczyłeś",
+          "feminine": "zobaczyłaś"
+        },
+        "on": {
+          "masculine": "zobaczył"
+        },
+        "ona": {
+          "feminine": "zobaczyła"
+        },
+        "my": {
+          "virile": "zobaczyliśmy",
+          "nonvirile": "zobaczyłyśmy"
+        },
+        "wy": {
+          "virile": "zobaczyliście",
+          "nonvirile": "zobaczyłyście"
+        },
+        "oni": {
+          "virile": "zobaczyli"
+        },
+        "one": {
+          "nonvirile": "zobaczyły"
+        }
+      }
+    },
+    "examples": [
+      {
+        "pl": "Uczę się, jak poprawnie zobaczyć po polsku.",
+        "en": "I am learning how to see correctly in Polish.",
+        "uk": "Я вчуся правильно побачити польською."
+      }
+    ],
+    "notes": [],
+    "sourceUrls": [
+      "https://kwjp.pl/lists/en",
+      "https://en.wiktionary.org/wiki/zobaczy%C4%87",
+      "https://pl.wiktionary.org/wiki/zobaczy%C4%87"
+    ],
+    "reviewStatus": "wiktionary-enriched"
+  },
+  {
+    "id": "011-pomoc",
+    "infinitive": "pomóc",
+    "frequencyRank": 11,
+    "corpusRank": 1150,
+    "frequencySource": "KWJP balanced contemporary Polish corpus frequency list, all subcorpora, lemma, infinitive POS",
+    "frequency": {
+      "absolute": 8288,
+      "ipm": 101.49,
+      "arf": 4430.11
+    },
+    "translations": {
+      "en": [
+        "to help"
+      ],
+      "uk": [
+        "допомогти",
+        "помогти"
+      ]
+    },
+    "aspect": "perfective",
+    "forms": {
+      "present": {
+        "ja": "pomogę",
+        "ty": "pomożesz",
+        "on": "pomoże",
+        "ona": "pomoże",
+        "my": "pomożemy",
+        "wy": "pomożecie",
+        "oni": "pomogą",
+        "one": "pomogą"
+      },
+      "past": {
+        "ja": {
+          "masculine": "pomogłem",
+          "feminine": "pomogłam"
+        },
+        "ty": {
+          "masculine": "pomogłeś",
+          "feminine": "pomogłaś"
+        },
+        "on": {
+          "masculine": "pomógł"
+        },
+        "ona": {
+          "feminine": "pomogła"
+        },
+        "my": {
+          "virile": "pomogliśmy",
+          "nonvirile": "pomogłyśmy"
+        },
+        "wy": {
+          "virile": "pomogliście",
+          "nonvirile": "pomogłyście"
+        },
+        "oni": {
+          "virile": "pomogli"
+        },
+        "one": {
+          "nonvirile": "pomogły"
+        }
+      }
+    },
+    "examples": [
+      {
+        "pl": "Uczę się, jak poprawnie pomóc po polsku.",
+        "en": "I am learning how to help correctly in Polish.",
+        "uk": "Я вчуся правильно допомогти польською."
+      }
+    ],
+    "notes": [],
+    "sourceUrls": [
+      "https://kwjp.pl/lists/en",
+      "https://en.wiktionary.org/wiki/pom%C3%B3c",
+      "https://pl.wiktionary.org/wiki/pom%C3%B3c"
+    ],
+    "reviewStatus": "wiktionary-enriched"
+  },
+  {
+    "id": "012-zyc",
+    "infinitive": "żyć",
+    "frequencyRank": 12,
+    "corpusRank": 1187,
+    "frequencySource": "KWJP balanced contemporary Polish corpus frequency list, all subcorpora, lemma, infinitive POS",
+    "frequency": {
+      "absolute": 8074,
+      "ipm": 98.87,
+      "arf": 4184.38
+    },
+    "translations": {
+      "en": [
+        "to live",
+        "to live with",
+        "to live, to breathe"
+      ],
+      "uk": [
+        "жи́ти"
+      ]
+    },
+    "aspect": "imperfective",
+    "forms": {
+      "present": {
+        "ja": "żyję",
+        "ty": "żyjesz",
+        "on": "żyje",
+        "ona": "żyje",
+        "my": "żyjemy",
+        "wy": "żyjecie",
+        "oni": "żyją",
+        "one": "żyją"
+      },
+      "past": {
+        "ja": {
+          "masculine": "żyłem",
+          "feminine": "żyłam"
+        },
+        "ty": {
+          "masculine": "żyłeś",
+          "feminine": "żyłaś"
+        },
+        "on": {
+          "masculine": "żył"
+        },
+        "ona": {
+          "feminine": "żyła"
+        },
+        "my": {
+          "virile": "żyliśmy",
+          "nonvirile": "żyłyśmy"
+        },
+        "wy": {
+          "virile": "żyliście",
+          "nonvirile": "żyłyście"
+        },
+        "oni": {
+          "virile": "żyli"
+        },
+        "one": {
+          "nonvirile": "żyły"
+        }
+      }
+    },
+    "examples": [
+      {
+        "pl": "Uczę się, jak poprawnie żyć po polsku.",
+        "en": "I am learning how to live correctly in Polish.",
+        "uk": "Я вчуся правильно жи́ти польською."
+      }
+    ],
+    "notes": [],
+    "sourceUrls": [
+      "https://kwjp.pl/lists/en",
+      "https://en.wiktionary.org/wiki/%C5%BCy%C4%87",
+      "https://pl.wiktionary.org/wiki/%C5%BCy%C4%87"
+    ],
+    "reviewStatus": "wiktionary-enriched"
+  },
+  {
+    "id": "013-dac",
+    "infinitive": "dać",
+    "frequencyRank": 13,
+    "corpusRank": 1273,
+    "frequencySource": "KWJP balanced contemporary Polish corpus frequency list, all subcorpora, lemma, infinitive POS",
+    "frequency": {
+      "absolute": 7502,
+      "ipm": 91.86,
+      "arf": 4347.13
+    },
+    "translations": {
+      "en": [
+        "to give",
+        "to give, to hand, to pass",
+        "to give, to put on"
+      ],
+      "uk": [
+        "дати",
+        "дозволити",
+        "датися"
+      ]
+    },
+    "aspect": "perfective",
+    "forms": {
+      "present": {
+        "ja": "dam",
+        "ty": "dasz",
+        "on": "da",
+        "ona": "da",
+        "my": "damy",
+        "wy": "dacie",
+        "oni": "dadzą",
+        "one": "dadzą"
+      },
+      "past": {
+        "ja": {
+          "masculine": "dałem",
+          "feminine": "dałam"
+        },
+        "ty": {
+          "masculine": "dałeś",
+          "feminine": "dałaś"
+        },
+        "on": {
+          "masculine": "dał"
+        },
+        "ona": {
+          "feminine": "dała"
+        },
+        "my": {
+          "virile": "daliśmy",
+          "nonvirile": "dałyśmy"
+        },
+        "wy": {
+          "virile": "daliście",
+          "nonvirile": "dałyście"
+        },
+        "oni": {
+          "virile": "dali"
+        },
+        "one": {
+          "nonvirile": "dały"
+        }
+      }
+    },
+    "examples": [
+      {
+        "pl": "Uczę się, jak poprawnie dać po polsku.",
+        "en": "I am learning how to give correctly in Polish.",
+        "uk": "Я вчуся правильно дати польською."
+      }
+    ],
+    "notes": [],
+    "sourceUrls": [
+      "https://kwjp.pl/lists/en",
+      "https://en.wiktionary.org/wiki/da%C4%87",
+      "https://pl.wiktionary.org/wiki/da%C4%87"
+    ],
+    "reviewStatus": "wiktionary-enriched"
+  },
+  {
+    "id": "014-isc",
+    "infinitive": "iść",
+    "frequencyRank": 14,
+    "corpusRank": 1363,
+    "frequencySource": "KWJP balanced contemporary Polish corpus frequency list, all subcorpora, lemma, infinitive POS",
+    "frequency": {
+      "absolute": 7057,
+      "ipm": 86.41,
+      "arf": 3547.57
+    },
+    "translations": {
+      "en": [
+        "to go",
+        "to go, to attend",
+        "to go after, to follow"
+      ],
+      "uk": [
+        "іти",
+        "йти"
+      ]
+    },
+    "aspect": "imperfective",
+    "forms": {
+      "present": {
+        "ja": "idę",
+        "ty": "idziesz",
+        "on": "idzie",
+        "ona": "idzie",
+        "my": "idziemy",
+        "wy": "idziecie",
+        "oni": "idą",
+        "one": "idą"
+      },
+      "past": {
+        "ja": {
+          "masculine": "szedłem",
+          "feminine": "szłam"
+        },
+        "ty": {
+          "masculine": "szedłeś",
+          "feminine": "szłaś"
+        },
+        "on": {
+          "masculine": "szedł"
+        },
+        "ona": {
+          "feminine": "szła"
+        },
+        "my": {
+          "virile": "szliśmy",
+          "nonvirile": "szłyśmy"
+        },
+        "wy": {
+          "virile": "szliście",
+          "nonvirile": "szłyście"
+        },
+        "oni": {
+          "virile": "szli"
+        },
+        "one": {
+          "nonvirile": "szły"
+        }
+      }
+    },
+    "examples": [
+      {
+        "pl": "Uczę się, jak poprawnie iść po polsku.",
+        "en": "I am learning how to go correctly in Polish.",
+        "uk": "Я вчуся правильно іти польською."
+      }
+    ],
+    "notes": [],
+    "sourceUrls": [
+      "https://kwjp.pl/lists/en",
+      "https://en.wiktionary.org/wiki/i%C5%9B%C4%87",
+      "https://pl.wiktionary.org/wiki/i%C5%9B%C4%87"
+    ],
+    "reviewStatus": "wiktionary-enriched"
+  },
+  {
+    "id": "015-liczyc",
+    "infinitive": "liczyć",
+    "frequencyRank": 15,
+    "corpusRank": 1388,
+    "frequencySource": "KWJP balanced contemporary Polish corpus frequency list, all subcorpora, lemma, infinitive POS",
+    "frequency": {
+      "absolute": 6953,
+      "ipm": 85.14,
+      "arf": 3937.27
+    },
+    "translations": {
+      "en": [
+        "to count",
+        "to count, to number",
+        "to count,"
+      ],
+      "uk": [
+        "лічити"
+      ]
+    },
+    "aspect": "imperfective",
+    "forms": {
+      "present": {
+        "ja": "liczę",
+        "ty": "liczysz",
+        "on": "liczy",
+        "ona": "liczy",
+        "my": "liczymy",
+        "wy": "liczycie",
+        "oni": "liczą",
+        "one": "liczą"
+      },
+      "past": {
+        "ja": {
+          "masculine": "liczyłem",
+          "feminine": "liczyłam"
+        },
+        "ty": {
+          "masculine": "liczyłeś",
+          "feminine": "liczyłaś"
+        },
+        "on": {
+          "masculine": "liczył"
+        },
+        "ona": {
+          "feminine": "liczyła"
+        },
+        "my": {
+          "virile": "liczyliśmy",
+          "nonvirile": "liczyłyśmy"
+        },
+        "wy": {
+          "virile": "liczyliście",
+          "nonvirile": "liczyłyście"
+        },
+        "oni": {
+          "virile": "liczyli"
+        },
+        "one": {
+          "nonvirile": "liczyły"
+        }
+      }
+    },
+    "examples": [
+      {
+        "pl": "Uczę się, jak poprawnie liczyć po polsku.",
+        "en": "I am learning how to count correctly in Polish.",
+        "uk": "Я вчуся правильно лічити польською."
+      }
+    ],
+    "notes": [],
+    "sourceUrls": [
+      "https://kwjp.pl/lists/en",
+      "https://en.wiktionary.org/wiki/liczy%C4%87",
+      "https://pl.wiktionary.org/wiki/liczy%C4%87"
+    ],
+    "reviewStatus": "wiktionary-enriched"
+  },
+  {
+    "id": "016-stac",
+    "infinitive": "stać",
+    "frequencyRank": 16,
+    "corpusRank": 1439,
+    "frequencySource": "KWJP balanced contemporary Polish corpus frequency list, all subcorpora, lemma, infinitive POS",
+    "frequency": {
+      "absolute": 6758,
+      "ipm": 82.75,
+      "arf": 3971.18
+    },
+    "translations": {
+      "en": [
+        "to happen",
+        "to become",
+        "to happen to, to happen with"
+      ],
+      "uk": [
+        "стояти"
+      ]
+    },
+    "aspect": "imperfective",
+    "forms": {
+      "present": {
+        "ja": "stoję",
+        "ty": "stoisz",
+        "on": "stoi",
+        "ona": "stoi",
+        "my": "stoimy",
+        "wy": "stoicie",
+        "oni": "stoją",
+        "one": "stoją"
+      },
+      "past": {
+        "ja": {
+          "masculine": "stałem",
+          "feminine": "stałam"
+        },
+        "ty": {
+          "masculine": "stałeś",
+          "feminine": "stałaś"
+        },
+        "on": {
+          "masculine": "stał"
+        },
+        "ona": {
+          "feminine": "stała"
+        },
+        "my": {
+          "virile": "staliśmy",
+          "nonvirile": "stałyśmy"
+        },
+        "wy": {
+          "virile": "staliście",
+          "nonvirile": "stałyście"
+        },
+        "oni": {
+          "virile": "stali"
+        },
+        "one": {
+          "nonvirile": "stały"
+        }
+      }
+    },
+    "examples": [
+      {
+        "pl": "Uczę się, jak poprawnie stać po polsku.",
+        "en": "I am learning how to happen correctly in Polish.",
+        "uk": "Я вчуся правильно стояти польською."
+      }
+    ],
+    "notes": [],
+    "sourceUrls": [
+      "https://kwjp.pl/lists/en",
+      "https://en.wiktionary.org/wiki/sta%C4%87",
+      "https://pl.wiktionary.org/wiki/sta%C4%87"
+    ],
+    "reviewStatus": "wiktionary-enriched"
+  },
+  {
+    "id": "017-zmienic",
+    "infinitive": "zmienić",
+    "frequencyRank": 17,
+    "corpusRank": 1506,
+    "frequencySource": "KWJP balanced contemporary Polish corpus frequency list, all subcorpora, lemma, infinitive POS",
+    "frequency": {
+      "absolute": 6433,
+      "ipm": 78.77,
+      "arf": 3707.54
+    },
+    "translations": {
+      "en": [
+        "to change",
+        "to change each other"
+      ],
+      "uk": [
+        "змінити"
+      ]
+    },
+    "aspect": "perfective",
+    "forms": {
+      "present": {
+        "ja": "zmienię",
+        "ty": "zmienisz",
+        "on": "zmieni",
+        "ona": "zmieni",
+        "my": "zmienimy",
+        "wy": "zmienicie",
+        "oni": "zmienią",
+        "one": "zmienią"
+      },
+      "past": {
+        "ja": {
+          "masculine": "zmieniłem",
+          "feminine": "zmieniłam"
+        },
+        "ty": {
+          "masculine": "zmieniłeś",
+          "feminine": "zmieniłaś"
+        },
+        "on": {
+          "masculine": "zmienił"
+        },
+        "ona": {
+          "feminine": "zmieniła"
+        },
+        "my": {
+          "virile": "zmieniliśmy",
+          "nonvirile": "zmieniłyśmy"
+        },
+        "wy": {
+          "virile": "zmieniliście",
+          "nonvirile": "zmieniłyście"
+        },
+        "oni": {
+          "virile": "zmienili"
+        },
+        "one": {
+          "nonvirile": "zmieniły"
+        }
+      }
+    },
+    "examples": [
+      {
+        "pl": "Uczę się, jak poprawnie zmienić po polsku.",
+        "en": "I am learning how to change correctly in Polish.",
+        "uk": "Я вчуся правильно змінити польською."
+      }
+    ],
+    "notes": [],
+    "sourceUrls": [
+      "https://kwjp.pl/lists/en",
+      "https://en.wiktionary.org/wiki/zmieni%C4%87",
+      "https://pl.wiktionary.org/wiki/zmieni%C4%87"
+    ],
+    "reviewStatus": "wiktionary-enriched"
+  },
+  {
+    "id": "018-zrozumiec",
+    "infinitive": "zrozumieć",
+    "frequencyRank": 18,
+    "corpusRank": 1572,
+    "frequencySource": "KWJP balanced contemporary Polish corpus frequency list, all subcorpora, lemma, infinitive POS",
+    "frequency": {
+      "absolute": 6205,
+      "ipm": 75.98,
+      "arf": 3439.97
+    },
+    "translations": {
+      "en": [
+        "to understand",
+        "to understand each other"
+      ],
+      "uk": [
+        "зрозуміти"
+      ]
+    },
+    "aspect": "perfective",
+    "forms": {
+      "present": {
+        "ja": "zrozumiem",
+        "ty": "zrozumiesz",
+        "on": "zrozumie",
+        "ona": "zrozumie",
+        "my": "zrozumiemy",
+        "wy": "zrozumiecie",
+        "oni": "zrozumieją",
+        "one": "zrozumieją"
+      },
+      "past": {
+        "ja": {
+          "masculine": "zrozumiałem",
+          "feminine": "zrozumiałam"
+        },
+        "ty": {
+          "masculine": "zrozumiałeś",
+          "feminine": "zrozumiałaś"
+        },
+        "on": {
+          "masculine": "zrozumiał"
+        },
+        "ona": {
+          "feminine": "zrozumiała"
+        },
+        "my": {
+          "virile": "zrozumieliśmy",
+          "nonvirile": "zrozumiałyśmy"
+        },
+        "wy": {
+          "virile": "zrozumieliście",
+          "nonvirile": "zrozumiałyście"
+        },
+        "oni": {
+          "virile": "zrozumieli"
+        },
+        "one": {
+          "nonvirile": "zrozumiały"
+        }
+      }
+    },
+    "examples": [
+      {
+        "pl": "Uczę się, jak poprawnie zrozumieć po polsku.",
+        "en": "I am learning how to understand correctly in Polish.",
+        "uk": "Я вчуся правильно зрозуміти польською."
+      }
+    ],
+    "notes": [],
+    "sourceUrls": [
+      "https://kwjp.pl/lists/en",
+      "https://en.wiktionary.org/wiki/zrozumie%C4%87",
+      "https://pl.wiktionary.org/wiki/zrozumie%C4%87"
+    ],
+    "reviewStatus": "wiktionary-enriched"
+  },
+  {
+    "id": "019-szukac",
+    "infinitive": "szukać",
+    "frequencyRank": 19,
+    "corpusRank": 1621,
+    "frequencySource": "KWJP balanced contemporary Polish corpus frequency list, all subcorpora, lemma, infinitive POS",
+    "frequency": {
+      "absolute": 6060,
+      "ipm": 74.21,
+      "arf": 3600.68
+    },
+    "translations": {
+      "en": [
+        "to look for, to seek, to search",
+        "to look for",
+        "to look for oneself, to seek oneself, to search oneself"
+      ],
+      "uk": [
+        "шукати"
+      ]
+    },
+    "aspect": "imperfective",
+    "forms": {
+      "present": {
+        "ja": "szukam",
+        "ty": "szukasz",
+        "on": "szuka",
+        "ona": "szuka",
+        "my": "szukamy",
+        "wy": "szukacie",
+        "oni": "szukają",
+        "one": "szukają"
+      },
+      "past": {
+        "ja": {
+          "masculine": "szukałem",
+          "feminine": "szukałam"
+        },
+        "ty": {
+          "masculine": "szukałeś",
+          "feminine": "szukałaś"
+        },
+        "on": {
+          "masculine": "szukał"
+        },
+        "ona": {
+          "feminine": "szukała"
+        },
+        "my": {
+          "virile": "szukaliśmy",
+          "nonvirile": "szukałyśmy"
+        },
+        "wy": {
+          "virile": "szukaliście",
+          "nonvirile": "szukałyście"
+        },
+        "oni": {
+          "virile": "szukali"
+        },
+        "one": {
+          "nonvirile": "szukały"
+        }
+      }
+    },
+    "examples": [
+      {
+        "pl": "Uczę się, jak poprawnie szukać po polsku.",
+        "en": "I am learning how to look for, to seek, to search correctly in Polish.",
+        "uk": "Я вчуся правильно шукати польською."
+      }
+    ],
+    "notes": [],
+    "sourceUrls": [
+      "https://kwjp.pl/lists/en",
+      "https://en.wiktionary.org/wiki/szuka%C4%87",
+      "https://pl.wiktionary.org/wiki/szuka%C4%87"
+    ],
+    "reviewStatus": "wiktionary-enriched"
+  },
+  {
+    "id": "020-kupic",
+    "infinitive": "kupić",
+    "frequencyRank": 20,
+    "corpusRank": 1670,
+    "frequencySource": "KWJP balanced contemporary Polish corpus frequency list, all subcorpora, lemma, infinitive POS",
+    "frequency": {
+      "absolute": 5872,
+      "ipm": 71.9,
+      "arf": 3086.23
+    },
+    "translations": {
+      "en": [
+        "to buy"
+      ],
+      "uk": [
+        "купити"
+      ]
+    },
+    "aspect": "perfective",
+    "forms": {
+      "present": {
+        "ja": "kupię",
+        "ty": "kupisz",
+        "on": "kupi",
+        "ona": "kupi",
+        "my": "kupimy",
+        "wy": "kupicie",
+        "oni": "kupią",
+        "one": "kupią"
+      },
+      "past": {
+        "ja": {
+          "masculine": "kupiłem",
+          "feminine": "kupiłam"
+        },
+        "ty": {
+          "masculine": "kupiłeś",
+          "feminine": "kupiłaś"
+        },
+        "on": {
+          "masculine": "kupił"
+        },
+        "ona": {
+          "feminine": "kupiła"
+        },
+        "my": {
+          "virile": "kupiliśmy",
+          "nonvirile": "kupiłyśmy"
+        },
+        "wy": {
+          "virile": "kupiliście",
+          "nonvirile": "kupiłyście"
+        },
+        "oni": {
+          "virile": "kupili"
+        },
+        "one": {
+          "nonvirile": "kupiły"
+        }
+      }
+    },
+    "examples": [
+      {
+        "pl": "Uczę się, jak poprawnie kupić po polsku.",
+        "en": "I am learning how to buy correctly in Polish.",
+        "uk": "Я вчуся правильно купити польською."
+      }
+    ],
+    "notes": [],
+    "sourceUrls": [
+      "https://kwjp.pl/lists/en",
+      "https://en.wiktionary.org/wiki/kupi%C4%87",
+      "https://pl.wiktionary.org/wiki/kupi%C4%87"
+    ],
+    "reviewStatus": "wiktionary-enriched"
+  },
+  {
+    "id": "021-wrocic",
+    "infinitive": "wrócić",
+    "frequencyRank": 21,
+    "corpusRank": 1681,
+    "frequencySource": "KWJP balanced contemporary Polish corpus frequency list, all subcorpora, lemma, infinitive POS",
+    "frequency": {
+      "absolute": 5845,
+      "ipm": 71.57,
+      "arf": 3248.85
+    },
+    "translations": {
+      "en": [
+        "to come back, to go back, to return",
+        "to come back, to go back, to return,",
+        "to return"
+      ],
+      "uk": [
+        "wrócić (переклад потребує перевірки)"
+      ]
+    },
+    "aspect": "perfective",
+    "forms": {
+      "present": {
+        "ja": "wrócę",
+        "ty": "wrócisz",
+        "on": "wróci",
+        "ona": "wróci",
+        "my": "wrócimy",
+        "wy": "wrócicie",
+        "oni": "wrócą",
+        "one": "wrócą"
+      },
+      "past": {
+        "ja": {
+          "masculine": "wróciłem",
+          "feminine": "wróciłam"
+        },
+        "ty": {
+          "masculine": "wróciłeś",
+          "feminine": "wróciłaś"
+        },
+        "on": {
+          "masculine": "wrócił"
+        },
+        "ona": {
+          "feminine": "wróciła"
+        },
+        "my": {
+          "virile": "wróciliśmy",
+          "nonvirile": "wróciłyśmy"
+        },
+        "wy": {
+          "virile": "wróciliście",
+          "nonvirile": "wróciłyście"
+        },
+        "oni": {
+          "virile": "wrócili"
+        },
+        "one": {
+          "nonvirile": "wróciły"
+        }
+      }
+    },
+    "examples": [
+      {
+        "pl": "Uczę się, jak poprawnie wrócić po polsku.",
+        "en": "I am learning how to come back, to go back, to return correctly in Polish.",
+        "uk": "Я вчуся правильно wrócić (переклад потребує перевірки) польською."
+      }
+    ],
+    "notes": [
+      "Ukrainian translation fallback needs review."
+    ],
+    "sourceUrls": [
+      "https://kwjp.pl/lists/en",
+      "https://en.wiktionary.org/wiki/wr%C3%B3ci%C4%87",
+      "https://pl.wiktionary.org/wiki/wr%C3%B3ci%C4%87"
+    ],
+    "reviewStatus": "fallback-needs-review"
+  },
+  {
+    "id": "022-wziac",
+    "infinitive": "wziąć",
+    "frequencyRank": 22,
+    "corpusRank": 1683,
+    "frequencySource": "KWJP balanced contemporary Polish corpus frequency list, all subcorpora, lemma, infinitive POS",
+    "frequency": {
+      "absolute": 5843,
+      "ipm": 71.55,
+      "arf": 3413.84
+    },
+    "translations": {
+      "en": [
+        "to take",
+        "to take in",
+        "to take, to charge"
+      ],
+      "uk": [
+        "взяти"
+      ]
+    },
+    "aspect": "perfective",
+    "forms": {
+      "present": {
+        "ja": "wezmę",
+        "ty": "weźmiesz",
+        "on": "weźmie",
+        "ona": "weźmie",
+        "my": "weźmiemy",
+        "wy": "weźmiecie",
+        "oni": "wezmą",
+        "one": "wezmą"
+      },
+      "past": {
+        "ja": {
+          "masculine": "wziąłem",
+          "feminine": "wzięłam"
+        },
+        "ty": {
+          "masculine": "wziąłeś",
+          "feminine": "wzięłaś"
+        },
+        "on": {
+          "masculine": "wziął"
+        },
+        "ona": {
+          "feminine": "wzięła"
+        },
+        "my": {
+          "virile": "wzięliśmy",
+          "nonvirile": "wzięłyśmy"
+        },
+        "wy": {
+          "virile": "wzięliście",
+          "nonvirile": "wzięłyście"
+        },
+        "oni": {
+          "virile": "wzięli"
+        },
+        "one": {
+          "nonvirile": "wzięły"
+        }
+      }
+    },
+    "examples": [
+      {
+        "pl": "Uczę się, jak poprawnie wziąć po polsku.",
+        "en": "I am learning how to take correctly in Polish.",
+        "uk": "Я вчуся правильно взяти польською."
+      }
+    ],
+    "notes": [],
+    "sourceUrls": [
+      "https://kwjp.pl/lists/en",
+      "https://en.wiktionary.org/wiki/wzi%C4%85%C4%87",
+      "https://pl.wiktionary.org/wiki/wzi%C4%85%C4%87"
+    ],
+    "reviewStatus": "wiktionary-enriched"
+  },
+  {
+    "id": "023-pracowac",
+    "infinitive": "pracować",
+    "frequencyRank": 23,
+    "corpusRank": 1780,
+    "frequencySource": "KWJP balanced contemporary Polish corpus frequency list, all subcorpora, lemma, infinitive POS",
+    "frequency": {
+      "absolute": 5537,
+      "ipm": 67.8,
+      "arf": 2872.79
+    },
+    "translations": {
+      "en": [
+        "to work",
+        "to warp",
+        "to ferment"
+      ],
+      "uk": [
+        "працювати"
+      ]
+    },
+    "aspect": "perfective",
+    "forms": {
+      "present": {
+        "ja": "pracuję",
+        "ty": "pracujesz",
+        "on": "pracuje",
+        "ona": "pracuje",
+        "my": "pracujemy",
+        "wy": "pracujecie",
+        "oni": "pracują",
+        "one": "pracują"
+      },
+      "past": {
+        "ja": {
+          "masculine": "pracowałem",
+          "feminine": "pracowałam"
+        },
+        "ty": {
+          "masculine": "pracowałeś",
+          "feminine": "pracowałaś"
+        },
+        "on": {
+          "masculine": "pracował"
+        },
+        "ona": {
+          "feminine": "pracowała"
+        },
+        "my": {
+          "virile": "pracowaliśmy",
+          "nonvirile": "pracowałyśmy"
+        },
+        "wy": {
+          "virile": "pracowaliście",
+          "nonvirile": "pracowałyście"
+        },
+        "oni": {
+          "virile": "pracowali"
+        },
+        "one": {
+          "nonvirile": "pracowały"
+        }
+      }
+    },
+    "examples": [
+      {
+        "pl": "Uczę się, jak poprawnie pracować po polsku.",
+        "en": "I am learning how to work correctly in Polish.",
+        "uk": "Я вчуся правильно працювати польською."
+      }
+    ],
+    "notes": [],
+    "sourceUrls": [
+      "https://kwjp.pl/lists/en",
+      "https://en.wiktionary.org/wiki/pracowa%C4%87",
+      "https://pl.wiktionary.org/wiki/pracowa%C4%87"
+    ],
+    "reviewStatus": "wiktionary-enriched"
+  },
+  {
+    "id": "024-pamietac",
+    "infinitive": "pamiętać",
+    "frequencyRank": 24,
+    "corpusRank": 1794,
+    "frequencySource": "KWJP balanced contemporary Polish corpus frequency list, all subcorpora, lemma, infinitive POS",
+    "frequency": {
+      "absolute": 5468,
+      "ipm": 66.96,
+      "arf": 3006.54
+    },
+    "translations": {
+      "en": [
+        "to remember",
+        "to be from a particular time",
+        "to mind, to heed"
+      ],
+      "uk": [
+        "пам'ятати"
+      ]
+    },
+    "aspect": "imperfective",
+    "forms": {
+      "present": {
+        "ja": "pamiętam",
+        "ty": "pamiętasz",
+        "on": "pamięta",
+        "ona": "pamięta",
+        "my": "pamiętamy",
+        "wy": "pamiętacie",
+        "oni": "pamiętają",
+        "one": "pamiętają"
+      },
+      "past": {
+        "ja": {
+          "masculine": "pamiętałem",
+          "feminine": "pamiętałam"
+        },
+        "ty": {
+          "masculine": "pamiętałeś",
+          "feminine": "pamiętałaś"
+        },
+        "on": {
+          "masculine": "pamiętał"
+        },
+        "ona": {
+          "feminine": "pamiętała"
+        },
+        "my": {
+          "virile": "pamiętaliśmy",
+          "nonvirile": "pamiętałyśmy"
+        },
+        "wy": {
+          "virile": "pamiętaliście",
+          "nonvirile": "pamiętałyście"
+        },
+        "oni": {
+          "virile": "pamiętali"
+        },
+        "one": {
+          "nonvirile": "pamiętały"
+        }
+      }
+    },
+    "examples": [
+      {
+        "pl": "Uczę się, jak poprawnie pamiętać po polsku.",
+        "en": "I am learning how to remember correctly in Polish.",
+        "uk": "Я вчуся правильно пам'ятати польською."
+      }
+    ],
+    "notes": [],
+    "sourceUrls": [
+      "https://kwjp.pl/lists/en",
+      "https://en.wiktionary.org/wiki/pami%C4%99ta%C4%87",
+      "https://pl.wiktionary.org/wiki/pami%C4%99ta%C4%87"
+    ],
+    "reviewStatus": "wiktionary-enriched"
+  },
+  {
+    "id": "025-myslec",
+    "infinitive": "myśleć",
+    "frequencyRank": 25,
+    "corpusRank": 1809,
+    "frequencySource": "KWJP balanced contemporary Polish corpus frequency list, all subcorpora, lemma, infinitive POS",
+    "frequency": {
+      "absolute": 5430,
+      "ipm": 66.49,
+      "arf": 2896.22
+    },
+    "translations": {
+      "en": [
+        "to think",
+        "to think about"
+      ],
+      "uk": [
+        "думати"
+      ]
+    },
+    "aspect": "imperfective",
+    "forms": {
+      "present": {
+        "ja": "myślę",
+        "ty": "myślisz",
+        "on": "myśli",
+        "ona": "myśli",
+        "my": "myślimy",
+        "wy": "myślicie",
+        "oni": "myślą",
+        "one": "myślą"
+      },
+      "past": {
+        "ja": {
+          "masculine": "myślałem",
+          "feminine": "myślałam"
+        },
+        "ty": {
+          "masculine": "myślałeś",
+          "feminine": "myślałaś"
+        },
+        "on": {
+          "masculine": "myślał"
+        },
+        "ona": {
+          "feminine": "myślała"
+        },
+        "my": {
+          "virile": "myśleliśmy",
+          "nonvirile": "myślałyśmy"
+        },
+        "wy": {
+          "virile": "myśleliście",
+          "nonvirile": "myślałyście"
+        },
+        "oni": {
+          "virile": "myśleli"
+        },
+        "one": {
+          "nonvirile": "myślały"
+        }
+      }
+    },
+    "examples": [
+      {
+        "pl": "Uczę się, jak poprawnie myśleć po polsku.",
+        "en": "I am learning how to think correctly in Polish.",
+        "uk": "Я вчуся правильно думати польською."
+      }
+    ],
+    "notes": [],
+    "sourceUrls": [
+      "https://kwjp.pl/lists/en",
+      "https://en.wiktionary.org/wiki/my%C5%9Ble%C4%87",
+      "https://pl.wiktionary.org/wiki/my%C5%9Ble%C4%87"
+    ],
+    "reviewStatus": "wiktionary-enriched"
+  },
+  {
+    "id": "026-rozmawiac",
+    "infinitive": "rozmawiać",
+    "frequencyRank": 26,
+    "corpusRank": 1817,
+    "frequencySource": "KWJP balanced contemporary Polish corpus frequency list, all subcorpora, lemma, infinitive POS",
+    "frequency": {
+      "absolute": 5398,
+      "ipm": 66.1,
+      "arf": 2812.28
+    },
+    "translations": {
+      "en": [
+        "to talk with, to speak, to converse, to have a conversation, to chat,",
+        "to get even",
+        "to negotiate"
+      ],
+      "uk": [
+        "розмовляти",
+        "говорити"
+      ]
+    },
+    "aspect": "imperfective",
+    "forms": {
+      "present": {
+        "ja": "rozmawiam",
+        "ty": "rozmawiasz",
+        "on": "rozmawia",
+        "ona": "rozmawia",
+        "my": "rozmawiamy",
+        "wy": "rozmawiacie",
+        "oni": "rozmawiają",
+        "one": "rozmawiają"
+      },
+      "past": {
+        "ja": {
+          "masculine": "rozmawiałem",
+          "feminine": "rozmawiałam"
+        },
+        "ty": {
+          "masculine": "rozmawiałeś",
+          "feminine": "rozmawiałaś"
+        },
+        "on": {
+          "masculine": "rozmawiał"
+        },
+        "ona": {
+          "feminine": "rozmawiała"
+        },
+        "my": {
+          "virile": "rozmawialiśmy",
+          "nonvirile": "rozmawiałyśmy"
+        },
+        "wy": {
+          "virile": "rozmawialiście",
+          "nonvirile": "rozmawiałyście"
+        },
+        "oni": {
+          "virile": "rozmawiali"
+        },
+        "one": {
+          "nonvirile": "rozmawiały"
+        }
+      }
+    },
+    "examples": [
+      {
+        "pl": "Uczę się, jak poprawnie rozmawiać po polsku.",
+        "en": "I am learning how to talk with, to speak, to converse, to have a conversation, to chat, correctly in Polish.",
+        "uk": "Я вчуся правильно розмовляти польською."
+      }
+    ],
+    "notes": [],
+    "sourceUrls": [
+      "https://kwjp.pl/lists/en",
+      "https://en.wiktionary.org/wiki/rozmawia%C4%87",
+      "https://pl.wiktionary.org/wiki/rozmawia%C4%87"
+    ],
+    "reviewStatus": "wiktionary-enriched"
+  },
+  {
+    "id": "027-pokazac",
+    "infinitive": "pokazać",
+    "frequencyRank": 27,
+    "corpusRank": 1855,
+    "frequencySource": "KWJP balanced contemporary Polish corpus frequency list, all subcorpora, lemma, infinitive POS",
+    "frequency": {
+      "absolute": 5257,
+      "ipm": 64.37,
+      "arf": 2972.85
+    },
+    "translations": {
+      "en": [
+        "to show",
+        "to do, to perform, to carry out",
+        "to witness"
+      ],
+      "uk": [
+        "показати"
+      ]
+    },
+    "aspect": "perfective",
+    "forms": {
+      "present": {
+        "ja": "pokażę",
+        "ty": "pokażesz",
+        "on": "pokaże",
+        "ona": "pokaże",
+        "my": "pokażemy",
+        "wy": "pokażecie",
+        "oni": "pokażą",
+        "one": "pokażą"
+      },
+      "past": {
+        "ja": {
+          "masculine": "pokazałem",
+          "feminine": "pokazałam"
+        },
+        "ty": {
+          "masculine": "pokazałeś",
+          "feminine": "pokazałaś"
+        },
+        "on": {
+          "masculine": "pokazał"
+        },
+        "ona": {
+          "feminine": "pokazała"
+        },
+        "my": {
+          "virile": "pokazaliśmy",
+          "nonvirile": "pokazałyśmy"
+        },
+        "wy": {
+          "virile": "pokazaliście",
+          "nonvirile": "pokazałyście"
+        },
+        "oni": {
+          "virile": "pokazali"
+        },
+        "one": {
+          "nonvirile": "pokazały"
+        }
+      }
+    },
+    "examples": [
+      {
+        "pl": "Uczę się, jak poprawnie pokazać po polsku.",
+        "en": "I am learning how to show correctly in Polish.",
+        "uk": "Я вчуся правильно показати польською."
+      }
+    ],
+    "notes": [],
+    "sourceUrls": [
+      "https://kwjp.pl/lists/en",
+      "https://en.wiktionary.org/wiki/pokaza%C4%87",
+      "https://pl.wiktionary.org/wiki/pokaza%C4%87"
+    ],
+    "reviewStatus": "wiktionary-enriched"
+  },
+  {
+    "id": "028-sprawdzic",
+    "infinitive": "sprawdzić",
+    "frequencyRank": 28,
+    "corpusRank": 1920,
+    "frequencySource": "KWJP balanced contemporary Polish corpus frequency list, all subcorpora, lemma, infinitive POS",
+    "frequency": {
+      "absolute": 5070,
+      "ipm": 62.08,
+      "arf": 2746.74
+    },
+    "translations": {
+      "en": [
+        "to check, to check up",
+        "to verify",
+        "to check oneself"
+      ],
+      "uk": [
+        "sprawdzić (переклад потребує перевірки)"
+      ]
+    },
+    "aspect": "perfective",
+    "forms": {
+      "present": {
+        "ja": "sprawdzę",
+        "ty": "sprawdzisz",
+        "on": "sprawdzi",
+        "ona": "sprawdzi",
+        "my": "sprawdzimy",
+        "wy": "sprawdzicie",
+        "oni": "sprawdzą",
+        "one": "sprawdzą"
+      },
+      "past": {
+        "ja": {
+          "masculine": "sprawdziłem",
+          "feminine": "sprawdziłam"
+        },
+        "ty": {
+          "masculine": "sprawdziłeś",
+          "feminine": "sprawdziłaś"
+        },
+        "on": {
+          "masculine": "sprawdził"
+        },
+        "ona": {
+          "feminine": "sprawdziła"
+        },
+        "my": {
+          "virile": "sprawdziliśmy",
+          "nonvirile": "sprawdziłyśmy"
+        },
+        "wy": {
+          "virile": "sprawdziliście",
+          "nonvirile": "sprawdziłyście"
+        },
+        "oni": {
+          "virile": "sprawdzili"
+        },
+        "one": {
+          "nonvirile": "sprawdziły"
+        }
+      }
+    },
+    "examples": [
+      {
+        "pl": "Uczę się, jak poprawnie sprawdzić po polsku.",
+        "en": "I am learning how to check, to check up correctly in Polish.",
+        "uk": "Я вчуся правильно sprawdzić (переклад потребує перевірки) польською."
+      }
+    ],
+    "notes": [
+      "Ukrainian translation fallback needs review."
+    ],
+    "sourceUrls": [
+      "https://kwjp.pl/lists/en",
+      "https://en.wiktionary.org/wiki/sprawdzi%C4%87",
+      "https://pl.wiktionary.org/wiki/sprawdzi%C4%87"
+    ],
+    "reviewStatus": "fallback-needs-review"
+  },
+  {
+    "id": "029-wyjsc",
+    "infinitive": "wyjść",
+    "frequencyRank": 29,
+    "corpusRank": 1937,
+    "frequencySource": "KWJP balanced contemporary Polish corpus frequency list, all subcorpora, lemma, infinitive POS",
+    "frequency": {
+      "absolute": 5040,
+      "ipm": 61.72,
+      "arf": 2802.31
+    },
+    "translations": {
+      "en": [
+        "to walk out, to leave, to exit",
+        "to walk out, to leave",
+        "to leave"
+      ],
+      "uk": [
+        "ви́йти"
+      ]
+    },
+    "aspect": "perfective",
+    "forms": {
+      "present": {
+        "ja": "wyjdę",
+        "ty": "wyjdziesz",
+        "on": "wyjdzie",
+        "ona": "wyjdzie",
+        "my": "wyjdziemy",
+        "wy": "wyjdziecie",
+        "oni": "wyjdą",
+        "one": "wyjdą"
+      },
+      "past": {
+        "ja": {
+          "masculine": "wyszedłem",
+          "feminine": "wyszłam"
+        },
+        "ty": {
+          "masculine": "wyszedłeś",
+          "feminine": "wyszłaś"
+        },
+        "on": {
+          "masculine": "wyszedł"
+        },
+        "ona": {
+          "feminine": "wyszła"
+        },
+        "my": {
+          "virile": "wyszliśmy",
+          "nonvirile": "wyszłyśmy"
+        },
+        "wy": {
+          "virile": "wyszliście",
+          "nonvirile": "wyszłyście"
+        },
+        "oni": {
+          "virile": "wyszli"
+        },
+        "one": {
+          "nonvirile": "wyszły"
+        }
+      }
+    },
+    "examples": [
+      {
+        "pl": "Uczę się, jak poprawnie wyjść po polsku.",
+        "en": "I am learning how to walk out, to leave, to exit correctly in Polish.",
+        "uk": "Я вчуся правильно ви́йти польською."
+      }
+    ],
+    "notes": [],
+    "sourceUrls": [
+      "https://kwjp.pl/lists/en",
+      "https://en.wiktionary.org/wiki/wyj%C5%9B%C4%87",
+      "https://pl.wiktionary.org/wiki/wyj%C5%9B%C4%87"
+    ],
+    "reviewStatus": "wiktionary-enriched"
+  },
+  {
+    "id": "030-poznac",
+    "infinitive": "poznać",
+    "frequencyRank": 30,
+    "corpusRank": 1939,
+    "frequencySource": "KWJP balanced contemporary Polish corpus frequency list, all subcorpora, lemma, infinitive POS",
+    "frequency": {
+      "absolute": 5035,
+      "ipm": 61.65,
+      "arf": 2849.77
+    },
+    "translations": {
+      "en": [
+        "to get to know",
+        "to know",
+        "to recognize, to tell"
+      ],
+      "uk": [
+        "poznać (переклад потребує перевірки)"
+      ]
+    },
+    "aspect": "perfective",
+    "forms": {
+      "present": {
+        "ja": "poznam",
+        "ty": "poznasz",
+        "on": "pozna",
+        "ona": "pozna",
+        "my": "poznamy",
+        "wy": "poznacie",
+        "oni": "poznają",
+        "one": "poznają"
+      },
+      "past": {
+        "ja": {
+          "masculine": "poznałem",
+          "feminine": "poznałam"
+        },
+        "ty": {
+          "masculine": "poznałeś",
+          "feminine": "poznałaś"
+        },
+        "on": {
+          "masculine": "poznał"
+        },
+        "ona": {
+          "feminine": "poznała"
+        },
+        "my": {
+          "virile": "poznaliśmy",
+          "nonvirile": "poznałyśmy"
+        },
+        "wy": {
+          "virile": "poznaliście",
+          "nonvirile": "poznałyście"
+        },
+        "oni": {
+          "virile": "poznali"
+        },
+        "one": {
+          "nonvirile": "poznały"
+        }
+      }
+    },
+    "examples": [
+      {
+        "pl": "Uczę się, jak poprawnie poznać po polsku.",
+        "en": "I am learning how to get to know correctly in Polish.",
+        "uk": "Я вчуся правильно poznać (переклад потребує перевірки) польською."
+      }
+    ],
+    "notes": [
+      "Ukrainian translation fallback needs review."
+    ],
+    "sourceUrls": [
+      "https://kwjp.pl/lists/en",
+      "https://en.wiktionary.org/wiki/pozna%C4%87",
+      "https://pl.wiktionary.org/wiki/pozna%C4%87"
+    ],
+    "reviewStatus": "fallback-needs-review"
+  },
+  {
+    "id": "031-czekac",
+    "infinitive": "czekać",
+    "frequencyRank": 31,
+    "corpusRank": 1982,
+    "frequencySource": "KWJP balanced contemporary Polish corpus frequency list, all subcorpora, lemma, infinitive POS",
+    "frequency": {
+      "absolute": 4924,
+      "ipm": 60.3,
+      "arf": 2772.53
+    },
+    "translations": {
+      "en": [
+        "to wait",
+        "to wait, to await",
+        "to lie ahead, to lie in store"
+      ],
+      "uk": [
+        "чекати",
+        "очікувати",
+        "вичікувати"
+      ]
+    },
+    "aspect": "imperfective",
+    "forms": {
+      "present": {
+        "ja": "czekam",
+        "ty": "czekasz",
+        "on": "czeka",
+        "ona": "czeka",
+        "my": "czekamy",
+        "wy": "czekacie",
+        "oni": "czekają",
+        "one": "czekają"
+      },
+      "past": {
+        "ja": {
+          "masculine": "czekałem",
+          "feminine": "czekałam"
+        },
+        "ty": {
+          "masculine": "czekałeś",
+          "feminine": "czekałaś"
+        },
+        "on": {
+          "masculine": "czekał"
+        },
+        "ona": {
+          "feminine": "czekała"
+        },
+        "my": {
+          "virile": "czekaliśmy",
+          "nonvirile": "czekałyśmy"
+        },
+        "wy": {
+          "virile": "czekaliście",
+          "nonvirile": "czekałyście"
+        },
+        "oni": {
+          "virile": "czekali"
+        },
+        "one": {
+          "nonvirile": "czekały"
+        }
+      }
+    },
+    "examples": [
+      {
+        "pl": "Uczę się, jak poprawnie czekać po polsku.",
+        "en": "I am learning how to wait correctly in Polish.",
+        "uk": "Я вчуся правильно чекати польською."
+      }
+    ],
+    "notes": [],
+    "sourceUrls": [
+      "https://kwjp.pl/lists/en",
+      "https://en.wiktionary.org/wiki/czeka%C4%87",
+      "https://pl.wiktionary.org/wiki/czeka%C4%87"
+    ],
+    "reviewStatus": "wiktionary-enriched"
+  },
+  {
+    "id": "032-przyznac",
+    "infinitive": "przyznać",
+    "frequencyRank": 32,
+    "corpusRank": 2087,
+    "frequencySource": "KWJP balanced contemporary Polish corpus frequency list, all subcorpora, lemma, infinitive POS",
+    "frequency": {
+      "absolute": 4618,
+      "ipm": 56.55,
+      "arf": 2579.81
+    },
+    "translations": {
+      "en": [
+        "to admit, to acknowledge",
+        "to grant, to confer",
+        "to confess, to admit"
+      ],
+      "uk": [
+        "przyznać (переклад потребує перевірки)"
+      ]
+    },
+    "aspect": "perfective",
+    "forms": {
+      "present": {
+        "ja": "przyznam",
+        "ty": "przyznasz",
+        "on": "przyzna",
+        "ona": "przyzna",
+        "my": "przyznamy",
+        "wy": "przyznacie",
+        "oni": "przyznają",
+        "one": "przyznają"
+      },
+      "past": {
+        "ja": {
+          "masculine": "przyznałem",
+          "feminine": "przyznałam"
+        },
+        "ty": {
+          "masculine": "przyznałeś",
+          "feminine": "przyznałaś"
+        },
+        "on": {
+          "masculine": "przyznał"
+        },
+        "ona": {
+          "feminine": "przyznała"
+        },
+        "my": {
+          "virile": "przyznaliśmy",
+          "nonvirile": "przyznałyśmy"
+        },
+        "wy": {
+          "virile": "przyznaliście",
+          "nonvirile": "przyznałyście"
+        },
+        "oni": {
+          "virile": "przyznali"
+        },
+        "one": {
+          "nonvirile": "przyznały"
+        }
+      }
+    },
+    "examples": [
+      {
+        "pl": "Uczę się, jak poprawnie przyznać po polsku.",
+        "en": "I am learning how to admit, to acknowledge correctly in Polish.",
+        "uk": "Я вчуся правильно przyznać (переклад потребує перевірки) польською."
+      }
+    ],
+    "notes": [
+      "Ukrainian translation fallback needs review."
+    ],
+    "sourceUrls": [
+      "https://kwjp.pl/lists/en",
+      "https://en.wiktionary.org/wiki/przyzna%C4%87",
+      "https://pl.wiktionary.org/wiki/przyzna%C4%87"
+    ],
+    "reviewStatus": "fallback-needs-review"
+  },
+  {
+    "id": "033-uznac",
+    "infinitive": "uznać",
+    "frequencyRank": 33,
+    "corpusRank": 2108,
+    "frequencySource": "KWJP balanced contemporary Polish corpus frequency list, all subcorpora, lemma, infinitive POS",
+    "frequency": {
+      "absolute": 4566,
+      "ipm": 55.91,
+      "arf": 2384.07
+    },
+    "translations": {
+      "en": [
+        "to acknowledge, to recognize, to deem",
+        "to consider",
+        "to consider oneself"
+      ],
+      "uk": [
+        "uznać (переклад потребує перевірки)"
+      ]
+    },
+    "aspect": "perfective",
+    "forms": {
+      "present": {
+        "ja": "uznam",
+        "ty": "uznasz",
+        "on": "uzna",
+        "ona": "uzna",
+        "my": "uznamy",
+        "wy": "uznacie",
+        "oni": "uznają",
+        "one": "uznają"
+      },
+      "past": {
+        "ja": {
+          "masculine": "uznałem",
+          "feminine": "uznałam"
+        },
+        "ty": {
+          "masculine": "uznałeś",
+          "feminine": "uznałaś"
+        },
+        "on": {
+          "masculine": "uznał"
+        },
+        "ona": {
+          "feminine": "uznała"
+        },
+        "my": {
+          "virile": "uznaliśmy",
+          "nonvirile": "uznałyśmy"
+        },
+        "wy": {
+          "virile": "uznaliście",
+          "nonvirile": "uznałyście"
+        },
+        "oni": {
+          "virile": "uznali"
+        },
+        "one": {
+          "nonvirile": "uznały"
+        }
+      }
+    },
+    "examples": [
+      {
+        "pl": "Uczę się, jak poprawnie uznać po polsku.",
+        "en": "I am learning how to acknowledge, to recognize, to deem correctly in Polish.",
+        "uk": "Я вчуся правильно uznać (переклад потребує перевірки) польською."
+      }
+    ],
+    "notes": [
+      "Ukrainian translation fallback needs review."
+    ],
+    "sourceUrls": [
+      "https://kwjp.pl/lists/en",
+      "https://en.wiktionary.org/wiki/uzna%C4%87",
+      "https://pl.wiktionary.org/wiki/uzna%C4%87"
+    ],
+    "reviewStatus": "fallback-needs-review"
+  },
+  {
+    "id": "034-prowadzic",
+    "infinitive": "prowadzić",
+    "frequencyRank": 34,
+    "corpusRank": 2130,
+    "frequencySource": "KWJP balanced contemporary Polish corpus frequency list, all subcorpora, lemma, infinitive POS",
+    "frequency": {
+      "absolute": 4511,
+      "ipm": 55.24,
+      "arf": 2536.14
+    },
+    "translations": {
+      "en": [
+        "to lead",
+        "to drive",
+        "to lead, to guide"
+      ],
+      "uk": [
+        "вести"
+      ]
+    },
+    "aspect": "imperfective",
+    "forms": {
+      "present": {
+        "ja": "prowadzę",
+        "ty": "prowadzisz",
+        "on": "prowadzi",
+        "ona": "prowadzi",
+        "my": "prowadzimy",
+        "wy": "prowadzicie",
+        "oni": "prowadzą",
+        "one": "prowadzą"
+      },
+      "past": {
+        "ja": {
+          "masculine": "prowadziłem",
+          "feminine": "prowadziłam"
+        },
+        "ty": {
+          "masculine": "prowadziłeś",
+          "feminine": "prowadziłaś"
+        },
+        "on": {
+          "masculine": "prowadził"
+        },
+        "ona": {
+          "feminine": "prowadziła"
+        },
+        "my": {
+          "virile": "prowadziliśmy",
+          "nonvirile": "prowadziłyśmy"
+        },
+        "wy": {
+          "virile": "prowadziliście",
+          "nonvirile": "prowadziłyście"
+        },
+        "oni": {
+          "virile": "prowadzili"
+        },
+        "one": {
+          "nonvirile": "prowadziły"
+        }
+      }
+    },
+    "examples": [
+      {
+        "pl": "Uczę się, jak poprawnie prowadzić po polsku.",
+        "en": "I am learning how to lead correctly in Polish.",
+        "uk": "Я вчуся правильно вести польською."
+      }
+    ],
+    "notes": [],
+    "sourceUrls": [
+      "https://kwjp.pl/lists/en",
+      "https://en.wiktionary.org/wiki/prowadzi%C4%87",
+      "https://pl.wiktionary.org/wiki/prowadzi%C4%87"
+    ],
+    "reviewStatus": "wiktionary-enriched"
+  },
+  {
+    "id": "035-wejsc",
+    "infinitive": "wejść",
+    "frequencyRank": 35,
+    "corpusRank": 2135,
+    "frequencySource": "KWJP balanced contemporary Polish corpus frequency list, all subcorpora, lemma, infinitive POS",
+    "frequency": {
+      "absolute": 4505,
+      "ipm": 55.16,
+      "arf": 2569.76
+    },
+    "translations": {
+      "en": [
+        "to go in",
+        "to go on, to climb",
+        "to go in, to enter"
+      ],
+      "uk": [
+        "ввійти",
+        "увійти"
+      ]
+    },
+    "aspect": "perfective",
+    "forms": {
+      "present": {
+        "ja": "wejdę",
+        "ty": "wejdziesz",
+        "on": "wejdzie",
+        "ona": "wejdzie",
+        "my": "wejdziemy",
+        "wy": "wejdziecie",
+        "oni": "wejdą",
+        "one": "wejdą"
+      },
+      "past": {
+        "ja": {
+          "masculine": "wszedłem",
+          "feminine": "weszłam"
+        },
+        "ty": {
+          "masculine": "wszedłeś",
+          "feminine": "weszłaś"
+        },
+        "on": {
+          "masculine": "wszedł"
+        },
+        "ona": {
+          "feminine": "weszła"
+        },
+        "my": {
+          "virile": "weszliśmy",
+          "nonvirile": "weszłyśmy"
+        },
+        "wy": {
+          "virile": "weszliście",
+          "nonvirile": "weszłyście"
+        },
+        "oni": {
+          "virile": "weszli"
+        },
+        "one": {
+          "nonvirile": "weszły"
+        }
+      }
+    },
+    "examples": [
+      {
+        "pl": "Uczę się, jak poprawnie wejść po polsku.",
+        "en": "I am learning how to go in correctly in Polish.",
+        "uk": "Я вчуся правильно ввійти польською."
+      }
+    ],
+    "notes": [],
+    "sourceUrls": [
+      "https://kwjp.pl/lists/en",
+      "https://en.wiktionary.org/wiki/wej%C5%9B%C4%87",
+      "https://pl.wiktionary.org/wiki/wej%C5%9B%C4%87"
+    ],
+    "reviewStatus": "wiktionary-enriched"
+  },
+  {
+    "id": "036-zaczac",
+    "infinitive": "zacząć",
+    "frequencyRank": 36,
+    "corpusRank": 2156,
+    "frequencySource": "KWJP balanced contemporary Polish corpus frequency list, all subcorpora, lemma, infinitive POS",
+    "frequency": {
+      "absolute": 4453,
+      "ipm": 54.53,
+      "arf": 2542.32
+    },
+    "translations": {
+      "en": [
+        "to start, to begin",
+        "to start",
+        "to begin"
+      ],
+      "uk": [
+        "почати",
+        "початися"
+      ]
+    },
+    "aspect": "perfective",
+    "forms": {
+      "present": {
+        "ja": "zacznę",
+        "ty": "zaczniesz",
+        "on": "zacznie",
+        "ona": "zacznie",
+        "my": "zaczniemy",
+        "wy": "zaczniecie",
+        "oni": "zaczną",
+        "one": "zaczną"
+      },
+      "past": {
+        "ja": {
+          "masculine": "zacząłem",
+          "feminine": "zaczęłam"
+        },
+        "ty": {
+          "masculine": "zacząłeś",
+          "feminine": "zaczęłaś"
+        },
+        "on": {
+          "masculine": "zaczął"
+        },
+        "ona": {
+          "feminine": "zaczęła"
+        },
+        "my": {
+          "virile": "zaczęliśmy",
+          "nonvirile": "zaczęłyśmy"
+        },
+        "wy": {
+          "virile": "zaczęliście",
+          "nonvirile": "zaczęłyście"
+        },
+        "oni": {
+          "virile": "zaczęli"
+        },
+        "one": {
+          "nonvirile": "zaczęły"
+        }
+      }
+    },
+    "examples": [
+      {
+        "pl": "Uczę się, jak poprawnie zacząć po polsku.",
+        "en": "I am learning how to start, to begin correctly in Polish.",
+        "uk": "Я вчуся правильно почати польською."
+      }
+    ],
+    "notes": [],
+    "sourceUrls": [
+      "https://kwjp.pl/lists/en",
+      "https://en.wiktionary.org/wiki/zacz%C4%85%C4%87",
+      "https://pl.wiktionary.org/wiki/zacz%C4%85%C4%87"
+    ],
+    "reviewStatus": "wiktionary-enriched"
+  },
+  {
+    "id": "037-spotkac",
+    "infinitive": "spotkać",
+    "frequencyRank": 37,
+    "corpusRank": 2180,
+    "frequencySource": "KWJP balanced contemporary Polish corpus frequency list, all subcorpora, lemma, infinitive POS",
+    "frequency": {
+      "absolute": 4392,
+      "ipm": 53.78,
+      "arf": 2480.78
+    },
+    "translations": {
+      "en": [
+        "to meet",
+        "to greet with",
+        "to meet up, to meet each other"
+      ],
+      "uk": [
+        "зустрі́ти",
+        "зустрі́тися"
+      ]
+    },
+    "aspect": "perfective",
+    "forms": {
+      "present": {
+        "ja": "spotkam",
+        "ty": "spotkasz",
+        "on": "spotka",
+        "ona": "spotka",
+        "my": "spotkamy",
+        "wy": "spotkacie",
+        "oni": "spotkają",
+        "one": "spotkają"
+      },
+      "past": {
+        "ja": {
+          "masculine": "spotkałem",
+          "feminine": "spotkałam"
+        },
+        "ty": {
+          "masculine": "spotkałeś",
+          "feminine": "spotkałaś"
+        },
+        "on": {
+          "masculine": "spotkał"
+        },
+        "ona": {
+          "feminine": "spotkała"
+        },
+        "my": {
+          "virile": "spotkaliśmy",
+          "nonvirile": "spotkałyśmy"
+        },
+        "wy": {
+          "virile": "spotkaliście",
+          "nonvirile": "spotkałyście"
+        },
+        "oni": {
+          "virile": "spotkali"
+        },
+        "one": {
+          "nonvirile": "spotkały"
+        }
+      }
+    },
+    "examples": [
+      {
+        "pl": "Uczę się, jak poprawnie spotkać po polsku.",
+        "en": "I am learning how to meet correctly in Polish.",
+        "uk": "Я вчуся правильно зустрі́ти польською."
+      }
+    ],
+    "notes": [],
+    "sourceUrls": [
+      "https://kwjp.pl/lists/en",
+      "https://en.wiktionary.org/wiki/spotka%C4%87",
+      "https://pl.wiktionary.org/wiki/spotka%C4%87"
+    ],
+    "reviewStatus": "wiktionary-enriched"
+  },
+  {
+    "id": "038-dostac",
+    "infinitive": "dostać",
+    "frequencyRank": 38,
+    "corpusRank": 2219,
+    "frequencySource": "KWJP balanced contemporary Polish corpus frequency list, all subcorpora, lemma, infinitive POS",
+    "frequency": {
+      "absolute": 4317,
+      "ipm": 52.86,
+      "arf": 2458.25
+    },
+    "translations": {
+      "en": [
+        "to get",
+        "to get hit",
+        "to reach out"
+      ],
+      "uk": [
+        "отримати"
+      ]
+    },
+    "aspect": "perfective",
+    "forms": {
+      "present": {
+        "ja": "dostoję",
+        "ty": "dostoisz",
+        "on": "dostoi",
+        "ona": "dostoi",
+        "my": "dostoimy",
+        "wy": "dostoicie",
+        "oni": "dostoją",
+        "one": "dostoją"
+      },
+      "past": {
+        "ja": {
+          "masculine": "dostałem",
+          "feminine": "dostałam"
+        },
+        "ty": {
+          "masculine": "dostałeś",
+          "feminine": "dostałaś"
+        },
+        "on": {
+          "masculine": "dostał"
+        },
+        "ona": {
+          "feminine": "dostała"
+        },
+        "my": {
+          "virile": "dostaliśmy",
+          "nonvirile": "dostałyśmy"
+        },
+        "wy": {
+          "virile": "dostaliście",
+          "nonvirile": "dostałyście"
+        },
+        "oni": {
+          "virile": "dostali"
+        },
+        "one": {
+          "nonvirile": "dostały"
+        }
+      }
+    },
+    "examples": [
+      {
+        "pl": "Uczę się, jak poprawnie dostać po polsku.",
+        "en": "I am learning how to get correctly in Polish.",
+        "uk": "Я вчуся правильно отримати польською."
+      }
+    ],
+    "notes": [],
+    "sourceUrls": [
+      "https://kwjp.pl/lists/en",
+      "https://en.wiktionary.org/wiki/dosta%C4%87",
+      "https://pl.wiktionary.org/wiki/dosta%C4%87"
+    ],
+    "reviewStatus": "wiktionary-enriched"
+  },
+  {
+    "id": "039-patrzec",
+    "infinitive": "patrzeć",
+    "frequencyRank": 39,
+    "corpusRank": 2257,
+    "frequencySource": "KWJP balanced contemporary Polish corpus frequency list, all subcorpora, lemma, infinitive POS",
+    "frequency": {
+      "absolute": 4224,
+      "ipm": 51.72,
+      "arf": 2267.04
+    },
+    "translations": {
+      "en": [
+        "to look",
+        "to view, to regard, to look upon",
+        "to look at, to notice, to turn one's attention to"
+      ],
+      "uk": [
+        "диви́тися"
+      ]
+    },
+    "aspect": "imperfective",
+    "forms": {
+      "present": {
+        "ja": "patrzę",
+        "ty": "patrzysz",
+        "on": "patrzy",
+        "ona": "patrzy",
+        "my": "patrzymy",
+        "wy": "patrzycie",
+        "oni": "patrzą",
+        "one": "patrzą"
+      },
+      "past": {
+        "ja": {
+          "masculine": "patrzałem",
+          "feminine": "patrzałam"
+        },
+        "ty": {
+          "masculine": "patrzałeś",
+          "feminine": "patrzałaś"
+        },
+        "on": {
+          "masculine": "patrzał"
+        },
+        "ona": {
+          "feminine": "patrzała"
+        },
+        "my": {
+          "virile": "patrzeliśmy",
+          "nonvirile": "patrzałyśmy"
+        },
+        "wy": {
+          "virile": "patrzeliście",
+          "nonvirile": "patrzałyście"
+        },
+        "oni": {
+          "virile": "patrzeli"
+        },
+        "one": {
+          "nonvirile": "patrzały"
+        }
+      }
+    },
+    "examples": [
+      {
+        "pl": "Uczę się, jak poprawnie patrzeć po polsku.",
+        "en": "I am learning how to look correctly in Polish.",
+        "uk": "Я вчуся правильно диви́тися польською."
+      }
+    ],
+    "notes": [],
+    "sourceUrls": [
+      "https://kwjp.pl/lists/en",
+      "https://en.wiktionary.org/wiki/patrze%C4%87",
+      "https://pl.wiktionary.org/wiki/patrze%C4%87"
+    ],
+    "reviewStatus": "wiktionary-enriched"
+  },
+  {
+    "id": "040-walczyc",
+    "infinitive": "walczyć",
+    "frequencyRank": 40,
+    "corpusRank": 2345,
+    "frequencySource": "KWJP balanced contemporary Polish corpus frequency list, all subcorpora, lemma, infinitive POS",
+    "frequency": {
+      "absolute": 4054,
+      "ipm": 49.64,
+      "arf": 2243.32
+    },
+    "translations": {
+      "en": [
+        "to fight",
+        "to fight with",
+        "to fight for"
+      ],
+      "uk": [
+        "боротися",
+        "воювати"
+      ]
+    },
+    "aspect": "imperfective",
+    "forms": {
+      "present": {
+        "ja": "walczę",
+        "ty": "walczysz",
+        "on": "walczy",
+        "ona": "walczy",
+        "my": "walczymy",
+        "wy": "walczycie",
+        "oni": "walczą",
+        "one": "walczą"
+      },
+      "past": {
+        "ja": {
+          "masculine": "walczyłem",
+          "feminine": "walczyłam"
+        },
+        "ty": {
+          "masculine": "walczyłeś",
+          "feminine": "walczyłaś"
+        },
+        "on": {
+          "masculine": "walczył"
+        },
+        "ona": {
+          "feminine": "walczyła"
+        },
+        "my": {
+          "virile": "walczyliśmy",
+          "nonvirile": "walczyłyśmy"
+        },
+        "wy": {
+          "virile": "walczyliście",
+          "nonvirile": "walczyłyście"
+        },
+        "oni": {
+          "virile": "walczyli"
+        },
+        "one": {
+          "nonvirile": "walczyły"
+        }
+      }
+    },
+    "examples": [
+      {
+        "pl": "Uczę się, jak poprawnie walczyć po polsku.",
+        "en": "I am learning how to fight correctly in Polish.",
+        "uk": "Я вчуся правильно боротися польською."
+      }
+    ],
+    "notes": [],
+    "sourceUrls": [
+      "https://kwjp.pl/lists/en",
+      "https://en.wiktionary.org/wiki/walczy%C4%87",
+      "https://pl.wiktionary.org/wiki/walczy%C4%87"
+    ],
+    "reviewStatus": "wiktionary-enriched"
+  },
+  {
+    "id": "041-przekonac",
+    "infinitive": "przekonać",
+    "frequencyRank": 41,
+    "corpusRank": 2350,
+    "frequencySource": "KWJP balanced contemporary Polish corpus frequency list, all subcorpora, lemma, infinitive POS",
+    "frequency": {
+      "absolute": 4046,
+      "ipm": 49.54,
+      "arf": 2364.92
+    },
+    "translations": {
+      "en": [
+        "to convince",
+        "to become convinced"
+      ],
+      "uk": [
+        "переконати"
+      ]
+    },
+    "aspect": "perfective",
+    "forms": {
+      "present": {
+        "ja": "przekonam",
+        "ty": "przekonasz",
+        "on": "przekona",
+        "ona": "przekona",
+        "my": "przekonamy",
+        "wy": "przekonacie",
+        "oni": "przekonają",
+        "one": "przekonają"
+      },
+      "past": {
+        "ja": {
+          "masculine": "przekonałem",
+          "feminine": "przekonałam"
+        },
+        "ty": {
+          "masculine": "przekonałeś",
+          "feminine": "przekonałaś"
+        },
+        "on": {
+          "masculine": "przekonał"
+        },
+        "ona": {
+          "feminine": "przekonała"
+        },
+        "my": {
+          "virile": "przekonaliśmy",
+          "nonvirile": "przekonałyśmy"
+        },
+        "wy": {
+          "virile": "przekonaliście",
+          "nonvirile": "przekonałyście"
+        },
+        "oni": {
+          "virile": "przekonali"
+        },
+        "one": {
+          "nonvirile": "przekonały"
+        }
+      }
+    },
+    "examples": [
+      {
+        "pl": "Uczę się, jak poprawnie przekonać po polsku.",
+        "en": "I am learning how to convince correctly in Polish.",
+        "uk": "Я вчуся правильно переконати польською."
+      }
+    ],
+    "notes": [],
+    "sourceUrls": [
+      "https://kwjp.pl/lists/en",
+      "https://en.wiktionary.org/wiki/przekona%C4%87",
+      "https://pl.wiktionary.org/wiki/przekona%C4%87"
+    ],
+    "reviewStatus": "wiktionary-enriched"
+  },
+  {
+    "id": "042-pisac",
+    "infinitive": "pisać",
+    "frequencyRank": 42,
+    "corpusRank": 2357,
+    "frequencySource": "KWJP balanced contemporary Polish corpus frequency list, all subcorpora, lemma, infinitive POS",
+    "frequency": {
+      "absolute": 4033,
+      "ipm": 49.38,
+      "arf": 1964.05
+    },
+    "translations": {
+      "en": [
+        "to write",
+        "to write, to take",
+        "to say, to state, to read"
+      ],
+      "uk": [
+        "писати",
+        "малювати"
+      ]
+    },
+    "aspect": "imperfective",
+    "forms": {
+      "present": {
+        "ja": "piszę",
+        "ty": "piszesz",
+        "on": "pisze",
+        "ona": "pisze",
+        "my": "piszemy",
+        "wy": "piszecie",
+        "oni": "piszą",
+        "one": "piszą"
+      },
+      "past": {
+        "ja": {
+          "masculine": "pisałem",
+          "feminine": "pisałam"
+        },
+        "ty": {
+          "masculine": "pisałeś",
+          "feminine": "pisałaś"
+        },
+        "on": {
+          "masculine": "pisał"
+        },
+        "ona": {
+          "feminine": "pisała"
+        },
+        "my": {
+          "virile": "pisaliśmy",
+          "nonvirile": "pisałyśmy"
+        },
+        "wy": {
+          "virile": "pisaliście",
+          "nonvirile": "pisałyście"
+        },
+        "oni": {
+          "virile": "pisali"
+        },
+        "one": {
+          "nonvirile": "pisały"
+        }
+      }
+    },
+    "examples": [
+      {
+        "pl": "Uczę się, jak poprawnie pisać po polsku.",
+        "en": "I am learning how to write correctly in Polish.",
+        "uk": "Я вчуся правильно писати польською."
+      }
+    ],
+    "notes": [],
+    "sourceUrls": [
+      "https://kwjp.pl/lists/en",
+      "https://en.wiktionary.org/wiki/pisa%C4%87",
+      "https://pl.wiktionary.org/wiki/pisa%C4%87"
+    ],
+    "reviewStatus": "wiktionary-enriched"
+  },
+  {
+    "id": "043-dzialac",
+    "infinitive": "działać",
+    "frequencyRank": 43,
+    "corpusRank": 2374,
+    "frequencySource": "KWJP balanced contemporary Polish corpus frequency list, all subcorpora, lemma, infinitive POS",
+    "frequency": {
+      "absolute": 3999,
+      "ipm": 48.97,
+      "arf": 2281.06
+    },
+    "translations": {
+      "en": [
+        "to act",
+        "to work",
+        "to apply"
+      ],
+      "uk": [
+        "робити"
+      ]
+    },
+    "aspect": "imperfective",
+    "forms": {
+      "present": {
+        "ja": "działam",
+        "ty": "działasz",
+        "on": "działa",
+        "ona": "działa",
+        "my": "działamy",
+        "wy": "działacie",
+        "oni": "działają",
+        "one": "działają"
+      },
+      "past": {
+        "ja": {
+          "masculine": "działałem",
+          "feminine": "działałam"
+        },
+        "ty": {
+          "masculine": "działałeś",
+          "feminine": "działałaś"
+        },
+        "on": {
+          "masculine": "działał"
+        },
+        "ona": {
+          "feminine": "działała"
+        },
+        "my": {
+          "virile": "działaliśmy",
+          "nonvirile": "działałyśmy"
+        },
+        "wy": {
+          "virile": "działaliście",
+          "nonvirile": "działałyście"
+        },
+        "oni": {
+          "virile": "działali"
+        },
+        "one": {
+          "nonvirile": "działały"
+        }
+      }
+    },
+    "examples": [
+      {
+        "pl": "Uczę się, jak poprawnie działać po polsku.",
+        "en": "I am learning how to act correctly in Polish.",
+        "uk": "Я вчуся правильно робити польською."
+      }
+    ],
+    "notes": [],
+    "sourceUrls": [
+      "https://kwjp.pl/lists/en",
+      "https://en.wiktionary.org/wiki/dzia%C5%82a%C4%87",
+      "https://pl.wiktionary.org/wiki/dzia%C5%82a%C4%87"
+    ],
+    "reviewStatus": "wiktionary-enriched"
+  },
+  {
+    "id": "044-zachowac",
+    "infinitive": "zachować",
+    "frequencyRank": 44,
+    "corpusRank": 2407,
+    "frequencySource": "KWJP balanced contemporary Polish corpus frequency list, all subcorpora, lemma, infinitive POS",
+    "frequency": {
+      "absolute": 3937,
+      "ipm": 48.21,
+      "arf": 2326.16
+    },
+    "translations": {
+      "en": [
+        "to keep, to maintain, to preserve",
+        "to keep, to retain",
+        "to act, to behave"
+      ],
+      "uk": [
+        "zachować (переклад потребує перевірки)"
+      ]
+    },
+    "aspect": "perfective",
+    "forms": {
+      "present": {
+        "ja": "zachowam",
+        "ty": "zachowasz",
+        "on": "zachowa",
+        "ona": "zachowa",
+        "my": "zachowamy",
+        "wy": "zachowacie",
+        "oni": "zachowają",
+        "one": "zachowają"
+      },
+      "past": {
+        "ja": {
+          "masculine": "zachowałem",
+          "feminine": "zachowałam"
+        },
+        "ty": {
+          "masculine": "zachowałeś",
+          "feminine": "zachowałaś"
+        },
+        "on": {
+          "masculine": "zachował"
+        },
+        "ona": {
+          "feminine": "zachowała"
+        },
+        "my": {
+          "virile": "zachowaliśmy",
+          "nonvirile": "zachowałyśmy"
+        },
+        "wy": {
+          "virile": "zachowaliście",
+          "nonvirile": "zachowałyście"
+        },
+        "oni": {
+          "virile": "zachowali"
+        },
+        "one": {
+          "nonvirile": "zachowały"
+        }
+      }
+    },
+    "examples": [
+      {
+        "pl": "Uczę się, jak poprawnie zachować po polsku.",
+        "en": "I am learning how to keep, to maintain, to preserve correctly in Polish.",
+        "uk": "Я вчуся правильно zachować (переклад потребує перевірки) польською."
+      }
+    ],
+    "notes": [
+      "Ukrainian translation fallback needs review."
+    ],
+    "sourceUrls": [
+      "https://kwjp.pl/lists/en",
+      "https://en.wiktionary.org/wiki/zachowa%C4%87",
+      "https://pl.wiktionary.org/wiki/zachowa%C4%87"
+    ],
+    "reviewStatus": "fallback-needs-review"
+  },
+  {
+    "id": "045-spac",
+    "infinitive": "spać",
+    "frequencyRank": 45,
+    "corpusRank": 2430,
+    "frequencySource": "KWJP balanced contemporary Polish corpus frequency list, all subcorpora, lemma, infinitive POS",
+    "frequency": {
+      "absolute": 3879,
+      "ipm": 47.5,
+      "arf": 1815.81
+    },
+    "translations": {
+      "en": [
+        "to sleep"
+      ],
+      "uk": [
+        "спати"
+      ]
+    },
+    "aspect": "imperfective",
+    "forms": {
+      "present": {
+        "ja": "śpię",
+        "ty": "śpisz",
+        "on": "śpi",
+        "ona": "śpi",
+        "my": "śpimy",
+        "wy": "śpicie",
+        "oni": "śpią",
+        "one": "śpią"
+      },
+      "past": {
+        "ja": {
+          "masculine": "spałem",
+          "feminine": "spałam"
+        },
+        "ty": {
+          "masculine": "spałeś",
+          "feminine": "spałaś"
+        },
+        "on": {
+          "masculine": "spał"
+        },
+        "ona": {
+          "feminine": "spała"
+        },
+        "my": {
+          "virile": "spaliśmy",
+          "nonvirile": "spałyśmy"
+        },
+        "wy": {
+          "virile": "spaliście",
+          "nonvirile": "spałyście"
+        },
+        "oni": {
+          "virile": "spali"
+        },
+        "one": {
+          "nonvirile": "spały"
+        }
+      }
+    },
+    "examples": [
+      {
+        "pl": "Uczę się, jak poprawnie spać po polsku.",
+        "en": "I am learning how to sleep correctly in Polish.",
+        "uk": "Я вчуся правильно спати польською."
+      }
+    ],
+    "notes": [],
+    "sourceUrls": [
+      "https://kwjp.pl/lists/en",
+      "https://en.wiktionary.org/wiki/spa%C4%87",
+      "https://pl.wiktionary.org/wiki/spa%C4%87"
+    ],
+    "reviewStatus": "wiktionary-enriched"
+  },
+  {
+    "id": "046-przyjac",
+    "infinitive": "przyjąć",
+    "frequencyRank": 46,
+    "corpusRank": 2443,
+    "frequencySource": "KWJP balanced contemporary Polish corpus frequency list, all subcorpora, lemma, infinitive POS",
+    "frequency": {
+      "absolute": 3851,
+      "ipm": 47.16,
+      "arf": 2169.58
+    },
+    "translations": {
+      "en": [
+        "to receive, to accept",
+        "to admit",
+        "to receive, to take"
+      ],
+      "uk": [
+        "прийняти"
+      ]
+    },
+    "aspect": "perfective",
+    "forms": {
+      "present": {
+        "ja": "przyjmę",
+        "ty": "przyjmiesz",
+        "on": "przyjmie",
+        "ona": "przyjmie",
+        "my": "przyjmiemy",
+        "wy": "przyjmiecie",
+        "oni": "przyjmą",
+        "one": "przyjmą"
+      },
+      "past": {
+        "ja": {
+          "masculine": "przyjąłem",
+          "feminine": "przyjęłam"
+        },
+        "ty": {
+          "masculine": "przyjąłeś",
+          "feminine": "przyjęłaś"
+        },
+        "on": {
+          "masculine": "przyjął"
+        },
+        "ona": {
+          "feminine": "przyjęła"
+        },
+        "my": {
+          "virile": "przyjęliśmy",
+          "nonvirile": "przyjęłyśmy"
+        },
+        "wy": {
+          "virile": "przyjęliście",
+          "nonvirile": "przyjęłyście"
+        },
+        "oni": {
+          "virile": "przyjęli"
+        },
+        "one": {
+          "nonvirile": "przyjęły"
+        }
+      }
+    },
+    "examples": [
+      {
+        "pl": "Uczę się, jak poprawnie przyjąć po polsku.",
+        "en": "I am learning how to receive, to accept correctly in Polish.",
+        "uk": "Я вчуся правильно прийняти польською."
+      }
+    ],
+    "notes": [],
+    "sourceUrls": [
+      "https://kwjp.pl/lists/en",
+      "https://en.wiktionary.org/wiki/przyj%C4%85%C4%87",
+      "https://pl.wiktionary.org/wiki/przyj%C4%85%C4%87"
+    ],
+    "reviewStatus": "wiktionary-enriched"
+  },
+  {
+    "id": "047-pojsc",
+    "infinitive": "pójść",
+    "frequencyRank": 47,
+    "corpusRank": 2487,
+    "frequencySource": "KWJP balanced contemporary Polish corpus frequency list, all subcorpora, lemma, infinitive POS",
+    "frequency": {
+      "absolute": 3787,
+      "ipm": 46.37,
+      "arf": 2096.44
+    },
+    "translations": {
+      "en": [
+        "to go",
+        "to go, to attend",
+        "to go after, to follow"
+      ],
+      "uk": [
+        "піти"
+      ]
+    },
+    "aspect": "perfective",
+    "forms": {
+      "present": {
+        "ja": "pójdę",
+        "ty": "pójdziesz",
+        "on": "pójdzie",
+        "ona": "pójdzie",
+        "my": "pójdziemy",
+        "wy": "pójdziecie",
+        "oni": "pójdą",
+        "one": "pójdą"
+      },
+      "past": {
+        "ja": {
+          "masculine": "poszedłem",
+          "feminine": "poszłam"
+        },
+        "ty": {
+          "masculine": "poszedłeś",
+          "feminine": "poszłaś"
+        },
+        "on": {
+          "masculine": "poszedł"
+        },
+        "ona": {
+          "feminine": "poszła"
+        },
+        "my": {
+          "virile": "poszliśmy",
+          "nonvirile": "poszłyśmy"
+        },
+        "wy": {
+          "virile": "poszliście",
+          "nonvirile": "poszłyście"
+        },
+        "oni": {
+          "virile": "poszli"
+        },
+        "one": {
+          "nonvirile": "poszły"
+        }
+      }
+    },
+    "examples": [
+      {
+        "pl": "Uczę się, jak poprawnie pójść po polsku.",
+        "en": "I am learning how to go correctly in Polish.",
+        "uk": "Я вчуся правильно піти польською."
+      }
+    ],
+    "notes": [],
+    "sourceUrls": [
+      "https://kwjp.pl/lists/en",
+      "https://en.wiktionary.org/wiki/p%C3%B3j%C5%9B%C4%87",
+      "https://pl.wiktionary.org/wiki/p%C3%B3j%C5%9B%C4%87"
+    ],
+    "reviewStatus": "wiktionary-enriched"
+  },
+  {
+    "id": "048-przejsc",
+    "infinitive": "przejść",
+    "frequencyRank": 48,
+    "corpusRank": 2522,
+    "frequencySource": "KWJP balanced contemporary Polish corpus frequency list, all subcorpora, lemma, infinitive POS",
+    "frequency": {
+      "absolute": 3732,
+      "ipm": 45.7,
+      "arf": 2213.74
+    },
+    "translations": {
+      "en": [
+        "to go across, to cross",
+        "to go through, to cross",
+        "to cross, to pass by"
+      ],
+      "uk": [
+        "перейти",
+        "пройти"
+      ]
+    },
+    "aspect": "perfective",
+    "forms": {
+      "present": {
+        "ja": "przejdę",
+        "ty": "przejdziesz",
+        "on": "przejdzie",
+        "ona": "przejdzie",
+        "my": "przejdziemy",
+        "wy": "przejdziecie",
+        "oni": "przejdą",
+        "one": "przejdą"
+      },
+      "past": {
+        "ja": {
+          "masculine": "przeszedłem",
+          "feminine": "przeszłam"
+        },
+        "ty": {
+          "masculine": "przeszedłeś",
+          "feminine": "przeszłaś"
+        },
+        "on": {
+          "masculine": "przeszedł"
+        },
+        "ona": {
+          "feminine": "przeszła"
+        },
+        "my": {
+          "virile": "przeszliśmy",
+          "nonvirile": "przeszłyśmy"
+        },
+        "wy": {
+          "virile": "przeszliście",
+          "nonvirile": "przeszłyście"
+        },
+        "oni": {
+          "virile": "przeszli"
+        },
+        "one": {
+          "nonvirile": "przeszły"
+        }
+      }
+    },
+    "examples": [
+      {
+        "pl": "Uczę się, jak poprawnie przejść po polsku.",
+        "en": "I am learning how to go across, to cross correctly in Polish.",
+        "uk": "Я вчуся правильно перейти польською."
+      }
+    ],
+    "notes": [],
+    "sourceUrls": [
+      "https://kwjp.pl/lists/en",
+      "https://en.wiktionary.org/wiki/przej%C5%9B%C4%87",
+      "https://pl.wiktionary.org/wiki/przej%C5%9B%C4%87"
+    ],
+    "reviewStatus": "wiktionary-enriched"
+  },
+  {
+    "id": "049-wykorzystac",
+    "infinitive": "wykorzystać",
+    "frequencyRank": 49,
+    "corpusRank": 2590,
+    "frequencySource": "KWJP balanced contemporary Polish corpus frequency list, all subcorpora, lemma, infinitive POS",
+    "frequency": {
+      "absolute": 3622,
+      "ipm": 44.35,
+      "arf": 2042.57
+    },
+    "translations": {
+      "en": [
+        "to use, to utilise, to bring to bear",
+        "to exploit, to use, to abuse, to take advantage of"
+      ],
+      "uk": [
+        "використати"
+      ]
+    },
+    "aspect": "perfective",
+    "forms": {
+      "present": {
+        "ja": "wykorzystam",
+        "ty": "wykorzystasz",
+        "on": "wykorzysta",
+        "ona": "wykorzysta",
+        "my": "wykorzystamy",
+        "wy": "wykorzystacie",
+        "oni": "wykorzystają",
+        "one": "wykorzystają"
+      },
+      "past": {
+        "ja": {
+          "masculine": "wykorzystałem",
+          "feminine": "wykorzystałam"
+        },
+        "ty": {
+          "masculine": "wykorzystałeś",
+          "feminine": "wykorzystałaś"
+        },
+        "on": {
+          "masculine": "wykorzystał"
+        },
+        "ona": {
+          "feminine": "wykorzystała"
+        },
+        "my": {
+          "virile": "wykorzystaliśmy",
+          "nonvirile": "wykorzystałyśmy"
+        },
+        "wy": {
+          "virile": "wykorzystaliście",
+          "nonvirile": "wykorzystałyście"
+        },
+        "oni": {
+          "virile": "wykorzystali"
+        },
+        "one": {
+          "nonvirile": "wykorzystały"
+        }
+      }
+    },
+    "examples": [
+      {
+        "pl": "Uczę się, jak poprawnie wykorzystać po polsku.",
+        "en": "I am learning how to use, to utilise, to bring to bear correctly in Polish.",
+        "uk": "Я вчуся правильно використати польською."
+      }
+    ],
+    "notes": [],
+    "sourceUrls": [
+      "https://kwjp.pl/lists/en",
+      "https://en.wiktionary.org/wiki/wykorzysta%C4%87",
+      "https://pl.wiktionary.org/wiki/wykorzysta%C4%87"
+    ],
+    "reviewStatus": "wiktionary-enriched"
+  },
+  {
+    "id": "050-dowiedziec",
+    "infinitive": "dowiedzieć",
+    "frequencyRank": 50,
+    "corpusRank": 2610,
+    "frequencySource": "KWJP balanced contemporary Polish corpus frequency list, all subcorpora, lemma, infinitive POS",
+    "frequency": {
+      "absolute": 3601,
+      "ipm": 44.09,
+      "arf": 1988.42
+    },
+    "translations": {
+      "en": [
+        "to find out, to learn, to discover"
+      ],
+      "uk": [
+        "довідатися",
+        "дізнатися"
+      ]
+    },
+    "aspect": "perfective",
+    "forms": {
+      "present": {
+        "ja": "dowiem",
+        "ty": "dowiesz",
+        "on": "dowie",
+        "ona": "dowie",
+        "my": "dowiemy",
+        "wy": "dowiecie",
+        "oni": "dowiedzą",
+        "one": "dowiedzą"
+      },
+      "past": {
+        "ja": {
+          "masculine": "dowiedziałem",
+          "feminine": "dowiedziałam"
+        },
+        "ty": {
+          "masculine": "dowiedziałeś",
+          "feminine": "dowiedziałaś"
+        },
+        "on": {
+          "masculine": "dowiedział"
+        },
+        "ona": {
+          "feminine": "dowiedziała"
+        },
+        "my": {
+          "virile": "dowiedzieliśmy",
+          "nonvirile": "dowiedziałyśmy"
+        },
+        "wy": {
+          "virile": "dowiedzieliście",
+          "nonvirile": "dowiedziałyście"
+        },
+        "oni": {
+          "virile": "dowiedzieli"
+        },
+        "one": {
+          "nonvirile": "dowiedziały"
+        }
+      }
+    },
+    "examples": [
+      {
+        "pl": "Uczę się, jak poprawnie dowiedzieć po polsku.",
+        "en": "I am learning how to find out, to learn, to discover correctly in Polish.",
+        "uk": "Я вчуся правильно довідатися польською."
+      }
+    ],
+    "notes": [],
+    "sourceUrls": [
+      "https://kwjp.pl/lists/en",
+      "https://en.wiktionary.org/wiki/dowiedzie%C4%87",
+      "https://pl.wiktionary.org/wiki/dowiedzie%C4%87"
+    ],
+    "reviewStatus": "wiktionary-enriched"
+  },
+  {
+    "id": "051-czytac",
+    "infinitive": "czytać",
+    "frequencyRank": 51,
+    "corpusRank": 2632,
+    "frequencySource": "KWJP balanced contemporary Polish corpus frequency list, all subcorpora, lemma, infinitive POS",
+    "frequency": {
+      "absolute": 3577,
+      "ipm": 43.8,
+      "arf": 1855.68
+    },
+    "translations": {
+      "en": [
+        "to read",
+        "to teach",
+        "to study"
+      ],
+      "uk": [
+        "читати"
+      ]
+    },
+    "aspect": "imperfective",
+    "forms": {
+      "present": {
+        "ja": "czytam",
+        "ty": "czytasz",
+        "on": "czyta",
+        "ona": "czyta",
+        "my": "czytamy",
+        "wy": "czytacie",
+        "oni": "czytają",
+        "one": "czytają"
+      },
+      "past": {
+        "ja": {
+          "masculine": "czytałem",
+          "feminine": "czytałam"
+        },
+        "ty": {
+          "masculine": "czytałeś",
+          "feminine": "czytałaś"
+        },
+        "on": {
+          "masculine": "czytał"
+        },
+        "ona": {
+          "feminine": "czytała"
+        },
+        "my": {
+          "virile": "czytaliśmy",
+          "nonvirile": "czytałyśmy"
+        },
+        "wy": {
+          "virile": "czytaliście",
+          "nonvirile": "czytałyście"
+        },
+        "oni": {
+          "virile": "czytali"
+        },
+        "one": {
+          "nonvirile": "czytały"
+        }
+      }
+    },
+    "examples": [
+      {
+        "pl": "Uczę się, jak poprawnie czytać po polsku.",
+        "en": "I am learning how to read correctly in Polish.",
+        "uk": "Я вчуся правильно читати польською."
+      }
+    ],
+    "notes": [],
+    "sourceUrls": [
+      "https://kwjp.pl/lists/en",
+      "https://en.wiktionary.org/wiki/czyta%C4%87",
+      "https://pl.wiktionary.org/wiki/czyta%C4%87"
+    ],
+    "reviewStatus": "wiktionary-enriched"
+  },
+  {
+    "id": "052-wyobrazic",
+    "infinitive": "wyobrazić",
+    "frequencyRank": 52,
+    "corpusRank": 2674,
+    "frequencySource": "KWJP balanced contemporary Polish corpus frequency list, all subcorpora, lemma, infinitive POS",
+    "frequency": {
+      "absolute": 3515,
+      "ipm": 43.04,
+      "arf": 1987.33
+    },
+    "translations": {
+      "en": [
+        "to represent",
+        "to imagine"
+      ],
+      "uk": [
+        "wyobrazić (переклад потребує перевірки)"
+      ]
+    },
+    "aspect": "perfective",
+    "forms": {
+      "present": {
+        "ja": "wyobrażę",
+        "ty": "wyobrazisz",
+        "on": "wyobrazi",
+        "ona": "wyobrazi",
+        "my": "wyobrazimy",
+        "wy": "wyobrazicie",
+        "oni": "wyobrażą",
+        "one": "wyobrażą"
+      },
+      "past": {
+        "ja": {
+          "masculine": "wyobraziłem",
+          "feminine": "wyobraziłam"
+        },
+        "ty": {
+          "masculine": "wyobraziłeś",
+          "feminine": "wyobraziłaś"
+        },
+        "on": {
+          "masculine": "wyobraził"
+        },
+        "ona": {
+          "feminine": "wyobraziła"
+        },
+        "my": {
+          "virile": "wyobraziliśmy",
+          "nonvirile": "wyobraziłyśmy"
+        },
+        "wy": {
+          "virile": "wyobraziliście",
+          "nonvirile": "wyobraziłyście"
+        },
+        "oni": {
+          "virile": "wyobrazili"
+        },
+        "one": {
+          "nonvirile": "wyobraziły"
+        }
+      }
+    },
+    "examples": [
+      {
+        "pl": "Uczę się, jak poprawnie wyobrazić po polsku.",
+        "en": "I am learning how to represent correctly in Polish.",
+        "uk": "Я вчуся правильно wyobrazić (переклад потребує перевірки) польською."
+      }
+    ],
+    "notes": [
+      "Ukrainian translation fallback needs review."
+    ],
+    "sourceUrls": [
+      "https://kwjp.pl/lists/en",
+      "https://en.wiktionary.org/wiki/wyobrazi%C4%87",
+      "https://pl.wiktionary.org/wiki/wyobrazi%C4%87"
+    ],
+    "reviewStatus": "fallback-needs-review"
+  },
+  {
+    "id": "053-porozmawiac",
+    "infinitive": "porozmawiać",
+    "frequencyRank": 53,
+    "corpusRank": 2676,
+    "frequencySource": "KWJP balanced contemporary Polish corpus frequency list, all subcorpora, lemma, infinitive POS",
+    "frequency": {
+      "absolute": 3513,
+      "ipm": 43.02,
+      "arf": 1686.81
+    },
+    "translations": {
+      "en": [
+        "to talk with, to speak, to converse, to have a conversation, to chat,"
+      ],
+      "uk": [
+        "поговорити"
+      ]
+    },
+    "aspect": "perfective",
+    "forms": {
+      "present": {
+        "ja": "porozmawiam",
+        "ty": "porozmawiasz",
+        "on": "porozmawia",
+        "ona": "porozmawia",
+        "my": "porozmawiamy",
+        "wy": "porozmawiacie",
+        "oni": "porozmawiają",
+        "one": "porozmawiają"
+      },
+      "past": {
+        "ja": {
+          "masculine": "porozmawiałem",
+          "feminine": "porozmawiałam"
+        },
+        "ty": {
+          "masculine": "porozmawiałeś",
+          "feminine": "porozmawiałaś"
+        },
+        "on": {
+          "masculine": "porozmawiał"
+        },
+        "ona": {
+          "feminine": "porozmawiała"
+        },
+        "my": {
+          "virile": "porozmawialiśmy",
+          "nonvirile": "porozmawiałyśmy"
+        },
+        "wy": {
+          "virile": "porozmawialiście",
+          "nonvirile": "porozmawiałyście"
+        },
+        "oni": {
+          "virile": "porozmawiali"
+        },
+        "one": {
+          "nonvirile": "porozmawiały"
+        }
+      }
+    },
+    "examples": [
+      {
+        "pl": "Uczę się, jak poprawnie porozmawiać po polsku.",
+        "en": "I am learning how to talk with, to speak, to converse, to have a conversation, to chat, correctly in Polish.",
+        "uk": "Я вчуся правильно поговорити польською."
+      }
+    ],
+    "notes": [],
+    "sourceUrls": [
+      "https://kwjp.pl/lists/en",
+      "https://en.wiktionary.org/wiki/porozmawia%C4%87",
+      "https://pl.wiktionary.org/wiki/porozmawia%C4%87"
+    ],
+    "reviewStatus": "wiktionary-enriched"
+  },
+  {
+    "id": "054-wybrac",
+    "infinitive": "wybrać",
+    "frequencyRank": 54,
+    "corpusRank": 2681,
+    "frequencySource": "KWJP balanced contemporary Polish corpus frequency list, all subcorpora, lemma, infinitive POS",
+    "frequency": {
+      "absolute": 3509,
+      "ipm": 42.97,
+      "arf": 2000.51
+    },
+    "translations": {
+      "en": [
+        "to choose",
+        "to elect",
+        "to scoop out"
+      ],
+      "uk": [
+        "вибрати"
+      ]
+    },
+    "aspect": "perfective",
+    "forms": {
+      "present": {
+        "ja": "wybiorę",
+        "ty": "wybierzesz",
+        "on": "wybierze",
+        "ona": "wybierze",
+        "my": "wybierzemy",
+        "wy": "wybierzecie",
+        "oni": "wybiorą",
+        "one": "wybiorą"
+      },
+      "past": {
+        "ja": {
+          "masculine": "wybrałem",
+          "feminine": "wybrałam"
+        },
+        "ty": {
+          "masculine": "wybrałeś",
+          "feminine": "wybrałaś"
+        },
+        "on": {
+          "masculine": "wybrał"
+        },
+        "ona": {
+          "feminine": "wybrała"
+        },
+        "my": {
+          "virile": "wybraliśmy",
+          "nonvirile": "wybrałyśmy"
+        },
+        "wy": {
+          "virile": "wybraliście",
+          "nonvirile": "wybrałyście"
+        },
+        "oni": {
+          "virile": "wybrali"
+        },
+        "one": {
+          "nonvirile": "wybrały"
+        }
+      }
+    },
+    "examples": [
+      {
+        "pl": "Uczę się, jak poprawnie wybrać po polsku.",
+        "en": "I am learning how to choose correctly in Polish.",
+        "uk": "Я вчуся правильно вибрати польською."
+      }
+    ],
+    "notes": [],
+    "sourceUrls": [
+      "https://kwjp.pl/lists/en",
+      "https://en.wiktionary.org/wiki/wybra%C4%87",
+      "https://pl.wiktionary.org/wiki/wybra%C4%87"
+    ],
+    "reviewStatus": "wiktionary-enriched"
+  },
+  {
+    "id": "055-pozwolic",
+    "infinitive": "pozwolić",
+    "frequencyRank": 55,
+    "corpusRank": 2702,
+    "frequencySource": "KWJP balanced contemporary Polish corpus frequency list, all subcorpora, lemma, infinitive POS",
+    "frequency": {
+      "absolute": 3479,
+      "ipm": 42.6,
+      "arf": 2052.3
+    },
+    "translations": {
+      "en": [
+        "to allow",
+        "to permit",
+        "to allow, to permit"
+      ],
+      "uk": [
+        "pozwolić (переклад потребує перевірки)"
+      ]
+    },
+    "aspect": "perfective",
+    "forms": {
+      "present": {
+        "ja": "pozwolę",
+        "ty": "pozwolisz",
+        "on": "pozwoli",
+        "ona": "pozwoli",
+        "my": "pozwolimy",
+        "wy": "pozwolicie",
+        "oni": "pozwolą",
+        "one": "pozwolą"
+      },
+      "past": {
+        "ja": {
+          "masculine": "pozwoliłem",
+          "feminine": "pozwoliłam"
+        },
+        "ty": {
+          "masculine": "pozwoliłeś",
+          "feminine": "pozwoliłaś"
+        },
+        "on": {
+          "masculine": "pozwolił"
+        },
+        "ona": {
+          "feminine": "pozwoliła"
+        },
+        "my": {
+          "virile": "pozwoliliśmy",
+          "nonvirile": "pozwoliłyśmy"
+        },
+        "wy": {
+          "virile": "pozwoliliście",
+          "nonvirile": "pozwoliłyście"
+        },
+        "oni": {
+          "virile": "pozwolili"
+        },
+        "one": {
+          "nonvirile": "pozwoliły"
+        }
+      }
+    },
+    "examples": [
+      {
+        "pl": "Uczę się, jak poprawnie pozwolić po polsku.",
+        "en": "I am learning how to allow correctly in Polish.",
+        "uk": "Я вчуся правильно pozwolić (переклад потребує перевірки) польською."
+      }
+    ],
+    "notes": [
+      "Ukrainian translation fallback needs review."
+    ],
+    "sourceUrls": [
+      "https://kwjp.pl/lists/en",
+      "https://en.wiktionary.org/wiki/pozwoli%C4%87",
+      "https://pl.wiktionary.org/wiki/pozwoli%C4%87"
+    ],
+    "reviewStatus": "fallback-needs-review"
+  },
+  {
+    "id": "056-odpowiedziec",
+    "infinitive": "odpowiedzieć",
+    "frequencyRank": 56,
+    "corpusRank": 2703,
+    "frequencySource": "KWJP balanced contemporary Polish corpus frequency list, all subcorpora, lemma, infinitive POS",
+    "frequency": {
+      "absolute": 3478,
+      "ipm": 42.59,
+      "arf": 1986.08
+    },
+    "translations": {
+      "en": [
+        "to answer",
+        "to respond",
+        "to answer for"
+      ],
+      "uk": [
+        "відповісти"
+      ]
+    },
+    "aspect": "perfective",
+    "forms": {
+      "present": {
+        "ja": "odpowiem",
+        "ty": "odpowiesz",
+        "on": "odpowie",
+        "ona": "odpowie",
+        "my": "odpowiemy",
+        "wy": "odpowiecie",
+        "oni": "odpowiedzą",
+        "one": "odpowiedzą"
+      },
+      "past": {
+        "ja": {
+          "masculine": "odpowiedziałem",
+          "feminine": "odpowiedziałam"
+        },
+        "ty": {
+          "masculine": "odpowiedziałeś",
+          "feminine": "odpowiedziałaś"
+        },
+        "on": {
+          "masculine": "odpowiedział"
+        },
+        "ona": {
+          "feminine": "odpowiedziała"
+        },
+        "my": {
+          "virile": "odpowiedzieliśmy",
+          "nonvirile": "odpowiedziałyśmy"
+        },
+        "wy": {
+          "virile": "odpowiedzieliście",
+          "nonvirile": "odpowiedziałyście"
+        },
+        "oni": {
+          "virile": "odpowiedzieli"
+        },
+        "one": {
+          "nonvirile": "odpowiedziały"
+        }
+      }
+    },
+    "examples": [
+      {
+        "pl": "Uczę się, jak poprawnie odpowiedzieć po polsku.",
+        "en": "I am learning how to answer correctly in Polish.",
+        "uk": "Я вчуся правильно відповісти польською."
+      }
+    ],
+    "notes": [],
+    "sourceUrls": [
+      "https://kwjp.pl/lists/en",
+      "https://en.wiktionary.org/wiki/odpowiedzie%C4%87",
+      "https://pl.wiktionary.org/wiki/odpowiedzie%C4%87"
+    ],
+    "reviewStatus": "wiktionary-enriched"
+  },
+  {
+    "id": "057-chodzic",
+    "infinitive": "chodzić",
+    "frequencyRank": 57,
+    "corpusRank": 2706,
+    "frequencySource": "KWJP balanced contemporary Polish corpus frequency list, all subcorpora, lemma, infinitive POS",
+    "frequency": {
+      "absolute": 3473,
+      "ipm": 42.53,
+      "arf": 1844.3
+    },
+    "translations": {
+      "en": [
+        "to walk",
+        "to climb",
+        "to go, to frequent"
+      ],
+      "uk": [
+        "ходити"
+      ]
+    },
+    "aspect": "imperfective",
+    "forms": {
+      "present": {
+        "ja": "chodzę",
+        "ty": "chodzisz",
+        "on": "chodzi",
+        "ona": "chodzi",
+        "my": "chodzimy",
+        "wy": "chodzicie",
+        "oni": "chodzą",
+        "one": "chodzą"
+      },
+      "past": {
+        "ja": {
+          "masculine": "chodziłem",
+          "feminine": "chodziłam"
+        },
+        "ty": {
+          "masculine": "chodziłeś",
+          "feminine": "chodziłaś"
+        },
+        "on": {
+          "masculine": "chodził"
+        },
+        "ona": {
+          "feminine": "chodziła"
+        },
+        "my": {
+          "virile": "chodziliśmy",
+          "nonvirile": "chodziłyśmy"
+        },
+        "wy": {
+          "virile": "chodziliście",
+          "nonvirile": "chodziłyście"
+        },
+        "oni": {
+          "virile": "chodzili"
+        },
+        "one": {
+          "nonvirile": "chodziły"
+        }
+      }
+    },
+    "examples": [
+      {
+        "pl": "Uczę się, jak poprawnie chodzić po polsku.",
+        "en": "I am learning how to walk correctly in Polish.",
+        "uk": "Я вчуся правильно ходити польською."
+      }
+    ],
+    "notes": [],
+    "sourceUrls": [
+      "https://kwjp.pl/lists/en",
+      "https://en.wiktionary.org/wiki/chodzi%C4%87",
+      "https://pl.wiktionary.org/wiki/chodzi%C4%87"
+    ],
+    "reviewStatus": "wiktionary-enriched"
+  },
+  {
+    "id": "058-korzystac",
+    "infinitive": "korzystać",
+    "frequencyRank": 58,
+    "corpusRank": 2712,
+    "frequencySource": "KWJP balanced contemporary Polish corpus frequency list, all subcorpora, lemma, infinitive POS",
+    "frequency": {
+      "absolute": 3468,
+      "ipm": 42.47,
+      "arf": 1879.88
+    },
+    "translations": {
+      "en": [
+        "to benefit from",
+        "to take advantage, to use",
+        "to sack, to plunder"
+      ],
+      "uk": [
+        "korzystać (переклад потребує перевірки)"
+      ]
+    },
+    "aspect": "imperfective",
+    "forms": {
+      "present": {
+        "ja": "korzystam",
+        "ty": "korzystasz",
+        "on": "korzysta",
+        "ona": "korzysta",
+        "my": "korzystamy",
+        "wy": "korzystacie",
+        "oni": "korzystają",
+        "one": "korzystają"
+      },
+      "past": {
+        "ja": {
+          "masculine": "korzystałem",
+          "feminine": "korzystałam"
+        },
+        "ty": {
+          "masculine": "korzystałeś",
+          "feminine": "korzystałaś"
+        },
+        "on": {
+          "masculine": "korzystał"
+        },
+        "ona": {
+          "feminine": "korzystała"
+        },
+        "my": {
+          "virile": "korzystaliśmy",
+          "nonvirile": "korzystałyśmy"
+        },
+        "wy": {
+          "virile": "korzystaliście",
+          "nonvirile": "korzystałyście"
+        },
+        "oni": {
+          "virile": "korzystali"
+        },
+        "one": {
+          "nonvirile": "korzystały"
+        }
+      }
+    },
+    "examples": [
+      {
+        "pl": "Uczę się, jak poprawnie korzystać po polsku.",
+        "en": "I am learning how to benefit from correctly in Polish.",
+        "uk": "Я вчуся правильно korzystać (переклад потребує перевірки) польською."
+      }
+    ],
+    "notes": [
+      "Ukrainian translation fallback needs review."
+    ],
+    "sourceUrls": [
+      "https://kwjp.pl/lists/en",
+      "https://en.wiktionary.org/wiki/korzysta%C4%87",
+      "https://pl.wiktionary.org/wiki/korzysta%C4%87"
+    ],
+    "reviewStatus": "fallback-needs-review"
+  },
+  {
+    "id": "059-oddac",
+    "infinitive": "oddać",
+    "frequencyRank": 59,
+    "corpusRank": 2713,
+    "frequencySource": "KWJP balanced contemporary Polish corpus frequency list, all subcorpora, lemma, infinitive POS",
+    "frequency": {
+      "absolute": 3468,
+      "ipm": 42.47,
+      "arf": 2009.62
+    },
+    "translations": {
+      "en": [
+        "to give back, to return",
+        "to give, to send, to put,",
+        "to give, to pass"
+      ],
+      "uk": [
+        "віддати"
+      ]
+    },
+    "aspect": "perfective",
+    "forms": {
+      "present": {
+        "ja": "oddam",
+        "ty": "oddasz",
+        "on": "odda",
+        "ona": "odda",
+        "my": "oddamy",
+        "wy": "oddacie",
+        "oni": "oddadzą",
+        "one": "oddadzą"
+      },
+      "past": {
+        "ja": {
+          "masculine": "oddałem",
+          "feminine": "oddałam"
+        },
+        "ty": {
+          "masculine": "oddałeś",
+          "feminine": "oddałaś"
+        },
+        "on": {
+          "masculine": "oddał"
+        },
+        "ona": {
+          "feminine": "oddała"
+        },
+        "my": {
+          "virile": "oddaliśmy",
+          "nonvirile": "oddałyśmy"
+        },
+        "wy": {
+          "virile": "oddaliście",
+          "nonvirile": "oddałyście"
+        },
+        "oni": {
+          "virile": "oddali"
+        },
+        "one": {
+          "nonvirile": "oddały"
+        }
+      }
+    },
+    "examples": [
+      {
+        "pl": "Uczę się, jak poprawnie oddać po polsku.",
+        "en": "I am learning how to give back, to return correctly in Polish.",
+        "uk": "Я вчуся правильно віддати польською."
+      }
+    ],
+    "notes": [],
+    "sourceUrls": [
+      "https://kwjp.pl/lists/en",
+      "https://en.wiktionary.org/wiki/odda%C4%87",
+      "https://pl.wiktionary.org/wiki/odda%C4%87"
+    ],
+    "reviewStatus": "wiktionary-enriched"
+  },
+  {
+    "id": "060-uwierzyc",
+    "infinitive": "uwierzyć",
+    "frequencyRank": 60,
+    "corpusRank": 2733,
+    "frequencySource": "KWJP balanced contemporary Polish corpus frequency list, all subcorpora, lemma, infinitive POS",
+    "frequency": {
+      "absolute": 3439,
+      "ipm": 42.11,
+      "arf": 1837.13
+    },
+    "translations": {
+      "en": [
+        "to believe"
+      ],
+      "uk": [
+        "uwierzyć (переклад потребує перевірки)"
+      ]
+    },
+    "aspect": "perfective",
+    "forms": {
+      "present": {
+        "ja": "uwierzę",
+        "ty": "uwierzysz",
+        "on": "uwierzy",
+        "ona": "uwierzy",
+        "my": "uwierzymy",
+        "wy": "uwierzycie",
+        "oni": "uwierzą",
+        "one": "uwierzą"
+      },
+      "past": {
+        "ja": {
+          "masculine": "uwierzyłem",
+          "feminine": "uwierzyłam"
+        },
+        "ty": {
+          "masculine": "uwierzyłeś",
+          "feminine": "uwierzyłaś"
+        },
+        "on": {
+          "masculine": "uwierzył"
+        },
+        "ona": {
+          "feminine": "uwierzyła"
+        },
+        "my": {
+          "virile": "uwierzyliśmy",
+          "nonvirile": "uwierzyłyśmy"
+        },
+        "wy": {
+          "virile": "uwierzyliście",
+          "nonvirile": "uwierzyłyście"
+        },
+        "oni": {
+          "virile": "uwierzyli"
+        },
+        "one": {
+          "nonvirile": "uwierzyły"
+        }
+      }
+    },
+    "examples": [
+      {
+        "pl": "Uczę się, jak poprawnie uwierzyć po polsku.",
+        "en": "I am learning how to believe correctly in Polish.",
+        "uk": "Я вчуся правильно uwierzyć (переклад потребує перевірки) польською."
+      }
+    ],
+    "notes": [
+      "Ukrainian translation fallback needs review."
+    ],
+    "sourceUrls": [
+      "https://kwjp.pl/lists/en",
+      "https://en.wiktionary.org/wiki/uwierzy%C4%87",
+      "https://pl.wiktionary.org/wiki/uwierzy%C4%87"
+    ],
+    "reviewStatus": "fallback-needs-review"
+  },
+  {
+    "id": "061-zajac",
+    "infinitive": "zająć",
+    "frequencyRank": 61,
+    "corpusRank": 2746,
+    "frequencySource": "KWJP balanced contemporary Polish corpus frequency list, all subcorpora, lemma, infinitive POS",
+    "frequency": {
+      "absolute": 3422,
+      "ipm": 41.9,
+      "arf": 2004.42
+    },
+    "translations": {
+      "en": [
+        "to occupy, to take up",
+        "to occupy, to take",
+        "to reserve, to book"
+      ],
+      "uk": [
+        "зайняти"
+      ]
+    },
+    "aspect": "perfective",
+    "forms": {
+      "present": {
+        "ja": "zajmę",
+        "ty": "zajmiesz",
+        "on": "zajmie",
+        "ona": "zajmie",
+        "my": "zajmiemy",
+        "wy": "zajmiecie",
+        "oni": "zajmą",
+        "one": "zajmą"
+      },
+      "past": {
+        "ja": {
+          "masculine": "zająłem",
+          "feminine": "zajęłam"
+        },
+        "ty": {
+          "masculine": "zająłeś",
+          "feminine": "zajęłaś"
+        },
+        "on": {
+          "masculine": "zajął"
+        },
+        "ona": {
+          "feminine": "zajęła"
+        },
+        "my": {
+          "virile": "zajęliśmy",
+          "nonvirile": "zajęłyśmy"
+        },
+        "wy": {
+          "virile": "zajęliście",
+          "nonvirile": "zajęłyście"
+        },
+        "oni": {
+          "virile": "zajęli"
+        },
+        "one": {
+          "nonvirile": "zajęły"
+        }
+      }
+    },
+    "examples": [
+      {
+        "pl": "Uczę się, jak poprawnie zająć po polsku.",
+        "en": "I am learning how to occupy, to take up correctly in Polish.",
+        "uk": "Я вчуся правильно зайняти польською."
+      }
+    ],
+    "notes": [],
+    "sourceUrls": [
+      "https://kwjp.pl/lists/en",
+      "https://en.wiktionary.org/wiki/zaj%C4%85%C4%87",
+      "https://pl.wiktionary.org/wiki/zaj%C4%85%C4%87"
+    ],
+    "reviewStatus": "wiktionary-enriched"
+  },
+  {
+    "id": "062-zaplacic",
+    "infinitive": "zapłacić",
+    "frequencyRank": 62,
+    "corpusRank": 2778,
+    "frequencySource": "KWJP balanced contemporary Polish corpus frequency list, all subcorpora, lemma, infinitive POS",
+    "frequency": {
+      "absolute": 3383,
+      "ipm": 41.43,
+      "arf": 1833.94
+    },
+    "translations": {
+      "en": [
+        "to pay"
+      ],
+      "uk": [
+        "заплатити"
+      ]
+    },
+    "aspect": "perfective",
+    "forms": {
+      "present": {
+        "ja": "zapłacę",
+        "ty": "zapłacisz",
+        "on": "zapłaci",
+        "ona": "zapłaci",
+        "my": "zapłacimy",
+        "wy": "zapłacicie",
+        "oni": "zapłacą",
+        "one": "zapłacą"
+      },
+      "past": {
+        "ja": {
+          "masculine": "zapłaciłem",
+          "feminine": "zapłaciłam"
+        },
+        "ty": {
+          "masculine": "zapłaciłeś",
+          "feminine": "zapłaciłaś"
+        },
+        "on": {
+          "masculine": "zapłacił"
+        },
+        "ona": {
+          "feminine": "zapłaciła"
+        },
+        "my": {
+          "virile": "zapłaciliśmy",
+          "nonvirile": "zapłaciłyśmy"
+        },
+        "wy": {
+          "virile": "zapłaciliście",
+          "nonvirile": "zapłaciłyście"
+        },
+        "oni": {
+          "virile": "zapłacili"
+        },
+        "one": {
+          "nonvirile": "zapłaciły"
+        }
+      }
+    },
+    "examples": [
+      {
+        "pl": "Uczę się, jak poprawnie zapłacić po polsku.",
+        "en": "I am learning how to pay correctly in Polish.",
+        "uk": "Я вчуся правильно заплатити польською."
+      }
+    ],
+    "notes": [],
+    "sourceUrls": [
+      "https://kwjp.pl/lists/en",
+      "https://en.wiktionary.org/wiki/zap%C5%82aci%C4%87",
+      "https://pl.wiktionary.org/wiki/zap%C5%82aci%C4%87"
+    ],
+    "reviewStatus": "wiktionary-enriched"
+  },
+  {
+    "id": "063-stworzyc",
+    "infinitive": "stworzyć",
+    "frequencyRank": 63,
+    "corpusRank": 2800,
+    "frequencySource": "KWJP balanced contemporary Polish corpus frequency list, all subcorpora, lemma, infinitive POS",
+    "frequency": {
+      "absolute": 3358,
+      "ipm": 41.12,
+      "arf": 1897.61
+    },
+    "translations": {
+      "en": [
+        "to create, bring to life",
+        "to bring about, conceive",
+        "to generate, produce"
+      ],
+      "uk": [
+        "створити"
+      ]
+    },
+    "aspect": "perfective",
+    "forms": {
+      "present": {
+        "ja": "stworzę",
+        "ty": "stworzysz",
+        "on": "stworzy",
+        "ona": "stworzy",
+        "my": "stworzymy",
+        "wy": "stworzycie",
+        "oni": "stworzą",
+        "one": "stworzą"
+      },
+      "past": {
+        "ja": {
+          "masculine": "stworzyłem",
+          "feminine": "stworzyłam"
+        },
+        "ty": {
+          "masculine": "stworzyłeś",
+          "feminine": "stworzyłaś"
+        },
+        "on": {
+          "masculine": "stworzył"
+        },
+        "ona": {
+          "feminine": "stworzyła"
+        },
+        "my": {
+          "virile": "stworzyliśmy",
+          "nonvirile": "stworzyłyśmy"
+        },
+        "wy": {
+          "virile": "stworzyliście",
+          "nonvirile": "stworzyłyście"
+        },
+        "oni": {
+          "virile": "stworzyli"
+        },
+        "one": {
+          "nonvirile": "stworzyły"
+        }
+      }
+    },
+    "examples": [
+      {
+        "pl": "Uczę się, jak poprawnie stworzyć po polsku.",
+        "en": "I am learning how to create, bring to life correctly in Polish.",
+        "uk": "Я вчуся правильно створити польською."
+      }
+    ],
+    "notes": [],
+    "sourceUrls": [
+      "https://kwjp.pl/lists/en",
+      "https://en.wiktionary.org/wiki/stworzy%C4%87",
+      "https://pl.wiktionary.org/wiki/stworzy%C4%87"
+    ],
+    "reviewStatus": "wiktionary-enriched"
+  },
+  {
+    "id": "064-zwrocic",
+    "infinitive": "zwrócić",
+    "frequencyRank": 64,
+    "corpusRank": 2812,
+    "frequencySource": "KWJP balanced contemporary Polish corpus frequency list, all subcorpora, lemma, infinitive POS",
+    "frequency": {
+      "absolute": 3329,
+      "ipm": 40.76,
+      "arf": 1886.27
+    },
+    "translations": {
+      "en": [
+        "to give back, to return",
+        "to turn in, to pay",
+        "to turn, to shift, to swing"
+      ],
+      "uk": [
+        "zwrócić (переклад потребує перевірки)"
+      ]
+    },
+    "aspect": "perfective",
+    "forms": {
+      "present": {
+        "ja": "zwrócę",
+        "ty": "zwrócisz",
+        "on": "zwróci",
+        "ona": "zwróci",
+        "my": "zwrócimy",
+        "wy": "zwrócicie",
+        "oni": "zwrócą",
+        "one": "zwrócą"
+      },
+      "past": {
+        "ja": {
+          "masculine": "zwróciłem",
+          "feminine": "zwróciłam"
+        },
+        "ty": {
+          "masculine": "zwróciłeś",
+          "feminine": "zwróciłaś"
+        },
+        "on": {
+          "masculine": "zwrócił"
+        },
+        "ona": {
+          "feminine": "zwróciła"
+        },
+        "my": {
+          "virile": "zwróciliśmy",
+          "nonvirile": "zwróciłyśmy"
+        },
+        "wy": {
+          "virile": "zwróciliście",
+          "nonvirile": "zwróciłyście"
+        },
+        "oni": {
+          "virile": "zwrócili"
+        },
+        "one": {
+          "nonvirile": "zwróciły"
+        }
+      }
+    },
+    "examples": [
+      {
+        "pl": "Uczę się, jak poprawnie zwrócić po polsku.",
+        "en": "I am learning how to give back, to return correctly in Polish.",
+        "uk": "Я вчуся правильно zwrócić (переклад потребує перевірки) польською."
+      }
+    ],
+    "notes": [
+      "Ukrainian translation fallback needs review."
+    ],
+    "sourceUrls": [
+      "https://kwjp.pl/lists/en",
+      "https://en.wiktionary.org/wiki/zwr%C3%B3ci%C4%87",
+      "https://pl.wiktionary.org/wiki/zwr%C3%B3ci%C4%87"
+    ],
+    "reviewStatus": "fallback-needs-review"
+  },
+  {
+    "id": "065-grac",
+    "infinitive": "grać",
+    "frequencyRank": 65,
+    "corpusRank": 2826,
+    "frequencySource": "KWJP balanced contemporary Polish corpus frequency list, all subcorpora, lemma, infinitive POS",
+    "frequency": {
+      "absolute": 3311,
+      "ipm": 40.54,
+      "arf": 1658.02
+    },
+    "translations": {
+      "en": [
+        "to play",
+        "to play, to act",
+        "to play, to pretend to be, to act"
+      ],
+      "uk": [
+        "грати"
+      ]
+    },
+    "aspect": "imperfective",
+    "forms": {
+      "present": {
+        "ja": "gram",
+        "ty": "grasz",
+        "on": "gra",
+        "ona": "gra",
+        "my": "gramy",
+        "wy": "gracie",
+        "oni": "grają",
+        "one": "grają"
+      },
+      "past": {
+        "ja": {
+          "masculine": "grałem",
+          "feminine": "grałam"
+        },
+        "ty": {
+          "masculine": "grałeś",
+          "feminine": "grałaś"
+        },
+        "on": {
+          "masculine": "grał"
+        },
+        "ona": {
+          "feminine": "grała"
+        },
+        "my": {
+          "virile": "graliśmy",
+          "nonvirile": "grałyśmy"
+        },
+        "wy": {
+          "virile": "graliście",
+          "nonvirile": "grałyście"
+        },
+        "oni": {
+          "virile": "grali"
+        },
+        "one": {
+          "nonvirile": "grały"
+        }
+      }
+    },
+    "examples": [
+      {
+        "pl": "Uczę się, jak poprawnie grać po polsku.",
+        "en": "I am learning how to play correctly in Polish.",
+        "uk": "Я вчуся правильно грати польською."
+      }
+    ],
+    "notes": [],
+    "sourceUrls": [
+      "https://kwjp.pl/lists/en",
+      "https://en.wiktionary.org/wiki/gra%C4%87",
+      "https://pl.wiktionary.org/wiki/gra%C4%87"
+    ],
+    "reviewStatus": "wiktionary-enriched"
+  },
+  {
+    "id": "066-widziec",
+    "infinitive": "widzieć",
+    "frequencyRank": 66,
+    "corpusRank": 2839,
+    "frequencySource": "KWJP balanced contemporary Polish corpus frequency list, all subcorpora, lemma, infinitive POS",
+    "frequency": {
+      "absolute": 3291,
+      "ipm": 40.3,
+      "arf": 1768.82
+    },
+    "translations": {
+      "en": [
+        "to see",
+        "to see oneself",
+        "to see each other"
+      ],
+      "uk": [
+        "ба́чити"
+      ]
+    },
+    "aspect": "imperfective",
+    "forms": {
+      "present": {
+        "ja": "widzę",
+        "ty": "widzisz",
+        "on": "widzi",
+        "ona": "widzi",
+        "my": "widzimy",
+        "wy": "widzicie",
+        "oni": "widzą",
+        "one": "widzą"
+      },
+      "past": {
+        "ja": {
+          "masculine": "widziałem",
+          "feminine": "widziałam"
+        },
+        "ty": {
+          "masculine": "widziałeś",
+          "feminine": "widziałaś"
+        },
+        "on": {
+          "masculine": "widział"
+        },
+        "ona": {
+          "feminine": "widziała"
+        },
+        "my": {
+          "virile": "widzieliśmy",
+          "nonvirile": "widziałyśmy"
+        },
+        "wy": {
+          "virile": "widzieliście",
+          "nonvirile": "widziałyście"
+        },
+        "oni": {
+          "virile": "widzieli"
+        },
+        "one": {
+          "nonvirile": "widziały"
+        }
+      }
+    },
+    "examples": [
+      {
+        "pl": "Uczę się, jak poprawnie widzieć po polsku.",
+        "en": "I am learning how to see correctly in Polish.",
+        "uk": "Я вчуся правильно ба́чити польською."
+      }
+    ],
+    "notes": [],
+    "sourceUrls": [
+      "https://kwjp.pl/lists/en",
+      "https://en.wiktionary.org/wiki/widzie%C4%87",
+      "https://pl.wiktionary.org/wiki/widzie%C4%87"
+    ],
+    "reviewStatus": "wiktionary-enriched"
+  },
+  {
+    "id": "067-dodac",
+    "infinitive": "dodać",
+    "frequencyRank": 67,
+    "corpusRank": 2866,
+    "frequencySource": "KWJP balanced contemporary Polish corpus frequency list, all subcorpora, lemma, infinitive POS",
+    "frequency": {
+      "absolute": 3247,
+      "ipm": 39.76,
+      "arf": 1868.46
+    },
+    "translations": {
+      "en": [
+        "to add",
+        "to give",
+        "to supply with"
+      ],
+      "uk": [
+        "додати"
+      ]
+    },
+    "aspect": "perfective",
+    "forms": {
+      "present": {
+        "ja": "dodam",
+        "ty": "dodasz",
+        "on": "doda",
+        "ona": "doda",
+        "my": "dodamy",
+        "wy": "dodacie",
+        "oni": "dodadzą",
+        "one": "dodadzą"
+      },
+      "past": {
+        "ja": {
+          "masculine": "dodałem",
+          "feminine": "dodałam"
+        },
+        "ty": {
+          "masculine": "dodałeś",
+          "feminine": "dodałaś"
+        },
+        "on": {
+          "masculine": "dodał"
+        },
+        "ona": {
+          "feminine": "dodała"
+        },
+        "my": {
+          "virile": "dodaliśmy",
+          "nonvirile": "dodałyśmy"
+        },
+        "wy": {
+          "virile": "dodaliście",
+          "nonvirile": "dodałyście"
+        },
+        "oni": {
+          "virile": "dodali"
+        },
+        "one": {
+          "nonvirile": "dodały"
+        }
+      }
+    },
+    "examples": [
+      {
+        "pl": "Uczę się, jak poprawnie dodać po polsku.",
+        "en": "I am learning how to add correctly in Polish.",
+        "uk": "Я вчуся правильно додати польською."
+      }
+    ],
+    "notes": [],
+    "sourceUrls": [
+      "https://kwjp.pl/lists/en",
+      "https://en.wiktionary.org/wiki/doda%C4%87",
+      "https://pl.wiktionary.org/wiki/doda%C4%87"
+    ],
+    "reviewStatus": "wiktionary-enriched"
+  },
+  {
+    "id": "068-zauwazyc",
+    "infinitive": "zauważyć",
+    "frequencyRank": 68,
+    "corpusRank": 2880,
+    "frequencySource": "KWJP balanced contemporary Polish corpus frequency list, all subcorpora, lemma, infinitive POS",
+    "frequency": {
+      "absolute": 3218,
+      "ipm": 39.4,
+      "arf": 1842.91
+    },
+    "translations": {
+      "en": [
+        "to notice",
+        "to note",
+        "to notice each other"
+      ],
+      "uk": [
+        "запримі́тити",
+        "заува́жити"
+      ]
+    },
+    "aspect": "perfective",
+    "forms": {
+      "present": {
+        "ja": "zauważę",
+        "ty": "zauważysz",
+        "on": "zauważy",
+        "ona": "zauważy",
+        "my": "zauważymy",
+        "wy": "zauważycie",
+        "oni": "zauważą",
+        "one": "zauważą"
+      },
+      "past": {
+        "ja": {
+          "masculine": "zauważyłem",
+          "feminine": "zauważyłam"
+        },
+        "ty": {
+          "masculine": "zauważyłeś",
+          "feminine": "zauważyłaś"
+        },
+        "on": {
+          "masculine": "zauważył"
+        },
+        "ona": {
+          "feminine": "zauważyła"
+        },
+        "my": {
+          "virile": "zauważyliśmy",
+          "nonvirile": "zauważyłyśmy"
+        },
+        "wy": {
+          "virile": "zauważyliście",
+          "nonvirile": "zauważyłyście"
+        },
+        "oni": {
+          "virile": "zauważyli"
+        },
+        "one": {
+          "nonvirile": "zauważyły"
+        }
+      }
+    },
+    "examples": [
+      {
+        "pl": "Uczę się, jak poprawnie zauważyć po polsku.",
+        "en": "I am learning how to notice correctly in Polish.",
+        "uk": "Я вчуся правильно запримі́тити польською."
+      }
+    ],
+    "notes": [],
+    "sourceUrls": [
+      "https://kwjp.pl/lists/en",
+      "https://en.wiktionary.org/wiki/zauwa%C5%BCy%C4%87",
+      "https://pl.wiktionary.org/wiki/zauwa%C5%BCy%C4%87"
+    ],
+    "reviewStatus": "wiktionary-enriched"
+  },
+  {
+    "id": "069-skorzystac",
+    "infinitive": "skorzystać",
+    "frequencyRank": 69,
+    "corpusRank": 2893,
+    "frequencySource": "KWJP balanced contemporary Polish corpus frequency list, all subcorpora, lemma, infinitive POS",
+    "frequency": {
+      "absolute": 3204,
+      "ipm": 39.23,
+      "arf": 1712.45
+    },
+    "translations": {
+      "en": [
+        "to benefit, to profit",
+        "to take advantage, to use"
+      ],
+      "uk": [
+        "skorzystać (переклад потребує перевірки)"
+      ]
+    },
+    "aspect": "perfective",
+    "forms": {
+      "present": {
+        "ja": "skorzystam",
+        "ty": "skorzystasz",
+        "on": "skorzysta",
+        "ona": "skorzysta",
+        "my": "skorzystamy",
+        "wy": "skorzystacie",
+        "oni": "skorzystają",
+        "one": "skorzystają"
+      },
+      "past": {
+        "ja": {
+          "masculine": "skorzystałem",
+          "feminine": "skorzystałam"
+        },
+        "ty": {
+          "masculine": "skorzystałeś",
+          "feminine": "skorzystałaś"
+        },
+        "on": {
+          "masculine": "skorzystał"
+        },
+        "ona": {
+          "feminine": "skorzystała"
+        },
+        "my": {
+          "virile": "skorzystaliśmy",
+          "nonvirile": "skorzystałyśmy"
+        },
+        "wy": {
+          "virile": "skorzystaliście",
+          "nonvirile": "skorzystałyście"
+        },
+        "oni": {
+          "virile": "skorzystali"
+        },
+        "one": {
+          "nonvirile": "skorzystały"
+        }
+      }
+    },
+    "examples": [
+      {
+        "pl": "Uczę się, jak poprawnie skorzystać po polsku.",
+        "en": "I am learning how to benefit, to profit correctly in Polish.",
+        "uk": "Я вчуся правильно skorzystać (переклад потребує перевірки) польською."
+      }
+    ],
+    "notes": [
+      "Ukrainian translation fallback needs review."
+    ],
+    "sourceUrls": [
+      "https://kwjp.pl/lists/en",
+      "https://en.wiktionary.org/wiki/skorzysta%C4%87",
+      "https://pl.wiktionary.org/wiki/skorzysta%C4%87"
+    ],
+    "reviewStatus": "fallback-needs-review"
+  },
+  {
+    "id": "070-ogladac",
+    "infinitive": "oglądać",
+    "frequencyRank": 70,
+    "corpusRank": 2897,
+    "frequencySource": "KWJP balanced contemporary Polish corpus frequency list, all subcorpora, lemma, infinitive POS",
+    "frequency": {
+      "absolute": 3197,
+      "ipm": 39.15,
+      "arf": 1824.27
+    },
+    "translations": {
+      "en": [
+        "to watch",
+        "to look back",
+        "to expect"
+      ],
+      "uk": [
+        "oglądać (переклад потребує перевірки)"
+      ]
+    },
+    "aspect": "imperfective",
+    "forms": {
+      "present": {
+        "ja": "oglądam",
+        "ty": "oglądasz",
+        "on": "ogląda",
+        "ona": "ogląda",
+        "my": "oglądamy",
+        "wy": "oglądacie",
+        "oni": "oglądają",
+        "one": "oglądają"
+      },
+      "past": {
+        "ja": {
+          "masculine": "oglądałem",
+          "feminine": "oglądałam"
+        },
+        "ty": {
+          "masculine": "oglądałeś",
+          "feminine": "oglądałaś"
+        },
+        "on": {
+          "masculine": "oglądał"
+        },
+        "ona": {
+          "feminine": "oglądała"
+        },
+        "my": {
+          "virile": "oglądaliśmy",
+          "nonvirile": "oglądałyśmy"
+        },
+        "wy": {
+          "virile": "oglądaliście",
+          "nonvirile": "oglądałyście"
+        },
+        "oni": {
+          "virile": "oglądali"
+        },
+        "one": {
+          "nonvirile": "oglądały"
+        }
+      }
+    },
+    "examples": [
+      {
+        "pl": "Uczę się, jak poprawnie oglądać po polsku.",
+        "en": "I am learning how to watch correctly in Polish.",
+        "uk": "Я вчуся правильно oglądać (переклад потребує перевірки) польською."
+      }
+    ],
+    "notes": [
+      "Ukrainian translation fallback needs review."
+    ],
+    "sourceUrls": [
+      "https://kwjp.pl/lists/en",
+      "https://en.wiktionary.org/wiki/ogl%C4%85da%C4%87",
+      "https://pl.wiktionary.org/wiki/ogl%C4%85da%C4%87"
+    ],
+    "reviewStatus": "fallback-needs-review"
+  },
+  {
+    "id": "071-zabrac",
+    "infinitive": "zabrać",
+    "frequencyRank": 71,
+    "corpusRank": 2906,
+    "frequencySource": "KWJP balanced contemporary Polish corpus frequency list, all subcorpora, lemma, infinitive POS",
+    "frequency": {
+      "absolute": 3185,
+      "ipm": 39,
+      "arf": 1734.46
+    },
+    "translations": {
+      "en": [
+        "to take",
+        "to take, to bring",
+        "to take, to take away"
+      ],
+      "uk": [
+        "забрати"
+      ]
+    },
+    "aspect": "perfective",
+    "forms": {
+      "present": {
+        "ja": "zabiorę",
+        "ty": "zabierzesz",
+        "on": "zabierze",
+        "ona": "zabierze",
+        "my": "zabierzemy",
+        "wy": "zabierzecie",
+        "oni": "zabiorą",
+        "one": "zabiorą"
+      },
+      "past": {
+        "ja": {
+          "masculine": "zabrałem",
+          "feminine": "zabrałam"
+        },
+        "ty": {
+          "masculine": "zabrałeś",
+          "feminine": "zabrałaś"
+        },
+        "on": {
+          "masculine": "zabrał"
+        },
+        "ona": {
+          "feminine": "zabrała"
+        },
+        "my": {
+          "virile": "zabraliśmy",
+          "nonvirile": "zabrałyśmy"
+        },
+        "wy": {
+          "virile": "zabraliście",
+          "nonvirile": "zabrałyście"
+        },
+        "oni": {
+          "virile": "zabrali"
+        },
+        "one": {
+          "nonvirile": "zabrały"
+        }
+      }
+    },
+    "examples": [
+      {
+        "pl": "Uczę się, jak poprawnie zabrać po polsku.",
+        "en": "I am learning how to take correctly in Polish.",
+        "uk": "Я вчуся правильно забрати польською."
+      }
+    ],
+    "notes": [],
+    "sourceUrls": [
+      "https://kwjp.pl/lists/en",
+      "https://en.wiktionary.org/wiki/zabra%C4%87",
+      "https://pl.wiktionary.org/wiki/zabra%C4%87"
+    ],
+    "reviewStatus": "wiktionary-enriched"
+  },
+  {
+    "id": "072-wierzyc",
+    "infinitive": "wierzyć",
+    "frequencyRank": 72,
+    "corpusRank": 2912,
+    "frequencySource": "KWJP balanced contemporary Polish corpus frequency list, all subcorpora, lemma, infinitive POS",
+    "frequency": {
+      "absolute": 3178,
+      "ipm": 38.92,
+      "arf": 1741.28
+    },
+    "translations": {
+      "en": [
+        "to believe",
+        "to believe in",
+        "to confide in"
+      ],
+      "uk": [
+        "вірити"
+      ]
+    },
+    "aspect": "imperfective",
+    "forms": {
+      "present": {
+        "ja": "wierzę",
+        "ty": "wierzysz",
+        "on": "wierzy",
+        "ona": "wierzy",
+        "my": "wierzymy",
+        "wy": "wierzycie",
+        "oni": "wierzą",
+        "one": "wierzą"
+      },
+      "past": {
+        "ja": {
+          "masculine": "wierzyłem",
+          "feminine": "wierzyłam"
+        },
+        "ty": {
+          "masculine": "wierzyłeś",
+          "feminine": "wierzyłaś"
+        },
+        "on": {
+          "masculine": "wierzył"
+        },
+        "ona": {
+          "feminine": "wierzyła"
+        },
+        "my": {
+          "virile": "wierzyliśmy",
+          "nonvirile": "wierzyłyśmy"
+        },
+        "wy": {
+          "virile": "wierzyliście",
+          "nonvirile": "wierzyłyście"
+        },
+        "oni": {
+          "virile": "wierzyli"
+        },
+        "one": {
+          "nonvirile": "wierzyły"
+        }
+      }
+    },
+    "examples": [
+      {
+        "pl": "Uczę się, jak poprawnie wierzyć po polsku.",
+        "en": "I am learning how to believe correctly in Polish.",
+        "uk": "Я вчуся правильно вірити польською."
+      }
+    ],
+    "notes": [],
+    "sourceUrls": [
+      "https://kwjp.pl/lists/en",
+      "https://en.wiktionary.org/wiki/wierzy%C4%87",
+      "https://pl.wiktionary.org/wiki/wierzy%C4%87"
+    ],
+    "reviewStatus": "wiktionary-enriched"
+  },
+  {
+    "id": "073-jechac",
+    "infinitive": "jechać",
+    "frequencyRank": 73,
+    "corpusRank": 2915,
+    "frequencySource": "KWJP balanced contemporary Polish corpus frequency list, all subcorpora, lemma, infinitive POS",
+    "frequency": {
+      "absolute": 3174,
+      "ipm": 38.87,
+      "arf": 1481.38
+    },
+    "translations": {
+      "en": [
+        "to go",
+        "to ride, to coast",
+        "to coast"
+      ],
+      "uk": [
+        "їхати"
+      ]
+    },
+    "aspect": "imperfective",
+    "forms": {
+      "present": {
+        "ja": "jadę",
+        "ty": "jedziesz",
+        "on": "jedzie",
+        "ona": "jedzie",
+        "my": "jedziemy",
+        "wy": "jedziecie",
+        "oni": "jadą",
+        "one": "jadą"
+      },
+      "past": {
+        "ja": {
+          "masculine": "jechałem",
+          "feminine": "jechałam"
+        },
+        "ty": {
+          "masculine": "jechałeś",
+          "feminine": "jechałaś"
+        },
+        "on": {
+          "masculine": "jechał"
+        },
+        "ona": {
+          "feminine": "jechała"
+        },
+        "my": {
+          "virile": "jechaliśmy",
+          "nonvirile": "jechałyśmy"
+        },
+        "wy": {
+          "virile": "jechaliście",
+          "nonvirile": "jechałyście"
+        },
+        "oni": {
+          "virile": "jechali"
+        },
+        "one": {
+          "nonvirile": "jechały"
+        }
+      }
+    },
+    "examples": [
+      {
+        "pl": "Uczę się, jak poprawnie jechać po polsku.",
+        "en": "I am learning how to go correctly in Polish.",
+        "uk": "Я вчуся правильно їхати польською."
+      }
+    ],
+    "notes": [],
+    "sourceUrls": [
+      "https://kwjp.pl/lists/en",
+      "https://en.wiktionary.org/wiki/jecha%C4%87",
+      "https://pl.wiktionary.org/wiki/jecha%C4%87"
+    ],
+    "reviewStatus": "wiktionary-enriched"
+  },
+  {
+    "id": "074-dojsc",
+    "infinitive": "dojść",
+    "frequencyRank": 74,
+    "corpusRank": 2925,
+    "frequencySource": "KWJP balanced contemporary Polish corpus frequency list, all subcorpora, lemma, infinitive POS",
+    "frequency": {
+      "absolute": 3159,
+      "ipm": 38.68,
+      "arf": 1882.51
+    },
+    "translations": {
+      "en": [
+        "to arrive, to reach, to get to",
+        "to reach, to get to",
+        "to get to, to make it to"
+      ],
+      "uk": [
+        "dojść (переклад потребує перевірки)"
+      ]
+    },
+    "aspect": "perfective",
+    "forms": {
+      "present": {
+        "ja": "dojdę",
+        "ty": "dojdziesz",
+        "on": "dojdzie",
+        "ona": "dojdzie",
+        "my": "dojdziemy",
+        "wy": "dojdziecie",
+        "oni": "dojdą",
+        "one": "dojdą"
+      },
+      "past": {
+        "ja": {
+          "masculine": "doszedłem",
+          "feminine": "doszłam"
+        },
+        "ty": {
+          "masculine": "doszedłeś",
+          "feminine": "doszłaś"
+        },
+        "on": {
+          "masculine": "doszedł"
+        },
+        "ona": {
+          "feminine": "doszła"
+        },
+        "my": {
+          "virile": "doszliśmy",
+          "nonvirile": "doszłyśmy"
+        },
+        "wy": {
+          "virile": "doszliście",
+          "nonvirile": "doszłyście"
+        },
+        "oni": {
+          "virile": "doszli"
+        },
+        "one": {
+          "nonvirile": "doszły"
+        }
+      }
+    },
+    "examples": [
+      {
+        "pl": "Uczę się, jak poprawnie dojść po polsku.",
+        "en": "I am learning how to arrive, to reach, to get to correctly in Polish.",
+        "uk": "Я вчуся правильно dojść (переклад потребує перевірки) польською."
+      }
+    ],
+    "notes": [
+      "Ukrainian translation fallback needs review."
+    ],
+    "sourceUrls": [
+      "https://kwjp.pl/lists/en",
+      "https://en.wiktionary.org/wiki/doj%C5%9B%C4%87",
+      "https://pl.wiktionary.org/wiki/doj%C5%9B%C4%87"
+    ],
+    "reviewStatus": "fallback-needs-review"
+  },
+  {
+    "id": "075-wracac",
+    "infinitive": "wracać",
+    "frequencyRank": 75,
+    "corpusRank": 2949,
+    "frequencySource": "KWJP balanced contemporary Polish corpus frequency list, all subcorpora, lemma, infinitive POS",
+    "frequency": {
+      "absolute": 3134,
+      "ipm": 38.38,
+      "arf": 1599.29
+    },
+    "translations": {
+      "en": [
+        "to come back, to go back, to return",
+        "to come back, to go back, to return,",
+        "to return"
+      ],
+      "uk": [
+        "wracać (переклад потребує перевірки)"
+      ]
+    },
+    "aspect": "imperfective",
+    "forms": {
+      "present": {
+        "ja": "wracam",
+        "ty": "wracasz",
+        "on": "wraca",
+        "ona": "wraca",
+        "my": "wracamy",
+        "wy": "wracacie",
+        "oni": "wracają",
+        "one": "wracają"
+      },
+      "past": {
+        "ja": {
+          "masculine": "wracałem",
+          "feminine": "wracałam"
+        },
+        "ty": {
+          "masculine": "wracałeś",
+          "feminine": "wracałaś"
+        },
+        "on": {
+          "masculine": "wracał"
+        },
+        "ona": {
+          "feminine": "wracała"
+        },
+        "my": {
+          "virile": "wracaliśmy",
+          "nonvirile": "wracałyśmy"
+        },
+        "wy": {
+          "virile": "wracaliście",
+          "nonvirile": "wracałyście"
+        },
+        "oni": {
+          "virile": "wracali"
+        },
+        "one": {
+          "nonvirile": "wracały"
+        }
+      }
+    },
+    "examples": [
+      {
+        "pl": "Uczę się, jak poprawnie wracać po polsku.",
+        "en": "I am learning how to come back, to go back, to return correctly in Polish.",
+        "uk": "Я вчуся правильно wracać (переклад потребує перевірки) польською."
+      }
+    ],
+    "notes": [
+      "Ukrainian translation fallback needs review."
+    ],
+    "sourceUrls": [
+      "https://kwjp.pl/lists/en",
+      "https://en.wiktionary.org/wiki/wraca%C4%87",
+      "https://pl.wiktionary.org/wiki/wraca%C4%87"
+    ],
+    "reviewStatus": "fallback-needs-review"
+  },
+  {
+    "id": "076-zdobyc",
+    "infinitive": "zdobyć",
+    "frequencyRank": 76,
+    "corpusRank": 2978,
+    "frequencySource": "KWJP balanced contemporary Polish corpus frequency list, all subcorpora, lemma, infinitive POS",
+    "frequency": {
+      "absolute": 3095,
+      "ipm": 37.9,
+      "arf": 1774.07
+    },
+    "translations": {
+      "en": [
+        "to obtain, to acquire, to gain",
+        "to gain, to acquire, to gain",
+        "to conquer"
+      ],
+      "uk": [
+        "zdobyć (переклад потребує перевірки)"
+      ]
+    },
+    "aspect": "perfective",
+    "forms": {
+      "present": {
+        "ja": "zdobędę",
+        "ty": "zdobędziesz",
+        "on": "zdobędzie",
+        "ona": "zdobędzie",
+        "my": "zdobędziemy",
+        "wy": "zdobędziecie",
+        "oni": "zdobędą",
+        "one": "zdobędą"
+      },
+      "past": {
+        "ja": {
+          "masculine": "zdobyłem",
+          "feminine": "zdobyłam"
+        },
+        "ty": {
+          "masculine": "zdobyłeś",
+          "feminine": "zdobyłaś"
+        },
+        "on": {
+          "masculine": "zdobył"
+        },
+        "ona": {
+          "feminine": "zdobyła"
+        },
+        "my": {
+          "virile": "zdobyliśmy",
+          "nonvirile": "zdobyłyśmy"
+        },
+        "wy": {
+          "virile": "zdobyliście",
+          "nonvirile": "zdobyłyście"
+        },
+        "oni": {
+          "virile": "zdobyli"
+        },
+        "one": {
+          "nonvirile": "zdobyły"
+        }
+      }
+    },
+    "examples": [
+      {
+        "pl": "Uczę się, jak poprawnie zdobyć po polsku.",
+        "en": "I am learning how to obtain, to acquire, to gain correctly in Polish.",
+        "uk": "Я вчуся правильно zdobyć (переклад потребує перевірки) польською."
+      }
+    ],
+    "notes": [
+      "Ukrainian translation fallback needs review."
+    ],
+    "sourceUrls": [
+      "https://kwjp.pl/lists/en",
+      "https://en.wiktionary.org/wiki/zdoby%C4%87",
+      "https://pl.wiktionary.org/wiki/zdoby%C4%87"
+    ],
+    "reviewStatus": "fallback-needs-review"
+  },
+  {
+    "id": "077-zapewnic",
+    "infinitive": "zapewnić",
+    "frequencyRank": 77,
+    "corpusRank": 3008,
+    "frequencySource": "KWJP balanced contemporary Polish corpus frequency list, all subcorpora, lemma, infinitive POS",
+    "frequency": {
+      "absolute": 3063,
+      "ipm": 37.51,
+      "arf": 1706.2
+    },
+    "translations": {
+      "en": [
+        "to assure, to reassure",
+        "to ensure, to provide, to guarantee",
+        "to claim, to assert"
+      ],
+      "uk": [
+        "zapewnić (переклад потребує перевірки)"
+      ]
+    },
+    "aspect": "perfective",
+    "forms": {
+      "present": {
+        "ja": "zapewnię",
+        "ty": "zapewnisz",
+        "on": "zapewni",
+        "ona": "zapewni",
+        "my": "zapewnimy",
+        "wy": "zapewnicie",
+        "oni": "zapewnią",
+        "one": "zapewnią"
+      },
+      "past": {
+        "ja": {
+          "masculine": "zapewniłem",
+          "feminine": "zapewniłam"
+        },
+        "ty": {
+          "masculine": "zapewniłeś",
+          "feminine": "zapewniłaś"
+        },
+        "on": {
+          "masculine": "zapewnił"
+        },
+        "ona": {
+          "feminine": "zapewniła"
+        },
+        "my": {
+          "virile": "zapewniliśmy",
+          "nonvirile": "zapewniłyśmy"
+        },
+        "wy": {
+          "virile": "zapewniliście",
+          "nonvirile": "zapewniłyście"
+        },
+        "oni": {
+          "virile": "zapewnili"
+        },
+        "one": {
+          "nonvirile": "zapewniły"
+        }
+      }
+    },
+    "examples": [
+      {
+        "pl": "Uczę się, jak poprawnie zapewnić po polsku.",
+        "en": "I am learning how to assure, to reassure correctly in Polish.",
+        "uk": "Я вчуся правильно zapewnić (переклад потребує перевірки) польською."
+      }
+    ],
+    "notes": [
+      "Ukrainian translation fallback needs review."
+    ],
+    "sourceUrls": [
+      "https://kwjp.pl/lists/en",
+      "https://en.wiktionary.org/wiki/zapewni%C4%87",
+      "https://pl.wiktionary.org/wiki/zapewni%C4%87"
+    ],
+    "reviewStatus": "fallback-needs-review"
+  },
+  {
+    "id": "078-zapytac",
+    "infinitive": "zapytać",
+    "frequencyRank": 78,
+    "corpusRank": 3011,
+    "frequencySource": "KWJP balanced contemporary Polish corpus frequency list, all subcorpora, lemma, infinitive POS",
+    "frequency": {
+      "absolute": 3061,
+      "ipm": 37.48,
+      "arf": 1646.25
+    },
+    "translations": {
+      "en": [
+        "to ask",
+        "to ask each other",
+        "to ask for"
+      ],
+      "uk": [
+        "запитати",
+        "запитатися"
+      ]
+    },
+    "aspect": "perfective",
+    "forms": {
+      "present": {
+        "ja": "zapytam",
+        "ty": "zapytasz",
+        "on": "zapyta",
+        "ona": "zapyta",
+        "my": "zapytamy",
+        "wy": "zapytacie",
+        "oni": "zapytają",
+        "one": "zapytają"
+      },
+      "past": {
+        "ja": {
+          "masculine": "zapytałem",
+          "feminine": "zapytałam"
+        },
+        "ty": {
+          "masculine": "zapytałeś",
+          "feminine": "zapytałaś"
+        },
+        "on": {
+          "masculine": "zapytał"
+        },
+        "ona": {
+          "feminine": "zapytała"
+        },
+        "my": {
+          "virile": "zapytaliśmy",
+          "nonvirile": "zapytałyśmy"
+        },
+        "wy": {
+          "virile": "zapytaliście",
+          "nonvirile": "zapytałyście"
+        },
+        "oni": {
+          "virile": "zapytali"
+        },
+        "one": {
+          "nonvirile": "zapytały"
+        }
+      }
+    },
+    "examples": [
+      {
+        "pl": "Uczę się, jak poprawnie zapytać po polsku.",
+        "en": "I am learning how to ask correctly in Polish.",
+        "uk": "Я вчуся правильно запитати польською."
+      }
+    ],
+    "notes": [],
+    "sourceUrls": [
+      "https://kwjp.pl/lists/en",
+      "https://en.wiktionary.org/wiki/zapyta%C4%87",
+      "https://pl.wiktionary.org/wiki/zapyta%C4%87"
+    ],
+    "reviewStatus": "wiktionary-enriched"
+  },
+  {
+    "id": "079-zatrzymac",
+    "infinitive": "zatrzymać",
+    "frequencyRank": 79,
+    "corpusRank": 3012,
+    "frequencySource": "KWJP balanced contemporary Polish corpus frequency list, all subcorpora, lemma, infinitive POS",
+    "frequency": {
+      "absolute": 3061,
+      "ipm": 37.48,
+      "arf": 1772.49
+    },
+    "translations": {
+      "en": [
+        "to stop, to staunch",
+        "to detain, to hold back, to keep back",
+        "to arrest"
+      ],
+      "uk": [
+        "зупинити",
+        "затримати",
+        "зупинитися"
+      ]
+    },
+    "aspect": "perfective",
+    "forms": {
+      "present": {
+        "ja": "zatrzymam",
+        "ty": "zatrzymasz",
+        "on": "zatrzyma",
+        "ona": "zatrzyma",
+        "my": "zatrzymamy",
+        "wy": "zatrzymacie",
+        "oni": "zatrzymają",
+        "one": "zatrzymają"
+      },
+      "past": {
+        "ja": {
+          "masculine": "zatrzymałem",
+          "feminine": "zatrzymałam"
+        },
+        "ty": {
+          "masculine": "zatrzymałeś",
+          "feminine": "zatrzymałaś"
+        },
+        "on": {
+          "masculine": "zatrzymał"
+        },
+        "ona": {
+          "feminine": "zatrzymała"
+        },
+        "my": {
+          "virile": "zatrzymaliśmy",
+          "nonvirile": "zatrzymałyśmy"
+        },
+        "wy": {
+          "virile": "zatrzymaliście",
+          "nonvirile": "zatrzymałyście"
+        },
+        "oni": {
+          "virile": "zatrzymali"
+        },
+        "one": {
+          "nonvirile": "zatrzymały"
+        }
+      }
+    },
+    "examples": [
+      {
+        "pl": "Uczę się, jak poprawnie zatrzymać po polsku.",
+        "en": "I am learning how to stop, to staunch correctly in Polish.",
+        "uk": "Я вчуся правильно зупинити польською."
+      }
+    ],
+    "notes": [],
+    "sourceUrls": [
+      "https://kwjp.pl/lists/en",
+      "https://en.wiktionary.org/wiki/zatrzyma%C4%87",
+      "https://pl.wiktionary.org/wiki/zatrzyma%C4%87"
+    ],
+    "reviewStatus": "wiktionary-enriched"
+  },
+  {
+    "id": "080-sluchac",
+    "infinitive": "słuchać",
+    "frequencyRank": 80,
+    "corpusRank": 3024,
+    "frequencySource": "KWJP balanced contemporary Polish corpus frequency list, all subcorpora, lemma, infinitive POS",
+    "frequency": {
+      "absolute": 3049,
+      "ipm": 37.34,
+      "arf": 1652.56
+    },
+    "translations": {
+      "en": [
+        "to listen",
+        "to listen, to obey",
+        "to be heard"
+      ],
+      "uk": [
+        "слухати"
+      ]
+    },
+    "aspect": "imperfective",
+    "forms": {
+      "present": {
+        "ja": "słucham",
+        "ty": "słuchasz",
+        "on": "słucha",
+        "ona": "słucha",
+        "my": "słuchamy",
+        "wy": "słuchacie",
+        "oni": "słuchają",
+        "one": "słuchają"
+      },
+      "past": {
+        "ja": {
+          "masculine": "słuchałem",
+          "feminine": "słuchałam"
+        },
+        "ty": {
+          "masculine": "słuchałeś",
+          "feminine": "słuchałaś"
+        },
+        "on": {
+          "masculine": "słuchał"
+        },
+        "ona": {
+          "feminine": "słuchała"
+        },
+        "my": {
+          "virile": "słuchaliśmy",
+          "nonvirile": "słuchałyśmy"
+        },
+        "wy": {
+          "virile": "słuchaliście",
+          "nonvirile": "słuchałyście"
+        },
+        "oni": {
+          "virile": "słuchali"
+        },
+        "one": {
+          "nonvirile": "słuchały"
+        }
+      }
+    },
+    "examples": [
+      {
+        "pl": "Uczę się, jak poprawnie słuchać po polsku.",
+        "en": "I am learning how to listen correctly in Polish.",
+        "uk": "Я вчуся правильно слухати польською."
+      }
+    ],
+    "notes": [],
+    "sourceUrls": [
+      "https://kwjp.pl/lists/en",
+      "https://en.wiktionary.org/wiki/s%C5%82ucha%C4%87",
+      "https://pl.wiktionary.org/wiki/s%C5%82ucha%C4%87"
+    ],
+    "reviewStatus": "wiktionary-enriched"
+  },
+  {
+    "id": "081-uzyskac",
+    "infinitive": "uzyskać",
+    "frequencyRank": 81,
+    "corpusRank": 3039,
+    "frequencySource": "KWJP balanced contemporary Polish corpus frequency list, all subcorpora, lemma, infinitive POS",
+    "frequency": {
+      "absolute": 3032,
+      "ipm": 37.13,
+      "arf": 1621.79
+    },
+    "translations": {
+      "en": [
+        "to obtain, to achieve, to attain, to gain"
+      ],
+      "uk": [
+        "uzyskać (переклад потребує перевірки)"
+      ]
+    },
+    "aspect": "perfective",
+    "forms": {
+      "present": {
+        "ja": "uzyskam",
+        "ty": "uzyskasz",
+        "on": "uzyska",
+        "ona": "uzyska",
+        "my": "uzyskamy",
+        "wy": "uzyskacie",
+        "oni": "uzyskają",
+        "one": "uzyskają"
+      },
+      "past": {
+        "ja": {
+          "masculine": "uzyskałem",
+          "feminine": "uzyskałam"
+        },
+        "ty": {
+          "masculine": "uzyskałeś",
+          "feminine": "uzyskałaś"
+        },
+        "on": {
+          "masculine": "uzyskał"
+        },
+        "ona": {
+          "feminine": "uzyskała"
+        },
+        "my": {
+          "virile": "uzyskaliśmy",
+          "nonvirile": "uzyskałyśmy"
+        },
+        "wy": {
+          "virile": "uzyskaliście",
+          "nonvirile": "uzyskałyście"
+        },
+        "oni": {
+          "virile": "uzyskali"
+        },
+        "one": {
+          "nonvirile": "uzyskały"
+        }
+      }
+    },
+    "examples": [
+      {
+        "pl": "Uczę się, jak poprawnie uzyskać po polsku.",
+        "en": "I am learning how to obtain, to achieve, to attain, to gain correctly in Polish.",
+        "uk": "Я вчуся правильно uzyskać (переклад потребує перевірки) польською."
+      }
+    ],
+    "notes": [
+      "Ukrainian translation fallback needs review."
+    ],
+    "sourceUrls": [
+      "https://kwjp.pl/lists/en",
+      "https://en.wiktionary.org/wiki/uzyska%C4%87",
+      "https://pl.wiktionary.org/wiki/uzyska%C4%87"
+    ],
+    "reviewStatus": "fallback-needs-review"
+  },
+  {
+    "id": "082-przypomniec",
+    "infinitive": "przypomnieć",
+    "frequencyRank": 82,
+    "corpusRank": 3054,
+    "frequencySource": "KWJP balanced contemporary Polish corpus frequency list, all subcorpora, lemma, infinitive POS",
+    "frequency": {
+      "absolute": 3019,
+      "ipm": 36.97,
+      "arf": 1744.78
+    },
+    "translations": {
+      "en": [
+        "to remind",
+        "to be remembered",
+        "to remind oneself, to remember, to recall"
+      ],
+      "uk": [
+        "przypomnieć (переклад потребує перевірки)"
+      ]
+    },
+    "aspect": "perfective",
+    "forms": {
+      "present": {
+        "ja": "przypomnę",
+        "ty": "przypomnisz",
+        "on": "przypomni",
+        "ona": "przypomni",
+        "my": "przypomnimy",
+        "wy": "przypomnicie",
+        "oni": "przypomną",
+        "one": "przypomną"
+      },
+      "past": {
+        "ja": {
+          "masculine": "przypomniałem",
+          "feminine": "przypomniałam"
+        },
+        "ty": {
+          "masculine": "przypomniałeś",
+          "feminine": "przypomniałaś"
+        },
+        "on": {
+          "masculine": "przypomniał"
+        },
+        "ona": {
+          "feminine": "przypomniała"
+        },
+        "my": {
+          "virile": "przypomnieliśmy",
+          "nonvirile": "przypomniałyśmy"
+        },
+        "wy": {
+          "virile": "przypomnieliście",
+          "nonvirile": "przypomniałyście"
+        },
+        "oni": {
+          "virile": "przypomnieli"
+        },
+        "one": {
+          "nonvirile": "przypomniały"
+        }
+      }
+    },
+    "examples": [
+      {
+        "pl": "Uczę się, jak poprawnie przypomnieć po polsku.",
+        "en": "I am learning how to remind correctly in Polish.",
+        "uk": "Я вчуся правильно przypomnieć (переклад потребує перевірки) польською."
+      }
+    ],
+    "notes": [
+      "Ukrainian translation fallback needs review."
+    ],
+    "sourceUrls": [
+      "https://kwjp.pl/lists/en",
+      "https://en.wiktionary.org/wiki/przypomnie%C4%87",
+      "https://pl.wiktionary.org/wiki/przypomnie%C4%87"
+    ],
+    "reviewStatus": "fallback-needs-review"
+  },
+  {
+    "id": "083-zabic",
+    "infinitive": "zabić",
+    "frequencyRank": 83,
+    "corpusRank": 3061,
+    "frequencySource": "KWJP balanced contemporary Polish corpus frequency list, all subcorpora, lemma, infinitive POS",
+    "frequency": {
+      "absolute": 3010,
+      "ipm": 36.86,
+      "arf": 1374.31
+    },
+    "translations": {
+      "en": [
+        "to kill",
+        "to obliterate, to exterminate",
+        "to nail shut, to board up"
+      ],
+      "uk": [
+        "zabić (переклад потребує перевірки)"
+      ]
+    },
+    "aspect": "perfective",
+    "forms": {
+      "present": {
+        "ja": "zabiję",
+        "ty": "zabijesz",
+        "on": "zabije",
+        "ona": "zabije",
+        "my": "zabijemy",
+        "wy": "zabijecie",
+        "oni": "zabiją",
+        "one": "zabiją"
+      },
+      "past": {
+        "ja": {
+          "masculine": "zabiłem",
+          "feminine": "zabiłam"
+        },
+        "ty": {
+          "masculine": "zabiłeś",
+          "feminine": "zabiłaś"
+        },
+        "on": {
+          "masculine": "zabił"
+        },
+        "ona": {
+          "feminine": "zabiła"
+        },
+        "my": {
+          "virile": "zabiliśmy",
+          "nonvirile": "zabiłyśmy"
+        },
+        "wy": {
+          "virile": "zabiliście",
+          "nonvirile": "zabiłyście"
+        },
+        "oni": {
+          "virile": "zabili"
+        },
+        "one": {
+          "nonvirile": "zabiły"
+        }
+      }
+    },
+    "examples": [
+      {
+        "pl": "Uczę się, jak poprawnie zabić po polsku.",
+        "en": "I am learning how to kill correctly in Polish.",
+        "uk": "Я вчуся правильно zabić (переклад потребує перевірки) польською."
+      }
+    ],
+    "notes": [
+      "Ukrainian translation fallback needs review."
+    ],
+    "sourceUrls": [
+      "https://kwjp.pl/lists/en",
+      "https://en.wiktionary.org/wiki/zabi%C4%87",
+      "https://pl.wiktionary.org/wiki/zabi%C4%87"
+    ],
+    "reviewStatus": "fallback-needs-review"
+  },
+  {
+    "id": "084-okazac",
+    "infinitive": "okazać",
+    "frequencyRank": 84,
+    "corpusRank": 3062,
+    "frequencySource": "KWJP balanced contemporary Polish corpus frequency list, all subcorpora, lemma, infinitive POS",
+    "frequency": {
+      "absolute": 3009,
+      "ipm": 36.85,
+      "arf": 1710.49
+    },
+    "translations": {
+      "en": [
+        "to show",
+        "to give access",
+        "to turn out"
+      ],
+      "uk": [
+        "okazać (переклад потребує перевірки)"
+      ]
+    },
+    "aspect": "perfective",
+    "forms": {
+      "present": {
+        "ja": "okażę",
+        "ty": "okażesz",
+        "on": "okaże",
+        "ona": "okaże",
+        "my": "okażemy",
+        "wy": "okażecie",
+        "oni": "okażą",
+        "one": "okażą"
+      },
+      "past": {
+        "ja": {
+          "masculine": "okazałem",
+          "feminine": "okazałam"
+        },
+        "ty": {
+          "masculine": "okazałeś",
+          "feminine": "okazałaś"
+        },
+        "on": {
+          "masculine": "okazał"
+        },
+        "ona": {
+          "feminine": "okazała"
+        },
+        "my": {
+          "virile": "okazaliśmy",
+          "nonvirile": "okazałyśmy"
+        },
+        "wy": {
+          "virile": "okazaliście",
+          "nonvirile": "okazałyście"
+        },
+        "oni": {
+          "virile": "okazali"
+        },
+        "one": {
+          "nonvirile": "okazały"
+        }
+      }
+    },
+    "examples": [
+      {
+        "pl": "Uczę się, jak poprawnie okazać po polsku.",
+        "en": "I am learning how to show correctly in Polish.",
+        "uk": "Я вчуся правильно okazać (переклад потребує перевірки) польською."
+      }
+    ],
+    "notes": [
+      "Ukrainian translation fallback needs review."
+    ],
+    "sourceUrls": [
+      "https://kwjp.pl/lists/en",
+      "https://en.wiktionary.org/wiki/okaza%C4%87",
+      "https://pl.wiktionary.org/wiki/okaza%C4%87"
+    ],
+    "reviewStatus": "fallback-needs-review"
+  },
+  {
+    "id": "085-jesc",
+    "infinitive": "jeść",
+    "frequencyRank": 85,
+    "corpusRank": 3068,
+    "frequencySource": "KWJP balanced contemporary Polish corpus frequency list, all subcorpora, lemma, infinitive POS",
+    "frequency": {
+      "absolute": 3003,
+      "ipm": 36.77,
+      "arf": 1438.92
+    },
+    "translations": {
+      "en": [
+        "to eat",
+        "to bite, to sting",
+        "to eat away"
+      ],
+      "uk": [
+        "їсти"
+      ]
+    },
+    "aspect": "imperfective",
+    "forms": {
+      "present": {
+        "ja": "jem",
+        "ty": "jesz",
+        "on": "je",
+        "ona": "je",
+        "my": "jemy",
+        "wy": "jecie",
+        "oni": "jedzą",
+        "one": "jedzą"
+      },
+      "past": {
+        "ja": {
+          "masculine": "jadłem",
+          "feminine": "jadłam"
+        },
+        "ty": {
+          "masculine": "jadłeś",
+          "feminine": "jadłaś"
+        },
+        "on": {
+          "masculine": "jadł"
+        },
+        "ona": {
+          "feminine": "jadła"
+        },
+        "my": {
+          "virile": "jedliśmy",
+          "nonvirile": "jadłyśmy"
+        },
+        "wy": {
+          "virile": "jedliście",
+          "nonvirile": "jadłyście"
+        },
+        "oni": {
+          "virile": "jedli"
+        },
+        "one": {
+          "nonvirile": "jadły"
+        }
+      }
+    },
+    "examples": [
+      {
+        "pl": "Uczę się, jak poprawnie jeść po polsku.",
+        "en": "I am learning how to eat correctly in Polish.",
+        "uk": "Я вчуся правильно їсти польською."
+      }
+    ],
+    "notes": [],
+    "sourceUrls": [
+      "https://kwjp.pl/lists/en",
+      "https://en.wiktionary.org/wiki/je%C5%9B%C4%87",
+      "https://pl.wiktionary.org/wiki/je%C5%9B%C4%87"
+    ],
+    "reviewStatus": "wiktionary-enriched"
+  },
+  {
+    "id": "086-zapomniec",
+    "infinitive": "zapomnieć",
+    "frequencyRank": 86,
+    "corpusRank": 3071,
+    "frequencySource": "KWJP balanced contemporary Polish corpus frequency list, all subcorpora, lemma, infinitive POS",
+    "frequency": {
+      "absolute": 2997,
+      "ipm": 36.7,
+      "arf": 1680.79
+    },
+    "translations": {
+      "en": [
+        "to forget",
+        "to forget,",
+        "to forget each other"
+      ],
+      "uk": [
+        "забути"
+      ]
+    },
+    "aspect": "perfective",
+    "forms": {
+      "present": {
+        "ja": "zapomnę",
+        "ty": "zapomnisz",
+        "on": "zapomni",
+        "ona": "zapomni",
+        "my": "zapomnimy",
+        "wy": "zapomnicie",
+        "oni": "zapomną",
+        "one": "zapomną"
+      },
+      "past": {
+        "ja": {
+          "masculine": "zapomniałem",
+          "feminine": "zapomniałam"
+        },
+        "ty": {
+          "masculine": "zapomniałeś",
+          "feminine": "zapomniałaś"
+        },
+        "on": {
+          "masculine": "zapomniał"
+        },
+        "ona": {
+          "feminine": "zapomniała"
+        },
+        "my": {
+          "virile": "zapomnieliśmy",
+          "nonvirile": "zapomniałyśmy"
+        },
+        "wy": {
+          "virile": "zapomnieliście",
+          "nonvirile": "zapomniałyście"
+        },
+        "oni": {
+          "virile": "zapomnieli"
+        },
+        "one": {
+          "nonvirile": "zapomniały"
+        }
+      }
+    },
+    "examples": [
+      {
+        "pl": "Uczę się, jak poprawnie zapomnieć po polsku.",
+        "en": "I am learning how to forget correctly in Polish.",
+        "uk": "Я вчуся правильно забути польською."
+      }
+    ],
+    "notes": [],
+    "sourceUrls": [
+      "https://kwjp.pl/lists/en",
+      "https://en.wiktionary.org/wiki/zapomnie%C4%87",
+      "https://pl.wiktionary.org/wiki/zapomnie%C4%87"
+    ],
+    "reviewStatus": "wiktionary-enriched"
+  },
+  {
+    "id": "087-utrzymac",
+    "infinitive": "utrzymać",
+    "frequencyRank": 87,
+    "corpusRank": 3083,
+    "frequencySource": "KWJP balanced contemporary Polish corpus frequency list, all subcorpora, lemma, infinitive POS",
+    "frequency": {
+      "absolute": 2983,
+      "ipm": 36.53,
+      "arf": 1757.51
+    },
+    "translations": {
+      "en": [
+        "to hold up",
+        "to keep, to maintain",
+        "to keep"
+      ],
+      "uk": [
+        "utrzymać (переклад потребує перевірки)"
+      ]
+    },
+    "aspect": "perfective",
+    "forms": {
+      "present": {
+        "ja": "utrzymam",
+        "ty": "utrzymasz",
+        "on": "utrzyma",
+        "ona": "utrzyma",
+        "my": "utrzymamy",
+        "wy": "utrzymacie",
+        "oni": "utrzymają",
+        "one": "utrzymają"
+      },
+      "past": {
+        "ja": {
+          "masculine": "utrzymałem",
+          "feminine": "utrzymałam"
+        },
+        "ty": {
+          "masculine": "utrzymałeś",
+          "feminine": "utrzymałaś"
+        },
+        "on": {
+          "masculine": "utrzymał"
+        },
+        "ona": {
+          "feminine": "utrzymała"
+        },
+        "my": {
+          "virile": "utrzymaliśmy",
+          "nonvirile": "utrzymałyśmy"
+        },
+        "wy": {
+          "virile": "utrzymaliście",
+          "nonvirile": "utrzymałyście"
+        },
+        "oni": {
+          "virile": "utrzymali"
+        },
+        "one": {
+          "nonvirile": "utrzymały"
+        }
+      }
+    },
+    "examples": [
+      {
+        "pl": "Uczę się, jak poprawnie utrzymać po polsku.",
+        "en": "I am learning how to hold up correctly in Polish.",
+        "uk": "Я вчуся правильно utrzymać (переклад потребує перевірки) польською."
+      }
+    ],
+    "notes": [
+      "Ukrainian translation fallback needs review."
+    ],
+    "sourceUrls": [
+      "https://kwjp.pl/lists/en",
+      "https://en.wiktionary.org/wiki/utrzyma%C4%87",
+      "https://pl.wiktionary.org/wiki/utrzyma%C4%87"
+    ],
+    "reviewStatus": "fallback-needs-review"
+  },
+  {
+    "id": "088-napisac",
+    "infinitive": "napisać",
+    "frequencyRank": 88,
+    "corpusRank": 3108,
+    "frequencySource": "KWJP balanced contemporary Polish corpus frequency list, all subcorpora, lemma, infinitive POS",
+    "frequency": {
+      "absolute": 2959,
+      "ipm": 36.23,
+      "arf": 1550.92
+    },
+    "translations": {
+      "en": [
+        "to write",
+        "to write a lot and for a long time"
+      ],
+      "uk": [
+        "написа́ти"
+      ]
+    },
+    "aspect": "perfective",
+    "forms": {
+      "present": {
+        "ja": "napiszę",
+        "ty": "napiszesz",
+        "on": "napisze",
+        "ona": "napisze",
+        "my": "napiszemy",
+        "wy": "napiszecie",
+        "oni": "napiszą",
+        "one": "napiszą"
+      },
+      "past": {
+        "ja": {
+          "masculine": "napisałem",
+          "feminine": "napisałam"
+        },
+        "ty": {
+          "masculine": "napisałeś",
+          "feminine": "napisałaś"
+        },
+        "on": {
+          "masculine": "napisał"
+        },
+        "ona": {
+          "feminine": "napisała"
+        },
+        "my": {
+          "virile": "napisaliśmy",
+          "nonvirile": "napisałyśmy"
+        },
+        "wy": {
+          "virile": "napisaliście",
+          "nonvirile": "napisałyście"
+        },
+        "oni": {
+          "virile": "napisali"
+        },
+        "one": {
+          "nonvirile": "napisały"
+        }
+      }
+    },
+    "examples": [
+      {
+        "pl": "Uczę się, jak poprawnie napisać po polsku.",
+        "en": "I am learning how to write correctly in Polish.",
+        "uk": "Я вчуся правильно написа́ти польською."
+      }
+    ],
+    "notes": [],
+    "sourceUrls": [
+      "https://kwjp.pl/lists/en",
+      "https://en.wiktionary.org/wiki/napisa%C4%87",
+      "https://pl.wiktionary.org/wiki/napisa%C4%87"
+    ],
+    "reviewStatus": "wiktionary-enriched"
+  },
+  {
+    "id": "089-znac",
+    "infinitive": "znać",
+    "frequencyRank": 89,
+    "corpusRank": 3115,
+    "frequencySource": "KWJP balanced contemporary Polish corpus frequency list, all subcorpora, lemma, infinitive POS",
+    "frequency": {
+      "absolute": 2954,
+      "ipm": 36.17,
+      "arf": 1680.62
+    },
+    "translations": {
+      "en": [
+        "to know",
+        "to know somebody/something",
+        "to consider as, to take for"
+      ],
+      "uk": [
+        "знати"
+      ]
+    },
+    "aspect": "imperfective",
+    "forms": {
+      "present": {
+        "ja": "znam",
+        "ty": "znasz",
+        "on": "zna",
+        "ona": "zna",
+        "my": "znamy",
+        "wy": "znacie",
+        "oni": "znają",
+        "one": "znają"
+      },
+      "past": {
+        "ja": {
+          "masculine": "znałem",
+          "feminine": "znałam"
+        },
+        "ty": {
+          "masculine": "znałeś",
+          "feminine": "znałaś"
+        },
+        "on": {
+          "masculine": "znał"
+        },
+        "ona": {
+          "feminine": "znała"
+        },
+        "my": {
+          "virile": "znaliśmy",
+          "nonvirile": "znałyśmy"
+        },
+        "wy": {
+          "virile": "znaliście",
+          "nonvirile": "znałyście"
+        },
+        "oni": {
+          "virile": "znali"
+        },
+        "one": {
+          "nonvirile": "znały"
+        }
+      }
+    },
+    "examples": [
+      {
+        "pl": "Uczę się, jak poprawnie znać po polsku.",
+        "en": "I am learning how to know correctly in Polish.",
+        "uk": "Я вчуся правильно знати польською."
+      }
+    ],
+    "notes": [],
+    "sourceUrls": [
+      "https://kwjp.pl/lists/en",
+      "https://en.wiktionary.org/wiki/zna%C4%87",
+      "https://pl.wiktionary.org/wiki/zna%C4%87"
+    ],
+    "reviewStatus": "wiktionary-enriched"
+  },
+  {
+    "id": "090-odnalezc",
+    "infinitive": "odnaleźć",
+    "frequencyRank": 90,
+    "corpusRank": 3117,
+    "frequencySource": "KWJP balanced contemporary Polish corpus frequency list, all subcorpora, lemma, infinitive POS",
+    "frequency": {
+      "absolute": 2951,
+      "ipm": 36.14,
+      "arf": 1626.57
+    },
+    "translations": {
+      "en": [
+        "to discover, to rediscover, to track down, to trace",
+        "to find, to acquire",
+        "to be discovered, to be found"
+      ],
+      "uk": [
+        "odnaleźć (переклад потребує перевірки)"
+      ]
+    },
+    "aspect": "perfective",
+    "forms": {
+      "present": {
+        "ja": "odnajdę",
+        "ty": "odnajdziesz",
+        "on": "odnajdzie",
+        "ona": "odnajdzie",
+        "my": "odnajdziemy",
+        "wy": "odnajdziecie",
+        "oni": "odnajdą",
+        "one": "odnajdą"
+      },
+      "past": {
+        "ja": {
+          "masculine": "odnalazłem",
+          "feminine": "odnalazłam"
+        },
+        "ty": {
+          "masculine": "odnalazłeś",
+          "feminine": "odnalazłaś"
+        },
+        "on": {
+          "masculine": "odnalazł"
+        },
+        "ona": {
+          "feminine": "odnalazła"
+        },
+        "my": {
+          "virile": "odnaleźliśmy",
+          "nonvirile": "odnalazłyśmy"
+        },
+        "wy": {
+          "virile": "odnaleźliście",
+          "nonvirile": "odnalazłyście"
+        },
+        "oni": {
+          "virile": "odnaleźli"
+        },
+        "one": {
+          "nonvirile": "odnalazły"
+        }
+      }
+    },
+    "examples": [
+      {
+        "pl": "Uczę się, jak poprawnie odnaleźć po polsku.",
+        "en": "I am learning how to discover, to rediscover, to track down, to trace correctly in Polish.",
+        "uk": "Я вчуся правильно odnaleźć (переклад потребує перевірки) польською."
+      }
+    ],
+    "notes": [
+      "Ukrainian translation fallback needs review."
+    ],
+    "sourceUrls": [
+      "https://kwjp.pl/lists/en",
+      "https://en.wiktionary.org/wiki/odnale%C5%BA%C4%87",
+      "https://pl.wiktionary.org/wiki/odnale%C5%BA%C4%87"
+    ],
+    "reviewStatus": "fallback-needs-review"
+  },
+  {
+    "id": "091-uniknac",
+    "infinitive": "uniknąć",
+    "frequencyRank": 91,
+    "corpusRank": 3135,
+    "frequencySource": "KWJP balanced contemporary Polish corpus frequency list, all subcorpora, lemma, infinitive POS",
+    "frequency": {
+      "absolute": 2930,
+      "ipm": 35.88,
+      "arf": 1693.35
+    },
+    "translations": {
+      "en": [
+        "to avoid, to evade, to dodge"
+      ],
+      "uk": [
+        "uniknąć (переклад потребує перевірки)"
+      ]
+    },
+    "aspect": "perfective",
+    "forms": {
+      "present": {
+        "ja": "uniknę",
+        "ty": "unikniesz",
+        "on": "uniknie",
+        "ona": "uniknie",
+        "my": "unikniemy",
+        "wy": "unikniecie",
+        "oni": "unikną",
+        "one": "unikną"
+      },
+      "past": {
+        "ja": {
+          "masculine": "uniknąłem",
+          "feminine": "uniknęłam"
+        },
+        "ty": {
+          "masculine": "uniknąłeś",
+          "feminine": "uniknęłaś"
+        },
+        "on": {
+          "masculine": "uniknął"
+        },
+        "ona": {
+          "feminine": "uniknęła"
+        },
+        "my": {
+          "virile": "uniknęliśmy",
+          "nonvirile": "uniknęłyśmy"
+        },
+        "wy": {
+          "virile": "uniknęliście",
+          "nonvirile": "uniknęłyście"
+        },
+        "oni": {
+          "virile": "uniknęli"
+        },
+        "one": {
+          "nonvirile": "uniknęły"
+        }
+      }
+    },
+    "examples": [
+      {
+        "pl": "Uczę się, jak poprawnie uniknąć po polsku.",
+        "en": "I am learning how to avoid, to evade, to dodge correctly in Polish.",
+        "uk": "Я вчуся правильно uniknąć (переклад потребує перевірки) польською."
+      }
+    ],
+    "notes": [
+      "Ukrainian translation fallback needs review."
+    ],
+    "sourceUrls": [
+      "https://kwjp.pl/lists/en",
+      "https://en.wiktionary.org/wiki/unikn%C4%85%C4%87",
+      "https://pl.wiktionary.org/wiki/unikn%C4%85%C4%87"
+    ],
+    "reviewStatus": "fallback-needs-review"
+  },
+  {
+    "id": "092-doprowadzic",
+    "infinitive": "doprowadzić",
+    "frequencyRank": 92,
+    "corpusRank": 3150,
+    "frequencySource": "KWJP balanced contemporary Polish corpus frequency list, all subcorpora, lemma, infinitive POS",
+    "frequency": {
+      "absolute": 2921,
+      "ipm": 35.77,
+      "arf": 1664.15
+    },
+    "translations": {
+      "en": [
+        "to lead",
+        "to let or make enter",
+        "to let or make something happen"
+      ],
+      "uk": [
+        "довести"
+      ]
+    },
+    "aspect": "perfective",
+    "forms": {
+      "present": {
+        "ja": "doprowadzę",
+        "ty": "doprowadzisz",
+        "on": "doprowadzi",
+        "ona": "doprowadzi",
+        "my": "doprowadzimy",
+        "wy": "doprowadzicie",
+        "oni": "doprowadzą",
+        "one": "doprowadzą"
+      },
+      "past": {
+        "ja": {
+          "masculine": "doprowadziłem",
+          "feminine": "doprowadziłam"
+        },
+        "ty": {
+          "masculine": "doprowadziłeś",
+          "feminine": "doprowadziłaś"
+        },
+        "on": {
+          "masculine": "doprowadził"
+        },
+        "ona": {
+          "feminine": "doprowadziła"
+        },
+        "my": {
+          "virile": "doprowadziliśmy",
+          "nonvirile": "doprowadziłyśmy"
+        },
+        "wy": {
+          "virile": "doprowadziliście",
+          "nonvirile": "doprowadziłyście"
+        },
+        "oni": {
+          "virile": "doprowadzili"
+        },
+        "one": {
+          "nonvirile": "doprowadziły"
+        }
+      }
+    },
+    "examples": [
+      {
+        "pl": "Uczę się, jak poprawnie doprowadzić po polsku.",
+        "en": "I am learning how to lead correctly in Polish.",
+        "uk": "Я вчуся правильно довести польською."
+      }
+    ],
+    "notes": [],
+    "sourceUrls": [
+      "https://kwjp.pl/lists/en",
+      "https://en.wiktionary.org/wiki/doprowadzi%C4%87",
+      "https://pl.wiktionary.org/wiki/doprowadzi%C4%87"
+    ],
+    "reviewStatus": "wiktionary-enriched"
+  },
+  {
+    "id": "093-przygotowac",
+    "infinitive": "przygotować",
+    "frequencyRank": 93,
+    "corpusRank": 3175,
+    "frequencySource": "KWJP balanced contemporary Polish corpus frequency list, all subcorpora, lemma, infinitive POS",
+    "frequency": {
+      "absolute": 2898,
+      "ipm": 35.49,
+      "arf": 1629.31
+    },
+    "translations": {
+      "en": [
+        "to przygotować"
+      ],
+      "uk": [
+        "приготувати"
+      ]
+    },
+    "aspect": "perfective",
+    "forms": {
+      "present": {
+        "ja": "przygotuję",
+        "ty": "przygotujesz",
+        "on": "przygotuje",
+        "ona": "przygotuje",
+        "my": "przygotujemy",
+        "wy": "przygotujecie",
+        "oni": "przygotują",
+        "one": "przygotują"
+      },
+      "past": {
+        "ja": {
+          "masculine": "przygotowałem",
+          "feminine": "przygotowałam"
+        },
+        "ty": {
+          "masculine": "przygotowałeś",
+          "feminine": "przygotowałaś"
+        },
+        "on": {
+          "masculine": "przygotował"
+        },
+        "ona": {
+          "feminine": "przygotowała"
+        },
+        "my": {
+          "virile": "przygotowaliśmy",
+          "nonvirile": "przygotowałyśmy"
+        },
+        "wy": {
+          "virile": "przygotowaliście",
+          "nonvirile": "przygotowałyście"
+        },
+        "oni": {
+          "virile": "przygotowali"
+        },
+        "one": {
+          "nonvirile": "przygotowały"
+        }
+      }
+    },
+    "examples": [
+      {
+        "pl": "Uczę się, jak poprawnie przygotować po polsku.",
+        "en": "I am learning how to przygotować correctly in Polish.",
+        "uk": "Я вчуся правильно приготувати польською."
+      }
+    ],
+    "notes": [],
+    "sourceUrls": [
+      "https://kwjp.pl/lists/en",
+      "https://en.wiktionary.org/wiki/przygotowa%C4%87",
+      "https://pl.wiktionary.org/wiki/przygotowa%C4%87"
+    ],
+    "reviewStatus": "wiktionary-enriched"
+  },
+  {
+    "id": "094-spodziewac",
+    "infinitive": "spodziewać",
+    "frequencyRank": 94,
+    "corpusRank": 3189,
+    "frequencySource": "KWJP balanced contemporary Polish corpus frequency list, all subcorpora, lemma, infinitive POS",
+    "frequency": {
+      "absolute": 2887,
+      "ipm": 35.35,
+      "arf": 1657.36
+    },
+    "translations": {
+      "en": [
+        "to spodziewać"
+      ],
+      "uk": [
+        "сподіватися",
+        "очікувати"
+      ]
+    },
+    "aspect": "imperfective",
+    "forms": {
+      "present": {
+        "ja": "spodziewam",
+        "ty": "spodziewasz",
+        "on": "spodziewa",
+        "ona": "spodziewa",
+        "my": "spodziewamy",
+        "wy": "spodziewacie",
+        "oni": "spodziewają",
+        "one": "spodziewają"
+      },
+      "past": {
+        "ja": {
+          "masculine": "spodziewałem",
+          "feminine": "spodziewałam"
+        },
+        "ty": {
+          "masculine": "spodziewałeś",
+          "feminine": "spodziewałaś"
+        },
+        "on": {
+          "masculine": "spodziewał"
+        },
+        "ona": {
+          "feminine": "spodziewała"
+        },
+        "my": {
+          "virile": "spodziewaliśmy",
+          "nonvirile": "spodziewałyśmy"
+        },
+        "wy": {
+          "virile": "spodziewaliście",
+          "nonvirile": "spodziewałyście"
+        },
+        "oni": {
+          "virile": "spodziewali"
+        },
+        "one": {
+          "nonvirile": "spodziewały"
+        }
+      }
+    },
+    "examples": [
+      {
+        "pl": "Uczę się, jak poprawnie spodziewać po polsku.",
+        "en": "I am learning how to spodziewać correctly in Polish.",
+        "uk": "Я вчуся правильно сподіватися польською."
+      }
+    ],
+    "notes": [],
+    "sourceUrls": [
+      "https://kwjp.pl/lists/en",
+      "https://en.wiktionary.org/wiki/spodziewa%C4%87",
+      "https://pl.wiktionary.org/wiki/spodziewa%C4%87"
+    ],
+    "reviewStatus": "wiktionary-enriched"
+  },
+  {
+    "id": "095-osiagnac",
+    "infinitive": "osiągnąć",
+    "frequencyRank": 95,
+    "corpusRank": 3241,
+    "frequencySource": "KWJP balanced contemporary Polish corpus frequency list, all subcorpora, lemma, infinitive POS",
+    "frequency": {
+      "absolute": 2838,
+      "ipm": 34.75,
+      "arf": 1571.91
+    },
+    "translations": {
+      "en": [
+        "to osiągnąć"
+      ],
+      "uk": [
+        "досягнути",
+        "досягти",
+        "осягнути"
+      ]
+    },
+    "aspect": "perfective",
+    "forms": {
+      "present": {
+        "ja": "osiągnę",
+        "ty": "osiągniesz",
+        "on": "osiągnie",
+        "ona": "osiągnie",
+        "my": "osiągniemy",
+        "wy": "osiągniecie",
+        "oni": "osiągną",
+        "one": "osiągną"
+      },
+      "past": {
+        "ja": {
+          "masculine": "osiągnąłem",
+          "feminine": "osiągnęłam"
+        },
+        "ty": {
+          "masculine": "osiągnąłeś",
+          "feminine": "osiągnęłaś"
+        },
+        "on": {
+          "masculine": "osiągnął"
+        },
+        "ona": {
+          "feminine": "osiągnęła"
+        },
+        "my": {
+          "virile": "osiągnęliśmy",
+          "nonvirile": "osiągnęłyśmy"
+        },
+        "wy": {
+          "virile": "osiągnęliście",
+          "nonvirile": "osiągnęłyście"
+        },
+        "oni": {
+          "virile": "osiągnęli"
+        },
+        "one": {
+          "nonvirile": "osiągnęły"
+        }
+      }
+    },
+    "examples": [
+      {
+        "pl": "Uczę się, jak poprawnie osiągnąć po polsku.",
+        "en": "I am learning how to osiągnąć correctly in Polish.",
+        "uk": "Я вчуся правильно досягнути польською."
+      }
+    ],
+    "notes": [],
+    "sourceUrls": [
+      "https://kwjp.pl/lists/en",
+      "https://en.wiktionary.org/wiki/osi%C4%85gn%C4%85%C4%87",
+      "https://pl.wiktionary.org/wiki/osi%C4%85gn%C4%85%C4%87"
+    ],
+    "reviewStatus": "wiktionary-enriched"
+  },
+  {
+    "id": "096-uczyc",
+    "infinitive": "uczyć",
+    "frequencyRank": 96,
+    "corpusRank": 3258,
+    "frequencySource": "KWJP balanced contemporary Polish corpus frequency list, all subcorpora, lemma, infinitive POS",
+    "frequency": {
+      "absolute": 2825,
+      "ipm": 34.59,
+      "arf": 1469.68
+    },
+    "translations": {
+      "en": [
+        "to uczyć"
+      ],
+      "uk": [
+        "вчити",
+        "вчитися"
+      ]
+    },
+    "aspect": "imperfective",
+    "forms": {
+      "present": {
+        "ja": "uczę",
+        "ty": "uczysz",
+        "on": "uczy",
+        "ona": "uczy",
+        "my": "uczymy",
+        "wy": "uczycie",
+        "oni": "uczą",
+        "one": "uczą"
+      },
+      "past": {
+        "ja": {
+          "masculine": "uczyłem",
+          "feminine": "uczyłam"
+        },
+        "ty": {
+          "masculine": "uczyłeś",
+          "feminine": "uczyłaś"
+        },
+        "on": {
+          "masculine": "uczył"
+        },
+        "ona": {
+          "feminine": "uczyła"
+        },
+        "my": {
+          "virile": "uczyliśmy",
+          "nonvirile": "uczyłyśmy"
+        },
+        "wy": {
+          "virile": "uczyliście",
+          "nonvirile": "uczyłyście"
+        },
+        "oni": {
+          "virile": "uczyli"
+        },
+        "one": {
+          "nonvirile": "uczyły"
+        }
+      }
+    },
+    "examples": [
+      {
+        "pl": "Uczę się, jak poprawnie uczyć po polsku.",
+        "en": "I am learning how to uczyć correctly in Polish.",
+        "uk": "Я вчуся правильно вчити польською."
+      }
+    ],
+    "notes": [],
+    "sourceUrls": [
+      "https://kwjp.pl/lists/en",
+      "https://en.wiktionary.org/wiki/uczy%C4%87",
+      "https://pl.wiktionary.org/wiki/uczy%C4%87"
+    ],
+    "reviewStatus": "wiktionary-enriched"
+  },
+  {
+    "id": "097-nazwac",
+    "infinitive": "nazwać",
+    "frequencyRank": 97,
+    "corpusRank": 3264,
+    "frequencySource": "KWJP balanced contemporary Polish corpus frequency list, all subcorpora, lemma, infinitive POS",
+    "frequency": {
+      "absolute": 2822,
+      "ipm": 34.56,
+      "arf": 1580.56
+    },
+    "translations": {
+      "en": [
+        "to nazwać"
+      ],
+      "uk": [
+        "назвати"
+      ]
+    },
+    "aspect": "perfective",
+    "forms": {
+      "present": {
+        "ja": "nazwę",
+        "ty": "nazwiesz",
+        "on": "nazwie",
+        "ona": "nazwie",
+        "my": "nazwiemy",
+        "wy": "nazwiecie",
+        "oni": "nazwą",
+        "one": "nazwą"
+      },
+      "past": {
+        "ja": {
+          "masculine": "nazwałem",
+          "feminine": "nazwałam"
+        },
+        "ty": {
+          "masculine": "nazwałeś",
+          "feminine": "nazwałaś"
+        },
+        "on": {
+          "masculine": "nazwał"
+        },
+        "ona": {
+          "feminine": "nazwała"
+        },
+        "my": {
+          "virile": "nazwaliśmy",
+          "nonvirile": "nazwałyśmy"
+        },
+        "wy": {
+          "virile": "nazwaliście",
+          "nonvirile": "nazwałyście"
+        },
+        "oni": {
+          "virile": "nazwali"
+        },
+        "one": {
+          "nonvirile": "nazwały"
+        }
+      }
+    },
+    "examples": [
+      {
+        "pl": "Uczę się, jak poprawnie nazwać po polsku.",
+        "en": "I am learning how to nazwać correctly in Polish.",
+        "uk": "Я вчуся правильно назвати польською."
+      }
+    ],
+    "notes": [],
+    "sourceUrls": [
+      "https://kwjp.pl/lists/en",
+      "https://en.wiktionary.org/wiki/nazwa%C4%87",
+      "https://pl.wiktionary.org/wiki/nazwa%C4%87"
+    ],
+    "reviewStatus": "wiktionary-enriched"
+  },
+  {
+    "id": "098-brac",
+    "infinitive": "brać",
+    "frequencyRank": 98,
+    "corpusRank": 3265,
+    "frequencySource": "KWJP balanced contemporary Polish corpus frequency list, all subcorpora, lemma, infinitive POS",
+    "frequency": {
+      "absolute": 2821,
+      "ipm": 34.54,
+      "arf": 1684.45
+    },
+    "translations": {
+      "en": [
+        "to take",
+        "to take in",
+        "to take, to charge"
+      ],
+      "uk": [
+        "брати",
+        "давай"
+      ]
+    },
+    "aspect": "imperfective",
+    "forms": {
+      "present": {
+        "ja": "biorę",
+        "ty": "bierzesz",
+        "on": "bierze",
+        "ona": "bierze",
+        "my": "bierzemy",
+        "wy": "bierzecie",
+        "oni": "biorą",
+        "one": "biorą"
+      },
+      "past": {
+        "ja": {
+          "masculine": "brałem",
+          "feminine": "brałam"
+        },
+        "ty": {
+          "masculine": "brałeś",
+          "feminine": "brałaś"
+        },
+        "on": {
+          "masculine": "brał"
+        },
+        "ona": {
+          "feminine": "brała"
+        },
+        "my": {
+          "virile": "braliśmy",
+          "nonvirile": "brałyśmy"
+        },
+        "wy": {
+          "virile": "braliście",
+          "nonvirile": "brałyście"
+        },
+        "oni": {
+          "virile": "brali"
+        },
+        "one": {
+          "nonvirile": "brały"
+        }
+      }
+    },
+    "examples": [
+      {
+        "pl": "Uczę się, jak poprawnie brać po polsku.",
+        "en": "I am learning how to take correctly in Polish.",
+        "uk": "Я вчуся правильно брати польською."
+      }
+    ],
+    "notes": [],
+    "sourceUrls": [
+      "https://kwjp.pl/lists/en",
+      "https://en.wiktionary.org/wiki/bra%C4%87",
+      "https://pl.wiktionary.org/wiki/bra%C4%87"
+    ],
+    "reviewStatus": "wiktionary-enriched"
+  },
+  {
+    "id": "099-wydawac",
+    "infinitive": "wydawać",
+    "frequencyRank": 99,
+    "corpusRank": 3301,
+    "frequencySource": "KWJP balanced contemporary Polish corpus frequency list, all subcorpora, lemma, infinitive POS",
+    "frequency": {
+      "absolute": 2793,
+      "ipm": 34.2,
+      "arf": 1629.54
+    },
+    "translations": {
+      "en": [
+        "to spend",
+        "to give change",
+        "to issue"
+      ],
+      "uk": [
+        "витрачати",
+        "видавати",
+        "випускати в світ"
+      ]
+    },
+    "aspect": "imperfective",
+    "forms": {
+      "present": {
+        "ja": "wydaję",
+        "ty": "wydajesz",
+        "on": "wydaje",
+        "ona": "wydaje",
+        "my": "wydajemy",
+        "wy": "wydajecie",
+        "oni": "wydają",
+        "one": "wydają"
+      },
+      "past": {
+        "ja": {
+          "masculine": "wydawałem",
+          "feminine": "wydawałam"
+        },
+        "ty": {
+          "masculine": "wydawałeś",
+          "feminine": "wydawałaś"
+        },
+        "on": {
+          "masculine": "wydawał"
+        },
+        "ona": {
+          "feminine": "wydawała"
+        },
+        "my": {
+          "virile": "wydawaliśmy",
+          "nonvirile": "wydawałyśmy"
+        },
+        "wy": {
+          "virile": "wydawaliście",
+          "nonvirile": "wydawałyście"
+        },
+        "oni": {
+          "virile": "wydawali"
+        },
+        "one": {
+          "nonvirile": "wydawały"
+        }
+      }
+    },
+    "examples": [
+      {
+        "pl": "Uczę się, jak poprawnie wydawać po polsku.",
+        "en": "I am learning how to spend correctly in Polish.",
+        "uk": "Я вчуся правильно витрачати польською."
+      }
+    ],
+    "notes": [],
+    "sourceUrls": [
+      "https://kwjp.pl/lists/en",
+      "https://en.wiktionary.org/wiki/wydawa%C4%87",
+      "https://pl.wiktionary.org/wiki/wydawa%C4%87"
+    ],
+    "reviewStatus": "wiktionary-enriched"
+  },
+  {
+    "id": "100-podjac",
+    "infinitive": "podjąć",
+    "frequencyRank": 100,
+    "corpusRank": 3365,
+    "frequencySource": "KWJP balanced contemporary Polish corpus frequency list, all subcorpora, lemma, infinitive POS",
+    "frequency": {
+      "absolute": 2743,
+      "ipm": 33.59,
+      "arf": 1593.03
+    },
+    "translations": {
+      "en": [
+        "to take up, to initiate, to instigate",
+        "to undertake, to engage in",
+        "to take up"
+      ],
+      "uk": [
+        "взятися"
+      ]
+    },
+    "aspect": "perfective",
+    "forms": {
+      "present": {
+        "ja": "podejmę",
+        "ty": "podejmiesz",
+        "on": "podejmie",
+        "ona": "podejmie",
+        "my": "podejmiemy",
+        "wy": "podejmiecie",
+        "oni": "podejmą",
+        "one": "podejmą"
+      },
+      "past": {
+        "ja": {
+          "masculine": "podjąłem",
+          "feminine": "podjęłam"
+        },
+        "ty": {
+          "masculine": "podjąłeś",
+          "feminine": "podjęłaś"
+        },
+        "on": {
+          "masculine": "podjął"
+        },
+        "ona": {
+          "feminine": "podjęła"
+        },
+        "my": {
+          "virile": "podjęliśmy",
+          "nonvirile": "podjęłyśmy"
+        },
+        "wy": {
+          "virile": "podjęliście",
+          "nonvirile": "podjęłyście"
+        },
+        "oni": {
+          "virile": "podjęli"
+        },
+        "one": {
+          "nonvirile": "podjęły"
+        }
+      }
+    },
+    "examples": [
+      {
+        "pl": "Uczę się, jak poprawnie podjąć po polsku.",
+        "en": "I am learning how to take up, to initiate, to instigate correctly in Polish.",
+        "uk": "Я вчуся правильно взятися польською."
+      }
+    ],
+    "notes": [],
+    "sourceUrls": [
+      "https://kwjp.pl/lists/en",
+      "https://en.wiktionary.org/wiki/podj%C4%85%C4%87",
+      "https://pl.wiktionary.org/wiki/podj%C4%85%C4%87"
+    ],
+    "reviewStatus": "wiktionary-enriched"
+  }
+]
