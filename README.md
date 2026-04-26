@@ -1,6 +1,6 @@
 # PolishVerbs
 
-A personal PWA for studying 600 high-frequency Polish verbs with English and Ukrainian translations, frequency ranking, present/non-past forms, past tense forms, examples, learned progress, search, filters, and custom study lists.
+A personal PWA for studying 1200 high-frequency Polish verbs with English and Ukrainian translations, frequency ranking, present/non-past forms, past tense forms, examples, learned progress, search, filters, and custom study lists.
 
 ## Data
 
@@ -14,6 +14,12 @@ Data lives in `src/data/verbs/` as six JSON files:
 - `301-400.json`
 - `401-500.json`
 - `501-600.json`
+- `601-700.json`
+- `701-800.json`
+- `801-900.json`
+- `901-1000.json`
+- `1001-1100.json`
+- `1101-1200.json`
 
 The schema is defined in `src/data/schema.ts`.
 

@@ -4,6 +4,7 @@ import path from 'node:path'
 
 const rootDir = process.cwd()
 const outputDir = path.join(rootDir, 'src/data/verbs')
+const targetVerbCount = 1200
 const kwjpSource = 'KWJP balanced contemporary Polish corpus frequency list, all subcorpora, lemma, infinitive POS'
 const kwjpUrl = 'https://kwjp.pl/lists/en'
 const sleep = (ms) => new Promise((resolve) => setTimeout(resolve, ms))
@@ -83,7 +84,7 @@ async function fetchFrequencyRows() {
       seen.add(lemma)
       return true
     })
-    .slice(0, 600)
+    .slice(0, targetVerbCount)
     .map((row, index) => ({
       frequencyRank: index + 1,
       corpusRank: Number(row.measure_0),
@@ -402,27 +403,27 @@ async function main() {
   await mkdir(outputDir, { recursive: true })
   console.log('Fetching KWJP frequency rows...')
   const frequencyRows = await fetchFrequencyRows()
-  if (frequencyRows.length < 600) {
-    throw new Error(`Expected 600 infinitive rows, got ${frequencyRows.length}`)
+  if (frequencyRows.length < targetVerbCount) {
+    throw new Error(`Expected ${targetVerbCount} infinitive rows, got ${frequencyRows.length}`)
   }
 
   console.log('Enriching verbs from Wiktionary...')
   const verbs = await mapWithConcurrency(frequencyRows, 8, async (row, index) => {
     const verb = await enrichVerb(row)
     if ((index + 1) % 25 === 0) {
-      console.log(`  ${index + 1}/600`)
+      console.log(`  ${index + 1}/${targetVerbCount}`)
     }
     return verb
   })
 
-  for (let start = 0; start < 600; start += 100) {
+  for (let start = 0; start < targetVerbCount; start += 100) {
     const chunk = verbs.slice(start, start + 100)
     const filename = `${String(start + 1).padStart(3, '0')}-${String(start + chunk.length).padStart(3, '0')}.json`
     await writeFile(path.join(outputDir, filename), `${JSON.stringify(chunk, null, 2)}\n`, 'utf8')
   }
 
   const fallbackCount = verbs.filter((verb) => verb.reviewStatus === 'fallback-needs-review').length
-  console.log(`Wrote 600 verbs. ${fallbackCount} records need later manual review.`)
+  console.log(`Wrote ${targetVerbCount} verbs. ${fallbackCount} records need later manual review.`)
 }
 
 main().catch((error) => {

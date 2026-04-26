@@ -3,6 +3,7 @@ import path from 'node:path'
 
 const rootDir = process.cwd()
 const verbsDir = path.join(rootDir, 'src/data/verbs')
+const expectedVerbCount = 1200
 const pronouns = ['ja', 'ty', 'on', 'ona', 'my', 'wy', 'oni', 'one']
 
 function assert(condition, message) {
@@ -40,7 +41,7 @@ async function main() {
     verbs.push(...records)
   }
 
-  assert(verbs.length === 600, `expected 600 verbs, got ${verbs.length}`)
+  assert(verbs.length === expectedVerbCount, `expected ${expectedVerbCount} verbs, got ${verbs.length}`)
 
   const ids = new Set()
   const ranks = new Set()
@@ -53,7 +54,7 @@ async function main() {
     assert(Number.isInteger(verb.frequencyRank), `${verb.id}: invalid frequency rank`)
     assert(!ranks.has(verb.frequencyRank), `${verb.id}: duplicate rank ${verb.frequencyRank}`)
     ranks.add(verb.frequencyRank)
-    assert(verb.frequencyRank >= 1 && verb.frequencyRank <= 600, `${verb.id}: rank out of range`)
+    assert(verb.frequencyRank >= 1 && verb.frequencyRank <= expectedVerbCount, `${verb.id}: rank out of range`)
 
     assertString(verb.infinitive, `${verb.id}: missing infinitive`)
     assertString(verb.frequencySource, `${verb.id}: missing source`)

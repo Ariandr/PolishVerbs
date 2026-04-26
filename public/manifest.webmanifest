@@ -1,7 +1,7 @@
 {
   "name": "PolishVerbs",
   "short_name": "PolishVerbs",
-  "description": "Study 600 high-frequency Polish verbs with forms, examples, translations, progress, and custom lists.",
+  "description": "Study 1200 high-frequency Polish verbs with forms, examples, translations, progress, and custom lists.",
   "start_url": "/PolishVerbs/",
   "scope": "/PolishVerbs/",
   "display": "standalone",

@@ -7322,7 +7322,7 @@
     },
     "translations": {
       "en": [
-        "to przygotować"
+        "to prepare"
       ],
       "uk": [
         "приготувати"
@@ -7374,7 +7374,7 @@
     "examples": [
       {
         "pl": "Uczę się, jak poprawnie przygotować po polsku.",
-        "en": "I am learning how to przygotować correctly in Polish.",
+        "en": "I am learning how to prepare correctly in Polish.",
         "uk": "Я вчуся правильно приготувати польською."
       }
     ],
@@ -7399,7 +7399,8 @@
     },
     "translations": {
       "en": [
-        "to spodziewać"
+        "to anticipate, to expect, to hope for, to look forward to",
+        "to await, to wait for"
       ],
       "uk": [
         "сподіватися",
@@ -7452,7 +7453,7 @@
     "examples": [
       {
         "pl": "Uczę się, jak poprawnie spodziewać po polsku.",
-        "en": "I am learning how to spodziewać correctly in Polish.",
+        "en": "I am learning how to anticipate, to expect, to hope for, to look forward to correctly in Polish.",
         "uk": "Я вчуся правильно сподіватися польською."
       }
     ],
@@ -7477,7 +7478,9 @@
     },
     "translations": {
       "en": [
-        "to osiągnąć"
+        "to achieve",
+        "to reach",
+        "to hit"
       ],
       "uk": [
         "досягнути",
@@ -7531,7 +7534,7 @@
     "examples": [
       {
         "pl": "Uczę się, jak poprawnie osiągnąć po polsku.",
-        "en": "I am learning how to osiągnąć correctly in Polish.",
+        "en": "I am learning how to achieve correctly in Polish.",
         "uk": "Я вчуся правильно досягнути польською."
       }
     ],
@@ -7556,7 +7559,9 @@
     },
     "translations": {
       "en": [
-        "to uczyć"
+        "to teach",
+        "to learn, to study",
+        "to revise"
       ],
       "uk": [
         "вчити",
@@ -7609,7 +7614,7 @@
     "examples": [
       {
         "pl": "Uczę się, jak poprawnie uczyć po polsku.",
-        "en": "I am learning how to uczyć correctly in Polish.",
+        "en": "I am learning how to teach correctly in Polish.",
         "uk": "Я вчуся правильно вчити польською."
       }
     ],
@@ -7634,7 +7639,8 @@
     },
     "translations": {
       "en": [
-        "to nazwać"
+        "to call, to name",
+        "to be called"
       ],
       "uk": [
         "назвати"
@@ -7686,7 +7692,7 @@
     "examples": [
       {
         "pl": "Uczę się, jak poprawnie nazwać po polsku.",
-        "en": "I am learning how to nazwać correctly in Polish.",
+        "en": "I am learning how to call, to name correctly in Polish.",
         "uk": "Я вчуся правильно назвати польською."
       }
     ],

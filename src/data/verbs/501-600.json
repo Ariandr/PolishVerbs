@@ -172,7 +172,8 @@
     },
     "translations": {
       "en": [
-        "to zapamiętać"
+        "to memorize, to remember",
+        "to get busy with something and forget everything else"
       ],
       "uk": [
         "запам'ятати"
@@ -224,7 +225,7 @@
     "examples": [
       {
         "pl": "Uczę się, jak poprawnie zapamiętać po polsku.",
-        "en": "I am learning how to zapamiętać correctly in Polish.",
+        "en": "I am learning how to memorize, to remember correctly in Polish.",
         "uk": "Я вчуся правильно запам'ятати польською."
       }
     ],
@@ -327,9 +328,7 @@
     },
     "translations": {
       "en": [
-        "to dress",
-        "to dress up",
-        "to get dressed"
+        "to ubrać"
       ],
       "uk": [
         "одягти́",
@@ -382,7 +381,7 @@
     "examples": [
       {
         "pl": "Uczę się, jak poprawnie ubrać po polsku.",
-        "en": "I am learning how to dress correctly in Polish.",
+        "en": "I am learning how to ubrać correctly in Polish.",
         "uk": "Я вчуся правильно одягти́ польською."
       }
     ],
@@ -407,7 +406,7 @@
     },
     "translations": {
       "en": [
-        "to show up, to turn up"
+        "to stawić"
       ],
       "uk": [
         "stawić (переклад потребує перевірки)"
@@ -459,7 +458,7 @@
     "examples": [
       {
         "pl": "Uczę się, jak poprawnie stawić po polsku.",
-        "en": "I am learning how to show up, to turn up correctly in Polish.",
+        "en": "I am learning how to stawić correctly in Polish.",
         "uk": "Я вчуся правильно stawić (переклад потребує перевірки) польською."
       }
     ],
@@ -886,8 +885,7 @@
     },
     "translations": {
       "en": [
-        "to demand, to want",
-        "to require, to need"
+        "to domagać"
       ],
       "uk": [
         "domagać (переклад потребує перевірки)"
@@ -939,7 +937,7 @@
     "examples": [
       {
         "pl": "Uczę się, jak poprawnie domagać po polsku.",
-        "en": "I am learning how to demand, to want correctly in Polish.",
+        "en": "I am learning how to domagać correctly in Polish.",
         "uk": "Я вчуся правильно domagać (переклад потребує перевірки) польською."
       }
     ],
@@ -1204,8 +1202,7 @@
     },
     "translations": {
       "en": [
-        "to accustom, to inure",
-        "to become accustomed, to get used"
+        "to przyzwyczaić"
       ],
       "uk": [
         "przyzwyczaić (переклад потребує перевірки)"
@@ -1257,7 +1254,7 @@
     "examples": [
       {
         "pl": "Uczę się, jak poprawnie przyzwyczaić po polsku.",
-        "en": "I am learning how to accustom, to inure correctly in Polish.",
+        "en": "I am learning how to przyzwyczaić correctly in Polish.",
         "uk": "Я вчуся правильно przyzwyczaić (переклад потребує перевірки) польською."
       }
     ],
@@ -1284,7 +1281,8 @@
     },
     "translations": {
       "en": [
-        "to zadawać"
+        "to assign",
+        "to deal, to associate"
       ],
       "uk": [
         "zadawać (переклад потребує перевірки)"
@@ -1336,7 +1334,7 @@
     "examples": [
       {
         "pl": "Uczę się, jak poprawnie zadawać po polsku.",
-        "en": "I am learning how to zadawać correctly in Polish.",
+        "en": "I am learning how to assign correctly in Polish.",
         "uk": "Я вчуся правильно zadawać (переклад потребує перевірки) польською."
       }
     ],
@@ -1444,7 +1442,8 @@
     },
     "translations": {
       "en": [
-        "to ryzykować"
+        "to take a risk, to chance, to dare",
+        "to risk, to put at risk"
       ],
       "uk": [
         "ризикувати"
@@ -1496,7 +1495,7 @@
     "examples": [
       {
         "pl": "Uczę się, jak poprawnie ryzykować po polsku.",
-        "en": "I am learning how to ryzykować correctly in Polish.",
+        "en": "I am learning how to take a risk, to chance, to dare correctly in Polish.",
         "uk": "Я вчуся правильно ризикувати польською."
       }
     ],
@@ -1521,8 +1520,7 @@
     },
     "translations": {
       "en": [
-        "to inform, to brief",
-        "to find out"
+        "to poinformować"
       ],
       "uk": [
         "poinformować (переклад потребує перевірки)"
@@ -1574,7 +1572,7 @@
     "examples": [
       {
         "pl": "Uczę się, jak poprawnie poinformować po polsku.",
-        "en": "I am learning how to inform, to brief correctly in Polish.",
+        "en": "I am learning how to poinformować correctly in Polish.",
         "uk": "Я вчуся правильно poinformować (переклад потребує перевірки) польською."
       }
     ],
@@ -1601,8 +1599,7 @@
     },
     "translations": {
       "en": [
-        "to open",
-        "to start"
+        "to otwierać"
       ],
       "uk": [
         "otwierać (переклад потребує перевірки)"
@@ -1654,7 +1651,7 @@
     "examples": [
       {
         "pl": "Uczę się, jak poprawnie otwierać po polsku.",
-        "en": "I am learning how to open correctly in Polish.",
+        "en": "I am learning how to otwierać correctly in Polish.",
         "uk": "Я вчуся правильно otwierać (переклад потребує перевірки) польською."
       }
     ],
@@ -1759,8 +1756,7 @@
     },
     "translations": {
       "en": [
-        "to require",
-        "to require, to demand"
+        "to wymagać"
       ],
       "uk": [
         "вимагати"
@@ -1812,7 +1808,7 @@
     "examples": [
       {
         "pl": "Uczę się, jak poprawnie wymagać po polsku.",
-        "en": "I am learning how to require correctly in Polish.",
+        "en": "I am learning how to wymagać correctly in Polish.",
         "uk": "Я вчуся правильно вимагати польською."
       }
     ],
@@ -1998,8 +1994,7 @@
     },
     "translations": {
       "en": [
-        "to hook up somebody",
-        "to contact"
+        "to skontaktować"
       ],
       "uk": [
         "skontaktować (переклад потребує перевірки)"
@@ -2051,7 +2046,7 @@
     "examples": [
       {
         "pl": "Uczę się, jak poprawnie skontaktować po polsku.",
-        "en": "I am learning how to hook up somebody correctly in Polish.",
+        "en": "I am learning how to skontaktować correctly in Polish.",
         "uk": "Я вчуся правильно skontaktować (переклад потребує перевірки) польською."
       }
     ],
@@ -2078,7 +2073,8 @@
     },
     "translations": {
       "en": [
-        "to wynikać"
+        "to ensue, to result, to follow, to stem from",
+        "to get out"
       ],
       "uk": [
         "випливати",
@@ -2086,7 +2082,7 @@
         "результатом"
       ]
     },
-    "aspect": "unknown",
+    "aspect": "imperfective",
     "forms": {
       "present": {
         "ja": "wynikam",
@@ -2132,19 +2128,17 @@
     "examples": [
       {
         "pl": "Uczę się, jak poprawnie wynikać po polsku.",
-        "en": "I am learning how to wynikać correctly in Polish.",
+        "en": "I am learning how to ensue, to result, to follow, to stem from correctly in Polish.",
         "uk": "Я вчуся правильно випливати польською."
       }
     ],
-    "notes": [
-      "Some forms were generated by fallback rules and should be checked."
-    ],
+    "notes": [],
     "sourceUrls": [
       "https://kwjp.pl/lists/en",
       "https://en.wiktionary.org/wiki/wynika%C4%87",
       "https://pl.wiktionary.org/wiki/wynika%C4%87"
     ],
-    "reviewStatus": "fallback-needs-review"
+    "reviewStatus": "wiktionary-enriched"
   },
   {
     "id": "528-podobac",
@@ -2796,9 +2790,7 @@
     },
     "translations": {
       "en": [
-        "to defend",
-        "to guard",
-        "to defend, to save"
+        "to obronić"
       ],
       "uk": [
         "захистити",
@@ -2852,7 +2844,7 @@
     "examples": [
       {
         "pl": "Uczę się, jak poprawnie obronić po polsku.",
-        "en": "I am learning how to defend correctly in Polish.",
+        "en": "I am learning how to obronić correctly in Polish.",
         "uk": "Я вчуся правильно захистити польською."
       }
     ],
@@ -3037,8 +3029,7 @@
     },
     "translations": {
       "en": [
-        "to reminisce, to look back",
-        "to mention"
+        "to wspominać"
       ],
       "uk": [
         "згадувати",
@@ -3091,7 +3082,7 @@
     "examples": [
       {
         "pl": "Uczę się, jak poprawnie wspominać po polsku.",
-        "en": "I am learning how to reminisce, to look back correctly in Polish.",
+        "en": "I am learning how to wspominać correctly in Polish.",
         "uk": "Я вчуся правильно згадувати польською."
       }
     ],
@@ -3116,7 +3107,7 @@
     },
     "translations": {
       "en": [
-        "to trust"
+        "to zaufać"
       ],
       "uk": [
         "довірити"
@@ -3168,7 +3159,7 @@
     "examples": [
       {
         "pl": "Uczę się, jak poprawnie zaufać po polsku.",
-        "en": "I am learning how to trust correctly in Polish.",
+        "en": "I am learning how to zaufać correctly in Polish.",
         "uk": "Я вчуся правильно довірити польською."
       }
     ],
@@ -3361,17 +3352,17 @@
         "залежати"
       ]
     },
-    "aspect": "unknown",
+    "aspect": "imperfective",
     "forms": {
       "present": {
-        "ja": "zależeę",
-        "ty": "zależeesz",
-        "on": "zależee",
-        "ona": "zależee",
-        "my": "zależeemy",
-        "wy": "zależeecie",
-        "oni": "zależeą",
-        "one": "zależeą"
+        "ja": "zależę",
+        "ty": "zależysz",
+        "on": "zależy",
+        "ona": "zależy",
+        "my": "zależymy",
+        "wy": "zależycie",
+        "oni": "zależą",
+        "one": "zależą"
       },
       "past": {
         "ja": {
@@ -3389,15 +3380,15 @@
           "feminine": "zależała"
         },
         "my": {
-          "virile": "zależaliśmy",
+          "virile": "zależeliśmy",
           "nonvirile": "zależałyśmy"
         },
         "wy": {
-          "virile": "zależaliście",
+          "virile": "zależeliście",
           "nonvirile": "zależałyście"
         },
         "oni": {
-          "virile": "zależali"
+          "virile": "zależeli"
         },
         "one": {
           "nonvirile": "zależały"
@@ -3411,15 +3402,13 @@
         "uk": "Я вчуся правильно залежати польською."
       }
     ],
-    "notes": [
-      "Some forms were generated by fallback rules and should be checked."
-    ],
+    "notes": [],
     "sourceUrls": [
       "https://kwjp.pl/lists/en",
       "https://en.wiktionary.org/wiki/zale%C5%BCe%C4%87",
       "https://pl.wiktionary.org/wiki/zale%C5%BCe%C4%87"
     ],
-    "reviewStatus": "fallback-needs-review"
+    "reviewStatus": "wiktionary-enriched"
   },
   {
     "id": "544-krecic",
@@ -3514,7 +3503,9 @@
     },
     "translations": {
       "en": [
-        "to zerwać"
+        "to tear off",
+        "to pick, to collect fruit",
+        "to kick, to quit, to give up, to break a habit"
       ],
       "uk": [
         "zerwać (переклад потребує перевірки)"
@@ -3566,7 +3557,7 @@
     "examples": [
       {
         "pl": "Uczę się, jak poprawnie zerwać po polsku.",
-        "en": "I am learning how to zerwać correctly in Polish.",
+        "en": "I am learning how to tear off correctly in Polish.",
         "uk": "Я вчуся правильно zerwać (переклад потребує перевірки) польською."
       }
     ],
@@ -3684,17 +3675,17 @@
         "домага́тися"
       ]
     },
-    "aspect": "unknown",
+    "aspect": "imperfective",
     "forms": {
       "present": {
-        "ja": "dochodzię",
+        "ja": "dochodzę",
         "ty": "dochodzisz",
         "on": "dochodzi",
         "ona": "dochodzi",
         "my": "dochodzimy",
         "wy": "dochodzicie",
-        "oni": "dochodzią",
-        "one": "dochodzią"
+        "oni": "dochodzą",
+        "one": "dochodzą"
       },
       "past": {
         "ja": {
@@ -3734,15 +3725,13 @@
         "uk": "Я вчуся правильно дохо́дити польською."
       }
     ],
-    "notes": [
-      "Some forms were generated by fallback rules and should be checked."
-    ],
+    "notes": [],
     "sourceUrls": [
       "https://kwjp.pl/lists/en",
       "https://en.wiktionary.org/wiki/dochodzi%C4%87",
       "https://pl.wiktionary.org/wiki/dochodzi%C4%87"
     ],
-    "reviewStatus": "fallback-needs-review"
+    "reviewStatus": "wiktionary-enriched"
   },
   {
     "id": "548-mierzyc",
@@ -3836,9 +3825,7 @@
     },
     "translations": {
       "en": [
-        "to give back, to return",
-        "to give, to send, to put,",
-        "to give, to pass"
+        "to oddawać"
       ],
       "uk": [
         "повертати",
@@ -3892,7 +3879,7 @@
     "examples": [
       {
         "pl": "Uczę się, jak poprawnie oddawać po polsku.",
-        "en": "I am learning how to give back, to return correctly in Polish.",
+        "en": "I am learning how to oddawać correctly in Polish.",
         "uk": "Я вчуся правильно повертати польською."
       }
     ],
@@ -3917,9 +3904,7 @@
     },
     "translations": {
       "en": [
-        "to test, to probe",
-        "to explore, to research, to study",
-        "to study, to probe"
+        "to badać"
       ],
       "uk": [
         "досліджувати"
@@ -3971,7 +3956,7 @@
     "examples": [
       {
         "pl": "Uczę się, jak poprawnie badać po polsku.",
-        "en": "I am learning how to test, to probe correctly in Polish.",
+        "en": "I am learning how to badać correctly in Polish.",
         "uk": "Я вчуся правильно досліджувати польською."
       }
     ],
@@ -3996,23 +3981,25 @@
     },
     "translations": {
       "en": [
-        "to zdradzić"
+        "to betray",
+        "to cheat on",
+        "to give away, to reveal, to divulge, to disclose"
       ],
       "uk": [
         "зрадити"
       ]
     },
-    "aspect": "unknown",
+    "aspect": "perfective",
     "forms": {
       "present": {
-        "ja": "zdradzię",
+        "ja": "zdradzę",
         "ty": "zdradzisz",
         "on": "zdradzi",
         "ona": "zdradzi",
         "my": "zdradzimy",
         "wy": "zdradzicie",
-        "oni": "zdradzią",
-        "one": "zdradzią"
+        "oni": "zdradzą",
+        "one": "zdradzą"
       },
       "past": {
         "ja": {
@@ -4048,19 +4035,17 @@
     "examples": [
       {
         "pl": "Uczę się, jak poprawnie zdradzić po polsku.",
-        "en": "I am learning how to zdradzić correctly in Polish.",
+        "en": "I am learning how to betray correctly in Polish.",
         "uk": "Я вчуся правильно зрадити польською."
       }
     ],
-    "notes": [
-      "Some forms were generated by fallback rules and should be checked."
-    ],
+    "notes": [],
     "sourceUrls": [
       "https://kwjp.pl/lists/en",
       "https://en.wiktionary.org/wiki/zdradzi%C4%87",
       "https://pl.wiktionary.org/wiki/zdradzi%C4%87"
     ],
-    "reviewStatus": "fallback-needs-review"
+    "reviewStatus": "wiktionary-enriched"
   },
   {
     "id": "552-podejrzewac",
@@ -4075,7 +4060,8 @@
     },
     "translations": {
       "en": [
-        "to podejrzewać"
+        "to suspect",
+        "to suspect, to think"
       ],
       "uk": [
         "підо́зрювати"
@@ -4127,7 +4113,7 @@
     "examples": [
       {
         "pl": "Uczę się, jak poprawnie podejrzewać po polsku.",
-        "en": "I am learning how to podejrzewać correctly in Polish.",
+        "en": "I am learning how to suspect correctly in Polish.",
         "uk": "Я вчуся правильно підо́зрювати польською."
       }
     ],
@@ -4152,9 +4138,7 @@
     },
     "translations": {
       "en": [
-        "to take back",
-        "to receive",
-        "to take away"
+        "to odbierać"
       ],
       "uk": [
         "забирати",
@@ -4208,7 +4192,7 @@
     "examples": [
       {
         "pl": "Uczę się, jak poprawnie odbierać po polsku.",
-        "en": "I am learning how to take back correctly in Polish.",
+        "en": "I am learning how to odbierać correctly in Polish.",
         "uk": "Я вчуся правильно забирати польською."
       }
     ],
@@ -4233,7 +4217,7 @@
     },
     "translations": {
       "en": [
-        "to make it"
+        "to zdążyć"
       ],
       "uk": [
         "встигнути"
@@ -4285,7 +4269,7 @@
     "examples": [
       {
         "pl": "Uczę się, jak poprawnie zdążyć po polsku.",
-        "en": "I am learning how to make it correctly in Polish.",
+        "en": "I am learning how to zdążyć correctly in Polish.",
         "uk": "Я вчуся правильно встигнути польською."
       }
     ],
@@ -4464,9 +4448,7 @@
     },
     "translations": {
       "en": [
-        "to make aware, to inform",
-        "to make realize",
-        "to realize"
+        "to uświadomić"
       ],
       "uk": [
         "uświadomić (переклад потребує перевірки)"
@@ -4518,7 +4500,7 @@
     "examples": [
       {
         "pl": "Uczę się, jak poprawnie uświadomić po polsku.",
-        "en": "I am learning how to make aware, to inform correctly in Polish.",
+        "en": "I am learning how to uświadomić correctly in Polish.",
         "uk": "Я вчуся правильно uświadomić (переклад потребує перевірки) польською."
       }
     ],
@@ -4624,7 +4606,9 @@
     },
     "translations": {
       "en": [
-        "to wysłuchać"
+        "to listen thoroughly, to listen to the entirety of",
+        "to hear out",
+        "to hear each other out"
       ],
       "uk": [
         "wysłuchać (переклад потребує перевірки)"
@@ -4676,7 +4660,7 @@
     "examples": [
       {
         "pl": "Uczę się, jak poprawnie wysłuchać po polsku.",
-        "en": "I am learning how to wysłuchać correctly in Polish.",
+        "en": "I am learning how to listen thoroughly, to listen to the entirety of correctly in Polish.",
         "uk": "Я вчуся правильно wysłuchać (переклад потребує перевірки) польською."
       }
     ],
@@ -4942,7 +4926,9 @@
     },
     "translations": {
       "en": [
-        "to powodować"
+        "to cause",
+        "to make, to drive, to compel",
+        "to lead, to direct somewhere"
       ],
       "uk": [
         "спричиня́ти",
@@ -4996,7 +4982,7 @@
     "examples": [
       {
         "pl": "Uczę się, jak poprawnie powodować po polsku.",
-        "en": "I am learning how to powodować correctly in Polish.",
+        "en": "I am learning how to cause correctly in Polish.",
         "uk": "Я вчуся правильно спричиня́ти польською."
       }
     ],
@@ -5180,9 +5166,7 @@
     },
     "translations": {
       "en": [
-        "to point, to indicate, to show",
-        "to issue a recommendation or order",
-        "to deem, to judge"
+        "to wskazywać"
       ],
       "uk": [
         "вказувати"
@@ -5234,7 +5218,7 @@
     "examples": [
       {
         "pl": "Uczę się, jak poprawnie wskazywać po polsku.",
-        "en": "I am learning how to point, to indicate, to show correctly in Polish.",
+        "en": "I am learning how to wskazywać correctly in Polish.",
         "uk": "Я вчуся правильно вказувати польською."
       }
     ],
@@ -5498,7 +5482,8 @@
     },
     "translations": {
       "en": [
-        "to przeciwstawić"
+        "to contrast, to juxtapose",
+        "to oppose"
       ],
       "uk": [
         "przeciwstawić (переклад потребує перевірки)"
@@ -5550,7 +5535,7 @@
     "examples": [
       {
         "pl": "Uczę się, jak poprawnie przeciwstawić po polsku.",
-        "en": "I am learning how to przeciwstawić correctly in Polish.",
+        "en": "I am learning how to contrast, to juxtapose correctly in Polish.",
         "uk": "Я вчуся правильно przeciwstawić (переклад потребує перевірки) польською."
       }
     ],
@@ -5577,9 +5562,7 @@
     },
     "translations": {
       "en": [
-        "to give birth",
-        "to yield, to give a crop",
-        "to be born"
+        "to urodzić"
       ],
       "uk": [
         "народи́ти",
@@ -5632,7 +5615,7 @@
     "examples": [
       {
         "pl": "Uczę się, jak poprawnie urodzić po polsku.",
-        "en": "I am learning how to give birth correctly in Polish.",
+        "en": "I am learning how to urodzić correctly in Polish.",
         "uk": "Я вчуся правильно народи́ти польською."
       }
     ],
@@ -6144,7 +6127,8 @@
         "to do"
       ],
       "uk": [
-        "dziać (переклад потребує перевірки)"
+        "діятися",
+        "відбуватися"
       ]
     },
     "aspect": "imperfective",
@@ -6194,18 +6178,16 @@
       {
         "pl": "Uczę się, jak poprawnie dziać po polsku.",
         "en": "I am learning how to knit correctly in Polish.",
-        "uk": "Я вчуся правильно dziać (переклад потребує перевірки) польською."
+        "uk": "Я вчуся правильно діятися польською."
       }
     ],
-    "notes": [
-      "Ukrainian translation fallback needs review."
-    ],
+    "notes": [],
     "sourceUrls": [
       "https://kwjp.pl/lists/en",
       "https://en.wiktionary.org/wiki/dzia%C4%87",
       "https://pl.wiktionary.org/wiki/dzia%C4%87"
     ],
-    "reviewStatus": "fallback-needs-review"
+    "reviewStatus": "wiktionary-enriched"
   },
   {
     "id": "579-zblizyc",
@@ -6379,7 +6361,9 @@
     },
     "translations": {
       "en": [
-        "to ująć"
+        "to grab, to seize",
+        "to detain",
+        "to put, to formulate, to express"
       ],
       "uk": [
         "ująć (переклад потребує перевірки)"
@@ -6431,7 +6415,7 @@
     "examples": [
       {
         "pl": "Uczę się, jak poprawnie ująć po polsku.",
-        "en": "I am learning how to ująć correctly in Polish.",
+        "en": "I am learning how to grab, to seize correctly in Polish.",
         "uk": "Я вчуся правильно ująć (переклад потребує перевірки) польською."
       }
     ],
@@ -6619,9 +6603,7 @@
     },
     "translations": {
       "en": [
-        "to reduce, to decrease",
-        "to lower",
-        "to decrease, to decline"
+        "to obniżyć"
       ],
       "uk": [
         "obniżyć (переклад потребує перевірки)"
@@ -6673,7 +6655,7 @@
     "examples": [
       {
         "pl": "Uczę się, jak poprawnie obniżyć po polsku.",
-        "en": "I am learning how to reduce, to decrease correctly in Polish.",
+        "en": "I am learning how to obniżyć correctly in Polish.",
         "uk": "Я вчуся правильно obniżyć (переклад потребує перевірки) польською."
       }
     ],
@@ -7019,8 +7001,7 @@
     },
     "translations": {
       "en": [
-        "to study",
-        "to read intensively"
+        "to studiować"
       ],
       "uk": [
         "studiować (переклад потребує перевірки)"
@@ -7072,7 +7053,7 @@
     "examples": [
       {
         "pl": "Uczę się, jak poprawnie studiować po polsku.",
-        "en": "I am learning how to study correctly in Polish.",
+        "en": "I am learning how to studiować correctly in Polish.",
         "uk": "Я вчуся правильно studiować (переклад потребує перевірки) польською."
       }
     ],
@@ -7188,7 +7169,7 @@
         "подорожувати"
       ]
     },
-    "aspect": "unknown",
+    "aspect": "imperfective",
     "forms": {
       "present": {
         "ja": "podróżuję",
@@ -7238,15 +7219,13 @@
         "uk": "Я вчуся правильно подорожувати польською."
       }
     ],
-    "notes": [
-      "Some forms were generated by fallback rules and should be checked."
-    ],
+    "notes": [],
     "sourceUrls": [
       "https://kwjp.pl/lists/en",
       "https://en.wiktionary.org/wiki/podr%C3%B3%C5%BCowa%C4%87",
       "https://pl.wiktionary.org/wiki/podr%C3%B3%C5%BCowa%C4%87"
     ],
-    "reviewStatus": "fallback-needs-review"
+    "reviewStatus": "wiktionary-enriched"
   },
   {
     "id": "592-porzucic",
@@ -7423,8 +7402,7 @@
     },
     "translations": {
       "en": [
-        "to cross, to overstep",
-        "to exceed, to surpass"
+        "to przekraczać"
       ],
       "uk": [
         "przekraczać (переклад потребує перевірки)"
@@ -7476,7 +7454,7 @@
     "examples": [
       {
         "pl": "Uczę się, jak poprawnie przekraczać po polsku.",
-        "en": "I am learning how to cross, to overstep correctly in Polish.",
+        "en": "I am learning how to przekraczać correctly in Polish.",
         "uk": "Я вчуся правильно przekraczać (переклад потребує перевірки) польською."
       }
     ],
@@ -7503,7 +7481,7 @@
     },
     "translations": {
       "en": [
-        "to be bad for someone/something"
+        "to zaszkodzić"
       ],
       "uk": [
         "zaszkodzić (переклад потребує перевірки)"
@@ -7555,7 +7533,7 @@
     "examples": [
       {
         "pl": "Uczę się, jak poprawnie zaszkodzić po polsku.",
-        "en": "I am learning how to be bad for someone/something correctly in Polish.",
+        "en": "I am learning how to zaszkodzić correctly in Polish.",
         "uk": "Я вчуся правильно zaszkodzić (переклад потребує перевірки) польською."
       }
     ],
