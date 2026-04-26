@@ -6,9 +6,10 @@ interface VerbListProps {
   selectedVerbId: string
   learnedVerbIds: Set<string>
   activeListVerbIds: Set<string>
+  selectedListId: string | null
   onSelectVerb: (verbId: string) => void
   onToggleLearned: (verbId: string) => void
-  onToggleInList: (verbId: string) => void
+  onOpenListPicker: (verbId: string) => void
 }
 
 export function VerbList({
@@ -16,9 +17,10 @@ export function VerbList({
   selectedVerbId,
   learnedVerbIds,
   activeListVerbIds,
+  selectedListId,
   onSelectVerb,
   onToggleLearned,
-  onToggleInList,
+  onOpenListPicker,
 }: VerbListProps) {
   return (
     <div className="verb-list" aria-label="Verb results">
@@ -52,9 +54,15 @@ export function VerbList({
               <button
                 className={`icon-button ${inList ? 'active-list' : ''}`}
                 type="button"
-                aria-label={inList ? 'Remove from selected list' : 'Add to selected list'}
-                title={inList ? 'In list' : 'Add to list'}
-                onClick={() => onToggleInList(verb.id)}
+                aria-label={
+                  selectedListId
+                    ? inList
+                      ? 'Remove from selected list'
+                      : 'Add to selected list'
+                    : 'Choose a list'
+                }
+                title={selectedListId ? (inList ? 'In list' : 'Add to list') : 'Choose list'}
+                onClick={() => onOpenListPicker(verb.id)}
               >
                 {inList ? <Star size={17} /> : <Plus size={17} />}
               </button>

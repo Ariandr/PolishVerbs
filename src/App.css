@@ -425,6 +425,146 @@ select {
   color: #5b6872;
 }
 
+.modal-backdrop {
+  position: fixed;
+  inset: 0;
+  z-index: 20;
+  display: grid;
+  place-items: center;
+  padding: 18px;
+  background: rgba(17, 24, 32, 0.48);
+  backdrop-filter: blur(6px);
+}
+
+.modal-panel {
+  width: min(520px, 100%);
+  max-height: min(680px, calc(100svh - 36px));
+  overflow: auto;
+  padding: 20px;
+  border: 1px solid #d8e0e3;
+  border-radius: 8px;
+  background: #ffffff;
+  box-shadow: 0 24px 80px rgba(17, 24, 32, 0.28);
+}
+
+.modal-head {
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-between;
+  gap: 16px;
+  margin-bottom: 18px;
+}
+
+.modal-head h2 {
+  font-size: 2rem;
+}
+
+.modal-form {
+  display: grid;
+  gap: 16px;
+}
+
+.modal-form label {
+  display: grid;
+  gap: 8px;
+  color: #44515b;
+  font-weight: 800;
+}
+
+.modal-form input {
+  min-height: 46px;
+  width: 100%;
+  border: 1px solid #cad4d8;
+  border-radius: 8px;
+  padding: 0 12px;
+  color: #111820;
+  background: #f9fbfb;
+  outline-color: #206a5d;
+}
+
+.modal-actions {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: flex-end;
+  gap: 10px;
+  margin-top: 18px;
+}
+
+.primary-button,
+.secondary-button {
+  display: inline-flex;
+  min-height: 42px;
+  align-items: center;
+  justify-content: center;
+  gap: 8px;
+  border-radius: 8px;
+  padding: 0 14px;
+  font-weight: 800;
+}
+
+.primary-button {
+  border: 1px solid #206a5d;
+  background: #206a5d;
+  color: #ffffff;
+}
+
+.primary-button:disabled {
+  cursor: not-allowed;
+  border-color: #cad4d8;
+  background: #cad4d8;
+  color: #5b6872;
+}
+
+.secondary-button {
+  border: 1px solid #cad4d8;
+  background: #ffffff;
+  color: #1d252c;
+}
+
+.list-picker {
+  display: grid;
+  gap: 8px;
+}
+
+.picker-row {
+  display: grid;
+  grid-template-columns: auto minmax(0, 1fr);
+  gap: 12px;
+  align-items: center;
+  min-height: 58px;
+  padding: 10px 12px;
+  border: 1px solid #d8e0e3;
+  border-radius: 8px;
+  background: #f9fbfb;
+}
+
+.picker-row input {
+  width: 18px;
+  height: 18px;
+  accent-color: #206a5d;
+}
+
+.picker-row strong,
+.picker-row small {
+  display: block;
+}
+
+.picker-row strong {
+  color: #111820;
+}
+
+.picker-row small,
+.modal-empty {
+  color: #5b6872;
+}
+
+.modal-empty {
+  padding: 18px;
+  border: 1px dashed #cad4d8;
+  border-radius: 8px;
+  background: #f9fbfb;
+}
+
 @media (max-width: 980px) {
   .app-shell {
     padding: 14px;

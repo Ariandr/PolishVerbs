@@ -4,7 +4,7 @@ import type { StudyList } from '../lib/storage'
 interface StudyListsProps {
   lists: StudyList[]
   selectedListId: string | null
-  onCreateList: (name: string) => void
+  onOpenCreateList: () => void
   onRenameList: (listId: string, name: string) => void
   onDeleteList: (listId: string) => void
   onSelectList: (listId: string | null) => void
@@ -13,7 +13,7 @@ interface StudyListsProps {
 export function StudyLists({
   lists,
   selectedListId,
-  onCreateList,
+  onOpenCreateList,
   onRenameList,
   onDeleteList,
   onSelectList,
@@ -39,12 +39,7 @@ export function StudyLists({
           type="button"
           title="Create list"
           aria-label="Create list"
-          onClick={() => {
-            const name = window.prompt('List name')
-            if (name?.trim()) {
-              onCreateList(name)
-            }
-          }}
+          onClick={onOpenCreateList}
         >
           <ListPlus size={17} />
         </button>

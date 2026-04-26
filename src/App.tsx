@@ -1,6 +1,7 @@
 import { useEffect, useMemo, useState } from 'react'
 import { Filter, Search } from 'lucide-react'
 import './App.css'
+import { CreateListModal, ListPickerModal } from './components/ListModals'
 import { StudyLists } from './components/StudyLists'
 import { VerbDetail } from './components/VerbTables'
 import { VerbList } from './components/VerbList'
@@ -35,6 +36,8 @@ function App() {
   const [learnedFilter, setLearnedFilter] = useState<LearnedFilter>('all')
   const [aspectFilter, setAspectFilter] = useState<Aspect | 'all'>('all')
   const [rangeFilter, setRangeFilter] = useState<RangeFilter>('all')
+  const [showCreateList, setShowCreateList] = useState(false)
+  const [listPickerVerbId, setListPickerVerbId] = useState<string | null>(null)
 
   useEffect(() => {
     saveProgress(progress)
@@ -97,21 +100,17 @@ function App() {
     })
   }
 
-  const toggleVerbInSelectedList = (verbId: string) => {
-    if (!activeList) {
-      const list = createStudyList('My verbs')
-      updateProgress({
-        ...progress,
-        selectedListId: list.id,
-        lists: [{ ...list, verbIds: [verbId] }, ...progress.lists],
-      })
-      return
-    }
+  const createList = (name: string) => {
+    const list = createStudyList(name)
+    updateProgress({ ...progress, lists: [list, ...progress.lists], selectedListId: list.id })
+    setShowCreateList(false)
+  }
 
+  const toggleVerbInList = (verbId: string, listId: string) => {
     updateProgress({
       ...progress,
       lists: progress.lists.map((list) => {
-        if (list.id !== activeList.id) {
+        if (list.id !== listId) {
           return list
         }
         const inList = list.verbIds.includes(verbId)
@@ -122,6 +121,17 @@ function App() {
       }),
     })
   }
+
+  const openListAction = (verbId: string) => {
+    if (activeList) {
+      toggleVerbInList(verbId, activeList.id)
+      return
+    }
+
+    setListPickerVerbId(verbId)
+  }
+
+  const listPickerVerb = listPickerVerbId ? verbs.find((verb) => verb.id === listPickerVerbId) : undefined
 
   return (
     <main className="app-shell">
@@ -175,10 +185,7 @@ function App() {
           <StudyLists
             lists={progress.lists}
             selectedListId={progress.selectedListId}
-            onCreateList={(name) => {
-              const list = createStudyList(name)
-              updateProgress({ ...progress, lists: [list, ...progress.lists], selectedListId: list.id })
-            }}
+            onOpenCreateList={() => setShowCreateList(true)}
             onRenameList={(listId, name) =>
               updateProgress({
                 ...progress,
@@ -205,9 +212,10 @@ function App() {
             selectedVerbId={selectedVerb?.id ?? ''}
             learnedVerbIds={learnedVerbIds}
             activeListVerbIds={activeListVerbIds}
+            selectedListId={progress.selectedListId}
             onSelectVerb={setSelectedVerbId}
             onToggleLearned={toggleLearned}
-            onToggleInList={toggleVerbInSelectedList}
+            onOpenListPicker={openListAction}
           />
         </aside>
 
@@ -217,6 +225,17 @@ function App() {
           <div className="empty-state">No verbs match the current filters.</div>
         )}
       </section>
+
+      {showCreateList ? <CreateListModal onClose={() => setShowCreateList(false)} onCreate={createList} /> : null}
+      {listPickerVerb ? (
+        <ListPickerModal
+          lists={progress.lists}
+          verb={listPickerVerb}
+          onClose={() => setListPickerVerbId(null)}
+          onCreateList={() => setShowCreateList(true)}
+          onToggleList={(listId) => toggleVerbInList(listPickerVerb.id, listId)}
+        />
+      ) : null}
     </main>
   )
 }
