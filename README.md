@@ -1,12 +1,12 @@
 # PolishVerbs
 
-A personal PWA for studying 1200 high-frequency Polish verbs with English and Ukrainian translations, frequency ranking, present/non-past forms, past tense forms, examples, learned progress, search, filters, and custom study lists.
+A personal PWA for studying 3000 high-frequency Polish verbs with English and Ukrainian translations, frequency ranking, present/non-past forms, past tense forms, examples, learned progress, search, filters, and custom study lists.
 
 ## Data
 
 Verb order comes from the KWJP frequency list for Polish infinitive lemmas. The generator enriches each verb with Wiktionary forms/translations where available and flags records that need later manual review.
 
-Data lives in `src/data/verbs/` as six JSON files:
+Data lives in `src/data/verbs/` as 100-verb JSON chunks:
 
 - `001-100.json`
 - `101-200.json`
@@ -20,6 +20,8 @@ Data lives in `src/data/verbs/` as six JSON files:
 - `901-1000.json`
 - `1001-1100.json`
 - `1101-1200.json`
+- ...
+- `2901-3000.json`
 
 The schema is defined in `src/data/schema.ts`.
 

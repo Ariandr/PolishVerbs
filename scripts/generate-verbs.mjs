@@ -1,10 +1,10 @@
 import * as cheerio from 'cheerio'
-import { mkdir, writeFile } from 'node:fs/promises'
+import { mkdir, readdir, readFile, writeFile } from 'node:fs/promises'
 import path from 'node:path'
 
 const rootDir = process.cwd()
 const outputDir = path.join(rootDir, 'src/data/verbs')
-const targetVerbCount = 1200
+const targetVerbCount = 3000
 const kwjpSource = 'KWJP balanced contemporary Polish corpus frequency list, all subcorpora, lemma, infinitive POS'
 const kwjpUrl = 'https://kwjp.pl/lists/en'
 const sleep = (ms) => new Promise((resolve) => setTimeout(resolve, ms))
@@ -69,7 +69,7 @@ async function fetchFrequencyRows() {
     headers: {
       'content-type': 'application/x-www-form-urlencoded; charset=UTF-8',
     },
-    body: dataTablesBody(50000),
+    body: dataTablesBody(100000),
   })
   const json = await response.json()
   const seen = new Set()
@@ -383,6 +383,24 @@ async function enrichVerb(row) {
   }
 }
 
+async function loadExistingVerbs() {
+  const cache = new Map()
+  try {
+    const files = (await readdir(outputDir)).filter((file) => file.endsWith('.json'))
+    for (const file of files) {
+      const records = JSON.parse(await readFile(path.join(outputDir, file), 'utf8'))
+      for (const record of records) {
+        if (record?.frequencyRank && record?.infinitive) {
+          cache.set(`${record.frequencyRank}:${record.infinitive}`, record)
+        }
+      }
+    }
+  } catch {
+    return cache
+  }
+  return cache
+}
+
 async function mapWithConcurrency(items, limit, mapper) {
   const results = new Array(items.length)
   let index = 0
@@ -407,8 +425,14 @@ async function main() {
     throw new Error(`Expected ${targetVerbCount} infinitive rows, got ${frequencyRows.length}`)
   }
 
+  const existingVerbs = await loadExistingVerbs()
+  console.log(`Reusing ${existingVerbs.size} existing records where rank and infinitive still match.`)
   console.log('Enriching verbs from Wiktionary...')
   const verbs = await mapWithConcurrency(frequencyRows, 8, async (row, index) => {
+    const cached = existingVerbs.get(`${row.frequencyRank}:${row.infinitive}`)
+    if (cached) {
+      return cached
+    }
     const verb = await enrichVerb(row)
     if ((index + 1) % 25 === 0) {
       console.log(`  ${index + 1}/${targetVerbCount}`)

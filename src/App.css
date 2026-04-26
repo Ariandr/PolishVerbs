@@ -130,8 +130,10 @@ select {
   position: sticky;
   top: 82px;
   display: grid;
+  grid-template-rows: auto auto minmax(0, 1fr);
   gap: 12px;
   max-height: calc(100svh - 98px);
+  overflow: hidden;
 }
 
 .lists-panel,
@@ -201,9 +203,12 @@ select {
 
 .verb-list {
   display: grid;
+  min-height: 0;
   gap: 8px;
   overflow: auto;
   padding-right: 4px;
+  padding-bottom: 18px;
+  scroll-padding-bottom: 18px;
 }
 
 .verb-row {
@@ -580,6 +585,12 @@ select {
   .sidebar {
     position: static;
     max-height: none;
+    overflow: visible;
+  }
+
+  .verb-list {
+    overflow: visible;
+    padding-bottom: 0;
   }
 
   .filter-group {

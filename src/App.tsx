@@ -10,7 +10,7 @@ import type { Aspect, VerbEntry } from './data/schema'
 import { createStudyList, loadProgress, saveProgress, touchList, type StudyProgress } from './lib/storage'
 
 type LearnedFilter = 'all' | 'learning' | 'learned'
-type RangeFilter = 'all' | 'top100' | 'top300' | 'top600' | 'top1200'
+type RangeFilter = 'all' | 'top100' | 'top300' | 'top600' | 'top1200' | 'top3000'
 
 const normalize = (value: string) =>
   value
@@ -73,6 +73,9 @@ function App() {
         return false
       }
       if (rangeFilter === 'top1200' && verb.frequencyRank > 1200) {
+        return false
+      }
+      if (rangeFilter === 'top3000' && verb.frequencyRank > 3000) {
         return false
       }
       if (normalizedQuery && !searchIndexes.get(verb.id)?.includes(normalizedQuery)) {
@@ -141,7 +144,7 @@ function App() {
       <header className="app-header">
         <div>
           <p className="eyebrow">PolishVerbs</p>
-          <h1>1200 Polish verbs by frequency</h1>
+          <h1>3000 Polish verbs by frequency</h1>
         </div>
         <div className="progress-summary">
           <strong>{learnedCount}</strong>
@@ -177,11 +180,12 @@ function App() {
             <option value="unknown">Unknown</option>
           </select>
           <select value={rangeFilter} onChange={(event) => setRangeFilter(event.target.value as RangeFilter)}>
-            <option value="all">Full 1200</option>
+            <option value="all">Full 3000</option>
             <option value="top100">Top 100</option>
             <option value="top300">Top 300</option>
             <option value="top600">Top 600</option>
             <option value="top1200">Top 1200</option>
+            <option value="top3000">Top 3000</option>
           </select>
         </div>
       </section>
