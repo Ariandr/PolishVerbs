@@ -28,20 +28,20 @@ export function VerbList({
         const learned = learnedVerbIds.has(verb.id)
         const inList = activeListVerbIds.has(verb.id)
         return (
-          <button
+          <div
             className={`verb-row ${selectedVerbId === verb.id ? 'selected' : ''}`}
             key={verb.id}
-            type="button"
-            onClick={() => onSelectVerb(verb.id)}
           >
-            <span className="verb-rank">{verb.frequencyRank}</span>
-            <span className="verb-main">
-              <strong>{verb.infinitive}</strong>
-              <small>
-                {verb.translations.en.slice(0, 2).join(', ')} · {verb.translations.uk.slice(0, 2).join(', ')}
-              </small>
-            </span>
-            <span className="row-actions" onClick={(event) => event.stopPropagation()}>
+            <button className="verb-select" type="button" onClick={() => onSelectVerb(verb.id)}>
+              <span className="verb-rank">{verb.frequencyRank}</span>
+              <span className="verb-main">
+                <strong>{verb.infinitive}</strong>
+                <small>
+                  {verb.translations.en.slice(0, 2).join(', ')} · {verb.translations.uk.slice(0, 2).join(', ')}
+                </small>
+              </span>
+            </button>
+            <span className="row-actions">
               <button
                 className={`icon-button ${learned ? 'active' : ''}`}
                 type="button"
@@ -67,7 +67,7 @@ export function VerbList({
                 {inList ? <Star size={17} /> : <Plus size={17} />}
               </button>
             </span>
-          </button>
+          </div>
         )
       })}
     </div>

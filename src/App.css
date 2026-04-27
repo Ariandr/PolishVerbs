@@ -285,7 +285,7 @@ select {
 
 .verb-row {
   display: grid;
-  grid-template-columns: 42px minmax(0, 1fr) auto;
+  grid-template-columns: minmax(0, 1fr) auto;
   gap: 10px;
   align-items: center;
   width: 100%;
@@ -300,6 +300,19 @@ select {
     border-color 160ms ease,
     transform 160ms ease,
     box-shadow 160ms ease;
+}
+
+.verb-select {
+  display: grid;
+  grid-template-columns: 42px minmax(0, 1fr);
+  gap: 10px;
+  align-items: center;
+  min-width: 0;
+  border: 0;
+  padding: 0;
+  background: transparent;
+  color: inherit;
+  text-align: left;
 }
 
 .verb-row:hover,
@@ -344,6 +357,7 @@ select {
 
 .row-actions {
   display: flex;
+  align-items: center;
   gap: 6px;
 }
 
@@ -707,11 +721,12 @@ select {
   }
 
   .verb-row {
-    grid-template-columns: 34px minmax(0, 1fr);
+    grid-template-columns: minmax(0, 1fr) auto;
+    gap: 8px;
   }
 
-  .row-actions {
-    grid-column: 2;
+  .verb-select {
+    grid-template-columns: 34px minmax(0, 1fr);
   }
 
   .forms-table th,
