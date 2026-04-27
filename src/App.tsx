@@ -79,6 +79,7 @@ function App() {
   const [aspectFilter, setAspectFilter] = useState<Aspect | 'all'>('all')
   const [rangeFilter, setRangeFilter] = useState<RangeFilter>('all')
   const [showCreateList, setShowCreateList] = useState(false)
+  const [createListVerbId, setCreateListVerbId] = useState<string | null>(null)
   const [listPickerVerbId, setListPickerVerbId] = useState<string | null>(null)
 
   useEffect(() => {
@@ -166,8 +167,23 @@ function App() {
   }
 
   const createList = (name: string) => {
-    const list = createStudyList(name)
+    const list = {
+      ...createStudyList(name),
+      verbIds: createListVerbId ? [createListVerbId] : [],
+    }
     updateProgress({ ...progress, lists: [list, ...progress.lists], selectedListId: list.id })
+    setCreateListVerbId(null)
+    setShowCreateList(false)
+  }
+
+  const openCreateList = (verbId: string | null = null) => {
+    setCreateListVerbId(verbId)
+    setListPickerVerbId(null)
+    setShowCreateList(true)
+  }
+
+  const closeCreateList = () => {
+    setCreateListVerbId(null)
     setShowCreateList(false)
   }
 
@@ -265,7 +281,7 @@ function App() {
           <StudyLists
             lists={progress.lists}
             selectedListId={progress.selectedListId}
-            onOpenCreateList={() => setShowCreateList(true)}
+            onOpenCreateList={() => openCreateList()}
             onRenameList={(listId, name) =>
               updateProgress({
                 ...progress,
@@ -306,13 +322,13 @@ function App() {
         )}
       </section>
 
-      {showCreateList ? <CreateListModal onClose={() => setShowCreateList(false)} onCreate={createList} /> : null}
+      {showCreateList ? <CreateListModal onClose={closeCreateList} onCreate={createList} /> : null}
       {listPickerVerb ? (
         <ListPickerModal
           lists={progress.lists}
           verb={listPickerVerb}
           onClose={() => setListPickerVerbId(null)}
-          onCreateList={() => setShowCreateList(true)}
+          onCreateList={() => openCreateList(listPickerVerb.id)}
           onToggleList={(listId) => toggleVerbInList(listPickerVerb.id, listId)}
         />
       ) : null}

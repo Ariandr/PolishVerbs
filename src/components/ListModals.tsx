@@ -20,7 +20,7 @@ export function CreateListModal({ onClose, onCreate }: CreateListModalProps) {
   const [name, setName] = useState('')
 
   return (
-    <div className="modal-backdrop" role="presentation" onMouseDown={onClose}>
+    <div className="modal-backdrop modal-backdrop-create" role="presentation" onMouseDown={onClose}>
       <section className="modal-panel" role="dialog" aria-modal="true" aria-labelledby="create-list-title" onMouseDown={(event) => event.stopPropagation()}>
         <div className="modal-head">
           <div>

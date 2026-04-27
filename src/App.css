@@ -513,6 +513,10 @@ select {
   backdrop-filter: blur(6px);
 }
 
+.modal-backdrop-create {
+  z-index: 30;
+}
+
 .modal-panel {
   width: min(520px, 100%);
   max-height: min(680px, calc(100svh - 36px));
