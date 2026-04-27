@@ -1,8 +1,8 @@
 import { useEffect, useMemo, useRef, useState } from 'react'
-import { ArrowLeft, BookOpen, Filter, Moon, Search, Sun, Wrench } from 'lucide-react'
+import { ArrowLeft, BookOpen, Filter, Moon, Search, Settings, Sun, Wrench } from 'lucide-react'
 import './App.css'
+import { ConfigurationPage } from './components/ConfigurationPage'
 import { CreateListModal, ListPickerModal } from './components/ListModals'
-import { ProgressTools } from './components/ProgressTools'
 import { QualityPanel } from './components/QualityPanel'
 import { StudyMode } from './components/StudyMode'
 import { StudyLists } from './components/StudyLists'
@@ -15,11 +15,14 @@ import { getSearchIndex, getSearchScore, normalizeSearch } from './lib/search'
 import {
   createStudyList,
   createVerbStudyProgress,
+  loadAppSettings,
   loadProgress,
   loadThemePreference,
+  saveAppSettings,
   saveProgress,
   saveThemePreference,
   touchList,
+  type AppSettings,
   type StudyProgress,
   type ThemePreference,
   type VerbStudyStatus,
@@ -35,6 +38,7 @@ function App() {
   const openedMobileDetailFromListRef = useRef(false)
   const [progress, setProgress] = useState<StudyProgress>(() => loadProgress())
   const [themePreference, setThemePreference] = useState<ThemePreference>(() => loadThemePreference())
+  const [appSettings, setAppSettings] = useState<AppSettings>(() => loadAppSettings())
   const [selectedVerbId, setSelectedVerbId] = useState(initialVerbId && verbById.has(initialVerbId) ? initialVerbId : verbs[0]?.id ?? '')
   const [query, setQuery] = useState('')
   const [learnedFilter, setLearnedFilter] = useState<LearnedFilter>('all')
@@ -45,6 +49,7 @@ function App() {
     typeof window === 'undefined' ? false : Boolean(initialVerbId && verbById.has(initialVerbId) && window.matchMedia('(max-width: 980px)').matches),
   )
   const [studyModeOpen, setStudyModeOpen] = useState(false)
+  const [configurationOpen, setConfigurationOpen] = useState(false)
   const [showQaPanel, setShowQaPanel] = useState(() => isQaEnabledFromUrl())
   const [qaEntryEnabled, setQaEntryEnabled] = useState(() => isQaEnabledFromUrl())
   const [transferMessage, setTransferMessage] = useState<{ title: string; body: string } | null>(null)
@@ -60,6 +65,10 @@ function App() {
     document.documentElement.dataset.theme = themePreference
     saveThemePreference(themePreference)
   }, [themePreference])
+
+  useEffect(() => {
+    saveAppSettings(appSettings)
+  }, [appSettings])
 
   useEffect(() => {
     const onPopState = () => {
@@ -278,6 +287,10 @@ function App() {
     setRangeFilter('all')
   }
 
+  const updateAppSettings = (next: AppSettings) => {
+    setAppSettings(next)
+  }
+
   const exportProgress = () => {
     const blob = new Blob([serializeProgressExport(progress, themePreference)], { type: 'application/json' })
     const url = URL.createObjectURL(blob)
@@ -347,19 +360,32 @@ function App() {
   ]
 
   return (
-    <main className={`app-shell ${mobileDetailOpen ? 'mobile-detail-open' : ''}`} data-theme={themePreference}>
+    <main
+      className={`app-shell ${mobileDetailOpen ? 'mobile-detail-open' : ''} ${configurationOpen ? 'configuration-open' : ''}`}
+      data-theme={themePreference}
+    >
       <header className="app-header">
-        <button
-          className="theme-toggle"
-          type="button"
-          aria-label={`Przełącz na tryb ${nextThemeLabel}`}
-          title={`Przełącz na tryb ${nextThemeLabel}`}
-          onClick={() => setThemePreference(nextThemePreference)}
-        >
-          {themePreference === 'dark' ? <Sun size={18} /> : <Moon size={18} />}
-        </button>
+        <div className="header-controls">
+          <button
+            className="header-icon-button"
+            type="button"
+            aria-label={`Przełącz na tryb ${nextThemeLabel}`}
+            title={`Przełącz na tryb ${nextThemeLabel}`}
+            onClick={() => setThemePreference(nextThemePreference)}
+          >
+            {themePreference === 'dark' ? <Sun size={18} /> : <Moon size={18} />}
+          </button>
+          <button
+            className={`header-icon-button ${configurationOpen ? 'active' : ''}`}
+            type="button"
+            aria-label="Otwórz konfigurację"
+            title="Konfiguracja"
+            onClick={() => setConfigurationOpen(true)}
+          >
+            <Settings size={18} />
+          </button>
+        </div>
         <div>
-          <p className="eyebrow">PolishVerbs</p>
           <h1>3000 polskich czasowników według częstotliwości</h1>
         </div>
         <div className="progress-summary">
@@ -371,6 +397,18 @@ function App() {
         </div>
       </header>
 
+      {configurationOpen ? (
+        <ConfigurationPage
+          showQuickFilters={appSettings.showQuickFilters}
+          onBack={() => setConfigurationOpen(false)}
+          onToggleQuickFilters={() =>
+            updateAppSettings({ ...appSettings, showQuickFilters: !appSettings.showQuickFilters })
+          }
+          onExportProgress={exportProgress}
+          onImportProgress={importProgress}
+        />
+      ) : (
+        <>
       <section className={`toolbar ${mobileFiltersOpen ? 'filters-open' : ''}`} aria-label="Wyszukiwanie i filtry">
         <div className="toolbar-search-row">
           <label className="search-field">
@@ -395,21 +433,23 @@ function App() {
             {activeFilterCount > 0 ? <small>{activeFilterCount}</small> : null}
           </button>
         </div>
-        <div className="quick-filters" aria-label="Szybkie filtry">
-          {quickFilters.map((filter) => (
-            <button
-              className={`filter-chip ${filter.active ? 'active' : ''}`}
-              type="button"
-              key={filter.label}
-              onClick={filter.onClick}
-            >
-              {filter.label}
+        {appSettings.showQuickFilters ? (
+          <div className="quick-filters" aria-label="Szybkie filtry">
+            {quickFilters.map((filter) => (
+              <button
+                className={`filter-chip ${filter.active ? 'active' : ''}`}
+                type="button"
+                key={filter.label}
+                onClick={filter.onClick}
+              >
+                {filter.label}
+              </button>
+            ))}
+            <button className="filter-chip clear-chip" type="button" onClick={clearFilters}>
+              Wyczyść
             </button>
-          ))}
-          <button className="filter-chip clear-chip" type="button" onClick={clearFilters}>
-            Wyczyść
-          </button>
-        </div>
+          </div>
+        ) : null}
         <div className="filter-group" id="verb-filters">
           <Filter size={17} />
           <select value={learnedFilter} onChange={(event) => setLearnedFilter(event.target.value as LearnedFilter)}>
@@ -456,7 +496,6 @@ function App() {
             }
             onSelectList={(listId) => updateProgress({ ...progress, selectedListId: listId })}
           />
-          <ProgressTools onExport={exportProgress} onImport={importProgress} />
 
           <div className="results-meta">
             <span>
@@ -513,8 +552,10 @@ function App() {
           <div className="empty-state">Żaden czasownik nie pasuje do obecnych filtrów.</div>
         )}
       </section>
+        </>
+      )}
 
-      {showQaPanel ? (
+      {!configurationOpen && showQaPanel ? (
         <QualityPanel
           verbs={verbs}
           onClose={toggleQaPanel}
@@ -523,7 +564,7 @@ function App() {
             setShowQaPanel(false)
           }}
         />
-      ) : qaEntryEnabled ? (
+      ) : !configurationOpen && qaEntryEnabled ? (
         <button className="qa-open-button" type="button" onClick={toggleQaPanel}>
           <Wrench size={14} />
           QA

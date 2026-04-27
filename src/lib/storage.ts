@@ -25,14 +25,23 @@ export interface StudyProgress {
 
 export type ThemePreference = 'light' | 'dark'
 
+export interface AppSettings {
+  showQuickFilters: boolean
+}
+
 const storageKey = 'polish-verbs-progress-v1'
 const themeStorageKey = 'polish-verbs-theme-v1'
+const appSettingsStorageKey = 'polish-verbs-settings-v1'
 
 const defaultProgress: StudyProgress = {
   learnedVerbIds: [],
   verbProgress: {},
   lists: [],
   selectedListId: null,
+}
+
+const defaultAppSettings: AppSettings = {
+  showQuickFilters: true,
 }
 
 const isVerbStudyStatus = (value: unknown): value is VerbStudyStatus =>
@@ -135,6 +144,33 @@ export function loadThemePreference(): ThemePreference {
 
 export function saveThemePreference(themePreference: ThemePreference) {
   window.localStorage.setItem(themeStorageKey, themePreference)
+}
+
+export function loadAppSettings(): AppSettings {
+  if (typeof window === 'undefined') {
+    return defaultAppSettings
+  }
+
+  try {
+    const raw = window.localStorage.getItem(appSettingsStorageKey)
+    if (!raw) {
+      return defaultAppSettings
+    }
+
+    const parsed = JSON.parse(raw) as Partial<AppSettings>
+    return {
+      showQuickFilters:
+        typeof parsed.showQuickFilters === 'boolean'
+          ? parsed.showQuickFilters
+          : defaultAppSettings.showQuickFilters,
+    }
+  } catch {
+    return defaultAppSettings
+  }
+}
+
+export function saveAppSettings(settings: AppSettings) {
+  window.localStorage.setItem(appSettingsStorageKey, JSON.stringify(settings))
 }
 
 export function createStudyList(name: string): StudyList {
