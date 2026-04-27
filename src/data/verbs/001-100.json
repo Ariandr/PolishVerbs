@@ -12,7 +12,6 @@
     },
     "translations": {
       "en": [
-        "to be",
         "to be, there be"
       ],
       "uk": [
@@ -90,7 +89,6 @@
     },
     "translations": {
       "en": [
-        "to have",
         "to be some age",
         "to have, to have sex with"
       ],
@@ -328,8 +326,7 @@
     "translations": {
       "en": [
         "to say, to tell",
-        "to call, to name",
-        "to say"
+        "to call, to name"
       ],
       "uk": [
         "говорити",
@@ -408,7 +405,6 @@
     },
     "translations": {
       "en": [
-        "to find",
         "to find, to come across, to run into",
         "to find, to work up"
       ],
@@ -489,8 +485,7 @@
     "translations": {
       "en": [
         "to stay, to remain",
-        "to remain, to be left",
-        "to remain"
+        "to remain, to be left"
       ],
       "uk": [
         "залишитися",
@@ -882,7 +877,6 @@
     },
     "translations": {
       "en": [
-        "to live",
         "to live with",
         "to live, to breathe"
       ],
@@ -961,7 +955,6 @@
     },
     "translations": {
       "en": [
-        "to give",
         "to give, to hand, to pass",
         "to give, to put on"
       ],
@@ -1042,7 +1035,6 @@
     },
     "translations": {
       "en": [
-        "to go",
         "to go, to attend",
         "to go after, to follow"
       ],
@@ -1122,9 +1114,7 @@
     },
     "translations": {
       "en": [
-        "to count",
-        "to count, to number",
-        "to count,"
+        "to count, to number"
       ],
       "uk": [
         "лічити"
@@ -1437,7 +1427,6 @@
     "translations": {
       "en": [
         "to look for, to seek, to search",
-        "to look for",
         "to look for oneself, to seek oneself, to search oneself"
       ],
       "uk": [
@@ -1592,12 +1581,13 @@
     },
     "translations": {
       "en": [
-        "to come back, to go back, to return",
-        "to come back, to go back, to return,",
-        "to return"
+        "to return",
+        "to come back",
+        "to go back"
       ],
       "uk": [
-        "wrócić (переклад потребує перевірки)"
+        "повернутися",
+        "вернутися"
       ]
     },
     "aspect": "perfective",
@@ -1673,7 +1663,6 @@
     },
     "translations": {
       "en": [
-        "to take",
         "to take in",
         "to take, to charge"
       ],
@@ -1988,7 +1977,7 @@
     },
     "translations": {
       "en": [
-        "to talk with, to speak, to converse, to have a conversation, to chat,",
+        "to talk with, to speak, to converse, to have a conversation, to chat",
         "to get even",
         "to negotiate"
       ],
@@ -2147,12 +2136,13 @@
     },
     "translations": {
       "en": [
-        "to check, to check up",
+        "to check",
         "to verify",
-        "to check oneself"
+        "to make sure"
       ],
       "uk": [
-        "sprawdzić (переклад потребує перевірки)"
+        "перевірити",
+        "звірити"
       ]
     },
     "aspect": "perfective",
@@ -2228,9 +2218,7 @@
     },
     "translations": {
       "en": [
-        "to walk out, to leave, to exit",
-        "to walk out, to leave",
-        "to leave"
+        "to walk out, to leave, to exit"
       ],
       "uk": [
         "ви́йти"
@@ -2308,11 +2296,13 @@
     "translations": {
       "en": [
         "to get to know",
-        "to know",
-        "to recognize, to tell"
+        "to meet",
+        "to recognize"
       ],
       "uk": [
-        "poznać (переклад потребує перевірки)"
+        "познайомитися",
+        "зустрітися",
+        "впізнати"
       ]
     },
     "aspect": "perfective",
@@ -2388,7 +2378,6 @@
     },
     "translations": {
       "en": [
-        "to wait",
         "to wait, to await",
         "to lie ahead, to lie in store"
       ],
@@ -2469,12 +2458,14 @@
     },
     "translations": {
       "en": [
-        "to admit, to acknowledge",
-        "to grant, to confer",
-        "to confess, to admit"
+        "to admit",
+        "to grant",
+        "to award"
       ],
       "uk": [
-        "przyznać (переклад потребує перевірки)"
+        "визнати",
+        "надати",
+        "присудити"
       ]
     },
     "aspect": "perfective",
@@ -2550,12 +2541,14 @@
     },
     "translations": {
       "en": [
-        "to acknowledge, to recognize, to deem",
+        "to recognize",
         "to consider",
-        "to consider oneself"
+        "to deem"
       ],
       "uk": [
-        "uznać (переклад потребує перевірки)"
+        "визнати",
+        "упізнати",
+        "вважати"
       ]
     },
     "aspect": "perfective",
@@ -2631,7 +2624,6 @@
     },
     "translations": {
       "en": [
-        "to lead",
         "to drive",
         "to lead, to guide"
       ],
@@ -2710,7 +2702,6 @@
     },
     "translations": {
       "en": [
-        "to go in",
         "to go on, to climb",
         "to go in, to enter"
       ],
@@ -2790,9 +2781,7 @@
     },
     "translations": {
       "en": [
-        "to start, to begin",
-        "to start",
-        "to begin"
+        "to start, to begin"
       ],
       "uk": [
         "почати",
@@ -3425,12 +3414,12 @@
     },
     "translations": {
       "en": [
-        "to keep, to maintain, to preserve",
-        "to keep, to retain",
-        "to act, to behave"
+        "to preserve",
+        "to keep"
       ],
       "uk": [
-        "zachować (переклад потребує перевірки)"
+        "зберегти",
+        "утримати"
       ]
     },
     "aspect": "perfective",
@@ -4056,11 +4045,12 @@
     },
     "translations": {
       "en": [
-        "to represent",
-        "to imagine"
+        "to imagine",
+        "to picture"
       ],
       "uk": [
-        "wyobrazić (переклад потребує перевірки)"
+        "уявити",
+        "зобразити"
       ]
     },
     "aspect": "perfective",
@@ -4136,7 +4126,7 @@
     },
     "translations": {
       "en": [
-        "to talk with, to speak, to converse, to have a conversation, to chat,"
+        "to talk with, to speak, to converse, to have a conversation, to chat"
       ],
       "uk": [
         "поговорити"
@@ -4294,10 +4284,10 @@
       "en": [
         "to allow",
         "to permit",
-        "to allow, to permit"
+        "to let"
       ],
       "uk": [
-        "pozwolić (переклад потребує перевірки)"
+        "дозволити"
       ]
     },
     "aspect": "perfective",
@@ -4531,12 +4521,13 @@
     },
     "translations": {
       "en": [
+        "to use",
         "to benefit from",
-        "to take advantage, to use",
-        "to sack, to plunder"
+        "to take advantage of"
       ],
       "uk": [
-        "korzystać (переклад потребує перевірки)"
+        "користуватися",
+        "використовувати"
       ]
     },
     "aspect": "imperfective",
@@ -4613,7 +4604,7 @@
     "translations": {
       "en": [
         "to give back, to return",
-        "to give, to send, to put,",
+        "to give, to send, to put",
         "to give, to pass"
       ],
       "uk": [
@@ -4694,7 +4685,7 @@
         "to believe"
       ],
       "uk": [
-        "uwierzyć (переклад потребує перевірки)"
+        "повірити"
       ]
     },
     "aspect": "perfective",
@@ -5005,12 +4996,14 @@
     },
     "translations": {
       "en": [
-        "to give back, to return",
-        "to turn in, to pay",
-        "to turn, to shift, to swing"
+        "to return",
+        "to give back",
+        "to turn"
       ],
       "uk": [
-        "zwrócić (переклад потребує перевірки)"
+        "повернути",
+        "віддати",
+        "звернути"
       ]
     },
     "aspect": "perfective",
@@ -5403,11 +5396,12 @@
     },
     "translations": {
       "en": [
-        "to benefit, to profit",
-        "to take advantage, to use"
+        "to make use of",
+        "to take advantage of",
+        "to benefit from"
       ],
       "uk": [
-        "skorzystać (переклад потребує перевірки)"
+        "скористатися"
       ]
     },
     "aspect": "perfective",
@@ -5484,11 +5478,11 @@
     "translations": {
       "en": [
         "to watch",
-        "to look back",
-        "to expect"
+        "to look at"
       ],
       "uk": [
-        "oglądać (переклад потребує перевірки)"
+        "дивитися",
+        "оглядати"
       ]
     },
     "aspect": "imperfective",
@@ -5801,12 +5795,14 @@
     },
     "translations": {
       "en": [
-        "to arrive, to reach, to get to",
-        "to reach, to get to",
-        "to get to, to make it to"
+        "to reach",
+        "to get to",
+        "to arrive"
       ],
       "uk": [
-        "dojść (переклад потребує перевірки)"
+        "дістатися",
+        "дійти",
+        "досягти"
       ]
     },
     "aspect": "perfective",
@@ -5882,12 +5878,13 @@
     },
     "translations": {
       "en": [
-        "to come back, to go back, to return",
-        "to come back, to go back, to return,",
-        "to return"
+        "to return",
+        "to come back",
+        "to go back"
       ],
       "uk": [
-        "wracać (переклад потребує перевірки)"
+        "повертатися",
+        "вертатися"
       ]
     },
     "aspect": "imperfective",
@@ -5963,12 +5960,14 @@
     },
     "translations": {
       "en": [
-        "to obtain, to acquire, to gain",
-        "to gain, to acquire, to gain",
+        "to obtain",
+        "to gain",
         "to conquer"
       ],
       "uk": [
-        "zdobyć (переклад потребує перевірки)"
+        "здобути",
+        "отримати",
+        "завоювати"
       ]
     },
     "aspect": "perfective",
@@ -6044,12 +6043,14 @@
     },
     "translations": {
       "en": [
-        "to assure, to reassure",
-        "to ensure, to provide, to guarantee",
-        "to claim, to assert"
+        "to assure",
+        "to ensure",
+        "to guarantee"
       ],
       "uk": [
-        "zapewnić (переклад потребує перевірки)"
+        "запевнити",
+        "забезпечити",
+        "гарантувати"
       ]
     },
     "aspect": "perfective",
@@ -6365,10 +6366,14 @@
     },
     "translations": {
       "en": [
-        "to obtain, to achieve, to attain, to gain"
+        "to obtain",
+        "to achieve",
+        "to gain"
       ],
       "uk": [
-        "uzyskać (переклад потребує перевірки)"
+        "отримати",
+        "досягти",
+        "здобути"
       ]
     },
     "aspect": "perfective",
@@ -6445,11 +6450,10 @@
     "translations": {
       "en": [
         "to remind",
-        "to be remembered",
-        "to remind oneself, to remember, to recall"
+        "to recall"
       ],
       "uk": [
-        "przypomnieć (переклад потребує перевірки)"
+        "нагадати"
       ]
     },
     "aspect": "perfective",
@@ -6526,11 +6530,11 @@
     "translations": {
       "en": [
         "to kill",
-        "to obliterate, to exterminate",
-        "to nail shut, to board up"
+        "to nail shut"
       ],
       "uk": [
-        "zabić (переклад потребує перевірки)"
+        "вбити",
+        "забити"
       ]
     },
     "aspect": "perfective",
@@ -6607,11 +6611,13 @@
     "translations": {
       "en": [
         "to show",
-        "to give access",
+        "to prove",
         "to turn out"
       ],
       "uk": [
-        "okazać (переклад потребує перевірки)"
+        "показати",
+        "довести",
+        "виявити"
       ]
     },
     "aspect": "perfective",
@@ -6767,7 +6773,6 @@
     "translations": {
       "en": [
         "to forget",
-        "to forget,",
         "to forget each other"
       ],
       "uk": [
@@ -6845,12 +6850,14 @@
     },
     "translations": {
       "en": [
-        "to hold up",
-        "to keep, to maintain",
-        "to keep"
+        "to keep up",
+        "to maintain",
+        "to support"
       ],
       "uk": [
-        "utrzymać (переклад потребує перевірки)"
+        "утримати",
+        "підтримати",
+        "зберегти"
       ]
     },
     "aspect": "perfective",
@@ -7083,12 +7090,14 @@
     },
     "translations": {
       "en": [
-        "to discover, to rediscover, to track down, to trace",
-        "to find, to acquire",
-        "to be discovered, to be found"
+        "to find",
+        "to rediscover",
+        "to track down"
       ],
       "uk": [
-        "odnaleźć (переклад потребує перевірки)"
+        "віднайти",
+        "знайти",
+        "розшукати"
       ]
     },
     "aspect": "perfective",
@@ -7164,10 +7173,14 @@
     },
     "translations": {
       "en": [
-        "to avoid, to evade, to dodge"
+        "to avoid",
+        "to evade",
+        "to dodge"
       ],
       "uk": [
-        "uniknąć (переклад потребує перевірки)"
+        "уникнути",
+        "оминути",
+        "ухилитися"
       ]
     },
     "aspect": "perfective",
@@ -7722,8 +7735,8 @@
         "to take, to charge"
       ],
       "uk": [
-        "брати",
-        "давай"
+        "приймати всередину",
+        "брати, стягувати"
       ]
     },
     "aspect": "imperfective",

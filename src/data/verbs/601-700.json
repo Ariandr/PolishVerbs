@@ -12,11 +12,12 @@
     },
     "translations": {
       "en": [
+        "to commit",
         "to commit, to perpetrate",
         "to make, to create"
       ],
       "uk": [
-        "popełnić (переклад потребує перевірки)"
+        "здійснити"
       ]
     },
     "aspect": "perfective",
@@ -92,10 +93,10 @@
     },
     "translations": {
       "en": [
-        "to zatrudnić"
+        "to employ"
       ],
       "uk": [
-        "zatrudnić (переклад потребує перевірки)"
+        "працевлаштувати"
       ]
     },
     "aspect": "perfective",
@@ -171,10 +172,10 @@
     },
     "translations": {
       "en": [
-        "to doświadczyć"
+        "to experience"
       ],
       "uk": [
-        "doświadczyć (переклад потребує перевірки)"
+        "пережити"
       ]
     },
     "aspect": "perfective",
@@ -254,7 +255,7 @@
         "to be interested"
       ],
       "uk": [
-        "zainteresować (переклад потребує перевірки)"
+        "зацікавитися"
       ]
     },
     "aspect": "perfective",
@@ -409,9 +410,10 @@
     },
     "translations": {
       "en": [
-        "to żądać"
+        "to demand"
       ],
       "uk": [
+        "вимагати",
         "вимага́ти"
       ]
     },
@@ -486,12 +488,12 @@
     },
     "translations": {
       "en": [
+        "to leave",
         "to leave, to leave alone",
-        "to leave behind, to abandon",
-        "to leave, to bequeath"
+        "to leave behind, to abandon"
       ],
       "uk": [
-        "pozostawić (переклад потребує перевірки)"
+        "залишити"
       ]
     },
     "aspect": "perfective",
@@ -567,10 +569,10 @@
     },
     "translations": {
       "en": [
-        "to płynąć"
+        "to flow"
       ],
       "uk": [
-        "płynąć (переклад потребує перевірки)"
+        "текти"
       ]
     },
     "aspect": "imperfective",
@@ -646,12 +648,13 @@
     },
     "translations": {
       "en": [
-        "to introduce",
         "to present",
+        "to introduce",
         "to present, to put forward"
       ],
       "uk": [
-        "przedstawiać (переклад потребує перевірки)"
+        "познайомити",
+        "представити, висунути"
       ]
     },
     "aspect": "unknown",
@@ -728,12 +731,14 @@
     },
     "translations": {
       "en": [
+        "to practice",
         "to exercise",
-        "to train, to drill",
-        "to flog, to lash, to whip"
+        "to train, to drill"
       ],
       "uk": [
-        "ćwiczyć (переклад потребує перевірки)"
+        "практикувати",
+        "здійснювати",
+        "тренувати, муштрувати"
       ]
     },
     "aspect": "imperfective",
@@ -891,7 +896,7 @@
         "to send"
       ],
       "uk": [
-        "wysyłać (переклад потребує перевірки)"
+        "відправити"
       ]
     },
     "aspect": "imperfective",
@@ -967,10 +972,10 @@
     },
     "translations": {
       "en": [
-        "to przyczynić"
+        "to contribute"
       ],
       "uk": [
-        "przyczynić (переклад потребує перевірки)"
+        "сприяти"
       ]
     },
     "aspect": "perfective",
@@ -1046,12 +1051,12 @@
     },
     "translations": {
       "en": [
+        "to postpone",
         "to move around, to move over",
-        "to rearrange",
-        "to put through"
+        "to rearrange"
       ],
       "uk": [
-        "przełożyć (переклад потребує перевірки)"
+        "відкладати"
       ]
     },
     "aspect": "perfective",
@@ -1127,10 +1132,10 @@
     },
     "translations": {
       "en": [
-        "to oszukać"
+        "to cheat"
       ],
       "uk": [
-        "oszukać (переклад потребує перевірки)"
+        "обманювати"
       ]
     },
     "aspect": "perfective",
@@ -1206,11 +1211,12 @@
     },
     "translations": {
       "en": [
+        "to reveal",
         "to reveal, to expose, to disclose, to divulge",
         "to get exposed"
       ],
       "uk": [
-        "ujawnić (переклад потребує перевірки)"
+        "розкрити"
       ]
     },
     "aspect": "perfective",
@@ -1286,10 +1292,11 @@
     },
     "translations": {
       "en": [
+        "to call",
         "to call, to summon"
       ],
       "uk": [
-        "wezwać (переклад потребує перевірки)"
+        "кликати, закликати"
       ]
     },
     "aspect": "perfective",
@@ -1448,7 +1455,7 @@
         "to scrimp and save"
       ],
       "uk": [
-        "żałować (переклад потребує перевірки)"
+        "шкодувати"
       ]
     },
     "aspect": "imperfective",
@@ -1524,10 +1531,10 @@
     },
     "translations": {
       "en": [
-        "to zabraknąć"
+        "to run out"
       ],
       "uk": [
-        "zabraknąć (переклад потребує перевірки)"
+        "вичерпатися"
       ]
     },
     "aspect": "perfective",
@@ -1764,12 +1771,12 @@
     },
     "translations": {
       "en": [
+        "to apologize",
         "to apologize to, to be sorry",
-        "to apologize to each other",
-        "to calm down"
+        "to apologize to each other"
       ],
       "uk": [
-        "przeprosić (переклад потребує перевірки)"
+        "вибачитися"
       ]
     },
     "aspect": "perfective",
@@ -1845,12 +1852,12 @@
     },
     "translations": {
       "en": [
+        "to take into account",
         "to take into account, to account for",
-        "to include, to count",
-        "to grant, to agree to fulfill"
+        "to include, to count"
       ],
       "uk": [
-        "uwzględnić (переклад потребує перевірки)"
+        "взяти до уваги"
       ]
     },
     "aspect": "unknown",
@@ -1927,12 +1934,14 @@
     },
     "translations": {
       "en": [
+        "to think",
         "to think over, to chew on",
-        "to rethink",
-        "to ponder, to ruminate"
+        "to rethink"
       ],
       "uk": [
-        "przemyśleć (переклад потребує перевірки)"
+        "думати",
+        "передумувати, пережовувати",
+        "переосмислювати"
       ]
     },
     "aspect": "perfective",
@@ -2085,12 +2094,12 @@
     },
     "translations": {
       "en": [
-        "to behold, to observe, to watch",
         "to observe",
+        "to behold, to observe, to watch",
         "to follow"
       ],
       "uk": [
-        "zaobserwować (переклад потребує перевірки)"
+        "спостерігати"
       ]
     },
     "aspect": "perfective",
@@ -2166,10 +2175,11 @@
     },
     "translations": {
       "en": [
+        "to give up",
         "to give up, to forgo, to do without, to drop, to drop out, to resign, to forswear, to quit, to be out"
       ],
       "uk": [
-        "rezygnować (переклад потребує перевірки)"
+        "здаватися"
       ]
     },
     "aspect": "imperfective",
@@ -2245,11 +2255,12 @@
     },
     "translations": {
       "en": [
+        "to acquire",
         "to obtain, to acquire",
         "to buy, to purchase"
       ],
       "uk": [
-        "nabyć (переклад потребує перевірки)"
+        "придбати"
       ]
     },
     "aspect": "unknown",
@@ -2326,12 +2337,13 @@
     },
     "translations": {
       "en": [
+        "to pass",
         "to go across, to cross",
-        "to go through, to cross",
-        "to cross, to pass by"
+        "to go through, to cross"
       ],
       "uk": [
-        "przechodzić (переклад потребує перевірки)"
+        "перейти, перетнути",
+        "проходити, перетинати"
       ]
     },
     "aspect": "imperfective",
@@ -2407,12 +2419,12 @@
     },
     "translations": {
       "en": [
+        "to celebrate",
         "to walk around, to go around",
-        "to circumvent, to bypass",
-        "to be cared about, to matter to"
+        "to circumvent, to bypass"
       ],
       "uk": [
-        "obchodzić (переклад потребує перевірки)"
+        "святкувати"
       ]
     },
     "aspect": "imperfective",
@@ -2488,10 +2500,10 @@
     },
     "translations": {
       "en": [
-        "to porozumieć"
+        "to communicate"
       ],
       "uk": [
-        "porozumieć (переклад потребує перевірки)"
+        "спілкуватися"
       ]
     },
     "aspect": "unknown",
@@ -2568,10 +2580,10 @@
     },
     "translations": {
       "en": [
-        "to wstydzić"
+        "to ashamed"
       ],
       "uk": [
-        "wstydzić (переклад потребує перевірки)"
+        "соромитися"
       ]
     },
     "aspect": "imperfective",
@@ -2647,11 +2659,10 @@
     },
     "translations": {
       "en": [
-        "to malować"
+        "to paint"
       ],
       "uk": [
-        "фарбувати",
-        "малювати"
+        "фарбувати"
       ]
     },
     "aspect": "imperfective",
@@ -2885,10 +2896,10 @@
     },
     "translations": {
       "en": [
-        "to ciągnąć"
+        "to pull"
       ],
       "uk": [
-        "ciągnąć (переклад потребує перевірки)"
+        "потягнути"
       ]
     },
     "aspect": "imperfective",
@@ -2964,10 +2975,10 @@
     },
     "translations": {
       "en": [
-        "to interpretować"
+        "to interpret"
       ],
       "uk": [
-        "interpretować (переклад потребує перевірки)"
+        "тлумачити"
       ]
     },
     "aspect": "imperfective",
@@ -3125,7 +3136,7 @@
         "to prepare"
       ],
       "uk": [
-        "przygotowywać (переклад потребує перевірки)"
+        "підготувати"
       ]
     },
     "aspect": "imperfective",
@@ -3201,12 +3212,12 @@
     },
     "translations": {
       "en": [
+        "to draw in",
         "to pull in, to pull inside",
-        "to hoist, to raise",
-        "to draw, to inhale, to breathe in"
+        "to hoist, to raise"
       ],
       "uk": [
-        "wciągnąć (переклад потребує перевірки)"
+        "втягнути"
       ]
     },
     "aspect": "perfective",
@@ -3282,12 +3293,12 @@
     },
     "translations": {
       "en": [
+        "to bring",
         "to carry in",
-        "to carry up",
-        "to bring, to contribute"
+        "to carry up"
       ],
       "uk": [
-        "wnieść (переклад потребує перевірки)"
+        "принести"
       ]
     },
     "aspect": "perfective",
@@ -3363,10 +3374,10 @@
     },
     "translations": {
       "en": [
-        "to ogarnąć"
+        "to embrace"
       ],
       "uk": [
-        "ogarnąć (переклад потребує перевірки)"
+        "обійняти"
       ]
     },
     "aspect": "unknown",
@@ -3447,7 +3458,7 @@
         "to be academic advisor to"
       ],
       "uk": [
-        "promować (переклад потребує перевірки)"
+        "сприяти"
       ]
     },
     "aspect": "imperfective",
@@ -3523,12 +3534,12 @@
     },
     "translations": {
       "en": [
+        "to throw off",
         "to throw down, to cast off, to discard, to shed",
-        "to lose weight",
-        "to club together, to chip in"
+        "to lose weight"
       ],
       "uk": [
-        "zrzucić (переклад потребує перевірки)"
+        "скинути"
       ]
     },
     "aspect": "perfective",
@@ -3604,10 +3615,10 @@
     },
     "translations": {
       "en": [
-        "to odbudować"
+        "to rebuild"
       ],
       "uk": [
-        "odbudować (переклад потребує перевірки)"
+        "перебудувати"
       ]
     },
     "aspect": "unknown",
@@ -3761,10 +3772,11 @@
     },
     "translations": {
       "en": [
+        "to take time",
         "to last for some time"
       ],
       "uk": [
-        "potrwać (переклад потребує перевірки)"
+        "тривати деякий час"
       ]
     },
     "aspect": "perfective",
@@ -3840,11 +3852,13 @@
     },
     "translations": {
       "en": [
+        "to clean",
         "to cleanse, to purify, to clean",
         "to clear, to exonerate"
       ],
       "uk": [
-        "oczyścić (переклад потребує перевірки)"
+        "очищати, очищати, чистити",
+        "очищати, виправдовувати"
       ]
     },
     "aspect": "perfective",
@@ -3920,10 +3934,11 @@
     },
     "translations": {
       "en": [
+        "to omit",
         "to bypass, to avoid, to skirt, to miss"
       ],
       "uk": [
-        "ominąć (переклад потребує перевірки)"
+        "опускати"
       ]
     },
     "aspect": "perfective",
@@ -3999,11 +4014,12 @@
     },
     "translations": {
       "en": [
+        "to get in",
         "to board, to get on, to embark",
         "to mount, to bestride"
       ],
       "uk": [
-        "wsiąść (переклад потребує перевірки)"
+        "входити"
       ]
     },
     "aspect": "perfective",
@@ -4079,7 +4095,7 @@
     },
     "translations": {
       "en": [
-        "to chwalić"
+        "to praise"
       ],
       "uk": [
         "хвалити"
@@ -4162,7 +4178,7 @@
         "to visit one another"
       ],
       "uk": [
-        "odwiedzać (переклад потребує перевірки)"
+        "відвідати"
       ]
     },
     "aspect": "imperfective",
@@ -4238,7 +4254,7 @@
     },
     "translations": {
       "en": [
-        "to kłamać"
+        "to lie"
       ],
       "uk": [
         "брехати"
@@ -4394,12 +4410,12 @@
     },
     "translations": {
       "en": [
+        "to go around",
         "to go around, to walk around",
-        "to circumvent, to bypass",
-        "to care, to concern oneself with"
+        "to circumvent, to bypass"
       ],
       "uk": [
-        "obejść (переклад потребує перевірки)"
+        "обійти"
       ]
     },
     "aspect": "perfective",
@@ -4475,10 +4491,10 @@
     },
     "translations": {
       "en": [
-        "to pochodzić"
+        "to originate"
       ],
       "uk": [
-        "pochodzić (переклад потребує перевірки)"
+        "виникати"
       ]
     },
     "aspect": "perfective",
@@ -4631,10 +4647,10 @@
     },
     "translations": {
       "en": [
-        "to odpuścić"
+        "to forgive"
       ],
       "uk": [
-        "odpuścić (переклад потребує перевірки)"
+        "пробачити"
       ]
     },
     "aspect": "unknown",
@@ -4789,11 +4805,13 @@
     },
     "translations": {
       "en": [
+        "to grant",
         "to grant, to accord, to give, to provide",
         "to rub off on, to infect"
       ],
       "uk": [
-        "udzielać (переклад потребує перевірки)"
+        "надавати, погоджувати, давати, надавати",
+        "натирати, заразити"
       ]
     },
     "aspect": "imperfective",
@@ -4869,12 +4887,12 @@
     },
     "translations": {
       "en": [
+        "to read",
         "to glean",
-        "to figure",
-        "to read off, to read out"
+        "to figure"
       ],
       "uk": [
-        "wyczytać (переклад потребує перевірки)"
+        "читати"
       ]
     },
     "aspect": "perfective",
@@ -4950,12 +4968,12 @@
     },
     "translations": {
       "en": [
+        "to put aside",
         "to set aside",
-        "to put off,,",
-        "to put aside"
+        "to put off"
       ],
       "uk": [
-        "odłożyć (переклад потребує перевірки)"
+        "відкласти в сторону"
       ]
     },
     "aspect": "perfective",
@@ -5031,12 +5049,12 @@
     },
     "translations": {
       "en": [
+        "to turn off",
         "to switch off, to turn off, to disable",
-        "to exclude",
-        "to shut down"
+        "to exclude"
       ],
       "uk": [
-        "wyłączyć (переклад потребує перевірки)"
+        "вимкнути"
       ]
     },
     "aspect": "perfective",
@@ -5112,12 +5130,12 @@
     },
     "translations": {
       "en": [
+        "to conquer",
         "to obtain, to acquire, to gain",
-        "to gain, to acquire, to gain",
-        "to conquer"
+        "to gain, to acquire, to gain"
       ],
       "uk": [
-        "zdobywać (переклад потребує перевірки)"
+        "завоювати"
       ]
     },
     "aspect": "imperfective",
@@ -5353,12 +5371,12 @@
     },
     "translations": {
       "en": [
+        "to arrange",
         "to furnish",
-        "to prepare, to set up",
-        "to throw, to organize"
+        "to prepare, to set up"
       ],
       "uk": [
-        "urządzić (переклад потребує перевірки)"
+        "влаштовувати"
       ]
     },
     "aspect": "perfective",
@@ -5511,10 +5529,12 @@
     },
     "translations": {
       "en": [
+        "to venture",
         "to risk"
       ],
       "uk": [
-        "zaryzykować (переклад потребує перевірки)"
+        "наважитися",
+        "ризикувати"
       ]
     },
     "aspect": "perfective",
@@ -5590,7 +5610,7 @@
     },
     "translations": {
       "en": [
-        "to lubić"
+        "to like"
       ],
       "uk": [
         "любити"
@@ -5667,12 +5687,12 @@
     },
     "translations": {
       "en": [
-        "to run, to travel",
         "to run",
+        "to run, to travel",
         "to circulate, to spread, to disseminate"
       ],
       "uk": [
-        "kursować (переклад потребує перевірки)"
+        "бігати"
       ]
     },
     "aspect": "imperfective",
@@ -5748,11 +5768,12 @@
     },
     "translations": {
       "en": [
+        "to omit",
         "to omit, to leave out",
         "to skip, to bypass, to pass over"
       ],
       "uk": [
-        "pominąć (переклад потребує перевірки)"
+        "пропускати"
       ]
     },
     "aspect": "unknown",
@@ -5829,12 +5850,12 @@
     },
     "translations": {
       "en": [
+        "to descend",
         "to descend, to go down",
-        "to depreciate, to decrease in value",
-        "to give way"
+        "to depreciate, to decrease in value"
       ],
       "uk": [
-        "schodzić (переклад потребує перевірки)"
+        "спускатися"
       ]
     },
     "aspect": "imperfective",
@@ -5910,11 +5931,12 @@
     },
     "translations": {
       "en": [
+        "to expose",
         "to imperil, to jeopardize, to put at risk, to put in danger",
         "to risk"
       ],
       "uk": [
-        "narażać (переклад потребує перевірки)"
+        "викрити"
       ]
     },
     "aspect": "imperfective",
@@ -5990,12 +6012,12 @@
     },
     "translations": {
       "en": [
+        "to move",
         "to move, to stir",
-        "to move emotionally, to touch",
-        "to bring up, to mention, to touch on"
+        "to move emotionally, to touch"
       ],
       "uk": [
-        "poruszyć (переклад потребує перевірки)"
+        "рухатися"
       ]
     },
     "aspect": "perfective",
@@ -6075,7 +6097,7 @@
         "to outlive, to survive"
       ],
       "uk": [
-        "przeżywać (переклад потребує перевірки)"
+        "пережити, пережити"
       ]
     },
     "aspect": "unknown",
@@ -6233,10 +6255,10 @@
     },
     "translations": {
       "en": [
-        "to zawrzeć"
+        "to conclude"
       ],
       "uk": [
-        "zawrzeć (переклад потребує перевірки)"
+        "зробити висновок"
       ]
     },
     "aspect": "perfective",
@@ -6394,7 +6416,7 @@
         "to invest"
       ],
       "uk": [
-        "zainwestować (переклад потребує перевірки)"
+        "інвестувати"
       ]
     },
     "aspect": "perfective",
@@ -6470,10 +6492,10 @@
     },
     "translations": {
       "en": [
-        "to znosić"
+        "to endure"
       ],
       "uk": [
-        "znosić (переклад потребує перевірки)"
+        "терпіти"
       ]
     },
     "aspect": "imperfective",
@@ -6631,7 +6653,7 @@
         "to perform"
       ],
       "uk": [
-        "produkować (переклад потребує перевірки)"
+        "виробляти"
       ]
     },
     "aspect": "unknown",
@@ -6708,12 +6730,12 @@
     },
     "translations": {
       "en": [
+        "to transmit",
         "to transfer, to pass on, to hand over, to surrender, to give",
-        "to convey, to pass on, to communicate",
-        "to transmit, to convey, to communicate"
+        "to convey, to pass on, to communicate"
       ],
       "uk": [
-        "przekazywać (переклад потребує перевірки)"
+        "передавати"
       ]
     },
     "aspect": "imperfective",
@@ -6950,10 +6972,10 @@
     },
     "translations": {
       "en": [
-        "to wynająć"
+        "to rent"
       ],
       "uk": [
-        "wynająć (переклад потребує перевірки)"
+        "орендувати"
       ]
     },
     "aspect": "perfective",
@@ -7111,7 +7133,7 @@
         "to bring"
       ],
       "uk": [
-        "przynosić (переклад потребує перевірки)"
+        "принести"
       ]
     },
     "aspect": "imperfective",
@@ -7187,12 +7209,12 @@
     },
     "translations": {
       "en": [
+        "to close",
         "to close, to lock, to shut",
-        "to bring an end to, to conclude, to wrap up",
-        "to lock up, to put away"
+        "to bring an end to, to conclude, to wrap up"
       ],
       "uk": [
-        "zamykać (переклад потребує перевірки)"
+        "закрити"
       ]
     },
     "aspect": "imperfective",
@@ -7268,10 +7290,10 @@
     },
     "translations": {
       "en": [
-        "to konkurować"
+        "to compete"
       ],
       "uk": [
-        "konkurować (переклад потребує перевірки)"
+        "конкурувати"
       ]
     },
     "aspect": "imperfective",
@@ -7347,12 +7369,12 @@
     },
     "translations": {
       "en": [
-        "to przestrzegać"
+        "to observe"
       ],
       "uk": [
+        "спостерігати",
         "перестерігати",
-        "попереджати",
-        "дотримуватися"
+        "попереджати"
       ]
     },
     "aspect": "imperfective",
@@ -7426,10 +7448,11 @@
     },
     "translations": {
       "en": [
+        "to work out",
         "to hammer out, to work out, to develop"
       ],
       "uk": [
-        "wypracować (переклад потребує перевірки)"
+        "тренуватися"
       ]
     },
     "aspect": "perfective",
@@ -7585,10 +7608,10 @@
     },
     "translations": {
       "en": [
-        "to wrzucić"
+        "to throw it in"
       ],
       "uk": [
-        "wrzucić (переклад потребує перевірки)"
+        "кинути його"
       ]
     },
     "aspect": "unknown",
@@ -7665,11 +7688,12 @@
     },
     "translations": {
       "en": [
+        "to accommodate",
         "to accommodate, to hold, to seat, to house",
         "to fit"
       ],
       "uk": [
-        "pomieścić (переклад потребує перевірки)"
+        "розмістити"
       ]
     },
     "aspect": "perfective",
@@ -7745,10 +7769,10 @@
     },
     "translations": {
       "en": [
-        "to uzupełnić"
+        "to complete"
       ],
       "uk": [
-        "uzupełnić (переклад потребує перевірки)"
+        "завершити"
       ]
     },
     "aspect": "perfective",
@@ -7902,12 +7926,12 @@
     },
     "translations": {
       "en": [
+        "to play",
         "to play, to perform",
-        "to play, to portray, to act",
-        "to reenact"
+        "to play, to portray, to act"
       ],
       "uk": [
-        "odgrywać (переклад потребує перевірки)"
+        "грати"
       ]
     },
     "aspect": "imperfective",
