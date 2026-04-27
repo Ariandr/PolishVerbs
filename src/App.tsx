@@ -1,13 +1,17 @@
-import { useEffect, useMemo, useState } from 'react'
-import { ArrowLeft, BookOpen, Filter, Moon, Search, Sun } from 'lucide-react'
+import { useEffect, useMemo, useRef, useState } from 'react'
+import { ArrowLeft, BookOpen, Filter, Moon, Search, Sun, Wrench } from 'lucide-react'
 import './App.css'
 import { CreateListModal, ListPickerModal } from './components/ListModals'
+import { ProgressTools } from './components/ProgressTools'
+import { QualityPanel } from './components/QualityPanel'
 import { StudyMode } from './components/StudyMode'
 import { StudyLists } from './components/StudyLists'
 import { VerbDetail } from './components/VerbTables'
 import { VerbList } from './components/VerbList'
-import { verbs } from './data/verbs'
-import type { Aspect, VerbEntry } from './data/schema'
+import { verbById, verbs } from './data/verbs'
+import type { Aspect } from './data/schema'
+import { mergeProgressImport, serializeProgressExport } from './lib/progressTransfer'
+import { getSearchIndex, getSearchScore, normalizeSearch } from './lib/search'
 import {
   createStudyList,
   createVerbStudyProgress,
@@ -20,70 +24,30 @@ import {
   type ThemePreference,
   type VerbStudyStatus,
 } from './lib/storage'
+import { getVerbIdFromUrl, isQaEnabledFromUrl, setQaInUrl, setVerbIdInUrl } from './lib/urlState'
 
 type LearnedFilter = 'all' | 'learning' | 'learned'
 type RangeFilter = 'all' | 'top100' | 'top300' | 'top600' | 'top1200' | 'top3000'
 
-interface SearchRecord {
-  infinitive: string
-  forms: string
-  translations: string
-  all: string
-}
-
-const normalize = (value: string) =>
-  value
-    .toLocaleLowerCase('pl')
-    .normalize('NFD')
-    .replace(/\p{Diacritic}/gu, '')
-
-const getPastFormValues = (verb: VerbEntry) =>
-  Object.values(verb.forms.past).flatMap((group) => Object.values(group))
-
-const getSearchIndex = (verb: VerbEntry) =>
-  {
-    const infinitive = normalize(verb.infinitive)
-    const forms = normalize([...Object.values(verb.forms.present), ...getPastFormValues(verb)].join(' '))
-    const translations = normalize([...verb.translations.en, ...verb.translations.uk].join(' '))
-
-    return {
-      infinitive,
-      forms,
-      translations,
-      all: `${infinitive} ${forms} ${translations}`,
-    }
-  }
-
-const getSearchScore = (record: SearchRecord, query: string) => {
-  if (record.infinitive === query) {
-    return 0
-  }
-  if (record.infinitive.startsWith(query)) {
-    return 1
-  }
-  if (record.infinitive.includes(query)) {
-    return 2
-  }
-  if (record.forms.includes(query)) {
-    return 3
-  }
-  if (record.translations.includes(query)) {
-    return 4
-  }
-  return 5
-}
-
 function App() {
+  const initialVerbId = typeof window === 'undefined' ? null : getVerbIdFromUrl()
+  const listScrollYRef = useRef(0)
+  const openedMobileDetailFromListRef = useRef(false)
   const [progress, setProgress] = useState<StudyProgress>(() => loadProgress())
   const [themePreference, setThemePreference] = useState<ThemePreference>(() => loadThemePreference())
-  const [selectedVerbId, setSelectedVerbId] = useState(verbs[0]?.id ?? '')
+  const [selectedVerbId, setSelectedVerbId] = useState(initialVerbId && verbById.has(initialVerbId) ? initialVerbId : verbs[0]?.id ?? '')
   const [query, setQuery] = useState('')
   const [learnedFilter, setLearnedFilter] = useState<LearnedFilter>('all')
   const [aspectFilter, setAspectFilter] = useState<Aspect | 'all'>('all')
   const [rangeFilter, setRangeFilter] = useState<RangeFilter>('all')
   const [mobileFiltersOpen, setMobileFiltersOpen] = useState(false)
-  const [mobileDetailOpen, setMobileDetailOpen] = useState(false)
+  const [mobileDetailOpen, setMobileDetailOpen] = useState(() =>
+    typeof window === 'undefined' ? false : Boolean(initialVerbId && verbById.has(initialVerbId) && window.matchMedia('(max-width: 980px)').matches),
+  )
   const [studyModeOpen, setStudyModeOpen] = useState(false)
+  const [showQaPanel, setShowQaPanel] = useState(() => isQaEnabledFromUrl())
+  const [qaEntryEnabled, setQaEntryEnabled] = useState(() => isQaEnabledFromUrl())
+  const [transferMessage, setTransferMessage] = useState<{ title: string; body: string } | null>(null)
   const [showCreateList, setShowCreateList] = useState(false)
   const [createListVerbId, setCreateListVerbId] = useState<string | null>(null)
   const [listPickerVerbId, setListPickerVerbId] = useState<string | null>(null)
@@ -96,6 +60,31 @@ function App() {
     document.documentElement.dataset.theme = themePreference
     saveThemePreference(themePreference)
   }, [themePreference])
+
+  useEffect(() => {
+    const onPopState = () => {
+      const urlVerbId = getVerbIdFromUrl()
+      if (urlVerbId && verbById.has(urlVerbId)) {
+        setSelectedVerbId(urlVerbId)
+        if (window.matchMedia('(max-width: 980px)').matches) {
+          setMobileDetailOpen(true)
+        }
+      } else if (window.matchMedia('(max-width: 980px)').matches) {
+        setMobileDetailOpen(false)
+        window.requestAnimationFrame(() => window.scrollTo({ top: listScrollYRef.current, behavior: 'auto' }))
+      }
+      const qaEnabled = isQaEnabledFromUrl()
+      setShowQaPanel(qaEnabled)
+      setQaEntryEnabled(qaEnabled)
+    }
+
+    window.addEventListener('popstate', onPopState)
+    const urlVerbId = getVerbIdFromUrl()
+    if (urlVerbId && !verbById.has(urlVerbId) && verbs[0]) {
+      setVerbIdInUrl(verbs[0].id, 'replace')
+    }
+    return () => window.removeEventListener('popstate', onPopState)
+  }, [])
 
   const getVerbStatus = (verbId: string): VerbStudyStatus => progress.verbProgress[verbId]?.status ?? 'new'
   const learnedVerbIds = useMemo(
@@ -112,7 +101,7 @@ function App() {
   const searchIndexes = useMemo(() => new Map(verbs.map((verb) => [verb.id, getSearchIndex(verb)])), [])
 
   const visibleVerbs = useMemo(() => {
-    const normalizedQuery = normalize(query.trim())
+    const normalizedQuery = normalizeSearch(query.trim())
     const filtered = verbs.filter((verb) => {
       if (activeList && !activeList.verbIds.includes(verb.id)) {
         return false
@@ -166,6 +155,9 @@ function App() {
     visibleVerbs[0] ??
     verbs.find((verb) => verb.id === selectedVerbId) ??
     verbs[0]
+  const selectedIndex = selectedVerb ? visibleVerbs.findIndex((verb) => verb.id === selectedVerb.id) : -1
+  const selectedLearned = selectedVerb ? learnedVerbIds.has(selectedVerb.id) : false
+  const selectedInList = selectedVerb ? activeListVerbIds.has(selectedVerb.id) : false
   const learnedCount = learnedVerbIds.size
 
   const updateProgress = (next: StudyProgress) => {
@@ -250,9 +242,14 @@ function App() {
     setListPickerVerbId(verbId)
   }
 
-  const selectVerb = (verbId: string) => {
+  const selectVerb = (verbId: string, openedFromList = true) => {
     setSelectedVerbId(verbId)
+    setVerbIdInUrl(verbId, 'push')
     if (window.matchMedia('(max-width: 980px)').matches) {
+      if (openedFromList) {
+        listScrollYRef.current = window.scrollY
+        openedMobileDetailFromListRef.current = true
+      }
       window.requestAnimationFrame(() => {
         setMobileDetailOpen(true)
         window.scrollTo({ top: 0, behavior: 'auto' })
@@ -260,10 +257,94 @@ function App() {
     }
   }
 
+  const closeMobileDetail = () => {
+    openedMobileDetailFromListRef.current = false
+    setMobileDetailOpen(false)
+    setVerbIdInUrl(null, 'replace')
+    window.requestAnimationFrame(() => window.scrollTo({ top: listScrollYRef.current, behavior: 'auto' }))
+  }
+
+  const navigateSelectedVerb = (offset: -1 | 1) => {
+    const nextVerb = visibleVerbs[selectedIndex + offset]
+    if (nextVerb) {
+      selectVerb(nextVerb.id, false)
+    }
+  }
+
+  const clearFilters = () => {
+    setQuery('')
+    setLearnedFilter('all')
+    setAspectFilter('all')
+    setRangeFilter('all')
+  }
+
+  const exportProgress = () => {
+    const blob = new Blob([serializeProgressExport(progress, themePreference)], { type: 'application/json' })
+    const url = URL.createObjectURL(blob)
+    const link = document.createElement('a')
+    link.href = url
+    link.download = `polishverbs-progress-${new Date().toISOString().slice(0, 10)}.json`
+    link.click()
+    URL.revokeObjectURL(url)
+  }
+
+  const importProgress = async (file: File) => {
+    try {
+      const result = mergeProgressImport(progress, await file.text())
+      updateProgress(result.progress)
+      if (result.themePreference) {
+        setThemePreference(result.themePreference)
+      }
+      setTransferMessage({
+        title: 'Zaimportowano postęp',
+        body: `Dodano ${result.importedListCount} list i scalono ${result.importedVerbProgressCount} wpisów postępu.`,
+      })
+    } catch (error) {
+      setTransferMessage({
+        title: 'Nie udało się zaimportować',
+        body: error instanceof Error ? error.message : 'Plik ma nieobsługiwany format.',
+      })
+    }
+  }
+
+  const toggleQaPanel = () => {
+    const next = !showQaPanel
+    setQaEntryEnabled(true)
+    setShowQaPanel(next)
+    setQaInUrl(next)
+  }
+
   const listPickerVerb = listPickerVerbId ? verbs.find((verb) => verb.id === listPickerVerbId) : undefined
   const nextThemePreference = themePreference === 'dark' ? 'light' : 'dark'
   const nextThemeLabel = nextThemePreference === 'dark' ? 'ciemny' : 'jasny'
   const activeFilterCount = [learnedFilter !== 'all', aspectFilter !== 'all', rangeFilter !== 'all'].filter(Boolean).length
+  const quickFilters = [
+    {
+      label: 'Top 100',
+      active: rangeFilter === 'top100',
+      onClick: () => setRangeFilter(rangeFilter === 'top100' ? 'all' : 'top100'),
+    },
+    {
+      label: 'W trakcie nauki',
+      active: learnedFilter === 'learning',
+      onClick: () => setLearnedFilter(learnedFilter === 'learning' ? 'all' : 'learning'),
+    },
+    {
+      label: 'Opanowane',
+      active: learnedFilter === 'learned',
+      onClick: () => setLearnedFilter(learnedFilter === 'learned' ? 'all' : 'learned'),
+    },
+    {
+      label: 'Niedokonane',
+      active: aspectFilter === 'imperfective',
+      onClick: () => setAspectFilter(aspectFilter === 'imperfective' ? 'all' : 'imperfective'),
+    },
+    {
+      label: 'Dokonane',
+      active: aspectFilter === 'perfective',
+      onClick: () => setAspectFilter(aspectFilter === 'perfective' ? 'all' : 'perfective'),
+    },
+  ]
 
   return (
     <main className={`app-shell ${mobileDetailOpen ? 'mobile-detail-open' : ''}`} data-theme={themePreference}>
@@ -314,6 +395,21 @@ function App() {
             {activeFilterCount > 0 ? <small>{activeFilterCount}</small> : null}
           </button>
         </div>
+        <div className="quick-filters" aria-label="Szybkie filtry">
+          {quickFilters.map((filter) => (
+            <button
+              className={`filter-chip ${filter.active ? 'active' : ''}`}
+              type="button"
+              key={filter.label}
+              onClick={filter.onClick}
+            >
+              {filter.label}
+            </button>
+          ))}
+          <button className="filter-chip clear-chip" type="button" onClick={clearFilters}>
+            Wyczyść
+          </button>
+        </div>
         <div className="filter-group" id="verb-filters">
           <Filter size={17} />
           <select value={learnedFilter} onChange={(event) => setLearnedFilter(event.target.value as LearnedFilter)}>
@@ -360,6 +456,7 @@ function App() {
             }
             onSelectList={(listId) => updateProgress({ ...progress, selectedListId: listId })}
           />
+          <ProgressTools onExport={exportProgress} onImport={importProgress} />
 
           <div className="results-meta">
             <span>
@@ -383,6 +480,7 @@ function App() {
             learnedVerbIds={learnedVerbIds}
             activeListVerbIds={activeListVerbIds}
             selectedListId={progress.selectedListId}
+            query={query}
             onSelectVerb={selectVerb}
             onToggleLearned={toggleLearned}
             onOpenListPicker={openListAction}
@@ -392,21 +490,67 @@ function App() {
         {selectedVerb ? (
           <div className="detail-anchor">
             <div className="mobile-detail-nav">
-              <button className="secondary-button detail-back" type="button" onClick={() => setMobileDetailOpen(false)}>
+              <button className="secondary-button detail-back" type="button" onClick={closeMobileDetail}>
                 <ArrowLeft size={17} />
                 Lista
               </button>
             </div>
-            <VerbDetail verb={selectedVerb} />
+            <VerbDetail
+              verb={selectedVerb}
+              highlightQuery={query}
+              hasPrevious={selectedIndex > 0}
+              hasNext={selectedIndex >= 0 && selectedIndex < visibleVerbs.length - 1}
+              learned={selectedLearned}
+              inList={selectedInList}
+              selectedListId={progress.selectedListId}
+              onPreviousVerb={() => navigateSelectedVerb(-1)}
+              onNextVerb={() => navigateSelectedVerb(1)}
+              onToggleLearned={() => toggleLearned(selectedVerb.id)}
+              onOpenListPicker={() => openListAction(selectedVerb.id)}
+            />
           </div>
         ) : (
           <div className="empty-state">Żaden czasownik nie pasuje do obecnych filtrów.</div>
         )}
       </section>
 
+      {showQaPanel ? (
+        <QualityPanel
+          verbs={verbs}
+          onClose={toggleQaPanel}
+          onSelectVerb={(verbId) => {
+            selectVerb(verbId)
+            setShowQaPanel(false)
+          }}
+        />
+      ) : qaEntryEnabled ? (
+        <button className="qa-open-button" type="button" onClick={toggleQaPanel}>
+          <Wrench size={14} />
+          QA
+        </button>
+      ) : null}
+
       {showCreateList ? <CreateListModal onClose={closeCreateList} onCreate={createList} /> : null}
       {studyModeOpen ? (
         <StudyMode verbs={visibleVerbs} onClose={() => setStudyModeOpen(false)} onGrade={gradeStudyVerb} />
+      ) : null}
+      {transferMessage ? (
+        <div className="modal-backdrop" role="presentation" onMouseDown={() => setTransferMessage(null)}>
+          <section className="modal-panel compact-modal" role="dialog" aria-modal="true" aria-labelledby="transfer-title" onMouseDown={(event) => event.stopPropagation()}>
+            <div className="modal-head">
+              <div>
+                <div className="section-title">Postęp</div>
+                <h2 id="transfer-title">{transferMessage.title}</h2>
+              </div>
+            </div>
+            <p>{transferMessage.body}</p>
+            <div className="modal-actions">
+              <button className="primary-button" type="button" onClick={() => setTransferMessage(null)}>
+                OK
+              </button>
+            </div>
+          </section>
+        </div>
       ) : null}
       {listPickerVerb ? (
         <ListPickerModal
