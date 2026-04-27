@@ -198,6 +198,7 @@ function App() {
 
   const listPickerVerb = listPickerVerbId ? verbs.find((verb) => verb.id === listPickerVerbId) : undefined
   const nextThemePreference = themePreference === 'dark' ? 'light' : 'dark'
+  const nextThemeLabel = nextThemePreference === 'dark' ? 'ciemny' : 'jasny'
 
   return (
     <main className="app-shell" data-theme={themePreference}>
@@ -205,56 +206,56 @@ function App() {
         <button
           className="theme-toggle"
           type="button"
-          aria-label={`Switch to ${nextThemePreference} mode`}
-          title={`Switch to ${nextThemePreference} mode`}
+          aria-label={`Przełącz na tryb ${nextThemeLabel}`}
+          title={`Przełącz na tryb ${nextThemeLabel}`}
           onClick={() => setThemePreference(nextThemePreference)}
         >
           {themePreference === 'dark' ? <Sun size={18} /> : <Moon size={18} />}
         </button>
         <div>
           <p className="eyebrow">PolishVerbs</p>
-          <h1>3000 Polish verbs by frequency</h1>
+          <h1>3000 polskich czasowników według częstotliwości</h1>
         </div>
         <div className="progress-summary">
           <strong>{learnedCount}</strong>
-          <span>learned</span>
+          <span>opanowanych</span>
           <small>
-            {Math.round((learnedCount / verbs.length) * 100)}% of {verbs.length}
+            {Math.round((learnedCount / verbs.length) * 100)}% z {verbs.length}
           </small>
         </div>
       </header>
 
-      <section className="toolbar" aria-label="Search and filters">
+      <section className="toolbar" aria-label="Wyszukiwanie i filtry">
         <label className="search-field">
           <Search size={18} />
           <input
             type="search"
             value={query}
-            placeholder="Search Polish, English, Ukrainian, or forms"
+            placeholder="Szukaj po bezokoliczniku, formach, angielskim lub ukraińskim"
             onChange={(event) => setQuery(event.target.value)}
           />
         </label>
         <div className="filter-group">
           <Filter size={17} />
           <select value={learnedFilter} onChange={(event) => setLearnedFilter(event.target.value as LearnedFilter)}>
-            <option value="all">All progress</option>
-            <option value="learning">Learning</option>
-            <option value="learned">Learned</option>
+            <option value="all">Cały postęp</option>
+            <option value="learning">Do nauki</option>
+            <option value="learned">Opanowane</option>
           </select>
           <select value={aspectFilter} onChange={(event) => setAspectFilter(event.target.value as Aspect | 'all')}>
-            <option value="all">All aspects</option>
-            <option value="imperfective">Imperfective</option>
-            <option value="perfective">Perfective</option>
-            <option value="biaspectual">Biaspectual</option>
-            <option value="unknown">Unknown</option>
+            <option value="all">Wszystkie aspekty</option>
+            <option value="imperfective">Niedokonane</option>
+            <option value="perfective">Dokonane</option>
+            <option value="biaspectual">Dwuaspektowe</option>
+            <option value="unknown">Nieznane</option>
           </select>
           <select value={rangeFilter} onChange={(event) => setRangeFilter(event.target.value as RangeFilter)}>
-            <option value="all">Full 3000</option>
-            <option value="top100">Top 100</option>
-            <option value="top300">Top 300</option>
-            <option value="top600">Top 600</option>
-            <option value="top1200">Top 1200</option>
-            <option value="top3000">Top 3000</option>
+            <option value="all">Pełne 3000</option>
+            <option value="top100">Pierwsze 100</option>
+            <option value="top300">Pierwsze 300</option>
+            <option value="top600">Pierwsze 600</option>
+            <option value="top1200">Pierwsze 1200</option>
+            <option value="top3000">Pierwsze 3000</option>
           </select>
         </div>
       </section>
@@ -283,7 +284,7 @@ function App() {
 
           <div className="results-meta">
             <strong>{visibleVerbs.length}</strong>
-            <span>verbs shown</span>
+            <span>pokazanych czasowników</span>
           </div>
 
           <VerbList
@@ -301,7 +302,7 @@ function App() {
         {selectedVerb ? (
           <VerbDetail verb={selectedVerb} />
         ) : (
-          <div className="empty-state">No verbs match the current filters.</div>
+          <div className="empty-state">Żaden czasownik nie pasuje do obecnych filtrów.</div>
         )}
       </section>
 

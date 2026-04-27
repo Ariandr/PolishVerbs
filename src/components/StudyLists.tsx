@@ -19,15 +19,15 @@ export function StudyLists({
   onSelectList,
 }: StudyListsProps) {
   return (
-    <section className="lists-panel" aria-label="Custom study lists">
+    <section className="lists-panel" aria-label="Własne listy do nauki">
       <div className="panel-title">
         <ListPlus size={18} />
-        Study lists
+        Listy do nauki
       </div>
 
       <div className="list-select-row">
         <select value={selectedListId ?? ''} onChange={(event) => onSelectList(event.target.value || null)}>
-          <option value="">All verbs</option>
+          <option value="">Wszystkie czasowniki</option>
           {lists.map((list) => (
             <option key={list.id} value={list.id}>
               {list.name} ({list.verbIds.length})
@@ -37,8 +37,8 @@ export function StudyLists({
         <button
           className="icon-button"
           type="button"
-          title="Create list"
-          aria-label="Create list"
+          title="Utwórz listę"
+          aria-label="Utwórz listę"
           onClick={onOpenCreateList}
         >
           <ListPlus size={17} />
@@ -51,18 +51,18 @@ export function StudyLists({
             type="button"
             onClick={() => {
               const active = lists.find((list) => list.id === selectedListId)
-              const name = window.prompt('Rename list', active?.name)
+              const name = window.prompt('Zmień nazwę listy', active?.name)
               if (name?.trim()) {
                 onRenameList(selectedListId, name)
               }
             }}
           >
             <Pencil size={15} />
-            Rename
+            Zmień nazwę
           </button>
           <button type="button" className="danger" onClick={() => onDeleteList(selectedListId)}>
             <Trash2 size={15} />
-            Delete
+            Usuń
           </button>
         </div>
       ) : null}

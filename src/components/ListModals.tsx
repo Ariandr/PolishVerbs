@@ -24,10 +24,10 @@ export function CreateListModal({ onClose, onCreate }: CreateListModalProps) {
       <section className="modal-panel" role="dialog" aria-modal="true" aria-labelledby="create-list-title" onMouseDown={(event) => event.stopPropagation()}>
         <div className="modal-head">
           <div>
-            <div className="section-title">New study list</div>
-            <h2 id="create-list-title">Create list</h2>
+            <div className="section-title">Nowa lista do nauki</div>
+            <h2 id="create-list-title">Utwórz listę</h2>
           </div>
-          <button className="icon-button" type="button" aria-label="Close" onClick={onClose}>
+          <button className="icon-button" type="button" aria-label="Zamknij" onClick={onClose}>
             <X size={18} />
           </button>
         </div>
@@ -41,15 +41,15 @@ export function CreateListModal({ onClose, onCreate }: CreateListModalProps) {
           }}
         >
           <label>
-            List name
-            <input autoFocus value={name} placeholder="Travel verbs, daily review..." onChange={(event) => setName(event.target.value)} />
+            Nazwa listy
+            <input autoFocus value={name} placeholder="Podróże, codzienna powtórka..." onChange={(event) => setName(event.target.value)} />
           </label>
           <div className="modal-actions">
             <button type="button" className="secondary-button" onClick={onClose}>
-              Cancel
+              Anuluj
             </button>
             <button type="submit" className="primary-button" disabled={!name.trim()}>
-              Create
+              Utwórz
             </button>
           </div>
         </form>
@@ -64,10 +64,10 @@ export function ListPickerModal({ lists, verb, onClose, onCreateList, onToggleLi
       <section className="modal-panel" role="dialog" aria-modal="true" aria-labelledby="list-picker-title" onMouseDown={(event) => event.stopPropagation()}>
         <div className="modal-head">
           <div>
-            <div className="section-title">Add verb</div>
+            <div className="section-title">Dodaj czasownik</div>
             <h2 id="list-picker-title">{verb.infinitive}</h2>
           </div>
-          <button className="icon-button" type="button" aria-label="Close" onClick={onClose}>
+          <button className="icon-button" type="button" aria-label="Zamknij" onClick={onClose}>
             <X size={18} />
           </button>
         </div>
@@ -81,23 +81,23 @@ export function ListPickerModal({ lists, verb, onClose, onCreateList, onToggleLi
                   <input type="checkbox" checked={checked} onChange={() => onToggleList(list.id)} />
                   <span>
                     <strong>{list.name}</strong>
-                    <small>{list.verbIds.length} verbs</small>
+                    <small>{list.verbIds.length} czasowników</small>
                   </span>
                 </label>
               )
             })}
           </div>
         ) : (
-          <div className="modal-empty">Create a list first, then add this verb to it.</div>
+          <div className="modal-empty">Najpierw utwórz listę, a potem dodaj do niej ten czasownik.</div>
         )}
 
         <div className="modal-actions">
           <button type="button" className="secondary-button" onClick={onCreateList}>
             <ListPlus size={16} />
-            New list
+            Nowa lista
           </button>
           <button type="button" className="primary-button" onClick={onClose}>
-            Done
+            Gotowe
           </button>
         </div>
       </section>

@@ -1,7 +1,7 @@
 {
   "name": "PolishVerbs",
   "short_name": "PolishVerbs",
-  "description": "Study 3000 high-frequency Polish verbs with forms, examples, translations, progress, and custom lists.",
+  "description": "Ucz się 3000 częstych polskich czasowników z formami, przykładami, tłumaczeniami, postępem i własnymi listami.",
   "start_url": "/PolishVerbs/",
   "scope": "/PolishVerbs/",
   "display": "standalone",

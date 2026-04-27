@@ -1,5 +1,12 @@
 import type { PastForms, PresentForms, VerbEntry } from '../data/schema'
 
+const aspectLabels: Record<VerbEntry['aspect'], string> = {
+  imperfective: 'niedokonany',
+  perfective: 'dokonany',
+  biaspectual: 'dwuaspektowy',
+  unknown: 'aspekt nieznany',
+}
+
 const presentRows: Array<[string, keyof PresentForms]> = [
   ['ja', 'ja'],
   ['ty', 'ty'],
@@ -61,20 +68,20 @@ export function VerbDetail({ verb }: { verb: VerbEntry }) {
     <article className="detail-panel">
       <div className="detail-head">
         <div>
-          <div className="rank-line">#{verb.frequencyRank} by verb frequency</div>
+          <div className="rank-line">#{verb.frequencyRank} według częstotliwości czasowników</div>
           <h2>{verb.infinitive}</h2>
           <p>
             {verb.translations.uk.join(', ')} · {verb.translations.en.join(', ')}
           </p>
         </div>
-        <div className="metric-stack" aria-label="Frequency data">
+        <div className="metric-stack" aria-label="Dane częstotliwości">
           <span>{verb.frequency.ipm.toFixed(2)} IPM</span>
-          <span>KWJP rank {verb.corpusRank}</span>
+          <span>Ranga KWJP {verb.corpusRank}</span>
         </div>
       </div>
 
       <section className="detail-section">
-        <div className="section-title">Forms</div>
+        <div className="section-title">Formy</div>
         <PresentTable forms={verb.forms.present} />
       </section>
 
@@ -86,13 +93,13 @@ export function VerbDetail({ verb }: { verb: VerbEntry }) {
       </section>
 
       <section className="detail-section">
-        <div className="section-title">Past tense</div>
+        <div className="section-title">Czas przeszły</div>
         <PastTable forms={verb.forms.past} />
       </section>
 
       <section className="notes-row">
-        <span>{verb.aspect}</span>
-        <span>{verb.reviewStatus === 'wiktionary-enriched' ? 'Wiktionary enriched' : 'Needs review'}</span>
+        <span>{aspectLabels[verb.aspect]}</span>
+        <span>{verb.reviewStatus === 'wiktionary-enriched' ? 'Uzupełniono z Wiktionary' : 'Do sprawdzenia'}</span>
         {verb.notes.map((note) => (
           <span key={note}>{note}</span>
         ))}

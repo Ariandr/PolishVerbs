@@ -23,7 +23,7 @@ export function VerbList({
   onOpenListPicker,
 }: VerbListProps) {
   return (
-    <div className="verb-list" aria-label="Verb results">
+    <div className="verb-list" aria-label="Wyniki czasowników">
       {verbs.map((verb) => {
         const learned = learnedVerbIds.has(verb.id)
         const inList = activeListVerbIds.has(verb.id)
@@ -45,8 +45,8 @@ export function VerbList({
               <button
                 className={`icon-button ${learned ? 'active' : ''}`}
                 type="button"
-                aria-label={learned ? 'Mark as not learned' : 'Mark as learned'}
-                title={learned ? 'Learned' : 'Mark learned'}
+                aria-label={learned ? 'Oznacz jako nieopanowane' : 'Oznacz jako opanowane'}
+                title={learned ? 'Opanowane' : 'Oznacz jako opanowane'}
                 onClick={() => onToggleLearned(verb.id)}
               >
                 {learned ? <Check size={17} /> : <BookOpenCheck size={17} />}
@@ -57,11 +57,11 @@ export function VerbList({
                 aria-label={
                   selectedListId
                     ? inList
-                      ? 'Remove from selected list'
-                      : 'Add to selected list'
-                    : 'Choose a list'
+                      ? 'Usuń z wybranej listy'
+                      : 'Dodaj do wybranej listy'
+                    : 'Wybierz listę'
                 }
-                title={selectedListId ? (inList ? 'In list' : 'Add to list') : 'Choose list'}
+                title={selectedListId ? (inList ? 'Na liście' : 'Dodaj do listy') : 'Wybierz listę'}
                 onClick={() => onOpenListPicker(verb.id)}
               >
                 {inList ? <Star size={17} /> : <Plus size={17} />}
