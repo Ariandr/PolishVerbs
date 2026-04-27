@@ -1,5 +1,5 @@
 import { useEffect, useMemo, useState } from 'react'
-import { Filter, Search } from 'lucide-react'
+import { Filter, Moon, Search, Sun } from 'lucide-react'
 import './App.css'
 import { CreateListModal, ListPickerModal } from './components/ListModals'
 import { StudyLists } from './components/StudyLists'
@@ -7,10 +7,26 @@ import { VerbDetail } from './components/VerbTables'
 import { VerbList } from './components/VerbList'
 import { verbs } from './data/verbs'
 import type { Aspect, VerbEntry } from './data/schema'
-import { createStudyList, loadProgress, saveProgress, touchList, type StudyProgress } from './lib/storage'
+import {
+  createStudyList,
+  loadProgress,
+  loadThemePreference,
+  saveProgress,
+  saveThemePreference,
+  touchList,
+  type StudyProgress,
+  type ThemePreference,
+} from './lib/storage'
 
 type LearnedFilter = 'all' | 'learning' | 'learned'
 type RangeFilter = 'all' | 'top100' | 'top300' | 'top600' | 'top1200' | 'top3000'
+
+interface SearchRecord {
+  infinitive: string
+  forms: string
+  translations: string
+  all: string
+}
 
 const normalize = (value: string) =>
   value
@@ -18,19 +34,45 @@ const normalize = (value: string) =>
     .normalize('NFD')
     .replace(/\p{Diacritic}/gu, '')
 
+const getPastFormValues = (verb: VerbEntry) =>
+  Object.values(verb.forms.past).flatMap((group) => Object.values(group))
+
 const getSearchIndex = (verb: VerbEntry) =>
-  normalize(
-    [
-      verb.infinitive,
-      ...Object.values(verb.forms.present),
-      ...verb.translations.en,
-      ...verb.translations.uk,
-      ...verb.examples.flatMap((example) => [example.pl, example.en, example.uk]),
-    ].join(' '),
-  )
+  {
+    const infinitive = normalize(verb.infinitive)
+    const forms = normalize([...Object.values(verb.forms.present), ...getPastFormValues(verb)].join(' '))
+    const translations = normalize([...verb.translations.en, ...verb.translations.uk].join(' '))
+
+    return {
+      infinitive,
+      forms,
+      translations,
+      all: `${infinitive} ${forms} ${translations}`,
+    }
+  }
+
+const getSearchScore = (record: SearchRecord, query: string) => {
+  if (record.infinitive === query) {
+    return 0
+  }
+  if (record.infinitive.startsWith(query)) {
+    return 1
+  }
+  if (record.infinitive.includes(query)) {
+    return 2
+  }
+  if (record.forms.includes(query)) {
+    return 3
+  }
+  if (record.translations.includes(query)) {
+    return 4
+  }
+  return 5
+}
 
 function App() {
   const [progress, setProgress] = useState<StudyProgress>(() => loadProgress())
+  const [themePreference, setThemePreference] = useState<ThemePreference>(() => loadThemePreference())
   const [selectedVerbId, setSelectedVerbId] = useState(verbs[0]?.id ?? '')
   const [query, setQuery] = useState('')
   const [learnedFilter, setLearnedFilter] = useState<LearnedFilter>('all')
@@ -43,6 +85,11 @@ function App() {
     saveProgress(progress)
   }, [progress])
 
+  useEffect(() => {
+    document.documentElement.dataset.theme = themePreference
+    saveThemePreference(themePreference)
+  }, [themePreference])
+
   const learnedVerbIds = useMemo(() => new Set(progress.learnedVerbIds), [progress.learnedVerbIds])
   const activeList = progress.lists.find((list) => list.id === progress.selectedListId)
   const activeListVerbIds = useMemo(() => new Set(activeList?.verbIds ?? []), [activeList])
@@ -50,7 +97,7 @@ function App() {
 
   const visibleVerbs = useMemo(() => {
     const normalizedQuery = normalize(query.trim())
-    return verbs.filter((verb) => {
+    const filtered = verbs.filter((verb) => {
       if (activeList && !activeList.verbIds.includes(verb.id)) {
         return false
       }
@@ -78,17 +125,29 @@ function App() {
       if (rangeFilter === 'top3000' && verb.frequencyRank > 3000) {
         return false
       }
-      if (normalizedQuery && !searchIndexes.get(verb.id)?.includes(normalizedQuery)) {
+      if (normalizedQuery && !searchIndexes.get(verb.id)?.all.includes(normalizedQuery)) {
         return false
       }
       return true
+    })
+
+    if (!normalizedQuery) {
+      return filtered
+    }
+
+    return [...filtered].sort((left, right) => {
+      const leftRecord = searchIndexes.get(left.id)
+      const rightRecord = searchIndexes.get(right.id)
+      const leftScore = leftRecord ? getSearchScore(leftRecord, normalizedQuery) : 5
+      const rightScore = rightRecord ? getSearchScore(rightRecord, normalizedQuery) : 5
+      return leftScore - rightScore || left.frequencyRank - right.frequencyRank
     })
   }, [activeList, aspectFilter, learnedFilter, learnedVerbIds, query, rangeFilter, searchIndexes])
 
   const selectedVerb =
     visibleVerbs.find((verb) => verb.id === selectedVerbId) ??
-    verbs.find((verb) => verb.id === selectedVerbId) ??
     visibleVerbs[0] ??
+    verbs.find((verb) => verb.id === selectedVerbId) ??
     verbs[0]
   const learnedCount = progress.learnedVerbIds.length
 
@@ -138,10 +197,20 @@ function App() {
   }
 
   const listPickerVerb = listPickerVerbId ? verbs.find((verb) => verb.id === listPickerVerbId) : undefined
+  const nextThemePreference = themePreference === 'dark' ? 'light' : 'dark'
 
   return (
-    <main className="app-shell">
+    <main className="app-shell" data-theme={themePreference}>
       <header className="app-header">
+        <button
+          className="theme-toggle"
+          type="button"
+          aria-label={`Switch to ${nextThemePreference} mode`}
+          title={`Switch to ${nextThemePreference} mode`}
+          onClick={() => setThemePreference(nextThemePreference)}
+        >
+          {themePreference === 'dark' ? <Sun size={18} /> : <Moon size={18} />}
+        </button>
         <div>
           <p className="eyebrow">PolishVerbs</p>
           <h1>3000 Polish verbs by frequency</h1>

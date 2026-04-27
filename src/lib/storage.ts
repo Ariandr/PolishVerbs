@@ -12,7 +12,10 @@ export interface StudyProgress {
   selectedListId: string | null
 }
 
+export type ThemePreference = 'light' | 'dark'
+
 const storageKey = 'polish-verbs-progress-v1'
+const themeStorageKey = 'polish-verbs-theme-v1'
 
 const defaultProgress: StudyProgress = {
   learnedVerbIds: [],
@@ -44,6 +47,23 @@ export function loadProgress(): StudyProgress {
 
 export function saveProgress(progress: StudyProgress) {
   window.localStorage.setItem(storageKey, JSON.stringify(progress))
+}
+
+export function loadThemePreference(): ThemePreference {
+  if (typeof window === 'undefined') {
+    return 'light'
+  }
+
+  const stored = window.localStorage.getItem(themeStorageKey)
+  if (stored === 'light' || stored === 'dark') {
+    return stored
+  }
+
+  return window.matchMedia('(prefers-color-scheme: dark)').matches ? 'dark' : 'light'
+}
+
+export function saveThemePreference(themePreference: ThemePreference) {
+  window.localStorage.setItem(themeStorageKey, themePreference)
 }
 
 export function createStudyList(name: string): StudyList {
