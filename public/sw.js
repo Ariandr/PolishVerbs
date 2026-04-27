@@ -1,5 +1,5 @@
-const cacheName = 'polish-verbs-v2'
-const appShell = ['/PolishVerbs/', '/PolishVerbs/index.html', '/PolishVerbs/manifest.webmanifest']
+const cacheName = 'polish-verbs-v3'
+const appShell = ['/PolishVerbs/', '/PolishVerbs/index.html', '/PolishVerbs/manifest.webmanifest', '/PolishVerbs/favicon-32.png']
 
 self.addEventListener('install', (event) => {
   event.waitUntil(caches.open(cacheName).then((cache) => cache.addAll(appShell)))
@@ -25,7 +25,11 @@ self.addEventListener('fetch', (event) => {
   const isAppDocument =
     event.request.mode === 'navigate' || url.pathname === '/PolishVerbs/' || url.pathname === '/PolishVerbs/index.html'
   const isFreshAsset =
-    url.pathname === '/PolishVerbs/manifest.webmanifest' || url.pathname === '/PolishVerbs/favicon.svg'
+    url.pathname === '/PolishVerbs/manifest.webmanifest' ||
+    url.pathname === '/PolishVerbs/favicon.svg' ||
+    url.pathname === '/PolishVerbs/favicon-32.png' ||
+    url.pathname === '/PolishVerbs/icon-192.png' ||
+    url.pathname === '/PolishVerbs/icon-512.png'
 
   if (isAppDocument || isFreshAsset) {
     event.respondWith(
