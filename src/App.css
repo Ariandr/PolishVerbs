@@ -374,6 +374,11 @@ select {
   padding: 22px;
 }
 
+.detail-anchor {
+  min-width: 0;
+  scroll-margin-top: 76px;
+}
+
 .detail-head {
   display: grid;
   grid-template-columns: minmax(0, 1fr) auto;
@@ -673,9 +678,9 @@ select {
   }
 
   .verb-list {
-    overflow: visible;
-    padding-top: 0;
-    padding-bottom: 0;
+    max-height: 48svh;
+    overflow: auto;
+    padding: 6px 4px 18px 0;
   }
 
   .filter-group {

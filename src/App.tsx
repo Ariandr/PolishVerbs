@@ -1,4 +1,4 @@
-import { useEffect, useMemo, useState } from 'react'
+import { useEffect, useMemo, useRef, useState } from 'react'
 import { Filter, Moon, Search, Sun } from 'lucide-react'
 import './App.css'
 import { CreateListModal, ListPickerModal } from './components/ListModals'
@@ -71,6 +71,7 @@ const getSearchScore = (record: SearchRecord, query: string) => {
 }
 
 function App() {
+  const detailRef = useRef<HTMLDivElement>(null)
   const [progress, setProgress] = useState<StudyProgress>(() => loadProgress())
   const [themePreference, setThemePreference] = useState<ThemePreference>(() => loadThemePreference())
   const [selectedVerbId, setSelectedVerbId] = useState(verbs[0]?.id ?? '')
@@ -212,6 +213,15 @@ function App() {
     setListPickerVerbId(verbId)
   }
 
+  const selectVerb = (verbId: string) => {
+    setSelectedVerbId(verbId)
+    if (window.matchMedia('(max-width: 980px)').matches) {
+      window.requestAnimationFrame(() => {
+        detailRef.current?.scrollIntoView({ behavior: 'smooth', block: 'start' })
+      })
+    }
+  }
+
   const listPickerVerb = listPickerVerbId ? verbs.find((verb) => verb.id === listPickerVerbId) : undefined
   const nextThemePreference = themePreference === 'dark' ? 'light' : 'dark'
   const nextThemeLabel = nextThemePreference === 'dark' ? 'ciemny' : 'jasny'
@@ -309,14 +319,16 @@ function App() {
             learnedVerbIds={learnedVerbIds}
             activeListVerbIds={activeListVerbIds}
             selectedListId={progress.selectedListId}
-            onSelectVerb={setSelectedVerbId}
+            onSelectVerb={selectVerb}
             onToggleLearned={toggleLearned}
             onOpenListPicker={openListAction}
           />
         </aside>
 
         {selectedVerb ? (
-          <VerbDetail verb={selectedVerb} />
+          <div className="detail-anchor" ref={detailRef}>
+            <VerbDetail verb={selectedVerb} />
+          </div>
         ) : (
           <div className="empty-state">Żaden czasownik nie pasuje do obecnych filtrów.</div>
         )}
