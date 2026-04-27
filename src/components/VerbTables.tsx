@@ -1,11 +1,5 @@
 import type { PastForms, PresentForms, VerbEntry } from '../data/schema'
-
-const aspectLabels: Record<VerbEntry['aspect'], string> = {
-  imperfective: 'niedokonany',
-  perfective: 'dokonany',
-  biaspectual: 'dwuaspektowy',
-  unknown: 'aspekt nieznany',
-}
+import { aspectLabels } from '../data/labels'
 
 const presentRows: Array<[string, keyof PresentForms]> = [
   ['ja', 'ja'],

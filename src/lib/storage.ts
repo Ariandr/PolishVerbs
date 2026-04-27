@@ -6,8 +6,19 @@ export interface StudyList {
   updatedAt: string
 }
 
+export type VerbStudyStatus = 'new' | 'learning' | 'learned'
+
+export interface VerbStudyProgress {
+  status: VerbStudyStatus
+  reviewCount: number
+  knowCount: number
+  reviewAgainCount: number
+  lastReviewedAt: string | null
+}
+
 export interface StudyProgress {
   learnedVerbIds: string[]
+  verbProgress: Record<string, VerbStudyProgress>
   lists: StudyList[]
   selectedListId: string | null
 }
@@ -19,8 +30,46 @@ const themeStorageKey = 'polish-verbs-theme-v1'
 
 const defaultProgress: StudyProgress = {
   learnedVerbIds: [],
+  verbProgress: {},
   lists: [],
   selectedListId: null,
+}
+
+const isVerbStudyStatus = (value: unknown): value is VerbStudyStatus =>
+  value === 'new' || value === 'learning' || value === 'learned'
+
+const normalizeVerbProgress = (value: unknown): VerbStudyProgress | null => {
+  if (!value || typeof value !== 'object') {
+    return null
+  }
+
+  const progress = value as Partial<VerbStudyProgress>
+  if (!isVerbStudyStatus(progress.status)) {
+    return null
+  }
+
+  return {
+    status: progress.status,
+    reviewCount: typeof progress.reviewCount === 'number' ? progress.reviewCount : 0,
+    knowCount: typeof progress.knowCount === 'number' ? progress.knowCount : 0,
+    reviewAgainCount: typeof progress.reviewAgainCount === 'number' ? progress.reviewAgainCount : 0,
+    lastReviewedAt: typeof progress.lastReviewedAt === 'string' ? progress.lastReviewedAt : null,
+  }
+}
+
+const getSyncedLearnedIds = (verbProgress: Record<string, VerbStudyProgress>) =>
+  Object.entries(verbProgress)
+    .filter(([, progress]) => progress.status === 'learned')
+    .map(([verbId]) => verbId)
+
+export function createVerbStudyProgress(status: VerbStudyStatus): VerbStudyProgress {
+  return {
+    status,
+    reviewCount: 0,
+    knowCount: 0,
+    reviewAgainCount: 0,
+    lastReviewedAt: null,
+  }
 }
 
 export function loadProgress(): StudyProgress {
@@ -35,8 +84,26 @@ export function loadProgress(): StudyProgress {
     }
 
     const parsed = JSON.parse(raw) as Partial<StudyProgress>
+    const learnedVerbIds = Array.isArray(parsed.learnedVerbIds) ? parsed.learnedVerbIds : []
+    const parsedVerbProgress =
+      parsed.verbProgress && typeof parsed.verbProgress === 'object' ? parsed.verbProgress : {}
+    const verbProgress = Object.fromEntries(
+      Object.entries(parsedVerbProgress)
+        .map(([verbId, value]) => [verbId, normalizeVerbProgress(value)] as const)
+        .filter((entry): entry is readonly [string, VerbStudyProgress] => entry[1] !== null),
+    )
+
+    for (const verbId of learnedVerbIds) {
+      verbProgress[verbId] = {
+        ...createVerbStudyProgress('learned'),
+        ...verbProgress[verbId],
+        status: 'learned',
+      }
+    }
+
     return {
-      learnedVerbIds: Array.isArray(parsed.learnedVerbIds) ? parsed.learnedVerbIds : [],
+      learnedVerbIds: getSyncedLearnedIds(verbProgress),
+      verbProgress,
       lists: Array.isArray(parsed.lists) ? parsed.lists : [],
       selectedListId: parsed.selectedListId ?? null,
     }
@@ -46,7 +113,11 @@ export function loadProgress(): StudyProgress {
 }
 
 export function saveProgress(progress: StudyProgress) {
-  window.localStorage.setItem(storageKey, JSON.stringify(progress))
+  const normalizedProgress = {
+    ...progress,
+    learnedVerbIds: getSyncedLearnedIds(progress.verbProgress),
+  }
+  window.localStorage.setItem(storageKey, JSON.stringify(normalizedProgress))
 }
 
 export function loadThemePreference(): ThemePreference {

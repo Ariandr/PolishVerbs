@@ -1,7 +1,8 @@
 import { useEffect, useMemo, useState } from 'react'
-import { ArrowLeft, Filter, Moon, Search, Sun } from 'lucide-react'
+import { ArrowLeft, BookOpen, Filter, Moon, Search, Sun } from 'lucide-react'
 import './App.css'
 import { CreateListModal, ListPickerModal } from './components/ListModals'
+import { StudyMode } from './components/StudyMode'
 import { StudyLists } from './components/StudyLists'
 import { VerbDetail } from './components/VerbTables'
 import { VerbList } from './components/VerbList'
@@ -9,6 +10,7 @@ import { verbs } from './data/verbs'
 import type { Aspect, VerbEntry } from './data/schema'
 import {
   createStudyList,
+  createVerbStudyProgress,
   loadProgress,
   loadThemePreference,
   saveProgress,
@@ -16,6 +18,7 @@ import {
   touchList,
   type StudyProgress,
   type ThemePreference,
+  type VerbStudyStatus,
 } from './lib/storage'
 
 type LearnedFilter = 'all' | 'learning' | 'learned'
@@ -80,6 +83,7 @@ function App() {
   const [rangeFilter, setRangeFilter] = useState<RangeFilter>('all')
   const [mobileFiltersOpen, setMobileFiltersOpen] = useState(false)
   const [mobileDetailOpen, setMobileDetailOpen] = useState(false)
+  const [studyModeOpen, setStudyModeOpen] = useState(false)
   const [showCreateList, setShowCreateList] = useState(false)
   const [createListVerbId, setCreateListVerbId] = useState<string | null>(null)
   const [listPickerVerbId, setListPickerVerbId] = useState<string | null>(null)
@@ -93,7 +97,16 @@ function App() {
     saveThemePreference(themePreference)
   }, [themePreference])
 
-  const learnedVerbIds = useMemo(() => new Set(progress.learnedVerbIds), [progress.learnedVerbIds])
+  const getVerbStatus = (verbId: string): VerbStudyStatus => progress.verbProgress[verbId]?.status ?? 'new'
+  const learnedVerbIds = useMemo(
+    () =>
+      new Set(
+        Object.entries(progress.verbProgress)
+          .filter(([, verbProgress]) => verbProgress.status === 'learned')
+          .map(([verbId]) => verbId),
+      ),
+    [progress.verbProgress],
+  )
   const activeList = progress.lists.find((list) => list.id === progress.selectedListId)
   const activeListVerbIds = useMemo(() => new Set(activeList?.verbIds ?? []), [activeList])
   const searchIndexes = useMemo(() => new Map(verbs.map((verb) => [verb.id, getSearchIndex(verb)])), [])
@@ -104,10 +117,11 @@ function App() {
       if (activeList && !activeList.verbIds.includes(verb.id)) {
         return false
       }
-      if (learnedFilter === 'learned' && !learnedVerbIds.has(verb.id)) {
+      const studyStatus = progress.verbProgress[verb.id]?.status ?? 'new'
+      if (learnedFilter === 'learned' && studyStatus !== 'learned') {
         return false
       }
-      if (learnedFilter === 'learning' && learnedVerbIds.has(verb.id)) {
+      if (learnedFilter === 'learning' && studyStatus !== 'learning') {
         return false
       }
       if (aspectFilter !== 'all' && verb.aspect !== aspectFilter) {
@@ -145,26 +159,48 @@ function App() {
       const rightScore = rightRecord ? getSearchScore(rightRecord, normalizedQuery) : 5
       return leftScore - rightScore || left.frequencyRank - right.frequencyRank
     })
-  }, [activeList, aspectFilter, learnedFilter, learnedVerbIds, query, rangeFilter, searchIndexes])
+  }, [activeList, aspectFilter, learnedFilter, progress.verbProgress, query, rangeFilter, searchIndexes])
 
   const selectedVerb =
     visibleVerbs.find((verb) => verb.id === selectedVerbId) ??
     visibleVerbs[0] ??
     verbs.find((verb) => verb.id === selectedVerbId) ??
     verbs[0]
-  const learnedCount = progress.learnedVerbIds.length
+  const learnedCount = learnedVerbIds.size
 
   const updateProgress = (next: StudyProgress) => {
     setProgress(next)
   }
 
-  const toggleLearned = (verbId: string) => {
-    const learned = learnedVerbIds.has(verbId)
+  const updateVerbStatus = (verbId: string, status: VerbStudyStatus) => {
     updateProgress({
       ...progress,
-      learnedVerbIds: learned
-        ? progress.learnedVerbIds.filter((id) => id !== verbId)
-        : [...progress.learnedVerbIds, verbId],
+      verbProgress: {
+        ...progress.verbProgress,
+        [verbId]: createVerbStudyProgress(status),
+      },
+    })
+  }
+
+  const toggleLearned = (verbId: string) => {
+    updateVerbStatus(verbId, getVerbStatus(verbId) === 'learned' ? 'new' : 'learned')
+  }
+
+  const gradeStudyVerb = (verbId: string, grade: 'know' | 'review') => {
+    const current = progress.verbProgress[verbId] ?? createVerbStudyProgress('new')
+    updateProgress({
+      ...progress,
+      verbProgress: {
+        ...progress.verbProgress,
+        [verbId]: {
+          ...current,
+          status: grade === 'know' ? 'learned' : 'learning',
+          reviewCount: current.reviewCount + 1,
+          knowCount: current.knowCount + (grade === 'know' ? 1 : 0),
+          reviewAgainCount: current.reviewAgainCount + (grade === 'review' ? 1 : 0),
+          lastReviewedAt: new Date().toISOString(),
+        },
+      },
     })
   }
 
@@ -282,7 +318,7 @@ function App() {
           <Filter size={17} />
           <select value={learnedFilter} onChange={(event) => setLearnedFilter(event.target.value as LearnedFilter)}>
             <option value="all">Cały postęp</option>
-            <option value="learning">Do nauki</option>
+            <option value="learning">W trakcie nauki</option>
             <option value="learned">Opanowane</option>
           </select>
           <select value={aspectFilter} onChange={(event) => setAspectFilter(event.target.value as Aspect | 'all')}>
@@ -326,8 +362,19 @@ function App() {
           />
 
           <div className="results-meta">
-            <strong>{visibleVerbs.length}</strong>
-            <span>pokazanych czasowników</span>
+            <span>
+              <strong>{visibleVerbs.length}</strong>
+              <span>pokazanych czasowników</span>
+            </span>
+            <button
+              className="secondary-button study-start-button"
+              type="button"
+              disabled={!visibleVerbs.length}
+              onClick={() => setStudyModeOpen(true)}
+            >
+              <BookOpen size={16} />
+              Start nauki
+            </button>
           </div>
 
           <VerbList
@@ -358,6 +405,9 @@ function App() {
       </section>
 
       {showCreateList ? <CreateListModal onClose={closeCreateList} onCreate={createList} /> : null}
+      {studyModeOpen ? (
+        <StudyMode verbs={visibleVerbs} onClose={() => setStudyModeOpen(false)} onGrade={gradeStudyVerb} />
+      ) : null}
       {listPickerVerb ? (
         <ListPickerModal
           lists={progress.lists}
