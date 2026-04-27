@@ -92,7 +92,7 @@
     "translations": {
       "en": [
         "to cultivate",
-        "to cultivate, to till",
+        "to till",
         "to continue, to preserve"
       ],
       "uk": [
@@ -255,7 +255,7 @@
     "translations": {
       "en": [
         "to decorate",
-        "to decorate, to embellish, to adorn, to ornament",
+        "to embellish, to adorn, to ornament",
         "to decorate oneself"
       ],
       "uk": [
@@ -418,7 +418,7 @@
     "translations": {
       "en": [
         "to feed",
-        "to nourish, to feed",
+        "to nourish",
         "to fortify, to strengthen"
       ],
       "uk": [
@@ -740,7 +740,7 @@
     "translations": {
       "en": [
         "to lead",
-        "to lead, to run",
+        "to run",
         "to conduct"
       ],
       "uk": [
@@ -902,7 +902,7 @@
     "translations": {
       "en": [
         "to undo",
-        "to unfasten, to undo, to unbutton, to unzip"
+        "to unfasten, to unbutton, to unzip"
       ],
       "uk": [
         "скасувати"
@@ -1545,7 +1545,7 @@
       "en": [
         "to stifle",
         "to choke, to throttle",
-        "to suppress, to stifle, to hamper"
+        "to suppress, to hamper"
       ],
       "uk": [
         "душити"
@@ -1786,7 +1786,7 @@
       "en": [
         "to come true",
         "to realize, to accomplish",
-        "to be realized, to come true"
+        "to be realized"
       ],
       "uk": [
         "збутися"
@@ -1948,7 +1948,7 @@
       "en": [
         "to grow up",
         "to grow to a certain height or size",
-        "to grow up, to come of age"
+        "to come of age"
       ],
       "uk": [
         "вирости"
@@ -2029,8 +2029,8 @@
     "translations": {
       "en": [
         "to swear",
-        "to swear, to curse",
-        "to curse, to imprecate"
+        "to curse",
+        "to imprecate"
       ],
       "uk": [
         "лаятись"
@@ -2191,7 +2191,7 @@
     "translations": {
       "en": [
         "to reveal",
-        "to uncover, to reveal, to unveil, to expose",
+        "to uncover, to unveil, to expose",
         "to reveal oneself, to become uncovered"
       ],
       "uk": [
@@ -2590,7 +2590,7 @@
     "translations": {
       "en": [
         "to prepare",
-        "to confect, to concoct, to cook, to make ready, to prepare"
+        "to confect, to concoct, to cook, to make ready"
       ],
       "uk": [
         "підготувати"
@@ -2670,7 +2670,7 @@
     "translations": {
       "en": [
         "to crush",
-        "to crush, to press",
+        "to press",
         "to add a lot of, to pile on, to inundate"
       ],
       "uk": [
@@ -3229,7 +3229,7 @@
     "translations": {
       "en": [
         "to illustrate",
-        "to illustrate, to clarify, to exemplify"
+        "to clarify, to exemplify"
       ],
       "uk": [
         "ілюструвати"
@@ -4260,7 +4260,7 @@
     "translations": {
       "en": [
         "to correct",
-        "to correct, to rectify",
+        "to rectify",
         "to straighten"
       ],
       "uk": [
@@ -4341,8 +4341,7 @@
     "translations": {
       "en": [
         "to tap",
-        "to knock, to rap, to tap",
-        "to knock"
+        "to knock, to rap"
       ],
       "uk": [
         "стукати, стукати, стукати",
@@ -4663,7 +4662,7 @@
     "translations": {
       "en": [
         "to lead",
-        "to lead, conduct",
+        "conduct",
         "to work out, to do well"
       ],
       "uk": [
@@ -4744,7 +4743,7 @@
     "translations": {
       "en": [
         "to write out",
-        "to write out, to fill out",
+        "to fill out",
         "to remove"
       ],
       "uk": [
@@ -4909,7 +4908,7 @@
       "en": [
         "to manifest",
         "to protest, to demonstrate",
-        "to manifest, to appear"
+        "to appear"
       ],
       "uk": [
         "протестувати, демонструвати",
@@ -4990,8 +4989,7 @@
     "translations": {
       "en": [
         "to signal",
-        "to indicate, to signalize",
-        "to indicate"
+        "to indicate, to signalize"
       ],
       "uk": [
         "сигналізувати",
@@ -5548,7 +5546,6 @@
     "translations": {
       "en": [
         "to imitate, to ape, to copycat, to emulate, to follow, to mimic",
-        "to imitate",
         "to imitate each other"
       ],
       "uk": [
@@ -5627,7 +5624,7 @@
     "translations": {
       "en": [
         "to protect",
-        "to protect, to shelter, to guard",
+        "to shelter, to guard",
         "to take shelter, to protect oneself"
       ],
       "uk": [
@@ -5789,7 +5786,7 @@
     "translations": {
       "en": [
         "to conquer",
-        "to conquer, to subdue, to subjugate",
+        "to subdue, to subjugate",
         "to bump up, to drive up"
       ],
       "uk": [
@@ -5871,7 +5868,7 @@
     "translations": {
       "en": [
         "to heat",
-        "to heat, to warm up, to reheat",
+        "to warm up, to reheat",
         "to fire up, to stir, to excite"
       ],
       "uk": [
@@ -6274,7 +6271,7 @@
     "translations": {
       "en": [
         "to knock down",
-        "to topple, to fell, to upend, to knock down",
+        "to topple, to fell, to upend",
         "to shoot dead"
       ],
       "uk": [
@@ -6356,7 +6353,7 @@
       "en": [
         "to deny",
         "to contradict, defy, belie",
-        "to deny, negate"
+        "negate"
       ],
       "uk": [
         "заперечувати"
@@ -6595,7 +6592,7 @@
     "translations": {
       "en": [
         "to pacify",
-        "to pacify, to suppress"
+        "to suppress"
       ],
       "uk": [
         "заспокоїти"
@@ -6675,7 +6672,7 @@
     "translations": {
       "en": [
         "to diversify",
-        "to vary, to diversify, to make less monotonous",
+        "to vary, to make less monotonous",
         "to vary oneself, to become diverse"
       ],
       "uk": [
@@ -7077,7 +7074,7 @@
       "en": [
         "to scratch",
         "to sketch, to outline",
-        "to scratch, to scrape"
+        "to scrape"
       ],
       "uk": [
         "накидати, накреслити",
@@ -7559,7 +7556,7 @@
       "en": [
         "to manifest",
         "to reveal, to show",
-        "to appear, to manifest"
+        "to appear"
       ],
       "uk": [
         "розкрити, показати",

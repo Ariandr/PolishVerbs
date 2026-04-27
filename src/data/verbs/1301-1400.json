@@ -94,8 +94,8 @@
     "translations": {
       "en": [
         "to locate",
-        "to locate, to situate",
-        "to locate, to find"
+        "to situate",
+        "to find"
       ],
       "uk": [
         "знайти"
@@ -336,7 +336,7 @@
       "en": [
         "to add",
         "to stoke, to feed",
-        "to throw in, to add"
+        "to throw in"
       ],
       "uk": [
         "додати"
@@ -575,8 +575,8 @@
     "translations": {
       "en": [
         "to cut",
-        "to cut, to slice",
-        "to cut, to cross, to intersect"
+        "to slice",
+        "to cross, to intersect"
       ],
       "uk": [
         "вирізати"
@@ -735,7 +735,7 @@
     "translations": {
       "en": [
         "to deposit",
-        "to deposit, to pay in"
+        "to pay in"
       ],
       "uk": [
         "депонувати",
@@ -1057,7 +1057,7 @@
     "translations": {
       "en": [
         "to trade",
-        "to deal, to trade",
+        "to deal",
         "to deal with, to manage"
       ],
       "uk": [
@@ -1138,7 +1138,7 @@
     "translations": {
       "en": [
         "to cool down",
-        "to cool off, to cool down",
+        "to cool off",
         "to engulf, to surround"
       ],
       "uk": [
@@ -1221,7 +1221,7 @@
       "en": [
         "to beat",
         "to break, to smash",
-        "to beat up, to batter, to beat"
+        "to beat up, to batter"
       ],
       "uk": [
         "бити"
@@ -1301,7 +1301,7 @@
     "translations": {
       "en": [
         "to commission",
-        "to commission, to charge"
+        "to charge"
       ],
       "uk": [
         "комісувати, стягувати"
@@ -1544,7 +1544,7 @@
       "en": [
         "to five",
         "oven",
-        "oven, furnace, retort"
+        "furnace, retort"
       ],
       "uk": [
         "готувати"
@@ -1622,8 +1622,8 @@
     "translations": {
       "en": [
         "to justify",
-        "to justify, to legitimize, to validate",
-        "to justify, to excuse"
+        "to legitimize, to validate",
+        "to excuse"
       ],
       "uk": [
         "виправдати"
@@ -1703,7 +1703,7 @@
     "translations": {
       "en": [
         "to bath",
-        "to bathe, to bath",
+        "to bathe",
         "to soak in a solution"
       ],
       "uk": [
@@ -1869,7 +1869,7 @@
     "translations": {
       "en": [
         "to conquer",
-        "to conquer, to subdue, to subjugate",
+        "to subdue, to subjugate",
         "to bump up, to drive up"
       ],
       "uk": [
@@ -2027,7 +2027,7 @@
     "translations": {
       "en": [
         "to exert",
-        "to exert, to impose, to put",
+        "to impose, to put",
         "to have, to make"
       ],
       "uk": [
@@ -2110,7 +2110,7 @@
       "en": [
         "to interfere",
         "to interpose",
-        "to interfere, to chip in"
+        "to chip in"
       ],
       "uk": [
         "заважати"
@@ -2190,7 +2190,7 @@
     "translations": {
       "en": [
         "to disappear",
-        "to disappear, to vanish"
+        "to vanish"
       ],
       "uk": [
         "зникнути"
@@ -2592,7 +2592,7 @@
     "translations": {
       "en": [
         "to renovate",
-        "to renovate, to refurbish",
+        "to refurbish",
         "to repair"
       ],
       "uk": [
@@ -2754,7 +2754,7 @@
     "translations": {
       "en": [
         "to relieve",
-        "to alleviate, to assuage, to relieve"
+        "to alleviate, to assuage"
       ],
       "uk": [
         "полегшувати"
@@ -2915,7 +2915,7 @@
     "translations": {
       "en": [
         "to call",
-        "to call, to hail",
+        "to hail",
         "to call out, to cry"
       ],
       "uk": [
@@ -2997,7 +2997,7 @@
     "translations": {
       "en": [
         "to set",
-        "to establish, to set, to fix",
+        "to establish, to fix",
         "to determine, to ascertain, to find out"
       ],
       "uk": [
@@ -3160,7 +3160,7 @@
     "translations": {
       "en": [
         "to withdraw",
-        "to back, to withdraw",
+        "to back",
         "to pull out, to walk away"
       ],
       "uk": [
@@ -3483,7 +3483,7 @@
     "translations": {
       "en": [
         "to guard",
-        "to guard, to protect",
+        "to protect",
         "to abide by, to observe"
       ],
       "uk": [
@@ -3565,7 +3565,7 @@
     "translations": {
       "en": [
         "to lengthen",
-        "to lengthen, to extend, to elongate",
+        "to extend, to elongate",
         "to prolong, to drag out, to draw out"
       ],
       "uk": [
@@ -3646,7 +3646,7 @@
     "translations": {
       "en": [
         "to shout",
-        "to shout, to shout out",
+        "to shout out",
         "to shout to one's heart's content, to shout for a long time"
       ],
       "uk": [
@@ -3808,8 +3808,8 @@
     "translations": {
       "en": [
         "to press",
-        "to press, to push",
-        "to press, to urge, to impel"
+        "to push",
+        "to urge, to impel"
       ],
       "uk": [
         "тиснути, спонукати, спонукати"
@@ -3890,7 +3890,7 @@
     "translations": {
       "en": [
         "to share",
-        "to make available, to release, to share"
+        "to make available, to release"
       ],
       "uk": [
         "поділитися",
@@ -4052,8 +4052,8 @@
     "translations": {
       "en": [
         "to press",
-        "to press, to push",
-        "to press, to urge, to impel"
+        "to push",
+        "to urge, to impel"
       ],
       "uk": [
         "тиснути, спонукати, спонукати"
@@ -4134,7 +4134,7 @@
       "en": [
         "to buy back",
         "to buy from someone else",
-        "to buy back, to buy something one previously owned"
+        "to buy something one previously owned"
       ],
       "uk": [
         "викупити"
@@ -4215,7 +4215,7 @@
       "en": [
         "to operate",
         "to use, to utilise",
-        "to operate, to work"
+        "to work"
       ],
       "uk": [
         "оперувати"
@@ -4773,7 +4773,7 @@
     "translations": {
       "en": [
         "to comment",
-        "to comment, to remark",
+        "to remark",
         "to commentate"
       ],
       "uk": [
@@ -4934,7 +4934,7 @@
       "en": [
         "to take on",
         "to rise",
-        "to take on, to put on, to assume, to adopt"
+        "to put on, to assume, to adopt"
       ],
       "uk": [
         "взяти на себе"
@@ -5412,7 +5412,7 @@
       "en": [
         "to renounce",
         "to complain, to repine",
-        "to abjure, to relinquish, to renounce"
+        "to abjure, to relinquish"
       ],
       "uk": [
         "зрікатися"
@@ -5492,7 +5492,7 @@
     "translations": {
       "en": [
         "to excite",
-        "to stimulate, to excite, to rouse, to encourage, to prompt",
+        "to stimulate, to rouse, to encourage, to prompt",
         "to arouse"
       ],
       "uk": [
@@ -5807,7 +5807,7 @@
     "translations": {
       "en": [
         "to establish",
-        "to establish, to constitute, to implement",
+        "to constitute, to implement",
         "to appoint, to name"
       ],
       "uk": [
@@ -5969,7 +5969,7 @@
     "translations": {
       "en": [
         "to deliver",
-        "to declaim, to speak, to deliver"
+        "to declaim, to speak"
       ],
       "uk": [
         "доставити"
@@ -6050,7 +6050,7 @@
     "translations": {
       "en": [
         "to threaten",
-        "to endanger, to threaten"
+        "to endanger"
       ],
       "uk": [
         "погрожувати"
@@ -6130,7 +6130,7 @@
     "translations": {
       "en": [
         "to fill",
-        "to fill, to occupy",
+        "to occupy",
         "to get fully filled"
       ],
       "uk": [
@@ -7399,7 +7399,7 @@
     "translations": {
       "en": [
         "to straighten",
-        "to right, to straighten",
+        "to right",
         "to make something stand or hang straight"
       ],
       "uk": [
@@ -7480,8 +7480,8 @@
     "translations": {
       "en": [
         "to finish off",
-        "to finish off, to kill, to deliver a killing blow",
-        "to kill, to cause anguish"
+        "to kill, to deliver a killing blow",
+        "to cause anguish"
       ],
       "uk": [
         "закінчити"
@@ -7561,7 +7561,7 @@
     "translations": {
       "en": [
         "to accuse",
-        "to accuse, to charge, to indict",
+        "to charge, to indict",
         "to accuse oneself"
       ],
       "uk": [
@@ -7725,7 +7725,7 @@
       "en": [
         "to stand out",
         "to distinguish, to discriminate, to single out, to mark as different",
-        "to stand out, to be distinguished"
+        "to be distinguished"
       ],
       "uk": [
         "виділятися"
@@ -7806,7 +7806,7 @@
       "en": [
         "to blow up",
         "to drop off, to set down",
-        "to blow up, to explode"
+        "to explode"
       ],
       "uk": [
         "підірвати"
@@ -7968,7 +7968,7 @@
     "translations": {
       "en": [
         "to connect",
-        "to hook up, to plug in, to connect",
+        "to hook up, to plug in",
         "to become hooked up, to become plugged in, to become connected"
       ],
       "uk": [

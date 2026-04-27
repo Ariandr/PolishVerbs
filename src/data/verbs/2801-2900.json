@@ -570,7 +570,7 @@
       "en": [
         "to herald",
         "to annunciate",
-        "to foreshow, to herald"
+        "to foreshow"
       ],
       "uk": [
         "оголосити"
@@ -1299,7 +1299,7 @@
     "translations": {
       "en": [
         "to obscure",
-        "to obscure, to obstruct"
+        "to obstruct"
       ],
       "uk": [
         "затемнювати, заважати"
@@ -1777,7 +1777,7 @@
     "translations": {
       "en": [
         "to demolish",
-        "to demolish, to raze"
+        "to raze"
       ],
       "uk": [
         "знести"
@@ -2097,7 +2097,7 @@
     "translations": {
       "en": [
         "to aim",
-        "to aim, to endeavor",
+        "to endeavor",
         "to excel, stand out"
       ],
       "uk": [
@@ -2179,8 +2179,8 @@
     "translations": {
       "en": [
         "to chase",
-        "to chase, to pursue",
-        "to chase, to drive"
+        "to pursue",
+        "to drive"
       ],
       "uk": [
         "переслідувати, переслідувати",
@@ -2746,7 +2746,7 @@
     "translations": {
       "en": [
         "to transform",
-        "to transfigure, to transform"
+        "to transfigure"
       ],
       "uk": [
         "трансформувати"
@@ -3065,8 +3065,7 @@
     "translations": {
       "en": [
         "to indicate, to signalize",
-        "to signal",
-        "to indicate"
+        "to signal"
       ],
       "uk": [
         "сигналізувати"
@@ -3145,7 +3144,7 @@
       "en": [
         "to boast",
         "to grace, to honor",
-        "to boast, to glory in, to pride oneself on, to vaunt"
+        "to glory in, to pride oneself on, to vaunt"
       ],
       "uk": [
         "хвалитися"
@@ -3305,7 +3304,7 @@
     "translations": {
       "en": [
         "to put to death",
-        "to kill, to put to death"
+        "to kill"
       ],
       "uk": [
         "віддавати на смерть",
@@ -3386,8 +3385,8 @@
     "translations": {
       "en": [
         "to get stuck",
-        "to get stuck, to be unable to move",
-        "to get stuck, to be unable to make progress"
+        "to be unable to move",
+        "to be unable to make progress"
       ],
       "uk": [
         "застрягти"
@@ -3546,7 +3545,7 @@
     "translations": {
       "en": [
         "to spit out",
-        "to spit out, to spit up"
+        "to spit up"
       ],
       "uk": [
         "виплюнути"
@@ -3627,7 +3626,7 @@
       "en": [
         "to soar",
         "to hit upwards, to knock upwards",
-        "to soar, to rise, to fly"
+        "to rise, to fly"
       ],
       "uk": [
         "парити"
@@ -4025,7 +4024,7 @@
     "translations": {
       "en": [
         "to illustrate",
-        "to illustrate, to demonstrate, to depict"
+        "to demonstrate, to depict"
       ],
       "uk": [
         "ілюструвати"
@@ -4105,7 +4104,7 @@
     "translations": {
       "en": [
         "to match",
-        "to match, to fit",
+        "to fit",
         "to tailor"
       ],
       "uk": [
@@ -4186,7 +4185,7 @@
     "translations": {
       "en": [
         "to refine",
-        "to refine, to tweak, to polish"
+        "to tweak, to polish"
       ],
       "uk": [
         "доопрацювати"
@@ -4347,7 +4346,7 @@
     "translations": {
       "en": [
         "to beckon",
-        "to beckon, to noddle, to bob",
+        "to noddle, to bob",
         "to waggle, to totter"
       ],
       "uk": [
@@ -4429,7 +4428,7 @@
       "en": [
         "to publicize",
         "to soundproof",
-        "to hype, to publicize, to tout"
+        "to hype, to tout"
       ],
       "uk": [
         "оприлюднити"
@@ -4510,7 +4509,7 @@
     "translations": {
       "en": [
         "to induce",
-        "to coax, to induce, to persuade",
+        "to coax, to persuade",
         "to coax oneself, to induce oneself, to persuade oneself"
       ],
       "uk": [
@@ -4591,7 +4590,7 @@
     "translations": {
       "en": [
         "to flaunt",
-        "to flash, to flash around, to flaunt"
+        "to flash, to flash around"
       ],
       "uk": [
         "хизуватися"
@@ -5312,7 +5311,7 @@
     "translations": {
       "en": [
         "to beget",
-        "to beget, to breed, to father, to sire",
+        "to breed, to father, to sire",
         "to create"
       ],
       "uk": [
@@ -5475,7 +5474,7 @@
     "translations": {
       "en": [
         "to scrub",
-        "to scour, to scrub, to swab",
+        "to scour, to swab",
         "to wash oneself with a sponge"
       ],
       "uk": [
@@ -5719,7 +5718,7 @@
     "translations": {
       "en": [
         "to steal",
-        "to steal, to make off with",
+        "to make off with",
         "to kidnap"
       ],
       "uk": [
@@ -6119,7 +6118,7 @@
     "translations": {
       "en": [
         "to hang",
-        "to hang, to be hanged",
+        "to be hanged",
         "to become suspended"
       ],
       "uk": [
@@ -7001,7 +7000,7 @@
     "translations": {
       "en": [
         "to jump away",
-        "to jump away, to jump back, to recoil",
+        "to jump back, to recoil",
         "to bounce back"
       ],
       "uk": [
@@ -7082,7 +7081,7 @@
     "translations": {
       "en": [
         "to develop",
-        "to develop, to devise, to put together, to draw up",
+        "to devise, to put together, to draw up",
         "to describe completely, to compose a description of"
       ],
       "uk": [
@@ -7163,7 +7162,7 @@
     "translations": {
       "en": [
         "to shield",
-        "to screen, to shield, to shelter",
+        "to screen, to shelter",
         "to screen oneself, to shield oneself, to shelter oneself"
       ],
       "uk": [
@@ -7325,7 +7324,7 @@
     "translations": {
       "en": [
         "to humiliate",
-        "to humiliate, to put down, to debase, to degrade, to cheapen",
+        "to put down, to debase, to degrade, to cheapen",
         "to humiliate oneself"
       ],
       "uk": [
@@ -7406,7 +7405,7 @@
     "translations": {
       "en": [
         "to smell",
-        "to smell, to sniff",
+        "to sniff",
         "to sniff oneself, to sniff one another"
       ],
       "uk": [
@@ -7489,7 +7488,7 @@
     "translations": {
       "en": [
         "to intercept",
-        "to intercept, to get hold of",
+        "to get hold of",
         "to seize, to take"
       ],
       "uk": [

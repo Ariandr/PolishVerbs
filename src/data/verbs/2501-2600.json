@@ -171,7 +171,7 @@
     "translations": {
       "en": [
         "to burden",
-        "to encumber, to burden",
+        "to encumber",
         "to encumber oneself, to burden oneself"
       ],
       "uk": [
@@ -254,7 +254,7 @@
       "en": [
         "to crow",
         "to ascend, to climb",
-        "to be on the make, to climb"
+        "to be on the make"
       ],
       "uk": [
         "підніматися, підніматися"
@@ -901,7 +901,7 @@
     "translations": {
       "en": [
         "to enter",
-        "to enter, to step in",
+        "to step in",
         "to encroach"
       ],
       "uk": [
@@ -1222,7 +1222,7 @@
     "translations": {
       "en": [
         "to ridicule",
-        "to ridicule, to laugh at",
+        "to laugh at",
         "to make fun of, to tease, to mock"
       ],
       "uk": [
@@ -1383,8 +1383,8 @@
     "translations": {
       "en": [
         "to squint",
-        "to crinkle, to squint",
-        "to crinkle, to get squinted"
+        "to crinkle",
+        "to get squinted"
       ],
       "uk": [
         "мружитися, мружитися"
@@ -1863,7 +1863,7 @@
     "translations": {
       "en": [
         "to traverse",
-        "to cover, to traverse, to cross"
+        "to cover, to cross"
       ],
       "uk": [
         "покривати, проходити, переходити"
@@ -1943,7 +1943,7 @@
     "translations": {
       "en": [
         "to characterize",
-        "to characterize, to describe"
+        "to describe"
       ],
       "uk": [
         "характеризувати"
@@ -2024,7 +2024,7 @@
       "en": [
         "to haggle",
         "to deal, to trade",
-        "to barter, to haggle"
+        "to barter"
       ],
       "uk": [
         "торгуватися"
@@ -2104,7 +2104,7 @@
     "translations": {
       "en": [
         "to locate",
-        "to place, to set, to locate"
+        "to place, to set"
       ],
       "uk": [
         "знайти"
@@ -2504,7 +2504,7 @@
       "en": [
         "to happen",
         "to cause",
-        "to happen, to occur, to befall"
+        "to occur, to befall"
       ],
       "uk": [
         "статися"
@@ -2663,7 +2663,7 @@
     "translations": {
       "en": [
         "to crumble",
-        "to crush, to crumble, to break up",
+        "to crush, to break up",
         "to destroy"
       ],
       "uk": [
@@ -3862,7 +3862,7 @@
     "translations": {
       "en": [
         "to freeze",
-        "to freeze, to block"
+        "to block"
       ],
       "uk": [
         "заморозити"
@@ -3942,7 +3942,7 @@
     "translations": {
       "en": [
         "to disturb",
-        "to disturb, to trouble, to unsettle, to disquiet",
+        "to trouble, to unsettle, to disquiet",
         "to be anxious, to be troubled, to be unsettled"
       ],
       "uk": [
@@ -4182,7 +4182,7 @@
     "translations": {
       "en": [
         "to please",
-        "to pamper, to please, to indulge, to pander to"
+        "to pamper, to indulge, to pander to"
       ],
       "uk": [
         "балувати, догоджати, потурати, потурати"
@@ -4581,8 +4581,8 @@
     "translations": {
       "en": [
         "to propel",
-        "to drive, to propel, to power, to fuel",
-        "to drive, to herd, to corral"
+        "to drive, to power, to fuel",
+        "to herd, to corral"
       ],
       "uk": [
         "рухати"
@@ -4662,7 +4662,7 @@
     "translations": {
       "en": [
         "to charm",
-        "to charm, to beguile, to enchant, to enthrall, to captivate, to enrapture",
+        "to beguile, to enchant, to enthrall, to captivate, to enrapture",
         "to win over"
       ],
       "uk": [
@@ -4743,7 +4743,7 @@
     "translations": {
       "en": [
         "to move away",
-        "to move away, to pull away",
+        "to pull away",
         "to exclude, to freeze out"
       ],
       "uk": [
@@ -5063,7 +5063,7 @@
     "translations": {
       "en": [
         "to shorten",
-        "to abbreviate, to shorten",
+        "to abbreviate",
         "to cancel"
       ],
       "uk": [
@@ -5224,7 +5224,7 @@
     "translations": {
       "en": [
         "to specify",
-        "to specify, to pinpoint"
+        "to pinpoint"
       ],
       "uk": [
         "вказати"
@@ -5386,7 +5386,7 @@
     "translations": {
       "en": [
         "to break in",
-        "to break in, to hack into"
+        "to hack into"
       ],
       "uk": [
         "вламати"
@@ -5467,7 +5467,7 @@
       "en": [
         "to emerge",
         "to determine, to select",
-        "to appear, to emerge, to loom"
+        "to appear, to loom"
       ],
       "uk": [
         "виникати"
@@ -5787,7 +5787,7 @@
     "translations": {
       "en": [
         "to love",
-        "to cherish, to love",
+        "to cherish",
         "to cherish each other"
       ],
       "uk": [
@@ -6191,7 +6191,7 @@
       "en": [
         "to push through",
         "to shove, to move by pushing",
-        "to push through, to force through"
+        "to force through"
       ],
       "uk": [
         "проштовхнути"
@@ -6757,7 +6757,7 @@
       "en": [
         "to confess",
         "to profess, to preach",
-        "to confess, to reveal"
+        "to reveal"
       ],
       "uk": [
         "зізнаватися"
@@ -6917,7 +6917,7 @@
     "translations": {
       "en": [
         "to sow",
-        "to sow, to plant",
+        "to plant",
         "to get sown"
       ],
       "uk": [
@@ -7871,7 +7871,6 @@
     "translations": {
       "en": [
         "to novel",
-        "novel",
         "to go along, to guide"
       ],
       "uk": [
@@ -7950,7 +7949,7 @@
     "translations": {
       "en": [
         "to restore",
-        "to restore, reintroduce, re-establish"
+        "reintroduce, re-establish"
       ],
       "uk": [
         "відновити"

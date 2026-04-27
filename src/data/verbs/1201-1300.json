@@ -13,7 +13,7 @@
     "translations": {
       "en": [
         "to hunt, to chase",
-        "to hunt, to go hunting"
+        "to go hunting"
       ],
       "uk": [
         "полювати"
@@ -406,7 +406,7 @@
     "translations": {
       "en": [
         "to irritate, to cause discomfort in",
-        "to irritate, to annoy",
+        "to annoy",
         "to tease"
       ],
       "uk": [
@@ -564,7 +564,7 @@
     "translations": {
       "en": [
         "to embody",
-        "to embody, to personify, to incarnate",
+        "to personify, to incarnate",
         "to incorporate, to integrate"
       ],
       "uk": [
@@ -1127,7 +1127,7 @@
     "translations": {
       "en": [
         "to take on",
-        "to take on, to put on, to assume, to adopt",
+        "to put on, to assume, to adopt",
         "to garnish, to adorn"
       ],
       "uk": [
@@ -1208,7 +1208,7 @@
     "translations": {
       "en": [
         "to pack",
-        "to pack, to package, to pack up",
+        "to package, to pack up",
         "to zip"
       ],
       "uk": [
@@ -1526,7 +1526,7 @@
     "translations": {
       "en": [
         "to regulate",
-        "to regulate, to control",
+        "to control",
         "to adjust, to modulate, to set"
       ],
       "uk": [
@@ -1923,8 +1923,7 @@
     "translations": {
       "en": [
         "to allow",
-        "to permit",
-        "to allow, to permit"
+        "to permit"
       ],
       "uk": [
         "дозволити",
@@ -2167,7 +2166,7 @@
     "translations": {
       "en": [
         "to care, to take care, to look after",
-        "to care, to worry"
+        "to worry"
       ],
       "uk": [
         "піклуватися",
@@ -2405,8 +2404,8 @@
     "translations": {
       "en": [
         "to bear",
-        "to bear, to hold up",
-        "to bear, to endure, to stand"
+        "to hold up",
+        "to endure, to stand"
       ],
       "uk": [
         "нести, тримати",
@@ -2726,7 +2725,7 @@
     "translations": {
       "en": [
         "to reveal",
-        "to uncover, to reveal, to unveil, to expose",
+        "to uncover, to unveil, to expose",
         "to reveal oneself, to become uncovered"
       ],
       "uk": [
@@ -3045,7 +3044,7 @@
       "en": [
         "to return",
         "to send away, to dismiss",
-        "to send back, to return"
+        "to send back"
       ],
       "uk": [
         "потім повернутися",
@@ -3289,7 +3288,7 @@
       "en": [
         "to enrich",
         "to make someone richer",
-        "to enrich, to make something better or more diverse"
+        "to make something better or more diverse"
       ],
       "uk": [
         "збагачувати"
@@ -3529,7 +3528,7 @@
     "translations": {
       "en": [
         "to host",
-        "to entertain, to host, to receive",
+        "to entertain, to receive",
         "to wine and dine"
       ],
       "uk": [
@@ -3768,7 +3767,7 @@
       "en": [
         "to stop",
         "to make do with, to settle",
-        "to cease, to discontinue, to stop"
+        "to cease, to discontinue"
       ],
       "uk": [
         "обійтися, розрахуватися",
@@ -4091,7 +4090,7 @@
     "translations": {
       "en": [
         "to find",
-        "to see, to find, to discern"
+        "to see, to discern"
       ],
       "uk": [
         "знайти"
@@ -4488,7 +4487,7 @@
     "translations": {
       "en": [
         "to formulate",
-        "to express, to formulate",
+        "to express",
         "to be formulated"
       ],
       "uk": [
@@ -4651,7 +4650,7 @@
     "translations": {
       "en": [
         "to control",
-        "to control, steer, navigate"
+        "steer, navigate"
       ],
       "uk": [
         "контролювати",
@@ -4809,8 +4808,7 @@
     "translations": {
       "en": [
         "to crumble, to sprinkle",
-        "to heap, to pile",
-        "to pile"
+        "to heap, to pile"
       ],
       "uk": [
         "сипати",
@@ -5286,7 +5284,7 @@
       "en": [
         "to emerge",
         "to determine, to select",
-        "to appear, to emerge, to loom"
+        "to appear, to loom"
       ],
       "uk": [
         "виникати"
@@ -6493,7 +6491,7 @@
     "translations": {
       "en": [
         "to sit down",
-        "to sit, to sit down",
+        "to sit",
         "to sit in order to do something"
       ],
       "uk": [
@@ -6814,7 +6812,7 @@
     "translations": {
       "en": [
         "to delight",
-        "to delight, to charm",
+        "to charm",
         "to be delighted, to be charmed"
       ],
       "uk": [
@@ -7375,7 +7373,7 @@
       "en": [
         "to allow",
         "to let near, to allow to approach",
-        "to allow, to permit"
+        "to permit"
       ],
       "uk": [
         "дозволити",
@@ -7457,7 +7455,7 @@
     "translations": {
       "en": [
         "to support",
-        "to support, to back"
+        "to back"
       ],
       "uk": [
         "підтримувати, спиняти"
@@ -7616,7 +7614,7 @@
     "translations": {
       "en": [
         "to deceive",
-        "to deceive, to mislead",
+        "to mislead",
         "to bring down"
       ],
       "uk": [
@@ -7934,7 +7932,7 @@
     "translations": {
       "en": [
         "to silence",
-        "to silence, to quiet, to hush",
+        "to quiet, to hush",
         "to calm, to still"
       ],
       "uk": [

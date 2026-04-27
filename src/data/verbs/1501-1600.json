@@ -259,7 +259,7 @@
       "en": [
         "to spoil",
         "to break",
-        "to break, to break down, to go kaput"
+        "to break down, to go kaput"
       ],
       "uk": [
         "псувати"
@@ -976,7 +976,7 @@
     "translations": {
       "en": [
         "to register",
-        "to register, to enregister",
+        "to enregister",
         "to record, to log"
       ],
       "uk": [
@@ -1057,7 +1057,7 @@
     "translations": {
       "en": [
         "to warm",
-        "to heat, to warm",
+        "to heat",
         "to warm up"
       ],
       "uk": [
@@ -1380,7 +1380,7 @@
     "translations": {
       "en": [
         "to hold back",
-        "to hold back, to check, to contain, to stay",
+        "to check, to contain, to stay",
         "to refrain, to stop oneself"
       ],
       "uk": [
@@ -1462,7 +1462,7 @@
       "en": [
         "to consult",
         "to consult about, to ask about",
-        "to consult, to advise"
+        "to advise"
       ],
       "uk": [
         "проконсультуватися"
@@ -1542,7 +1542,7 @@
     "translations": {
       "en": [
         "to consolidate",
-        "to strengthen, to consolidate",
+        "to strengthen",
         "to commit to memory, to learn"
       ],
       "uk": [
@@ -1623,7 +1623,7 @@
     "translations": {
       "en": [
         "to delight",
-        "to delight, to charm",
+        "to charm",
         "to be delighted, to be charmed"
       ],
       "uk": [
@@ -2021,7 +2021,7 @@
     "translations": {
       "en": [
         "to stroke",
-        "to stroke, to caress"
+        "to caress"
       ],
       "uk": [
         "гладити, пестити"
@@ -2180,8 +2180,8 @@
     "translations": {
       "en": [
         "to adapt",
-        "to adapt, to adjust",
-        "to adapt, to get used, to acclimatise"
+        "to adjust",
+        "to get used, to acclimatise"
       ],
       "uk": [
         "адаптуватися"
@@ -2420,7 +2420,7 @@
     "translations": {
       "en": [
         "to try",
-        "to try out, to try, to test"
+        "to try out, to test"
       ],
       "uk": [
         "спробувати"
@@ -2581,7 +2581,7 @@
     "translations": {
       "en": [
         "to testify",
-        "to testify, to depose",
+        "to depose",
         "to learn, to come to know"
       ],
       "uk": [
@@ -2662,7 +2662,7 @@
     "translations": {
       "en": [
         "to match",
-        "to match, to equal, to measure up to"
+        "to equal, to measure up to"
       ],
       "uk": [
         "відповідати, дорівнювати, міряти"
@@ -2822,8 +2822,8 @@
     "translations": {
       "en": [
         "to greet",
-        "to greet, to welcome",
-        "to say hello, to greet"
+        "to welcome",
+        "to say hello"
       ],
       "uk": [
         "вітати"
@@ -3223,7 +3223,7 @@
     "translations": {
       "en": [
         "to liquidate",
-        "to liquidate, to dissolve",
+        "to dissolve",
         "to eliminate, to abolish"
       ],
       "uk": [
@@ -3304,7 +3304,7 @@
     "translations": {
       "en": [
         "to send",
-        "to send, to ship, to post",
+        "to ship, to post",
         "to forward, to send on"
       ],
       "uk": [
@@ -3385,7 +3385,7 @@
     "translations": {
       "en": [
         "to set",
-        "to put, to position, to place, to set, to align, to array",
+        "to put, to position, to place, to align, to array",
         "to set up"
       ],
       "uk": [
@@ -3707,7 +3707,7 @@
     "translations": {
       "en": [
         "to delude",
-        "to delude, to tantalize",
+        "to tantalize",
         "to delude oneself, to deceive oneself"
       ],
       "uk": [
@@ -3949,7 +3949,7 @@
     "translations": {
       "en": [
         "to hug",
-        "to hug, to cuddle, to snuggle",
+        "to cuddle, to snuggle",
         "to shelter, to take in to one's care"
       ],
       "uk": [
@@ -4031,8 +4031,8 @@
     "translations": {
       "en": [
         "to divorce",
-        "to divorce, to grant a divorce",
-        "to divorce, to get a divorce"
+        "to grant a divorce",
+        "to get a divorce"
       ],
       "uk": [
         "розлучитися, дати розлучення",
@@ -4511,7 +4511,7 @@
     "translations": {
       "en": [
         "to suppress",
-        "to suppress, to stifle, to smother",
+        "to stifle, to smother",
         "to damp"
       ],
       "uk": [
@@ -4592,8 +4592,8 @@
     "translations": {
       "en": [
         "to give way",
-        "to give way, to yield",
-        "to yield, to cede"
+        "to yield",
+        "to cede"
       ],
       "uk": [
         "поступатися місцем"
@@ -5390,8 +5390,7 @@
     },
     "translations": {
       "en": [
-        "to have to, to need to, must",
-        "to have to, must"
+        "to have to, to need to, must"
       ],
       "uk": [
         "мусити"
@@ -5469,7 +5468,7 @@
     "translations": {
       "en": [
         "to mention",
-        "to mention, to speak of, to remark"
+        "to speak of, to remark"
       ],
       "uk": [
         "згадувати",
@@ -6435,8 +6434,8 @@
     "translations": {
       "en": [
         "to transform",
-        "to transform, to transmute",
-        "to transform, to morph, to change"
+        "to transmute",
+        "to morph, to change"
       ],
       "uk": [
         "трансформувати"
@@ -6595,8 +6594,8 @@
     "translations": {
       "en": [
         "to relax",
-        "to relax, to loosen",
-        "to relax, to slacken, to loosen up"
+        "to loosen",
+        "to slacken, to loosen up"
       ],
       "uk": [
         "розслабитися"
@@ -6992,7 +6991,7 @@
     "translations": {
       "en": [
         "to breed",
-        "to breed, to rear",
+        "to rear",
         "to culture"
       ],
       "uk": [
@@ -7155,7 +7154,7 @@
     "translations": {
       "en": [
         "to correct",
-        "to castigate, to correct"
+        "to castigate"
       ],
       "uk": [
         "бичувати, виправляти"
@@ -7476,7 +7475,7 @@
     "translations": {
       "en": [
         "to report",
-        "to inform, to report",
+        "to inform",
         "to rat, to snitch, to grass"
       ],
       "uk": [
@@ -7883,7 +7882,7 @@
     "translations": {
       "en": [
         "to suggest",
-        "to suggest, to prompt",
+        "to prompt",
         "to imply"
       ],
       "uk": [
@@ -7964,7 +7963,7 @@
     "translations": {
       "en": [
         "to explore",
-        "to bottom, to explore, to penetrate, to plumb, to probe",
+        "to bottom, to penetrate, to plumb, to probe",
         "to deepen, to dredge"
       ],
       "uk": [

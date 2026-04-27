@@ -92,7 +92,7 @@
     "translations": {
       "en": [
         "to feed",
-        "to feed, to fodder, to nourish"
+        "to fodder, to nourish"
       ],
       "uk": [
         "годувати"
@@ -330,7 +330,7 @@
     "translations": {
       "en": [
         "to send",
-        "to send, to ship, to post",
+        "to ship, to post",
         "to forward, to send on"
       ],
       "uk": [
@@ -730,7 +730,7 @@
     "translations": {
       "en": [
         "to have",
-        "to have, to have at one's disposal"
+        "to have at one's disposal"
       ],
       "uk": [
         "мати"
@@ -811,7 +811,7 @@
       "en": [
         "to transmit",
         "to confer, to bestow",
-        "to transmit, to broadcast"
+        "to broadcast"
       ],
       "uk": [
         "передавати"
@@ -891,7 +891,7 @@
     "translations": {
       "en": [
         "to act",
-        "to act, behave",
+        "behave",
         "to advance, to move forward"
       ],
       "uk": [
@@ -1130,8 +1130,8 @@
     "translations": {
       "en": [
         "to transform",
-        "to reshape, to remodel, to transform, to make over",
-        "to transform, to convert"
+        "to reshape, to remodel, to make over",
+        "to convert"
       ],
       "uk": [
         "трансформувати"
@@ -1446,7 +1446,7 @@
     "translations": {
       "en": [
         "to note",
-        "to make a note of, to note, to record"
+        "to make a note of, to record"
       ],
       "uk": [
         "занотувати, відзначити, записати"
@@ -1605,7 +1605,7 @@
       "en": [
         "to confess",
         "to profess, to preach",
-        "to confess, to reveal"
+        "to reveal"
       ],
       "uk": [
         "зізнаватися"
@@ -1766,8 +1766,8 @@
     "translations": {
       "en": [
         "to multiply",
-        "to multiply, to times",
-        "to multiply, to proliferate"
+        "to times",
+        "to proliferate"
       ],
       "uk": [
         "множити"
@@ -1847,8 +1847,8 @@
     "translations": {
       "en": [
         "to put on",
-        "to apply, to put on, to dab",
-        "to put on, to dress"
+        "to apply, to dab",
+        "to dress"
       ],
       "uk": [
         "надіти"
@@ -1928,7 +1928,7 @@
     "translations": {
       "en": [
         "to chase",
-        "to chase, to pursue",
+        "to pursue",
         "to chase one another"
       ],
       "uk": [
@@ -2089,7 +2089,7 @@
     "translations": {
       "en": [
         "to lose",
-        "to fail, to lose",
+        "to fail",
         "to copy data from one physical medium to another"
       ],
       "uk": [
@@ -2648,7 +2648,7 @@
     "translations": {
       "en": [
         "to agree",
-        "to agree, to concede"
+        "to concede"
       ],
       "uk": [
         "погоджуватися, поступатися"
@@ -2728,7 +2728,7 @@
     "translations": {
       "en": [
         "to overthrow",
-        "to knock over, to overthrow",
+        "to knock over",
         "to refute, to disprove"
       ],
       "uk": [
@@ -2891,7 +2891,7 @@
     "translations": {
       "en": [
         "to break",
-        "to break, to shatter",
+        "to shatter",
         "to pitch"
       ],
       "uk": [
@@ -2973,7 +2973,7 @@
     "translations": {
       "en": [
         "to shoot",
-        "to shoot, to fire a projectile weapon",
+        "to fire a projectile weapon",
         "to fire"
       ],
       "uk": [
@@ -3137,7 +3137,7 @@
     "translations": {
       "en": [
         "to entrust",
-        "to charge, to commission, to commit, to entrust",
+        "to charge, to commission, to commit",
         "to confess, to confide, to confide in, to pour one's heart out"
       ],
       "uk": [
@@ -3375,7 +3375,7 @@
     "translations": {
       "en": [
         "to cancel",
-        "to cancel, to call off",
+        "to call off",
         "to dismiss, to recall, to remove"
       ],
       "uk": [
@@ -3456,7 +3456,7 @@
     "translations": {
       "en": [
         "to warn",
-        "to caution, to warn"
+        "to caution"
       ],
       "uk": [
         "попередити"
@@ -3615,7 +3615,7 @@
     "translations": {
       "en": [
         "to estimate",
-        "to estimate, to evaluate"
+        "to evaluate"
       ],
       "uk": [
         "оцінити",
@@ -3697,7 +3697,7 @@
     "translations": {
       "en": [
         "to bury",
-        "to bury, to inter",
+        "to inter",
         "to bury oneself"
       ],
       "uk": [
@@ -3778,8 +3778,8 @@
     "translations": {
       "en": [
         "to unfold",
-        "to spread, to unfold, to unfurl, to lay out",
-        "to spread, to set out"
+        "to spread, to unfurl, to lay out",
+        "to set out"
       ],
       "uk": [
         "розгорнути"
@@ -3859,8 +3859,7 @@
     "translations": {
       "en": [
         "to compete",
-        "to compete, to contend, to rival",
-        "to rival"
+        "to contend, to rival"
       ],
       "uk": [
         "конкурувати"
@@ -3942,7 +3941,7 @@
       "en": [
         "to endanger",
         "to threaten, to menace",
-        "to endanger, to threaten, to jeopardise"
+        "to jeopardise"
       ],
       "uk": [
         "поставити",
@@ -4024,7 +4023,7 @@
     "translations": {
       "en": [
         "to increase, to boost, to expand",
-        "to grow, to increase"
+        "to grow"
       ],
       "uk": [
         "збільшувати",
@@ -4104,7 +4103,7 @@
       "en": [
         "to catch",
         "to grab",
-        "to catch, to capture, to grab, to nab, to get"
+        "to capture, to nab, to get"
       ],
       "uk": [
         "зловити"
@@ -4420,7 +4419,7 @@
       "en": [
         "to take care of, to deal with, to get done",
         "to arrange, to set up for someone",
-        "to take care of, to deal with, to kill"
+        "to kill"
       ],
       "uk": [
         "вирішувати",
@@ -4500,7 +4499,7 @@
     "translations": {
       "en": [
         "to hide, to stash, to tuck, to put away",
-        "to hide, to stash, to conceal",
+        "to conceal",
         "to bury"
       ],
       "uk": [
@@ -4979,7 +4978,6 @@
     "translations": {
       "en": [
         "to save",
-        "to save, to spare",
         "to spare"
       ],
       "uk": [
@@ -5060,7 +5058,7 @@
     "translations": {
       "en": [
         "to try",
-        "to attempt, to try",
+        "to attempt",
         "to try to do something best"
       ],
       "uk": [
@@ -5141,7 +5139,7 @@
     "translations": {
       "en": [
         "to overcome",
-        "to overcome, to surmount",
+        "to surmount",
         "to get a grip, to get ahold of oneself"
       ],
       "uk": [
@@ -5223,7 +5221,7 @@
     "translations": {
       "en": [
         "to bring closer",
-        "to move nearer, to bring closer",
+        "to move nearer",
         "to bring forward"
       ],
       "uk": [
@@ -6021,7 +6019,7 @@
     "translations": {
       "en": [
         "to broaden, to widen, to expand",
-        "to expand, to dilate"
+        "to dilate"
       ],
       "uk": [
         "розширити",
@@ -6259,7 +6257,7 @@
       "en": [
         "to undermine",
         "to lever open, to prise",
-        "to question, to challenge, to undermine"
+        "to question, to challenge"
       ],
       "uk": [
         "підривати"
@@ -6740,7 +6738,7 @@
     "translations": {
       "en": [
         "to consider",
-        "to consider, to look into",
+        "to look into",
         "to process a case in court"
       ],
       "uk": [
@@ -6901,7 +6899,7 @@
       "en": [
         "to quote",
         "to bring to some place by rolling",
-        "to quote, to cite"
+        "to cite"
       ],
       "uk": [
         "перекочувати до якогось місця",
@@ -6984,7 +6982,7 @@
       "en": [
         "to differ",
         "to distinguish, to make different",
-        "to differ, to be different"
+        "to be different"
       ],
       "uk": [
         "відрізнятися",
@@ -7066,7 +7064,7 @@
     "translations": {
       "en": [
         "to get off",
-        "to get out, to get off, to disembark, to detrain, to deplane",
+        "to get out, to disembark, to detrain, to deplane",
         "to break, to break down, to give out"
       ],
       "uk": [
@@ -7307,7 +7305,7 @@
     "translations": {
       "en": [
         "to cheat",
-        "to cheat, to deceive, to defraud, to trick someone",
+        "to deceive, to defraud, to trick someone",
         "to be delusional"
       ],
       "uk": [
@@ -7471,7 +7469,7 @@
     "translations": {
       "en": [
         "to collect",
-        "to collect, to gather up",
+        "to gather up",
         "to get one's act together"
       ],
       "uk": [
@@ -7709,7 +7707,7 @@
     "translations": {
       "en": [
         "to come",
-        "to approach, to come, to walk up to"
+        "to approach, to walk up to"
       ],
       "uk": [
         "прийти"
@@ -7868,7 +7866,7 @@
     "translations": {
       "en": [
         "to extend",
-        "to extend, to lengthen",
+        "to lengthen",
         "to prolong, to protract"
       ],
       "uk": [

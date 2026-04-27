@@ -498,7 +498,7 @@
     "translations": {
       "en": [
         "to confide",
-        "to confess, to confide, to confide in, to pour one's heart out"
+        "to confess, to confide in, to pour one's heart out"
       ],
       "uk": [
         "довіряти"
@@ -738,7 +738,7 @@
       "en": [
         "to follow",
         "to tread, to step",
-        "to follow, to ensue, to take place, to occur, to happen"
+        "to ensue, to take place, to occur, to happen"
       ],
       "uk": [
         "слідувати"
@@ -1061,7 +1061,7 @@
       "en": [
         "to rest",
         "to repose",
-        "to rest, to reside"
+        "to reside"
       ],
       "uk": [
         "потім відпочити",
@@ -1701,7 +1701,7 @@
     "translations": {
       "en": [
         "to apply",
-        "to administer, to apply",
+        "to administer",
         "to exert, to impose"
       ],
       "uk": [
@@ -2505,7 +2505,7 @@
     "translations": {
       "en": [
         "to reduce",
-        "to cut back, to diminish, to reduce",
+        "to cut back, to diminish",
         "to make redundant, to lay off"
       ],
       "uk": [
@@ -2746,7 +2746,7 @@
     "translations": {
       "en": [
         "to fall apart",
-        "to fall apart, to disintegrate"
+        "to disintegrate"
       ],
       "uk": [
         "розвалюватися"
@@ -2986,8 +2986,7 @@
     "translations": {
       "en": [
         "to darken, to dim",
-        "to lie",
-        "to darken"
+        "to lie"
       ],
       "uk": [
         "темнити"
@@ -3145,8 +3144,8 @@
     "translations": {
       "en": [
         "to embrace",
-        "to hug, to embrace",
-        "to hug one another, to embrace"
+        "to hug",
+        "to hug one another"
       ],
       "uk": [
         "обійняти"
@@ -3227,7 +3226,7 @@
       "en": [
         "to hit",
         "to pound",
-        "to pound, palpitate"
+        "palpitate"
       ],
       "uk": [
         "стукати, стукати"
@@ -3388,7 +3387,7 @@
     "translations": {
       "en": [
         "to help",
-        "to assist, to help"
+        "to assist"
       ],
       "uk": [
         "допомогти"
@@ -3788,7 +3787,7 @@
     "translations": {
       "en": [
         "to deceive",
-        "to deceive, to mislead",
+        "to mislead",
         "to deceive one another"
       ],
       "uk": [
@@ -3869,7 +3868,7 @@
     "translations": {
       "en": [
         "to wrap",
-        "to wrap, to wrap up, to wind around",
+        "to wrap up, to wind around",
         "to wrap oneself, to wind oneself"
       ],
       "uk": [
@@ -4110,7 +4109,7 @@
       "en": [
         "to bend down",
         "to bow",
-        "to bend down, to stoop"
+        "to stoop"
       ],
       "uk": [
         "нахилятися"
@@ -4270,7 +4269,7 @@
     "translations": {
       "en": [
         "to inhale",
-        "to breathe in, to inhale"
+        "to breathe in"
       ],
       "uk": [
         "вдихнути, вдихнути"
@@ -4430,7 +4429,7 @@
       "en": [
         "to feed",
         "to suckle",
-        "to feed, to sustain"
+        "to sustain"
       ],
       "uk": [
         "годувати"
@@ -4592,7 +4591,7 @@
     "translations": {
       "en": [
         "to force",
-        "to extort, to force"
+        "to extort"
       ],
       "uk": [
         "вимагати, примушувати"
@@ -4751,7 +4750,7 @@
     "translations": {
       "en": [
         "to reserve",
-        "to stipulate, to condition, to reserve"
+        "to stipulate, to condition"
       ],
       "uk": [
         "резервувати",
@@ -5073,7 +5072,7 @@
     "translations": {
       "en": [
         "to manage",
-        "to have at one's disposal, to manage",
+        "to have at one's disposal",
         "to manage a farm"
       ],
       "uk": [
@@ -5232,7 +5231,7 @@
     "translations": {
       "en": [
         "to mock",
-        "to mock, to deride, to jeer, to sneer, to taunt"
+        "to deride, to jeer, to sneer, to taunt"
       ],
       "uk": [
         "знущатися"
@@ -5395,7 +5394,7 @@
       "en": [
         "to break",
         "to break many things or in many places",
-        "to break, to become broken"
+        "to become broken"
       ],
       "uk": [
         "потім розірвати",
@@ -5559,8 +5558,8 @@
     "translations": {
       "en": [
         "to straighten",
-        "to straighten, to straighten out",
-        "to rectify, to correct, to straighten out"
+        "to straighten out",
+        "to rectify, to correct"
       ],
       "uk": [
         "випрямити"
@@ -5721,7 +5720,7 @@
     "translations": {
       "en": [
         "to confirm",
-        "to ensure, to confirm",
+        "to ensure",
         "to strengthen, to consolidate, to reinforce"
       ],
       "uk": [
@@ -6928,7 +6927,7 @@
     "translations": {
       "en": [
         "to isolate",
-        "to isolate, to exclude, to seclude",
+        "to exclude, to seclude",
         "to isolate oneself"
       ],
       "uk": [
@@ -7331,7 +7330,7 @@
     "translations": {
       "en": [
         "to warn",
-        "to warn, to caution"
+        "to caution"
       ],
       "uk": [
         "попередити"
@@ -7655,7 +7654,7 @@
     "translations": {
       "en": [
         "to delineate",
-        "to mark out, to delineate, to demarcate"
+        "to mark out, to demarcate"
       ],
       "uk": [
         "окреслити"
@@ -7816,7 +7815,7 @@
     "translations": {
       "en": [
         "to eat",
-        "to consume, to eat, to ingest",
+        "to consume, to ingest",
         "to devour, to gobble, to gorge, to stuff oneself"
       ],
       "uk": [

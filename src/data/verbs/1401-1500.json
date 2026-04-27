@@ -175,7 +175,7 @@
       "en": [
         "to fall over",
         "to overturn, to upend, to knock over",
-        "to fall over, to tip, to topple"
+        "to tip, to topple"
       ],
       "uk": [
         "впасти"
@@ -492,7 +492,6 @@
     "translations": {
       "en": [
         "to mute",
-        "to quiet, to mute",
         "to quiet"
       ],
       "uk": [
@@ -734,7 +733,7 @@
       "en": [
         "to impose",
         "to apply, to put on, to dab",
-        "to put on, to dress"
+        "to dress"
       ],
       "uk": [
         "нав'язувати"
@@ -974,7 +973,7 @@
     "translations": {
       "en": [
         "to show",
-        "to portray, to picture, to show",
+        "to portray, to picture",
         "to appear, to manifest"
       ],
       "uk": [
@@ -1137,7 +1136,7 @@
     "translations": {
       "en": [
         "to print",
-        "to print, to print out",
+        "to print out",
         "to publish, to put in print"
       ],
       "uk": [
@@ -1934,7 +1933,7 @@
     "translations": {
       "en": [
         "to fish out",
-        "to fish out, to retrieve",
+        "to retrieve",
         "to dig out, to find with difficulty"
       ],
       "uk": [
@@ -2095,7 +2094,7 @@
       "en": [
         "to compensate",
         "to recompense",
-        "to compensate, to make up for, to recompense"
+        "to make up for"
       ],
       "uk": [
         "компенсувати"
@@ -2175,7 +2174,7 @@
     "translations": {
       "en": [
         "to house, to accommodate, to contain",
-        "to hold, to seat, to take, to accommodate",
+        "to hold, to seat, to take",
         "to be located"
       ],
       "uk": [
@@ -2497,7 +2496,7 @@
       "en": [
         "to fit out, to equip",
         "to give a dowry",
-        "to fit out, to equip oneself"
+        "to equip oneself"
       ],
       "uk": [
         "оснасти́ти",
@@ -2576,8 +2575,8 @@
     "translations": {
       "en": [
         "to unite",
-        "to unite, to unify",
-        "to come together, to unite"
+        "to unify",
+        "to come together"
       ],
       "uk": [
         "об'єднати"
@@ -2657,7 +2656,7 @@
     "translations": {
       "en": [
         "to pay extra",
-        "to pay extra, to pay a remainder"
+        "to pay a remainder"
       ],
       "uk": [
         "доплатити"
@@ -2894,7 +2893,7 @@
     "translations": {
       "en": [
         "to flood",
-        "to inundate, to flood",
+        "to inundate",
         "to pour water on oneself"
       ],
       "uk": [
@@ -3055,7 +3054,7 @@
     "translations": {
       "en": [
         "to summarize",
-        "to summarize, to epitomize, to encapsulate",
+        "to epitomize, to encapsulate",
         "to contain oneself in a short, concise form"
       ],
       "uk": [
@@ -3299,7 +3298,7 @@
     "translations": {
       "en": [
         "to return the favor",
-        "to requite, to return the favor"
+        "to requite"
       ],
       "uk": [
         "повернути послугу"
@@ -3462,7 +3461,7 @@
       "en": [
         "to undermine",
         "to lever open, to prise",
-        "to question, to challenge, to undermine"
+        "to question, to challenge"
       ],
       "uk": [
         "підривати"
@@ -3542,7 +3541,7 @@
     "translations": {
       "en": [
         "to let go",
-        "to let go, to release",
+        "to release",
         "to put on, to play, to select a recording for playing"
       ],
       "uk": [
@@ -3622,8 +3621,7 @@
     },
     "translations": {
       "en": [
-        "to taste, to sample the flavor of something",
-        "to taste"
+        "to taste, to sample the flavor of something"
       ],
       "uk": [
         "куштувати",
@@ -4102,7 +4100,7 @@
     "translations": {
       "en": [
         "to stare",
-        "to stare, to gaze"
+        "to gaze"
       ],
       "uk": [
         "дивитися"
@@ -4342,7 +4340,7 @@
     "translations": {
       "en": [
         "to convict",
-        "to convict, to sentence",
+        "to sentence",
         "to doom"
       ],
       "uk": [
@@ -4824,8 +4822,8 @@
     "translations": {
       "en": [
         "to stay",
-        "to stay, to remain",
-        "to remain, to be left"
+        "to remain",
+        "to be left"
       ],
       "uk": [
         "залишитися"
@@ -4986,7 +4984,7 @@
     "translations": {
       "en": [
         "to murder",
-        "to murder, to kill on purpose",
+        "to kill on purpose",
         "to murder each other"
       ],
       "uk": [
@@ -5309,8 +5307,8 @@
     "translations": {
       "en": [
         "to tighten",
-        "to tighten, to clench, to purse",
-        "to clench, to become clenched"
+        "to clench, to purse",
+        "to become clenched"
       ],
       "uk": [
         "затягнути"
@@ -5788,7 +5786,7 @@
       "en": [
         "to deduct",
         "to count down",
-        "to deduct, to take away"
+        "to take away"
       ],
       "uk": [
         "відрахувати"
@@ -6266,7 +6264,6 @@
     "translations": {
       "en": [
         "to desire, to thirst for, to wish for",
-        "to desire",
         "to thirst, to be thirsty"
       ],
       "uk": [
@@ -6585,7 +6582,7 @@
     "translations": {
       "en": [
         "to move away",
-        "to move away, to move apart",
+        "to move apart",
         "to put off, to delay"
       ],
       "uk": [
@@ -6745,7 +6742,6 @@
     "translations": {
       "en": [
         "to unravel",
-        "to unravel, to untangle, to disentangle",
         "to untangle, to disentangle"
       ],
       "uk": [
@@ -7146,7 +7142,7 @@
     "translations": {
       "en": [
         "to experience",
-        "to experience, to know"
+        "to know"
       ],
       "uk": [
         "переживати, знати"
@@ -7382,7 +7378,7 @@
     "translations": {
       "en": [
         "to bake",
-        "to roast, to bake",
+        "to roast",
         "to get roasted, to get baked"
       ],
       "uk": [
@@ -7703,7 +7699,7 @@
     "translations": {
       "en": [
         "to satisfy",
-        "to satisfy, to satiate, to assuage"
+        "to satiate, to assuage"
       ],
       "uk": [
         "задовольнити"
@@ -7944,7 +7940,7 @@
     "translations": {
       "en": [
         "to refresh",
-        "to freshen, to refresh, to rejuvenate",
+        "to freshen, to rejuvenate",
         "to brush up, to improve"
       ],
       "uk": [

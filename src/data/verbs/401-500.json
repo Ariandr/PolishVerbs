@@ -13,7 +13,7 @@
     "translations": {
       "en": [
         "to discover",
-        "to discover, to find",
+        "to find",
         "to uncover"
       ],
       "uk": [
@@ -489,7 +489,7 @@
     "translations": {
       "en": [
         "to establish",
-        "to establish, to form",
+        "to form",
         "}} to reference, to refer to"
       ],
       "uk": [
@@ -888,7 +888,6 @@
     "translations": {
       "en": [
         "to compel, to force, to make someone",
-        "to make someone",
         "to compel oneself, to force oneself, to make oneself"
       ],
       "uk": [
@@ -1047,8 +1046,7 @@
     "translations": {
       "en": [
         "to shoot, to fire a projectile weapon",
-        "to fire",
-        "to shoot"
+        "to fire"
       ],
       "uk": [
         "стріляти"
@@ -1126,7 +1124,7 @@
     "translations": {
       "en": [
         "to grant",
-        "to grant, to accord, to give, to provide",
+        "to accord, to give, to provide",
         "to rub off on, to infect"
       ],
       "uk": [
@@ -1287,7 +1285,7 @@
     "translations": {
       "en": [
         "to lay out",
-        "to lay down, to lay out",
+        "to lay down",
         "to arrange, to set"
       ],
       "uk": [
@@ -1367,7 +1365,7 @@
       "en": [
         "to affect",
         "to swim in, to sail in",
-        "to influence, to affect"
+        "to influence"
       ],
       "uk": [
         "впливати"
@@ -1609,7 +1607,7 @@
     "translations": {
       "en": [
         "to put",
-        "to put, to place, to position, to set",
+        "to place, to position, to set",
         "to position oneself"
       ],
       "uk": [
@@ -1690,7 +1688,7 @@
     "translations": {
       "en": [
         "to bring",
-        "to bring, to fetch",
+        "to fetch",
         "to import"
       ],
       "uk": [
@@ -2402,7 +2400,7 @@
     "translations": {
       "en": [
         "to propose",
-        "to propose, to suggest, to offer, to put forth"
+        "to suggest, to offer, to put forth"
       ],
       "uk": [
         "пропонувати"
@@ -2482,7 +2480,7 @@
     "translations": {
       "en": [
         "to cancel",
-        "to cancel, to call off",
+        "to call off",
         "to dismiss, to recall, to remove"
       ],
       "uk": [
@@ -2563,7 +2561,7 @@
     "translations": {
       "en": [
         "to finish",
-        "to finish, to bring to completion, to wrap up"
+        "to bring to completion, to wrap up"
       ],
       "uk": [
         "закінчити"
@@ -2644,7 +2642,7 @@
       "en": [
         "to take over",
         "to take on, to assume",
-        "to seize, to intercept, to take over"
+        "to seize, to intercept"
       ],
       "uk": [
         "взяти на себе"
@@ -3127,7 +3125,7 @@
       "en": [
         "to maintain",
         "to hold up",
-        "to keep, to maintain"
+        "to keep"
       ],
       "uk": [
         "підтримувати"
@@ -3289,7 +3287,7 @@
     "translations": {
       "en": [
         "to save",
-        "to rescue, to save",
+        "to rescue",
         "to rescue oneself, to survive"
       ],
       "uk": [
@@ -3691,7 +3689,7 @@
       "en": [
         "to secure",
         "to protect, to safeguard, to preserve",
-        "to secure, to seal off"
+        "to seal off"
       ],
       "uk": [
         "забезпечити",
@@ -3933,7 +3931,7 @@
     "translations": {
       "en": [
         "to allocate",
-        "to allocate, to earmark, to dedicate"
+        "to earmark, to dedicate"
       ],
       "uk": [
         "виділяти"
@@ -4013,7 +4011,7 @@
     "translations": {
       "en": [
         "to introduce",
-        "to implement, to bring in, to introduce, to put into practice",
+        "to implement, to bring in, to put into practice",
         "to inaugurate, to initiate"
       ],
       "uk": [
@@ -4173,7 +4171,7 @@
       "en": [
         "to get acquainted",
         "to acquaint, to familiarise",
-        "to get acquainted, to become familiar"
+        "to become familiar"
       ],
       "uk": [
         "познайомитися"
@@ -4330,8 +4328,8 @@
     "translations": {
       "en": [
         "to adjust",
-        "to adjust, to modify, to adapt",
-        "to adapt, to adjust, to conform"
+        "to modify, to adapt",
+        "to conform"
       ],
       "uk": [
         "налаштувати"
@@ -4490,7 +4488,7 @@
     "translations": {
       "en": [
         "to perform",
-        "to carry out, to fulfil, to perform",
+        "to carry out, to fulfil",
         "to materialize, to come true"
       ],
       "uk": [
@@ -4650,7 +4648,7 @@
       "en": [
         "to cook",
         "to boil",
-        "to boil, to seethe"
+        "to seethe"
       ],
       "uk": [
         "готувати"
@@ -4729,7 +4727,7 @@
       "en": [
         "to win",
         "to win over, to endear",
-        "to win, to attain"
+        "to attain"
       ],
       "uk": [
         "виграти"
@@ -5363,7 +5361,6 @@
     "translations": {
       "en": [
         "to own, to possess",
-        "to possess",
         "to have"
       ],
       "uk": [
@@ -5601,7 +5598,7 @@
     "translations": {
       "en": [
         "to enter",
-        "to write in, to enter",
+        "to write in",
         "to inscribe"
       ],
       "uk": [
@@ -5683,8 +5680,7 @@
     "translations": {
       "en": [
         "to put away",
-        "to hide, to conceal",
-        "to hide"
+        "to hide, to conceal"
       ],
       "uk": [
         "сховати"
@@ -5763,7 +5759,7 @@
       "en": [
         "to start",
         "to mobilise, to put in motion",
-        "to activate, to start, to launch, to boot"
+        "to activate, to launch, to boot"
       ],
       "uk": [
         "мобілізувати, привести в рух",
@@ -6960,8 +6956,8 @@
     "translations": {
       "en": [
         "to run",
-        "to run, to rush",
-        "to run, to race, to roll"
+        "to rush",
+        "to race, to roll"
       ],
       "uk": [
         "бігти"
@@ -7277,7 +7273,7 @@
     "translations": {
       "en": [
         "to strengthen",
-        "to reinforce, to amplify, to strengthen, to bolster",
+        "to reinforce, to amplify, to bolster",
         "to get stronger"
       ],
       "uk": [
@@ -7755,7 +7751,6 @@
     "translations": {
       "en": [
         "to suffice, to be enough, to do",
-        "to do",
         "to manage"
       ],
       "uk": [
@@ -7915,7 +7910,7 @@
     "translations": {
       "en": [
         "to encourage",
-        "to encourage, to entice, to incentivize",
+        "to entice, to incentivize",
         "to encourage oneself"
       ],
       "uk": [

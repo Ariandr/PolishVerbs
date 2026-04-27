@@ -13,8 +13,7 @@
     "translations": {
       "en": [
         "to feel, to sense",
-        "to hear",
-        "to feel"
+        "to hear"
       ],
       "uk": [
         "відчувати"
@@ -652,7 +651,7 @@
       "en": [
         "to run away, to flee",
         "to escape",
-        "to escape, to flow out from"
+        "to flow out from"
       ],
       "uk": [
         "втікти"
@@ -1127,7 +1126,7 @@
       "en": [
         "to end, to finish",
         "to stop, to quit",
-        "to come to an end, to finish"
+        "to come to an end"
       ],
       "uk": [
         "кінчи́ти",
@@ -1206,7 +1205,6 @@
     "translations": {
       "en": [
         "to hold",
-        "to hold, to keep",
         "to keep"
       ],
       "uk": [
@@ -1692,7 +1690,7 @@
     "translations": {
       "en": [
         "to build",
-        "to build, to construct",
+        "to construct",
         "to build up"
       ],
       "uk": [
@@ -2581,8 +2579,8 @@
     "translations": {
       "en": [
         "to transfer, to pass on, to hand over, to surrender, to give",
-        "to convey, to pass on, to communicate",
-        "to transmit, to convey, to communicate"
+        "to convey, to communicate",
+        "to transmit"
       ],
       "uk": [
         "переда́ти",
@@ -2743,7 +2741,7 @@
       "en": [
         "to constitute, to comprise, to make up",
         "to determine",
-        "to establish, to constitute, to implement"
+        "to establish, to implement"
       ],
       "uk": [
         "становити"
@@ -2980,8 +2978,7 @@
     "translations": {
       "en": [
         "to perform, to carry out, to do, to execute",
-        "to make, to produce, to bring about",
-        "to perform, to carry out"
+        "to make, to produce, to bring about"
       ],
       "uk": [
         "виконати"
@@ -4831,8 +4828,7 @@
     "translations": {
       "en": [
         "to experience",
-        "to outlive, to survive",
-        "to survive"
+        "to outlive, to survive"
       ],
       "uk": [
         "пережити",
@@ -5074,7 +5070,7 @@
       "en": [
         "to run away, to flee",
         "to escape",
-        "to escape, to flow out from"
+        "to flow out from"
       ],
       "uk": [
         "тікати"
@@ -5313,7 +5309,7 @@
     "translations": {
       "en": [
         "to occupy, to take up",
-        "to occupy, to take",
+        "to take",
         "to reserve, to book"
       ],
       "uk": [
@@ -6030,7 +6026,7 @@
       "en": [
         "to conclude, to wind up",
         "to finish",
-        "to finish, to detail"
+        "to detail"
       ],
       "uk": [
         "закінчити"
@@ -6350,7 +6346,7 @@
       "en": [
         "to take care of, to deal with, to get done",
         "to arrange, to set up for someone",
-        "to take care of, to deal with, to kill"
+        "to kill"
       ],
       "uk": [
         "вирішити",
@@ -6831,8 +6827,7 @@
     "translations": {
       "en": [
         "to mark, to label, to tag",
-        "to demarcate, to mark out",
-        "to mark out"
+        "to demarcate, to mark out"
       ],
       "uk": [
         "означати"
@@ -7071,9 +7066,7 @@
     },
     "translations": {
       "en": [
-        "to start, to begin",
-        "to begin",
-        "to begin, to start"
+        "to start, to begin"
       ],
       "uk": [
         "розпоча́ти",

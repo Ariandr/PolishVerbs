@@ -13,7 +13,7 @@
     "translations": {
       "en": [
         "to rig up",
-        "to pull together, to rig up",
+        "to pull together",
         "to appear, to arise, to perform"
       ],
       "uk": [
@@ -255,7 +255,7 @@
     "translations": {
       "en": [
         "to drive in",
-        "to drive in, to herd in",
+        "to herd in",
         "to put in some condition, to drive to some mental state"
       ],
       "uk": [
@@ -416,7 +416,7 @@
     "translations": {
       "en": [
         "to crush",
-        "to squash, to squish, to crush",
+        "to squash, to squish",
         "to crumple, to crease"
       ],
       "uk": [
@@ -653,8 +653,8 @@
     "translations": {
       "en": [
         "to consume",
-        "to consume, to eat or drink",
-        "to consume, to use up"
+        "to eat or drink",
+        "to use up"
       ],
       "uk": [
         "споживати"
@@ -971,7 +971,7 @@
     "translations": {
       "en": [
         "to cleanse",
-        "to cleanse, to purify, to clean",
+        "to purify, to clean",
         "to clear, to exonerate"
       ],
       "uk": [
@@ -1132,7 +1132,7 @@
       "en": [
         "to rest",
         "to catch one's breath",
-        "to catch one's breath, to take a breather"
+        "to take a breather"
       ],
       "uk": [
         "перехопити подих",
@@ -1374,7 +1374,7 @@
     "translations": {
       "en": [
         "to dry",
-        "to dry, to dry out, to dehumidify",
+        "to dry out, to dehumidify",
         "to drain"
       ],
       "uk": [
@@ -1695,7 +1695,7 @@
     "translations": {
       "en": [
         "to kindle, to inflame",
-        "to kindle, to arouse",
+        "to arouse",
         "to catch, to take hold"
       ],
       "uk": [
@@ -1856,7 +1856,7 @@
       "en": [
         "to prolong",
         "to lengthen, to extend, to elongate",
-        "to prolong, to drag out, to draw out"
+        "to drag out, to draw out"
       ],
       "uk": [
         "подовжити"
@@ -2015,8 +2015,7 @@
     "translations": {
       "en": [
         "to eradicate",
-        "to extirpate, to uproot",
-        "to extirpate"
+        "to extirpate, to uproot"
       ],
       "uk": [
         "викорінювати"
@@ -2338,7 +2337,7 @@
       "en": [
         "to inhabit",
         "to settle, to take up residence",
-        "to inhabit, to dwell, to be found"
+        "to dwell, to be found"
       ],
       "uk": [
         "населяти"
@@ -2419,8 +2418,8 @@
     "translations": {
       "en": [
         "to die",
-        "to die, to croak",
-        "to die, to break down, to stop working"
+        "to croak",
+        "to break down, to stop working"
       ],
       "uk": [
         "здохнути"
@@ -2498,7 +2497,7 @@
     "translations": {
       "en": [
         "to commission",
-        "to commission, to charge"
+        "to charge"
       ],
       "uk": [
         "комісувати, стягувати"
@@ -3382,7 +3381,7 @@
       "en": [
         "to send back",
         "to send away, to dismiss",
-        "to send back, to return"
+        "to return"
       ],
       "uk": [
         "відправити назад"
@@ -3865,7 +3864,7 @@
     "translations": {
       "en": [
         "to undertake",
-        "to undertake, to embark upon"
+        "to embark upon"
       ],
       "uk": [
         "взятися"
@@ -4027,7 +4026,7 @@
       "en": [
         "to overshadow",
         "to dim, to darken",
-        "to eclipse, to overshadow, to outshine"
+        "to eclipse, to outshine"
       ],
       "uk": [
         "затьмарити"
@@ -4107,8 +4106,8 @@
     "translations": {
       "en": [
         "to spread",
-        "to spread, to disseminate, to propagate",
-        "to spread, to get around"
+        "to disseminate, to propagate",
+        "to get around"
       ],
       "uk": [
         "поширювати, поширювати, поширювати",
@@ -4190,7 +4189,7 @@
       "en": [
         "to grow",
         "to grow out, to expand",
-        "to grow, to proliferate"
+        "to proliferate"
       ],
       "uk": [
         "рости"
@@ -4270,8 +4269,8 @@
     "translations": {
       "en": [
         "to sate",
-        "to sate, to satiate",
-        "to satiate, to satisfy"
+        "to satiate",
+        "to satisfy"
       ],
       "uk": [
         "наситити"
@@ -4672,7 +4671,7 @@
     "translations": {
       "en": [
         "to recover",
-        "to recover, to get better"
+        "to get better"
       ],
       "uk": [
         "одужати"
@@ -4752,7 +4751,7 @@
     "translations": {
       "en": [
         "to mount",
-        "to mount, to bestride"
+        "to bestride"
       ],
       "uk": [
         "монтувати"
@@ -5230,7 +5229,7 @@
     "translations": {
       "en": [
         "to share",
-        "to share, to agree with, to sympathise with"
+        "to agree with, to sympathise with"
       ],
       "uk": [
         "поділитися",
@@ -5312,7 +5311,7 @@
     "translations": {
       "en": [
         "to reconcile",
-        "to reconcile, to atone",
+        "to atone",
         "to say sorry to one another"
       ],
       "uk": [
@@ -5475,8 +5474,8 @@
     "translations": {
       "en": [
         "to transform",
-        "to transmute, to transform",
-        "to metamorphose, to transform, to transmogrify"
+        "to transmute",
+        "to metamorphose, to transmogrify"
       ],
       "uk": [
         "трансформувати"
@@ -5556,7 +5555,7 @@
     "translations": {
       "en": [
         "to traverse",
-        "to cover, to traverse, to cross"
+        "to cover, to cross"
       ],
       "uk": [
         "покривати, проходити, переходити"
@@ -5636,7 +5635,7 @@
     "translations": {
       "en": [
         "to flit",
-        "to flit, to whizz, to flash, to speed",
+        "to whizz, to flash, to speed",
         "to slip past, to pass by, to brush past"
       ],
       "uk": [
@@ -5717,7 +5716,7 @@
     "translations": {
       "en": [
         "to belong",
-        "to belong, to be part"
+        "to be part"
       ],
       "uk": [
         "належати",
@@ -5800,7 +5799,7 @@
       "en": [
         "to fall",
         "to fall on",
-        "to fall, to occur"
+        "to occur"
       ],
       "uk": [
         "падати на",
@@ -5882,7 +5881,7 @@
       "en": [
         "to quarrel",
         "to cause to quarrel",
-        "to quarrel, to wrangle"
+        "to wrangle"
       ],
       "uk": [
         "викликати сварку"
@@ -6205,7 +6204,7 @@
       "en": [
         "to enrich",
         "to make someone richer",
-        "to enrich, to make something better or more diverse"
+        "to make something better or more diverse"
       ],
       "uk": [
         "збагачувати"
@@ -6287,7 +6286,7 @@
       "en": [
         "to hurt",
         "to start hurting",
-        "to sting, to hurt"
+        "to sting"
       ],
       "uk": [
         "почати",
@@ -6532,7 +6531,7 @@
     "translations": {
       "en": [
         "to allow",
-        "to allow, to permit, to authorize"
+        "to permit, to authorize"
       ],
       "uk": [
         "дозволити",
@@ -6694,7 +6693,7 @@
       "en": [
         "to assist",
         "to accompany",
-        "to assist, to help"
+        "to help"
       ],
       "uk": [
         "допомогти"
@@ -6774,7 +6773,7 @@
     "translations": {
       "en": [
         "to experience",
-        "to experience, to feel"
+        "to feel"
       ],
       "uk": [
         "переживати, відчувати"
@@ -7496,7 +7495,7 @@
       "en": [
         "to jump",
         "to bob, to bounce, to skip, to gambol",
-        "to start, to jump"
+        "to start"
       ],
       "uk": [
         "стрибати"
@@ -7815,7 +7814,7 @@
     "translations": {
       "en": [
         "to transform",
-        "to transfigure, to transform, to transmute",
+        "to transfigure, to transmute",
         "to become transfigured, to undergo transformation"
       ],
       "uk": [
@@ -7976,8 +7975,8 @@
     "translations": {
       "en": [
         "to disconnect",
-        "to disconnect, to hang up",
-        "to disconnect, to disjoint, to split"
+        "to hang up",
+        "to disjoint, to split"
       ],
       "uk": [
         "відключити"

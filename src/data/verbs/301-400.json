@@ -94,7 +94,7 @@
     "translations": {
       "en": [
         "to report",
-        "to report, to notify",
+        "to notify",
         "to enter, to lodge, to tender, to put forward"
       ],
       "uk": [
@@ -175,7 +175,7 @@
     "translations": {
       "en": [
         "to demonstrate",
-        "to demonstrate, to prove, to evince, to show",
+        "to prove, to evince, to show",
         "to display, to exhibit"
       ],
       "uk": [
@@ -736,7 +736,7 @@
       "en": [
         "to snatch",
         "to pull out, to extract",
-        "to pull from, to wrest, to snatch"
+        "to pull from, to wrest"
       ],
       "uk": [
         "вирвати"
@@ -971,7 +971,7 @@
       "en": [
         "to want",
         "to be able to, can",
-        "to feel like, to want"
+        "to feel like"
       ],
       "uk": [
         "хотіти"
@@ -1049,7 +1049,7 @@
     "translations": {
       "en": [
         "to surrender",
-        "to surrender, to give up, to yield",
+        "to give up, to yield",
         "to subject, to submit"
       ],
       "uk": [
@@ -1212,8 +1212,7 @@
     "translations": {
       "en": [
         "to take up, to initiate, to instigate",
-        "to undertake, to engage in",
-        "to take up"
+        "to undertake, to engage in"
       ],
       "uk": [
         "прийма́ти",
@@ -1452,7 +1451,7 @@
       "en": [
         "to happen",
         "to cause",
-        "to happen, to occur, to befall"
+        "to occur, to befall"
       ],
       "uk": [
         "статися"
@@ -1771,7 +1770,7 @@
       "en": [
         "to take over",
         "to take on, to assume",
-        "to seize, to intercept, to take over"
+        "to seize, to intercept"
       ],
       "uk": [
         "взяти на себе"
@@ -2008,7 +2007,7 @@
     "translations": {
       "en": [
         "to apply",
-        "to apply, to stand, to be in effect"
+        "to stand, to be in effect"
       ],
       "uk": [
         "застосувати"
@@ -2404,7 +2403,7 @@
     "translations": {
       "en": [
         "to return",
-        "to give back, to return",
+        "to give back",
         "to turn in, to pay"
       ],
       "uk": [
@@ -2486,9 +2485,7 @@
     },
     "translations": {
       "en": [
-        "to awaken, to wake, to wake up, to stir",
-        "to awaken, to stir",
-        "to stir"
+        "to awaken, to wake, to wake up, to stir"
       ],
       "uk": [
         "будити"
@@ -2648,8 +2645,7 @@
     "translations": {
       "en": [
         "to join, to merge, to combine",
-        "to connect, to link",
-        "to combine, to merge"
+        "to connect, to link"
       ],
       "uk": [
         "з'є́днувати",
@@ -2805,7 +2801,7 @@
     "translations": {
       "en": [
         "to withstand",
-        "to withstand, to bear, to endure, to stand"
+        "to bear, to endure, to stand"
       ],
       "uk": [
         "витримати"
@@ -3280,7 +3276,7 @@
       "en": [
         "to receive, to accept",
         "to admit",
-        "to receive, to take"
+        "to take"
       ],
       "uk": [
         "приймати"
@@ -3437,7 +3433,7 @@
     "translations": {
       "en": [
         "to talk",
-        "to talk, to chat"
+        "to chat"
       ],
       "uk": [
         "говорити"
@@ -3828,7 +3824,7 @@
     "translations": {
       "en": [
         "to sing, to chant",
-        "to sing, to squeal"
+        "to squeal"
       ],
       "uk": [
         "співа́ти"
@@ -3987,7 +3983,7 @@
     "translations": {
       "en": [
         "to keep, to preserve, to maintain",
-        "to keep, to retain",
+        "to retain",
         "to act, to behave"
       ],
       "uk": [
@@ -4622,7 +4618,7 @@
     "translations": {
       "en": [
         "to put in",
-        "to put in, to insert",
+        "to insert",
         "to put on"
       ],
       "uk": [
@@ -4703,7 +4699,7 @@
     "translations": {
       "en": [
         "to fill in",
-        "to fill, to fill in, to fill up",
+        "to fill, to fill up",
         "to fill out, to complete"
       ],
       "uk": [
@@ -5349,7 +5345,7 @@
       "en": [
         "to pass",
         "to rank, to rate, to classify",
-        "to pass, to take"
+        "to take"
       ],
       "uk": [
         "ранжувати, оцінювати, класифікувати",
@@ -5590,7 +5586,7 @@
     "translations": {
       "en": [
         "to cross",
-        "to cross, to overstep",
+        "to overstep",
         "to exceed, to surpass, to transcend"
       ],
       "uk": [
@@ -5671,7 +5667,7 @@
     "translations": {
       "en": [
         "to judge",
-        "to judge, to deem",
+        "to deem",
         "to think"
       ],
       "uk": [
@@ -5986,8 +5982,8 @@
     "translations": {
       "en": [
         "to find",
-        "to find, to come across, to run into",
-        "to find, to work up"
+        "to come across, to run into",
+        "to work up"
       ],
       "uk": [
         "знаходити",
@@ -6066,7 +6062,7 @@
     "translations": {
       "en": [
         "to withdraw",
-        "to back, to withdraw",
+        "to back",
         "to pull out, to walk away"
       ],
       "uk": [
@@ -6224,7 +6220,7 @@
     "translations": {
       "en": [
         "to confirm",
-        "to confirm, to corroborate",
+        "to corroborate",
         "to make certain of something, to reassure about something"
       ],
       "uk": [
@@ -6544,7 +6540,7 @@
     "translations": {
       "en": [
         "to restore",
-        "to restore, to reintroduce"
+        "to reintroduce"
       ],
       "uk": [
         "відновити"
@@ -6701,7 +6697,7 @@
     "translations": {
       "en": [
         "to appear",
-        "to appear, to emerge"
+        "to emerge"
       ],
       "uk": [
         "з'являтися"
@@ -7096,7 +7092,7 @@
     "translations": {
       "en": [
         "to use, to utilise, to bring to bear",
-        "to exploit, to use, to abuse, to take advantage of"
+        "to exploit, to abuse, to take advantage of"
       ],
       "uk": [
         "використовувати"
@@ -7175,7 +7171,7 @@
       "en": [
         "to get out",
         "to take out, to extract",
-        "to squeeze, to extract"
+        "to squeeze"
       ],
       "uk": [
         "вийти"
@@ -7337,7 +7333,7 @@
     "translations": {
       "en": [
         "to replace",
-        "to replace, to substitute",
+        "to substitute",
         "to swap, to exchange"
       ],
       "uk": [

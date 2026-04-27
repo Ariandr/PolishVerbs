@@ -44,6 +44,33 @@ function canonicalize(value, language) {
   return normalized.toLocaleLowerCase(language === 'uk' ? 'uk' : 'en')
 }
 
+function dedupeEnglishSubglosses(entries) {
+  const seenGlosses = new Set()
+  const dedupedEntries = []
+
+  for (const entry of entries) {
+    const parts = String(entry)
+      .split(',')
+      .map((part) => part.replace(/\s+/g, ' ').replace(/[.;:!?]+$/g, '').trim())
+      .filter(Boolean)
+
+    const kept = []
+    for (const part of parts) {
+      const glossKey = part.toLowerCase().replace(/^to\s+/i, '').trim()
+      if (!glossKey) continue
+      if (seenGlosses.has(glossKey)) continue
+      seenGlosses.add(glossKey)
+      kept.push(part)
+    }
+
+    if (kept.length > 0) {
+      dedupedEntries.push(kept.join(', '))
+    }
+  }
+
+  return dedupedEntries
+}
+
 function sanitizeTranslationList(values, language) {
   const list = Array.isArray(values) ? values : []
   const deduped = []
@@ -58,7 +85,8 @@ function sanitizeTranslationList(values, language) {
     deduped.push(trimmed)
   }
 
-  return deduped.slice(0, 3)
+  const languageAdjusted = language === 'en' ? dedupeEnglishSubglosses(deduped) : deduped
+  return languageAdjusted.slice(0, 3)
 }
 
 function hasCyrillic(text) {

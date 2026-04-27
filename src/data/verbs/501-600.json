@@ -486,7 +486,7 @@
     "translations": {
       "en": [
         "to set",
-        "to put, to position, to place, to set, to align, to array",
+        "to put, to position, to place, to align, to array",
         "to set up"
       ],
       "uk": [
@@ -647,7 +647,7 @@
     "translations": {
       "en": [
         "to guess",
-        "to guess, to presume, to suspect, to figure, to surmise"
+        "to presume, to suspect, to figure, to surmise"
       ],
       "uk": [
         "вгадати"
@@ -727,7 +727,7 @@
     "translations": {
       "en": [
         "to guess",
-        "to guess, to presume, to suspect, to figure, to surmise"
+        "to presume, to suspect, to figure, to surmise"
       ],
       "uk": [
         "вгадати"
@@ -967,7 +967,7 @@
     "translations": {
       "en": [
         "to happen",
-        "to happen, to occur, to take place"
+        "to occur, to take place"
       ],
       "uk": [
         "статися"
@@ -1047,7 +1047,7 @@
     "translations": {
       "en": [
         "to slow down",
-        "to slow down, decelerate",
+        "decelerate",
         "to dismiss, fire"
       ],
       "uk": [
@@ -1838,7 +1838,7 @@
     "translations": {
       "en": [
         "to cope",
-        "to cope, to manage, to succeed",
+        "to manage, to succeed",
         "to match up, to live up"
       ],
       "uk": [
@@ -2079,7 +2079,7 @@
     "translations": {
       "en": [
         "to result",
-        "to ensue, to result, to follow, to stem from",
+        "to ensue, to follow, to stem from",
         "to get out"
       ],
       "uk": [
@@ -2714,7 +2714,7 @@
     "translations": {
       "en": [
         "to report",
-        "to report, to notify",
+        "to notify",
         "to enter, to lodge, to tender, to put forward"
       ],
       "uk": [
@@ -2874,7 +2874,7 @@
     "translations": {
       "en": [
         "to surprise",
-        "to surprise, to startle, to catch unawares",
+        "to startle, to catch unawares",
         "to baffle, to throw, to confound"
       ],
       "uk": [
@@ -2957,8 +2957,8 @@
     "translations": {
       "en": [
         "to run, to jog",
-        "to run, to race",
-        "to run, to run after"
+        "to race",
+        "to run after"
       ],
       "uk": [
         "бігати"
@@ -3271,7 +3271,7 @@
       "en": [
         "to exchange",
         "to list, to enumerate",
-        "to swap, to exchange, to replace"
+        "to swap, to replace"
       ],
       "uk": [
         "обміняти",
@@ -3592,7 +3592,7 @@
     "translations": {
       "en": [
         "to liquidate",
-        "to liquidate, to dissolve",
+        "to dissolve",
         "to eliminate, to abolish"
       ],
       "uk": [
@@ -3673,8 +3673,7 @@
     "translations": {
       "en": [
         "to arrive, to reach, to get to",
-        "to reach, to get to",
-        "to get to, to make it to"
+        "to make it to"
       ],
       "uk": [
         "дохо́дити",
@@ -4069,7 +4068,7 @@
     "translations": {
       "en": [
         "to suspect",
-        "to suspect, to think"
+        "to think"
       ],
       "uk": [
         "підо́зрювати"
@@ -4537,8 +4536,7 @@
     "translations": {
       "en": [
         "to recreate, to reproduce",
-        "to perform, to play",
-        "to play"
+        "to perform, to play"
       ],
       "uk": [
         "відтворити"
@@ -4858,8 +4856,7 @@
     "translations": {
       "en": [
         "to belong",
-        "to be up to",
-        "to belong, to be up to"
+        "to be up to"
       ],
       "uk": [
         "належати"
@@ -5414,7 +5411,7 @@
       "en": [
         "to arrange",
         "to lay out",
-        "to lay down, to lay out"
+        "to lay down"
       ],
       "uk": [
         "влаштовувати"
@@ -5653,7 +5650,7 @@
     "translations": {
       "en": [
         "to satisfy",
-        "to satisfy, to satiate, to assuage"
+        "to satiate, to assuage"
       ],
       "uk": [
         "задовольнити"
@@ -5815,7 +5812,7 @@
     "translations": {
       "en": [
         "to fall",
-        "to fall, to be defeated",
+        "to be defeated",
         "to rain, to snow, to hail"
       ],
       "uk": [
@@ -6055,7 +6052,7 @@
     "translations": {
       "en": [
         "to mean",
-        "to mean, to matter",
+        "to matter",
         "to mark, to sign"
       ],
       "uk": [
@@ -6539,7 +6536,7 @@
     "translations": {
       "en": [
         "to call",
-        "to summon, to call, to hail",
+        "to summon, to hail",
         "to evoke, to conjure up"
       ],
       "uk": [
@@ -6700,7 +6697,7 @@
     "translations": {
       "en": [
         "to direct",
-        "to send, to direct",
+        "to send",
         "to make one's way, to head"
       ],
       "uk": [
@@ -6781,9 +6778,7 @@
     },
     "translations": {
       "en": [
-        "to start, to begin",
-        "to start",
-        "to begin"
+        "to start, to begin"
       ],
       "uk": [
         "починати"
@@ -7259,7 +7254,7 @@
     "translations": {
       "en": [
         "to abandon",
-        "to abandon, to give up, to leave",
+        "to give up, to leave",
         "to quit"
       ],
       "uk": [
@@ -7661,7 +7656,7 @@
       "en": [
         "to join",
         "to start doing",
-        "to accede, to join"
+        "to accede"
       ],
       "uk": [
         "приєднатися"

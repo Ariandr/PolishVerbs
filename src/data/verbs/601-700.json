@@ -13,7 +13,7 @@
     "translations": {
       "en": [
         "to commit",
-        "to commit, to perpetrate",
+        "to perpetrate",
         "to make, to create"
       ],
       "uk": [
@@ -489,7 +489,7 @@
     "translations": {
       "en": [
         "to leave",
-        "to leave, to leave alone",
+        "to leave alone",
         "to leave behind, to abandon"
       ],
       "uk": [
@@ -650,7 +650,7 @@
       "en": [
         "to present",
         "to introduce",
-        "to present, to put forward"
+        "to put forward"
       ],
       "uk": [
         "познайомити",
@@ -1212,7 +1212,7 @@
     "translations": {
       "en": [
         "to reveal",
-        "to reveal, to expose, to disclose, to divulge",
+        "to expose, to disclose, to divulge",
         "to get exposed"
       ],
       "uk": [
@@ -1293,7 +1293,7 @@
     "translations": {
       "en": [
         "to call",
-        "to call, to summon"
+        "to summon"
       ],
       "uk": [
         "кликати, закликати"
@@ -1373,7 +1373,7 @@
     "translations": {
       "en": [
         "to eliminate, to wipe out, to erase",
-        "to eliminate, to cancel"
+        "to cancel"
       ],
       "uk": [
         "виключити"
@@ -1693,8 +1693,8 @@
     "translations": {
       "en": [
         "to break, to snap",
-        "to break, to force a person to cooperate with an enemy through torture",
-        "to break, violate, not follow, not act according to"
+        "to force a person to cooperate with an enemy through torture",
+        "violate, not follow, not act according to"
       ],
       "uk": [
         "зламати"
@@ -1853,7 +1853,7 @@
     "translations": {
       "en": [
         "to take into account",
-        "to take into account, to account for",
+        "to account for",
         "to include, to count"
       ],
       "uk": [
@@ -2095,7 +2095,7 @@
     "translations": {
       "en": [
         "to observe",
-        "to behold, to observe, to watch",
+        "to behold, to watch",
         "to follow"
       ],
       "uk": [
@@ -2176,7 +2176,7 @@
     "translations": {
       "en": [
         "to give up",
-        "to give up, to forgo, to do without, to drop, to drop out, to resign, to forswear, to quit, to be out"
+        "to forgo, to do without, to drop, to drop out, to resign, to forswear, to quit, to be out"
       ],
       "uk": [
         "здаватися"
@@ -2256,7 +2256,7 @@
     "translations": {
       "en": [
         "to acquire",
-        "to obtain, to acquire",
+        "to obtain",
         "to buy, to purchase"
       ],
       "uk": [
@@ -2339,7 +2339,7 @@
       "en": [
         "to pass",
         "to go across, to cross",
-        "to go through, to cross"
+        "to go through"
       ],
       "uk": [
         "перейти, перетнути",
@@ -2816,8 +2816,8 @@
     "translations": {
       "en": [
         "to take",
-        "to take, to bring",
-        "to take, to take away"
+        "to bring",
+        "to take away"
       ],
       "uk": [
         "забирати"
@@ -3055,7 +3055,7 @@
     "translations": {
       "en": [
         "to cut off, to sever, to detach",
-        "to cut off, to isolate",
+        "to isolate",
         "to cut oneself off, to distance oneself"
       ],
       "uk": [
@@ -3853,7 +3853,7 @@
     "translations": {
       "en": [
         "to clean",
-        "to cleanse, to purify, to clean",
+        "to cleanse, to purify",
         "to clear, to exonerate"
       ],
       "uk": [
@@ -4411,7 +4411,7 @@
     "translations": {
       "en": [
         "to go around",
-        "to go around, to walk around",
+        "to walk around",
         "to circumvent, to bypass"
       ],
       "uk": [
@@ -4806,7 +4806,7 @@
     "translations": {
       "en": [
         "to grant",
-        "to grant, to accord, to give, to provide",
+        "to accord, to give, to provide",
         "to rub off on, to infect"
       ],
       "uk": [
@@ -5050,7 +5050,7 @@
     "translations": {
       "en": [
         "to turn off",
-        "to switch off, to turn off, to disable",
+        "to switch off, to disable",
         "to exclude"
       ],
       "uk": [
@@ -5131,8 +5131,7 @@
     "translations": {
       "en": [
         "to conquer",
-        "to obtain, to acquire, to gain",
-        "to gain, to acquire, to gain"
+        "to obtain, to acquire, to gain"
       ],
       "uk": [
         "завоювати"
@@ -5688,7 +5687,7 @@
     "translations": {
       "en": [
         "to run",
-        "to run, to travel",
+        "to travel",
         "to circulate, to spread, to disseminate"
       ],
       "uk": [
@@ -5769,7 +5768,7 @@
     "translations": {
       "en": [
         "to omit",
-        "to omit, to leave out",
+        "to leave out",
         "to skip, to bypass, to pass over"
       ],
       "uk": [
@@ -5851,7 +5850,7 @@
     "translations": {
       "en": [
         "to descend",
-        "to descend, to go down",
+        "to go down",
         "to depreciate, to decrease in value"
       ],
       "uk": [
@@ -6013,7 +6012,7 @@
     "translations": {
       "en": [
         "to move",
-        "to move, to stir",
+        "to stir",
         "to move emotionally, to touch"
       ],
       "uk": [
@@ -6335,7 +6334,6 @@
     "translations": {
       "en": [
         "to save, to spare",
-        "to spare",
         "to save oneself, to spare oneself"
       ],
       "uk": [
@@ -6732,7 +6730,7 @@
       "en": [
         "to transmit",
         "to transfer, to pass on, to hand over, to surrender, to give",
-        "to convey, to pass on, to communicate"
+        "to convey, to communicate"
       ],
       "uk": [
         "передавати"
@@ -7210,7 +7208,7 @@
     "translations": {
       "en": [
         "to close",
-        "to close, to lock, to shut",
+        "to lock, to shut",
         "to bring an end to, to conclude, to wrap up"
       ],
       "uk": [
@@ -7449,7 +7447,7 @@
     "translations": {
       "en": [
         "to work out",
-        "to hammer out, to work out, to develop"
+        "to hammer out, to develop"
       ],
       "uk": [
         "тренуватися"
@@ -7689,7 +7687,7 @@
     "translations": {
       "en": [
         "to accommodate",
-        "to accommodate, to hold, to seat, to house",
+        "to hold, to seat, to house",
         "to fit"
       ],
       "uk": [
@@ -7927,8 +7925,8 @@
     "translations": {
       "en": [
         "to play",
-        "to play, to perform",
-        "to play, to portray, to act"
+        "to perform",
+        "to portray, to act"
       ],
       "uk": [
         "грати"

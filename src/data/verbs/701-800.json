@@ -173,7 +173,7 @@
     "translations": {
       "en": [
         "to present",
-        "to present, to show",
+        "to show",
         "to represent"
       ],
       "uk": [
@@ -414,7 +414,7 @@
     "translations": {
       "en": [
         "to respect",
-        "to respect, to esteem",
+        "to esteem",
         "to handle with care"
       ],
       "uk": [
@@ -496,7 +496,7 @@
     "translations": {
       "en": [
         "to deny",
-        "to deny, to contradict",
+        "to contradict",
         "to disprove"
       ],
       "uk": [
@@ -898,7 +898,7 @@
     "translations": {
       "en": [
         "to cover",
-        "to cover, to overlay",
+        "to overlay",
         "to coat, to mist"
       ],
       "uk": [
@@ -1136,7 +1136,7 @@
       "en": [
         "to attract",
         "to pull closer",
-        "to attract, allure"
+        "allure"
       ],
       "uk": [
         "приваблювати"
@@ -1376,7 +1376,7 @@
     "translations": {
       "en": [
         "to settle",
-        "to settle, to arbitrate, to decide",
+        "to arbitrate, to decide",
         "to be decided"
       ],
       "uk": [
@@ -1934,7 +1934,7 @@
     "translations": {
       "en": [
         "to accelerate",
-        "to accelerate, to speed up",
+        "to speed up",
         "to bring forward, to advance"
       ],
       "uk": [
@@ -2015,7 +2015,7 @@
     "translations": {
       "en": [
         "to celebrate",
-        "to worship, to venerate, to revere, to celebrate",
+        "to worship, to venerate, to revere",
         "to celebrate a holiday"
       ],
       "uk": [
@@ -2177,7 +2177,7 @@
     "translations": {
       "en": [
         "to come into being",
-        "to begin to exist, to come into being"
+        "to begin to exist"
       ],
       "uk": [
         "виникнути"
@@ -2336,7 +2336,7 @@
     "translations": {
       "en": [
         "to look after",
-        "to care for, to look after, to take care of, to take under one's wing"
+        "to care for, to take care of, to take under one's wing"
       ],
       "uk": [
         "доглядати"
@@ -2416,7 +2416,7 @@
     "translations": {
       "en": [
         "to mistake",
-        "to mix up, to confuse, to confound, to mistake",
+        "to mix up, to confuse, to confound",
         "to err, to slip up, to make a mistake"
       ],
       "uk": [
@@ -2976,7 +2976,7 @@
     "translations": {
       "en": [
         "to liberate",
-        "to free, to liberate, to emancipate",
+        "to free, to emancipate",
         "to stir, to trigger"
       ],
       "uk": [
@@ -3058,7 +3058,7 @@
     "translations": {
       "en": [
         "to explain, to clarify",
-        "to explain, to justify, to rationalise",
+        "to justify, to rationalise",
         "to be explained, to be clarified, to become understandable"
       ],
       "uk": [
@@ -3219,7 +3219,7 @@
     "translations": {
       "en": [
         "to save",
-        "to economise, to save",
+        "to economise",
         "to save up, to rack up"
       ],
       "uk": [
@@ -3778,7 +3778,7 @@
     "translations": {
       "en": [
         "to move away",
-        "to move away, to pull away",
+        "to pull away",
         "to freeze out, to exclude"
       ],
       "uk": [
@@ -3859,7 +3859,7 @@
     "translations": {
       "en": [
         "to shape",
-        "to form, to shape, to mold",
+        "to form, to mold",
         "to take shape, to shape up"
       ],
       "uk": [
@@ -4177,7 +4177,7 @@
     "translations": {
       "en": [
         "to induce",
-        "to prompt, to prod, to induce",
+        "to prompt, to prod",
         "to lower, to bow, to incline"
       ],
       "uk": [
@@ -4259,7 +4259,7 @@
       "en": [
         "to give way to",
         "to give way, to yield",
-        "to yield, to cede"
+        "to cede"
       ],
       "uk": [
         "дати дорогу"
@@ -4579,7 +4579,7 @@
       "en": [
         "to climb",
         "to make stand up",
-        "to ascend, clamber, climb"
+        "to ascend, clamber"
       ],
       "uk": [
         "підніматися"
@@ -4818,7 +4818,7 @@
     "translations": {
       "en": [
         "to subordinate",
-        "to subordinate, to subjugate",
+        "to subjugate",
         "to submit, to comply, to obey"
       ],
       "uk": [
@@ -5221,7 +5221,7 @@
       "en": [
         "to register, to enregister",
         "to record, to log",
-        "to record, to tape"
+        "to tape"
       ],
       "uk": [
         "зареєструвати",
@@ -5620,7 +5620,7 @@
       "en": [
         "to turn back",
         "to reverse, to turn round",
-        "to turn back, to send back"
+        "to send back"
       ],
       "uk": [
         "повернути назад"
@@ -5700,8 +5700,8 @@
     "translations": {
       "en": [
         "to burn",
-        "to burn, to incinerate",
-        "to burn, to use as fuel"
+        "to incinerate",
+        "to use as fuel"
       ],
       "uk": [
         "спалювати"
@@ -5782,7 +5782,7 @@
     "translations": {
       "en": [
         "to punish",
-        "to penalise, to punish, to discipline"
+        "to penalise, to discipline"
       ],
       "uk": [
         "карати"
@@ -6670,7 +6670,7 @@
     "translations": {
       "en": [
         "to add",
-        "to add, to add on",
+        "to add on",
         "to chip in"
       ],
       "uk": [
@@ -6752,7 +6752,7 @@
       "en": [
         "to break",
         "to break down, to overcome",
-        "to break, to become broken"
+        "to become broken"
       ],
       "uk": [
         "потім розірвати",
@@ -7071,8 +7071,8 @@
     "translations": {
       "en": [
         "to play",
-        "to play, to perform",
-        "to play, to portray, to act"
+        "to perform",
+        "to portray, to act"
       ],
       "uk": [
         "грати"
@@ -7153,7 +7153,7 @@
       "en": [
         "to break up",
         "to part, to part ways",
-        "to split up, to break up"
+        "to split up"
       ],
       "uk": [
         "розійтися"
@@ -7630,7 +7630,7 @@
     "translations": {
       "en": [
         "to leave",
-        "to abandon, to leave",
+        "to abandon",
         "to lower"
       ],
       "uk": [

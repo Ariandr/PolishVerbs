@@ -13,7 +13,7 @@
     "translations": {
       "en": [
         "to guide",
-        "to go along, to guide",
+        "to go along",
         "to lead"
       ],
       "uk": [
@@ -411,7 +411,7 @@
     "translations": {
       "en": [
         "to assign",
-        "to assign, to ascribe, to credit, to attribute"
+        "to ascribe, to credit, to attribute"
       ],
       "uk": [
         "призначити"
@@ -732,7 +732,7 @@
     "translations": {
       "en": [
         "to encourage",
-        "to encourage, to entice, to incentivize",
+        "to entice, to incentivize",
         "to encourage oneself"
       ],
       "uk": [
@@ -814,7 +814,7 @@
     "translations": {
       "en": [
         "to protect",
-        "to protect, to shelter, to guard",
+        "to shelter, to guard",
         "to take shelter, to protect oneself"
       ],
       "uk": [
@@ -895,8 +895,8 @@
     "translations": {
       "en": [
         "to greet",
-        "to greet, to welcome",
-        "to say hello, to greet"
+        "to welcome",
+        "to say hello"
       ],
       "uk": [
         "вітати"
@@ -1055,7 +1055,7 @@
     "translations": {
       "en": [
         "to mix",
-        "to stir, to mix",
+        "to stir",
         "to combine, to blend"
       ],
       "uk": [
@@ -1616,7 +1616,7 @@
     "translations": {
       "en": [
         "to tie",
-        "to tie, to bind",
+        "to bind",
         "to tie up, to truss"
       ],
       "uk": [
@@ -1779,7 +1779,7 @@
       "en": [
         "to read",
         "to read for some time",
-        "to interpret, to read, to deem"
+        "to interpret, to deem"
       ],
       "uk": [
         "читати"
@@ -1941,7 +1941,7 @@
       "en": [
         "to engage",
         "to devote, to commit",
-        "to engage, to hire"
+        "to hire"
       ],
       "uk": [
         "займатися"
@@ -2021,7 +2021,7 @@
     "translations": {
       "en": [
         "to say no, to deny, to reject",
-        "to deny, to refuse",
+        "to refuse",
         "to say grace, to say a prayer"
       ],
       "uk": [
@@ -2499,7 +2499,7 @@
     "translations": {
       "en": [
         "to fill",
-        "to fill, to fill in, to fill up",
+        "to fill in, to fill up",
         "to fill out, to complete"
       ],
       "uk": [
@@ -2581,7 +2581,7 @@
     "translations": {
       "en": [
         "to match",
-        "to match, to fit",
+        "to fit",
         "to tailor"
       ],
       "uk": [
@@ -2822,7 +2822,7 @@
       "en": [
         "to promote",
         "to favor, to foster, to show beneficence",
-        "to favor, to make likely or easy"
+        "to make likely or easy"
       ],
       "uk": [
         "сприяти"
@@ -2983,7 +2983,7 @@
     "translations": {
       "en": [
         "to proclaim",
-        "to preach, to profess, to proclaim",
+        "to preach, to profess",
         "to recite, to retell"
       ],
       "uk": [
@@ -3379,7 +3379,7 @@
     "translations": {
       "en": [
         "to arise",
-        "to arise, to develop, to come into being, to come about",
+        "to develop, to come into being, to come about",
         "to rise, to stand"
       ],
       "uk": [
@@ -3462,7 +3462,7 @@
     "translations": {
       "en": [
         "to grow",
-        "to grow, to increase, to become bigger"
+        "to increase, to become bigger"
       ],
       "uk": [
         "рости"
@@ -3542,7 +3542,7 @@
     "translations": {
       "en": [
         "to offer",
-        "to offer, to propose",
+        "to propose",
         "to offer one's own help with something"
       ],
       "uk": [
@@ -3785,7 +3785,7 @@
     "translations": {
       "en": [
         "to lose",
-        "to lose, to misplace",
+        "to misplace",
         "to doom, to ruin"
       ],
       "uk": [
@@ -3866,7 +3866,7 @@
     "translations": {
       "en": [
         "to deal with",
-        "to overcome, to tackle, to deal with"
+        "to overcome, to tackle"
       ],
       "uk": [
         "мати справу з"
@@ -3946,7 +3946,7 @@
     "translations": {
       "en": [
         "to justify",
-        "to justify, to legitimise, to validate, to substantiate"
+        "to legitimise, to validate, to substantiate"
       ],
       "uk": [
         "виправдати"
@@ -4187,7 +4187,7 @@
     "translations": {
       "en": [
         "to surrender",
-        "to surrender, to give up, to yield",
+        "to give up, to yield",
         "to subject, to submit"
       ],
       "uk": [
@@ -4268,8 +4268,8 @@
     "translations": {
       "en": [
         "to remain",
-        "to stay, to remain",
-        "to remain, to be left"
+        "to stay",
+        "to be left"
       ],
       "uk": [
         "залишатися",
@@ -4593,7 +4593,7 @@
     "translations": {
       "en": [
         "to cure",
-        "to cure, to heal, to treat",
+        "to heal, to treat",
         "to cure oneself"
       ],
       "uk": [
@@ -4917,7 +4917,7 @@
     "translations": {
       "en": [
         "to prove",
-        "to prove, to demonstrate"
+        "to demonstrate"
       ],
       "uk": [
         "довести"
@@ -5237,7 +5237,7 @@
     "translations": {
       "en": [
         "to present",
-        "to present, to show",
+        "to show",
         "to represent"
       ],
       "uk": [
@@ -5399,7 +5399,7 @@
     "translations": {
       "en": [
         "to discover",
-        "to discover, to find",
+        "to find",
         "to uncover"
       ],
       "uk": [
@@ -5793,7 +5793,7 @@
     "translations": {
       "en": [
         "to shorten",
-        "to abbreviate, to shorten",
+        "to abbreviate",
         "to cancel"
       ],
       "uk": [
@@ -5956,7 +5956,7 @@
       "en": [
         "to operate",
         "to serve, to wait on",
-        "to serve, to be used by"
+        "to be used by"
       ],
       "uk": [
         "оперувати"
@@ -6352,8 +6352,7 @@
     "translations": {
       "en": [
         "to carry",
-        "to move, to lead",
-        "to move"
+        "to move, to lead"
       ],
       "uk": [
         "нести"
@@ -6433,7 +6432,7 @@
     "translations": {
       "en": [
         "to grab",
-        "to grab, to seize, to grasp",
+        "to seize, to grasp",
         "to catch, to trap"
       ],
       "uk": [
@@ -6515,7 +6514,7 @@
     "translations": {
       "en": [
         "to rotate",
-        "to rotate, to turn",
+        "to turn",
         "to transform, to turn into"
       ],
       "uk": [
@@ -7483,7 +7482,7 @@
     "translations": {
       "en": [
         "to browse",
-        "to look through, to browse, to peruse",
+        "to look through, to peruse",
         "to check oneself out"
       ],
       "uk": [
@@ -7643,7 +7642,7 @@
     "translations": {
       "en": [
         "to get through",
-        "to get in, to get through, to infiltrate"
+        "to get in, to infiltrate"
       ],
       "uk": [
         "пройти"
@@ -7801,7 +7800,7 @@
     "translations": {
       "en": [
         "to pay off",
-        "to pay back, to pay off, to repay",
+        "to pay back, to repay",
         "to be repaid"
       ],
       "uk": [

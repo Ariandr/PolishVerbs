@@ -13,7 +13,7 @@
     "translations": {
       "en": [
         "to worship",
-        "to worship, to venerate, to revere, to celebrate",
+        "to venerate, to revere, to celebrate",
         "to celebrate a holiday"
       ],
       "uk": [
@@ -96,7 +96,7 @@
     "translations": {
       "en": [
         "to order",
-        "to order, to command"
+        "to command"
       ],
       "uk": [
         "наказувати, наказувати"
@@ -177,7 +177,7 @@
       "en": [
         "to cut",
         "to trim, to pare",
-        "to cut, to cut down, to reduce"
+        "to cut down, to reduce"
       ],
       "uk": [
         "вирізати"
@@ -257,8 +257,8 @@
     "translations": {
       "en": [
         "to run",
-        "to run, to cross by running, to traverse by running",
-        "to run, to proceed, to flow"
+        "to cross by running, to traverse by running",
+        "to proceed, to flow"
       ],
       "uk": [
         "бігати"
@@ -578,7 +578,7 @@
     "translations": {
       "en": [
         "to pack",
-        "to pack, to wrap",
+        "to wrap",
         "to box in"
       ],
       "uk": [
@@ -660,7 +660,7 @@
     "translations": {
       "en": [
         "to wipe off",
-        "to wipe off, to rub off",
+        "to rub off",
         "to chafe, to wear down"
       ],
       "uk": [
@@ -903,7 +903,7 @@
     "translations": {
       "en": [
         "to dismiss",
-        "to dismiss, to send away, to send packing",
+        "to send away, to send packing",
         "to celebrate, to perform"
       ],
       "uk": [
@@ -984,7 +984,7 @@
     "translations": {
       "en": [
         "to marry",
-        "to espouse, to marry, to wed"
+        "to espouse, to wed"
       ],
       "uk": [
         "одружуватися"
@@ -1146,7 +1146,7 @@
     "translations": {
       "en": [
         "to check",
-        "to check, to inspect, to monitor, to supervise",
+        "to inspect, to monitor, to supervise",
         "to get oneself checked, to get oneself inspected"
       ],
       "uk": [
@@ -1469,8 +1469,8 @@
     "translations": {
       "en": [
         "to push",
-        "to push, to shove",
-        "to push, to persuade"
+        "to shove",
+        "to persuade"
       ],
       "uk": [
         "штовхати"
@@ -1629,7 +1629,7 @@
     "translations": {
       "en": [
         "to identify",
-        "to identify, to equate",
+        "to equate",
         "to relate, to identify oneself"
       ],
       "uk": [
@@ -1710,7 +1710,7 @@
     "translations": {
       "en": [
         "to hang, suspend",
-        "to hang, string up",
+        "string up",
         "to freeze"
       ],
       "uk": [
@@ -2032,7 +2032,7 @@
     "translations": {
       "en": [
         "to delay",
-        "to delay, to put off",
+        "to put off",
         "to linger"
       ],
       "uk": [
@@ -2196,7 +2196,7 @@
     "translations": {
       "en": [
         "to reduce",
-        "to decrease, to reduce",
+        "to decrease",
         "to lower"
       ],
       "uk": [
@@ -2356,7 +2356,7 @@
     "translations": {
       "en": [
         "to widen",
-        "to widen, to extend",
+        "to extend",
         "to spread"
       ],
       "uk": [
@@ -2679,7 +2679,7 @@
     "translations": {
       "en": [
         "to run out",
-        "to run out, to exit by running",
+        "to exit by running",
         "to slip away, to sneak away"
       ],
       "uk": [
@@ -2760,7 +2760,7 @@
     "translations": {
       "en": [
         "to mix",
-        "to mix, to stir",
+        "to stir",
         "to come together, to form a mixture"
       ],
       "uk": [
@@ -2922,8 +2922,8 @@
     "translations": {
       "en": [
         "to set on fire",
-        "to set on fire, to ignite",
-        "to set on fire, to burn down"
+        "to ignite",
+        "to burn down"
       ],
       "uk": [
         "підпалити"
@@ -3082,7 +3082,7 @@
     "translations": {
       "en": [
         "to smash",
-        "to smash, to bust, to crash",
+        "to bust, to crash",
         "to throw open"
       ],
       "uk": [
@@ -3243,7 +3243,7 @@
     "translations": {
       "en": [
         "to go crazy",
-        "to go crazy, to madden, to go berserk, to rage, to be in frenzy"
+        "to madden, to go berserk, to rage, to be in frenzy"
       ],
       "uk": [
         "збожеволіти"
@@ -3560,7 +3560,7 @@
     "translations": {
       "en": [
         "to push in",
-        "to push in, to shove in, to force in, to cram in",
+        "to shove in, to force in, to cram in",
         "to force upon, to thrust upon"
       ],
       "uk": [
@@ -3800,7 +3800,7 @@
     "translations": {
       "en": [
         "to torment",
-        "to torment, to torture, to rack",
+        "to torture, to rack",
         "to bother, to trouble, to distress"
       ],
       "uk": [
@@ -4041,7 +4041,6 @@
     "translations": {
       "en": [
         "to start",
-        "to start, to begin",
         "to begin"
       ],
       "uk": [
@@ -4204,8 +4203,7 @@
     "translations": {
       "en": [
         "to land",
-        "to lade, to load",
-        "to load"
+        "to lade, to load"
       ],
       "uk": [
         "грузити, грузити",
@@ -4286,7 +4284,7 @@
     "translations": {
       "en": [
         "to encounter",
-        "to encounter, to come across, to run into"
+        "to come across, to run into"
       ],
       "uk": [
         "натрапити, натрапити, натрапити"
@@ -4366,8 +4364,8 @@
     "translations": {
       "en": [
         "to unscrew",
-        "to unbolt, to unscrew, to untwist, to unwarp, to unwind",
-        "to uncap, to unscrew"
+        "to unbolt, to untwist, to unwarp, to unwind",
+        "to uncap"
       ],
       "uk": [
         "відкрутити"
@@ -4524,7 +4522,7 @@
     "translations": {
       "en": [
         "to escape",
-        "to slip away, to escape",
+        "to slip away",
         "to avoid, to evade"
       ],
       "uk": [
@@ -4687,7 +4685,7 @@
     "translations": {
       "en": [
         "to follow",
-        "to follow, to go in the same direction"
+        "to go in the same direction"
       ],
       "uk": [
         "слідувати"
@@ -4928,7 +4926,7 @@
     "translations": {
       "en": [
         "to commemorate",
-        "to commemorate, to mark, to memorialize, to immortalize",
+        "to mark, to memorialize, to immortalize",
         "to get fixed in memory"
       ],
       "uk": [
@@ -5009,7 +5007,7 @@
     "translations": {
       "en": [
         "to protect",
-        "to guard, to protect",
+        "to guard",
         "to abide by, to observe"
       ],
       "uk": [
@@ -5249,7 +5247,7 @@
     "translations": {
       "en": [
         "to cover",
-        "to hide, to cover, to obscure",
+        "to hide, to obscure",
         "to hide oneself, to cover oneself"
       ],
       "uk": [
@@ -5494,8 +5492,8 @@
     "translations": {
       "en": [
         "to dictate",
-        "to dictate, impose",
-        "to dictate, lead, influence one's behavior"
+        "impose",
+        "lead, influence one's behavior"
       ],
       "uk": [
         "диктувати"
@@ -5655,7 +5653,7 @@
     "translations": {
       "en": [
         "to disconnect",
-        "to disconnect, to turn off, to cut off, to disengage, to unplug",
+        "to turn off, to cut off, to disengage, to unplug",
         "to break away, to hive off, to wander off"
       ],
       "uk": [
@@ -5736,8 +5734,8 @@
     "translations": {
       "en": [
         "to increase",
-        "to increase, to raise, to put up, to turn up, to elevate",
-        "to increase, to rise, to be elevated"
+        "to raise, to put up, to turn up, to elevate",
+        "to rise, to be elevated"
       ],
       "uk": [
         "збільшити",
@@ -6059,8 +6057,8 @@
     "translations": {
       "en": [
         "to strengthen",
-        "to reinforce, to strengthen",
-        "to consolidate, to strengthen, to reaffirm"
+        "to reinforce",
+        "to consolidate, to reaffirm"
       ],
       "uk": [
         "посилити"
@@ -6217,7 +6215,7 @@
     "translations": {
       "en": [
         "to pour out",
-        "to pour out, to tip",
+        "to tip",
         "to overflow, to spill over"
       ],
       "uk": [
@@ -6378,7 +6376,7 @@
     "translations": {
       "en": [
         "to replace",
-        "to replace, to substitute",
+        "to substitute",
         "to swap, to exchange"
       ],
       "uk": [
@@ -6539,7 +6537,7 @@
     "translations": {
       "en": [
         "to reveal",
-        "to reveal, to show",
+        "to show",
         "to appear, to manifest"
       ],
       "uk": [
@@ -6620,7 +6618,7 @@
     "translations": {
       "en": [
         "to discredit",
-        "to compromise, to discredit, to disgrace, to humiliate",
+        "to compromise, to disgrace, to humiliate",
         "to disgrace oneself"
       ],
       "uk": [
@@ -7099,8 +7097,8 @@
     "translations": {
       "en": [
         "to curse",
-        "to swear, to curse",
-        "to curse, to imprecate, to missay"
+        "to swear",
+        "to imprecate, to missay"
       ],
       "uk": [
         "лаятися, проклинати",
@@ -7181,7 +7179,7 @@
     "translations": {
       "en": [
         "to penetrate",
-        "to penetrate, to percolate, to permeate, to pervade",
+        "to percolate, to permeate, to pervade",
         "to infiltrate"
       ],
       "uk": [
@@ -7421,7 +7419,7 @@
     "translations": {
       "en": [
         "to sail out",
-        "to set sail, to sail out",
+        "to set sail",
         "to swim out"
       ],
       "uk": [
@@ -7660,7 +7658,7 @@
     "translations": {
       "en": [
         "to delay",
-        "to delay, to put off",
+        "to put off",
         "to be late with something"
       ],
       "uk": [

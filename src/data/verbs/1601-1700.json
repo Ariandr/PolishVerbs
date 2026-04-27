@@ -13,7 +13,7 @@
     "translations": {
       "en": [
         "to clean",
-        "to clean, to cleanse",
+        "to cleanse",
         "to clean out"
       ],
       "uk": [
@@ -256,7 +256,7 @@
     "translations": {
       "en": [
         "to place",
-        "to put, to place, to position, to set",
+        "to put, to position, to set",
         "to position oneself"
       ],
       "uk": [
@@ -417,7 +417,7 @@
     "translations": {
       "en": [
         "to deny",
-        "to deny, to contradict",
+        "to contradict",
         "to disprove"
       ],
       "uk": [
@@ -498,7 +498,6 @@
     "translations": {
       "en": [
         "to book",
-        "to reserve, to book",
         "to reserve"
       ],
       "uk": [
@@ -822,7 +821,7 @@
     "translations": {
       "en": [
         "to train",
-        "to coach, to train",
+        "to coach",
         "to practise"
       ],
       "uk": [
@@ -985,7 +984,7 @@
     "translations": {
       "en": [
         "to pay extra",
-        "to pay extra, to pay a remainder"
+        "to pay a remainder"
       ],
       "uk": [
         "доплатити"
@@ -1065,7 +1064,7 @@
     "translations": {
       "en": [
         "to burden",
-        "to load, to burden",
+        "to load",
         "to incriminate, to inculpate"
       ],
       "uk": [
@@ -1705,8 +1704,8 @@
     "translations": {
       "en": [
         "to hold",
-        "to hold, to keep in place",
-        "to hold, to keep back, to reserve"
+        "to keep in place",
+        "to keep back, to reserve"
       ],
       "uk": [
         "утримувати"
@@ -1787,7 +1786,7 @@
       "en": [
         "to decompose",
         "to spread, to unfold, to unfurl, to lay out",
-        "to spread, to set out"
+        "to set out"
       ],
       "uk": [
         "розкладатися"
@@ -2426,7 +2425,7 @@
     "translations": {
       "en": [
         "to guide",
-        "to guide, to direct, to lead"
+        "to direct, to lead"
       ],
       "uk": [
         "направляти, спрямовувати, керувати"
@@ -3552,7 +3551,7 @@
     "translations": {
       "en": [
         "to violate",
-        "to violate, to contravene, to infringe"
+        "to contravene, to infringe"
       ],
       "uk": [
         "порушувати"
@@ -3712,7 +3711,7 @@
     "translations": {
       "en": [
         "to absorb",
-        "to absorb, to engross",
+        "to engross",
         "to engulf, to swallow up"
       ],
       "uk": [
@@ -3873,7 +3872,7 @@
     "translations": {
       "en": [
         "to verify",
-        "to check, to verify",
+        "to check",
         "to re-evaluate one's views"
       ],
       "uk": [
@@ -4191,7 +4190,7 @@
     "translations": {
       "en": [
         "to fire up",
-        "to fire up, to ignite",
+        "to ignite",
         "to let off, to launch"
       ],
       "uk": [
@@ -4272,7 +4271,7 @@
     "translations": {
       "en": [
         "to deepen",
-        "to deepen, to dredge",
+        "to dredge",
         "to develop"
       ],
       "uk": [
@@ -4353,7 +4352,7 @@
     "translations": {
       "en": [
         "to visualize",
-        "to visualize, to illustrate",
+        "to illustrate",
         "to make somebody realize"
       ],
       "uk": [
@@ -4434,7 +4433,7 @@
     "translations": {
       "en": [
         "to spot",
-        "to spot, to find by looking",
+        "to find by looking",
         "to keep an eye out for"
       ],
       "uk": [
@@ -4599,7 +4598,7 @@
       "en": [
         "to survive",
         "to endure",
-        "to live off, to survive"
+        "to live off"
       ],
       "uk": [
         "вижити"
@@ -5081,7 +5080,7 @@
     "translations": {
       "en": [
         "to tempt",
-        "to tempt, to lure"
+        "to lure"
       ],
       "uk": [
         "спокусити"
@@ -5324,7 +5323,7 @@
     "translations": {
       "en": [
         "to disturb",
-        "to disrupt, to disturb, to impede, to perturb"
+        "to disrupt, to impede, to perturb"
       ],
       "uk": [
         "турбувати"
@@ -5405,7 +5404,7 @@
       "en": [
         "to escape",
         "to run downwards",
-        "to escape, to flee"
+        "to flee"
       ],
       "uk": [
         "бігти вниз",
@@ -6122,7 +6121,7 @@
     "translations": {
       "en": [
         "to return",
-        "to return, to go back"
+        "to go back"
       ],
       "uk": [
         "потім повернутися",
@@ -6443,7 +6442,7 @@
     "translations": {
       "en": [
         "to cease",
-        "to cease, to stop"
+        "to stop"
       ],
       "uk": [
         "припинити"
@@ -6603,7 +6602,7 @@
     "translations": {
       "en": [
         "to value",
-        "to esteem, to value, to appreciate, to treasure, to cherish, to hold dear",
+        "to esteem, to appreciate, to treasure, to cherish, to hold dear",
         "to price, to price out, to assess"
       ],
       "uk": [
@@ -6763,8 +6762,8 @@
     "translations": {
       "en": [
         "to complete",
-        "to complement, to complete, to supplement, to top up",
-        "to fulfill, to complete, to execute"
+        "to complement, to supplement, to top up",
+        "to fulfill, to execute"
       ],
       "uk": [
         "доповнювати, доповнювати, доповнювати, доповнювати",
@@ -7086,7 +7085,7 @@
     "translations": {
       "en": [
         "to test",
-        "to test, to try",
+        "to try",
         "to get tested"
       ],
       "uk": [
@@ -7168,7 +7167,7 @@
       "en": [
         "to drown",
         "to sink",
-        "to sink, to waste"
+        "to waste"
       ],
       "uk": [
         "потонути"
@@ -7248,7 +7247,7 @@
     "translations": {
       "en": [
         "to collect",
-        "to save up, to rack up, to collect"
+        "to save up, to rack up"
       ],
       "uk": [
         "збирати"
@@ -7407,7 +7406,7 @@
     "translations": {
       "en": [
         "to generate",
-        "to cause, to generate, to produce",
+        "to cause, to produce",
         "to arise, to come into being"
       ],
       "uk": [
@@ -7488,8 +7487,7 @@
     "translations": {
       "en": [
         "to recreate, to reproduce",
-        "to perform, to play",
-        "to play"
+        "to perform, to play"
       ],
       "uk": [
         "відтворювати"
@@ -7569,7 +7567,7 @@
     "translations": {
       "en": [
         "to deepen",
-        "to deepen, to dredge",
+        "to dredge",
         "to develop"
       ],
       "uk": [
@@ -7650,7 +7648,7 @@
     "translations": {
       "en": [
         "to commit",
-        "to commit, to perpetrate",
+        "to perpetrate",
         "to make, to create"
       ],
       "uk": [
@@ -7892,7 +7890,7 @@
     "translations": {
       "en": [
         "to strangle",
-        "to suffocate, to asphyxiate, to strangle, to choke",
+        "to suffocate, to asphyxiate, to choke",
         "to stew, to braise"
       ],
       "uk": [

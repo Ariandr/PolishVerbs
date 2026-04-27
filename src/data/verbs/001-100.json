@@ -406,7 +406,7 @@
     "translations": {
       "en": [
         "to find, to come across, to run into",
-        "to find, to work up"
+        "to work up"
       ],
       "uk": [
         "знайти",
@@ -485,7 +485,7 @@
     "translations": {
       "en": [
         "to stay, to remain",
-        "to remain, to be left"
+        "to be left"
       ],
       "uk": [
         "залишитися",
@@ -956,7 +956,7 @@
     "translations": {
       "en": [
         "to give, to hand, to pass",
-        "to give, to put on"
+        "to put on"
       ],
       "uk": [
         "дати",
@@ -3256,7 +3256,7 @@
     "translations": {
       "en": [
         "to write",
-        "to write, to take",
+        "to take",
         "to say, to state, to read"
       ],
       "uk": [
@@ -3574,7 +3574,7 @@
       "en": [
         "to receive, to accept",
         "to admit",
-        "to receive, to take"
+        "to take"
       ],
       "uk": [
         "прийняти"
@@ -3652,7 +3652,7 @@
     "translations": {
       "en": [
         "to go",
-        "to go, to attend",
+        "to attend",
         "to go after, to follow"
       ],
       "uk": [
@@ -3731,8 +3731,8 @@
     "translations": {
       "en": [
         "to go across, to cross",
-        "to go through, to cross",
-        "to cross, to pass by"
+        "to go through",
+        "to pass by"
       ],
       "uk": [
         "перейти",
@@ -3811,7 +3811,7 @@
     "translations": {
       "en": [
         "to use, to utilise, to bring to bear",
-        "to exploit, to use, to abuse, to take advantage of"
+        "to exploit, to abuse, to take advantage of"
       ],
       "uk": [
         "використати"
@@ -4605,7 +4605,7 @@
       "en": [
         "to give back, to return",
         "to give, to send, to put",
-        "to give, to pass"
+        "to pass"
       ],
       "uk": [
         "віддати"
@@ -4762,7 +4762,7 @@
     "translations": {
       "en": [
         "to occupy, to take up",
-        "to occupy, to take",
+        "to take",
         "to reserve, to book"
       ],
       "uk": [
@@ -5080,8 +5080,8 @@
     "translations": {
       "en": [
         "to play",
-        "to play, to act",
-        "to play, to pretend to be, to act"
+        "to act",
+        "to pretend to be"
       ],
       "uk": [
         "грати"
@@ -5559,8 +5559,8 @@
     "translations": {
       "en": [
         "to take",
-        "to take, to bring",
-        "to take, to take away"
+        "to bring",
+        "to take away"
       ],
       "uk": [
         "забрати"
@@ -5717,8 +5717,7 @@
     "translations": {
       "en": [
         "to go",
-        "to ride, to coast",
-        "to coast"
+        "to ride, to coast"
       ],
       "uk": [
         "їхати"
@@ -6288,7 +6287,7 @@
     "translations": {
       "en": [
         "to listen",
-        "to listen, to obey",
+        "to obey",
         "to be heard"
       ],
       "uk": [
@@ -7732,7 +7731,7 @@
       "en": [
         "to take",
         "to take in",
-        "to take, to charge"
+        "to charge"
       ],
       "uk": [
         "приймати всередину",
@@ -7892,8 +7891,7 @@
     "translations": {
       "en": [
         "to take up, to initiate, to instigate",
-        "to undertake, to engage in",
-        "to take up"
+        "to undertake, to engage in"
       ],
       "uk": [
         "взятися"

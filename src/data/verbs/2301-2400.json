@@ -13,8 +13,8 @@
     "translations": {
       "en": [
         "to unite",
-        "to unite, to unify",
-        "to come together, to unite"
+        "to unify",
+        "to come together"
       ],
       "uk": [
         "об'єднати"
@@ -94,7 +94,7 @@
     "translations": {
       "en": [
         "to pass, to pass by, to go past, to overshoot",
-        "to pass, to elapse, to go by",
+        "to elapse, to go by",
         "to go past each other"
       ],
       "uk": [
@@ -174,7 +174,7 @@
     "translations": {
       "en": [
         "to increase",
-        "to grow, to increase, to mount, to build up, to accumulate"
+        "to grow, to mount, to build up, to accumulate"
       ],
       "uk": [
         "збільшити",
@@ -332,7 +332,7 @@
     "translations": {
       "en": [
         "to tilt",
-        "to tip, to tilt",
+        "to tip",
         "to lean, to slant"
       ],
       "uk": [
@@ -734,7 +734,7 @@
     "translations": {
       "en": [
         "to load",
-        "to load, to lade"
+        "to lade"
       ],
       "uk": [
         "завантажити",
@@ -815,7 +815,7 @@
     "translations": {
       "en": [
         "to bear fruit",
-        "to fruit, to bear fruit"
+        "to fruit"
       ],
       "uk": [
         "плодоносити"
@@ -1056,7 +1056,6 @@
     "translations": {
       "en": [
         "to tread, trample",
-        "to tread",
         "to stomp or tread grapes for wine-making"
       ],
       "uk": [
@@ -1135,7 +1134,7 @@
     "translations": {
       "en": [
         "to lose",
-        "to lose, to mislay",
+        "to mislay",
         "to ruin"
       ],
       "uk": [
@@ -1217,7 +1216,7 @@
       "en": [
         "to fling, to hurl",
         "to rock, to toss",
-        "to rock, to shake"
+        "to shake"
       ],
       "uk": [
         "метати"
@@ -1376,7 +1375,7 @@
     "translations": {
       "en": [
         "to drive away",
-        "to chase off, to drive away"
+        "to chase off"
       ],
       "uk": [
         "відганяти"
@@ -1535,7 +1534,7 @@
     "translations": {
       "en": [
         "to chain",
-        "to enchain, to chain",
+        "to enchain",
         "to enthrall, to rivet, to fascinate"
       ],
       "uk": [
@@ -1935,7 +1934,7 @@
     "translations": {
       "en": [
         "to fool around",
-        "to fool around, to act the goat"
+        "to act the goat"
       ],
       "uk": [
         "дуріти"
@@ -2256,7 +2255,7 @@
     "translations": {
       "en": [
         "to note",
-        "to record, to note, to write down"
+        "to record, to write down"
       ],
       "uk": [
         "записувати, відзначати, записувати"
@@ -2415,7 +2414,7 @@
     "translations": {
       "en": [
         "to swing",
-        "to rock, to swing",
+        "to rock",
         "to float, to dance, to play"
       ],
       "uk": [
@@ -3132,7 +3131,7 @@
       "en": [
         "to split",
         "to divide up, to distribute, to dole out",
-        "to split, to separate, to keep apart"
+        "to separate, to keep apart"
       ],
       "uk": [
         "розділити"
@@ -3450,8 +3449,8 @@
     "translations": {
       "en": [
         "to stress",
-        "to stress, to stress out",
-        "to stress out, to be stressed"
+        "to stress out",
+        "to be stressed"
       ],
       "uk": [
         "напружувати, напружувати",
@@ -3691,8 +3690,7 @@
     "translations": {
       "en": [
         "to shine",
-        "to flash, to shine, to glisten",
-        "to flash"
+        "to flash, to glisten"
       ],
       "uk": [
         "сяяти",
@@ -3775,8 +3773,8 @@
     "translations": {
       "en": [
         "to blur",
-        "to blur, to make indistinct",
-        "to hide, to make indistinct"
+        "to make indistinct",
+        "to hide"
       ],
       "uk": [
         "розмити, зробити невиразним",
@@ -4181,7 +4179,7 @@
     "translations": {
       "en": [
         "to shrink",
-        "to contract, to shrink"
+        "to contract"
       ],
       "uk": [
         "скорочуватися"
@@ -4420,7 +4418,7 @@
     "translations": {
       "en": [
         "to duplicate",
-        "to manifold, to duplicate, to copy, to replicate, to mimeograph",
+        "to manifold, to copy, to replicate, to mimeograph",
         "to rehash"
       ],
       "uk": [
@@ -4822,7 +4820,7 @@
     "translations": {
       "en": [
         "to fall apart",
-        "to fall apart, to disintegrate"
+        "to disintegrate"
       ],
       "uk": [
         "розвалюватися"
@@ -4902,7 +4900,7 @@
     "translations": {
       "en": [
         "to screw in",
-        "to screw in, such as a lightbult into a socket",
+        "such as a lightbult into a socket",
         "to worm someone into something, get someone a position using clever means"
       ],
       "uk": [
@@ -5146,7 +5144,7 @@
       "en": [
         "to pass",
         "to go round, to bypass, to avoid",
-        "to overtake, to pass"
+        "to overtake"
       ],
       "uk": [
         "обходити, обходити, уникати"
@@ -5227,7 +5225,7 @@
     "translations": {
       "en": [
         "to judge",
-        "to judge, to pass judgment"
+        "to pass judgment"
       ],
       "uk": [
         "судити"
@@ -5307,7 +5305,7 @@
     "translations": {
       "en": [
         "to strain",
-        "to strain, to exert",
+        "to exert",
         "to strain oneself, to exert oneself"
       ],
       "uk": [
@@ -5471,7 +5469,7 @@
     "translations": {
       "en": [
         "to poison",
-        "to poison, to toxify",
+        "to toxify",
         "to taint, to pollute"
       ],
       "uk": [
@@ -6120,7 +6118,7 @@
     "translations": {
       "en": [
         "to awaken",
-        "to arouse, to awaken"
+        "to arouse"
       ],
       "uk": [
         "пробудити"
@@ -6201,7 +6199,7 @@
     "translations": {
       "en": [
         "to consider",
-        "to consider, to look into",
+        "to look into",
         "to process a case in court"
       ],
       "uk": [
@@ -6283,7 +6281,7 @@
       "en": [
         "to breathe",
         "to emit, to give off",
-        "to breathe, to inspire, to instill"
+        "to inspire, to instill"
       ],
       "uk": [
         "дихати"
@@ -6524,7 +6522,7 @@
     "translations": {
       "en": [
         "to shout",
-        "to exclaim, to cry, to shout"
+        "to exclaim, to cry"
       ],
       "uk": [
         "кричати"
@@ -7799,7 +7797,7 @@
       "en": [
         "to join",
         "to start doing",
-        "to accede, to join"
+        "to accede"
       ],
       "uk": [
         "приєднатися"

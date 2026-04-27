@@ -888,8 +888,7 @@
     "translations": {
       "en": [
         "to live, to reside",
-        "to dwell, to live",
-        "to dwell, to reside"
+        "to dwell"
       ],
       "uk": [
         "жити",
@@ -1526,7 +1525,7 @@
     "translations": {
       "en": [
         "to survive",
-        "to survive, endure, outlast, prevail",
+        "endure, outlast, prevail",
         "to live on, outlive, stand"
       ],
       "uk": [
@@ -1687,7 +1686,7 @@
       "en": [
         "to catch",
         "to grab",
-        "to catch, to capture, to grab, to nab, to get"
+        "to capture, to nab, to get"
       ],
       "uk": [
         "ловити"
@@ -1767,7 +1766,7 @@
     "translations": {
       "en": [
         "to move",
-        "to move, to carry, to transport",
+        "to carry, to transport",
         "to transfer"
       ],
       "uk": [
@@ -2164,7 +2163,6 @@
     "translations": {
       "en": [
         "to split, to divide",
-        "to divide",
         "to share"
       ],
       "uk": [
@@ -2243,7 +2241,7 @@
     "translations": {
       "en": [
         "to ring, jangle, clink",
-        "to ring, call"
+        "call"
       ],
       "uk": [
         "зателефонувати"
@@ -2322,7 +2320,7 @@
       "en": [
         "to list, to enumerate",
         "to exchange",
-        "to swap, to exchange, to replace"
+        "to swap, to replace"
       ],
       "uk": [
         "заміни́ти",
@@ -2719,8 +2717,8 @@
     "translations": {
       "en": [
         "to give",
-        "to give, to hand, to pass",
-        "to give, to put on"
+        "to hand, to pass",
+        "to put on"
       ],
       "uk": [
         "давати"
@@ -2797,9 +2795,7 @@
     },
     "translations": {
       "en": [
-        "to walk out, to leave, to exit",
-        "to walk out, to leave",
-        "to leave"
+        "to walk out, to leave, to exit"
       ],
       "uk": [
         "виходити"
@@ -2877,7 +2873,7 @@
     "translations": {
       "en": [
         "to observe",
-        "to observe, to watch",
+        "to watch",
         "to respect, to have regard for, to honor"
       ],
       "uk": [
@@ -2958,7 +2954,7 @@
     "translations": {
       "en": [
         "to earn",
-        "to earn, to make"
+        "to make"
       ],
       "uk": [
         "заробити"
@@ -4546,7 +4542,7 @@
     "translations": {
       "en": [
         "to care, to look after",
-        "to care, to attach importance"
+        "to attach importance"
       ],
       "uk": [
         "піклуватися",
@@ -4704,7 +4700,7 @@
     "translations": {
       "en": [
         "to predict",
-        "to foresee, to predict, to forecast",
+        "to foresee, to forecast",
         "to provide, to stipulate"
       ],
       "uk": [
@@ -4864,7 +4860,7 @@
     "translations": {
       "en": [
         "to regain",
-        "to regain, to recover, to retrieve, to win back, to get something back"
+        "to recover, to retrieve, to win back, to get something back"
       ],
       "uk": [
         "щоб відновити"
@@ -5339,7 +5335,7 @@
     "translations": {
       "en": [
         "to sacrifice",
-        "to sacrifice, to forfeit",
+        "to forfeit",
         "to devote, to commit, to give"
       ],
       "uk": [
@@ -5657,7 +5653,7 @@
     "translations": {
       "en": [
         "to limit",
-        "to restrict, to limit",
+        "to restrict",
         "to reduce"
       ],
       "uk": [
@@ -5738,8 +5734,8 @@
     "translations": {
       "en": [
         "to play",
-        "to play, to perform",
-        "to make a move, to play"
+        "to perform",
+        "to make a move"
       ],
       "uk": [
         "грати"
@@ -5820,7 +5816,7 @@
       "en": [
         "to perform, to carry out, to do, to execute",
         "to make, to produce",
-        "to perform, to play"
+        "to play"
       ],
       "uk": [
         "вико́нувати",
@@ -5977,7 +5973,7 @@
     "translations": {
       "en": [
         "to combine",
-        "to join, to merge, to combine",
+        "to join, to merge",
         "to connect, to link"
       ],
       "uk": [
@@ -6138,7 +6134,7 @@
       "en": [
         "to take place",
         "to tread, to step",
-        "to follow, to ensue, to take place, to occur, to happen"
+        "to follow, to ensue, to occur, to happen"
       ],
       "uk": [
         "мати місце"
@@ -6296,7 +6292,7 @@
     "translations": {
       "en": [
         "to carry",
-        "to carry, to bear",
+        "to bear",
         "to wear"
       ],
       "uk": [
@@ -6772,7 +6768,7 @@
     "translations": {
       "en": [
         "to say no, to deny, to reject",
-        "to deny, to refuse",
+        "to refuse",
         "to say grace, to say a prayer"
       ],
       "uk": [
@@ -6852,7 +6848,7 @@
       "en": [
         "to go in",
         "to go on, to climb",
-        "to go in, to enter"
+        "to enter"
       ],
       "uk": [
         "вхо́дити"
@@ -7091,7 +7087,7 @@
       "en": [
         "to burden, to afflict, to worry",
         "to disturb",
-        "to worry, to grieve, to be troubled"
+        "to grieve, to be troubled"
       ],
       "uk": [
         "хвилювати",
@@ -7327,7 +7323,7 @@
     "translations": {
       "en": [
         "to increase, to expand, to boost",
-        "to grow, to increase"
+        "to grow"
       ],
       "uk": [
         "збі́льшити"
@@ -7405,7 +7401,7 @@
     "translations": {
       "en": [
         "to release",
-        "to liberate, to release, to set free",
+        "to liberate, to set free",
         "to unfetter, to unshackle"
       ],
       "uk": [

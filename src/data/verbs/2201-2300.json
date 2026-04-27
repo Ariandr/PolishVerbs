@@ -176,7 +176,7 @@
     "translations": {
       "en": [
         "to cooperate",
-        "to cooperate, to work together"
+        "to work together"
       ],
       "uk": [
         "співпрацювати"
@@ -416,8 +416,8 @@
     "translations": {
       "en": [
         "to dig out",
-        "to dig up, to dig out, to unearth",
-        "to dig out, to retrieve"
+        "to dig up, to unearth",
+        "to retrieve"
       ],
       "uk": [
         "викопати"
@@ -497,7 +497,7 @@
     "translations": {
       "en": [
         "to rest",
-        "to repose, to rest"
+        "to repose"
       ],
       "uk": [
         "відпочити, відпочити"
@@ -659,7 +659,7 @@
     "translations": {
       "en": [
         "to approve",
-        "to confirm, to sanction, to ratify, to approve",
+        "to confirm, to sanction, to ratify",
         "to be accepted by a computer program that recognizes a certain action as having been performed"
       ],
       "uk": [
@@ -741,7 +741,7 @@
       "en": [
         "to characterize",
         "to be characterized by",
-        "to characterize, to describe"
+        "to describe"
       ],
       "uk": [
         "характеризувати"
@@ -983,7 +983,7 @@
     "translations": {
       "en": [
         "to abuse",
-        "to abuse, to misuse",
+        "to misuse",
         "to overuse, to exploit"
       ],
       "uk": [
@@ -1390,7 +1390,7 @@
     "translations": {
       "en": [
         "to breed",
-        "to breed, to rear",
+        "to rear",
         "to culture"
       ],
       "uk": [
@@ -1707,7 +1707,7 @@
     "translations": {
       "en": [
         "to look after",
-        "to look after, to tend to",
+        "to tend to",
         "to oversee, to supervise"
       ],
       "uk": [
@@ -2266,7 +2266,7 @@
       "en": [
         "to find",
         "to discover, to rediscover, to track down, to trace",
-        "to find, to acquire"
+        "to acquire"
       ],
       "uk": [
         "знайти"
@@ -2504,7 +2504,7 @@
     "translations": {
       "en": [
         "to stimulate",
-        "to stimulate, to excite, to rouse, to encourage, to prompt",
+        "to excite, to rouse, to encourage, to prompt",
         "to arouse"
       ],
       "uk": [
@@ -3305,7 +3305,7 @@
     "translations": {
       "en": [
         "to struggle",
-        "to contend, to struggle, to wrestle"
+        "to contend, to wrestle"
       ],
       "uk": [
         "боротися, боротися, боротися"
@@ -3784,7 +3784,7 @@
     "translations": {
       "en": [
         "to worsen, to make worse, to exacerbate",
-        "to worsen, to get worse, to deteriorate, to go downhill"
+        "to get worse, to deteriorate, to go downhill"
       ],
       "uk": [
         "погіршувати"
@@ -4343,7 +4343,7 @@
     "translations": {
       "en": [
         "to cut, to slice",
-        "to cut, to slice, to operate",
+        "to operate",
         "to steal"
       ],
       "uk": [
@@ -5301,8 +5301,8 @@
     "translations": {
       "en": [
         "to finish off",
-        "to finish off, to kill, to deliver a killing blow",
-        "to kill, to cause anguish"
+        "to kill, to deliver a killing blow",
+        "to cause anguish"
       ],
       "uk": [
         "закінчити"
@@ -5624,7 +5624,7 @@
     "translations": {
       "en": [
         "to push",
-        "to push, to wheel",
+        "to wheel",
         "to hustle, to jostle, to barge"
       ],
       "uk": [
@@ -5786,7 +5786,7 @@
     "translations": {
       "en": [
         "to twist",
-        "to twist, to curl",
+        "to curl",
         "to twist together, to twine"
       ],
       "uk": [
@@ -5868,7 +5868,7 @@
       "en": [
         "to suck",
         "to suckle, to suck milk from a nursing mother",
-        "to suck, to move liquid using reduced pressure"
+        "to move liquid using reduced pressure"
       ],
       "uk": [
         "смоктати"
@@ -6353,7 +6353,7 @@
       "en": [
         "to throw it away",
         "to throw out, to toss out",
-        "to kick out, to throw out, to bounce, to give the bum's rush"
+        "to kick out, to bounce, to give the bum's rush"
       ],
       "uk": [
         "викинути його"
@@ -6514,8 +6514,8 @@
     "translations": {
       "en": [
         "to clench",
-        "to tighten, to clench, to purse",
-        "to clench, to become clenched"
+        "to tighten, to purse",
+        "to become clenched"
       ],
       "uk": [
         "стиснути"
@@ -7156,7 +7156,7 @@
     "translations": {
       "en": [
         "to stumble",
-        "to trip, to stumble, to fall",
+        "to trip, to fall",
         "to err, to fail, to make a mistake"
       ],
       "uk": [
@@ -7401,7 +7401,7 @@
     "translations": {
       "en": [
         "to enable",
-        "to enable, to make possible"
+        "to make possible"
       ],
       "uk": [
         "включити"
@@ -7721,7 +7721,7 @@
     "translations": {
       "en": [
         "to call names",
-        "to call names, to insult",
+        "to insult",
         "to challenge, to dare"
       ],
       "uk": [
@@ -7882,7 +7882,7 @@
     "translations": {
       "en": [
         "to giggle",
-        "to giggle, to titter, to chuckle"
+        "to titter, to chuckle"
       ],
       "uk": [
         "хихікати"
@@ -7962,7 +7962,7 @@
     "translations": {
       "en": [
         "to advise",
-        "to advise, to suggest, to recommend"
+        "to suggest, to recommend"
       ],
       "uk": [
         "порадити"

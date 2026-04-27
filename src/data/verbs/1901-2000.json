@@ -174,7 +174,7 @@
     "translations": {
       "en": [
         "to worsen, to make worse, to exacerbate",
-        "to worsen, to get worse, to deteriorate, to go downhill"
+        "to get worse, to deteriorate, to go downhill"
       ],
       "uk": [
         "погіршити",
@@ -332,7 +332,7 @@
     "translations": {
       "en": [
         "to respect",
-        "to abide by, to respect",
+        "to abide by",
         "to respect each other"
       ],
       "uk": [
@@ -415,7 +415,7 @@
       "en": [
         "to break up",
         "to part ways",
-        "to break up, to separate, to get divorced"
+        "to separate, to get divorced"
       ],
       "uk": [
         "розійтися"
@@ -496,7 +496,7 @@
       "en": [
         "to disperse",
         "to distract, to prevent from focusing",
-        "to distribute, to scatter, to disperse"
+        "to distribute, to scatter"
       ],
       "uk": [
         "розійтися"
@@ -896,7 +896,7 @@
     "translations": {
       "en": [
         "to belittle",
-        "to bagatellize, to belittle, to downplay, to play down, to diminish, to diminish"
+        "to bagatellize, to downplay, to play down, to diminish"
       ],
       "uk": [
         "применшувати"
@@ -1378,7 +1378,7 @@
     "translations": {
       "en": [
         "to adjudicate",
-        "to adjudicate, to rule"
+        "to rule"
       ],
       "uk": [
         "судити"
@@ -1621,7 +1621,7 @@
       "en": [
         "to fall",
         "to fall on",
-        "to fall, to occur"
+        "to occur"
       ],
       "uk": [
         "падати на",
@@ -1702,7 +1702,7 @@
     "translations": {
       "en": [
         "to bring",
-        "to bring, to bring over"
+        "to bring over"
       ],
       "uk": [
         "принести"
@@ -1782,7 +1782,7 @@
     "translations": {
       "en": [
         "to escape",
-        "to escape, to flee",
+        "to flee",
         "to debouch, to disembogue"
       ],
       "uk": [
@@ -1944,7 +1944,7 @@
       "en": [
         "to spill the beans",
         "to blab, to reveal",
-        "to spill the beans, to let the cat out of the bag"
+        "to let the cat out of the bag"
       ],
       "uk": [
         "розливати боби"
@@ -2583,7 +2583,7 @@
     "translations": {
       "en": [
         "to happen",
-        "to bechance, to befall, to happen"
+        "to bechance, to befall"
       ],
       "uk": [
         "статися"
@@ -2664,7 +2664,7 @@
       "en": [
         "to expand",
         "to develop, to extend",
-        "to expand, to grow"
+        "to grow"
       ],
       "uk": [
         "розширити"
@@ -2826,7 +2826,7 @@
     "translations": {
       "en": [
         "to break off",
-        "to rip off, to break off, to sever",
+        "to rip off, to sever",
         "to cut short"
       ],
       "uk": [
@@ -2988,7 +2988,7 @@
     "translations": {
       "en": [
         "to resurrect",
-        "to resurrect, to raise from the dead",
+        "to raise from the dead",
         "to bring back, to revive"
       ],
       "uk": [
@@ -3391,7 +3391,7 @@
     "translations": {
       "en": [
         "to convert",
-        "to convert, to proselytize",
+        "to proselytize",
         "to recur, to relapse"
       ],
       "uk": [
@@ -3708,7 +3708,7 @@
     "translations": {
       "en": [
         "to understand",
-        "to grasp, to comprehend, to understand",
+        "to grasp, to comprehend",
         "to grasp each other, to comprehend each other, to understand each other"
       ],
       "uk": [
@@ -3789,7 +3789,7 @@
     "translations": {
       "en": [
         "to condemn",
-        "to condemn, to denounce",
+        "to denounce",
         "to damn"
       ],
       "uk": [
@@ -3870,7 +3870,7 @@
     "translations": {
       "en": [
         "to disappoint",
-        "to disappoint, to displease, to underwhelm",
+        "to displease, to underwhelm",
         "to become disappointed"
       ],
       "uk": [
@@ -4108,7 +4108,6 @@
     "translations": {
       "en": [
         "to suffice, to be enough, to do",
-        "to do",
         "to manage"
       ],
       "uk": [
@@ -4834,7 +4833,7 @@
     "translations": {
       "en": [
         "to happen",
-        "to bechance, to befall, to happen"
+        "to bechance, to befall"
       ],
       "uk": [
         "статися"
@@ -4993,8 +4992,8 @@
     "translations": {
       "en": [
         "to divorce",
-        "to divorce, to grant a divorce",
-        "to divorce, to get a divorce"
+        "to grant a divorce",
+        "to get a divorce"
       ],
       "uk": [
         "розлучитися, дати розлучення",
@@ -5154,7 +5153,7 @@
     "translations": {
       "en": [
         "to roll up",
-        "to coil, to roll up",
+        "to coil",
         "to eliminate"
       ],
       "uk": [
@@ -5236,7 +5235,7 @@
       "en": [
         "to gain",
         "to profit",
-        "to gain, to acquire, to win"
+        "to acquire, to win"
       ],
       "uk": [
         "здобути, здобути, здобути"
@@ -5399,7 +5398,7 @@
     "translations": {
       "en": [
         "to cover",
-        "to cover, to overlay",
+        "to overlay",
         "to coat, to mist"
       ],
       "uk": [
@@ -5480,7 +5479,7 @@
     "translations": {
       "en": [
         "to leave",
-        "to leave, to leave alone",
+        "to leave alone",
         "to leave behind, to abandon"
       ],
       "uk": [
@@ -5718,7 +5717,7 @@
       "en": [
         "to delight",
         "to revel, to bask",
-        "to delight, to relish, to revel, to take pleasure"
+        "to relish, to take pleasure"
       ],
       "uk": [
         "це гуляння, це грітися",
@@ -6274,7 +6273,7 @@
     "translations": {
       "en": [
         "to flow in",
-        "to flow in, to stream in",
+        "to stream in",
         "to flood, to roll in"
       ],
       "uk": [
@@ -6840,8 +6839,8 @@
     "translations": {
       "en": [
         "to burn",
-        "to burn, to incinerate",
-        "to burn, to use as fuel"
+        "to incinerate",
+        "to use as fuel"
       ],
       "uk": [
         "спалювати"
@@ -7000,7 +6999,7 @@
     "translations": {
       "en": [
         "to touch",
-        "to touch, to lay a finger on"
+        "to lay a finger on"
       ],
       "uk": [
         "доторкнутися, доторкнутися пальцем"
@@ -7400,7 +7399,7 @@
     "translations": {
       "en": [
         "to tie",
-        "to tie, to do up, to fasten",
+        "to do up, to fasten",
         "to start, to found"
       ],
       "uk": [
@@ -7804,8 +7803,8 @@
     "translations": {
       "en": [
         "to settle",
-        "to settle, to domiciliate",
-        "to settle, to domicile"
+        "to domiciliate",
+        "to domicile"
       ],
       "uk": [
         "розраховуватися"
@@ -7886,7 +7885,7 @@
       "en": [
         "to skip",
         "to omit, to leave out",
-        "to skip, to bypass, to pass over"
+        "to bypass, to pass over"
       ],
       "uk": [
         "пропустити"

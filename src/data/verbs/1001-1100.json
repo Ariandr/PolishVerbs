@@ -13,8 +13,8 @@
     "translations": {
       "en": [
         "to discuss",
-        "to discuss, to talk through",
-        "to describe, to talk through"
+        "to talk through",
+        "to describe"
       ],
       "uk": [
         "обговорити"
@@ -95,7 +95,7 @@
       "en": [
         "to focus",
         "to gather, to collect, to accumulate",
-        "to concentrate, to focus"
+        "to concentrate"
       ],
       "uk": [
         "фокусуватися",
@@ -259,7 +259,7 @@
     "translations": {
       "en": [
         "to help",
-        "to assist, to lend a hand, to help",
+        "to assist, to lend a hand",
         "to help oneself"
       ],
       "uk": [
@@ -340,7 +340,7 @@
     "translations": {
       "en": [
         "to remedy",
-        "to remedy, to solve"
+        "to solve"
       ],
       "uk": [
         "виправляти, вирішувати"
@@ -661,7 +661,7 @@
     "translations": {
       "en": [
         "to develop",
-        "to develop, to devise, to put together, to draw up, to compose in a complete form",
+        "to devise, to put together, to draw up, to compose in a complete form",
         "to describe completely, to compose a description of"
       ],
       "uk": [
@@ -1059,7 +1059,7 @@
     "translations": {
       "en": [
         "to buy",
-        "to purchase, to buy, to acquire"
+        "to purchase, to acquire"
       ],
       "uk": [
         "купити"
@@ -1218,8 +1218,7 @@
     "translations": {
       "en": [
         "to force",
-        "to compel, to force, to make someone",
-        "to make someone"
+        "to compel, to make someone"
       ],
       "uk": [
         "змушувати, примушувати, змушувати когось",
@@ -1378,8 +1377,8 @@
     "translations": {
       "en": [
         "to cut out",
-        "to cut out, to excise",
-        "to cut out, to clip"
+        "to excise",
+        "to clip"
       ],
       "uk": [
         "вирізати"
@@ -1459,7 +1458,7 @@
     "translations": {
       "en": [
         "to avoid",
-        "to bypass, to avoid, to skirt, to miss"
+        "to bypass, to skirt, to miss"
       ],
       "uk": [
         "уникати"
@@ -1539,7 +1538,7 @@
     "translations": {
       "en": [
         "to fall",
-        "to fall, to drop",
+        "to drop",
         "to fall down, to abruptly deteriorate"
       ],
       "uk": [
@@ -1702,7 +1701,7 @@
       "en": [
         "to send",
         "to send away, to pack off, to ship off",
-        "to send, to mail, to post"
+        "to mail, to post"
       ],
       "uk": [
         "відправити"
@@ -1783,7 +1782,6 @@
     "translations": {
       "en": [
         "to hang, to suspend",
-        "to hang",
         "to hang oneself"
       ],
       "uk": [
@@ -1862,7 +1860,7 @@
     "translations": {
       "en": [
         "to stop",
-        "to arrest, to stop, to hold up, to rein back",
+        "to arrest, to hold up, to rein back",
         "to abstain"
       ],
       "uk": [
@@ -1944,7 +1942,6 @@
     "translations": {
       "en": [
         "to chase",
-        "to chase, to pursue",
         "to pursue"
       ],
       "uk": [
@@ -2430,7 +2427,7 @@
     "translations": {
       "en": [
         "to enlarge",
-        "to enlarge, to augment, to expand",
+        "to augment, to expand",
         "to magnify"
       ],
       "uk": [
@@ -2590,7 +2587,7 @@
     "translations": {
       "en": [
         "to prevent",
-        "to make impossible, to prevent, to preclude"
+        "to make impossible, to preclude"
       ],
       "uk": [
         "запобігти"
@@ -2670,7 +2667,7 @@
     "translations": {
       "en": [
         "to lay out",
-        "to lay out, to set out",
+        "to set out",
         "to pass a ball or puck to one's teammate so they can make a good move"
       ],
       "uk": [
@@ -2987,7 +2984,7 @@
     "translations": {
       "en": [
         "to exhibit",
-        "to exhibit, to display",
+        "to display",
         "to stick out, to protrude"
       ],
       "uk": [
@@ -3469,7 +3466,7 @@
       "en": [
         "to give in",
         "to yield, to give way, to submit, to succumb, to be subject to",
-        "to be subject to, to undergo"
+        "to undergo"
       ],
       "uk": [
         "піддаватися"
@@ -3630,7 +3627,7 @@
     "translations": {
       "en": [
         "to jerk",
-        "to jerk, tug, yank",
+        "tug, yank",
         "to tear off, to rip off"
       ],
       "uk": [
@@ -4109,7 +4106,7 @@
     "translations": {
       "en": [
         "to marvel",
-        "to wonder, to marvel"
+        "to wonder"
       ],
       "uk": [
         "дивуватися"
@@ -4509,7 +4506,6 @@
     "translations": {
       "en": [
         "to suit, to match",
-        "to match",
         "to fit"
       ],
       "uk": [
@@ -4832,7 +4828,7 @@
     "translations": {
       "en": [
         "to collect",
-        "to gather, to collect",
+        "to gather",
         "to amass"
       ],
       "uk": [
@@ -4914,7 +4910,7 @@
     "translations": {
       "en": [
         "to finance",
-        "to finance, to bankroll",
+        "to bankroll",
         "to finance one's own business, to bankroll one's own business"
       ],
       "uk": [
@@ -5155,7 +5151,7 @@
       "en": [
         "to climb",
         "to make stand up",
-        "to climb, to mount"
+        "to mount"
       ],
       "uk": [
         "підніматися"
@@ -5235,7 +5231,7 @@
     "translations": {
       "en": [
         "to tempt",
-        "to tempt, to lure",
+        "to lure",
         "to dare, to attempt"
       ],
       "uk": [
@@ -5316,7 +5312,7 @@
     "translations": {
       "en": [
         "to support",
-        "to support, to back, to favour, to advocate"
+        "to back, to favour, to advocate"
       ],
       "uk": [
         "підтримувати, підтримувати, сприяти, захищати"
@@ -5397,7 +5393,7 @@
       "en": [
         "to repeal",
         "to open slightly, to leave ajar, to crack open, to crack",
-        "to repeal, to overrule, to abolish"
+        "to overrule, to abolish"
       ],
       "uk": [
         "скасувати"
@@ -5477,7 +5473,7 @@
     "translations": {
       "en": [
         "to wish",
-        "to ask for, to desire, to please, to wish"
+        "to ask for, to desire, to please"
       ],
       "uk": [
         "бажати",
@@ -6277,9 +6273,7 @@
     },
     "translations": {
       "en": [
-        "to put, to lay",
-        "to lay",
-        "to put"
+        "to put, to lay"
       ],
       "uk": [
         "класти",
@@ -6361,7 +6355,7 @@
     "translations": {
       "en": [
         "to admit",
-        "to admit, to acknowledge",
+        "to acknowledge",
         "to grant, to confer"
       ],
       "uk": [
@@ -6681,7 +6675,7 @@
     "translations": {
       "en": [
         "to prohibit",
-        "to forbid, to prohibit, to disallow, to ban"
+        "to forbid, to disallow, to ban"
       ],
       "uk": [
         "забороняти"
@@ -7314,8 +7308,8 @@
     "translations": {
       "en": [
         "to draw",
-        "to draw, to sketch",
-        "to draw, to sketch, to depict, to portray"
+        "to sketch",
+        "to depict, to portray"
       ],
       "uk": [
         "малювати"
@@ -7791,7 +7785,7 @@
     "translations": {
       "en": [
         "to store",
-        "to store, to keep, to hold"
+        "to keep, to hold"
       ],
       "uk": [
         "зберігати"

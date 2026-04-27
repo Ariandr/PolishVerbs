@@ -172,8 +172,8 @@
     "translations": {
       "en": [
         "to expand",
-        "to broaden, to widen, to expand",
-        "to expand, to dilate"
+        "to broaden, to widen",
+        "to dilate"
       ],
       "uk": [
         "розширити"
@@ -495,7 +495,6 @@
     "translations": {
       "en": [
         "to drag, to draggle",
-        "to drag",
         "to gallivant, to roam, to wander, to tramp, to traipse"
       ],
       "uk": [
@@ -575,7 +574,7 @@
     "translations": {
       "en": [
         "to cover up",
-        "to cover up, to whitewash"
+        "to whitewash"
       ],
       "uk": [
         "прикривати"
@@ -655,7 +654,7 @@
     "translations": {
       "en": [
         "to relieve",
-        "to unburden, to relieve",
+        "to unburden",
         "to lighten"
       ],
       "uk": [
@@ -737,7 +736,7 @@
       "en": [
         "to deduct",
         "to count down",
-        "to deduct, to take away"
+        "to take away"
       ],
       "uk": [
         "відрахувати"
@@ -1216,7 +1215,7 @@
     "translations": {
       "en": [
         "to obtain",
-        "to obtain, to achieve, to attain, to gain"
+        "to achieve, to attain, to gain"
       ],
       "uk": [
         "отримати"
@@ -1296,8 +1295,7 @@
     "translations": {
       "en": [
         "to hesitate",
-        "to waver",
-        "to hesitate, to waver"
+        "to waver"
       ],
       "uk": [
         "вагатися"
@@ -1458,8 +1456,7 @@
     "translations": {
       "en": [
         "to lecture",
-        "to lay out, to set out",
-        "to lay out"
+        "to lay out, to set out"
       ],
       "uk": [
         "читати лекції",
@@ -2102,7 +2099,7 @@
       "en": [
         "to break up",
         "to part, to part ways",
-        "to split up, to break up"
+        "to split up"
       ],
       "uk": [
         "розійтися"
@@ -2263,7 +2260,7 @@
     "translations": {
       "en": [
         "to share",
-        "to make available, to release, to share"
+        "to make available, to release"
       ],
       "uk": [
         "поділитися",
@@ -2425,7 +2422,7 @@
     "translations": {
       "en": [
         "to incarnate",
-        "to embody, to personify, to incarnate",
+        "to embody, to personify",
         "to incorporate, to integrate"
       ],
       "uk": [
@@ -2507,7 +2504,7 @@
     "translations": {
       "en": [
         "to avoid",
-        "to beware, to avoid"
+        "to beware"
       ],
       "uk": [
         "уникати"
@@ -2587,7 +2584,7 @@
     "translations": {
       "en": [
         "to feed",
-        "to feed, to sustain",
+        "to sustain",
         "to feed off, to board"
       ],
       "uk": [
@@ -2832,7 +2829,7 @@
     "translations": {
       "en": [
         "to bestow",
-        "to bestow, to endow, to gift"
+        "to endow, to gift"
       ],
       "uk": [
         "дарувати"
@@ -3071,7 +3068,7 @@
     "translations": {
       "en": [
         "to taste",
-        "to taste, to try, to sample",
+        "to try, to sample",
         "to taste good"
       ],
       "uk": [
@@ -3309,7 +3306,7 @@
     "translations": {
       "en": [
         "to push out",
-        "to push out, to shove out",
+        "to shove out",
         "to crowd out, to force out"
       ],
       "uk": [
@@ -3550,7 +3547,7 @@
     "translations": {
       "en": [
         "to discredit",
-        "to compromise, to discredit, to disgrace, to humiliate",
+        "to compromise, to disgrace, to humiliate",
         "to disgrace oneself"
       ],
       "uk": [
@@ -3791,7 +3788,7 @@
     "translations": {
       "en": [
         "to associate",
-        "to associate, to commune, to consort",
+        "to commune, to consort",
         "to copulate"
       ],
       "uk": [
@@ -4038,7 +4035,7 @@
       "en": [
         "to look",
         "to see",
-        "to see, to be with someone, to spend time with"
+        "to be with someone, to spend time with"
       ],
       "uk": [
         "побачити",
@@ -4199,7 +4196,7 @@
     "translations": {
       "en": [
         "to smuggle",
-        "to smuggle, to sneak in",
+        "to sneak in",
         "to get in somewhere illegally"
       ],
       "uk": [
@@ -4281,7 +4278,7 @@
     "translations": {
       "en": [
         "to pay",
-        "to pay, to discharge",
+        "to discharge",
         "to fulfil, to deliver, to meet"
       ],
       "uk": [
@@ -4362,7 +4359,7 @@
     "translations": {
       "en": [
         "to explore",
-        "to bottom, to explore, to penetrate, to plumb, to probe",
+        "to bottom, to penetrate, to plumb, to probe",
         "to deepen, to dredge"
       ],
       "uk": [
@@ -4444,7 +4441,7 @@
     "translations": {
       "en": [
         "to fall",
-        "to fall, to drop, to sink, to settle",
+        "to drop, to sink, to settle",
         "to fall away, to decrease, to subside"
       ],
       "uk": [
@@ -4526,8 +4523,8 @@
     "translations": {
       "en": [
         "to transform",
-        "to reshape, to remodel, to transform, to make over",
-        "to transform, to convert"
+        "to reshape, to remodel, to make over",
+        "to convert"
       ],
       "uk": [
         "трансформувати"
@@ -4850,7 +4847,7 @@
     "translations": {
       "en": [
         "to estimate",
-        "to estimate, to evaluate",
+        "to evaluate",
         "to respect"
       ],
       "uk": [
@@ -4932,7 +4929,7 @@
     "translations": {
       "en": [
         "to climb",
-        "to scale, to climb"
+        "to scale"
       ],
       "uk": [
         "підніматися"
@@ -5333,7 +5330,7 @@
       "en": [
         "to catch",
         "to grab, to seize, to grasp",
-        "to catch, to trap"
+        "to trap"
       ],
       "uk": [
         "зловити"
@@ -5892,7 +5889,7 @@
     "translations": {
       "en": [
         "to deliver",
-        "to declaim, to speak, to deliver"
+        "to declaim, to speak"
       ],
       "uk": [
         "доставити"
@@ -5972,7 +5969,7 @@
     "translations": {
       "en": [
         "to wipe",
-        "to wipe, to mop",
+        "to mop",
         "to wipe off, to wipe away"
       ],
       "uk": [
@@ -6215,7 +6212,7 @@
     "translations": {
       "en": [
         "to empty",
-        "to empty, to clear",
+        "to clear",
         "to get emptied, to get cleared"
       ],
       "uk": [
@@ -6297,7 +6294,7 @@
     "translations": {
       "en": [
         "to tame",
-        "to tame, to domesticate",
+        "to domesticate",
         "to accustom, to familiarise"
       ],
       "uk": [
@@ -7016,7 +7013,7 @@
     "translations": {
       "en": [
         "to shape",
-        "to form, to shape",
+        "to form",
         "to take shape, to shape up"
       ],
       "uk": [
@@ -7098,8 +7095,8 @@
     "translations": {
       "en": [
         "to shake",
-        "to rock, to shake, to rattle",
-        "to shake, to shock, to jolt"
+        "to rock, to rattle",
+        "to shock, to jolt"
       ],
       "uk": [
         "струсити"
@@ -7260,8 +7257,8 @@
     "translations": {
       "en": [
         "to sink",
-        "to sink, to submerge",
-        "to sink, to go under"
+        "to submerge",
+        "to go under"
       ],
       "uk": [
         "тонути, тонути"
@@ -7741,7 +7738,7 @@
     "translations": {
       "en": [
         "to announce",
-        "to announce, to declare, to proclaim"
+        "to declare, to proclaim"
       ],
       "uk": [
         "оголосити"
