@@ -1,5 +1,5 @@
-import { useEffect, useMemo, useRef, useState } from 'react'
-import { Filter, Moon, Search, Sun } from 'lucide-react'
+import { useEffect, useMemo, useState } from 'react'
+import { ArrowLeft, Filter, Moon, Search, Sun } from 'lucide-react'
 import './App.css'
 import { CreateListModal, ListPickerModal } from './components/ListModals'
 import { StudyLists } from './components/StudyLists'
@@ -71,7 +71,6 @@ const getSearchScore = (record: SearchRecord, query: string) => {
 }
 
 function App() {
-  const detailRef = useRef<HTMLDivElement>(null)
   const [progress, setProgress] = useState<StudyProgress>(() => loadProgress())
   const [themePreference, setThemePreference] = useState<ThemePreference>(() => loadThemePreference())
   const [selectedVerbId, setSelectedVerbId] = useState(verbs[0]?.id ?? '')
@@ -79,6 +78,8 @@ function App() {
   const [learnedFilter, setLearnedFilter] = useState<LearnedFilter>('all')
   const [aspectFilter, setAspectFilter] = useState<Aspect | 'all'>('all')
   const [rangeFilter, setRangeFilter] = useState<RangeFilter>('all')
+  const [mobileFiltersOpen, setMobileFiltersOpen] = useState(false)
+  const [mobileDetailOpen, setMobileDetailOpen] = useState(false)
   const [showCreateList, setShowCreateList] = useState(false)
   const [createListVerbId, setCreateListVerbId] = useState<string | null>(null)
   const [listPickerVerbId, setListPickerVerbId] = useState<string | null>(null)
@@ -217,7 +218,8 @@ function App() {
     setSelectedVerbId(verbId)
     if (window.matchMedia('(max-width: 980px)').matches) {
       window.requestAnimationFrame(() => {
-        detailRef.current?.scrollIntoView({ behavior: 'smooth', block: 'start' })
+        setMobileDetailOpen(true)
+        window.scrollTo({ top: 0, behavior: 'auto' })
       })
     }
   }
@@ -225,9 +227,10 @@ function App() {
   const listPickerVerb = listPickerVerbId ? verbs.find((verb) => verb.id === listPickerVerbId) : undefined
   const nextThemePreference = themePreference === 'dark' ? 'light' : 'dark'
   const nextThemeLabel = nextThemePreference === 'dark' ? 'ciemny' : 'jasny'
+  const activeFilterCount = [learnedFilter !== 'all', aspectFilter !== 'all', rangeFilter !== 'all'].filter(Boolean).length
 
   return (
-    <main className="app-shell" data-theme={themePreference}>
+    <main className={`app-shell ${mobileDetailOpen ? 'mobile-detail-open' : ''}`} data-theme={themePreference}>
       <header className="app-header">
         <button
           className="theme-toggle"
@@ -251,17 +254,31 @@ function App() {
         </div>
       </header>
 
-      <section className="toolbar" aria-label="Wyszukiwanie i filtry">
-        <label className="search-field">
-          <Search size={18} />
-          <input
-            type="search"
-            value={query}
-            placeholder="Szukaj po bezokoliczniku, formach, angielskim lub ukraińskim"
-            onChange={(event) => setQuery(event.target.value)}
-          />
-        </label>
-        <div className="filter-group">
+      <section className={`toolbar ${mobileFiltersOpen ? 'filters-open' : ''}`} aria-label="Wyszukiwanie i filtry">
+        <div className="toolbar-search-row">
+          <label className="search-field">
+            <Search size={18} />
+            <input
+              type="search"
+              value={query}
+              placeholder="Szukaj po bezokoliczniku, formach, angielskim lub ukraińskim"
+              onChange={(event) => setQuery(event.target.value)}
+            />
+          </label>
+          <button
+            className={`filter-toggle ${activeFilterCount > 0 ? 'active' : ''}`}
+            type="button"
+            aria-controls="verb-filters"
+            aria-expanded={mobileFiltersOpen}
+            aria-label={mobileFiltersOpen ? 'Ukryj filtry' : 'Pokaż filtry'}
+            onClick={() => setMobileFiltersOpen((open) => !open)}
+          >
+            <Filter size={17} />
+            <span>Filtry</span>
+            {activeFilterCount > 0 ? <small>{activeFilterCount}</small> : null}
+          </button>
+        </div>
+        <div className="filter-group" id="verb-filters">
           <Filter size={17} />
           <select value={learnedFilter} onChange={(event) => setLearnedFilter(event.target.value as LearnedFilter)}>
             <option value="all">Cały postęp</option>
@@ -326,7 +343,13 @@ function App() {
         </aside>
 
         {selectedVerb ? (
-          <div className="detail-anchor" ref={detailRef}>
+          <div className="detail-anchor">
+            <div className="mobile-detail-nav">
+              <button className="secondary-button detail-back" type="button" onClick={() => setMobileDetailOpen(false)}>
+                <ArrowLeft size={17} />
+                Lista
+              </button>
+            </div>
             <VerbDetail verb={selectedVerb} />
           </div>
         ) : (
