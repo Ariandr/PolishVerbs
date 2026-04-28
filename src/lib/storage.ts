@@ -14,6 +14,27 @@ export interface VerbStudyProgress {
   knowCount: number
   reviewAgainCount: number
   lastReviewedAt: string | null
+  dueAt: string | null
+  intervalLevel: number
+  correctCount: number
+  incorrectCount: number
+  lastMistakes: PracticeMistake[]
+}
+
+export type PracticePromptType =
+  | 'meaning-to-infinitive'
+  | 'infinitive-to-meaning'
+  | 'present-form'
+  | 'past-form'
+  | 'cloze-example'
+  | 'game'
+
+export interface PracticeMistake {
+  id: string
+  promptType: PracticePromptType
+  expected: string
+  given: string
+  createdAt: string
 }
 
 export interface StudyProgress {
@@ -34,9 +55,20 @@ export interface GameSourceSettings {
   rankEnd: string
 }
 
+export type PracticeAnswerMode = 'reveal' | 'typed'
+export type PracticePromptMode = 'meanings' | 'infinitives' | 'present' | 'past' | 'forms' | 'cloze' | 'mixed'
+export type PracticeDifficulty = 'normal' | 'hard'
+
+export interface PracticeSettings {
+  answerMode: PracticeAnswerMode
+  promptMode: PracticePromptMode
+  gameDifficulty: PracticeDifficulty
+}
+
 export interface AppSettings {
   showQuickFilters: boolean
   gameSource: GameSourceSettings
+  practice: PracticeSettings
 }
 
 const storageKey = 'polish-verbs-progress-v1'
@@ -57,6 +89,11 @@ const defaultAppSettings: AppSettings = {
     listId: null,
     rankStart: '',
     rankEnd: '',
+  },
+  practice: {
+    answerMode: 'reveal',
+    promptMode: 'mixed',
+    gameDifficulty: 'normal',
   },
 }
 
@@ -87,6 +124,32 @@ const normalizeGameSource = (value: unknown): GameSourceSettings => {
   }
 }
 
+const isPracticeAnswerMode = (value: unknown): value is PracticeAnswerMode => value === 'reveal' || value === 'typed'
+
+const isPracticePromptMode = (value: unknown): value is PracticePromptMode =>
+  value === 'meanings' ||
+  value === 'infinitives' ||
+  value === 'present' ||
+  value === 'past' ||
+  value === 'forms' ||
+  value === 'cloze' ||
+  value === 'mixed'
+
+const isPracticeDifficulty = (value: unknown): value is PracticeDifficulty => value === 'normal' || value === 'hard'
+
+const normalizePracticeSettings = (value: unknown): PracticeSettings => {
+  if (!value || typeof value !== 'object') {
+    return defaultAppSettings.practice
+  }
+
+  const settings = value as Record<string, unknown>
+  return {
+    answerMode: isPracticeAnswerMode(settings.answerMode) ? settings.answerMode : defaultAppSettings.practice.answerMode,
+    promptMode: isPracticePromptMode(settings.promptMode) ? settings.promptMode : defaultAppSettings.practice.promptMode,
+    gameDifficulty: isPracticeDifficulty(settings.gameDifficulty) ? settings.gameDifficulty : defaultAppSettings.practice.gameDifficulty,
+  }
+}
+
 const isVerbStudyStatus = (value: unknown): value is VerbStudyStatus =>
   value === 'new' || value === 'learning' || value === 'learned'
 
@@ -106,6 +169,27 @@ const normalizeVerbProgress = (value: unknown): VerbStudyProgress | null => {
     knowCount: typeof progress.knowCount === 'number' ? progress.knowCount : 0,
     reviewAgainCount: typeof progress.reviewAgainCount === 'number' ? progress.reviewAgainCount : 0,
     lastReviewedAt: typeof progress.lastReviewedAt === 'string' ? progress.lastReviewedAt : null,
+    dueAt: typeof progress.dueAt === 'string' ? progress.dueAt : null,
+    intervalLevel: typeof progress.intervalLevel === 'number' ? progress.intervalLevel : 0,
+    correctCount: typeof progress.correctCount === 'number' ? progress.correctCount : 0,
+    incorrectCount: typeof progress.incorrectCount === 'number' ? progress.incorrectCount : 0,
+    lastMistakes: Array.isArray(progress.lastMistakes)
+      ? progress.lastMistakes
+          .filter((mistake): mistake is PracticeMistake => {
+            if (!mistake || typeof mistake !== 'object') {
+              return false
+            }
+            const item = mistake as Partial<PracticeMistake>
+            return (
+              typeof item.id === 'string' &&
+              typeof item.expected === 'string' &&
+              typeof item.given === 'string' &&
+              typeof item.createdAt === 'string' &&
+              typeof item.promptType === 'string'
+            )
+          })
+          .slice(-8)
+      : [],
   }
 }
 
@@ -121,6 +205,11 @@ export function createVerbStudyProgress(status: VerbStudyStatus): VerbStudyProgr
     knowCount: 0,
     reviewAgainCount: 0,
     lastReviewedAt: null,
+    dueAt: null,
+    intervalLevel: 0,
+    correctCount: 0,
+    incorrectCount: 0,
+    lastMistakes: [],
   }
 }
 
@@ -207,6 +296,7 @@ export function loadAppSettings(): AppSettings {
           ? parsed.showQuickFilters
           : defaultAppSettings.showQuickFilters,
       gameSource: normalizeGameSource(parsed.gameSource),
+      practice: normalizePracticeSettings(parsed.practice),
     }
   } catch {
     return defaultAppSettings

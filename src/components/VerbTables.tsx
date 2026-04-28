@@ -1,6 +1,7 @@
-import { BookOpenCheck, Check, ChevronLeft, ChevronRight, Plus, Star } from 'lucide-react'
+import { BookOpenCheck, Check, ChevronLeft, ChevronRight, Dumbbell, Plus, Star, Volume2 } from 'lucide-react'
 import type { PastForms, PresentForms, VerbEntry } from '../data/schema'
 import { aspectLabels } from '../data/labels'
+import { getRelatedVerbs } from '../lib/practice'
 import { HighlightedText } from './HighlightedText'
 
 const presentRows: Array<[string, keyof PresentForms]> = [
@@ -69,10 +70,15 @@ interface VerbDetailProps {
   learned?: boolean
   inList?: boolean
   selectedListId?: string | null
+  allVerbs?: VerbEntry[]
   onPreviousVerb?: () => void
   onNextVerb?: () => void
   onToggleLearned?: () => void
   onOpenListPicker?: () => void
+  onSelectRelatedVerb?: (verbId: string) => void
+  onPracticeVerb?: () => void
+  onPracticeForms?: () => void
+  onPracticeExamples?: () => void
 }
 
 export function VerbDetail({
@@ -83,12 +89,28 @@ export function VerbDetail({
   learned = false,
   inList = false,
   selectedListId = null,
+  allVerbs = [],
   onPreviousVerb,
   onNextVerb,
   onToggleLearned,
   onOpenListPicker,
+  onSelectRelatedVerb,
+  onPracticeVerb,
+  onPracticeForms,
+  onPracticeExamples,
 }: VerbDetailProps) {
   const example = verb.examples[0]
+  const related = getRelatedVerbs(verb, allVerbs)
+  const canSpeak = typeof window !== 'undefined' && 'speechSynthesis' in window
+  const speak = (text: string) => {
+    if (!canSpeak) {
+      return
+    }
+    const utterance = new SpeechSynthesisUtterance(text)
+    utterance.lang = 'pl-PL'
+    window.speechSynthesis.cancel()
+    window.speechSynthesis.speak(utterance)
+  }
 
   return (
     <article className="detail-panel">
@@ -120,6 +142,27 @@ export function VerbDetail({
         </div>
       </div>
 
+      <section className="detail-action-row" aria-label="Ćwiczenia i wymowa">
+        <button className="secondary-button" type="button" onClick={onPracticeVerb}>
+          <Dumbbell size={16} />
+          Ćwicz czasownik
+        </button>
+        <button className="secondary-button" type="button" onClick={onPracticeForms}>
+          Formy
+        </button>
+        <button className="secondary-button" type="button" onClick={onPracticeExamples}>
+          Przykład
+        </button>
+        <button className="secondary-button" type="button" disabled={!canSpeak} onClick={() => speak(verb.infinitive)}>
+          <Volume2 size={16} />
+          Wymowa
+        </button>
+        <button className="secondary-button" type="button" disabled={!canSpeak} onClick={() => speak(verb.forms.present.ja)}>
+          <Volume2 size={16} />
+          Forma ja
+        </button>
+      </section>
+
       <section className="detail-section">
         <div className="section-title">Formy</div>
         <PresentTable forms={verb.forms.present} highlightQuery={highlightQuery} />
@@ -136,6 +179,10 @@ export function VerbDetail({
         <p>
           <HighlightedText text={example.en} query={highlightQuery} />
         </p>
+        <button className="secondary-button example-speak" type="button" disabled={!canSpeak} onClick={() => speak(example.pl)}>
+          <Volume2 size={15} />
+          Odtwórz przykład
+        </button>
       </section>
 
       <section className="detail-section">
@@ -150,6 +197,24 @@ export function VerbDetail({
           <span key={note}>{note}</span>
         ))}
       </section>
+
+      {(related.pair || related.family.length) ? (
+        <section className="detail-section">
+          <div className="section-title">Rodzina i para aspektowa</div>
+          <div className="related-verbs">
+            {related.pair ? (
+              <button type="button" onClick={() => onSelectRelatedVerb?.(related.pair?.id ?? '')}>
+                Para: {related.pair.infinitive}
+              </button>
+            ) : null}
+            {related.family.map((item) => (
+              <button type="button" key={item.id} onClick={() => onSelectRelatedVerb?.(item.id)}>
+                {item.infinitive}
+              </button>
+            ))}
+          </div>
+        </section>
+      ) : null}
 
       <section className="mobile-detail-actions" aria-label="Akcje czasownika">
         <button className={`secondary-button ${learned ? 'active-mobile-action' : ''}`} type="button" onClick={onToggleLearned}>

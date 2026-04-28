@@ -2,6 +2,8 @@ import { Check, RotateCcw, X } from 'lucide-react'
 import { useMemo, useState } from 'react'
 import { aspectLabels } from '../data/labels'
 import type { VerbEntry } from '../data/schema'
+import { buildPracticePrompts, checkTypedAnswer, type PracticeAnswerEvent, type PracticePrompt } from '../lib/practice'
+import type { PracticeAnswerMode, PracticePromptMode } from '../lib/storage'
 import { PastTable, PresentTable } from './VerbTables'
 
 const sessionSize = 20
@@ -12,22 +14,37 @@ interface StudyModeProps {
   verbs: VerbEntry[]
   onClose: () => void
   onGrade: (verbId: string, grade: StudyGrade) => void
+  onAnswer?: (event: PracticeAnswerEvent) => void
+  answerMode?: PracticeAnswerMode
+  promptMode?: PracticePromptMode
+  title?: string
 }
 
-const shuffleVerbs = (verbs: VerbEntry[]) =>
-  [...verbs]
-    .map((verb) => ({ verb, sort: Math.random() }))
+const shuffleCards = (verbs: VerbEntry[], promptMode: PracticePromptMode) =>
+  buildPracticePrompts(verbs, promptMode, sessionSize)
+    .map((prompt) => ({ prompt, sort: Math.random() }))
     .sort((left, right) => left.sort - right.sort)
     .slice(0, sessionSize)
-    .map(({ verb }) => verb)
+    .map(({ prompt }) => prompt)
 
-export function StudyMode({ verbs, onClose, onGrade }: StudyModeProps) {
-  const [queue, setQueue] = useState(() => shuffleVerbs(verbs))
+export function StudyMode({
+  verbs,
+  onClose,
+  onGrade,
+  onAnswer,
+  answerMode = 'reveal',
+  promptMode = 'mixed',
+  title = 'Powtórka czasowników',
+}: StudyModeProps) {
+  const [queue, setQueue] = useState<PracticePrompt[]>(() => shuffleCards(verbs, promptMode))
   const [currentIndex, setCurrentIndex] = useState(0)
   const [revealed, setRevealed] = useState(false)
+  const [typedAnswer, setTypedAnswer] = useState('')
+  const [typedResult, setTypedResult] = useState<null | { correct: boolean; given: string }>(null)
   const [knownCount, setKnownCount] = useState(0)
   const [reviewCount, setReviewCount] = useState(0)
-  const currentVerb = queue[currentIndex]
+  const currentPrompt = queue[currentIndex]
+  const currentVerb = currentPrompt?.verb
   const completed = currentIndex >= queue.length
   const progressLabel = useMemo(() => {
     if (!queue.length) {
@@ -37,9 +54,11 @@ export function StudyMode({ verbs, onClose, onGrade }: StudyModeProps) {
   }, [currentIndex, queue.length])
 
   const restart = () => {
-    setQueue(shuffleVerbs(verbs))
+    setQueue(shuffleCards(verbs, promptMode))
     setCurrentIndex(0)
     setRevealed(false)
+    setTypedAnswer('')
+    setTypedResult(null)
     setKnownCount(0)
     setReviewCount(0)
   }
@@ -55,7 +74,35 @@ export function StudyMode({ verbs, onClose, onGrade }: StudyModeProps) {
     } else {
       setReviewCount((count) => count + 1)
     }
+    setTypedAnswer('')
+    setTypedResult(null)
     setRevealed(false)
+    setCurrentIndex((index) => index + 1)
+  }
+
+  const submitTypedAnswer = () => {
+    if (!currentPrompt || typedResult) {
+      return
+    }
+    const correct = checkTypedAnswer(typedAnswer, currentPrompt.answer)
+    setTypedResult({ correct, given: typedAnswer })
+    if (correct) {
+      setKnownCount((count) => count + 1)
+    } else {
+      setReviewCount((count) => count + 1)
+    }
+    onAnswer?.({
+      verbId: currentPrompt.verb.id,
+      correct,
+      promptType: currentPrompt.type,
+      expected: currentPrompt.answer,
+      given: typedAnswer,
+    })
+  }
+
+  const nextTypedPrompt = () => {
+    setTypedAnswer('')
+    setTypedResult(null)
     setCurrentIndex((index) => index + 1)
   }
 
@@ -65,7 +112,7 @@ export function StudyMode({ verbs, onClose, onGrade }: StudyModeProps) {
         <header className="study-topbar">
           <div>
             <div className="section-title">Tryb nauki</div>
-            <h2 id="study-title">Powtórka czasowników</h2>
+            <h2 id="study-title">{title}</h2>
           </div>
           <div className="study-topbar-actions">
             <span className="study-progress">{completed ? `${queue.length} / ${queue.length}` : progressLabel}</span>
@@ -115,20 +162,53 @@ export function StudyMode({ verbs, onClose, onGrade }: StudyModeProps) {
             <div className="study-card-head">
               <span>#{currentVerb.frequencyRank}</span>
               <span>{aspectLabels[currentVerb.aspect]}</span>
+              <span>{answerMode === 'typed' ? 'wpisywanie' : 'fiszki'}</span>
             </div>
 
             <section className="study-prompt">
-              <div className="section-title">Znaczenie</div>
-              <p>{currentVerb.translations.en.join(', ')}</p>
-              <p>{currentVerb.translations.uk.join(', ')}</p>
+              <div className="section-title">{currentPrompt.type === 'cloze-example' ? 'Uzupełnij przykład' : 'Pytanie'}</div>
+              <p>{currentPrompt.prompt}</p>
+              <p>{currentPrompt.detail}</p>
             </section>
 
-            {revealed ? (
+            {answerMode === 'typed' ? (
+              <section className="typed-answer-panel">
+                <label>
+                  <span>Odpowiedź</span>
+                  <input
+                    type="text"
+                    value={typedAnswer}
+                    disabled={Boolean(typedResult)}
+                    autoFocus
+                    onChange={(event) => setTypedAnswer(event.target.value)}
+                    onKeyDown={(event) => {
+                      if (event.key === 'Enter') {
+                        event.preventDefault()
+                        if (typedResult) {
+                          nextTypedPrompt()
+                        } else {
+                          submitTypedAnswer()
+                        }
+                      }
+                    }}
+                  />
+                </label>
+                {typedResult ? (
+                  <div className={`typed-result ${typedResult.correct ? 'correct' : 'wrong'}`}>
+                    {typedResult.correct ? 'Dobrze.' : `Poprawnie: ${currentPrompt.answer}`}
+                    {currentPrompt.displayAnswer ? <small>{currentPrompt.displayAnswer}</small> : null}
+                  </div>
+                ) : null}
+              </section>
+            ) : null}
+
+            {(revealed || typedResult) ? (
               <div className="study-answer">
                 <div className="detail-head">
                   <div>
                     <div className="rank-line">Odpowiedź</div>
-                    <h2>{currentVerb.infinitive}</h2>
+                    <h2>{currentPrompt.answer}</h2>
+                    <p>{currentVerb.infinitive}</p>
                   </div>
                   <div className="metric-stack" aria-label="Dane częstotliwości">
                     <span>{currentVerb.frequency.ipm.toFixed(2)} IPM</span>
@@ -156,7 +236,17 @@ export function StudyMode({ verbs, onClose, onGrade }: StudyModeProps) {
             ) : null}
 
             <div className="study-actions">
-              {revealed ? (
+              {answerMode === 'typed' ? (
+                typedResult ? (
+                  <button className="primary-button" type="button" onClick={nextTypedPrompt}>
+                    {currentIndex === queue.length - 1 ? 'Zakończ' : 'Następne'}
+                  </button>
+                ) : (
+                  <button className="primary-button" type="button" disabled={!typedAnswer.trim()} onClick={submitTypedAnswer}>
+                    Sprawdź
+                  </button>
+                )
+              ) : revealed ? (
                 <>
                   <button className="secondary-button study-review-button" type="button" onClick={() => gradeCurrentVerb('review')}>
                     Do powtórki

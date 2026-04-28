@@ -34,6 +34,7 @@ import {
   type GameId,
 } from '../lib/gameEngine'
 import type { AppSettings, GameSourceBase, GameSourceSettings, StudyList } from '../lib/storage'
+import type { PracticeAnswerEvent } from '../lib/practice'
 
 interface GamesPageProps {
   allVerbs: VerbEntry[]
@@ -41,6 +42,7 @@ interface GamesPageProps {
   lists: StudyList[]
   appSettings: AppSettings
   onUpdateAppSettings: (settings: AppSettings) => void
+  onAnswer?: (event: PracticeAnswerEvent) => void
   onBack: () => void
 }
 
@@ -203,6 +205,7 @@ export function GamesPage({
   lists,
   appSettings,
   onUpdateAppSettings,
+  onAnswer,
   onBack,
 }: GamesPageProps) {
   const [selectedGameId, setSelectedGameId] = useState<GameId | null>(null)
@@ -268,6 +271,7 @@ export function GamesPage({
           game={selectedGame}
           verbs={gameVerbs}
           onRestart={restartGame}
+          onAnswer={onAnswer}
         />
       ) : (
         <div className="games-grid">
@@ -405,7 +409,17 @@ function GameSourceBlocked({ message }: { message: string }) {
   )
 }
 
-function ActiveGame({ game, verbs, onRestart }: { game: GameMeta; verbs: VerbEntry[]; onRestart: () => void }) {
+function ActiveGame({
+  game,
+  verbs,
+  onRestart,
+  onAnswer,
+}: {
+  game: GameMeta
+  verbs: VerbEntry[]
+  onRestart: () => void
+  onAnswer?: (event: PracticeAnswerEvent) => void
+}) {
   if (game.id === 'quick-test') {
     return (
       <ChoiceQuestionGame
@@ -413,16 +427,17 @@ function ActiveGame({ game, verbs, onRestart }: { game: GameMeta; verbs: VerbEnt
         emptyText="Ten test potrzebuje co najmniej 4 czasowników z różnymi odpowiedziami."
         questions={buildQuickQuestions(verbs)}
         onRestart={onRestart}
+        onAnswer={onAnswer}
       />
     )
   }
 
   if (game.id === 'meaning-match') {
-    return <MeaningMatchGame verbs={verbs} onRestart={onRestart} />
+    return <MeaningMatchGame verbs={verbs} onRestart={onRestart} onAnswer={onAnswer} />
   }
 
   if (game.id === 'aspect-sort') {
-    return <AspectSortGame verbs={verbs} onRestart={onRestart} />
+    return <AspectSortGame verbs={verbs} onRestart={onRestart} onAnswer={onAnswer} />
   }
 
   if (game.id === 'conjugation-wheel') {
@@ -432,17 +447,18 @@ function ActiveGame({ game, verbs, onRestart }: { game: GameMeta; verbs: VerbEnt
         emptyText="Koło odmiany potrzebuje co najmniej 4 różnych form z obecnego widoku."
         questions={buildFormQuestions(verbs, 'wheel')}
         onRestart={onRestart}
+        onAnswer={onAnswer}
         leadIcon={<Dices size={28} />}
       />
     )
   }
 
   if (game.id === 'open-cards') {
-    return <OpenCardsGame verbs={verbs} onRestart={onRestart} />
+    return <OpenCardsGame verbs={verbs} onRestart={onRestart} onAnswer={onAnswer} />
   }
 
   if (game.id === 'infinitive-anagram') {
-    return <AnagramGame verbs={verbs} onRestart={onRestart} />
+    return <AnagramGame verbs={verbs} onRestart={onRestart} onAnswer={onAnswer} />
   }
 
   if (game.id === 'memory-pairs') {
@@ -455,6 +471,7 @@ function ActiveGame({ game, verbs, onRestart }: { game: GameMeta; verbs: VerbEnt
       emptyText="Ta gra potrzebuje co najmniej 4 różnych form z obecnego widoku."
       questions={buildFormQuestions(verbs, 'missing')}
       onRestart={onRestart}
+      onAnswer={onAnswer}
     />
   )
 }
@@ -510,12 +527,14 @@ function ChoiceQuestionGame({
   emptyText,
   questions,
   onRestart,
+  onAnswer,
   leadIcon,
 }: {
   title: string
   emptyText: string
   questions: ChoiceQuestion[]
   onRestart: () => void
+  onAnswer?: (event: PracticeAnswerEvent) => void
   leadIcon?: ReactNode
 }) {
   const [currentIndex, setCurrentIndex] = useState(0)
@@ -543,6 +562,17 @@ function ChoiceQuestionGame({
     if (answer === question.answer) {
       setCorrect((count) => count + 1)
     }
+    onAnswer?.({
+      verbId: question.verb.id,
+      correct: answer === question.answer,
+      promptType: question.detail.includes('czas teraźniejszy')
+        ? 'present-form'
+        : question.detail.includes('czas przeszły')
+          ? 'past-form'
+          : 'game',
+      expected: question.answer,
+      given: answer,
+    })
   }
 
   const nextQuestion = () => {
@@ -589,7 +619,15 @@ function ChoiceQuestionGame({
   )
 }
 
-function MeaningMatchGame({ verbs, onRestart }: { verbs: VerbEntry[]; onRestart: () => void }) {
+function MeaningMatchGame({
+  verbs,
+  onRestart,
+  onAnswer,
+}: {
+  verbs: VerbEntry[]
+  onRestart: () => void
+  onAnswer?: (event: PracticeAnswerEvent) => void
+}) {
   const pairs = useMemo(() => buildMeaningPairs(verbs), [verbs])
   const rightColumn = useMemo(() => shuffleItems(pairs), [pairs])
   const [selectedLeft, setSelectedLeft] = useState<string | null>(null)
@@ -615,6 +653,17 @@ function MeaningMatchGame({ verbs, onRestart }: { verbs: VerbEntry[]; onRestart:
       setMessage('Dobra para.')
     } else {
       setMessage('To nie ta para.')
+    }
+    const pair = pairs.find((item) => item.id === selectedLeft)
+    const chosen = pairs.find((item) => item.id === id)
+    if (pair) {
+      onAnswer?.({
+        verbId: pair.id,
+        correct: selectedLeft === id,
+        promptType: 'game',
+        expected: pair.meaning,
+        given: chosen?.meaning ?? id,
+      })
     }
     setSelectedLeft(null)
   }
@@ -655,7 +704,15 @@ function MeaningMatchGame({ verbs, onRestart }: { verbs: VerbEntry[]; onRestart:
   )
 }
 
-function AspectSortGame({ verbs, onRestart }: { verbs: VerbEntry[]; onRestart: () => void }) {
+function AspectSortGame({
+  verbs,
+  onRestart,
+  onAnswer,
+}: {
+  verbs: VerbEntry[]
+  onRestart: () => void
+  onAnswer?: (event: PracticeAnswerEvent) => void
+}) {
   const items = useMemo(() => buildAspectItems(verbs), [verbs])
   const [selectedId, setSelectedId] = useState<string | null>(null)
   const [results, setResults] = useState<Record<string, { bucket: string; correct: boolean }>>({})
@@ -671,7 +728,7 @@ function AspectSortGame({ verbs, onRestart }: { verbs: VerbEntry[]; onRestart: (
     return <GameSummary correct={correct} attempts={attempts} onRestart={onRestart} />
   }
 
-  const assignBucket = (bucket: string) => {
+  const assignBucket = (bucket: keyof typeof aspectBucketLabels) => {
     if (!selectedItem) {
       return
     }
@@ -682,6 +739,13 @@ function AspectSortGame({ verbs, onRestart }: { verbs: VerbEntry[]; onRestart: (
         correct: selectedItem.aspect === bucket,
       },
     }))
+    onAnswer?.({
+      verbId: selectedItem.id,
+      correct: selectedItem.aspect === bucket,
+      promptType: 'game',
+      expected: aspectBucketLabels[selectedItem.aspect],
+      given: aspectBucketLabels[bucket],
+    })
     setSelectedId(null)
   }
 
@@ -718,7 +782,15 @@ function AspectSortGame({ verbs, onRestart }: { verbs: VerbEntry[]; onRestart: (
   )
 }
 
-function OpenCardsGame({ verbs, onRestart }: { verbs: VerbEntry[]; onRestart: () => void }) {
+function OpenCardsGame({
+  verbs,
+  onRestart,
+  onAnswer,
+}: {
+  verbs: VerbEntry[]
+  onRestart: () => void
+  onAnswer?: (event: PracticeAnswerEvent) => void
+}) {
   const questions = useMemo(() => buildOpenCardQuestions(verbs), [verbs])
   const [activeIndex, setActiveIndex] = useState<number | null>(null)
   const [cardStates, setCardStates] = useState<Record<string, 'correct' | 'wrong'>>({})
@@ -744,6 +816,13 @@ function OpenCardsGame({ verbs, onRestart }: { verbs: VerbEntry[]; onRestart: ()
       ...current,
       [activeQuestion.id]: answer === activeQuestion.answer ? 'correct' : 'wrong',
     }))
+    onAnswer?.({
+      verbId: activeQuestion.verb.id,
+      correct: answer === activeQuestion.answer,
+      promptType: 'game',
+      expected: activeQuestion.answer,
+      given: answer,
+    })
   }
 
   return (
@@ -805,7 +884,15 @@ function OpenCardsGame({ verbs, onRestart }: { verbs: VerbEntry[]; onRestart: ()
   )
 }
 
-function AnagramGame({ verbs, onRestart }: { verbs: VerbEntry[]; onRestart: () => void }) {
+function AnagramGame({
+  verbs,
+  onRestart,
+  onAnswer,
+}: {
+  verbs: VerbEntry[]
+  onRestart: () => void
+  onAnswer?: (event: PracticeAnswerEvent) => void
+}) {
   const questions = useMemo(() => buildAnagramQuestions(verbs), [verbs])
   const [currentIndex, setCurrentIndex] = useState(0)
   const [pickedTileIds, setPickedTileIds] = useState<string[]>([])
@@ -832,6 +919,13 @@ function AnagramGame({ verbs, onRestart }: { verbs: VerbEntry[]; onRestart: () =
     if (answer === question.answer) {
       setCorrect((count) => count + 1)
     }
+    onAnswer?.({
+      verbId: question.verb.id,
+      correct: answer === question.answer,
+      promptType: 'game',
+      expected: question.answer,
+      given: answer,
+    })
   }
 
   const nextQuestion = () => {

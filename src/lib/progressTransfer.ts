@@ -1,4 +1,4 @@
-import type { StudyList, StudyProgress, ThemePreference, VerbStudyProgress } from './storage'
+import { createVerbStudyProgress, type PracticeMistake, type StudyList, type StudyProgress, type ThemePreference, type VerbStudyProgress } from './storage'
 
 export interface ProgressExportFile {
   app: 'PolishVerbs'
@@ -34,6 +34,37 @@ const isVerbProgress = (value: unknown): value is VerbStudyProgress => {
   )
 }
 
+const normalizeMistakes = (value: unknown): PracticeMistake[] => {
+  if (!Array.isArray(value)) {
+    return []
+  }
+
+  return value
+    .filter((mistake): mistake is PracticeMistake => {
+      if (!isObject(mistake)) {
+        return false
+      }
+      return (
+        typeof mistake.id === 'string' &&
+        typeof mistake.promptType === 'string' &&
+        typeof mistake.expected === 'string' &&
+        typeof mistake.given === 'string' &&
+        typeof mistake.createdAt === 'string'
+      )
+    })
+    .slice(-8)
+}
+
+const normalizeVerbProgress = (progress: VerbStudyProgress): VerbStudyProgress => ({
+  ...createVerbStudyProgress(progress.status),
+  ...progress,
+  dueAt: typeof progress.dueAt === 'string' ? progress.dueAt : null,
+  intervalLevel: typeof progress.intervalLevel === 'number' ? progress.intervalLevel : 0,
+  correctCount: typeof progress.correctCount === 'number' ? progress.correctCount : 0,
+  incorrectCount: typeof progress.incorrectCount === 'number' ? progress.incorrectCount : 0,
+  lastMistakes: normalizeMistakes(progress.lastMistakes),
+})
+
 const isStudyList = (value: unknown): value is StudyList => {
   if (!isObject(value)) {
     return false
@@ -61,7 +92,9 @@ const parseStudyProgress = (value: unknown): StudyProgress => {
 
   const parsedVerbProgress = isObject(value.verbProgress) ? value.verbProgress : {}
   const verbProgress = Object.fromEntries(
-    Object.entries(parsedVerbProgress).filter((entry): entry is [string, VerbStudyProgress] => isVerbProgress(entry[1])),
+    Object.entries(parsedVerbProgress)
+      .filter((entry): entry is [string, VerbStudyProgress] => isVerbProgress(entry[1]))
+      .map(([verbId, progress]) => [verbId, normalizeVerbProgress(progress)]),
   )
   const learnedVerbIds = Array.isArray(value.learnedVerbIds)
     ? value.learnedVerbIds.filter((verbId): verbId is string => typeof verbId === 'string')
@@ -69,11 +102,9 @@ const parseStudyProgress = (value: unknown): StudyProgress => {
 
   for (const verbId of learnedVerbIds) {
     verbProgress[verbId] = {
+      ...createVerbStudyProgress('learned'),
+      ...verbProgress[verbId],
       status: 'learned',
-      reviewCount: verbProgress[verbId]?.reviewCount ?? 0,
-      knowCount: verbProgress[verbId]?.knowCount ?? 0,
-      reviewAgainCount: verbProgress[verbId]?.reviewAgainCount ?? 0,
-      lastReviewedAt: verbProgress[verbId]?.lastReviewedAt ?? null,
     }
   }
 

@@ -269,10 +269,15 @@ select {
   position: sticky;
   top: 82px;
   display: grid;
-  grid-template-rows: auto auto minmax(0, 1fr);
+  grid-template-rows: auto auto auto minmax(0, 1fr);
   gap: 12px;
+  min-height: 0;
   max-height: calc(100svh - 98px);
   overflow: hidden;
+}
+
+.sidebar > * {
+  min-width: 0;
 }
 
 .lists-panel,
@@ -415,6 +420,82 @@ select {
 .settings-toggle strong,
 .settings-toggle small {
   display: block;
+}
+
+.settings-field {
+  display: grid;
+  gap: 7px;
+}
+
+.settings-field span {
+  color: var(--muted-strong);
+  font-size: 0.84rem;
+  font-weight: 800;
+}
+
+.dashboard-card {
+  display: grid;
+  gap: 12px;
+  padding: 14px;
+  border: 1px solid var(--border);
+  border-radius: 8px;
+  background: var(--surface);
+  box-shadow: var(--shadow);
+}
+
+.dashboard-grid {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: 8px;
+}
+
+.dashboard-grid span {
+  min-width: 0;
+  padding: 10px;
+  border: 1px solid var(--border);
+  border-radius: 8px;
+  background: var(--surface-muted);
+  color: var(--muted);
+  font-size: 0.8rem;
+  font-weight: 700;
+}
+
+.dashboard-grid strong {
+  display: block;
+  color: var(--accent);
+  font-size: 1.35rem;
+  line-height: 1;
+}
+
+.dashboard-actions {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 8px;
+}
+
+.dashboard-actions .secondary-button {
+  min-height: 38px;
+  padding: 0 10px;
+}
+
+.dashboard-list {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 6px;
+}
+
+.dashboard-list .section-title {
+  flex-basis: 100%;
+}
+
+.dashboard-list span {
+  border: 1px solid var(--border);
+  border-radius: 999px;
+  padding: 5px 8px;
+  background: var(--surface-muted);
+  color: var(--muted-strong);
+  font-size: 0.82rem;
+  font-weight: 800;
 }
 
 .games-page {
@@ -859,9 +940,8 @@ select {
 }
 
 .results-meta {
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
+  display: grid;
+  grid-template-columns: 1fr;
   gap: 10px;
   padding: 10px 14px;
   color: var(--muted);
@@ -877,7 +957,14 @@ select {
   font-size: 1.25rem;
 }
 
+.results-actions {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 8px;
+}
+
 .study-start-button {
+  min-width: 0;
   min-height: 36px;
   padding: 0 10px;
   white-space: nowrap;
@@ -1076,6 +1163,13 @@ mark {
   margin-top: 18px;
 }
 
+.detail-action-row {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+  margin-top: 18px;
+}
+
 .section-title {
   margin-bottom: 8px;
   color: var(--muted);
@@ -1132,6 +1226,10 @@ mark {
   margin-top: 6px;
 }
 
+.example-speak {
+  margin-top: 12px;
+}
+
 .example-pl {
   color: var(--text-strong);
   font-size: 1.18rem;
@@ -1152,6 +1250,21 @@ mark {
   background: var(--surface-muted);
   color: var(--muted-strong);
   font-size: 0.82rem;
+}
+
+.related-verbs {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+}
+
+.related-verbs button {
+  border: 1px solid var(--border-strong);
+  border-radius: 999px;
+  padding: 7px 10px;
+  background: var(--surface-muted);
+  color: var(--text);
+  font-weight: 800;
 }
 
 .empty-state {
@@ -1464,6 +1577,55 @@ mark {
   font-size: clamp(1.12rem, 2.2vw, 1.6rem);
 }
 
+.typed-answer-panel {
+  display: grid;
+  gap: 12px;
+  margin-top: 16px;
+}
+
+.typed-answer-panel label {
+  display: grid;
+  gap: 7px;
+  color: var(--muted-strong);
+  font-weight: 800;
+}
+
+.typed-answer-panel input {
+  min-height: 48px;
+  border: 1px solid var(--border-strong);
+  border-radius: 8px;
+  padding: 0 12px;
+  background: var(--surface-muted);
+  color: var(--text-strong);
+  font-size: 1.1rem;
+  font-weight: 800;
+}
+
+.typed-result {
+  display: grid;
+  gap: 4px;
+  border: 1px solid var(--border);
+  border-radius: 8px;
+  padding: 12px;
+  background: var(--surface-muted);
+  color: var(--muted-strong);
+  font-weight: 800;
+}
+
+.typed-result.correct {
+  border-color: var(--accent);
+  color: var(--accent);
+}
+
+.typed-result.wrong {
+  border-color: var(--danger);
+  color: var(--danger);
+}
+
+.typed-result small {
+  color: var(--muted);
+}
+
 .study-answer {
   margin-top: 18px;
 }
@@ -1634,6 +1796,11 @@ mark {
   .settings-head {
     grid-template-columns: 1fr;
     gap: 12px;
+  }
+
+  .dashboard-grid,
+  .dashboard-actions {
+    grid-template-columns: 1fr;
   }
 
   .games-page {
@@ -1880,6 +2047,10 @@ mark {
 
   .results-meta {
     display: grid;
+    grid-template-columns: 1fr;
+  }
+
+  .results-actions {
     grid-template-columns: 1fr;
   }
 

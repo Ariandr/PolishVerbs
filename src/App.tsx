@@ -4,6 +4,7 @@ import './App.css'
 import { ConfigurationPage } from './components/ConfigurationPage'
 import { CreateListModal, ListPickerModal } from './components/ListModals'
 import { GamesPage } from './components/GamesPage'
+import { ProgressDashboard } from './components/ProgressDashboard'
 import { QualityPanel } from './components/QualityPanel'
 import { StudyMode } from './components/StudyMode'
 import { StudyLists } from './components/StudyLists'
@@ -12,6 +13,7 @@ import { VerbList } from './components/VerbList'
 import { verbById, verbs } from './data/verbs'
 import type { Aspect } from './data/schema'
 import { mergeProgressImport, serializeProgressExport } from './lib/progressTransfer'
+import { applyPracticeAnswer, getProgressStats, isDue, isOverdue, type PracticeAnswerEvent } from './lib/practice'
 import { getSearchIndex, getSearchScore, normalizeSearch } from './lib/search'
 import {
   createStudyList,
@@ -24,13 +26,15 @@ import {
   saveThemePreference,
   touchList,
   type AppSettings,
+  type PracticeAnswerMode,
+  type PracticePromptMode,
   type StudyProgress,
   type ThemePreference,
   type VerbStudyStatus,
 } from './lib/storage'
 import { getVerbIdFromUrl, isQaEnabledFromUrl, setQaInUrl, setVerbIdInUrl } from './lib/urlState'
 
-type LearnedFilter = 'all' | 'learning' | 'learned'
+type LearnedFilter = 'all' | 'new' | 'learning' | 'learned' | 'due' | 'overdue'
 type RangeFilter = 'all' | 'top100' | 'top300' | 'top600' | 'top1200' | 'top3000'
 
 function App() {
@@ -50,6 +54,12 @@ function App() {
     typeof window === 'undefined' ? false : Boolean(initialVerbId && verbById.has(initialVerbId) && window.matchMedia('(max-width: 980px)').matches),
   )
   const [studyModeOpen, setStudyModeOpen] = useState(false)
+  const [studySession, setStudySession] = useState<{
+    verbs: typeof verbs
+    title: string
+    answerMode?: PracticeAnswerMode
+    promptMode?: PracticePromptMode
+  } | null>(null)
   const [configurationOpen, setConfigurationOpen] = useState(false)
   const [gamesOpen, setGamesOpen] = useState(false)
   const [showQaPanel, setShowQaPanel] = useState(() => isQaEnabledFromUrl())
@@ -110,6 +120,7 @@ function App() {
   const activeList = progress.lists.find((list) => list.id === progress.selectedListId)
   const activeListVerbIds = useMemo(() => new Set(activeList?.verbIds ?? []), [activeList])
   const searchIndexes = useMemo(() => new Map(verbs.map((verb) => [verb.id, getSearchIndex(verb)])), [])
+  const progressStats = useMemo(() => getProgressStats(progress, verbs.map((verb) => verb.id)), [progress])
 
   const visibleVerbs = useMemo(() => {
     const normalizedQuery = normalizeSearch(query.trim())
@@ -118,10 +129,20 @@ function App() {
         return false
       }
       const studyStatus = progress.verbProgress[verb.id]?.status ?? 'new'
+      const verbProgress = progress.verbProgress[verb.id]
+      if (learnedFilter === 'new' && studyStatus !== 'new') {
+        return false
+      }
       if (learnedFilter === 'learned' && studyStatus !== 'learned') {
         return false
       }
       if (learnedFilter === 'learning' && studyStatus !== 'learning') {
+        return false
+      }
+      if (learnedFilter === 'due' && !isDue(verbProgress)) {
+        return false
+      }
+      if (learnedFilter === 'overdue' && !isOverdue(verbProgress)) {
         return false
       }
       if (aspectFilter !== 'all' && verb.aspect !== aspectFilter) {
@@ -190,20 +211,41 @@ function App() {
   }
 
   const gradeStudyVerb = (verbId: string, grade: 'know' | 'review') => {
-    const current = progress.verbProgress[verbId] ?? createVerbStudyProgress('new')
+    const verb = verbs.find((item) => item.id === verbId)
+    updateProgress(applyPracticeAnswer(progress, {
+      verbId,
+      correct: grade === 'know',
+      promptType: 'meaning-to-infinitive',
+      expected: verb?.infinitive ?? verbId,
+      given: grade,
+    }))
+  }
+
+  const recordPracticeAnswer = (event: PracticeAnswerEvent) => {
+    updateProgress(applyPracticeAnswer(progress, event))
+  }
+
+  const startStudy = (
+    sessionVerbs: typeof verbs,
+    title = 'Powtórka czasowników',
+    options: { answerMode?: PracticeAnswerMode; promptMode?: PracticePromptMode } = {},
+  ) => {
+    setStudySession({ verbs: sessionVerbs, title, ...options })
+    setStudyModeOpen(true)
+  }
+
+  const saveCurrentViewAsList = () => {
+    if (!visibleVerbs.length) {
+      return
+    }
+    const list = {
+      ...createStudyList(`Widok ${new Date().toLocaleDateString('pl-PL')}`),
+      verbIds: visibleVerbs.map((verb) => verb.id),
+    }
     updateProgress({
       ...progress,
-      verbProgress: {
-        ...progress.verbProgress,
-        [verbId]: {
-          ...current,
-          status: grade === 'know' ? 'learned' : 'learning',
-          reviewCount: current.reviewCount + 1,
-          knowCount: current.knowCount + (grade === 'know' ? 1 : 0),
-          reviewAgainCount: current.reviewAgainCount + (grade === 'review' ? 1 : 0),
-          lastReviewedAt: new Date().toISOString(),
-        },
-      },
+      lists: [list, ...progress.lists],
+      selectedListId: list.id,
     })
   }
 
@@ -345,6 +387,21 @@ function App() {
       onClick: () => setLearnedFilter(learnedFilter === 'learning' ? 'all' : 'learning'),
     },
     {
+      label: 'Nowe',
+      active: learnedFilter === 'new',
+      onClick: () => setLearnedFilter(learnedFilter === 'new' ? 'all' : 'new'),
+    },
+    {
+      label: 'Do powtórki',
+      active: learnedFilter === 'due',
+      onClick: () => setLearnedFilter(learnedFilter === 'due' ? 'all' : 'due'),
+    },
+    {
+      label: 'Zaległe',
+      active: learnedFilter === 'overdue',
+      onClick: () => setLearnedFilter(learnedFilter === 'overdue' ? 'all' : 'overdue'),
+    },
+    {
       label: 'Opanowane',
       active: learnedFilter === 'learned',
       onClick: () => setLearnedFilter(learnedFilter === 'learned' ? 'all' : 'learned'),
@@ -417,10 +474,12 @@ function App() {
       {configurationOpen ? (
         <ConfigurationPage
           showQuickFilters={appSettings.showQuickFilters}
+          practice={appSettings.practice}
           onBack={() => setConfigurationOpen(false)}
           onToggleQuickFilters={() =>
             updateAppSettings({ ...appSettings, showQuickFilters: !appSettings.showQuickFilters })
           }
+          onUpdatePractice={(practice) => updateAppSettings({ ...appSettings, practice })}
           onExportProgress={exportProgress}
           onImportProgress={importProgress}
         />
@@ -431,6 +490,7 @@ function App() {
           lists={progress.lists}
           appSettings={appSettings}
           onUpdateAppSettings={updateAppSettings}
+          onAnswer={recordPracticeAnswer}
           onBack={() => setGamesOpen(false)}
         />
       ) : (
@@ -480,8 +540,11 @@ function App() {
           <Filter size={17} />
           <select value={learnedFilter} onChange={(event) => setLearnedFilter(event.target.value as LearnedFilter)}>
             <option value="all">Cały postęp</option>
+            <option value="new">Nowe</option>
             <option value="learning">W trakcie nauki</option>
             <option value="learned">Opanowane</option>
+            <option value="due">Do powtórki</option>
+            <option value="overdue">Zaległe</option>
           </select>
           <select value={aspectFilter} onChange={(event) => setAspectFilter(event.target.value as Aspect | 'all')}>
             <option value="all">Wszystkie aspekty</option>
@@ -503,6 +566,19 @@ function App() {
 
       <section className="workspace">
         <aside className="sidebar">
+          <ProgressDashboard
+            stats={progressStats}
+            verbs={verbs}
+            onStartDueReview={() => startStudy(verbs.filter((verb) => isDue(progress.verbProgress[verb.id])), 'Powtórka na dziś')}
+            onStartMistakeReview={() =>
+              startStudy(
+                progressStats.missed
+                  .map((item) => verbs.find((verb) => verb.id === item.verbId))
+                  .filter((verb): verb is (typeof verbs)[number] => Boolean(verb)),
+                'Najczęstsze błędy',
+              )
+            }
+          />
           <StudyLists
             lists={progress.lists}
             selectedListId={progress.selectedListId}
@@ -528,15 +604,20 @@ function App() {
               <strong>{visibleVerbs.length}</strong>
               <span>pokazanych czasowników</span>
             </span>
-            <button
-              className="secondary-button study-start-button"
-              type="button"
-              disabled={!visibleVerbs.length}
-              onClick={() => setStudyModeOpen(true)}
-            >
-              <BookOpen size={16} />
-              Start nauki
-            </button>
+            <div className="results-actions">
+              <button
+                className="secondary-button study-start-button"
+                type="button"
+                disabled={!visibleVerbs.length}
+                onClick={() => startStudy(visibleVerbs)}
+              >
+                <BookOpen size={16} />
+                Start nauki
+              </button>
+              <button className="secondary-button study-start-button" type="button" disabled={!visibleVerbs.length} onClick={saveCurrentViewAsList}>
+                Zapisz widok
+              </button>
+            </div>
           </div>
 
           <VerbList
@@ -572,6 +653,11 @@ function App() {
               onNextVerb={() => navigateSelectedVerb(1)}
               onToggleLearned={() => toggleLearned(selectedVerb.id)}
               onOpenListPicker={() => openListAction(selectedVerb.id)}
+              allVerbs={verbs}
+              onSelectRelatedVerb={(verbId) => selectVerb(verbId)}
+              onPracticeVerb={() => startStudy([selectedVerb], `Ćwiczenie: ${selectedVerb.infinitive}`, { answerMode: 'typed', promptMode: 'mixed' })}
+              onPracticeForms={() => startStudy([selectedVerb], `Formy: ${selectedVerb.infinitive}`, { answerMode: 'typed', promptMode: 'forms' })}
+              onPracticeExamples={() => startStudy([selectedVerb], `Przykład: ${selectedVerb.infinitive}`, { answerMode: 'typed', promptMode: 'cloze' })}
             />
           </div>
         ) : (
@@ -599,7 +685,15 @@ function App() {
 
       {showCreateList ? <CreateListModal onClose={closeCreateList} onCreate={createList} /> : null}
       {studyModeOpen ? (
-        <StudyMode verbs={visibleVerbs} onClose={() => setStudyModeOpen(false)} onGrade={gradeStudyVerb} />
+        <StudyMode
+          verbs={studySession?.verbs ?? visibleVerbs}
+          title={studySession?.title}
+          answerMode={studySession?.answerMode ?? appSettings.practice.answerMode}
+          promptMode={studySession?.promptMode ?? appSettings.practice.promptMode}
+          onClose={() => setStudyModeOpen(false)}
+          onGrade={gradeStudyVerb}
+          onAnswer={recordPracticeAnswer}
+        />
       ) : null}
       {transferMessage ? (
         <div className="modal-backdrop" role="presentation" onMouseDown={() => setTransferMessage(null)}>
