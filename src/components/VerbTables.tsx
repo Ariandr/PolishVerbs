@@ -80,6 +80,8 @@ interface VerbDetailProps {
   onPracticeVerb?: () => void
   onPracticeForms?: () => void
   onPracticeExamples?: () => void
+  onPracticeAspectPair?: () => void
+  onPracticeFamily?: () => void
 }
 
 export function VerbDetail({
@@ -99,6 +101,8 @@ export function VerbDetail({
   onPracticeVerb,
   onPracticeForms,
   onPracticeExamples,
+  onPracticeAspectPair,
+  onPracticeFamily,
 }: VerbDetailProps) {
   const example = verb.examples[0]
   const related = getRelatedVerbs(verb, allVerbs)
@@ -220,6 +224,18 @@ export function VerbDetail({
       {(related.pair || related.family.length) ? (
         <section className="detail-section">
           <div className="section-title">Rodzina i para aspektowa</div>
+          <div className="related-practice-actions">
+            {related.pair ? (
+              <button className="secondary-button" type="button" onClick={onPracticeAspectPair}>
+                Ćwicz parę aspektową
+              </button>
+            ) : null}
+            {related.family.length ? (
+              <button className="secondary-button" type="button" onClick={onPracticeFamily}>
+                Ćwicz rodzinę
+              </button>
+            ) : null}
+          </div>
           <div className="related-verbs">
             {related.pair ? (
               <button type="button" onClick={() => onSelectRelatedVerb?.(related.pair?.id ?? '')}>

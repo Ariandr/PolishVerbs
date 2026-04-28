@@ -121,6 +121,9 @@ h2 {
 }
 
 .progress-summary {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 10px;
   min-width: 160px;
   padding: 14px 16px;
   border: 1px solid var(--border);
@@ -129,7 +132,12 @@ h2 {
   box-shadow: var(--shadow);
 }
 
-.progress-summary strong {
+.progress-summary-main {
+  display: block;
+}
+
+.progress-summary strong,
+.due-review-button strong {
   display: block;
   color: var(--accent);
   font-size: 1.8rem;
@@ -137,9 +145,28 @@ h2 {
 }
 
 .progress-summary span,
-.progress-summary small {
+.progress-summary small,
+.due-review-button span,
+.due-review-button small {
   display: block;
   color: var(--muted);
+}
+
+.due-review-button {
+  display: grid;
+  gap: 2px;
+  width: 100%;
+  border: 1px solid var(--accent);
+  border-radius: 8px;
+  padding: 10px;
+  background: var(--surface-soft);
+  color: var(--text);
+  text-align: left;
+}
+
+.due-review-button small {
+  color: var(--accent);
+  font-weight: 900;
 }
 
 .toolbar {
@@ -1398,6 +1425,13 @@ mark {
   gap: 8px;
 }
 
+.related-practice-actions {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+  margin-bottom: 10px;
+}
+
 .related-verbs button {
   border: 1px solid var(--border-strong);
   border-radius: 999px;
@@ -1770,6 +1804,50 @@ mark {
   color: var(--muted);
 }
 
+.answer-comparison {
+  display: grid;
+  gap: 6px;
+  color: var(--muted-strong);
+}
+
+.answer-comparison strong {
+  color: var(--text-strong);
+}
+
+.answer-diff {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 3px;
+  padding-top: 2px;
+}
+
+.answer-diff-char,
+.answer-diff-extra {
+  display: inline-grid;
+  min-width: 22px;
+  min-height: 24px;
+  place-items: center;
+  border: 1px solid var(--border);
+  border-radius: 6px;
+  padding: 0 5px;
+  background: var(--surface);
+  color: var(--text-strong);
+  font-size: 0.92rem;
+  font-weight: 900;
+}
+
+.answer-diff-char.changed,
+.answer-diff-char.missing,
+.answer-diff-extra {
+  border-color: var(--danger);
+  background: color-mix(in srgb, var(--danger) 14%, var(--surface));
+  color: var(--danger);
+}
+
+.answer-diff-char.match {
+  opacity: 0.58;
+}
+
 .study-answer {
   margin-top: 18px;
 }
@@ -2049,21 +2127,32 @@ mark {
   .progress-summary {
     grid-column: 1 / -1;
     display: grid;
-    grid-template-columns: auto minmax(0, 1fr) auto;
+    grid-template-columns: minmax(0, 1fr) auto;
     gap: 8px;
-    align-items: baseline;
+    align-items: center;
     min-width: 0;
     padding: 10px 12px;
   }
 
-  .progress-summary strong,
-  .progress-summary span,
-  .progress-summary small {
+  .progress-summary-main,
+  .progress-summary-main strong,
+  .progress-summary-main span,
+  .progress-summary-main small {
     display: inline;
   }
 
-  .progress-summary strong {
+  .progress-summary-main strong {
     font-size: 1.35rem;
+  }
+
+  .due-review-button {
+    width: auto;
+    min-width: 130px;
+    padding: 8px 10px;
+  }
+
+  .due-review-button strong {
+    font-size: 1.2rem;
   }
 
   .workspace {

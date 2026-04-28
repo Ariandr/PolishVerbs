@@ -20,6 +20,7 @@ import {
   getOftenMissedVerbs,
   getOverdueVerbs,
   getProgressStats,
+  getRelatedVerbs,
   isDue,
   isOverdue,
   type PracticeAnswerEvent,
@@ -522,11 +523,20 @@ function App() {
           <h1>3000 polskich czasowników według częstotliwości</h1>
         </div>
         <div className="progress-summary">
-          <strong>{learnedCount}</strong>
-          <span>opanowanych</span>
-          <small>
-            {Math.round((learnedCount / verbs.length) * 100)}% z {verbs.length}
-          </small>
+          <span className="progress-summary-main">
+            <strong>{learnedCount}</strong>
+            <span>opanowanych</span>
+            <small>
+              {Math.round((learnedCount / verbs.length) * 100)}% z {verbs.length}
+            </small>
+          </span>
+          {progressStats.dueCount ? (
+            <button className="due-review-button" type="button" onClick={startDueReview}>
+              <strong>{progressStats.dueCount}</strong>
+              <span>do powtórki</span>
+              <small>Powtórz dziś</small>
+            </button>
+          ) : null}
         </div>
       </header>
 
@@ -720,6 +730,19 @@ function App() {
               onPracticeVerb={() => startStudy([selectedVerb], `Ćwiczenie: ${selectedVerb.infinitive}`, { answerMode: 'typed', promptMode: 'mixed' })}
               onPracticeForms={() => startStudy([selectedVerb], `Formy: ${selectedVerb.infinitive}`, { answerMode: 'typed', promptMode: 'forms' })}
               onPracticeExamples={() => startStudy([selectedVerb], `Przykład: ${selectedVerb.infinitive}`, { answerMode: 'typed', promptMode: 'cloze' })}
+              onPracticeAspectPair={() => {
+                const related = getRelatedVerbs(selectedVerb, verbs)
+                if (related.pair) {
+                  startStudy([selectedVerb, related.pair], `Para aspektowa: ${selectedVerb.infinitive}`, { answerMode: 'typed', promptMode: 'mixed' })
+                }
+              }}
+              onPracticeFamily={() => {
+                const related = getRelatedVerbs(selectedVerb, verbs)
+                const familyVerbs = [selectedVerb, ...related.family]
+                if (familyVerbs.length > 1) {
+                  startStudy(familyVerbs, `Rodzina: ${selectedVerb.infinitive}`, { answerMode: 'typed', promptMode: 'mixed' })
+                }
+              }}
             />
           </div>
         ) : (

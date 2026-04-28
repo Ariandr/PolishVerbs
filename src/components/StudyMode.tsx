@@ -28,6 +28,46 @@ const shuffleCards = (verbs: VerbEntry[], promptMode: PracticePromptMode) =>
     .slice(0, sessionSize)
     .map(({ prompt }) => prompt)
 
+const normalizeDiffChar = (value: string | undefined) => (value ?? '').toLocaleLowerCase('pl-PL')
+
+const getAnswerDiff = (given: string, expected: string) => {
+  const givenChars = Array.from(given.trim())
+  const expectedChars = Array.from(expected)
+  const items = expectedChars.map((char, index) => {
+    const givenChar = givenChars[index]
+    const status = normalizeDiffChar(givenChar) === normalizeDiffChar(char) ? 'match' : givenChar ? 'changed' : 'missing'
+    return { char, status }
+  })
+
+  return {
+    items,
+    extra: givenChars.slice(expectedChars.length).join(''),
+  }
+}
+
+function AnswerComparison({ given, expected }: { given: string; expected: string }) {
+  const diff = getAnswerDiff(given, expected)
+
+  return (
+    <div className="answer-comparison" aria-label="Porównanie odpowiedzi">
+      <span>
+        Wpisano: <strong>{given || '—'}</strong>
+      </span>
+      <span>
+        Poprawnie: <strong>{expected}</strong>
+      </span>
+      <div className="answer-diff" aria-label="Różnice w poprawnej odpowiedzi">
+        {diff.items.map((item, index) => (
+          <span className={`answer-diff-char ${item.status}`} key={`${item.char}-${index}`}>
+            {item.char === ' ' ? '·' : item.char}
+          </span>
+        ))}
+        {diff.extra ? <span className="answer-diff-extra">+{diff.extra}</span> : null}
+      </div>
+    </div>
+  )
+}
+
 export function StudyMode({
   verbs,
   prompts,
@@ -201,7 +241,8 @@ export function StudyMode({
                 </label>
                 {typedResult ? (
                   <div className={`typed-result ${typedResult.correct ? 'correct' : 'wrong'}`}>
-                    {typedResult.correct ? 'Dobrze.' : `Poprawnie: ${currentPrompt.answer}`}
+                    {typedResult.correct ? 'Dobrze.' : 'Do poprawki.'}
+                    {!typedResult.correct ? <AnswerComparison given={typedResult.given} expected={currentPrompt.answer} /> : null}
                     {currentPrompt.displayAnswer ? <small>{currentPrompt.displayAnswer}</small> : null}
                   </div>
                 ) : null}
