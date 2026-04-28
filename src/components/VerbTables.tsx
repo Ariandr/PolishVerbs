@@ -1,4 +1,5 @@
 import { BookOpenCheck, Check, ChevronLeft, ChevronRight, Dumbbell, Plus, Star, Volume2 } from 'lucide-react'
+import { useEffect, useState } from 'react'
 import type { PastForms, PresentForms, VerbEntry } from '../data/schema'
 import { aspectLabels } from '../data/labels'
 import { getRelatedVerbs } from '../lib/practice'
@@ -101,13 +102,31 @@ export function VerbDetail({
 }: VerbDetailProps) {
   const example = verb.examples[0]
   const related = getRelatedVerbs(verb, allVerbs)
-  const canSpeak = typeof window !== 'undefined' && 'speechSynthesis' in window
+  const [polishVoice, setPolishVoice] = useState<SpeechSynthesisVoice | null>(null)
+  const canSpeak = Boolean(polishVoice)
+
+  useEffect(() => {
+    if (typeof window === 'undefined' || !('speechSynthesis' in window)) {
+      return
+    }
+
+    const loadVoice = () => {
+      const voices = window.speechSynthesis.getVoices()
+      setPolishVoice(voices.find((voice) => voice.lang.toLocaleLowerCase().startsWith('pl')) ?? null)
+    }
+
+    loadVoice()
+    window.speechSynthesis.addEventListener('voiceschanged', loadVoice)
+    return () => window.speechSynthesis.removeEventListener('voiceschanged', loadVoice)
+  }, [])
+
   const speak = (text: string) => {
     if (!canSpeak) {
       return
     }
     const utterance = new SpeechSynthesisUtterance(text)
     utterance.lang = 'pl-PL'
+    utterance.voice = polishVoice
     window.speechSynthesis.cancel()
     window.speechSynthesis.speak(utterance)
   }
@@ -153,11 +172,11 @@ export function VerbDetail({
         <button className="secondary-button" type="button" onClick={onPracticeExamples}>
           Przykład
         </button>
-        <button className="secondary-button" type="button" disabled={!canSpeak} onClick={() => speak(verb.infinitive)}>
+        <button className="secondary-button" type="button" disabled={!canSpeak} title={canSpeak ? 'Odtwórz wymowę' : 'Brak polskiego głosu w przeglądarce'} onClick={() => speak(verb.infinitive)}>
           <Volume2 size={16} />
           Wymowa
         </button>
-        <button className="secondary-button" type="button" disabled={!canSpeak} onClick={() => speak(verb.forms.present.ja)}>
+        <button className="secondary-button" type="button" disabled={!canSpeak} title={canSpeak ? 'Odtwórz formę ja' : 'Brak polskiego głosu w przeglądarce'} onClick={() => speak(verb.forms.present.ja)}>
           <Volume2 size={16} />
           Forma ja
         </button>
@@ -179,7 +198,7 @@ export function VerbDetail({
         <p>
           <HighlightedText text={example.en} query={highlightQuery} />
         </p>
-        <button className="secondary-button example-speak" type="button" disabled={!canSpeak} onClick={() => speak(example.pl)}>
+        <button className="secondary-button example-speak" type="button" disabled={!canSpeak} title={canSpeak ? 'Odtwórz przykład' : 'Brak polskiego głosu w przeglądarce'} onClick={() => speak(example.pl)}>
           <Volume2 size={15} />
           Odtwórz przykład
         </button>

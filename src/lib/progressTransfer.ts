@@ -1,4 +1,15 @@
-import { createVerbStudyProgress, type PracticeMistake, type StudyList, type StudyProgress, type ThemePreference, type VerbStudyProgress } from './storage'
+import {
+  createVerbStudyProgress,
+  type AppSettings,
+  type GameAnswerMode,
+  type PracticeDifficulty,
+  type PracticeMistake,
+  type PracticePromptMode,
+  type StudyList,
+  type StudyProgress,
+  type ThemePreference,
+  type VerbStudyProgress,
+} from './storage'
 
 export interface ProgressExportFile {
   app: 'PolishVerbs'
@@ -6,11 +17,13 @@ export interface ProgressExportFile {
   exportedAt: string
   progress: StudyProgress
   themePreference: ThemePreference
+  appSettings?: AppSettings
 }
 
 export interface ImportResult {
   progress: StudyProgress
   themePreference: ThemePreference | null
+  appSettings: Partial<AppSettings> | null
   importedListCount: number
   importedVerbProgressCount: number
 }
@@ -19,6 +32,11 @@ const isObject = (value: unknown): value is Record<string, unknown> =>
   typeof value === 'object' && value !== null && !Array.isArray(value)
 
 const isThemePreference = (value: unknown): value is ThemePreference => value === 'light' || value === 'dark'
+const isPracticeAnswerMode = (value: unknown): value is AppSettings['practice']['answerMode'] => value === 'reveal' || value === 'typed'
+const isPracticePromptMode = (value: unknown): value is PracticePromptMode =>
+  value === 'meanings' || value === 'infinitives' || value === 'present' || value === 'past' || value === 'forms' || value === 'cloze' || value === 'mixed'
+const isPracticeDifficulty = (value: unknown): value is PracticeDifficulty => value === 'normal' || value === 'hard'
+const isGameAnswerMode = (value: unknown): value is GameAnswerMode => value === 'choice' || value === 'typed'
 
 const isVerbProgress = (value: unknown): value is VerbStudyProgress => {
   if (!isObject(value)) {
@@ -52,6 +70,13 @@ const normalizeMistakes = (value: unknown): PracticeMistake[] => {
         typeof mistake.createdAt === 'string'
       )
     })
+    .map((mistake) => ({
+      ...mistake,
+      prompt: typeof mistake.prompt === 'string' ? mistake.prompt : undefined,
+      detail: typeof mistake.detail === 'string' ? mistake.detail : undefined,
+      formLabel: typeof mistake.formLabel === 'string' ? mistake.formLabel : undefined,
+      promptId: typeof mistake.promptId === 'string' ? mistake.promptId : undefined,
+    }))
     .slice(-8)
 }
 
@@ -116,9 +141,28 @@ const parseStudyProgress = (value: unknown): StudyProgress => {
   }
 }
 
+const parseAppSettings = (value: unknown): Partial<AppSettings> | null => {
+  if (!isObject(value)) {
+    return null
+  }
+  const practice = isObject(value.practice) ? value.practice : null
+  return {
+    showQuickFilters: typeof value.showQuickFilters === 'boolean' ? value.showQuickFilters : undefined,
+    practice: practice
+      ? {
+          answerMode: isPracticeAnswerMode(practice.answerMode) ? practice.answerMode : 'reveal',
+          promptMode: isPracticePromptMode(practice.promptMode) ? practice.promptMode : 'mixed',
+          gameDifficulty: isPracticeDifficulty(practice.gameDifficulty) ? practice.gameDifficulty : 'normal',
+          gameAnswerMode: isGameAnswerMode(practice.gameAnswerMode) ? practice.gameAnswerMode : 'choice',
+        }
+      : undefined,
+  }
+}
+
 export const createProgressExport = (
   progress: StudyProgress,
   themePreference: ThemePreference,
+  appSettings?: AppSettings,
 ): ProgressExportFile => ({
   app: 'PolishVerbs',
   schemaVersion: 1,
@@ -128,10 +172,11 @@ export const createProgressExport = (
     learnedVerbIds: getSyncedLearnedIds(progress.verbProgress),
   },
   themePreference,
+  appSettings,
 })
 
-export const serializeProgressExport = (progress: StudyProgress, themePreference: ThemePreference) =>
-  JSON.stringify(createProgressExport(progress, themePreference), null, 2)
+export const serializeProgressExport = (progress: StudyProgress, themePreference: ThemePreference, appSettings?: AppSettings) =>
+  JSON.stringify(createProgressExport(progress, themePreference, appSettings), null, 2)
 
 export const mergeProgressImport = (current: StudyProgress, raw: string): ImportResult => {
   const parsed = JSON.parse(raw) as unknown
@@ -167,6 +212,7 @@ export const mergeProgressImport = (current: StudyProgress, raw: string): Import
           : null,
     },
     themePreference: isThemePreference(parsed.themePreference) ? parsed.themePreference : null,
+    appSettings: parseAppSettings(parsed.appSettings),
     importedListCount: importedLists.length,
     importedVerbProgressCount: Object.keys(importedProgress.verbProgress).length,
   }

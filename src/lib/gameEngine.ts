@@ -1,4 +1,5 @@
 import type { Aspect, PastForms, PronounKey, VerbEntry } from '../data/schema'
+import type { PracticeDifficulty } from './storage'
 
 export type GameId =
   | 'quick-test'
@@ -135,6 +136,10 @@ function getVerbFormValues(verb: VerbEntry): string[] {
   ]
 }
 
+function rootHint(value: string) {
+  return value.replace(/ć$/, '').replace(/^(po|za|wy|do|od|prze|przy|roz|u|w|na|z|s)/, '')
+}
+
 export function createOptions(answer: string, candidates: string[], count = 4): string[] {
   const uniqueCandidates = [...new Set(candidates.filter((candidate) => candidate && candidate !== answer))]
   const distractors = sampleItems(uniqueCandidates, count - 1)
@@ -144,7 +149,50 @@ export function createOptions(answer: string, candidates: string[], count = 4): 
   return shuffleItems([answer, ...distractors])
 }
 
-export function buildQuickQuestions(verbs: VerbEntry[]): ChoiceQuestion[] {
+function createHardInfinitiveOptions(verb: VerbEntry, verbs: VerbEntry[]) {
+  const root = rootHint(verb.infinitive)
+  const preferred = verbs
+    .filter((candidate) => candidate.id !== verb.id)
+    .map((candidate) => {
+      const sameAspect = candidate.aspect === verb.aspect ? 0 : 4
+      const rankDistance = Math.abs(candidate.frequencyRank - verb.frequencyRank)
+      const rankScore = rankDistance <= 100 ? 0 : rankDistance <= 500 ? 1 : 2
+      const sameEnding = candidate.infinitive.slice(-3) === verb.infinitive.slice(-3) ? 0 : 2
+      const relatedRoot = root.length >= 4 && rootHint(candidate.infinitive).includes(root) ? 0 : 3
+      return { candidate, score: sameAspect + rankScore + sameEnding + relatedRoot }
+    })
+    .sort((left, right) => left.score - right.score || left.candidate.frequencyRank - right.candidate.frequencyRank)
+    .map((item) => item.candidate.infinitive)
+  const hard = createOptions(verb.infinitive, preferred)
+  return hard.length ? hard : createOptions(verb.infinitive, verbs.map((candidate) => candidate.infinitive))
+}
+
+function createFormOptions(challenge: FormChallenge, challenges: FormChallenge[], mode: 'wheel' | 'missing', difficulty: PracticeDifficulty) {
+  if (mode === 'wheel') {
+    const sameVerbForms = [...new Set(getVerbFormValues(challenge.verb).filter((form) => form && form !== challenge.answer))]
+    return shuffleItems([challenge.answer, ...sampleItems(sameVerbForms, 3)])
+  }
+
+  const normal = () => createOptions(challenge.answer, challenges.map((item) => item.answer))
+  if (difficulty === 'normal') {
+    return normal()
+  }
+
+  const hardCandidates = challenges
+    .filter((item) => item.id !== challenge.id)
+    .map((item) => {
+      const sameVerb = item.verb.id === challenge.verb.id ? 0 : 3
+      const sameTense = item.label.split(',')[0] === challenge.label.split(',')[0] ? 0 : 2
+      const sameAspect = item.verb.aspect === challenge.verb.aspect ? 0 : 1
+      return { item, score: sameVerb + sameTense + sameAspect }
+    })
+    .sort((left, right) => left.score - right.score)
+    .map(({ item }) => item.answer)
+  const hard = createOptions(challenge.answer, hardCandidates)
+  return hard.length ? hard : normal()
+}
+
+export function buildQuickQuestions(verbs: VerbEntry[], difficulty: PracticeDifficulty = 'normal'): ChoiceQuestion[] {
   if (verbs.length < 4) {
     return []
   }
@@ -153,7 +201,7 @@ export function buildQuickQuestions(verbs: VerbEntry[]): ChoiceQuestion[] {
   return sampleItems(verbs, Math.min(sessionQuestionCount, verbs.length))
     .map((verb) => {
       const prompt = getPrimaryMeaning(verb)
-      const options = createOptions(verb.infinitive, infinitives)
+      const options = difficulty === 'hard' ? createHardInfinitiveOptions(verb, verbs) : createOptions(verb.infinitive, infinitives)
       if (!options.length) {
         return null
       }
@@ -169,29 +217,19 @@ export function buildQuickQuestions(verbs: VerbEntry[]): ChoiceQuestion[] {
     .filter((question): question is ChoiceQuestion => Boolean(question))
 }
 
-export function buildOpenCardQuestions(verbs: VerbEntry[]): ChoiceQuestion[] {
-  return buildQuickQuestions(verbs).map((question) => ({
+export function buildOpenCardQuestions(verbs: VerbEntry[], difficulty: PracticeDifficulty = 'normal'): ChoiceQuestion[] {
+  return buildQuickQuestions(verbs, difficulty).map((question) => ({
     ...question,
     id: `open-${question.verb.id}`,
     detail: `Karta #${question.verb.frequencyRank}. Wybierz polski czasownik.`,
   }))
 }
 
-export function buildFormQuestions(verbs: VerbEntry[], mode: 'wheel' | 'missing'): ChoiceQuestion[] {
+export function buildFormQuestions(verbs: VerbEntry[], mode: 'wheel' | 'missing', difficulty: PracticeDifficulty = 'normal'): ChoiceQuestion[] {
   const challenges = getAllFormChallenges(verbs).filter((challenge) => challenge.answer)
-  const formCandidates = challenges.map((challenge) => challenge.answer)
   return sampleItems(challenges, Math.min(sessionQuestionCount, challenges.length))
     .map((challenge) => {
-      const options =
-        mode === 'wheel'
-          ? shuffleItems([
-              challenge.answer,
-              ...sampleItems(
-                [...new Set(getVerbFormValues(challenge.verb).filter((form) => form && form !== challenge.answer))],
-                3,
-              ),
-            ])
-          : createOptions(challenge.answer, formCandidates)
+      const options = createFormOptions(challenge, challenges, mode, difficulty)
       if (!options.length) {
         return null
       }

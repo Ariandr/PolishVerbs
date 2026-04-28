@@ -12,6 +12,7 @@ type StudyGrade = 'know' | 'review'
 
 interface StudyModeProps {
   verbs: VerbEntry[]
+  prompts?: PracticePrompt[]
   onClose: () => void
   onGrade: (verbId: string, grade: StudyGrade) => void
   onAnswer?: (event: PracticeAnswerEvent) => void
@@ -29,6 +30,7 @@ const shuffleCards = (verbs: VerbEntry[], promptMode: PracticePromptMode) =>
 
 export function StudyMode({
   verbs,
+  prompts,
   onClose,
   onGrade,
   onAnswer,
@@ -36,7 +38,7 @@ export function StudyMode({
   promptMode = 'mixed',
   title = 'Powtórka czasowników',
 }: StudyModeProps) {
-  const [queue, setQueue] = useState<PracticePrompt[]>(() => shuffleCards(verbs, promptMode))
+  const [queue, setQueue] = useState<PracticePrompt[]>(() => prompts ?? shuffleCards(verbs, promptMode))
   const [currentIndex, setCurrentIndex] = useState(0)
   const [revealed, setRevealed] = useState(false)
   const [typedAnswer, setTypedAnswer] = useState('')
@@ -54,7 +56,7 @@ export function StudyMode({
   }, [currentIndex, queue.length])
 
   const restart = () => {
-    setQueue(shuffleCards(verbs, promptMode))
+    setQueue(prompts ?? shuffleCards(verbs, promptMode))
     setCurrentIndex(0)
     setRevealed(false)
     setTypedAnswer('')
@@ -97,6 +99,10 @@ export function StudyMode({
       promptType: currentPrompt.type,
       expected: currentPrompt.answer,
       given: typedAnswer,
+      prompt: currentPrompt.prompt,
+      detail: currentPrompt.detail,
+      formLabel: currentPrompt.formLabel,
+      promptId: currentPrompt.id,
     })
   }
 

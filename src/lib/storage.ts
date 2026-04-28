@@ -35,6 +35,10 @@ export interface PracticeMistake {
   expected: string
   given: string
   createdAt: string
+  prompt?: string
+  detail?: string
+  formLabel?: string
+  promptId?: string
 }
 
 export interface StudyProgress {
@@ -58,11 +62,13 @@ export interface GameSourceSettings {
 export type PracticeAnswerMode = 'reveal' | 'typed'
 export type PracticePromptMode = 'meanings' | 'infinitives' | 'present' | 'past' | 'forms' | 'cloze' | 'mixed'
 export type PracticeDifficulty = 'normal' | 'hard'
+export type GameAnswerMode = 'choice' | 'typed'
 
 export interface PracticeSettings {
   answerMode: PracticeAnswerMode
   promptMode: PracticePromptMode
   gameDifficulty: PracticeDifficulty
+  gameAnswerMode: GameAnswerMode
 }
 
 export interface AppSettings {
@@ -94,6 +100,7 @@ const defaultAppSettings: AppSettings = {
     answerMode: 'reveal',
     promptMode: 'mixed',
     gameDifficulty: 'normal',
+    gameAnswerMode: 'choice',
   },
 }
 
@@ -136,6 +143,7 @@ const isPracticePromptMode = (value: unknown): value is PracticePromptMode =>
   value === 'mixed'
 
 const isPracticeDifficulty = (value: unknown): value is PracticeDifficulty => value === 'normal' || value === 'hard'
+const isGameAnswerMode = (value: unknown): value is GameAnswerMode => value === 'choice' || value === 'typed'
 
 const normalizePracticeSettings = (value: unknown): PracticeSettings => {
   if (!value || typeof value !== 'object') {
@@ -147,6 +155,7 @@ const normalizePracticeSettings = (value: unknown): PracticeSettings => {
     answerMode: isPracticeAnswerMode(settings.answerMode) ? settings.answerMode : defaultAppSettings.practice.answerMode,
     promptMode: isPracticePromptMode(settings.promptMode) ? settings.promptMode : defaultAppSettings.practice.promptMode,
     gameDifficulty: isPracticeDifficulty(settings.gameDifficulty) ? settings.gameDifficulty : defaultAppSettings.practice.gameDifficulty,
+    gameAnswerMode: isGameAnswerMode(settings.gameAnswerMode) ? settings.gameAnswerMode : defaultAppSettings.practice.gameAnswerMode,
   }
 }
 
@@ -188,6 +197,13 @@ const normalizeVerbProgress = (value: unknown): VerbStudyProgress | null => {
               typeof item.promptType === 'string'
             )
           })
+          .map((mistake) => ({
+            ...mistake,
+            prompt: typeof mistake.prompt === 'string' ? mistake.prompt : undefined,
+            detail: typeof mistake.detail === 'string' ? mistake.detail : undefined,
+            formLabel: typeof mistake.formLabel === 'string' ? mistake.formLabel : undefined,
+            promptId: typeof mistake.promptId === 'string' ? mistake.promptId : undefined,
+          }))
           .slice(-8)
       : [],
   }

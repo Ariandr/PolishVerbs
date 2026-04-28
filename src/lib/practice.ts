@@ -16,6 +16,7 @@ export interface PracticePrompt {
   detail: string
   answer: string
   displayAnswer?: string
+  formLabel?: string
 }
 
 export interface PracticeAnswerEvent {
@@ -24,6 +25,10 @@ export interface PracticeAnswerEvent {
   promptType: PracticePromptType
   expected: string
   given: string
+  prompt?: string
+  detail?: string
+  formLabel?: string
+  promptId?: string
 }
 
 export interface ProgressStats {
@@ -36,6 +41,9 @@ export interface ProgressStats {
   strongest: Array<{ verbId: string; score: number }>
   weakest: Array<{ verbId: string; score: number }>
   missed: Array<{ verbId: string; count: number }>
+  missedVerbs: Array<{ verbId: string; count: number }>
+  missedForms: Array<{ verbId: string; count: number; expected: string; promptType: PracticePromptType; formLabel?: string; prompt?: string; detail?: string; promptId?: string }>
+  recentMistakes: Array<PracticeMistake & { verbId: string }>
 }
 
 const intervalsInDays = [0, 1, 3, 7, 14, 30]
@@ -75,8 +83,9 @@ export function gradeVerbProgress(
   now = new Date(),
 ): VerbStudyProgress {
   const base = current ?? createVerbStudyProgress('new')
-  const nextIntervalLevel = event.correct ? Math.min(base.intervalLevel + 1, intervalsInDays.length - 1) : 0
-  const dueAt = addDays(now, intervalsInDays[nextIntervalLevel]).toISOString()
+  const nextIntervalLevel = event.correct ? Math.min(base.intervalLevel + 1, intervalsInDays.length) : 0
+  const dueDays = event.correct ? intervalsInDays[Math.max(0, nextIntervalLevel - 1)] : 0
+  const dueAt = addDays(now, dueDays).toISOString()
   const mistake: PracticeMistake | null = event.correct
     ? null
     : {
@@ -85,6 +94,10 @@ export function gradeVerbProgress(
         expected: event.expected,
         given: event.given,
         createdAt: now.toISOString(),
+        prompt: event.prompt,
+        detail: event.detail,
+        formLabel: event.formLabel,
+        promptId: event.promptId,
       }
 
   return {
@@ -162,6 +175,7 @@ export function getPromptsForVerb(verb: VerbEntry, mode: PracticePromptMode): Pr
         prompt: verb.infinitive,
         detail: `Wpisz formę: czas teraźniejszy, ${label}.`,
         answer,
+        formLabel: `czas teraźniejszy, ${label}`,
       })),
     past: () =>
       [
@@ -184,6 +198,7 @@ export function getPromptsForVerb(verb: VerbEntry, mode: PracticePromptMode): Pr
         prompt: verb.infinitive,
         detail: `Wpisz formę: czas przeszły, ${label}.`,
         answer,
+        formLabel: `czas przeszły, ${label}`,
       })),
     forms: () => [...promptBuilders.present(), ...promptBuilders.past()],
     cloze: () => [buildClozePrompt(verb)].filter((prompt): prompt is PracticePrompt => Boolean(prompt)),
@@ -226,7 +241,15 @@ export function buildClozePrompt(verb: VerbEntry): PracticePrompt | null {
     .sort((left, right) => right.length - left.length)
   const answer = possibleAnswers.find((form) => new RegExp(`\\b${escapeRegExp(form)}\\b`, 'iu').test(example.pl))
   if (!answer) {
-    return null
+    return {
+      id: `${verb.id}-cloze-fallback`,
+      verb,
+      type: 'meaning-to-infinitive',
+      prompt: example.pl,
+      detail: `${example.en} / ${example.uk}. Wpisz polski bezokolicznik.`,
+      answer: verb.infinitive,
+      displayAnswer: example.pl,
+    }
   }
 
   return {
@@ -237,6 +260,7 @@ export function buildClozePrompt(verb: VerbEntry): PracticePrompt | null {
     detail: `${example.en} / ${example.uk}`,
     answer,
     displayAnswer: example.pl,
+    formLabel: 'luka w przykładzie',
   }
 }
 
@@ -253,7 +277,30 @@ export function getProgressStats(progress: StudyProgress, allVerbIds: string[], 
     .map(([verbId, item]) => ({ verbId, count: item.incorrectCount + item.lastMistakes.length }))
     .filter((item) => item.count > 0)
     .sort((left, right) => right.count - left.count)
-    .slice(0, 5)
+    .slice(0, 10)
+  const recentMistakes = entries
+    .flatMap(([verbId, item]) => item.lastMistakes.map((mistake) => ({ ...mistake, verbId })))
+    .sort((left, right) => new Date(right.createdAt).getTime() - new Date(left.createdAt).getTime())
+    .slice(0, 20)
+  const missedFormMap = new Map<string, { verbId: string; count: number; expected: string; promptType: PracticePromptType; formLabel?: string; prompt?: string; detail?: string; promptId?: string }>()
+  for (const mistake of recentMistakes) {
+    if (mistake.promptType !== 'present-form' && mistake.promptType !== 'past-form' && mistake.promptType !== 'cloze-example') {
+      continue
+    }
+    const key = `${mistake.verbId}:${mistake.promptId ?? mistake.formLabel ?? mistake.expected}`
+    const current = missedFormMap.get(key)
+    missedFormMap.set(key, {
+      verbId: mistake.verbId,
+      count: (current?.count ?? 0) + 1,
+      expected: mistake.expected,
+      promptType: mistake.promptType,
+      formLabel: mistake.formLabel,
+      prompt: mistake.prompt,
+      detail: mistake.detail,
+      promptId: mistake.promptId,
+    })
+  }
+  const missedForms = [...missedFormMap.values()].sort((left, right) => right.count - left.count).slice(0, 10)
 
   return {
     newCount: Math.max(0, allVerbIds.length - entries.length),
@@ -271,7 +318,50 @@ export function getProgressStats(progress: StudyProgress, allVerbIds: string[], 
       .sort((left, right) => left.score - right.score)
       .slice(0, 5),
     missed,
+    missedVerbs: missed,
+    missedForms,
+    recentMistakes,
   }
+}
+
+export function getDueVerbs(verbs: VerbEntry[], progress: StudyProgress, now = new Date()) {
+  return verbs.filter((verb) => isDue(progress.verbProgress[verb.id], now)).slice(0, 20)
+}
+
+export function getOverdueVerbs(verbs: VerbEntry[], progress: StudyProgress, now = new Date()) {
+  return verbs.filter((verb) => isOverdue(progress.verbProgress[verb.id], now)).slice(0, 20)
+}
+
+export function getOftenMissedVerbs(verbs: VerbEntry[], progress: StudyProgress, limit = 20) {
+  return Object.entries(progress.verbProgress)
+    .map(([verbId, item]) => ({ verbId, count: item.incorrectCount + item.lastMistakes.length }))
+    .filter((item) => item.count > 0)
+    .sort((left, right) => right.count - left.count)
+    .map((item) => verbs.find((verb) => verb.id === item.verbId))
+    .filter((verb): verb is VerbEntry => Boolean(verb))
+    .slice(0, limit)
+}
+
+export function buildMissedFormPrompts(verbs: VerbEntry[], stats: ProgressStats, limit = 20): PracticePrompt[] {
+  const byId = new Map(verbs.map((verb) => [verb.id, verb]))
+  const prompts: PracticePrompt[] = []
+  for (const item of stats.missedForms.slice(0, limit)) {
+    const verb = byId.get(item.verbId)
+    if (!verb) {
+      continue
+    }
+    prompts.push({
+      id: item.promptId ?? `missed-${item.verbId}-${item.expected}`,
+      verb,
+      type: item.promptType,
+      prompt: item.prompt ?? verb.infinitive,
+      detail: item.detail ?? (item.formLabel ? `Wpisz formę: ${item.formLabel}.` : 'Wpisz brakującą formę.'),
+      answer: item.expected || verb.infinitive,
+      displayAnswer: verb.examples[0]?.pl,
+      formLabel: item.formLabel,
+    })
+  }
+  return prompts
 }
 
 export function getRelatedVerbs(verb: VerbEntry, verbs: VerbEntry[]) {

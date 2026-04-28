@@ -80,6 +80,13 @@ export function ConfigurationPage({
               <option value="hard">Trudniejsza</option>
             </select>
           </label>
+          <label className="settings-field">
+            <span>Tryb odpowiedzi w grach</span>
+            <select value={practice.gameAnswerMode} onChange={(event) => onUpdatePractice({ ...practice, gameAnswerMode: event.target.value as PracticeSettings['gameAnswerMode'] })}>
+              <option value="choice">Wybór odpowiedzi</option>
+              <option value="typed">Wpisywanie tam, gdzie pasuje</option>
+            </select>
+          </label>
         </section>
 
         <section className="settings-card" aria-labelledby="progress-settings-title">

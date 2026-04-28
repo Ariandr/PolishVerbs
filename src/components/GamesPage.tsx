@@ -33,8 +33,8 @@ import {
   type ChoiceQuestion,
   type GameId,
 } from '../lib/gameEngine'
-import type { AppSettings, GameSourceBase, GameSourceSettings, StudyList } from '../lib/storage'
-import type { PracticeAnswerEvent } from '../lib/practice'
+import type { AppSettings, GameAnswerMode, GameSourceBase, GameSourceSettings, PracticeDifficulty, StudyList } from '../lib/storage'
+import { checkTypedAnswer, type PracticeAnswerEvent } from '../lib/practice'
 
 interface GamesPageProps {
   allVerbs: VerbEntry[]
@@ -257,10 +257,12 @@ export function GamesPage({
 
       <GameSourcePanel
         source={gameSource}
+        practice={appSettings.practice}
         lists={lists}
         verbCount={gameVerbs.length}
         rankError={rankError}
         onChange={updateGameSource}
+        onUpdatePractice={(practice) => onUpdateAppSettings({ ...appSettings, practice })}
       />
 
       {rankError ? (
@@ -270,6 +272,8 @@ export function GamesPage({
           key={`${selectedGame.id}-${sessionKey}-${sourceSignature}`}
           game={selectedGame}
           verbs={gameVerbs}
+          difficulty={appSettings.practice.gameDifficulty}
+          answerMode={appSettings.practice.gameAnswerMode}
           onRestart={restartGame}
           onAnswer={onAnswer}
         />
@@ -300,16 +304,20 @@ export function GamesPage({
 
 function GameSourcePanel({
   source,
+  practice,
   lists,
   verbCount,
   rankError,
   onChange,
+  onUpdatePractice,
 }: {
   source: GameSourceSettings
+  practice: AppSettings['practice']
   lists: StudyList[]
   verbCount: number
   rankError: string | null
   onChange: (source: GameSourceSettings) => void
+  onUpdatePractice: (practice: AppSettings['practice']) => void
 }) {
   const updateBase = (base: GameSourceBase) => {
     onChange({
@@ -393,6 +401,14 @@ function GameSourcePanel({
         >
           Wyczyść zakres
         </button>
+
+        <label>
+          <span>Tryb odpowiedzi</span>
+          <select value={practice.gameAnswerMode} onChange={(event) => onUpdatePractice({ ...practice, gameAnswerMode: event.target.value as GameAnswerMode })}>
+            <option value="choice">Wybór</option>
+            <option value="typed">Wpisywanie</option>
+          </select>
+        </label>
       </div>
 
       {rankError ? <p className="game-source-error">{rankError}</p> : null}
@@ -412,11 +428,15 @@ function GameSourceBlocked({ message }: { message: string }) {
 function ActiveGame({
   game,
   verbs,
+  difficulty,
+  answerMode,
   onRestart,
   onAnswer,
 }: {
   game: GameMeta
   verbs: VerbEntry[]
+  difficulty: PracticeDifficulty
+  answerMode: GameAnswerMode
   onRestart: () => void
   onAnswer?: (event: PracticeAnswerEvent) => void
 }) {
@@ -425,7 +445,8 @@ function ActiveGame({
       <ChoiceQuestionGame
         title={game.title}
         emptyText="Ten test potrzebuje co najmniej 4 czasowników z różnymi odpowiedziami."
-        questions={buildQuickQuestions(verbs)}
+        questions={buildQuickQuestions(verbs, difficulty)}
+        answerMode={answerMode}
         onRestart={onRestart}
         onAnswer={onAnswer}
       />
@@ -445,7 +466,8 @@ function ActiveGame({
       <ChoiceQuestionGame
         title={game.title}
         emptyText="Koło odmiany potrzebuje co najmniej 4 różnych form z obecnego widoku."
-        questions={buildFormQuestions(verbs, 'wheel')}
+        questions={buildFormQuestions(verbs, 'wheel', difficulty)}
+        answerMode={answerMode}
         onRestart={onRestart}
         onAnswer={onAnswer}
         leadIcon={<Dices size={28} />}
@@ -454,7 +476,7 @@ function ActiveGame({
   }
 
   if (game.id === 'open-cards') {
-    return <OpenCardsGame verbs={verbs} onRestart={onRestart} onAnswer={onAnswer} />
+    return <OpenCardsGame verbs={verbs} difficulty={difficulty} answerMode={answerMode} onRestart={onRestart} onAnswer={onAnswer} />
   }
 
   if (game.id === 'infinitive-anagram') {
@@ -462,14 +484,15 @@ function ActiveGame({
   }
 
   if (game.id === 'memory-pairs') {
-    return <MemoryPairsGame verbs={verbs} onRestart={onRestart} />
+    return <MemoryPairsGame verbs={verbs} onRestart={onRestart} onAnswer={onAnswer} />
   }
 
   return (
     <ChoiceQuestionGame
       title={game.title}
       emptyText="Ta gra potrzebuje co najmniej 4 różnych form z obecnego widoku."
-      questions={buildFormQuestions(verbs, 'missing')}
+      questions={buildFormQuestions(verbs, 'missing', difficulty)}
+      answerMode={answerMode}
       onRestart={onRestart}
       onAnswer={onAnswer}
     />
@@ -526,6 +549,7 @@ function ChoiceQuestionGame({
   title,
   emptyText,
   questions,
+  answerMode = 'choice',
   onRestart,
   onAnswer,
   leadIcon,
@@ -533,19 +557,22 @@ function ChoiceQuestionGame({
   title: string
   emptyText: string
   questions: ChoiceQuestion[]
+  answerMode?: GameAnswerMode
   onRestart: () => void
   onAnswer?: (event: PracticeAnswerEvent) => void
   leadIcon?: ReactNode
 }) {
+  const [sessionQuestions] = useState(() => questions)
   const [currentIndex, setCurrentIndex] = useState(0)
   const [selectedAnswer, setSelectedAnswer] = useState<string | null>(null)
+  const [typedAnswer, setTypedAnswer] = useState('')
   const [correct, setCorrect] = useState(0)
   const [attempts, setAttempts] = useState(0)
-  const question = questions[currentIndex]
-  const completed = currentIndex >= questions.length
+  const question = sessionQuestions[currentIndex]
+  const completed = currentIndex >= sessionQuestions.length
   const answered = selectedAnswer !== null
 
-  if (!questions.length) {
+  if (!sessionQuestions.length) {
     return <GameEmpty text={emptyText} onRestart={onRestart} />
   }
 
@@ -553,36 +580,44 @@ function ChoiceQuestionGame({
     return <GameSummary correct={correct} attempts={attempts} onRestart={onRestart} />
   }
 
-  const chooseAnswer = (answer: string) => {
-    if (answered) {
+  const recordAnswer = (answer: string) => {
+    const activeQuestion = question
+    if (answered || !activeQuestion) {
       return
     }
-    setSelectedAnswer(answer)
+    const submittedAnswer = answer.trim()
+    const isCorrect = answerMode === 'typed' ? checkTypedAnswer(submittedAnswer, activeQuestion.answer) : submittedAnswer === activeQuestion.answer
+    setSelectedAnswer(submittedAnswer)
     setAttempts((count) => count + 1)
-    if (answer === question.answer) {
+    if (isCorrect) {
       setCorrect((count) => count + 1)
     }
     onAnswer?.({
-      verbId: question.verb.id,
-      correct: answer === question.answer,
-      promptType: question.detail.includes('czas teraźniejszy')
+      verbId: activeQuestion.verb.id,
+      correct: isCorrect,
+      promptType: activeQuestion.detail.includes('czas teraźniejszy')
         ? 'present-form'
-        : question.detail.includes('czas przeszły')
+        : activeQuestion.detail.includes('czas przeszły')
           ? 'past-form'
           : 'game',
-      expected: question.answer,
-      given: answer,
+      expected: activeQuestion.answer,
+      given: submittedAnswer,
+      prompt: activeQuestion.prompt,
+      detail: activeQuestion.detail,
+      formLabel: activeQuestion.detail.replace(/^Wylosowano: |^Uzupełnij formę: /, '').replace(/\.$/, ''),
+      promptId: activeQuestion.id,
     })
   }
 
   const nextQuestion = () => {
     setSelectedAnswer(null)
+    setTypedAnswer('')
     setCurrentIndex((index) => index + 1)
   }
 
   return (
     <article className="game-board">
-      <ScoreBar correct={correct} attempts={attempts} progress={`${currentIndex + 1} / ${questions.length}`} />
+      <ScoreBar correct={correct} attempts={attempts} progress={`${currentIndex + 1} / ${sessionQuestions.length}`} />
       <section className={`game-prompt ${leadIcon ? 'with-icon' : ''}`}>
         {leadIcon ? <span className="game-lead-icon">{leadIcon}</span> : null}
         <div>
@@ -591,27 +626,56 @@ function ChoiceQuestionGame({
           <p>{question.detail}</p>
         </div>
       </section>
-      <div className="game-options">
-        {question.options.map((option) => (
-          <button
-            className={`game-option ${answered && option === question.answer ? 'correct' : ''} ${
-              answered && option === selectedAnswer && option !== question.answer ? 'wrong' : ''
-            }`}
-            type="button"
-            key={option}
-            disabled={answered}
-            onClick={() => chooseAnswer(option)}
-          >
-            {option}
-          </button>
-        ))}
-      </div>
+      {answerMode === 'typed' ? (
+        <section className="typed-answer-panel game-typed-answer">
+          <label>
+            <span>Odpowiedź</span>
+            <input
+              type="text"
+              value={typedAnswer}
+              disabled={answered}
+              onChange={(event) => setTypedAnswer(event.target.value)}
+              onKeyDown={(event) => {
+                if (event.key === 'Enter') {
+                  event.preventDefault()
+                  if (answered) {
+                    return
+                  } else if (typedAnswer.trim()) {
+                    recordAnswer(typedAnswer)
+                  }
+                }
+              }}
+            />
+          </label>
+          {!answered ? (
+            <button className="primary-button" type="button" disabled={!typedAnswer.trim()} onClick={() => recordAnswer(typedAnswer)}>
+              Sprawdź
+            </button>
+          ) : null}
+        </section>
+      ) : (
+        <div className="game-options">
+          {question.options.map((option) => (
+            <button
+              className={`game-option ${answered && option === question.answer ? 'correct' : ''} ${
+                answered && option === selectedAnswer && option !== question.answer ? 'wrong' : ''
+              }`}
+              type="button"
+              key={option}
+              disabled={answered}
+              onClick={() => recordAnswer(option)}
+            >
+              {option}
+            </button>
+          ))}
+        </div>
+      )}
       {answered ? (
         <div className="game-feedback">
-          {selectedAnswer === question.answer ? <Check size={18} /> : <X size={18} />}
-          <span>{selectedAnswer === question.answer ? 'Dobrze.' : `Poprawnie: ${question.answer}`}</span>
+          {checkTypedAnswer(selectedAnswer ?? '', question.answer) ? <Check size={18} /> : <X size={18} />}
+          <span>{checkTypedAnswer(selectedAnswer ?? '', question.answer) ? 'Dobrze.' : `Poprawnie: ${question.answer}`}</span>
           <button className="primary-button" type="button" onClick={nextQuestion}>
-            {currentIndex === questions.length - 1 ? 'Zakończ' : 'Następne'}
+            {currentIndex === sessionQuestions.length - 1 ? 'Zakończ' : 'Następne'}
           </button>
         </div>
       ) : null}
@@ -628,8 +692,8 @@ function MeaningMatchGame({
   onRestart: () => void
   onAnswer?: (event: PracticeAnswerEvent) => void
 }) {
-  const pairs = useMemo(() => buildMeaningPairs(verbs), [verbs])
-  const rightColumn = useMemo(() => shuffleItems(pairs), [pairs])
+  const [pairs] = useState(() => buildMeaningPairs(verbs))
+  const [rightColumn] = useState(() => shuffleItems(pairs))
   const [selectedLeft, setSelectedLeft] = useState<string | null>(null)
   const [matched, setMatched] = useState<Set<string>>(() => new Set())
   const [attempts, setAttempts] = useState(0)
@@ -713,7 +777,7 @@ function AspectSortGame({
   onRestart: () => void
   onAnswer?: (event: PracticeAnswerEvent) => void
 }) {
-  const items = useMemo(() => buildAspectItems(verbs), [verbs])
+  const [items] = useState(() => buildAspectItems(verbs))
   const [selectedId, setSelectedId] = useState<string | null>(null)
   const [results, setResults] = useState<Record<string, { bucket: string; correct: boolean }>>({})
   const attempts = Object.keys(results).length
@@ -784,17 +848,22 @@ function AspectSortGame({
 
 function OpenCardsGame({
   verbs,
+  difficulty,
+  answerMode,
   onRestart,
   onAnswer,
 }: {
   verbs: VerbEntry[]
+  difficulty: PracticeDifficulty
+  answerMode: GameAnswerMode
   onRestart: () => void
   onAnswer?: (event: PracticeAnswerEvent) => void
 }) {
-  const questions = useMemo(() => buildOpenCardQuestions(verbs), [verbs])
+  const [questions] = useState(() => buildOpenCardQuestions(verbs, difficulty))
   const [activeIndex, setActiveIndex] = useState<number | null>(null)
   const [cardStates, setCardStates] = useState<Record<string, 'correct' | 'wrong'>>({})
   const [selectedAnswer, setSelectedAnswer] = useState<string | null>(null)
+  const [typedAnswer, setTypedAnswer] = useState('')
   const attempts = Object.keys(cardStates).length
   const correct = Object.values(cardStates).filter((state) => state === 'correct').length
   const activeQuestion = activeIndex === null ? null : questions[activeIndex]
@@ -808,20 +877,26 @@ function OpenCardsGame({
   }
 
   const chooseAnswer = (answer: string) => {
-    if (!activeQuestion || selectedAnswer) {
+    const question = activeQuestion
+    if (!question || selectedAnswer) {
       return
     }
-    setSelectedAnswer(answer)
+    const submittedAnswer = answer.trim()
+    const correct = answerMode === 'typed' ? checkTypedAnswer(submittedAnswer, question.answer) : submittedAnswer === question.answer
+    setSelectedAnswer(submittedAnswer)
     setCardStates((current) => ({
       ...current,
-      [activeQuestion.id]: answer === activeQuestion.answer ? 'correct' : 'wrong',
+      [question.id]: correct ? 'correct' : 'wrong',
     }))
     onAnswer?.({
-      verbId: activeQuestion.verb.id,
-      correct: answer === activeQuestion.answer,
+      verbId: question.verb.id,
+      correct,
       promptType: 'game',
-      expected: activeQuestion.answer,
-      given: answer,
+      expected: question.answer,
+      given: submittedAnswer,
+      prompt: question.prompt,
+      detail: question.detail,
+      promptId: question.id,
     })
   }
 
@@ -838,6 +913,7 @@ function OpenCardsGame({
             onClick={() => {
               setActiveIndex(index)
               setSelectedAnswer(null)
+              setTypedAnswer('')
             }}
           >
             {index + 1}
@@ -852,7 +928,32 @@ function OpenCardsGame({
           </div>
         </section>
       ) : null}
-      {activeQuestion ? (
+      {activeQuestion && answerMode === 'typed' ? (
+        <section className="typed-answer-panel game-typed-answer">
+          <label>
+            <span>Odpowiedź</span>
+            <input
+              type="text"
+              value={typedAnswer}
+              disabled={Boolean(selectedAnswer)}
+              onChange={(event) => setTypedAnswer(event.target.value)}
+              onKeyDown={(event) => {
+                if (event.key === 'Enter') {
+                  event.preventDefault()
+                  if (typedAnswer.trim() && !selectedAnswer) {
+                    chooseAnswer(typedAnswer)
+                  }
+                }
+              }}
+            />
+          </label>
+          {!selectedAnswer ? (
+            <button className="primary-button" type="button" disabled={!typedAnswer.trim()} onClick={() => chooseAnswer(typedAnswer)}>
+              Sprawdź
+            </button>
+          ) : null}
+        </section>
+      ) : activeQuestion ? (
         <div className="game-options">
           {activeQuestion.options.map((option) => (
             <button
@@ -873,8 +974,8 @@ function OpenCardsGame({
       )}
       {activeQuestion && selectedAnswer ? (
         <div className="game-feedback">
-          {selectedAnswer === activeQuestion.answer ? <Check size={18} /> : <X size={18} />}
-          <span>{selectedAnswer === activeQuestion.answer ? 'Dobrze.' : `Poprawnie: ${activeQuestion.answer}`}</span>
+          {checkTypedAnswer(selectedAnswer, activeQuestion.answer) ? <Check size={18} /> : <X size={18} />}
+          <span>{checkTypedAnswer(selectedAnswer, activeQuestion.answer) ? 'Dobrze.' : `Poprawnie: ${activeQuestion.answer}`}</span>
           <button className="primary-button" type="button" onClick={() => setActiveIndex(null)}>
             Wróć do kart
           </button>
@@ -893,7 +994,7 @@ function AnagramGame({
   onRestart: () => void
   onAnswer?: (event: PracticeAnswerEvent) => void
 }) {
-  const questions = useMemo(() => buildAnagramQuestions(verbs), [verbs])
+  const [questions] = useState(() => buildAnagramQuestions(verbs))
   const [currentIndex, setCurrentIndex] = useState(0)
   const [pickedTileIds, setPickedTileIds] = useState<string[]>([])
   const [answered, setAnswered] = useState(false)
@@ -984,8 +1085,16 @@ function AnagramGame({
   )
 }
 
-function MemoryPairsGame({ verbs, onRestart }: { verbs: VerbEntry[]; onRestart: () => void }) {
-  const cards = useMemo(() => buildMemoryCards(verbs), [verbs])
+function MemoryPairsGame({
+  verbs,
+  onRestart,
+  onAnswer,
+}: {
+  verbs: VerbEntry[]
+  onRestart: () => void
+  onAnswer?: (event: PracticeAnswerEvent) => void
+}) {
+  const [cards] = useState(() => buildMemoryCards(verbs))
   const pairTotal = cards.length / 2
   const [flipped, setFlipped] = useState<string[]>([])
   const [matched, setMatched] = useState<Set<string>>(() => new Set())
@@ -1018,6 +1127,21 @@ function MemoryPairsGame({ verbs, onRestart }: { verbs: VerbEntry[]; onRestart: 
         setMessage('Dobra para.')
       } else {
         setMessage('To nie ta para.')
+      }
+      if (first && second) {
+        const verb = verbs.find((item) => item.id === first.pairId)
+        if (verb) {
+          onAnswer?.({
+            verbId: verb.id,
+            correct: first.pairId === second.pairId,
+            promptType: 'game',
+            expected: getPrimaryMemoryLabel(cards, first.pairId),
+            given: `${first.label} + ${second.label}`,
+            prompt: 'Pary pamięciowe',
+            detail: 'Dopasuj bezokolicznik do znaczenia.',
+            promptId: `memory-${first.pairId}`,
+          })
+        }
       }
     }
   }
@@ -1058,4 +1182,11 @@ function MemoryPairsGame({ verbs, onRestart }: { verbs: VerbEntry[]; onRestart: 
       </div>
     </article>
   )
+}
+
+function getPrimaryMemoryLabel(cards: ReturnType<typeof buildMemoryCards>, pairId: string) {
+  return cards
+    .filter((card) => card.pairId === pairId)
+    .map((card) => card.label)
+    .join(' + ')
 }

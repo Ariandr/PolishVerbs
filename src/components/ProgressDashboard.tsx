@@ -5,11 +5,12 @@ import type { ProgressStats } from '../lib/practice'
 interface ProgressDashboardProps {
   stats: ProgressStats
   verbs: VerbEntry[]
+  onOpenProgress: () => void
   onStartDueReview: () => void
   onStartMistakeReview: () => void
 }
 
-export function ProgressDashboard({ stats, verbs, onStartDueReview, onStartMistakeReview }: ProgressDashboardProps) {
+export function ProgressDashboard({ stats, verbs, onOpenProgress, onStartDueReview, onStartMistakeReview }: ProgressDashboardProps) {
   const verbById = new Map(verbs.map((verb) => [verb.id, verb]))
 
   return (
@@ -38,6 +39,10 @@ export function ProgressDashboard({ stats, verbs, onStartDueReview, onStartMista
         <button className="secondary-button" type="button" disabled={!stats.missed.length} onClick={onStartMistakeReview}>
           <Target size={15} />
           Najczęstsze błędy
+        </button>
+        <button className="secondary-button dashboard-wide-action" type="button" onClick={onOpenProgress}>
+          <BarChart3 size={15} />
+          Pełny postęp
         </button>
       </div>
       {stats.weakest.length ? (

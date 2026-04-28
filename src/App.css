@@ -69,6 +69,10 @@
   padding: 14px 0 18px;
 }
 
+.app-header > * {
+  min-width: 0;
+}
+
 .header-controls {
   display: flex;
   gap: 8px;
@@ -105,6 +109,7 @@ h1 {
   font-size: clamp(1.6rem, 2.25vw, 2.55rem);
   line-height: 1;
   letter-spacing: 0;
+  overflow-wrap: anywhere;
   white-space: nowrap;
 }
 
@@ -248,6 +253,36 @@ h2 {
   color: var(--muted);
 }
 
+.toolbar-secondary {
+  display: grid;
+  grid-template-columns: minmax(280px, 0.72fr) minmax(360px, 1fr);
+  grid-column: 1 / -1;
+  gap: 10px;
+  align-items: stretch;
+  min-width: 0;
+}
+
+.toolbar-secondary .lists-panel,
+.toolbar-secondary .results-meta {
+  box-shadow: none;
+}
+
+.toolbar-secondary .lists-panel {
+  display: grid;
+  grid-template-columns: minmax(0, 1fr);
+  align-content: center;
+  padding: 10px;
+}
+
+.toolbar-secondary .panel-title {
+  display: none;
+}
+
+.toolbar-secondary .results-meta {
+  align-items: center;
+  grid-template-columns: auto minmax(300px, 1fr);
+}
+
 select {
   min-height: 42px;
   border: 1px solid var(--border-strong);
@@ -269,8 +304,8 @@ select {
   position: sticky;
   top: 82px;
   display: grid;
-  grid-template-rows: auto auto auto minmax(0, 1fr);
-  gap: 12px;
+  grid-template-rows: minmax(0, 1fr);
+  gap: 0;
   min-height: 0;
   max-height: calc(100svh - 98px);
   overflow: hidden;
@@ -478,6 +513,10 @@ select {
   padding: 0 10px;
 }
 
+.dashboard-wide-action {
+  grid-column: 1 / -1;
+}
+
 .dashboard-list {
   display: flex;
   flex-wrap: wrap;
@@ -496,6 +535,104 @@ select {
   color: var(--muted-strong);
   font-size: 0.82rem;
   font-weight: 800;
+}
+
+.progress-page {
+  display: grid;
+  gap: 18px;
+  margin-top: 18px;
+}
+
+.progress-metrics {
+  display: grid;
+  grid-template-columns: repeat(6, minmax(0, 1fr));
+  gap: 10px;
+}
+
+.progress-metrics span,
+.progress-actions-card {
+  border: 1px solid var(--border);
+  border-radius: 8px;
+  background: var(--surface);
+  box-shadow: var(--shadow);
+}
+
+.progress-metrics span {
+  display: grid;
+  gap: 4px;
+  min-width: 0;
+  padding: 14px;
+  color: var(--muted);
+  font-weight: 800;
+}
+
+.progress-metrics strong {
+  color: var(--accent);
+  font-size: 1.8rem;
+  line-height: 1;
+}
+
+.progress-actions-card {
+  display: grid;
+  gap: 12px;
+  padding: 16px;
+}
+
+.progress-action-grid {
+  display: grid;
+  grid-template-columns: repeat(4, minmax(0, 1fr));
+  gap: 10px;
+}
+
+.progress-grid {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 14px;
+}
+
+.progress-list,
+.mistake-history {
+  display: grid;
+  gap: 8px;
+}
+
+.progress-list button,
+.mistake-history button {
+  display: grid;
+  gap: 4px;
+  width: 100%;
+  border: 1px solid var(--border);
+  border-radius: 8px;
+  padding: 10px 12px;
+  background: var(--surface-muted);
+  color: var(--text);
+  text-align: left;
+}
+
+.progress-list button {
+  grid-template-columns: minmax(0, 1fr) auto;
+  align-items: center;
+}
+
+.progress-list span,
+.mistake-history strong {
+  min-width: 0;
+  overflow: hidden;
+  color: var(--text-strong);
+  font-weight: 900;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+
+.progress-list small,
+.mistake-history small,
+.mistake-history span,
+.muted-copy {
+  color: var(--muted);
+}
+
+.progress-history {
+  min-width: 0;
 }
 
 .games-page {
@@ -606,7 +743,7 @@ select {
 
 .game-source-controls {
   display: grid;
-  grid-template-columns: minmax(180px, 1fr) minmax(180px, 1fr) minmax(120px, 0.55fr) minmax(120px, 0.55fr) auto;
+  grid-template-columns: repeat(6, minmax(120px, 1fr));
   gap: 10px;
   align-items: end;
 }
@@ -1601,6 +1738,10 @@ mark {
   font-weight: 800;
 }
 
+.game-typed-answer {
+  margin-top: 0;
+}
+
 .typed-result {
   display: grid;
   gap: 4px;
@@ -1758,6 +1899,19 @@ mark {
     display: inline-flex;
   }
 
+  .quick-filters,
+  .toolbar-secondary {
+    display: none;
+  }
+
+  .toolbar.filters-open .quick-filters {
+    display: flex;
+  }
+
+  .toolbar.filters-open .toolbar-secondary {
+    display: grid;
+  }
+
   .filter-group {
     display: none;
     grid-template-columns: 1fr;
@@ -1768,6 +1922,19 @@ mark {
 
   .toolbar.filters-open .filter-group {
     display: grid;
+  }
+
+  .toolbar-secondary {
+    grid-template-columns: 1fr;
+    gap: 8px;
+  }
+
+  .toolbar-secondary .lists-panel {
+    padding: 8px;
+  }
+
+  .toolbar-secondary .results-meta {
+    grid-template-columns: 1fr;
   }
 
   .filter-group > svg {
@@ -1784,6 +1951,11 @@ mark {
     white-space: normal;
   }
 
+  .app-header {
+    grid-template-columns: 1fr;
+    gap: 10px;
+  }
+
   .header-controls {
     justify-self: start;
   }
@@ -1796,6 +1968,12 @@ mark {
   .settings-head {
     grid-template-columns: 1fr;
     gap: 12px;
+  }
+
+  .progress-metrics,
+  .progress-action-grid,
+  .progress-grid {
+    grid-template-columns: 1fr;
   }
 
   .dashboard-grid,
@@ -2039,6 +2217,23 @@ mark {
 @media (max-width: 560px) {
   .app-shell {
     padding: 10px;
+  }
+
+  h1 {
+    font-size: 1.25rem;
+  }
+
+  .toolbar-search-row {
+    grid-template-columns: 1fr;
+  }
+
+  .filter-toggle {
+    width: 100%;
+    padding: 0;
+  }
+
+  .filter-toggle span {
+    display: inline;
   }
 
   .progress-summary {

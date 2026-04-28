@@ -1,10 +1,10 @@
 import { useEffect, useMemo, useRef, useState } from 'react'
-import { ArrowLeft, BookOpen, Filter, Gamepad2, Moon, Search, Settings, Sun, Wrench } from 'lucide-react'
+import { ArrowLeft, BarChart3, BookOpen, Filter, Gamepad2, Moon, Search, Settings, Sun, Wrench } from 'lucide-react'
 import './App.css'
 import { ConfigurationPage } from './components/ConfigurationPage'
 import { CreateListModal, ListPickerModal } from './components/ListModals'
 import { GamesPage } from './components/GamesPage'
-import { ProgressDashboard } from './components/ProgressDashboard'
+import { ProgressPage } from './components/ProgressPage'
 import { QualityPanel } from './components/QualityPanel'
 import { StudyMode } from './components/StudyMode'
 import { StudyLists } from './components/StudyLists'
@@ -13,7 +13,18 @@ import { VerbList } from './components/VerbList'
 import { verbById, verbs } from './data/verbs'
 import type { Aspect } from './data/schema'
 import { mergeProgressImport, serializeProgressExport } from './lib/progressTransfer'
-import { applyPracticeAnswer, getProgressStats, isDue, isOverdue, type PracticeAnswerEvent } from './lib/practice'
+import {
+  applyPracticeAnswer,
+  buildMissedFormPrompts,
+  getDueVerbs,
+  getOftenMissedVerbs,
+  getOverdueVerbs,
+  getProgressStats,
+  isDue,
+  isOverdue,
+  type PracticeAnswerEvent,
+  type PracticePrompt,
+} from './lib/practice'
 import { getSearchIndex, getSearchScore, normalizeSearch } from './lib/search'
 import {
   createStudyList,
@@ -59,9 +70,11 @@ function App() {
     title: string
     answerMode?: PracticeAnswerMode
     promptMode?: PracticePromptMode
+    prompts?: PracticePrompt[]
   } | null>(null)
   const [configurationOpen, setConfigurationOpen] = useState(false)
   const [gamesOpen, setGamesOpen] = useState(false)
+  const [progressOpen, setProgressOpen] = useState(false)
   const [showQaPanel, setShowQaPanel] = useState(() => isQaEnabledFromUrl())
   const [qaEntryEnabled, setQaEntryEnabled] = useState(() => isQaEnabledFromUrl())
   const [transferMessage, setTransferMessage] = useState<{ title: string; body: string } | null>(null)
@@ -228,10 +241,31 @@ function App() {
   const startStudy = (
     sessionVerbs: typeof verbs,
     title = 'Powtórka czasowników',
-    options: { answerMode?: PracticeAnswerMode; promptMode?: PracticePromptMode } = {},
+    options: { answerMode?: PracticeAnswerMode; promptMode?: PracticePromptMode; prompts?: PracticePrompt[] } = {},
   ) => {
     setStudySession({ verbs: sessionVerbs, title, ...options })
     setStudyModeOpen(true)
+  }
+
+  const startDueReview = () => {
+    startStudy(getDueVerbs(verbs, progress), 'Powtórka na dziś', { answerMode: 'typed', promptMode: 'mixed' })
+  }
+
+  const startOverdueReview = () => {
+    startStudy(getOverdueVerbs(verbs, progress), 'Zaległe powtórki', { answerMode: 'typed', promptMode: 'mixed' })
+  }
+
+  const startMistakeReview = () => {
+    startStudy(getOftenMissedVerbs(verbs, progress), 'Najczęstsze błędy', { answerMode: 'typed', promptMode: 'mixed' })
+  }
+
+  const startMissedFormsReview = () => {
+    const prompts = buildMissedFormPrompts(verbs, progressStats)
+    startStudy(
+      prompts.map((prompt) => prompt.verb),
+      'Najczęściej mylone formy',
+      { answerMode: 'typed', promptMode: 'forms', prompts },
+    )
   }
 
   const saveCurrentViewAsList = () => {
@@ -336,7 +370,7 @@ function App() {
   }
 
   const exportProgress = () => {
-    const blob = new Blob([serializeProgressExport(progress, themePreference)], { type: 'application/json' })
+    const blob = new Blob([serializeProgressExport(progress, themePreference, appSettings)], { type: 'application/json' })
     const url = URL.createObjectURL(blob)
     const link = document.createElement('a')
     link.href = url
@@ -351,6 +385,16 @@ function App() {
       updateProgress(result.progress)
       if (result.themePreference) {
         setThemePreference(result.themePreference)
+      }
+      if (result.appSettings) {
+        setAppSettings({
+          ...appSettings,
+          ...result.appSettings,
+          practice: {
+            ...appSettings.practice,
+            ...result.appSettings.practice,
+          },
+        })
       }
       setTransferMessage({
         title: 'Zaimportowano postęp',
@@ -441,10 +485,24 @@ function App() {
             title="Konfiguracja"
             onClick={() => {
               setGamesOpen(false)
+              setProgressOpen(false)
               setConfigurationOpen(true)
             }}
           >
             <Settings size={18} />
+          </button>
+          <button
+            className={`header-icon-button ${progressOpen ? 'active' : ''}`}
+            type="button"
+            aria-label="Otwórz postęp"
+            title="Postęp"
+            onClick={() => {
+              setConfigurationOpen(false)
+              setGamesOpen(false)
+              setProgressOpen(true)
+            }}
+          >
+            <BarChart3 size={18} />
           </button>
           <button
             className={`header-icon-button ${gamesOpen ? 'active' : ''}`}
@@ -453,6 +511,7 @@ function App() {
             title="Gry"
             onClick={() => {
               setConfigurationOpen(false)
+              setProgressOpen(false)
               setGamesOpen(true)
             }}
           >
@@ -482,6 +541,20 @@ function App() {
           onUpdatePractice={(practice) => updateAppSettings({ ...appSettings, practice })}
           onExportProgress={exportProgress}
           onImportProgress={importProgress}
+        />
+      ) : progressOpen ? (
+        <ProgressPage
+          stats={progressStats}
+          verbs={verbs}
+          onBack={() => setProgressOpen(false)}
+          onStartDueReview={startDueReview}
+          onStartOverdueReview={startOverdueReview}
+          onStartMistakeReview={startMistakeReview}
+          onStartMissedForms={startMissedFormsReview}
+          onSelectVerb={(verbId) => {
+            setProgressOpen(false)
+            selectVerb(verbId, false)
+          }}
         />
       ) : gamesOpen ? (
         <GamesPage
@@ -562,23 +635,8 @@ function App() {
             <option value="top3000">Pierwsze 3000</option>
           </select>
         </div>
-      </section>
 
-      <section className="workspace">
-        <aside className="sidebar">
-          <ProgressDashboard
-            stats={progressStats}
-            verbs={verbs}
-            onStartDueReview={() => startStudy(verbs.filter((verb) => isDue(progress.verbProgress[verb.id])), 'Powtórka na dziś')}
-            onStartMistakeReview={() =>
-              startStudy(
-                progressStats.missed
-                  .map((item) => verbs.find((verb) => verb.id === item.verbId))
-                  .filter((verb): verb is (typeof verbs)[number] => Boolean(verb)),
-                'Najczęstsze błędy',
-              )
-            }
-          />
+        <div className="toolbar-secondary">
           <StudyLists
             lists={progress.lists}
             selectedListId={progress.selectedListId}
@@ -619,7 +677,11 @@ function App() {
               </button>
             </div>
           </div>
+        </div>
+      </section>
 
+      <section className="workspace">
+        <aside className="sidebar">
           <VerbList
             verbs={visibleVerbs}
             selectedVerbId={selectedVerb?.id ?? ''}
@@ -667,7 +729,7 @@ function App() {
         </>
       )}
 
-      {!configurationOpen && !gamesOpen && showQaPanel ? (
+      {!configurationOpen && !gamesOpen && !progressOpen && showQaPanel ? (
         <QualityPanel
           verbs={verbs}
           onClose={toggleQaPanel}
@@ -676,7 +738,7 @@ function App() {
             setShowQaPanel(false)
           }}
         />
-      ) : !configurationOpen && !gamesOpen && qaEntryEnabled ? (
+      ) : !configurationOpen && !gamesOpen && !progressOpen && qaEntryEnabled ? (
         <button className="qa-open-button" type="button" onClick={toggleQaPanel}>
           <Wrench size={14} />
           QA
@@ -687,6 +749,7 @@ function App() {
       {studyModeOpen ? (
         <StudyMode
           verbs={studySession?.verbs ?? visibleVerbs}
+          prompts={studySession?.prompts}
           title={studySession?.title}
           answerMode={studySession?.answerMode ?? appSettings.practice.answerMode}
           promptMode={studySession?.promptMode ?? appSettings.practice.promptMode}
