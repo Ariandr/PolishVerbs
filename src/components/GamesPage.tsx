@@ -10,11 +10,12 @@ import {
   Puzzle,
   RotateCcw,
   Shuffle,
+  SlidersHorizontal,
   Sparkles,
   Trophy,
   X,
 } from 'lucide-react'
-import { useMemo, useState } from 'react'
+import { useEffect, useMemo, useState } from 'react'
 import type { ReactNode } from 'react'
 import type { VerbEntry } from '../data/schema'
 import {
@@ -32,9 +33,14 @@ import {
   type ChoiceQuestion,
   type GameId,
 } from '../lib/gameEngine'
+import type { AppSettings, GameSourceBase, GameSourceSettings, StudyList } from '../lib/storage'
 
 interface GamesPageProps {
-  verbs: VerbEntry[]
+  allVerbs: VerbEntry[]
+  visibleVerbs: VerbEntry[]
+  lists: StudyList[]
+  appSettings: AppSettings
+  onUpdateAppSettings: (settings: AppSettings) => void
   onBack: () => void
 }
 
@@ -72,7 +78,7 @@ const games: GameMeta[] = [
     id: 'conjugation-wheel',
     title: 'Koło odmiany',
     description: 'Losuj wyzwania z odmiany i wybieraj formę.',
-    minVerbs: 4,
+    minVerbs: 1,
     icon: <Dices size={19} />,
   },
   {
@@ -105,10 +111,116 @@ const games: GameMeta[] = [
   },
 ]
 
-export function GamesPage({ verbs, onBack }: GamesPageProps) {
+const defaultGameSource: GameSourceSettings = {
+  base: 'current-view',
+  listId: null,
+  rankStart: '',
+  rankEnd: '',
+}
+
+const parseRankBound = (value: string) => {
+  if (!value.trim()) {
+    return null
+  }
+  const parsed = Number(value)
+  if (!Number.isInteger(parsed) || parsed < 1 || parsed > 3000) {
+    return Number.NaN
+  }
+  return parsed
+}
+
+const normalizeRankInput = (value: string) => value.replace(/[^\d]/g, '').slice(0, 4)
+
+function getEffectiveGameSource(source: GameSourceSettings | undefined, lists: StudyList[]): GameSourceSettings {
+  const safeSource = source ?? defaultGameSource
+  if (safeSource.base === 'list' && !lists.some((list) => list.id === safeSource.listId)) {
+    return { ...safeSource, base: 'current-view', listId: null }
+  }
+  return safeSource
+}
+
+function getSourceLabel(source: GameSourceSettings, lists: StudyList[]) {
+  if (source.base === 'all') {
+    return 'Wszystkie czasowniki'
+  }
+  if (source.base === 'list') {
+    return lists.find((list) => list.id === source.listId)?.name ?? 'Lista'
+  }
+  return 'Obecny widok'
+}
+
+function getGameVerbs({
+  source,
+  allVerbs,
+  visibleVerbs,
+  lists,
+}: {
+  source: GameSourceSettings
+  allVerbs: VerbEntry[]
+  visibleVerbs: VerbEntry[]
+  lists: StudyList[]
+}) {
+  const activeListVerbIds = source.base === 'list' ? new Set(lists.find((list) => list.id === source.listId)?.verbIds ?? []) : null
+  const sourceVerbs =
+    source.base === 'all'
+      ? allVerbs
+      : source.base === 'list'
+        ? allVerbs.filter((verb) => activeListVerbIds?.has(verb.id))
+        : visibleVerbs
+  const rankStart = parseRankBound(source.rankStart)
+  const rankEnd = parseRankBound(source.rankEnd)
+
+  if (Number.isNaN(rankStart) || Number.isNaN(rankEnd) || (rankStart !== null && rankEnd !== null && rankStart > rankEnd)) {
+    return []
+  }
+
+  return sourceVerbs.filter((verb) => {
+    if (rankStart !== null && verb.frequencyRank < rankStart) {
+      return false
+    }
+    if (rankEnd !== null && verb.frequencyRank > rankEnd) {
+      return false
+    }
+    return true
+  })
+}
+
+function getRankError(source: GameSourceSettings) {
+  const rankStart = parseRankBound(source.rankStart)
+  const rankEnd = parseRankBound(source.rankEnd)
+  if (Number.isNaN(rankStart) || Number.isNaN(rankEnd)) {
+    return 'Zakres rang może zawierać tylko liczby od 1 do 3000.'
+  }
+  if (rankStart !== null && rankEnd !== null && rankStart > rankEnd) {
+    return 'Początek zakresu nie może być większy niż koniec.'
+  }
+  return null
+}
+
+export function GamesPage({
+  allVerbs,
+  visibleVerbs,
+  lists,
+  appSettings,
+  onUpdateAppSettings,
+  onBack,
+}: GamesPageProps) {
   const [selectedGameId, setSelectedGameId] = useState<GameId | null>(null)
   const [sessionKey, setSessionKey] = useState(0)
+  const gameSource = getEffectiveGameSource(appSettings.gameSource, lists)
+  const rankError = getRankError(gameSource)
+  const gameVerbs = useMemo(
+    () => getGameVerbs({ source: gameSource, allVerbs, visibleVerbs, lists }),
+    [allVerbs, gameSource, lists, visibleVerbs],
+  )
   const selectedGame = games.find((game) => game.id === selectedGameId)
+  const sourceSignature = `${gameSource.base}:${gameSource.listId ?? ''}:${gameSource.rankStart}:${gameSource.rankEnd}:${gameVerbs.length}:${gameVerbs[0]?.id ?? ''}:${gameVerbs.at(-1)?.id ?? ''}`
+
+  useEffect(() => {
+    if (gameSource !== appSettings.gameSource) {
+      onUpdateAppSettings({ ...appSettings, gameSource })
+    }
+  }, [appSettings, gameSource, onUpdateAppSettings])
 
   const openGame = (gameId: GameId) => {
     setSelectedGameId(gameId)
@@ -116,6 +228,11 @@ export function GamesPage({ verbs, onBack }: GamesPageProps) {
   }
 
   const restartGame = () => {
+    setSessionKey((key) => key + 1)
+  }
+
+  const updateGameSource = (next: GameSourceSettings) => {
+    onUpdateAppSettings({ ...appSettings, gameSource: next })
     setSessionKey((key) => key + 1)
   }
 
@@ -129,16 +246,33 @@ export function GamesPage({ verbs, onBack }: GamesPageProps) {
         <div>
           <div className="section-title">Gry</div>
           <h2 id="games-title">{selectedGame?.title ?? 'Gry czasownikowe'}</h2>
-          <p>{verbs.length} czasowników z obecnego widoku</p>
+          <p>
+            {gameVerbs.length} czasowników w grach · {getSourceLabel(gameSource, lists)}
+          </p>
         </div>
       </header>
 
-      {selectedGame ? (
-        <ActiveGame key={`${selectedGame.id}-${sessionKey}`} game={selectedGame} verbs={verbs} onRestart={restartGame} />
+      <GameSourcePanel
+        source={gameSource}
+        lists={lists}
+        verbCount={gameVerbs.length}
+        rankError={rankError}
+        onChange={updateGameSource}
+      />
+
+      {rankError ? (
+        <GameSourceBlocked message={rankError} />
+      ) : selectedGame ? (
+        <ActiveGame
+          key={`${selectedGame.id}-${sessionKey}-${sourceSignature}`}
+          game={selectedGame}
+          verbs={gameVerbs}
+          onRestart={restartGame}
+        />
       ) : (
         <div className="games-grid">
           {games.map((game) => {
-            const enabled = verbs.length >= game.minVerbs
+            const enabled = gameVerbs.length >= game.minVerbs
             return (
               <button
                 className="game-card"
@@ -150,13 +284,124 @@ export function GamesPage({ verbs, onBack }: GamesPageProps) {
                 <span className="game-card-icon">{enabled ? game.icon : <CircleOff size={19} />}</span>
                 <strong>{game.title}</strong>
                 <small>{game.description}</small>
-                {!enabled ? <em>Potrzeba co najmniej {game.minVerbs} czasowników w obecnym widoku.</em> : null}
+                {!enabled ? <em>Potrzeba co najmniej {game.minVerbs} czasowników w wybranym źródle.</em> : null}
               </button>
             )
           })}
         </div>
       )}
     </section>
+  )
+}
+
+function GameSourcePanel({
+  source,
+  lists,
+  verbCount,
+  rankError,
+  onChange,
+}: {
+  source: GameSourceSettings
+  lists: StudyList[]
+  verbCount: number
+  rankError: string | null
+  onChange: (source: GameSourceSettings) => void
+}) {
+  const updateBase = (base: GameSourceBase) => {
+    onChange({
+      ...source,
+      base,
+      listId: base === 'list' ? source.listId ?? lists[0]?.id ?? null : source.listId,
+    })
+  }
+
+  return (
+    <section className="game-source-panel" aria-label="Źródło czasowników do gier">
+      <div className="game-source-title">
+        <SlidersHorizontal size={18} />
+        <div>
+          <strong>Źródło gier</strong>
+          <small>{verbCount} czasowników w grach</small>
+        </div>
+      </div>
+
+      <div className="game-source-controls">
+        <label>
+          <span>Źródło</span>
+          <select value={source.base} onChange={(event) => updateBase(event.target.value as GameSourceBase)}>
+            <option value="current-view">Obecny widok</option>
+            <option value="all">Wszystkie czasowniki</option>
+            <option value="list" disabled={!lists.length}>
+              Lista
+            </option>
+          </select>
+        </label>
+
+        {source.base === 'list' ? (
+          <label>
+            <span>Lista</span>
+            <select
+              value={source.listId ?? ''}
+              disabled={!lists.length}
+              onChange={(event) => onChange({ ...source, listId: event.target.value || null })}
+            >
+              {lists.length ? null : <option value="">Brak list</option>}
+              {lists.map((list) => (
+                <option key={list.id} value={list.id}>
+                  {list.name} ({list.verbIds.length})
+                </option>
+              ))}
+            </select>
+          </label>
+        ) : null}
+
+        <label>
+          <span>Ranga od</span>
+          <input
+            type="number"
+            min="1"
+            max="3000"
+            inputMode="numeric"
+            value={source.rankStart}
+            placeholder="1"
+            onChange={(event) => onChange({ ...source, rankStart: normalizeRankInput(event.target.value) })}
+          />
+        </label>
+
+        <label>
+          <span>Ranga do</span>
+          <input
+            type="number"
+            min="1"
+            max="3000"
+            inputMode="numeric"
+            value={source.rankEnd}
+            placeholder="3000"
+            onChange={(event) => onChange({ ...source, rankEnd: normalizeRankInput(event.target.value) })}
+          />
+        </label>
+
+        <button
+          className="secondary-button"
+          type="button"
+          disabled={!source.rankStart && !source.rankEnd}
+          onClick={() => onChange({ ...source, rankStart: '', rankEnd: '' })}
+        >
+          Wyczyść zakres
+        </button>
+      </div>
+
+      {rankError ? <p className="game-source-error">{rankError}</p> : null}
+    </section>
+  )
+}
+
+function GameSourceBlocked({ message }: { message: string }) {
+  return (
+    <div className="game-empty">
+      <CircleOff size={28} />
+      <p>{message}</p>
+    </div>
   )
 }
 

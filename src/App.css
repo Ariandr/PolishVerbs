@@ -492,6 +492,76 @@ select {
   line-height: 1.35;
 }
 
+.game-source-panel {
+  display: grid;
+  gap: 12px;
+  border: 1px solid var(--border);
+  border-radius: 8px;
+  padding: 14px;
+  background: var(--surface);
+  box-shadow: var(--shadow);
+}
+
+.game-source-title {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  color: var(--text-strong);
+}
+
+.game-source-title svg {
+  color: var(--accent);
+}
+
+.game-source-title strong,
+.game-source-title small {
+  display: block;
+}
+
+.game-source-title small {
+  margin-top: 2px;
+  color: var(--muted);
+}
+
+.game-source-controls {
+  display: grid;
+  grid-template-columns: minmax(180px, 1fr) minmax(180px, 1fr) minmax(120px, 0.55fr) minmax(120px, 0.55fr) auto;
+  gap: 10px;
+  align-items: end;
+}
+
+.game-source-controls label {
+  display: grid;
+  gap: 6px;
+  min-width: 0;
+}
+
+.game-source-controls span {
+  color: var(--muted-strong);
+  font-size: 0.82rem;
+  font-weight: 800;
+}
+
+.game-source-controls input {
+  min-height: 42px;
+  width: 100%;
+  border: 1px solid var(--border-strong);
+  border-radius: 8px;
+  padding: 0 10px;
+  background: var(--surface-muted);
+  color: var(--text-strong);
+}
+
+.game-source-controls .secondary-button {
+  min-height: 42px;
+  white-space: nowrap;
+}
+
+.game-source-error {
+  color: var(--danger);
+  font-weight: 800;
+}
+
 .game-board,
 .game-empty,
 .game-summary {
@@ -1589,6 +1659,14 @@ mark {
     grid-template-columns: repeat(2, minmax(0, 1fr));
   }
 
+  .game-source-controls {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+
+  .game-source-controls .secondary-button {
+    grid-column: 1 / -1;
+  }
+
   .game-board {
     gap: 12px;
     padding: 14px;
@@ -1813,6 +1891,14 @@ mark {
 
   .game-card {
     min-height: 0;
+  }
+
+  .game-source-controls {
+    grid-template-columns: 1fr;
+  }
+
+  .game-source-controls .secondary-button {
+    width: 100%;
   }
 
   .open-card-grid {

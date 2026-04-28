@@ -425,7 +425,14 @@ function App() {
           onImportProgress={importProgress}
         />
       ) : gamesOpen ? (
-        <GamesPage verbs={visibleVerbs} onBack={() => setGamesOpen(false)} />
+        <GamesPage
+          allVerbs={verbs}
+          visibleVerbs={visibleVerbs}
+          lists={progress.lists}
+          appSettings={appSettings}
+          onUpdateAppSettings={updateAppSettings}
+          onBack={() => setGamesOpen(false)}
+        />
       ) : (
         <>
       <section className={`toolbar ${mobileFiltersOpen ? 'filters-open' : ''}`} aria-label="Wyszukiwanie i filtry">

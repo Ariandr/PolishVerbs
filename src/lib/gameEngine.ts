@@ -128,6 +128,13 @@ export function getAllFormChallenges(verbs: VerbEntry[]): FormChallenge[] {
   ])
 }
 
+function getVerbFormValues(verb: VerbEntry): string[] {
+  return [
+    ...presentLabels.map(([key]) => verb.forms.present[key]),
+    ...pastAccessors.map(([, getValue]) => getValue(verb.forms.past)),
+  ]
+}
+
 export function createOptions(answer: string, candidates: string[], count = 4): string[] {
   const uniqueCandidates = [...new Set(candidates.filter((candidate) => candidate && candidate !== answer))]
   const distractors = sampleItems(uniqueCandidates, count - 1)
@@ -175,8 +182,20 @@ export function buildFormQuestions(verbs: VerbEntry[], mode: 'wheel' | 'missing'
   const formCandidates = challenges.map((challenge) => challenge.answer)
   return sampleItems(challenges, Math.min(sessionQuestionCount, challenges.length))
     .map((challenge) => {
-      const options = createOptions(challenge.answer, formCandidates)
+      const options =
+        mode === 'wheel'
+          ? shuffleItems([
+              challenge.answer,
+              ...sampleItems(
+                [...new Set(getVerbFormValues(challenge.verb).filter((form) => form && form !== challenge.answer))],
+                3,
+              ),
+            ])
+          : createOptions(challenge.answer, formCandidates)
       if (!options.length) {
+        return null
+      }
+      if (mode === 'wheel' && options.length < 2) {
         return null
       }
       return {

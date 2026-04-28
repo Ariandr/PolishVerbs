@@ -25,8 +25,18 @@ export interface StudyProgress {
 
 export type ThemePreference = 'light' | 'dark'
 
+export type GameSourceBase = 'current-view' | 'all' | 'list'
+
+export interface GameSourceSettings {
+  base: GameSourceBase
+  listId: string | null
+  rankStart: string
+  rankEnd: string
+}
+
 export interface AppSettings {
   showQuickFilters: boolean
+  gameSource: GameSourceSettings
 }
 
 const storageKey = 'polish-verbs-progress-v1'
@@ -42,6 +52,39 @@ const defaultProgress: StudyProgress = {
 
 const defaultAppSettings: AppSettings = {
   showQuickFilters: true,
+  gameSource: {
+    base: 'current-view',
+    listId: null,
+    rankStart: '',
+    rankEnd: '',
+  },
+}
+
+const isGameSourceBase = (value: unknown): value is GameSourceBase =>
+  value === 'current-view' || value === 'all' || value === 'list'
+
+const normalizeGameSource = (value: unknown): GameSourceSettings => {
+  if (!value || typeof value !== 'object') {
+    return defaultAppSettings.gameSource
+  }
+
+  const source = value as Record<string, unknown>
+  return {
+    base: isGameSourceBase(source.base) ? source.base : defaultAppSettings.gameSource.base,
+    listId: typeof source.listId === 'string' ? source.listId : null,
+    rankStart:
+      typeof source.rankStart === 'string'
+        ? source.rankStart
+        : typeof source.rankStart === 'number'
+          ? String(source.rankStart)
+          : '',
+    rankEnd:
+      typeof source.rankEnd === 'string'
+        ? source.rankEnd
+        : typeof source.rankEnd === 'number'
+          ? String(source.rankEnd)
+          : '',
+  }
 }
 
 const isVerbStudyStatus = (value: unknown): value is VerbStudyStatus =>
@@ -163,6 +206,7 @@ export function loadAppSettings(): AppSettings {
         typeof parsed.showQuickFilters === 'boolean'
           ? parsed.showQuickFilters
           : defaultAppSettings.showQuickFilters,
+      gameSource: normalizeGameSource(parsed.gameSource),
     }
   } catch {
     return defaultAppSettings
