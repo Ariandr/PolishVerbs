@@ -63,10 +63,16 @@
 
 .app-header {
   display: grid;
-  grid-template-columns: auto minmax(0, 1fr) auto;
-  gap: 16px;
+  grid-template-columns: minmax(180px, 1fr) auto auto;
+  gap: 12px;
   align-items: center;
-  padding: 14px 0 18px;
+  margin-bottom: 14px;
+  padding: 10px 12px;
+  border: 1px solid var(--border);
+  border-radius: 8px;
+  background: color-mix(in srgb, var(--surface) 94%, transparent);
+  box-shadow: var(--shadow);
+  backdrop-filter: blur(16px);
 }
 
 .app-header > * {
@@ -77,12 +83,13 @@
   display: flex;
   gap: 8px;
   align-items: center;
+  justify-content: center;
 }
 
 .header-icon-button {
   display: inline-grid;
-  width: 42px;
-  height: 42px;
+  width: 38px;
+  height: 38px;
   place-items: center;
   border: 1px solid var(--border-strong);
   border-radius: 8px;
@@ -106,10 +113,24 @@ p {
 h1 {
   max-width: none;
   color: var(--text-strong);
-  font-size: clamp(1.6rem, 2.25vw, 2.55rem);
+  font-size: clamp(1.05rem, 1.45vw, 1.35rem);
   line-height: 1;
   letter-spacing: 0;
   overflow-wrap: anywhere;
+  white-space: nowrap;
+}
+
+.brand-block {
+  display: grid;
+  gap: 3px;
+}
+
+.brand-block span {
+  overflow: hidden;
+  color: var(--muted);
+  font-size: 0.86rem;
+  font-weight: 700;
+  text-overflow: ellipsis;
   white-space: nowrap;
 }
 
@@ -121,26 +142,30 @@ h2 {
 }
 
 .progress-summary {
-  display: grid;
-  grid-template-columns: 1fr;
-  gap: 10px;
-  min-width: 160px;
-  padding: 14px 16px;
+  display: flex;
+  gap: 8px;
+  align-items: stretch;
+  justify-content: end;
+  min-width: 0;
+  padding: 0;
   border: 1px solid var(--border);
   border-radius: 8px;
-  background: var(--surface);
-  box-shadow: var(--shadow);
+  background: var(--surface-muted);
+  box-shadow: none;
 }
 
 .progress-summary-main {
-  display: block;
+  display: grid;
+  align-content: center;
+  min-width: 118px;
+  padding: 8px 10px;
 }
 
 .progress-summary strong,
 .due-review-button strong {
   display: block;
   color: var(--accent);
-  font-size: 1.8rem;
+  font-size: 1.25rem;
   line-height: 1;
 }
 
@@ -155,10 +180,10 @@ h2 {
 .due-review-button {
   display: grid;
   gap: 2px;
-  width: 100%;
+  min-width: 126px;
   border: 1px solid var(--accent);
   border-radius: 8px;
-  padding: 10px;
+  padding: 8px 10px;
   background: var(--surface-soft);
   color: var(--text);
   text-align: left;
@@ -2027,18 +2052,24 @@ mark {
   }
 
   h1 {
-    font-size: 1.45rem;
-    line-height: 1.08;
-    white-space: normal;
+    font-size: 1.18rem;
+    line-height: 1;
   }
 
   .app-header {
-    grid-template-columns: 1fr;
-    gap: 10px;
+    grid-template-columns: minmax(0, 1fr) auto;
+    gap: 8px;
+    align-items: start;
+    padding: 10px;
   }
 
   .header-controls {
-    justify-self: start;
+    justify-self: end;
+  }
+
+  .progress-summary {
+    grid-column: 1 / -1;
+    width: 100%;
   }
 
   .settings-grid {
@@ -2126,19 +2157,18 @@ mark {
 
   .progress-summary {
     grid-column: 1 / -1;
-    display: grid;
-    grid-template-columns: minmax(0, 1fr) auto;
+    display: flex;
     gap: 8px;
     align-items: center;
+    justify-content: space-between;
     min-width: 0;
-    padding: 10px 12px;
   }
 
-  .progress-summary-main,
-  .progress-summary-main strong,
-  .progress-summary-main span,
-  .progress-summary-main small {
-    display: inline;
+  .progress-summary-main {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 3px 5px;
+    align-items: baseline;
   }
 
   .progress-summary-main strong {
@@ -2312,7 +2342,20 @@ mark {
   }
 
   h1 {
-    font-size: 1.25rem;
+    font-size: 1.05rem;
+  }
+
+  .brand-block span {
+    font-size: 0.78rem;
+  }
+
+  .header-controls {
+    gap: 6px;
+  }
+
+  .header-icon-button {
+    width: 36px;
+    height: 36px;
   }
 
   .toolbar-search-row {
@@ -2329,6 +2372,13 @@ mark {
   }
 
   .progress-summary {
+    flex-wrap: wrap;
+    min-width: 0;
+  }
+
+  .progress-summary-main,
+  .due-review-button {
+    flex: 1 1 140px;
     min-width: 0;
   }
 

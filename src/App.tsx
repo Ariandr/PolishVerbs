@@ -469,7 +469,12 @@ function App() {
       data-theme={themePreference}
     >
       <header className="app-header">
-        <div className="header-controls">
+        <div className="brand-block">
+          <h1>PolishVerbs</h1>
+          <span>3000 czasowników według częstotliwości</span>
+        </div>
+
+        <nav className="header-controls" aria-label="Główna nawigacja">
           <button
             className="header-icon-button"
             type="button"
@@ -518,10 +523,8 @@ function App() {
           >
             <Gamepad2 size={18} />
           </button>
-        </div>
-        <div>
-          <h1>3000 polskich czasowników według częstotliwości</h1>
-        </div>
+        </nav>
+
         <div className="progress-summary">
           <span className="progress-summary-main">
             <strong>{learnedCount}</strong>
