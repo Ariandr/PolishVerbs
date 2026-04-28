@@ -89,7 +89,7 @@ const defaultProgress: StudyProgress = {
 }
 
 const defaultAppSettings: AppSettings = {
-  showQuickFilters: true,
+  showQuickFilters: false,
   gameSource: {
     base: 'current-view',
     listId: null,
