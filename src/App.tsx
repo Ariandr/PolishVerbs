@@ -1,8 +1,9 @@
 import { useEffect, useMemo, useRef, useState } from 'react'
-import { ArrowLeft, BookOpen, Filter, Moon, Search, Settings, Sun, Wrench } from 'lucide-react'
+import { ArrowLeft, BookOpen, Filter, Gamepad2, Moon, Search, Settings, Sun, Wrench } from 'lucide-react'
 import './App.css'
 import { ConfigurationPage } from './components/ConfigurationPage'
 import { CreateListModal, ListPickerModal } from './components/ListModals'
+import { GamesPage } from './components/GamesPage'
 import { QualityPanel } from './components/QualityPanel'
 import { StudyMode } from './components/StudyMode'
 import { StudyLists } from './components/StudyLists'
@@ -50,6 +51,7 @@ function App() {
   )
   const [studyModeOpen, setStudyModeOpen] = useState(false)
   const [configurationOpen, setConfigurationOpen] = useState(false)
+  const [gamesOpen, setGamesOpen] = useState(false)
   const [showQaPanel, setShowQaPanel] = useState(() => isQaEnabledFromUrl())
   const [qaEntryEnabled, setQaEntryEnabled] = useState(() => isQaEnabledFromUrl())
   const [transferMessage, setTransferMessage] = useState<{ title: string; body: string } | null>(null)
@@ -361,7 +363,7 @@ function App() {
 
   return (
     <main
-      className={`app-shell ${mobileDetailOpen ? 'mobile-detail-open' : ''} ${configurationOpen ? 'configuration-open' : ''}`}
+      className={`app-shell ${mobileDetailOpen ? 'mobile-detail-open' : ''} ${configurationOpen ? 'configuration-open' : ''} ${gamesOpen ? 'games-open' : ''}`}
       data-theme={themePreference}
     >
       <header className="app-header">
@@ -380,9 +382,24 @@ function App() {
             type="button"
             aria-label="Otwórz konfigurację"
             title="Konfiguracja"
-            onClick={() => setConfigurationOpen(true)}
+            onClick={() => {
+              setGamesOpen(false)
+              setConfigurationOpen(true)
+            }}
           >
             <Settings size={18} />
+          </button>
+          <button
+            className={`header-icon-button ${gamesOpen ? 'active' : ''}`}
+            type="button"
+            aria-label="Otwórz gry"
+            title="Gry"
+            onClick={() => {
+              setConfigurationOpen(false)
+              setGamesOpen(true)
+            }}
+          >
+            <Gamepad2 size={18} />
           </button>
         </div>
         <div>
@@ -407,6 +424,8 @@ function App() {
           onExportProgress={exportProgress}
           onImportProgress={importProgress}
         />
+      ) : gamesOpen ? (
+        <GamesPage verbs={visibleVerbs} onBack={() => setGamesOpen(false)} />
       ) : (
         <>
       <section className={`toolbar ${mobileFiltersOpen ? 'filters-open' : ''}`} aria-label="Wyszukiwanie i filtry">
@@ -555,7 +574,7 @@ function App() {
         </>
       )}
 
-      {!configurationOpen && showQaPanel ? (
+      {!configurationOpen && !gamesOpen && showQaPanel ? (
         <QualityPanel
           verbs={verbs}
           onClose={toggleQaPanel}
@@ -564,7 +583,7 @@ function App() {
             setShowQaPanel(false)
           }}
         />
-      ) : !configurationOpen && qaEntryEnabled ? (
+      ) : !configurationOpen && !gamesOpen && qaEntryEnabled ? (
         <button className="qa-open-button" type="button" onClick={toggleQaPanel}>
           <Wrench size={14} />
           QA
