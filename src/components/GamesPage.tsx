@@ -17,6 +17,7 @@ import {
 } from 'lucide-react'
 import { useEffect, useMemo, useState } from 'react'
 import type { ReactNode } from 'react'
+import { TOTAL_VERB_COUNT } from '../data/constants'
 import type { VerbEntry } from '../data/schema'
 import {
   aspectBucketLabels,
@@ -125,7 +126,7 @@ const parseRankBound = (value: string) => {
     return null
   }
   const parsed = Number(value)
-  if (!Number.isInteger(parsed) || parsed < 1 || parsed > 3000) {
+  if (!Number.isInteger(parsed) || parsed < 1 || parsed > TOTAL_VERB_COUNT) {
     return Number.NaN
   }
   return parsed
@@ -191,7 +192,7 @@ function getRankError(source: GameSourceSettings) {
   const rankStart = parseRankBound(source.rankStart)
   const rankEnd = parseRankBound(source.rankEnd)
   if (Number.isNaN(rankStart) || Number.isNaN(rankEnd)) {
-    return 'Zakres rang może zawierać tylko liczby od 1 do 3000.'
+    return `Zakres rang może zawierać tylko liczby od 1 do ${TOTAL_VERB_COUNT}.`
   }
   if (rankStart !== null && rankEnd !== null && rankStart > rankEnd) {
     return 'Początek zakresu nie może być większy niż koniec.'
@@ -372,7 +373,7 @@ function GameSourcePanel({
           <input
             type="number"
             min="1"
-            max="3000"
+            max={TOTAL_VERB_COUNT}
             inputMode="numeric"
             value={source.rankStart}
             placeholder="1"
@@ -385,10 +386,10 @@ function GameSourcePanel({
           <input
             type="number"
             min="1"
-            max="3000"
+            max={TOTAL_VERB_COUNT}
             inputMode="numeric"
             value={source.rankEnd}
-            placeholder="3000"
+            placeholder={String(TOTAL_VERB_COUNT)}
             onChange={(event) => onChange({ ...source, rankEnd: normalizeRankInput(event.target.value) })}
           />
         </label>

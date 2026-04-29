@@ -11,6 +11,7 @@ import { StudyLists } from './components/StudyLists'
 import { VerbDetail } from './components/VerbTables'
 import { VerbList } from './components/VerbList'
 import { verbById, verbs } from './data/verbs'
+import { TOTAL_VERB_COUNT } from './data/constants'
 import type { Aspect } from './data/schema'
 import { mergeProgressImport, serializeProgressExport } from './lib/progressTransfer'
 import {
@@ -47,7 +48,7 @@ import {
 import { getVerbIdFromUrl, isQaEnabledFromUrl, setQaInUrl, setVerbIdInUrl } from './lib/urlState'
 
 type LearnedFilter = 'all' | 'new' | 'learning' | 'learned' | 'due' | 'overdue'
-type RangeFilter = 'all' | 'top100' | 'top300' | 'top600' | 'top1200' | 'top3000'
+type RangeFilter = 'all' | 'top100' | 'top300' | 'top600' | 'top1200' | 'top5000'
 
 function App() {
   const initialVerbId = typeof window === 'undefined' ? null : getVerbIdFromUrl()
@@ -174,7 +175,7 @@ function App() {
       if (rangeFilter === 'top1200' && verb.frequencyRank > 1200) {
         return false
       }
-      if (rangeFilter === 'top3000' && verb.frequencyRank > 3000) {
+      if (rangeFilter === 'top5000' && verb.frequencyRank > TOTAL_VERB_COUNT) {
         return false
       }
       if (normalizedQuery && !searchIndexes.get(verb.id)?.all.includes(normalizedQuery)) {
@@ -471,7 +472,7 @@ function App() {
       <header className="app-header">
         <div className="brand-block">
           <h1>PolishVerbs</h1>
-          <span>3000 czasowników według częstotliwości</span>
+          <span>{TOTAL_VERB_COUNT} czasowników według częstotliwości</span>
         </div>
 
         <nav className="header-controls" aria-label="Główna nawigacja">
@@ -640,12 +641,12 @@ function App() {
             <option value="unknown">Nieznane</option>
           </select>
           <select value={rangeFilter} onChange={(event) => setRangeFilter(event.target.value as RangeFilter)}>
-            <option value="all">Pełne 3000</option>
+            <option value="all">Pełne {TOTAL_VERB_COUNT}</option>
             <option value="top100">Pierwsze 100</option>
             <option value="top300">Pierwsze 300</option>
             <option value="top600">Pierwsze 600</option>
             <option value="top1200">Pierwsze 1200</option>
-            <option value="top3000">Pierwsze 3000</option>
+            <option value="top5000">Pierwsze {TOTAL_VERB_COUNT}</option>
           </select>
         </div>
 

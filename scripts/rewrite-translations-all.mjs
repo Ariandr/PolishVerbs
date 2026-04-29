@@ -9,7 +9,7 @@ const cachePath = path.join(cacheDir, 'rewrite-translations-cache.json')
 const outputPath = path.join(cacheDir, 'rewrite-translations-output.json')
 
 const minRank = Number(process.env.MIN_RANK ?? 1)
-const maxRank = Number(process.env.MAX_RANK ?? 3000)
+const maxRank = Number(process.env.MAX_RANK ?? 5000)
 const rankList = (process.env.RANKS ?? '')
   .split(',')
   .map((token) => Number(token.trim()))

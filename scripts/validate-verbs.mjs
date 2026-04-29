@@ -3,7 +3,7 @@ import path from 'node:path'
 
 const rootDir = process.cwd()
 const verbsDir = path.join(rootDir, 'src/data/verbs')
-const expectedVerbCount = 3000
+const expectedVerbCount = Number(process.env.EXPECTED_VERB_COUNT ?? 5000)
 const pronouns = ['ja', 'ty', 'on', 'ona', 'my', 'wy', 'oni', 'one']
 
 function assert(condition, message) {

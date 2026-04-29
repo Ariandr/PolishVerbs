@@ -4,7 +4,7 @@ import path from 'node:path'
 
 const rootDir = process.cwd()
 const outputDir = path.join(rootDir, 'src/data/verbs')
-const targetVerbCount = 3000
+const targetVerbCount = Number(process.env.TARGET_VERB_COUNT ?? 5000)
 const kwjpSource = 'KWJP balanced contemporary Polish corpus frequency list, all subcorpora, lemma, infinitive POS'
 const kwjpUrl = 'https://kwjp.pl/lists/en'
 const sleep = (ms) => new Promise((resolve) => setTimeout(resolve, ms))
@@ -63,6 +63,10 @@ function dataTablesBody(length) {
   return body
 }
 
+function isValidInfinitiveLemma(value) {
+  return /^[\p{L}-]{3,}ć$/u.test(value.trim())
+}
+
 async function fetchFrequencyRows() {
   const response = await fetchWithRetry('https://kwjp.pl/lists/_get_list/en', {
     method: 'POST',
@@ -78,7 +82,7 @@ async function fetchFrequencyRows() {
     .filter((row) => row.pos.includes('title="infinitive"'))
     .filter((row) => {
       const lemma = row.name_0.trim()
-      if (!lemma || seen.has(lemma)) {
+      if (!isValidInfinitiveLemma(lemma) || seen.has(lemma)) {
         return false
       }
       seen.add(lemma)

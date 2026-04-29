@@ -9,7 +9,7 @@ const cachePath = path.join(cacheDir, 'rewrite-examples-901-plus-codex-cache.jso
 const outputPath = path.join(cacheDir, 'rewrite-examples-901-plus-output.json')
 
 const minRank = Number(process.env.MIN_RANK ?? 901)
-const maxRank = Number(process.env.MAX_RANK ?? 3000)
+const maxRank = Number(process.env.MAX_RANK ?? 5000)
 const rankList = (process.env.RANKS ?? '')
   .split(',')
   .map((token) => Number(token.trim()))
@@ -107,6 +107,7 @@ function buildPrompt(batch) {
     aspect: verb.aspect,
     translationsEn: (verb.translations?.en ?? []).slice(0, 3),
     translationsUk: (verb.translations?.uk ?? []).slice(0, 3),
+    acceptedPolishForms: Array.from(new Set(collectVerbForms(verb))).slice(0, 24),
   }))
 
   return [
@@ -114,7 +115,9 @@ function buildPrompt(batch) {
     'Return ONLY a JSON array of objects with: frequencyRank, pl, en, uk.',
     'Rules:',
     '- Polish must be grammatical, natural, contemporary, and useful for learners.',
-    '- The Polish sentence must include the target verb (infinitive or a valid conjugated form of the same lemma).',
+    '- The Polish sentence must include exactly one target form copied from acceptedPolishForms.',
+    '- Copy that target form exactly as written, including Polish diacritics.',
+    '- Do not invent a different conjugated form if it is not listed in acceptedPolishForms.',
     '- The sentence can be in present, past, or future.',
     '- Each Polish sentence must be exactly one sentence and typically 7-16 words.',
     '- English and Ukrainian must be faithful, natural translations of the Polish sentence.',
@@ -188,7 +191,21 @@ async function runCodexBatch(batch) {
   await new Promise((resolve, reject) => {
     const child = spawn('codex', args, {
       cwd: rootDir,
-      stdio: ['ignore', 'ignore', 'ignore'],
+      stdio: ['ignore', 'pipe', 'pipe'],
+    })
+    let stdout = ''
+    let stderr = ''
+
+    child.stdout.on('data', (chunk) => {
+      if (stdout.length < 8000) {
+        stdout += String(chunk)
+      }
+    })
+
+    child.stderr.on('data', (chunk) => {
+      if (stderr.length < 8000) {
+        stderr += String(chunk)
+      }
     })
 
     const timeout = setTimeout(() => {
@@ -207,7 +224,12 @@ async function runCodexBatch(batch) {
         resolve()
         return
       }
-      reject(new Error(`Codex exited with code ${code ?? 'null'} signal ${signal ?? 'null'}`))
+      const details = [stderr.trim(), stdout.trim()].filter(Boolean).join('\n')
+      reject(
+        new Error(
+          `Codex exited with code ${code ?? 'null'} signal ${signal ?? 'null'}${details ? `\n${details}` : ''}`
+        )
+      )
     })
   })
 
