@@ -13,6 +13,7 @@ import { VerbList } from './components/VerbList'
 import { verbById, verbs } from './data/verbs'
 import { TOTAL_VERB_COUNT } from './data/constants'
 import type { Aspect } from './data/schema'
+import { getStudyListExportFileName, parseStudyListImport, serializeStudyListExport } from './lib/listTransfer'
 import { mergeProgressImport, serializeProgressExport } from './lib/progressTransfer'
 import {
   applyPracticeAnswer,
@@ -408,6 +409,47 @@ function App() {
     }
   }
 
+  const exportStudyList = (listId: string) => {
+    const list = progress.lists.find((item) => item.id === listId)
+    if (!list) {
+      setTransferMessage({
+        title: 'Nie udało się wyeksportować listy',
+        body: 'Wybrana lista nie istnieje.',
+      })
+      return
+    }
+
+    const blob = new Blob([serializeStudyListExport(list)], { type: 'application/json' })
+    const url = URL.createObjectURL(blob)
+    const link = document.createElement('a')
+    link.href = url
+    link.download = getStudyListExportFileName(list)
+    link.click()
+    URL.revokeObjectURL(url)
+  }
+
+  const importStudyList = async (file: File) => {
+    try {
+      const knownVerbIds = new Set(verbs.map((verb) => verb.id))
+      const result = parseStudyListImport(await file.text(), knownVerbIds)
+      updateProgress({
+        ...progress,
+        lists: [result.list, ...progress.lists],
+      })
+      setTransferMessage({
+        title: 'Zaimportowano listę',
+        body: `Dodano listę „${result.list.name}” z ${result.list.verbIds.length} czasownikami.${
+          result.skippedVerbCount ? ` Pominięto ${result.skippedVerbCount} nieznanych identyfikatorów.` : ''
+        }`,
+      })
+    } catch (error) {
+      setTransferMessage({
+        title: 'Nie udało się zaimportować listy',
+        body: error instanceof Error ? error.message : 'Plik ma nieobsługiwany format.',
+      })
+    }
+  }
+
   const toggleQaPanel = () => {
     const next = !showQaPanel
     setQaEntryEnabled(true)
@@ -546,6 +588,8 @@ function App() {
         <ConfigurationPage
           showQuickFilters={appSettings.showQuickFilters}
           practice={appSettings.practice}
+          lists={progress.lists}
+          selectedListId={progress.selectedListId}
           onBack={() => setConfigurationOpen(false)}
           onToggleQuickFilters={() =>
             updateAppSettings({ ...appSettings, showQuickFilters: !appSettings.showQuickFilters })
@@ -553,6 +597,8 @@ function App() {
           onUpdatePractice={(practice) => updateAppSettings({ ...appSettings, practice })}
           onExportProgress={exportProgress}
           onImportProgress={importProgress}
+          onExportList={exportStudyList}
+          onImportList={importStudyList}
         />
       ) : progressOpen ? (
         <ProgressPage
@@ -786,7 +832,7 @@ function App() {
           <section className="modal-panel compact-modal" role="dialog" aria-modal="true" aria-labelledby="transfer-title" onMouseDown={(event) => event.stopPropagation()}>
             <div className="modal-head">
               <div>
-                <div className="section-title">Postęp</div>
+                <div className="section-title">Import i eksport</div>
                 <h2 id="transfer-title">{transferMessage.title}</h2>
               </div>
             </div>

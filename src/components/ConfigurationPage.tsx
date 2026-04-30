@@ -1,26 +1,44 @@
 import { ArrowLeft, Filter, SlidersHorizontal } from 'lucide-react'
-import type { PracticeSettings } from '../lib/storage'
+import { useMemo, useState } from 'react'
+import type { PracticeSettings, StudyList } from '../lib/storage'
+import { ListTransferTools } from './ListTransferTools'
 import { ProgressTools } from './ProgressTools'
 
 interface ConfigurationPageProps {
   showQuickFilters: boolean
   practice: PracticeSettings
+  lists: StudyList[]
+  selectedListId: string | null
   onBack: () => void
   onToggleQuickFilters: () => void
   onUpdatePractice: (practice: PracticeSettings) => void
   onExportProgress: () => void
   onImportProgress: (file: File) => void
+  onExportList: (listId: string) => void
+  onImportList: (file: File) => void
 }
 
 export function ConfigurationPage({
   showQuickFilters,
   practice,
+  lists,
+  selectedListId,
   onBack,
   onToggleQuickFilters,
   onUpdatePractice,
   onExportProgress,
   onImportProgress,
+  onExportList,
+  onImportList,
 }: ConfigurationPageProps) {
+  const defaultExportListId = selectedListId ?? lists[0]?.id ?? ''
+  const [exportListId, setExportListId] = useState(defaultExportListId)
+  const safeExportListId = lists.some((list) => list.id === exportListId) ? exportListId : defaultExportListId
+  const exportList = useMemo(
+    () => lists.find((list) => list.id === safeExportListId),
+    [safeExportListId, lists],
+  )
+
   return (
     <section className="settings-page" aria-labelledby="settings-title">
       <div className="settings-head">
@@ -87,6 +105,34 @@ export function ConfigurationPage({
               <option value="typed">Wpisywanie tam, gdzie pasuje</option>
             </select>
           </label>
+        </section>
+
+        <section className="settings-card" aria-labelledby="list-transfer-title">
+          <div className="settings-card-title">
+            <SlidersHorizontal size={18} />
+            <h3 id="list-transfer-title">Listy dla uczniów</h3>
+          </div>
+          <p>Eksportuj albo zaimportuj samą listę czasowników. Nie zmienia to postępu, motywu ani ustawień.</p>
+          <label className="settings-field">
+            <span>Lista do eksportu</span>
+            <select value={safeExportListId} disabled={!lists.length} onChange={(event) => setExportListId(event.target.value)}>
+              {lists.length ? null : <option value="">Brak własnych list</option>}
+              {lists.map((list) => (
+                <option key={list.id} value={list.id}>
+                  {list.name} ({list.verbIds.length})
+                </option>
+              ))}
+            </select>
+          </label>
+          <ListTransferTools
+            canExport={Boolean(exportList)}
+            onExport={() => {
+              if (exportList) {
+                onExportList(exportList.id)
+              }
+            }}
+            onImport={onImportList}
+          />
         </section>
 
         <section className="settings-card" aria-labelledby="progress-settings-title">
