@@ -19,6 +19,16 @@ const fallbackNotePatterns = [
   /should be checked/i,
 ]
 
+const markupPatterns = [
+  /\{\{/,
+  /\}\}/,
+  /<[^>]+>/,
+  /\[\[/,
+  /\]\]/,
+  /&nbsp;/i,
+  /Category:/i,
+]
+
 function clean(value) {
   return String(value ?? '').replace(/\s+/g, ' ').trim()
 }
@@ -47,6 +57,26 @@ function hasDuplicate(values) {
     seen.add(value)
   }
   return false
+}
+
+function hasCyrillic(value) {
+  return /[\u0400-\u04FF]/.test(value)
+}
+
+function hasLatin(value) {
+  return /[A-Za-zĄĆĘŁŃÓŚŹŻąćęłńóśźż]/.test(value)
+}
+
+function hasMarkup(value) {
+  return markupPatterns.some((pattern) => pattern.test(value))
+}
+
+function looksFallbackEnglish(verb, value) {
+  return normalize(value) === `to ${normalize(verb.infinitive)}`
+}
+
+function looksFallbackUkrainian(value) {
+  return /переклад потребує перевірки|needs review|translation/i.test(value)
 }
 
 function exampleContainsKnownForm(verb, example) {
@@ -114,6 +144,32 @@ function auditVerb(verb, issues) {
     addIssue(issues, 'long-ukrainian-translation', verb, 'Ukrainian translation is suspiciously long.')
   }
 
+  for (const value of verb.translations?.en ?? []) {
+    const text = clean(value)
+    if (hasMarkup(text)) {
+      addIssue(issues, 'markup-english-translation', verb, 'English translation contains markup or parser residue.')
+    }
+    if (hasCyrillic(text)) {
+      addIssue(issues, 'cyrillic-english-translation', verb, 'English translation contains Cyrillic text.')
+    }
+    if (looksFallbackEnglish(verb, text)) {
+      addIssue(issues, 'fallback-english-translation', verb, 'English translation looks like a fallback placeholder.')
+    }
+  }
+
+  for (const value of verb.translations?.uk ?? []) {
+    const text = clean(value)
+    if (hasMarkup(text)) {
+      addIssue(issues, 'markup-ukrainian-translation', verb, 'Ukrainian translation contains markup or parser residue.')
+    }
+    if (!hasCyrillic(text)) {
+      addIssue(issues, 'non-cyrillic-ukrainian-translation', verb, 'Ukrainian translation does not contain Cyrillic text.')
+    }
+    if (looksFallbackUkrainian(text)) {
+      addIssue(issues, 'fallback-ukrainian-translation', verb, 'Ukrainian translation looks like a fallback placeholder.')
+    }
+  }
+
   if (hasDuplicate((verb.examples ?? []).map((example) => example.pl))) {
     addIssue(issues, 'duplicate-polish-example', verb, 'Polish examples contain duplicates.')
   }
@@ -125,6 +181,18 @@ function auditVerb(verb, issues) {
     }
     if (fields.some((value) => value.length > 180)) {
       addIssue(issues, 'long-example', verb, 'Example is suspiciously long.')
+    }
+    if (fields.some(hasMarkup)) {
+      addIssue(issues, 'markup-example', verb, 'Example contains markup or parser residue.')
+    }
+    if (hasCyrillic(example.en)) {
+      addIssue(issues, 'cyrillic-english-example', verb, 'English example contains Cyrillic text.')
+    }
+    if (!hasCyrillic(example.uk)) {
+      addIssue(issues, 'non-cyrillic-ukrainian-example', verb, 'Ukrainian example does not contain Cyrillic text.')
+    }
+    if (!hasLatin(example.pl)) {
+      addIssue(issues, 'non-latin-polish-example', verb, 'Polish example does not contain Latin text.')
     }
     if (fields.some((value) => placeholderExamplePatterns.some((pattern) => pattern.test(value)))) {
       addIssue(issues, 'placeholder-example', verb, 'Example uses a generator placeholder template.')

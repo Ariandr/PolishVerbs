@@ -11,6 +11,7 @@
     "rewrite:metadata": "node scripts/rewrite-metadata.mjs",
     "rewrite:translations:all": "node scripts/rewrite-translations-all.mjs",
     "cleanup:verbs": "node scripts/cleanup-verbs.mjs",
+    "repair:known-quality": "node scripts/repair-known-quality-issues.mjs",
     "audit:verbs": "node scripts/audit-verbs.mjs",
     "validate:verbs": "node scripts/validate-verbs.mjs",
     "build": "npm run validate:verbs && tsc -b && vite build",

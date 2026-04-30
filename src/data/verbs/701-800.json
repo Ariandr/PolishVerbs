@@ -68,15 +68,13 @@
         "uk": "Правління вирішило ще раз розглянути цей надзвичайно ризикований інвестиційний план."
       }
     ],
-    "notes": [
-      "Ukrainian translation fallback needs review."
-    ],
+    "notes": [],
     "sourceUrls": [
       "https://kwjp.pl/lists/en",
       "https://en.wiktionary.org/wiki/rozwa%C5%BCy%C4%87",
       "https://pl.wiktionary.org/wiki/rozwa%C5%BCy%C4%87"
     ],
-    "reviewStatus": "fallback-needs-review"
+    "reviewStatus": "wiktionary-enriched"
   },
   {
     "id": "702-umowic",
@@ -149,15 +147,13 @@
         "uk": "Я мушу нарешті записати мою бабусю на терміновий прийом до найкращого кардіолога в місті."
       }
     ],
-    "notes": [
-      "Ukrainian translation fallback needs review."
-    ],
+    "notes": [],
     "sourceUrls": [
       "https://kwjp.pl/lists/en",
       "https://en.wiktionary.org/wiki/um%C3%B3wi%C4%87",
       "https://pl.wiktionary.org/wiki/um%C3%B3wi%C4%87"
     ],
-    "reviewStatus": "fallback-needs-review"
+    "reviewStatus": "wiktionary-enriched"
   },
   {
     "id": "703-zaprezentowac",
@@ -231,15 +227,13 @@
         "uk": "Студент дуже нервував, коли йому довелося презентувати свій річний проект перед усім класом."
       }
     ],
-    "notes": [
-      "Ukrainian translation fallback needs review."
-    ],
+    "notes": [],
     "sourceUrls": [
       "https://kwjp.pl/lists/en",
       "https://en.wiktionary.org/wiki/zaprezentowa%C4%87",
       "https://pl.wiktionary.org/wiki/zaprezentowa%C4%87"
     ],
-    "reviewStatus": "fallback-needs-review"
+    "reviewStatus": "wiktionary-enriched"
   },
   {
     "id": "704-ujrzec",
@@ -310,15 +304,13 @@
         "uk": "Піднявшись на вершину гори, туристи змогли побачити прекрасний, безкрайній океан."
       }
     ],
-    "notes": [
-      "Ukrainian translation fallback needs review."
-    ],
+    "notes": [],
     "sourceUrls": [
       "https://kwjp.pl/lists/en",
       "https://en.wiktionary.org/wiki/ujrze%C4%87",
       "https://pl.wiktionary.org/wiki/ujrze%C4%87"
     ],
-    "reviewStatus": "fallback-needs-review"
+    "reviewStatus": "wiktionary-enriched"
   },
   {
     "id": "705-karmic",
@@ -390,15 +382,13 @@
         "uk": "Доглядач зоопарку заборонив нам годувати цих диких і небезпечних тварин будь-чим."
       }
     ],
-    "notes": [
-      "Ukrainian translation fallback needs review."
-    ],
+    "notes": [],
     "sourceUrls": [
       "https://kwjp.pl/lists/en",
       "https://en.wiktionary.org/wiki/karmi%C4%87",
       "https://pl.wiktionary.org/wiki/karmi%C4%87"
     ],
-    "reviewStatus": "fallback-needs-review"
+    "reviewStatus": "wiktionary-enriched"
   },
   {
     "id": "706-szanowac",
@@ -472,15 +462,13 @@
         "uk": "Батьки завжди вчили мене поважати старших і більш досвідчених людей."
       }
     ],
-    "notes": [
-      "Ukrainian translation fallback needs review."
-    ],
+    "notes": [],
     "sourceUrls": [
       "https://kwjp.pl/lists/en",
       "https://en.wiktionary.org/wiki/szanowa%C4%87",
       "https://pl.wiktionary.org/wiki/szanowa%C4%87"
     ],
-    "reviewStatus": "fallback-needs-review"
+    "reviewStatus": "wiktionary-enriched"
   },
   {
     "id": "707-zaprzeczyc",
@@ -553,15 +541,13 @@
         "uk": "Ніхто не міг заперечити, що її геніальна ідея врятувала нашу компанію від банкрутства."
       }
     ],
-    "notes": [
-      "Ukrainian translation fallback needs review."
-    ],
+    "notes": [],
     "sourceUrls": [
       "https://kwjp.pl/lists/en",
       "https://en.wiktionary.org/wiki/zaprzeczy%C4%87",
       "https://pl.wiktionary.org/wiki/zaprzeczy%C4%87"
     ],
-    "reviewStatus": "fallback-needs-review"
+    "reviewStatus": "wiktionary-enriched"
   },
   {
     "id": "708-powolac",
@@ -632,15 +618,13 @@
         "uk": "Президент вирішив створити спеціальну комісію для ретельного розслідування цієї складної справи."
       }
     ],
-    "notes": [
-      "Ukrainian translation fallback needs review."
-    ],
+    "notes": [],
     "sourceUrls": [
       "https://kwjp.pl/lists/en",
       "https://en.wiktionary.org/wiki/powo%C5%82a%C4%87",
       "https://pl.wiktionary.org/wiki/powo%C5%82a%C4%87"
     ],
-    "reviewStatus": "fallback-needs-review"
+    "reviewStatus": "wiktionary-enriched"
   },
   {
     "id": "709-twierdzic",
@@ -663,17 +647,17 @@
         "підтримувати"
       ]
     },
-    "aspect": "unknown",
+    "aspect": "imperfective",
     "forms": {
       "present": {
-        "ja": "twierdzię",
+        "ja": "twierdzę",
         "ty": "twierdzisz",
         "on": "twierdzi",
         "ona": "twierdzi",
         "my": "twierdzimy",
         "wy": "twierdzicie",
-        "oni": "twierdzią",
-        "one": "twierdzią"
+        "oni": "twierdzą",
+        "one": "twierdzą"
       },
       "past": {
         "ja": {
@@ -713,16 +697,13 @@
         "uk": "Вчений почав уперто стверджувати, що відкрив абсолютно новий, раніше невідомий елемент."
       }
     ],
-    "notes": [
-      "Some forms were generated by fallback rules and should be checked.",
-      "Ukrainian translation fallback needs review."
-    ],
+    "notes": [],
     "sourceUrls": [
       "https://kwjp.pl/lists/en",
       "https://en.wiktionary.org/wiki/twierdzi%C4%87",
       "https://pl.wiktionary.org/wiki/twierdzi%C4%87"
     ],
-    "reviewStatus": "fallback-needs-review"
+    "reviewStatus": "wiktionary-enriched"
   },
   {
     "id": "710-pasc",
@@ -874,15 +855,13 @@
         "uk": "Під час закордонної відпустки він волів вільно користуватися англійською, а не французькою мовою."
       }
     ],
-    "notes": [
-      "Ukrainian translation fallback needs review."
-    ],
+    "notes": [],
     "sourceUrls": [
       "https://kwjp.pl/lists/en",
       "https://en.wiktionary.org/wiki/pos%C5%82ugiwa%C4%87",
       "https://pl.wiktionary.org/wiki/pos%C5%82ugiwa%C4%87"
     ],
-    "reviewStatus": "fallback-needs-review"
+    "reviewStatus": "wiktionary-enriched"
   },
   {
     "id": "712-pokryc",
@@ -950,20 +929,18 @@
     },
     "examples": [
       {
-        "pl": "Zgromadzone oszczędności powinny wystarczyć, by całkowicie pokryc koszty naszego drogiego wesela.",
-        "en": "The accumulated savings should be enough to completely cover the costs of our expensive wedding.",
-        "uk": "Накопичених заощаджень має вистачити, щоб повністю покрити витрати на наше дороге весілля."
+        "pl": "Oszczędności powinny pokryć koszty naszego wesela.",
+        "en": "The savings should cover the cost of our wedding.",
+        "uk": "Заощадження мають покрити витрати на наше весілля."
       }
     ],
-    "notes": [
-      "Ukrainian translation fallback needs review."
-    ],
+    "notes": [],
     "sourceUrls": [
       "https://kwjp.pl/lists/en",
       "https://en.wiktionary.org/wiki/pokry%C4%87",
       "https://pl.wiktionary.org/wiki/pokry%C4%87"
     ],
-    "reviewStatus": "fallback-needs-review"
+    "reviewStatus": "wiktionary-enriched"
   },
   {
     "id": "713-podchodzic",
@@ -1192,15 +1169,13 @@
         "uk": "Нова барвиста вітрина в магазині змогла швидко привернути увагу багатьох випадкових перехожих."
       }
     ],
-    "notes": [
-      "Ukrainian translation fallback needs review."
-    ],
+    "notes": [],
     "sourceUrls": [
       "https://kwjp.pl/lists/en",
       "https://en.wiktionary.org/wiki/przyci%C4%85gn%C4%85%C4%87",
       "https://pl.wiktionary.org/wiki/przyci%C4%85gn%C4%85%C4%87"
     ],
-    "reviewStatus": "fallback-needs-review"
+    "reviewStatus": "wiktionary-enriched"
   },
   {
     "id": "716-zarzadzac",
@@ -1222,7 +1197,7 @@
         "управляти"
       ]
     },
-    "aspect": "unknown",
+    "aspect": "imperfective",
     "forms": {
       "present": {
         "ja": "zarządzam",
@@ -1272,16 +1247,14 @@
         "uk": "Як новий менеджер, вона мусила навчитися мудро управляти своєю дуже великою командою."
       }
     ],
-    "notes": [
-      "Some forms were generated by fallback rules and should be checked.",
-      "Ukrainian translation fallback needs review."
-    ],
+    "notes": [],
     "sourceUrls": [
       "https://kwjp.pl/lists/en",
       "https://en.wiktionary.org/wiki/zarz%C4%85dza%C4%87",
       "https://pl.wiktionary.org/wiki/zarz%C4%85dza%C4%87"
     ],
-    "reviewStatus": "fallback-needs-review"
+    "reviewStatus": "wiktionary-enriched",
+    "aspectPair": "zarządzić"
   },
   {
     "id": "717-dodawac",
@@ -1352,15 +1325,13 @@
         "uk": "Кухар обожнював завжди потайки додавати до своїх страв безліч гострих, екзотичних спецій."
       }
     ],
-    "notes": [
-      "Ukrainian translation fallback needs review."
-    ],
+    "notes": [],
     "sourceUrls": [
       "https://kwjp.pl/lists/en",
       "https://en.wiktionary.org/wiki/dodawa%C4%87",
       "https://pl.wiktionary.org/wiki/dodawa%C4%87"
     ],
-    "reviewStatus": "fallback-needs-review"
+    "reviewStatus": "wiktionary-enriched"
   },
   {
     "id": "718-rozstrzygnac",
@@ -1433,15 +1404,13 @@
         "uk": "Судді довелося остаточно вирішити цю дуже стару і складну суперечку щодо меж ділянок."
       }
     ],
-    "notes": [
-      "Ukrainian translation fallback needs review."
-    ],
+    "notes": [],
     "sourceUrls": [
       "https://kwjp.pl/lists/en",
       "https://en.wiktionary.org/wiki/rozstrzygn%C4%85%C4%87",
       "https://pl.wiktionary.org/wiki/rozstrzygn%C4%85%C4%87"
     ],
-    "reviewStatus": "fallback-needs-review"
+    "reviewStatus": "wiktionary-enriched"
   },
   {
     "id": "719-sprawiac",
@@ -1542,7 +1511,7 @@
         "перевірити"
       ]
     },
-    "aspect": "unknown",
+    "aspect": "perfective",
     "forms": {
       "present": {
         "ja": "zweryfikuję",
@@ -1587,21 +1556,19 @@
     },
     "examples": [
       {
-        "pl": "Przed podpisaniem umowy prawnik musiał dokładnie zweryfikowac wszystkie zawarte w niej klauzule.",
-        "en": "Before signing the contract, the lawyer had to carefully verify all the clauses contained within it.",
-        "uk": "Перед підписанням договору юрист мусив ретельно перевірити всі пункти, що містилися в ньому."
+        "pl": "Prawnik musiał zweryfikować wszystkie klauzule umowy.",
+        "en": "The lawyer had to verify all clauses of the contract.",
+        "uk": "Юрист мусив перевірити всі пункти договору."
       }
     ],
-    "notes": [
-      "Some forms were generated by fallback rules and should be checked.",
-      "Ukrainian translation fallback needs review."
-    ],
+    "notes": [],
     "sourceUrls": [
       "https://kwjp.pl/lists/en",
       "https://en.wiktionary.org/wiki/zweryfikowa%C4%87",
       "https://pl.wiktionary.org/wiki/zweryfikowa%C4%87"
     ],
-    "reviewStatus": "fallback-needs-review"
+    "reviewStatus": "wiktionary-enriched",
+    "aspectPair": "weryfikować"
   },
   {
     "id": "721-podlegac",
@@ -1752,15 +1719,13 @@
         "uk": "Клієнти завжди позитивно асоціюватимуть цей бренд з надійною і відмінною якістю його продукції."
       }
     ],
-    "notes": [
-      "Ukrainian translation fallback needs review."
-    ],
+    "notes": [],
     "sourceUrls": [
       "https://kwjp.pl/lists/en",
       "https://en.wiktionary.org/wiki/kojarzy%C4%87",
       "https://pl.wiktionary.org/wiki/kojarzy%C4%87"
     ],
-    "reviewStatus": "fallback-needs-review"
+    "reviewStatus": "wiktionary-enriched"
   },
   {
     "id": "723-dobrac",
@@ -1833,15 +1798,13 @@
         "uk": "Кравець допомагав нареченому ідеально підібрати елегантний костюм до пори року та стилю весілля."
       }
     ],
-    "notes": [
-      "Ukrainian translation fallback needs review."
-    ],
+    "notes": [],
     "sourceUrls": [
       "https://kwjp.pl/lists/en",
       "https://en.wiktionary.org/wiki/dobra%C4%87",
       "https://pl.wiktionary.org/wiki/dobra%C4%87"
     ],
-    "reviewStatus": "fallback-needs-review"
+    "reviewStatus": "wiktionary-enriched"
   },
   {
     "id": "724-wyrazac",
@@ -1991,15 +1954,13 @@
         "uk": "Водій змушений був різко прискоритися, щоб безпечно обігнати повільну величезну вантажівку на підйомі."
       }
     ],
-    "notes": [
-      "Ukrainian translation fallback needs review."
-    ],
+    "notes": [],
     "sourceUrls": [
       "https://kwjp.pl/lists/en",
       "https://en.wiktionary.org/wiki/przyspieszy%C4%87",
       "https://pl.wiktionary.org/wiki/przyspieszy%C4%87"
     ],
-    "reviewStatus": "fallback-needs-review"
+    "reviewStatus": "wiktionary-enriched"
   },
   {
     "id": "726-uczcic",
@@ -2072,15 +2033,13 @@
         "uk": "Жителі села зібралися на площі, щоб урочисто вшанувати пам'ять полеглих національних героїв."
       }
     ],
-    "notes": [
-      "Ukrainian translation fallback needs review."
-    ],
+    "notes": [],
     "sourceUrls": [
       "https://kwjp.pl/lists/en",
       "https://en.wiktionary.org/wiki/uczci%C4%87",
       "https://pl.wiktionary.org/wiki/uczci%C4%87"
     ],
-    "reviewStatus": "fallback-needs-review"
+    "reviewStatus": "wiktionary-enriched"
   },
   {
     "id": "727-zmiescic",
@@ -2153,15 +2112,13 @@
         "uk": "Цей маленький міський автомобіль взагалі не міг вмістити такий величезний і безформний диван у багажнику."
       }
     ],
-    "notes": [
-      "Ukrainian translation fallback needs review."
-    ],
+    "notes": [],
     "sourceUrls": [
       "https://kwjp.pl/lists/en",
       "https://en.wiktionary.org/wiki/zmie%C5%9Bci%C4%87",
       "https://pl.wiktionary.org/wiki/zmie%C5%9Bci%C4%87"
     ],
-    "reviewStatus": "fallback-needs-review"
+    "reviewStatus": "wiktionary-enriched"
   },
   {
     "id": "728-zaistniec",
@@ -2233,15 +2190,13 @@
         "uk": "Молодий рок-гурт мріяв про те, щоб нарешті міцно закріпитися на польській музичній сцені."
       }
     ],
-    "notes": [
-      "Ukrainian translation fallback needs review."
-    ],
+    "notes": [],
     "sourceUrls": [
       "https://kwjp.pl/lists/en",
       "https://en.wiktionary.org/wiki/zaistnie%C4%87",
       "https://pl.wiktionary.org/wiki/zaistnie%C4%87"
     ],
-    "reviewStatus": "fallback-needs-review"
+    "reviewStatus": "wiktionary-enriched"
   },
   {
     "id": "729-denerwowac",
@@ -2312,15 +2267,13 @@
         "uk": "Постійне стукання ручкою по столу могло швидко роздратувати навіть дуже спокійного працівника."
       }
     ],
-    "notes": [
-      "Ukrainian translation fallback needs review."
-    ],
+    "notes": [],
     "sourceUrls": [
       "https://kwjp.pl/lists/en",
       "https://en.wiktionary.org/wiki/denerwowa%C4%87",
       "https://pl.wiktionary.org/wiki/denerwowa%C4%87"
     ],
-    "reviewStatus": "fallback-needs-review"
+    "reviewStatus": "wiktionary-enriched"
   },
   {
     "id": "730-opiekowac",
@@ -2392,15 +2345,13 @@
         "uk": "Медсестра любила дбайливо доглядати за наймолодшими, часто наляканими пацієнтами у своєму відділенні."
       }
     ],
-    "notes": [
-      "Ukrainian translation fallback needs review."
-    ],
+    "notes": [],
     "sourceUrls": [
       "https://kwjp.pl/lists/en",
       "https://en.wiktionary.org/wiki/opiekowa%C4%87",
       "https://pl.wiktionary.org/wiki/opiekowa%C4%87"
     ],
-    "reviewStatus": "fallback-needs-review"
+    "reviewStatus": "wiktionary-enriched"
   },
   {
     "id": "731-pomylic",
@@ -2473,15 +2424,13 @@
         "uk": "Вони були настільки схожі, що здалеку було неймовірно легко переплутати одну сестру-близнючку з іншою."
       }
     ],
-    "notes": [
-      "Ukrainian translation fallback needs review."
-    ],
+    "notes": [],
     "sourceUrls": [
       "https://kwjp.pl/lists/en",
       "https://en.wiktionary.org/wiki/pomyli%C4%87",
       "https://pl.wiktionary.org/wiki/pomyli%C4%87"
     ],
-    "reviewStatus": "fallback-needs-review"
+    "reviewStatus": "wiktionary-enriched"
   },
   {
     "id": "732-komentowac",
@@ -2503,7 +2452,7 @@
         "коментувати"
       ]
     },
-    "aspect": "unknown",
+    "aspect": "imperfective",
     "forms": {
       "present": {
         "ja": "komentuję",
@@ -2553,15 +2502,14 @@
         "uk": "Політик категорично відмовився в інтерв'ю ширше коментувати ці абсолютно непідтверджені, огидні плітки."
       }
     ],
-    "notes": [
-      "Some forms were generated by fallback rules and should be checked."
-    ],
+    "notes": [],
     "sourceUrls": [
       "https://kwjp.pl/lists/en",
       "https://en.wiktionary.org/wiki/komentowa%C4%87",
       "https://pl.wiktionary.org/wiki/komentowa%C4%87"
     ],
-    "reviewStatus": "fallback-needs-review"
+    "reviewStatus": "wiktionary-enriched",
+    "aspectPair": "skomentować"
   },
   {
     "id": "733-wzbudzic",
@@ -2632,15 +2580,13 @@
         "uk": "Ця похмура і таємнича картина завжди могла викликати у глядачів величезний, ірраціональний страх."
       }
     ],
-    "notes": [
-      "Ukrainian translation fallback needs review."
-    ],
+    "notes": [],
     "sourceUrls": [
       "https://kwjp.pl/lists/en",
       "https://en.wiktionary.org/wiki/wzbudzi%C4%87",
       "https://pl.wiktionary.org/wiki/wzbudzi%C4%87"
     ],
-    "reviewStatus": "fallback-needs-review"
+    "reviewStatus": "wiktionary-enriched"
   },
   {
     "id": "734-poznawac",
@@ -2713,15 +2659,13 @@
         "uk": "Він обожнював подорожувати, бо завжди хотів із захопленням пізнавати абсолютно нові для себе культури."
       }
     ],
-    "notes": [
-      "Ukrainian translation fallback needs review."
-    ],
+    "notes": [],
     "sourceUrls": [
       "https://kwjp.pl/lists/en",
       "https://en.wiktionary.org/wiki/poznawa%C4%87",
       "https://pl.wiktionary.org/wiki/poznawa%C4%87"
     ],
-    "reviewStatus": "fallback-needs-review"
+    "reviewStatus": "wiktionary-enriched"
   },
   {
     "id": "735-kopac",
@@ -2789,9 +2733,9 @@
     },
     "examples": [
       {
-        "pl": "Pies uwielbiał całymi dniami z ogromną radością kopac bardzo głębokie doły w naszym ogrodzie.",
-        "en": "The dog loved to dig very deep holes in our garden with great joy all day long.",
-        "uk": "Собака обожнював цілими днями з величезною радістю копати дуже глибокі ями в нашому саду."
+        "pl": "Pies uwielbiał kopać głębokie doły w ogrodzie.",
+        "en": "The dog loved digging deep holes in the garden.",
+        "uk": "Собака обожнював копати глибокі ями в саду."
       }
     ],
     "notes": [],
@@ -2866,20 +2810,18 @@
     },
     "examples": [
       {
-        "pl": "Musimy bardzo precyzyjnie zaplanowac całą tę długą podróż, aby uniknąć jakichkolwiek przykrych niespodzianek.",
-        "en": "We must plan this entire long journey very precisely to avoid any unpleasant surprises.",
-        "uk": "Ми повинні дуже точно спланувати всю цю довгу подорож, щоб уникнути будь-яких неприємних сюрпризів."
+        "pl": "Musimy dokładnie zaplanować całą podróż.",
+        "en": "We need to plan the whole trip carefully.",
+        "uk": "Нам потрібно ретельно спланувати всю подорож."
       }
     ],
-    "notes": [
-      "Ukrainian translation fallback needs review."
-    ],
+    "notes": [],
     "sourceUrls": [
       "https://kwjp.pl/lists/en",
       "https://en.wiktionary.org/wiki/zaplanowa%C4%87",
       "https://pl.wiktionary.org/wiki/zaplanowa%C4%87"
     ],
-    "reviewStatus": "fallback-needs-review"
+    "reviewStatus": "wiktionary-enriched"
   },
   {
     "id": "737-uchodzic",
@@ -2952,15 +2894,13 @@
         "uk": "Через нестачу доказів злодієві завжди вдавалося безкарно уникати правосуддя після скоєння крадіжки."
       }
     ],
-    "notes": [
-      "Ukrainian translation fallback needs review."
-    ],
+    "notes": [],
     "sourceUrls": [
       "https://kwjp.pl/lists/en",
       "https://en.wiktionary.org/wiki/uchodzi%C4%87",
       "https://pl.wiktionary.org/wiki/uchodzi%C4%87"
     ],
-    "reviewStatus": "fallback-needs-review"
+    "reviewStatus": "wiktionary-enriched"
   },
   {
     "id": "738-wyzwolic",
@@ -2983,17 +2923,17 @@
         "звільняти"
       ]
     },
-    "aspect": "unknown",
+    "aspect": "perfective",
     "forms": {
       "present": {
-        "ja": "wyzwolię",
+        "ja": "wyzwolę",
         "ty": "wyzwolisz",
         "on": "wyzwoli",
         "ona": "wyzwoli",
         "my": "wyzwolimy",
         "wy": "wyzwolicie",
-        "oni": "wyzwolią",
-        "one": "wyzwolią"
+        "oni": "wyzwolą",
+        "one": "wyzwolą"
       },
       "past": {
         "ja": {
@@ -3033,16 +2973,14 @@
         "uk": "Об'єднана армія змогла нарешті героїчно звільнити все окуповане місто після місяців важких боїв."
       }
     ],
-    "notes": [
-      "Some forms were generated by fallback rules and should be checked.",
-      "Ukrainian translation fallback needs review."
-    ],
+    "notes": [],
     "sourceUrls": [
       "https://kwjp.pl/lists/en",
       "https://en.wiktionary.org/wiki/wyzwoli%C4%87",
       "https://pl.wiktionary.org/wiki/wyzwoli%C4%87"
     ],
-    "reviewStatus": "fallback-needs-review"
+    "reviewStatus": "wiktionary-enriched",
+    "aspectPair": "wyzwalać"
   },
   {
     "id": "739-wyjasniac",
@@ -3144,17 +3082,17 @@
         "звільнити"
       ]
     },
-    "aspect": "unknown",
+    "aspect": "perfective",
     "forms": {
       "present": {
-        "ja": "wypuścię",
+        "ja": "wypuszczę",
         "ty": "wypuścisz",
         "on": "wypuści",
         "ona": "wypuści",
         "my": "wypuścimy",
         "wy": "wypuścicie",
-        "oni": "wypuścią",
-        "one": "wypuścią"
+        "oni": "wypuszczą",
+        "one": "wypuszczą"
       },
       "past": {
         "ja": {
@@ -3194,16 +3132,14 @@
         "uk": "Після ретельного обстеження ветеринар вирішив безпечно випустити цю красиву дику тварину назад у ліс."
       }
     ],
-    "notes": [
-      "Some forms were generated by fallback rules and should be checked.",
-      "Ukrainian translation fallback needs review."
-    ],
+    "notes": [],
     "sourceUrls": [
       "https://kwjp.pl/lists/en",
       "https://en.wiktionary.org/wiki/wypu%C5%9Bci%C4%87",
       "https://pl.wiktionary.org/wiki/wypu%C5%9Bci%C4%87"
     ],
-    "reviewStatus": "fallback-needs-review"
+    "reviewStatus": "wiktionary-enriched",
+    "aspectPair": "wypuszczać"
   },
   {
     "id": "741-zaoszczedzic",
@@ -3276,15 +3212,13 @@
         "uk": "Вирішивши відмовитися від щоденної кави в місті, можна непогано заощадити кожного місяця."
       }
     ],
-    "notes": [
-      "Ukrainian translation fallback needs review."
-    ],
+    "notes": [],
     "sourceUrls": [
       "https://kwjp.pl/lists/en",
       "https://en.wiktionary.org/wiki/zaoszcz%C4%99dzi%C4%87",
       "https://pl.wiktionary.org/wiki/zaoszcz%C4%99dzi%C4%87"
     ],
-    "reviewStatus": "fallback-needs-review"
+    "reviewStatus": "wiktionary-enriched"
   },
   {
     "id": "742-brzmiec",
@@ -3305,17 +3239,17 @@
         "звучати"
       ]
     },
-    "aspect": "unknown",
+    "aspect": "imperfective",
     "forms": {
       "present": {
-        "ja": "brzmieę",
-        "ty": "brzmieesz",
-        "on": "brzmiee",
-        "ona": "brzmiee",
-        "my": "brzmieemy",
-        "wy": "brzmieecie",
-        "oni": "brzmieą",
-        "one": "brzmieą"
+        "ja": "brzmię",
+        "ty": "brzmisz",
+        "on": "brzmi",
+        "ona": "brzmi",
+        "my": "brzmimy",
+        "wy": "brzmicie",
+        "oni": "brzmią",
+        "one": "brzmią"
       },
       "past": {
         "ja": {
@@ -3355,15 +3289,14 @@
         "uk": "Твої численні аргументи можуть звучати для деяких людей надзвичайно переконливо і розумно в цій дискусії."
       }
     ],
-    "notes": [
-      "Some forms were generated by fallback rules and should be checked."
-    ],
+    "notes": [],
     "sourceUrls": [
       "https://kwjp.pl/lists/en",
       "https://en.wiktionary.org/wiki/brzmie%C4%87",
       "https://pl.wiktionary.org/wiki/brzmie%C4%87"
     ],
-    "reviewStatus": "fallback-needs-review"
+    "reviewStatus": "wiktionary-enriched",
+    "aspectPair": "zabrzmieć"
   },
   {
     "id": "743-zawiesic",
@@ -3436,15 +3369,13 @@
         "uk": "Тато пообіцяв вранці, що допоможе мені високо повісити нову, блискучу люстру в моїй відремонтованій кімнаті."
       }
     ],
-    "notes": [
-      "Ukrainian translation fallback needs review."
-    ],
+    "notes": [],
     "sourceUrls": [
       "https://kwjp.pl/lists/en",
       "https://en.wiktionary.org/wiki/zawiesi%C4%87",
       "https://pl.wiktionary.org/wiki/zawiesi%C4%87"
     ],
-    "reviewStatus": "fallback-needs-review"
+    "reviewStatus": "wiktionary-enriched"
   },
   {
     "id": "744-analizowac",
@@ -3465,7 +3396,7 @@
         "аналізувати"
       ]
     },
-    "aspect": "unknown",
+    "aspect": "imperfective",
     "forms": {
       "present": {
         "ja": "analizuję",
@@ -3515,15 +3446,14 @@
         "uk": "Відділу маркетингу довелося цілий тиждень ретельно аналізувати раптове падіння продажів нашого зимового одягу."
       }
     ],
-    "notes": [
-      "Some forms were generated by fallback rules and should be checked."
-    ],
+    "notes": [],
     "sourceUrls": [
       "https://kwjp.pl/lists/en",
       "https://en.wiktionary.org/wiki/analizowa%C4%87",
       "https://pl.wiktionary.org/wiki/analizowa%C4%87"
     ],
-    "reviewStatus": "fallback-needs-review"
+    "reviewStatus": "wiktionary-enriched",
+    "aspectPair": "przeanalizować"
   },
   {
     "id": "745-odnosic",
@@ -3596,15 +3526,13 @@
         "uk": "Учнів просили завжди відносити всі прочитані книги до бібліотеки після уроків."
       }
     ],
-    "notes": [
-      "Ukrainian translation fallback needs review."
-    ],
+    "notes": [],
     "sourceUrls": [
       "https://kwjp.pl/lists/en",
       "https://en.wiktionary.org/wiki/odnosi%C4%87",
       "https://pl.wiktionary.org/wiki/odnosi%C4%87"
     ],
-    "reviewStatus": "fallback-needs-review"
+    "reviewStatus": "wiktionary-enriched"
   },
   {
     "id": "746-reprezentowac",
@@ -3754,15 +3682,13 @@
         "uk": "На жаль, я забув вчора ввечері дістати це заморожене м'ясо з дуже холодної морозилки на сьогоднішній обід."
       }
     ],
-    "notes": [
-      "Ukrainian translation fallback needs review."
-    ],
+    "notes": [],
     "sourceUrls": [
       "https://kwjp.pl/lists/en",
       "https://en.wiktionary.org/wiki/wyj%C4%85%C4%87",
       "https://pl.wiktionary.org/wiki/wyj%C4%85%C4%87"
     ],
-    "reviewStatus": "fallback-needs-review"
+    "reviewStatus": "wiktionary-enriched"
   },
   {
     "id": "748-odsunac",
@@ -3835,15 +3761,13 @@
         "uk": "Керівник вирішив безжально усунути некомпетентного працівника від цього надзвичайно важливого нового будівельного проекту."
       }
     ],
-    "notes": [
-      "Ukrainian translation fallback needs review."
-    ],
+    "notes": [],
     "sourceUrls": [
       "https://kwjp.pl/lists/en",
       "https://en.wiktionary.org/wiki/odsun%C4%85%C4%87",
       "https://pl.wiktionary.org/wiki/odsun%C4%85%C4%87"
     ],
-    "reviewStatus": "fallback-needs-review"
+    "reviewStatus": "wiktionary-enriched"
   },
   {
     "id": "749-ksztaltowac",
@@ -3917,15 +3841,13 @@
         "uk": "Вчителі мають унікальну можливість щодня дуже сильно формувати майбутні погляди молодих, допитливих людей."
       }
     ],
-    "notes": [
-      "Ukrainian translation fallback needs review."
-    ],
+    "notes": [],
     "sourceUrls": [
       "https://kwjp.pl/lists/en",
       "https://en.wiktionary.org/wiki/kszta%C5%82towa%C4%87",
       "https://pl.wiktionary.org/wiki/kszta%C5%82towa%C4%87"
     ],
-    "reviewStatus": "fallback-needs-review"
+    "reviewStatus": "wiktionary-enriched"
   },
   {
     "id": "750-oswoic",
@@ -3996,15 +3918,13 @@
         "uk": "Йому знадобилося багато тижнів, щоб нарешті успішно приручити дуже лякливого і недовірливого собаку з притулку."
       }
     ],
-    "notes": [
-      "Ukrainian translation fallback needs review."
-    ],
+    "notes": [],
     "sourceUrls": [
       "https://kwjp.pl/lists/en",
       "https://en.wiktionary.org/wiki/oswoi%C4%87",
       "https://pl.wiktionary.org/wiki/oswoi%C4%87"
     ],
-    "reviewStatus": "fallback-needs-review"
+    "reviewStatus": "wiktionary-enriched"
   },
   {
     "id": "751-toczyc",
@@ -4234,15 +4154,13 @@
         "uk": "Лікар наполегливо намагався спонукати літнього пацієнта кинути цю дуже шкідливу звичку."
       }
     ],
-    "notes": [
-      "Ukrainian translation fallback needs review."
-    ],
+    "notes": [],
     "sourceUrls": [
       "https://kwjp.pl/lists/en",
       "https://en.wiktionary.org/wiki/sk%C5%82oni%C4%87",
       "https://pl.wiktionary.org/wiki/sk%C5%82oni%C4%87"
     ],
-    "reviewStatus": "fallback-needs-review"
+    "reviewStatus": "wiktionary-enriched"
   },
   {
     "id": "754-ustapic",
@@ -4315,15 +4233,13 @@
         "uk": "Молодший пасажир у трамваї нарешті вирішив ввічливо поступитися місцем старшій пані."
       }
     ],
-    "notes": [
-      "Ukrainian translation fallback needs review."
-    ],
+    "notes": [],
     "sourceUrls": [
       "https://kwjp.pl/lists/en",
       "https://en.wiktionary.org/wiki/ust%C4%85pi%C4%87",
       "https://pl.wiktionary.org/wiki/ust%C4%85pi%C4%87"
     ],
-    "reviewStatus": "fallback-needs-review"
+    "reviewStatus": "wiktionary-enriched"
   },
   {
     "id": "755-kryc",
@@ -4396,15 +4312,13 @@
         "uk": "Цей похмурий і густий ліс, здається, приховує в собі надзвичайно багато похмурих таємниць."
       }
     ],
-    "notes": [
-      "Ukrainian translation fallback needs review."
-    ],
+    "notes": [],
     "sourceUrls": [
       "https://kwjp.pl/lists/en",
       "https://en.wiktionary.org/wiki/kry%C4%87",
       "https://pl.wiktionary.org/wiki/kry%C4%87"
     ],
-    "reviewStatus": "fallback-needs-review"
+    "reviewStatus": "wiktionary-enriched"
   },
   {
     "id": "756-stawac",
@@ -4554,15 +4468,13 @@
         "uk": "Зібрані досі докази, здається, переконливо свідчать про те, що пожежа не була трагічним випадком."
       }
     ],
-    "notes": [
-      "Ukrainian translation fallback needs review."
-    ],
+    "notes": [],
     "sourceUrls": [
       "https://kwjp.pl/lists/en",
       "https://en.wiktionary.org/wiki/sugerowa%C4%87",
       "https://pl.wiktionary.org/wiki/sugerowa%C4%87"
     ],
-    "reviewStatus": "fallback-needs-review"
+    "reviewStatus": "wiktionary-enriched"
   },
   {
     "id": "758-wspinac",
@@ -4635,15 +4547,13 @@
         "uk": "Влітку я обожнюю рано-вранці повільно підніматися дуже крутими гірськими стежками."
       }
     ],
-    "notes": [
-      "Ukrainian translation fallback needs review."
-    ],
+    "notes": [],
     "sourceUrls": [
       "https://kwjp.pl/lists/en",
       "https://en.wiktionary.org/wiki/wspina%C4%87",
       "https://pl.wiktionary.org/wiki/wspina%C4%87"
     ],
-    "reviewStatus": "fallback-needs-review"
+    "reviewStatus": "wiktionary-enriched"
   },
   {
     "id": "759-porownywac",
@@ -4794,15 +4704,13 @@
         "uk": "Поліції знадобилося аж кілька довгих днів, щоб нарешті правильно ідентифікувати знайденого чоловіка."
       }
     ],
-    "notes": [
-      "Ukrainian translation fallback needs review."
-    ],
+    "notes": [],
     "sourceUrls": [
       "https://kwjp.pl/lists/en",
       "https://en.wiktionary.org/wiki/zidentyfikowa%C4%87",
       "https://pl.wiktionary.org/wiki/zidentyfikowa%C4%87"
     ],
-    "reviewStatus": "fallback-needs-review"
+    "reviewStatus": "wiktionary-enriched"
   },
   {
     "id": "761-podporzadkowac",
@@ -4876,15 +4784,13 @@
         "uk": "Молодий солдат мусив швидко і беззаперечно підкоритися новим, суворим наказам командира."
       }
     ],
-    "notes": [
-      "Ukrainian translation fallback needs review."
-    ],
+    "notes": [],
     "sourceUrls": [
       "https://kwjp.pl/lists/en",
       "https://en.wiktionary.org/wiki/podporz%C4%85dkowa%C4%87",
       "https://pl.wiktionary.org/wiki/podporz%C4%85dkowa%C4%87"
     ],
-    "reviewStatus": "fallback-needs-review"
+    "reviewStatus": "wiktionary-enriched"
   },
   {
     "id": "762-rozgladac",
@@ -4905,7 +4811,7 @@
         "озирнутися"
       ]
     },
-    "aspect": "unknown",
+    "aspect": "imperfective",
     "forms": {
       "present": {
         "ja": "rozglądam",
@@ -4955,16 +4861,14 @@
         "uk": "Коли він увійшов до незнайомої кімнати, він одразу почав дуже уважно розглядатися навколо."
       }
     ],
-    "notes": [
-      "Some forms were generated by fallback rules and should be checked.",
-      "Ukrainian translation fallback needs review."
-    ],
+    "notes": [],
     "sourceUrls": [
       "https://kwjp.pl/lists/en",
       "https://en.wiktionary.org/wiki/rozgl%C4%85da%C4%87",
       "https://pl.wiktionary.org/wiki/rozgl%C4%85da%C4%87"
     ],
-    "reviewStatus": "fallback-needs-review"
+    "reviewStatus": "wiktionary-enriched",
+    "aspectPair": "rozejrzeć się"
   },
   {
     "id": "763-zostawiac",
@@ -5117,15 +5021,13 @@
         "uk": "У всьому переляканому залі суду почала повільно запановувати дуже напружена, мертва тиша."
       }
     ],
-    "notes": [
-      "Ukrainian translation fallback needs review."
-    ],
+    "notes": [],
     "sourceUrls": [
       "https://kwjp.pl/lists/en",
       "https://en.wiktionary.org/wiki/panowa%C4%87",
       "https://pl.wiktionary.org/wiki/panowa%C4%87"
     ],
-    "reviewStatus": "fallback-needs-review"
+    "reviewStatus": "wiktionary-enriched"
   },
   {
     "id": "765-protestowac",
@@ -5146,7 +5048,7 @@
         "протестувати"
       ]
     },
-    "aspect": "unknown",
+    "aspect": "imperfective",
     "forms": {
       "present": {
         "ja": "protestuję",
@@ -5196,15 +5098,14 @@
         "uk": "Тисячі незадоволених працівників мають намір незабаром голосно протестувати на площі проти несправедливого закону."
       }
     ],
-    "notes": [
-      "Some forms were generated by fallback rules and should be checked."
-    ],
+    "notes": [],
     "sourceUrls": [
       "https://kwjp.pl/lists/en",
       "https://en.wiktionary.org/wiki/protestowa%C4%87",
       "https://pl.wiktionary.org/wiki/protestowa%C4%87"
     ],
-    "reviewStatus": "fallback-needs-review"
+    "reviewStatus": "wiktionary-enriched",
+    "aspectPair": "zaprotestować"
   },
   {
     "id": "766-zarejestrowac",
@@ -5350,20 +5251,18 @@
     },
     "examples": [
       {
-        "pl": "Światło latarki zdawało się bardzo mocno i jasno odbijać od błyszczącej powierzchni jeziora.",
-        "en": "The flashlight beam seemed to reflect very strongly and brightly from the shiny surface of the lake.",
-        "uk": "Світло ліхтарика, здавалося, дуже сильно і яскраво відбивалося від блискучої поверхні озера."
+        "pl": "Światło latarki mogło odbić się od powierzchni jeziora.",
+        "en": "The flashlight beam could reflect off the surface of the lake.",
+        "uk": "Світло ліхтарика могло відбитися від поверхні озера."
       }
     ],
-    "notes": [
-      "Ukrainian translation fallback needs review."
-    ],
+    "notes": [],
     "sourceUrls": [
       "https://kwjp.pl/lists/en",
       "https://en.wiktionary.org/wiki/odbi%C4%87",
       "https://pl.wiktionary.org/wiki/odbi%C4%87"
     ],
-    "reviewStatus": "fallback-needs-review"
+    "reviewStatus": "wiktionary-enriched"
   },
   {
     "id": "768-splacic",
@@ -5434,15 +5333,13 @@
         "uk": "Завдяки цій чудовій сумі, виграній у лотерею, я нарешті зможу повністю погасити всі свої борги."
       }
     ],
-    "notes": [
-      "Ukrainian translation fallback needs review."
-    ],
+    "notes": [],
     "sourceUrls": [
       "https://kwjp.pl/lists/en",
       "https://en.wiktionary.org/wiki/sp%C5%82aci%C4%87",
       "https://pl.wiktionary.org/wiki/sp%C5%82aci%C4%87"
     ],
-    "reviewStatus": "fallback-needs-review"
+    "reviewStatus": "wiktionary-enriched"
   },
   {
     "id": "769-mylic",
@@ -5516,15 +5413,13 @@
         "uk": "Близнюки дуже любили іноді навмисно плутати всіх своїх вчителів у середній школі."
       }
     ],
-    "notes": [
-      "Ukrainian translation fallback needs review."
-    ],
+    "notes": [],
     "sourceUrls": [
       "https://kwjp.pl/lists/en",
       "https://en.wiktionary.org/wiki/myli%C4%87",
       "https://pl.wiktionary.org/wiki/myli%C4%87"
     ],
-    "reviewStatus": "fallback-needs-review"
+    "reviewStatus": "wiktionary-enriched"
   },
   {
     "id": "770-ukazac",
@@ -5595,15 +5490,13 @@
         "uk": "Лише після того, як густий туман розсіявся, нашим очам зміг постати дивовижний замок."
       }
     ],
-    "notes": [
-      "Ukrainian translation fallback needs review."
-    ],
+    "notes": [],
     "sourceUrls": [
       "https://kwjp.pl/lists/en",
       "https://en.wiktionary.org/wiki/ukaza%C4%87",
       "https://pl.wiktionary.org/wiki/ukaza%C4%87"
     ],
-    "reviewStatus": "fallback-needs-review"
+    "reviewStatus": "wiktionary-enriched"
   },
   {
     "id": "771-zawrocic",
@@ -5676,15 +5569,13 @@
         "uk": "Оскільки я забув взяти важливі документи з дому, мені, на жаль, довелося раптово повернути назад."
       }
     ],
-    "notes": [
-      "Ukrainian translation fallback needs review."
-    ],
+    "notes": [],
     "sourceUrls": [
       "https://kwjp.pl/lists/en",
       "https://en.wiktionary.org/wiki/zawr%C3%B3ci%C4%87",
       "https://pl.wiktionary.org/wiki/zawr%C3%B3ci%C4%87"
     ],
-    "reviewStatus": "fallback-needs-review"
+    "reviewStatus": "wiktionary-enriched"
   },
   {
     "id": "772-spalic",
@@ -5707,17 +5598,17 @@
         "спалювати"
       ]
     },
-    "aspect": "unknown",
+    "aspect": "perfective",
     "forms": {
       "present": {
-        "ja": "spalię",
+        "ja": "spalę",
         "ty": "spalisz",
         "on": "spali",
         "ona": "spali",
         "my": "spalimy",
         "wy": "spalicie",
-        "oni": "spalią",
-        "one": "spalią"
+        "oni": "spalą",
+        "one": "spalą"
       },
       "past": {
         "ja": {
@@ -5757,16 +5648,14 @@
         "uk": "Батько наказав мені негайно і безповоротно спалити всі ці старі, таємні документи в каміні."
       }
     ],
-    "notes": [
-      "Some forms were generated by fallback rules and should be checked.",
-      "Ukrainian translation fallback needs review."
-    ],
+    "notes": [],
     "sourceUrls": [
       "https://kwjp.pl/lists/en",
       "https://en.wiktionary.org/wiki/spali%C4%87",
       "https://pl.wiktionary.org/wiki/spali%C4%87"
     ],
-    "reviewStatus": "fallback-needs-review"
+    "reviewStatus": "wiktionary-enriched",
+    "aspectPair": "spalać"
   },
   {
     "id": "773-ukarac",
@@ -5838,15 +5727,13 @@
         "uk": "Вчитель був надзвичайно суворим і вмів дуже справедливо покарати кожного неслухняного і норовливого учня."
       }
     ],
-    "notes": [
-      "Ukrainian translation fallback needs review."
-    ],
+    "notes": [],
     "sourceUrls": [
       "https://kwjp.pl/lists/en",
       "https://en.wiktionary.org/wiki/ukara%C4%87",
       "https://pl.wiktionary.org/wiki/ukara%C4%87"
     ],
-    "reviewStatus": "fallback-needs-review"
+    "reviewStatus": "wiktionary-enriched"
   },
   {
     "id": "774-spasc",
@@ -5870,46 +5757,46 @@
         "годувати, пасти"
       ]
     },
-    "aspect": "unknown",
+    "aspect": "perfective",
     "forms": {
       "present": {
-        "ja": "spaśę",
-        "ty": "spaśesz",
-        "on": "spaśe",
-        "ona": "spaśe",
-        "my": "spaśemy",
-        "wy": "spaśecie",
-        "oni": "spaśą",
-        "one": "spaśą"
+        "ja": "spadnę",
+        "ty": "spadniesz",
+        "on": "spadnie",
+        "ona": "spadnie",
+        "my": "spadniemy",
+        "wy": "spadniecie",
+        "oni": "spadną",
+        "one": "spadną"
       },
       "past": {
         "ja": {
-          "masculine": "spaśłem",
-          "feminine": "spaśłam"
+          "masculine": "spadłem",
+          "feminine": "spadłam"
         },
         "ty": {
-          "masculine": "spaśłeś",
-          "feminine": "spaśłaś"
+          "masculine": "spadłeś",
+          "feminine": "spadłaś"
         },
         "on": {
-          "masculine": "spaśł"
+          "masculine": "spadł"
         },
         "ona": {
-          "feminine": "spaśła"
+          "feminine": "spadła"
         },
         "my": {
-          "virile": "spaśliśmy",
-          "nonvirile": "spaśłyśmy"
+          "virile": "spadliśmy",
+          "nonvirile": "spadłyśmy"
         },
         "wy": {
-          "virile": "spaśliście",
-          "nonvirile": "spaśłyście"
+          "virile": "spadliście",
+          "nonvirile": "spadłyście"
         },
         "oni": {
-          "virile": "spaśli"
+          "virile": "spadli"
         },
         "one": {
-          "nonvirile": "spaśły"
+          "nonvirile": "spadły"
         }
       }
     },
@@ -5920,16 +5807,14 @@
         "uk": "Через величезну зимову бурю багато черепиці могло несподівано впасти з нашого старого даху."
       }
     ],
-    "notes": [
-      "Some forms were generated by fallback rules and should be checked.",
-      "Ukrainian translation fallback needs review."
-    ],
+    "notes": [],
     "sourceUrls": [
       "https://kwjp.pl/lists/en",
       "https://en.wiktionary.org/wiki/spa%C5%9B%C4%87",
       "https://pl.wiktionary.org/wiki/spa%C5%9B%C4%87"
     ],
-    "reviewStatus": "fallback-needs-review"
+    "reviewStatus": "wiktionary-enriched",
+    "aspectPair": "spadać"
   },
   {
     "id": "775-brakowac",
@@ -6001,15 +5886,14 @@
         "uk": "Під час такої далекої подорожі мені, безумовно, дуже бракуватиме моєї чудової родини."
       }
     ],
-    "notes": [
-      "Some forms were generated by fallback rules and should be checked."
-    ],
+    "notes": [],
     "sourceUrls": [
       "https://kwjp.pl/lists/en",
       "https://en.wiktionary.org/wiki/brakowa%C4%87",
       "https://pl.wiktionary.org/wiki/brakowa%C4%87"
     ],
-    "reviewStatus": "fallback-needs-review"
+    "reviewStatus": "wiktionary-enriched",
+    "aspectPair": "zabrakować"
   },
   {
     "id": "776-plywac",
@@ -6112,7 +5996,7 @@
         "збирати"
       ]
     },
-    "aspect": "unknown",
+    "aspect": "imperfective",
     "forms": {
       "present": {
         "ja": "sprzątam",
@@ -6162,15 +6046,14 @@
         "uk": "Завжди щосуботи ми повинні надзвичайно ретельно прибирати всю нашу маленьку квартиру."
       }
     ],
-    "notes": [
-      "Some forms were generated by fallback rules and should be checked."
-    ],
+    "notes": [],
     "sourceUrls": [
       "https://kwjp.pl/lists/en",
       "https://en.wiktionary.org/wiki/sprz%C4%85ta%C4%87",
       "https://pl.wiktionary.org/wiki/sprz%C4%85ta%C4%87"
     ],
-    "reviewStatus": "fallback-needs-review"
+    "reviewStatus": "wiktionary-enriched",
+    "aspectPair": "posprzątać"
   },
   {
     "id": "778-dojrzec",
@@ -6244,15 +6127,13 @@
         "uk": "Лише з самої вершини високої гори я зміг чітко розгледіти це надзвичайно чарівне містечко."
       }
     ],
-    "notes": [
-      "Ukrainian translation fallback needs review."
-    ],
+    "notes": [],
     "sourceUrls": [
       "https://kwjp.pl/lists/en",
       "https://en.wiktionary.org/wiki/dojrze%C4%87",
       "https://pl.wiktionary.org/wiki/dojrze%C4%87"
     ],
-    "reviewStatus": "fallback-needs-review"
+    "reviewStatus": "wiktionary-enriched"
   },
   {
     "id": "779-wcisnac",
@@ -6273,46 +6154,46 @@
         "натиснути"
       ]
     },
-    "aspect": "unknown",
+    "aspect": "perfective",
     "forms": {
       "present": {
-        "ja": "wcisnąę",
-        "ty": "wcisnąesz",
-        "on": "wcisnąe",
-        "ona": "wcisnąe",
-        "my": "wcisnąemy",
-        "wy": "wcisnąecie",
-        "oni": "wcisnąą",
-        "one": "wcisnąą"
+        "ja": "wcisnę",
+        "ty": "wciśniesz",
+        "on": "wciśnie",
+        "ona": "wciśnie",
+        "my": "wciśniemy",
+        "wy": "wciśniecie",
+        "oni": "wcisną",
+        "one": "wcisną"
       },
       "past": {
         "ja": {
           "masculine": "wcisnąłem",
-          "feminine": "wcisnąłam"
+          "feminine": "wcisnęłam"
         },
         "ty": {
           "masculine": "wcisnąłeś",
-          "feminine": "wcisnąłaś"
+          "feminine": "wcisnęłaś"
         },
         "on": {
           "masculine": "wcisnął"
         },
         "ona": {
-          "feminine": "wcisnąła"
+          "feminine": "wcisnęła"
         },
         "my": {
-          "virile": "wcisnąliśmy",
-          "nonvirile": "wcisnąłyśmy"
+          "virile": "wcisnęliśmy",
+          "nonvirile": "wcisnęłyśmy"
         },
         "wy": {
-          "virile": "wcisnąliście",
-          "nonvirile": "wcisnąłyście"
+          "virile": "wcisnęliście",
+          "nonvirile": "wcisnęłyście"
         },
         "oni": {
-          "virile": "wcisnąli"
+          "virile": "wcisnęli"
         },
         "one": {
-          "nonvirile": "wcisnąły"
+          "nonvirile": "wcisnęły"
         }
       }
     },
@@ -6323,16 +6204,14 @@
         "uk": "Я ні за що на світі не міг втиснути цю величезну валізу в маленький багажник автомобіля."
       }
     ],
-    "notes": [
-      "Some forms were generated by fallback rules and should be checked.",
-      "Ukrainian translation fallback needs review."
-    ],
+    "notes": [],
     "sourceUrls": [
       "https://kwjp.pl/lists/en",
       "https://en.wiktionary.org/wiki/wcisn%C4%85%C4%87",
       "https://pl.wiktionary.org/wiki/wcisn%C4%85%C4%87"
     ],
-    "reviewStatus": "fallback-needs-review"
+    "reviewStatus": "wiktionary-enriched",
+    "aspectPair": "wciskać"
   },
   {
     "id": "780-skutkowac",
@@ -6404,15 +6283,13 @@
         "uk": "Терапія, найімовірніше, незабаром нарешті почне ефективно і позитивно діяти в лікуванні цієї хронічної хвороби."
       }
     ],
-    "notes": [
-      "Ukrainian translation fallback needs review."
-    ],
+    "notes": [],
     "sourceUrls": [
       "https://kwjp.pl/lists/en",
       "https://en.wiktionary.org/wiki/skutkowa%C4%87",
       "https://pl.wiktionary.org/wiki/skutkowa%C4%87"
     ],
-    "reviewStatus": "fallback-needs-review"
+    "reviewStatus": "wiktionary-enriched"
   },
   {
     "id": "781-odetchnac",
@@ -6435,46 +6312,46 @@
         "вдихнути"
       ]
     },
-    "aspect": "unknown",
+    "aspect": "perfective",
     "forms": {
       "present": {
-        "ja": "odetchnąę",
-        "ty": "odetchnąesz",
-        "on": "odetchnąe",
-        "ona": "odetchnąe",
-        "my": "odetchnąemy",
-        "wy": "odetchnąecie",
-        "oni": "odetchnąą",
-        "one": "odetchnąą"
+        "ja": "odetchnę",
+        "ty": "odetchniesz",
+        "on": "odetchnie",
+        "ona": "odetchnie",
+        "my": "odetchniemy",
+        "wy": "odetchniecie",
+        "oni": "odetchną",
+        "one": "odetchną"
       },
       "past": {
         "ja": {
           "masculine": "odetchnąłem",
-          "feminine": "odetchnąłam"
+          "feminine": "odetchnęłam"
         },
         "ty": {
           "masculine": "odetchnąłeś",
-          "feminine": "odetchnąłaś"
+          "feminine": "odetchnęłaś"
         },
         "on": {
           "masculine": "odetchnął"
         },
         "ona": {
-          "feminine": "odetchnąła"
+          "feminine": "odetchnęła"
         },
         "my": {
-          "virile": "odetchnąliśmy",
-          "nonvirile": "odetchnąłyśmy"
+          "virile": "odetchnęliśmy",
+          "nonvirile": "odetchnęłyśmy"
         },
         "wy": {
-          "virile": "odetchnąliście",
-          "nonvirile": "odetchnąłyście"
+          "virile": "odetchnęliście",
+          "nonvirile": "odetchnęłyście"
         },
         "oni": {
-          "virile": "odetchnąli"
+          "virile": "odetchnęli"
         },
         "one": {
-          "nonvirile": "odetchnąły"
+          "nonvirile": "odetchnęły"
         }
       }
     },
@@ -6485,16 +6362,14 @@
         "uk": "Після складання цього дуже важкого іспиту всі студенти змогли нарешті глибоко і з полегшенням зітхнути."
       }
     ],
-    "notes": [
-      "Some forms were generated by fallback rules and should be checked.",
-      "Ukrainian translation fallback needs review."
-    ],
+    "notes": [],
     "sourceUrls": [
       "https://kwjp.pl/lists/en",
       "https://en.wiktionary.org/wiki/odetchn%C4%85%C4%87",
       "https://pl.wiktionary.org/wiki/odetchn%C4%85%C4%87"
     ],
-    "reviewStatus": "fallback-needs-review"
+    "reviewStatus": "wiktionary-enriched",
+    "aspectPair": "oddychać"
   },
   {
     "id": "782-wpuscic",
@@ -6565,15 +6440,13 @@
         "uk": "Охоронець біля воріт взагалі не хотів впускати нас сьогодні всередину без спеціальної, дійсної перепустки."
       }
     ],
-    "notes": [
-      "Ukrainian translation fallback needs review."
-    ],
+    "notes": [],
     "sourceUrls": [
       "https://kwjp.pl/lists/en",
       "https://en.wiktionary.org/wiki/wpu%C5%9Bci%C4%87",
       "https://pl.wiktionary.org/wiki/wpu%C5%9Bci%C4%87"
     ],
-    "reviewStatus": "fallback-needs-review"
+    "reviewStatus": "wiktionary-enriched"
   },
   {
     "id": "783-zarzucic",
@@ -6646,15 +6519,13 @@
         "uk": "У поспіху я мусив лише швидко накинути на себе це старе, тепле пальто і негайно вибігти на мороз."
       }
     ],
-    "notes": [
-      "Ukrainian translation fallback needs review."
-    ],
+    "notes": [],
     "sourceUrls": [
       "https://kwjp.pl/lists/en",
       "https://en.wiktionary.org/wiki/zarzuci%C4%87",
       "https://pl.wiktionary.org/wiki/zarzuci%C4%87"
     ],
-    "reviewStatus": "fallback-needs-review"
+    "reviewStatus": "wiktionary-enriched"
   },
   {
     "id": "784-dolozyc",
@@ -6727,15 +6598,13 @@
         "uk": "Щоб повністю завершити будівництво у встановлений термін, ми повинні зараз докласти всіх можливих зусиль."
       }
     ],
-    "notes": [
-      "Ukrainian translation fallback needs review."
-    ],
+    "notes": [],
     "sourceUrls": [
       "https://kwjp.pl/lists/en",
       "https://en.wiktionary.org/wiki/do%C5%82o%C5%BCy%C4%87",
       "https://pl.wiktionary.org/wiki/do%C5%82o%C5%BCy%C4%87"
     ],
-    "reviewStatus": "fallback-needs-review"
+    "reviewStatus": "wiktionary-enriched"
   },
   {
     "id": "785-przelamac",
@@ -6810,15 +6679,13 @@
         "uk": "Ця дуже інтровертна дитина мусила подолати величезний страх і нарешті назавжди перебороти свою глибоку сором'язливість."
       }
     ],
-    "notes": [
-      "Ukrainian translation fallback needs review."
-    ],
+    "notes": [],
     "sourceUrls": [
       "https://kwjp.pl/lists/en",
       "https://en.wiktionary.org/wiki/prze%C5%82ama%C4%87",
       "https://pl.wiktionary.org/wiki/prze%C5%82ama%C4%87"
     ],
-    "reviewStatus": "fallback-needs-review"
+    "reviewStatus": "wiktionary-enriched"
   },
   {
     "id": "786-przenosic",
@@ -7047,15 +6914,13 @@
         "uk": "Я зовсім забув взяти гаманець, тому мушу просити тебе позичити мені сьогодні десять злотих."
       }
     ],
-    "notes": [
-      "Ukrainian translation fallback needs review."
-    ],
+    "notes": [],
     "sourceUrls": [
       "https://kwjp.pl/lists/en",
       "https://en.wiktionary.org/wiki/po%C5%BCyczy%C4%87",
       "https://pl.wiktionary.org/wiki/po%C5%BCyczy%C4%87"
     ],
-    "reviewStatus": "fallback-needs-review"
+    "reviewStatus": "wiktionary-enriched"
   },
   {
     "id": "789-odegrac",
@@ -7128,15 +6993,13 @@
         "uk": "Молодий, надзвичайно талановитий актор зумів з великою пристрастю зіграти цю найскладнішу і найважчу роль у всій п'єсі."
       }
     ],
-    "notes": [
-      "Ukrainian translation fallback needs review."
-    ],
+    "notes": [],
     "sourceUrls": [
       "https://kwjp.pl/lists/en",
       "https://en.wiktionary.org/wiki/odegra%C4%87",
       "https://pl.wiktionary.org/wiki/odegra%C4%87"
     ],
-    "reviewStatus": "fallback-needs-review"
+    "reviewStatus": "wiktionary-enriched"
   },
   {
     "id": "790-rozstac",
@@ -7159,17 +7022,17 @@
         "розійтися"
       ]
     },
-    "aspect": "unknown",
+    "aspect": "perfective",
     "forms": {
       "present": {
-        "ja": "rozstam",
-        "ty": "rozstasz",
-        "on": "rozsta",
-        "ona": "rozsta",
-        "my": "rozstamy",
-        "wy": "rozstacie",
-        "oni": "rozstają",
-        "one": "rozstają"
+        "ja": "rozstanę",
+        "ty": "rozstaniesz",
+        "on": "rozstanie",
+        "ona": "rozstanie",
+        "my": "rozstaniemy",
+        "wy": "rozstaniecie",
+        "oni": "rozstaną",
+        "one": "rozstaną"
       },
       "past": {
         "ja": {
@@ -7209,16 +7072,14 @@
         "uk": "Через величезну відстань і брак часу вони, на жаль, вирішили після багатьох років остаточно розлучитися."
       }
     ],
-    "notes": [
-      "Some forms were generated by fallback rules and should be checked.",
-      "Ukrainian translation fallback needs review."
-    ],
+    "notes": [],
     "sourceUrls": [
       "https://kwjp.pl/lists/en",
       "https://en.wiktionary.org/wiki/rozsta%C4%87",
       "https://pl.wiktionary.org/wiki/rozsta%C4%87"
     ],
-    "reviewStatus": "fallback-needs-review"
+    "reviewStatus": "wiktionary-enriched",
+    "aspectPair": "rozstawać"
   },
   {
     "id": "791-spieszyc",
@@ -7289,15 +7150,13 @@
         "uk": "Тобі зовсім не потрібно так поспішати, оскільки попереду в нас сьогодні ще справді дуже багато часу."
       }
     ],
-    "notes": [
-      "Ukrainian translation fallback needs review."
-    ],
+    "notes": [],
     "sourceUrls": [
       "https://kwjp.pl/lists/en",
       "https://en.wiktionary.org/wiki/spieszy%C4%87",
       "https://pl.wiktionary.org/wiki/spieszy%C4%87"
     ],
-    "reviewStatus": "fallback-needs-review"
+    "reviewStatus": "wiktionary-enriched"
   },
   {
     "id": "792-przesunac",
@@ -7368,15 +7227,13 @@
         "uk": "Чи змогли б ми спільними зусиллями обережно пересунути цю страшенно важку і стару шафу ближче до того вікна?"
       }
     ],
-    "notes": [
-      "Ukrainian translation fallback needs review."
-    ],
+    "notes": [],
     "sourceUrls": [
       "https://kwjp.pl/lists/en",
       "https://en.wiktionary.org/wiki/przesun%C4%85%C4%87",
       "https://pl.wiktionary.org/wiki/przesun%C4%85%C4%87"
     ],
-    "reviewStatus": "fallback-needs-review"
+    "reviewStatus": "wiktionary-enriched"
   },
   {
     "id": "793-oddzielic",
@@ -7606,15 +7463,13 @@
         "uk": "Якщо зуб і далі не перестане сильно і наполегливо боліти після цих ліків, ти повинен негайно зателефонувати і піти до стоматолога."
       }
     ],
-    "notes": [
-      "Ukrainian translation fallback needs review."
-    ],
+    "notes": [],
     "sourceUrls": [
       "https://kwjp.pl/lists/en",
       "https://en.wiktionary.org/wiki/bole%C4%87",
       "https://pl.wiktionary.org/wiki/bole%C4%87"
     ],
-    "reviewStatus": "fallback-needs-review"
+    "reviewStatus": "wiktionary-enriched"
   },
   {
     "id": "796-opuszczac",
@@ -7687,15 +7542,13 @@
         "uk": "Під час такого сильного і небезпечного урагану ніхто взагалі не повинен без поважної причини залишати свій безпечний дім."
       }
     ],
-    "notes": [
-      "Ukrainian translation fallback needs review."
-    ],
+    "notes": [],
     "sourceUrls": [
       "https://kwjp.pl/lists/en",
       "https://en.wiktionary.org/wiki/opuszcza%C4%87",
       "https://pl.wiktionary.org/wiki/opuszcza%C4%87"
     ],
-    "reviewStatus": "fallback-needs-review"
+    "reviewStatus": "wiktionary-enriched"
   },
   {
     "id": "797-podazac",
@@ -7841,20 +7694,18 @@
     },
     "examples": [
       {
-        "pl": "Wściekły i wygłodniały niedźwiedź niespodziewanie postanowił dzisiaj gwałtownie zaatakowac bezbronnych turystów w lesie.",
-        "en": "The furious and starving bear unexpectedly decided to violently attack defenseless tourists in the forest today.",
-        "uk": "Розлючений і голодний ведмідь несподівано вирішив сьогодні раптово напасти на беззахисних туристів у лісі."
+        "pl": "Niedźwiedź mógł zaatakować turystów w lesie.",
+        "en": "The bear could attack tourists in the forest.",
+        "uk": "Ведмідь міг напасти на туристів у лісі."
       }
     ],
-    "notes": [
-      "Ukrainian translation fallback needs review."
-    ],
+    "notes": [],
     "sourceUrls": [
       "https://kwjp.pl/lists/en",
       "https://en.wiktionary.org/wiki/zaatakowa%C4%87",
       "https://pl.wiktionary.org/wiki/zaatakowa%C4%87"
     ],
-    "reviewStatus": "fallback-needs-review"
+    "reviewStatus": "wiktionary-enriched"
   },
   {
     "id": "799-okreslac",
@@ -7921,9 +7772,9 @@
     },
     "examples": [
       {
-        "pl": "Umowa musi bardzo jasno i precyzyjnie okreslac absolutnie wszystkie najważniejsze warunki i zasady naszej długotrwałej współpracy.",
-        "en": "The contract must very clearly and precisely define absolutely all the most important terms and principles of our long-term cooperation.",
-        "uk": "Договір повинен дуже чітко і точно визначати абсолютно всі найважливіші умови та принципи нашої довгострокової співпраці."
+        "pl": "Umowa musi jasno określać warunki naszej współpracy.",
+        "en": "The contract must clearly define the terms of our cooperation.",
+        "uk": "Договір має чітко визначати умови нашої співпраці."
       }
     ],
     "notes": [],
@@ -8005,14 +7856,12 @@
         "uk": "Щоб повністю відчинити ці дуже старі, масивні двері, достатньо було лише трохи сильніше за них потягнути."
       }
     ],
-    "notes": [
-      "Ukrainian translation fallback needs review."
-    ],
+    "notes": [],
     "sourceUrls": [
       "https://kwjp.pl/lists/en",
       "https://en.wiktionary.org/wiki/poci%C4%85gn%C4%85%C4%87",
       "https://pl.wiktionary.org/wiki/poci%C4%85gn%C4%85%C4%87"
     ],
-    "reviewStatus": "fallback-needs-review"
+    "reviewStatus": "wiktionary-enriched"
   }
 ]
