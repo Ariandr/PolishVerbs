@@ -48,7 +48,8 @@ import {
 import { getVerbIdFromUrl, isQaEnabledFromUrl, setQaInUrl, setVerbIdInUrl } from './lib/urlState'
 
 type LearnedFilter = 'all' | 'new' | 'learning' | 'learned' | 'due' | 'overdue'
-type RangeFilter = 'all' | 'top100' | 'top300' | 'top600' | 'top1200' | 'top5000'
+type VisibleAspectFilter = Exclude<Aspect, 'unknown'>
+type RangeFilter = 'all' | 'top100' | 'top300' | 'top600' | 'top1200'
 
 function App() {
   const initialVerbId = typeof window === 'undefined' ? null : getVerbIdFromUrl()
@@ -60,7 +61,7 @@ function App() {
   const [selectedVerbId, setSelectedVerbId] = useState(initialVerbId && verbById.has(initialVerbId) ? initialVerbId : verbs[0]?.id ?? '')
   const [query, setQuery] = useState('')
   const [learnedFilter, setLearnedFilter] = useState<LearnedFilter>('all')
-  const [aspectFilter, setAspectFilter] = useState<Aspect | 'all'>('all')
+  const [aspectFilter, setAspectFilter] = useState<VisibleAspectFilter | 'all'>('all')
   const [rangeFilter, setRangeFilter] = useState<RangeFilter>('all')
   const [mobileFiltersOpen, setMobileFiltersOpen] = useState(false)
   const [mobileDetailOpen, setMobileDetailOpen] = useState(() =>
@@ -173,9 +174,6 @@ function App() {
         return false
       }
       if (rangeFilter === 'top1200' && verb.frequencyRank > 1200) {
-        return false
-      }
-      if (rangeFilter === 'top5000' && verb.frequencyRank > TOTAL_VERB_COUNT) {
         return false
       }
       if (normalizedQuery && !searchIndexes.get(verb.id)?.all.includes(normalizedQuery)) {
@@ -633,12 +631,11 @@ function App() {
             <option value="due">Do powtórki</option>
             <option value="overdue">Zaległe</option>
           </select>
-          <select value={aspectFilter} onChange={(event) => setAspectFilter(event.target.value as Aspect | 'all')}>
+          <select value={aspectFilter} onChange={(event) => setAspectFilter(event.target.value as VisibleAspectFilter | 'all')}>
             <option value="all">Wszystkie aspekty</option>
             <option value="imperfective">Niedokonane</option>
             <option value="perfective">Dokonane</option>
             <option value="biaspectual">Dwuaspektowe</option>
-            <option value="unknown">Nieznane</option>
           </select>
           <select value={rangeFilter} onChange={(event) => setRangeFilter(event.target.value as RangeFilter)}>
             <option value="all">Pełne {TOTAL_VERB_COUNT}</option>
@@ -646,7 +643,6 @@ function App() {
             <option value="top300">Pierwsze 300</option>
             <option value="top600">Pierwsze 600</option>
             <option value="top1200">Pierwsze 1200</option>
-            <option value="top5000">Pierwsze {TOTAL_VERB_COUNT}</option>
           </select>
         </div>
 

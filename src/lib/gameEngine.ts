@@ -62,7 +62,7 @@ export const aspectBucketLabels: Record<Aspect, string> = {
   unknown: 'Nieznane',
 }
 
-export const aspectBuckets: Aspect[] = ['imperfective', 'perfective', 'biaspectual', 'unknown']
+export const aspectBuckets: Exclude<Aspect, 'unknown'>[] = ['imperfective', 'perfective', 'biaspectual']
 
 export function shuffleItems<T>(items: T[]): T[] {
   return [...items]
