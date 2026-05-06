@@ -91,6 +91,7 @@ export function VerbList({
       {renderedVerbs.map((verb) => {
         const learned = learnedVerbIds.has(verb.id)
         const inList = activeListVerbIds.has(verb.id)
+        const definitionPl = verb.definitionPl ?? ''
         return (
           <div className="virtual-row" key={verb.id} style={virtualized ? { height: virtualRowHeight } : undefined}>
           <div className={`verb-row ${selectedVerbId === verb.id ? 'selected' : ''}`}>
@@ -100,7 +101,12 @@ export function VerbList({
                 <strong>
                   <HighlightedText text={verb.infinitive} query={query} />
                 </strong>
-                <small>
+                {definitionPl ? (
+                  <span className="verb-definition">
+                    <HighlightedText text={definitionPl} query="" />
+                  </span>
+                ) : null}
+                <small className="verb-translations">
                   <HighlightedText text={verb.translations.en.slice(0, 2).join(', ')} query={query} /> ·{' '}
                   <HighlightedText text={verb.translations.uk.slice(0, 2).join(', ')} query={query} />
                 </small>

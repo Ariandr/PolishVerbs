@@ -5,6 +5,12 @@ const rootDir = process.cwd()
 const verbsDir = path.join(rootDir, 'src/data/verbs')
 const expectedVerbCount = Number(process.env.EXPECTED_VERB_COUNT ?? 5000)
 const pronouns = ['ja', 'ty', 'on', 'ona', 'my', 'wy', 'oni', 'one']
+const definitionBoilerplatePatterns = [
+  /^czasownik\s+/i,
+  /^oznacza\s+/i,
+  /^jest to\s+/i,
+  /^czynno[śs][ćc]\s+polegaj[aą]ca\s+na\s+/i,
+]
 
 function assert(condition, message) {
   if (!condition) {
@@ -14,6 +20,17 @@ function assert(condition, message) {
 
 function assertString(value, message) {
   assert(typeof value === 'string' && value.trim().length > 0, message)
+}
+
+function assertDefinition(verb) {
+  assertString(verb.definitionPl, `${verb.id}: missing Polish definition`)
+  const definition = verb.definitionPl.replace(/\s+/g, ' ').trim()
+  assert(definition.length >= 18, `${verb.id}: Polish definition is too short`)
+  assert(definition.length <= 260, `${verb.id}: Polish definition is too long`)
+  assert(!/[\u0400-\u04FF]/u.test(definition), `${verb.id}: Polish definition contains Cyrillic text`)
+  assert(!/[{}<>[\]|]/u.test(definition), `${verb.id}: Polish definition contains markup-like characters`)
+  assert(!definitionBoilerplatePatterns.some((pattern) => pattern.test(definition)), `${verb.id}: Polish definition uses boilerplate wording`)
+  assert(definition.toLocaleLowerCase('pl-PL') !== verb.infinitive.toLocaleLowerCase('pl-PL'), `${verb.id}: Polish definition repeats only infinitive`)
 }
 
 function validatePast(verb) {
@@ -61,6 +78,7 @@ async function main() {
     assert(typeof verb.frequency?.ipm === 'number', `${verb.id}: missing IPM`)
     assert(Array.isArray(verb.translations?.en) && verb.translations.en.length > 0, `${verb.id}: missing English translation`)
     assert(Array.isArray(verb.translations?.uk) && verb.translations.uk.length > 0, `${verb.id}: missing Ukrainian translation`)
+    assertDefinition(verb)
     assert(Array.isArray(verb.examples) && verb.examples.length > 0, `${verb.id}: missing examples`)
     assertString(verb.examples[0].pl, `${verb.id}: missing Polish example`)
     assertString(verb.examples[0].en, `${verb.id}: missing English example`)

@@ -56,6 +56,7 @@ export interface VerbEntry {
     en: string[]
     uk: string[]
   }
+  definitionPl: string
   aspect: Aspect
   aspectPair?: string
   forms: {

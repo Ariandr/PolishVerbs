@@ -29,6 +29,15 @@ const markupPatterns = [
   /Category:/i,
 ]
 
+const definitionBoilerplatePatterns = [
+  /^czasownik\s+/i,
+  /^oznacza\s+/i,
+  /^jest to\s+/i,
+  /^czynno[śs][ćc]\s+polegaj[aą]ca\s+na\s+/i,
+  /w j[eę]zyku polskim/i,
+  /po polsku/i,
+]
+
 function clean(value) {
   return String(value ?? '').replace(/\s+/g, ' ').trim()
 }
@@ -65,6 +74,39 @@ function hasCyrillic(value) {
 
 function hasLatin(value) {
   return /[A-Za-zĄĆĘŁŃÓŚŹŻąćęłńóśźż]/.test(value)
+}
+
+function looksEnglishHeavy(value) {
+  return /(?:^|[\s,;:()])(?:make|have|get|run|move|use|say|take|give|become|put|set)(?:$|[\s,;:()])/i.test(value)
+}
+
+function auditDefinition(verb, issues) {
+  const definition = clean(verb.definitionPl)
+  if (!definition) {
+    addIssue(issues, 'missing-polish-definition', verb, 'Polish definition is missing.')
+    return
+  }
+  if (definition.length < 18) {
+    addIssue(issues, 'short-polish-definition', verb, 'Polish definition is suspiciously short.')
+  }
+  if (definition.length > 260) {
+    addIssue(issues, 'long-polish-definition', verb, 'Polish definition is suspiciously long.')
+  }
+  if (hasCyrillic(definition)) {
+    addIssue(issues, 'cyrillic-polish-definition', verb, 'Polish definition contains Cyrillic text.')
+  }
+  if (looksEnglishHeavy(definition)) {
+    addIssue(issues, 'english-polish-definition', verb, 'Polish definition appears to contain English wording.')
+  }
+  if (hasMarkup(definition)) {
+    addIssue(issues, 'markup-polish-definition', verb, 'Polish definition contains markup or parser residue.')
+  }
+  if (definitionBoilerplatePatterns.some((pattern) => pattern.test(definition))) {
+    addIssue(issues, 'boilerplate-polish-definition', verb, 'Polish definition uses dictionary boilerplate.')
+  }
+  if (normalize(definition) === normalize(verb.infinitive)) {
+    addIssue(issues, 'repeated-infinitive-definition', verb, 'Polish definition repeats only the infinitive.')
+  }
 }
 
 function hasMarkup(value) {
@@ -112,6 +154,8 @@ function addIssue(issues, code, verb, detail) {
 }
 
 function auditVerb(verb, issues) {
+  auditDefinition(verb, issues)
+
   if (verb.reviewStatus === 'fallback-needs-review') {
     addIssue(issues, 'fallback-review-status', verb, 'Record is still marked as fallback-needs-review.')
   }

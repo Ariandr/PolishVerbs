@@ -1183,7 +1183,7 @@ select {
   gap: 10px;
   align-items: center;
   width: 100%;
-  min-height: 74px;
+  min-height: 90px;
   padding: 10px;
   border: 1px solid var(--border);
   border-radius: 8px;
@@ -1235,8 +1235,14 @@ select {
   min-width: 0;
 }
 
+.verb-main {
+  display: grid;
+  gap: 2px;
+}
+
 .verb-main strong,
-.verb-main small {
+.verb-main small,
+.verb-definition {
   display: block;
   overflow: hidden;
   text-overflow: ellipsis;
@@ -1250,6 +1256,16 @@ select {
 
 .verb-main small {
   color: var(--muted);
+}
+
+.verb-definition {
+  color: var(--text);
+  font-size: 0.86rem;
+  line-height: 1.25;
+}
+
+.verb-translations {
+  font-size: 0.82rem;
 }
 
 mark {
@@ -1332,6 +1348,17 @@ mark {
   margin-top: 10px;
   color: var(--muted-strong);
   font-size: 1.12rem;
+}
+
+.detail-definition {
+  max-width: 880px;
+  color: var(--text-strong) !important;
+  font-size: 1.05rem !important;
+  line-height: 1.45;
+}
+
+.detail-translations {
+  color: var(--muted-strong);
 }
 
 .metric-stack {

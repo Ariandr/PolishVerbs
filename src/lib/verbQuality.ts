@@ -26,6 +26,17 @@ const hasDuplicate = (values: string[]) => {
   })
 }
 
+const hasWeakDefinition = (verb: VerbEntry) => {
+  const definition = verb.definitionPl?.replace(/\s+/g, ' ').trim() ?? ''
+  return (
+    !definition ||
+    definition.length < 18 ||
+    definition.length > 260 ||
+    /[\u0400-\u04FF]/u.test(definition) ||
+    /^czasownik\s+|^oznacza\s+|^jest to\s+|^czynno[śs][ćc]\s+polegaj[aą]ca\s+na\s+/i.test(definition)
+  )
+}
+
 const issue = (groupId: string, verb: VerbEntry, message: string): QualityIssue => ({
   id: `${groupId}-${verb.id}`,
   verbId: verb.id,
@@ -62,6 +73,13 @@ export const getQualityGroups = (verbs: VerbEntry[]): QualityGroup[] => {
       issues: verbs
         .filter((verb) => hasDuplicate(verb.translations.en) || hasDuplicate(verb.translations.uk))
         .map((verb) => issue('duplicate-translations', verb, 'Lista tłumaczeń zawiera powtórzenia.')),
+    },
+    {
+      id: 'weak-definitions',
+      title: 'Słabe definicje po polsku',
+      issues: verbs
+        .filter(hasWeakDefinition)
+        .map((verb) => issue('weak-definitions', verb, 'Definicja po polsku jest pusta, zbyt długa, zbyt krótka albo ma słaby format.')),
     },
     {
       id: 'duplicate-examples',

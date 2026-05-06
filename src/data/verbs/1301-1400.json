@@ -76,7 +76,8 @@
       "https://en.wiktionary.org/wiki/wskoczy%C4%87",
       "https://pl.wiktionary.org/wiki/wskoczy%C4%87"
     ],
-    "reviewStatus": "wiktionary-enriched"
+    "reviewStatus": "wiktionary-enriched",
+    "definitionPl": "skoczyć do środka lub na coś; szybko włożyć coś na siebie"
   },
   {
     "id": "1302-zlokalizowac",
@@ -155,7 +156,8 @@
       "https://en.wiktionary.org/wiki/zlokalizowa%C4%87",
       "https://pl.wiktionary.org/wiki/zlokalizowa%C4%87"
     ],
-    "reviewStatus": "wiktionary-enriched"
+    "reviewStatus": "wiktionary-enriched",
+    "definitionPl": "ustalić, gdzie coś lub ktoś się znajduje; odnaleźć"
   },
   {
     "id": "1303-blokowac",
@@ -232,7 +234,8 @@
       "https://en.wiktionary.org/wiki/blokowa%C4%87",
       "https://pl.wiktionary.org/wiki/blokowa%C4%87"
     ],
-    "reviewStatus": "wiktionary-enriched"
+    "reviewStatus": "wiktionary-enriched",
+    "definitionPl": "uniemożliwiać ruch, dostęp lub działanie; zatrzymywać rozwój czegoś"
   },
   {
     "id": "1304-dociec",
@@ -311,7 +314,8 @@
       "https://en.wiktionary.org/wiki/dociec",
       "https://pl.wiktionary.org/wiki/dociec"
     ],
-    "reviewStatus": "wiktionary-enriched"
+    "reviewStatus": "wiktionary-enriched",
+    "definitionPl": "ustalić coś po badaniu lub namyśle, dojść do prawdy lub przyczyny"
   },
   {
     "id": "1305-dorzucic",
@@ -390,7 +394,8 @@
       "https://en.wiktionary.org/wiki/dorzuci%C4%87",
       "https://pl.wiktionary.org/wiki/dorzuci%C4%87"
     ],
-    "reviewStatus": "wiktionary-enriched"
+    "reviewStatus": "wiktionary-enriched",
+    "definitionPl": "dodać jeszcze coś, wrzucając lub dokładając; dorzucić krótką uwagę"
   },
   {
     "id": "1306-identyfikowac",
@@ -467,7 +472,8 @@
       "https://en.wiktionary.org/wiki/identyfikowa%C4%87",
       "https://pl.wiktionary.org/wiki/identyfikowa%C4%87"
     ],
-    "reviewStatus": "wiktionary-enriched"
+    "reviewStatus": "wiktionary-enriched",
+    "definitionPl": "rozpoznawać i ustalać, kim lub czym coś jest"
   },
   {
     "id": "1307-podpisywac",
@@ -545,7 +551,8 @@
       "https://pl.wiktionary.org/wiki/podpisywa%C4%87"
     ],
     "reviewStatus": "wiktionary-enriched",
-    "aspectPair": "podpisać"
+    "aspectPair": "podpisać",
+    "definitionPl": "składać podpis na dokumencie; potwierdzać coś podpisem"
   },
   {
     "id": "1308-przeciac",
@@ -624,7 +631,8 @@
       "https://en.wiktionary.org/wiki/przeci%C4%85%C4%87",
       "https://pl.wiktionary.org/wiki/przeci%C4%85%C4%87"
     ],
-    "reviewStatus": "wiktionary-enriched"
+    "reviewStatus": "wiktionary-enriched",
+    "definitionPl": "rozdzielić czymś ostrym; przejść lub poprowadzić przez środek"
   },
   {
     "id": "1309-przylozyc",
@@ -701,7 +709,8 @@
       "https://en.wiktionary.org/wiki/przy%C5%82o%C5%BCy%C4%87",
       "https://pl.wiktionary.org/wiki/przy%C5%82o%C5%BCy%C4%87"
     ],
-    "reviewStatus": "wiktionary-enriched"
+    "reviewStatus": "wiktionary-enriched",
+    "definitionPl": "przysunąć coś do czegoś i dotknąć; nałożyć lub zastosować coś na dane miejsce"
   },
   {
     "id": "1310-wplacic",
@@ -780,7 +789,8 @@
       "https://en.wiktionary.org/wiki/wp%C5%82aci%C4%87",
       "https://pl.wiktionary.org/wiki/wp%C5%82aci%C4%87"
     ],
-    "reviewStatus": "wiktionary-enriched"
+    "reviewStatus": "wiktionary-enriched",
+    "definitionPl": "przekazać pieniądze na konto, fundusz lub jako opłatę"
   },
   {
     "id": "1311-wreczyc",
@@ -858,7 +868,8 @@
       "https://pl.wiktionary.org/wiki/wr%C4%99czy%C4%87"
     ],
     "reviewStatus": "wiktionary-enriched",
-    "aspectPair": "wręczać"
+    "aspectPair": "wręczać",
+    "definitionPl": "dać coś komuś bezpośrednio do ręki, zwykle oficjalnie"
   },
   {
     "id": "1312-zadzialac",
@@ -937,7 +948,8 @@
       "https://en.wiktionary.org/wiki/zadzia%C5%82a%C4%87",
       "https://pl.wiktionary.org/wiki/zadzia%C5%82a%C4%87"
     ],
-    "reviewStatus": "wiktionary-enriched"
+    "reviewStatus": "wiktionary-enriched",
+    "definitionPl": "zacząć działać; przynieść określony skutek"
   },
   {
     "id": "1313-zrywac",
@@ -1016,7 +1028,8 @@
       "https://en.wiktionary.org/wiki/zrywa%C4%87",
       "https://pl.wiktionary.org/wiki/zrywa%C4%87"
     ],
-    "reviewStatus": "wiktionary-enriched"
+    "reviewStatus": "wiktionary-enriched",
+    "definitionPl": "odłączać przez pociągnięcie; zbierać z roślin; przerywać kontakt lub umowę"
   },
   {
     "id": "1314-handlowac",
@@ -1095,7 +1108,8 @@
       "https://en.wiktionary.org/wiki/handlowa%C4%87",
       "https://pl.wiktionary.org/wiki/handlowa%C4%87"
     ],
-    "reviewStatus": "wiktionary-enriched"
+    "reviewStatus": "wiktionary-enriched",
+    "definitionPl": "kupować i sprzedawać towary; zajmować się handlem"
   },
   {
     "id": "1315-ochlonac",
@@ -1175,7 +1189,8 @@
       "https://pl.wiktionary.org/wiki/och%C5%82on%C4%85%C4%87"
     ],
     "reviewStatus": "wiktionary-enriched",
-    "aspectPair": "ochłaniać"
+    "aspectPair": "ochłaniać",
+    "definitionPl": "uspokoić się po silnych emocjach; stać się chłodniejszym"
   },
   {
     "id": "1316-zbic",
@@ -1254,7 +1269,8 @@
       "https://en.wiktionary.org/wiki/zbi%C4%87",
       "https://pl.wiktionary.org/wiki/zbi%C4%87"
     ],
-    "reviewStatus": "wiktionary-enriched"
+    "reviewStatus": "wiktionary-enriched",
+    "definitionPl": "stłuc lub roztrzaskać; mocno uderzyć; obniżyć coś, zwłaszcza cenę"
   },
   {
     "id": "1317-zlecic",
@@ -1332,7 +1348,8 @@
       "https://en.wiktionary.org/wiki/zleci%C4%87",
       "https://pl.wiktionary.org/wiki/zleci%C4%87"
     ],
-    "reviewStatus": "wiktionary-enriched"
+    "reviewStatus": "wiktionary-enriched",
+    "definitionPl": "polecić komuś wykonanie zadania, usługi lub sprawy"
   },
   {
     "id": "1318-dobierac",
@@ -1412,7 +1429,8 @@
       "https://en.wiktionary.org/wiki/dobiera%C4%87",
       "https://pl.wiktionary.org/wiki/dobiera%C4%87"
     ],
-    "reviewStatus": "wiktionary-enriched"
+    "reviewStatus": "wiktionary-enriched",
+    "definitionPl": "wybierać i łączyć rzeczy tak, żeby do siebie pasowały; dobierać brakujące elementy"
   },
   {
     "id": "1319-odstapic",
@@ -1492,7 +1510,8 @@
       "https://pl.wiktionary.org/wiki/odst%C4%85pi%C4%87"
     ],
     "reviewStatus": "wiktionary-enriched",
-    "aspectPair": "odstępować"
+    "aspectPair": "odstępować",
+    "definitionPl": "zrezygnować z czegoś lub od czegoś; oddać komuś prawo albo rzecz"
   },
   {
     "id": "1320-piec",
@@ -1572,7 +1591,8 @@
       "https://pl.wiktionary.org/wiki/piec"
     ],
     "reviewStatus": "wiktionary-enriched",
-    "aspectPair": "upiec"
+    "aspectPair": "upiec",
+    "definitionPl": "przygotowywać jedzenie w wysokiej temperaturze, zwykle w piekarniku"
   },
   {
     "id": "1321-usprawiedliwiac",
@@ -1651,7 +1671,8 @@
       "https://en.wiktionary.org/wiki/usprawiedliwia%C4%87",
       "https://pl.wiktionary.org/wiki/usprawiedliwia%C4%87"
     ],
-    "reviewStatus": "wiktionary-enriched"
+    "reviewStatus": "wiktionary-enriched",
+    "definitionPl": "podawać powód tłumaczący winę, błąd, zachowanie lub nieobecność"
   },
   {
     "id": "1322-wykapac",
@@ -1731,7 +1752,8 @@
       "https://en.wiktionary.org/wiki/wyk%C4%85pa%C4%87",
       "https://pl.wiktionary.org/wiki/wyk%C4%85pa%C4%87"
     ],
-    "reviewStatus": "wiktionary-enriched"
+    "reviewStatus": "wiktionary-enriched",
+    "definitionPl": "umyć kogoś lub coś w wodzie; dokładnie zanurzyć w cieczy"
   },
   {
     "id": "1323-zawiesc",
@@ -1813,7 +1835,8 @@
       "https://pl.wiktionary.org/wiki/zawie%C5%9B%C4%87"
     ],
     "reviewStatus": "wiktionary-enriched",
-    "aspectPair": "zawodzić"
+    "aspectPair": "zawodzić",
+    "definitionPl": "nie spełnić oczekiwań; nie działać tak, jak powinno"
   },
   {
     "id": "1324-podbic",
@@ -1892,7 +1915,8 @@
       "https://en.wiktionary.org/wiki/podbi%C4%87",
       "https://pl.wiktionary.org/wiki/podbi%C4%87"
     ],
-    "reviewStatus": "wiktionary-enriched"
+    "reviewStatus": "wiktionary-enriched",
+    "definitionPl": "zdobyć siłą; gwałtownie zwiększyć poziom czegoś lub popularność"
   },
   {
     "id": "1325-podjechac",
@@ -1969,7 +1993,8 @@
       "https://en.wiktionary.org/wiki/podjecha%C4%87",
       "https://pl.wiktionary.org/wiki/podjecha%C4%87"
     ],
-    "reviewStatus": "wiktionary-enriched"
+    "reviewStatus": "wiktionary-enriched",
+    "definitionPl": "dojechać pojazdem blisko jakiegoś miejsca lub osoby"
   },
   {
     "id": "1326-wywierac",
@@ -2049,7 +2074,8 @@
       "https://pl.wiktionary.org/wiki/wywiera%C4%87"
     ],
     "reviewStatus": "wiktionary-enriched",
-    "aspectPair": "wywrzeć"
+    "aspectPair": "wywrzeć",
+    "definitionPl": "powodować lub wywoływać wpływ, nacisk, presję"
   },
   {
     "id": "1327-wtracac",
@@ -2128,7 +2154,8 @@
       "https://en.wiktionary.org/wiki/wtr%C4%85ca%C4%87",
       "https://pl.wiktionary.org/wiki/wtr%C4%85ca%C4%87"
     ],
-    "reviewStatus": "wiktionary-enriched"
+    "reviewStatus": "wiktionary-enriched",
+    "definitionPl": "włączać się do cudzych spraw lub rozmów; dodawać od siebie krótką uwagę"
   },
   {
     "id": "1328-znikac",
@@ -2207,7 +2234,8 @@
       "https://pl.wiktionary.org/wiki/znika%C4%87"
     ],
     "reviewStatus": "wiktionary-enriched",
-    "aspectPair": "zniknąć"
+    "aspectPair": "zniknąć",
+    "definitionPl": "przestawać być widocznym; nagle odchodzić lub ginąć"
   },
   {
     "id": "1329-dzwigac",
@@ -2286,7 +2314,8 @@
       "https://en.wiktionary.org/wiki/d%C5%BAwiga%C4%87",
       "https://pl.wiktionary.org/wiki/d%C5%BAwiga%C4%87"
     ],
-    "reviewStatus": "wiktionary-enriched"
+    "reviewStatus": "wiktionary-enriched",
+    "definitionPl": "podnosić i nosić coś ciężkiego; z trudem znosić ciężar"
   },
   {
     "id": "1330-nagrywac",
@@ -2366,7 +2395,8 @@
       "https://pl.wiktionary.org/wiki/nagrywa%C4%87"
     ],
     "reviewStatus": "wiktionary-enriched",
-    "aspectPair": "nagrać"
+    "aspectPair": "nagrać",
+    "definitionPl": "zapisywać obraz lub dźwięk; rejestrować coś na nośniku"
   },
   {
     "id": "1331-obsluzyc",
@@ -2444,7 +2474,8 @@
       "https://pl.wiktionary.org/wiki/obs%C5%82u%C5%BCy%C4%87"
     ],
     "reviewStatus": "wiktionary-enriched",
-    "aspectPair": "obsługiwać"
+    "aspectPair": "obsługiwać",
+    "definitionPl": "zająć się klientem, gościem lub urządzeniem, wykonując potrzebne czynności"
   },
   {
     "id": "1332-wypytywac",
@@ -2521,7 +2552,8 @@
       "https://en.wiktionary.org/wiki/wypytywa%C4%87",
       "https://pl.wiktionary.org/wiki/wypytywa%C4%87"
     ],
-    "reviewStatus": "wiktionary-enriched"
+    "reviewStatus": "wiktionary-enriched",
+    "definitionPl": "zadawać dużo szczegółowych pytań, często natarczywie"
   },
   {
     "id": "1333-wyremontowac",
@@ -2600,7 +2632,8 @@
       "https://en.wiktionary.org/wiki/wyremontowa%C4%87",
       "https://pl.wiktionary.org/wiki/wyremontowa%C4%87"
     ],
-    "reviewStatus": "wiktionary-enriched"
+    "reviewStatus": "wiktionary-enriched",
+    "definitionPl": "odnowić i naprawić pomieszczenie, budynek lub rzecz"
   },
   {
     "id": "1334-wytwarzac",
@@ -2679,7 +2712,8 @@
       "https://en.wiktionary.org/wiki/wytwarza%C4%87",
       "https://pl.wiktionary.org/wiki/wytwarza%C4%87"
     ],
-    "reviewStatus": "wiktionary-enriched"
+    "reviewStatus": "wiktionary-enriched",
+    "definitionPl": "produkować, tworzyć lub powodować powstawanie czegoś"
   },
   {
     "id": "1335-ulzyc",
@@ -2758,7 +2792,8 @@
       "https://pl.wiktionary.org/wiki/ul%C5%BCy%C4%87"
     ],
     "reviewStatus": "wiktionary-enriched",
-    "aspectPair": "ulżać"
+    "aspectPair": "ulżać",
+    "definitionPl": "zmniejszyć ból, trudność lub cierpienie; przynieść ulgę"
   },
   {
     "id": "1336-zakwestionowac",
@@ -2836,7 +2871,8 @@
       "https://pl.wiktionary.org/wiki/zakwestionowa%C4%87"
     ],
     "reviewStatus": "wiktionary-enriched",
-    "aspectPair": "kwestionować"
+    "aspectPair": "kwestionować",
+    "definitionPl": "podać coś w wątpliwość; nie uznać za słuszne lub prawdziwe"
   },
   {
     "id": "1337-zawolac",
@@ -2916,7 +2952,8 @@
       "https://en.wiktionary.org/wiki/zawo%C5%82a%C4%87",
       "https://pl.wiktionary.org/wiki/zawo%C5%82a%C4%87"
     ],
-    "reviewStatus": "wiktionary-enriched"
+    "reviewStatus": "wiktionary-enriched",
+    "definitionPl": "krzykiem wezwać kogoś; powiedzieć coś głośno"
   },
   {
     "id": "1338-ustalac",
@@ -2995,7 +3032,8 @@
       "https://en.wiktionary.org/wiki/ustala%C4%87",
       "https://pl.wiktionary.org/wiki/ustala%C4%87"
     ],
-    "reviewStatus": "wiktionary-enriched"
+    "reviewStatus": "wiktionary-enriched",
+    "definitionPl": "określać, uzgadniać lub odkrywać coś dokładnie"
   },
   {
     "id": "1339-wpadac",
@@ -3075,7 +3113,8 @@
       "https://en.wiktionary.org/wiki/wpada%C4%87",
       "https://pl.wiktionary.org/wiki/wpada%C4%87"
     ],
-    "reviewStatus": "wiktionary-enriched"
+    "reviewStatus": "wiktionary-enriched",
+    "definitionPl": "wpadać do środka lub do jakiegoś miejsca; przychodzić do kogoś na krótko, bez długiej wizyty"
   },
   {
     "id": "1340-wycofywac",
@@ -3154,7 +3193,8 @@
       "https://en.wiktionary.org/wiki/wycofywa%C4%87",
       "https://pl.wiktionary.org/wiki/wycofywa%C4%87"
     ],
-    "reviewStatus": "wiktionary-enriched"
+    "reviewStatus": "wiktionary-enriched",
+    "definitionPl": "zabierać z użycia, sprzedaży lub miejsca; cofać się z decyzji"
   },
   {
     "id": "1341-wymknac",
@@ -3233,7 +3273,8 @@
       "https://en.wiktionary.org/wiki/wymkn%C4%85%C4%87",
       "https://pl.wiktionary.org/wiki/wymkn%C4%85%C4%87"
     ],
-    "reviewStatus": "wiktionary-enriched"
+    "reviewStatus": "wiktionary-enriched",
+    "definitionPl": "wydostać się ukradkiem, unikając zauważenia lub zatrzymania"
   },
   {
     "id": "1342-zatrzec",
@@ -3310,7 +3351,8 @@
       "https://en.wiktionary.org/wiki/zatrze%C4%87",
       "https://pl.wiktionary.org/wiki/zatrze%C4%87"
     ],
-    "reviewStatus": "wiktionary-enriched"
+    "reviewStatus": "wiktionary-enriched",
+    "definitionPl": "usunąć ślady, różnice lub ostrość czegoś; rozetrzeć dokładnie"
   },
   {
     "id": "1343-pocieszac",
@@ -3390,7 +3432,8 @@
       "https://en.wiktionary.org/wiki/pociesza%C4%87",
       "https://pl.wiktionary.org/wiki/pociesza%C4%87"
     ],
-    "reviewStatus": "wiktionary-enriched"
+    "reviewStatus": "wiktionary-enriched",
+    "definitionPl": "próbować poprawić komuś nastrój po smutku lub kłopocie"
   },
   {
     "id": "1344-strzec",
@@ -3470,7 +3513,8 @@
       "https://en.wiktionary.org/wiki/strzec",
       "https://pl.wiktionary.org/wiki/strzec"
     ],
-    "reviewStatus": "wiktionary-enriched"
+    "reviewStatus": "wiktionary-enriched",
+    "definitionPl": "pilnować i chronić; dbać o przestrzeganie czegoś"
   },
   {
     "id": "1345-wydluzyc",
@@ -3549,7 +3593,8 @@
       "https://en.wiktionary.org/wiki/wyd%C5%82u%C5%BCy%C4%87",
       "https://pl.wiktionary.org/wiki/wyd%C5%82u%C5%BCy%C4%87"
     ],
-    "reviewStatus": "wiktionary-enriched"
+    "reviewStatus": "wiktionary-enriched",
+    "definitionPl": "zrobić coś dłuższym; przedłużyć czas trwania"
   },
   {
     "id": "1346-wykrzyczec",
@@ -3628,7 +3673,8 @@
       "https://en.wiktionary.org/wiki/wykrzycze%C4%87",
       "https://pl.wiktionary.org/wiki/wykrzycze%C4%87"
     ],
-    "reviewStatus": "wiktionary-enriched"
+    "reviewStatus": "wiktionary-enriched",
+    "definitionPl": "powiedzieć coś bardzo głośno, krzykiem; wyrzucić z siebie emocje"
   },
   {
     "id": "1347-zakwalifikowac",
@@ -3707,7 +3753,8 @@
       "https://en.wiktionary.org/wiki/zakwalifikowa%C4%87",
       "https://pl.wiktionary.org/wiki/zakwalifikowa%C4%87"
     ],
-    "reviewStatus": "wiktionary-enriched"
+    "reviewStatus": "wiktionary-enriched",
+    "definitionPl": "uznać, że ktoś lub coś spełnia warunki; zaliczyć do określonej kategorii"
   },
   {
     "id": "1348-naciskac",
@@ -3787,7 +3834,8 @@
       "https://pl.wiktionary.org/wiki/naciska%C4%87"
     ],
     "reviewStatus": "wiktionary-enriched",
-    "aspectPair": "nacisnąć"
+    "aspectPair": "nacisnąć",
+    "definitionPl": "wywierać nacisk; usilnie żądać czegoś lub ponaglać"
   },
   {
     "id": "1349-udostepnic",
@@ -3867,7 +3915,8 @@
       "https://pl.wiktionary.org/wiki/udost%C4%99pni%C4%87"
     ],
     "reviewStatus": "wiktionary-enriched",
-    "aspectPair": "udostępniać"
+    "aspectPair": "udostępniać",
+    "definitionPl": "zrobić coś dostępnym dla innych; pozwolić korzystać"
   },
   {
     "id": "1350-uzgodnic",
@@ -3945,7 +3994,8 @@
       "https://en.wiktionary.org/wiki/uzgodni%C4%87",
       "https://pl.wiktionary.org/wiki/uzgodni%C4%87"
     ],
-    "reviewStatus": "wiktionary-enriched"
+    "reviewStatus": "wiktionary-enriched",
+    "definitionPl": "wspólnie ustalić i zaakceptować warunki, termin lub plan"
   },
   {
     "id": "1351-nacisnac",
@@ -4024,7 +4074,8 @@
       "https://en.wiktionary.org/wiki/nacisn%C4%85%C4%87",
       "https://pl.wiktionary.org/wiki/nacisn%C4%85%C4%87"
     ],
-    "reviewStatus": "wiktionary-enriched"
+    "reviewStatus": "wiktionary-enriched",
+    "definitionPl": "przycisnąć lub mocno wcisnąć; wywrzeć presję na kogoś"
   },
   {
     "id": "1352-odkupic",
@@ -4103,7 +4154,8 @@
       "https://en.wiktionary.org/wiki/odkupi%C4%87",
       "https://pl.wiktionary.org/wiki/odkupi%C4%87"
     ],
-    "reviewStatus": "wiktionary-enriched"
+    "reviewStatus": "wiktionary-enriched",
+    "definitionPl": "kupić coś od kogoś, często z powrotem"
   },
   {
     "id": "1353-operowac",
@@ -4182,7 +4234,8 @@
       "https://en.wiktionary.org/wiki/operowa%C4%87",
       "https://pl.wiktionary.org/wiki/operowa%C4%87"
     ],
-    "reviewStatus": "wiktionary-enriched"
+    "reviewStatus": "wiktionary-enriched",
+    "definitionPl": "przeprowadzać operację medyczną; posługiwać się czymś sprawnie"
   },
   {
     "id": "1354-pobiec",
@@ -4261,7 +4314,8 @@
       "https://en.wiktionary.org/wiki/pobiec",
       "https://pl.wiktionary.org/wiki/pobiec"
     ],
-    "reviewStatus": "wiktionary-enriched"
+    "reviewStatus": "wiktionary-enriched",
+    "definitionPl": "zacząć biec i szybko udać się dokądś"
   },
   {
     "id": "1355-dokladac",
@@ -4338,7 +4392,8 @@
       "https://en.wiktionary.org/wiki/dok%C5%82ada%C4%87",
       "https://pl.wiktionary.org/wiki/dok%C5%82ada%C4%87"
     ],
-    "reviewStatus": "wiktionary-enriched"
+    "reviewStatus": "wiktionary-enriched",
+    "definitionPl": "dodawać kolejną część lub ilość; dorzucać też własny wysiłek albo pieniądze"
   },
   {
     "id": "1356-szykowac",
@@ -4418,7 +4473,8 @@
       "https://en.wiktionary.org/wiki/szykowa%C4%87",
       "https://pl.wiktionary.org/wiki/szykowa%C4%87"
     ],
-    "reviewStatus": "wiktionary-enriched"
+    "reviewStatus": "wiktionary-enriched",
+    "definitionPl": "przygotowywać coś lub kogoś; robić porządek przed czymś"
   },
   {
     "id": "1357-zabronic",
@@ -4495,7 +4551,8 @@
       "https://en.wiktionary.org/wiki/zabroni%C4%87",
       "https://pl.wiktionary.org/wiki/zabroni%C4%87"
     ],
-    "reviewStatus": "wiktionary-enriched"
+    "reviewStatus": "wiktionary-enriched",
+    "definitionPl": "powiedzieć, że czegoś nie wolno robić"
   },
   {
     "id": "1358-zawalczyc",
@@ -4572,7 +4629,8 @@
       "https://en.wiktionary.org/wiki/zawalczy%C4%87",
       "https://pl.wiktionary.org/wiki/zawalczy%C4%87"
     ],
-    "reviewStatus": "wiktionary-enriched"
+    "reviewStatus": "wiktionary-enriched",
+    "definitionPl": "podjąć walkę o coś lub z kimś"
   },
   {
     "id": "1359-zranic",
@@ -4650,7 +4708,8 @@
       "https://en.wiktionary.org/wiki/zrani%C4%87",
       "https://pl.wiktionary.org/wiki/zrani%C4%87"
     ],
-    "reviewStatus": "wiktionary-enriched"
+    "reviewStatus": "wiktionary-enriched",
+    "definitionPl": "spowodować ranę; sprawić komuś ból lub przykrość"
   },
   {
     "id": "1360-skomentowac",
@@ -4730,7 +4789,8 @@
       "https://en.wiktionary.org/wiki/skomentowa%C4%87",
       "https://pl.wiktionary.org/wiki/skomentowa%C4%87"
     ],
-    "reviewStatus": "wiktionary-enriched"
+    "reviewStatus": "wiktionary-enriched",
+    "definitionPl": "krótko wyrazić opinię o czymś"
   },
   {
     "id": "1361-wyprzedzic",
@@ -4808,7 +4868,8 @@
       "https://en.wiktionary.org/wiki/wyprzedzi%C4%87",
       "https://pl.wiktionary.org/wiki/wyprzedzi%C4%87"
     ],
-    "reviewStatus": "wiktionary-enriched"
+    "reviewStatus": "wiktionary-enriched",
+    "definitionPl": "minąć kogoś w ruchu; być szybszym lub lepszym od innych"
   },
   {
     "id": "1362-przybierac",
@@ -4887,7 +4948,8 @@
       "https://en.wiktionary.org/wiki/przybiera%C4%87",
       "https://pl.wiktionary.org/wiki/przybiera%C4%87"
     ],
-    "reviewStatus": "wiktionary-enriched"
+    "reviewStatus": "wiktionary-enriched",
+    "definitionPl": "stawać się większym lub silniejszym; przyjmować określoną formę, postać lub wyraz"
   },
   {
     "id": "1363-usprawnic",
@@ -4966,7 +5028,8 @@
       "https://en.wiktionary.org/wiki/usprawni%C4%87",
       "https://pl.wiktionary.org/wiki/usprawni%C4%87"
     ],
-    "reviewStatus": "wiktionary-enriched"
+    "reviewStatus": "wiktionary-enriched",
+    "definitionPl": "zrobić coś sprawniejszym, szybszym i bardziej skutecznym"
   },
   {
     "id": "1364-wyspac",
@@ -5044,7 +5107,8 @@
       "https://pl.wiktionary.org/wiki/wyspa%C4%87"
     ],
     "reviewStatus": "wiktionary-enriched",
-    "aspectPair": "wysypiać się"
+    "aspectPair": "wysypiać się",
+    "definitionPl": "przespać tyle czasu, żeby dobrze odpocząć"
   },
   {
     "id": "1365-zgadnac",
@@ -5121,7 +5185,8 @@
       "https://en.wiktionary.org/wiki/zgadn%C4%85%C4%87",
       "https://pl.wiktionary.org/wiki/zgadn%C4%85%C4%87"
     ],
-    "reviewStatus": "wiktionary-enriched"
+    "reviewStatus": "wiktionary-enriched",
+    "definitionPl": "odgadnąć poprawną odpowiedź bez pewności"
   },
   {
     "id": "1366-glaskac",
@@ -5199,7 +5264,8 @@
       "https://en.wiktionary.org/wiki/g%C5%82aska%C4%87",
       "https://pl.wiktionary.org/wiki/g%C5%82aska%C4%87"
     ],
-    "reviewStatus": "wiktionary-enriched"
+    "reviewStatus": "wiktionary-enriched",
+    "definitionPl": "delikatnie przesuwać ręką po kimś lub czymś z czułością"
   },
   {
     "id": "1367-wyrywac",
@@ -5278,7 +5344,8 @@
       "https://en.wiktionary.org/wiki/wyrywa%C4%87",
       "https://pl.wiktionary.org/wiki/wyrywa%C4%87"
     ],
-    "reviewStatus": "wiktionary-enriched"
+    "reviewStatus": "wiktionary-enriched",
+    "definitionPl": "usuwać siłą przez pociągnięcie; zabierać gwałtownie z czyichś rąk"
   },
   {
     "id": "1368-wyrzec",
@@ -5357,7 +5424,8 @@
       "https://en.wiktionary.org/wiki/wyrzec",
       "https://pl.wiktionary.org/wiki/wyrzec"
     ],
-    "reviewStatus": "wiktionary-enriched"
+    "reviewStatus": "wiktionary-enriched",
+    "definitionPl": "wyrzec się czegoś ważnego; zrezygnować z czegoś świadomie"
   },
   {
     "id": "1369-pobudzic",
@@ -5436,7 +5504,8 @@
       "https://en.wiktionary.org/wiki/pobudzi%C4%87",
       "https://pl.wiktionary.org/wiki/pobudzi%C4%87"
     ],
-    "reviewStatus": "wiktionary-enriched"
+    "reviewStatus": "wiktionary-enriched",
+    "definitionPl": "ożywić, zwiększyć aktywność lub chęć działania; wywołać silniejsze uczucia albo reakcje"
   },
   {
     "id": "1370-powiazac",
@@ -5513,7 +5582,8 @@
       "https://en.wiktionary.org/wiki/powi%C4%85za%C4%87",
       "https://pl.wiktionary.org/wiki/powi%C4%85za%C4%87"
     ],
-    "reviewStatus": "wiktionary-enriched"
+    "reviewStatus": "wiktionary-enriched",
+    "definitionPl": "połączyć lub zestawić coś z czymś; znaleźć między nimi związek"
   },
   {
     "id": "1371-przepuscic",
@@ -5590,7 +5660,8 @@
       "https://en.wiktionary.org/wiki/przepu%C5%9Bci%C4%87",
       "https://pl.wiktionary.org/wiki/przepu%C5%9Bci%C4%87"
     ],
-    "reviewStatus": "wiktionary-enriched"
+    "reviewStatus": "wiktionary-enriched",
+    "definitionPl": "pozwolić przejść lub przejechać; wydać szybko pieniądze"
   },
   {
     "id": "1372-przeszkodzic",
@@ -5668,7 +5739,8 @@
       "https://en.wiktionary.org/wiki/przeszkodzi%C4%87",
       "https://pl.wiktionary.org/wiki/przeszkodzi%C4%87"
     ],
-    "reviewStatus": "wiktionary-enriched"
+    "reviewStatus": "wiktionary-enriched",
+    "definitionPl": "utrudnić coś lub nie pozwolić, by się udało"
   },
   {
     "id": "1373-ustanowic",
@@ -5747,7 +5819,8 @@
       "https://en.wiktionary.org/wiki/ustanowi%C4%87",
       "https://pl.wiktionary.org/wiki/ustanowi%C4%87"
     ],
-    "reviewStatus": "wiktionary-enriched"
+    "reviewStatus": "wiktionary-enriched",
+    "definitionPl": "oficjalnie wprowadzić, powołać lub wyznaczyć"
   },
   {
     "id": "1374-uzupelniac",
@@ -5826,7 +5899,8 @@
       "https://en.wiktionary.org/wiki/uzupe%C5%82nia%C4%87",
       "https://pl.wiktionary.org/wiki/uzupe%C5%82nia%C4%87"
     ],
-    "reviewStatus": "wiktionary-enriched"
+    "reviewStatus": "wiktionary-enriched",
+    "definitionPl": "dodawać brakujące elementy; wypełniać luki, zapasy lub informacje"
   },
   {
     "id": "1375-wyglosic",
@@ -5905,7 +5979,8 @@
       "https://pl.wiktionary.org/wiki/wyg%C5%82osi%C4%87"
     ],
     "reviewStatus": "wiktionary-enriched",
-    "aspectPair": "wygłaszać"
+    "aspectPair": "wygłaszać",
+    "definitionPl": "publicznie powiedzieć przygotowane przemówienie, oświadczenie lub wykład"
   },
   {
     "id": "1376-zagrazac",
@@ -5983,7 +6058,8 @@
       "https://en.wiktionary.org/wiki/zagra%C5%BCa%C4%87",
       "https://pl.wiktionary.org/wiki/zagra%C5%BCa%C4%87"
     ],
-    "reviewStatus": "wiktionary-enriched"
+    "reviewStatus": "wiktionary-enriched",
+    "definitionPl": "stwarzać niebezpieczeństwo dla kogoś lub czegoś"
   },
   {
     "id": "1377-zapelnic",
@@ -6062,7 +6138,8 @@
       "https://en.wiktionary.org/wiki/zape%C5%82ni%C4%87",
       "https://pl.wiktionary.org/wiki/zape%C5%82ni%C4%87"
     ],
-    "reviewStatus": "wiktionary-enriched"
+    "reviewStatus": "wiktionary-enriched",
+    "definitionPl": "wypełnić całą przestrzeń czymś lub kimś"
   },
   {
     "id": "1378-dojezdzac",
@@ -6140,7 +6217,8 @@
       "https://en.wiktionary.org/wiki/doje%C5%BCd%C5%BCa%C4%87",
       "https://pl.wiktionary.org/wiki/doje%C5%BCd%C5%BCa%C4%87"
     ],
-    "reviewStatus": "wiktionary-enriched"
+    "reviewStatus": "wiktionary-enriched",
+    "definitionPl": "docierać do miejsca jazdą; regularnie jeździć do pracy, szkoły lub innego miejsca"
   },
   {
     "id": "1379-drazyc",
@@ -6220,7 +6298,8 @@
       "https://pl.wiktionary.org/wiki/dr%C4%85%C5%BCy%C4%87"
     ],
     "reviewStatus": "wiktionary-enriched",
-    "aspectPair": "wydrążyć"
+    "aspectPair": "wydrążyć",
+    "definitionPl": "wiercić lub wydrążać; dociekać czegoś uparcie i szczegółowo"
   },
   {
     "id": "1380-okielznac",
@@ -6300,7 +6379,8 @@
       "https://en.wiktionary.org/wiki/okie%C5%82zna%C4%87",
       "https://pl.wiktionary.org/wiki/okie%C5%82zna%C4%87"
     ],
-    "reviewStatus": "wiktionary-enriched"
+    "reviewStatus": "wiktionary-enriched",
+    "definitionPl": "opanować i powstrzymać coś silnego, trudnego lub dzikiego"
   },
   {
     "id": "1381-wiesc",
@@ -6379,7 +6459,8 @@
       "https://en.wiktionary.org/wiki/wie%C5%9B%C4%87",
       "https://pl.wiktionary.org/wiki/wie%C5%9B%C4%87"
     ],
-    "reviewStatus": "wiktionary-enriched"
+    "reviewStatus": "wiktionary-enriched",
+    "definitionPl": "prowadzić kogoś lub coś; mieć i przeżywać określone życie"
   },
   {
     "id": "1382-zastraszyc",
@@ -6456,7 +6537,8 @@
       "https://en.wiktionary.org/wiki/zastraszy%C4%87",
       "https://pl.wiktionary.org/wiki/zastraszy%C4%87"
     ],
-    "reviewStatus": "wiktionary-enriched"
+    "reviewStatus": "wiktionary-enriched",
+    "definitionPl": "wzbudzić w kimś silny strach, żeby go zmusić do posłuszeństwa lub wycofania się"
   },
   {
     "id": "1383-monitorowac",
@@ -6533,7 +6615,8 @@
       "https://en.wiktionary.org/wiki/monitorowa%C4%87",
       "https://pl.wiktionary.org/wiki/monitorowa%C4%87"
     ],
-    "reviewStatus": "wiktionary-enriched"
+    "reviewStatus": "wiktionary-enriched",
+    "definitionPl": "stale obserwować, kontrolować i sprawdzać stan czegoś"
   },
   {
     "id": "1384-odrobic",
@@ -6611,7 +6694,8 @@
       "https://pl.wiktionary.org/wiki/odrobi%C4%87"
     ],
     "reviewStatus": "wiktionary-enriched",
-    "aspectPair": "odrabiać"
+    "aspectPair": "odrabiać",
+    "definitionPl": "wykonać zaległą pracę lub lekcje; nadrobić straty albo czas"
   },
   {
     "id": "1385-schronic",
@@ -6689,7 +6773,8 @@
       "https://en.wiktionary.org/wiki/schroni%C4%87",
       "https://pl.wiktionary.org/wiki/schroni%C4%87"
     ],
-    "reviewStatus": "wiktionary-enriched"
+    "reviewStatus": "wiktionary-enriched",
+    "definitionPl": "ochronić przed niebezpieczeństwem; dać bezpieczne miejsce"
   },
   {
     "id": "1386-ulatwiac",
@@ -6766,7 +6851,8 @@
       "https://en.wiktionary.org/wiki/u%C5%82atwia%C4%87",
       "https://pl.wiktionary.org/wiki/u%C5%82atwia%C4%87"
     ],
-    "reviewStatus": "wiktionary-enriched"
+    "reviewStatus": "wiktionary-enriched",
+    "definitionPl": "sprawiać, że coś staje się prostsze lub mniej trudne"
   },
   {
     "id": "1387-wspolczuc",
@@ -6843,7 +6929,8 @@
       "https://en.wiktionary.org/wiki/wsp%C3%B3%C5%82czu%C4%87",
       "https://pl.wiktionary.org/wiki/wsp%C3%B3%C5%82czu%C4%87"
     ],
-    "reviewStatus": "wiktionary-enriched"
+    "reviewStatus": "wiktionary-enriched",
+    "definitionPl": "czuć smutek z powodu czyjegoś cierpienia; okazywać współczucie"
   },
   {
     "id": "1388-wyliczyc",
@@ -6923,7 +7010,8 @@
       "https://pl.wiktionary.org/wiki/wyliczy%C4%87"
     ],
     "reviewStatus": "wiktionary-enriched",
-    "aspectPair": "wyliczać"
+    "aspectPair": "wyliczać",
+    "definitionPl": "obliczyć dokładnie; wymienić kolejno wszystkie elementy"
   },
   {
     "id": "1389-zakopac",
@@ -7000,7 +7088,8 @@
       "https://en.wiktionary.org/wiki/zakopa%C4%87",
       "https://pl.wiktionary.org/wiki/zakopa%C4%87"
     ],
-    "reviewStatus": "wiktionary-enriched"
+    "reviewStatus": "wiktionary-enriched",
+    "definitionPl": "umieścić coś pod ziemią, zasypując; pogrzebać coś lub kogoś"
   },
   {
     "id": "1390-eksperymentowac",
@@ -7077,7 +7166,8 @@
       "https://en.wiktionary.org/wiki/eksperymentowa%C4%87",
       "https://pl.wiktionary.org/wiki/eksperymentowa%C4%87"
     ],
-    "reviewStatus": "wiktionary-enriched"
+    "reviewStatus": "wiktionary-enriched",
+    "definitionPl": "próbować nowych sposobów, by sprawdzić, co się stanie"
   },
   {
     "id": "1391-kandydowac",
@@ -7154,7 +7244,8 @@
       "https://en.wiktionary.org/wiki/kandydowa%C4%87",
       "https://pl.wiktionary.org/wiki/kandydowa%C4%87"
     ],
-    "reviewStatus": "wiktionary-enriched"
+    "reviewStatus": "wiktionary-enriched",
+    "definitionPl": "ubiegać się o stanowisko, urząd lub miejsce"
   },
   {
     "id": "1392-szkodzic",
@@ -7232,7 +7323,8 @@
       "https://en.wiktionary.org/wiki/szkodzi%C4%87",
       "https://pl.wiktionary.org/wiki/szkodzi%C4%87"
     ],
-    "reviewStatus": "wiktionary-enriched"
+    "reviewStatus": "wiktionary-enriched",
+    "definitionPl": "działać źle na kogoś lub coś; powodować straty"
   },
   {
     "id": "1393-wyprostowac",
@@ -7311,7 +7403,8 @@
       "https://en.wiktionary.org/wiki/wyprostowa%C4%87",
       "https://pl.wiktionary.org/wiki/wyprostowa%C4%87"
     ],
-    "reviewStatus": "wiktionary-enriched"
+    "reviewStatus": "wiktionary-enriched",
+    "definitionPl": "zrobić coś prostym; usunąć zgięcia lub krzywizny"
   },
   {
     "id": "1394-dobic",
@@ -7390,7 +7483,8 @@
       "https://en.wiktionary.org/wiki/dobi%C4%87",
       "https://pl.wiktionary.org/wiki/dobi%C4%87"
     ],
-    "reviewStatus": "wiktionary-enriched"
+    "reviewStatus": "wiktionary-enriched",
+    "definitionPl": "zakończyć ostatecznie; wyczerpać psychicznie lub fizycznie; zadać decydujący cios"
   },
   {
     "id": "1395-oskarzyc",
@@ -7469,7 +7563,8 @@
       "https://en.wiktionary.org/wiki/oskar%C5%BCy%C4%87",
       "https://pl.wiktionary.org/wiki/oskar%C5%BCy%C4%87"
     ],
-    "reviewStatus": "wiktionary-enriched"
+    "reviewStatus": "wiktionary-enriched",
+    "definitionPl": "zarzucić komuś winę lub przestępstwo"
   },
   {
     "id": "1396-wyc",
@@ -7549,7 +7644,8 @@
       "https://pl.wiktionary.org/wiki/wy%C4%87"
     ],
     "reviewStatus": "wiktionary-enriched",
-    "aspectPair": "zawyć"
+    "aspectPair": "zawyć",
+    "definitionPl": "wydawać długi głośny dźwięk z bólu, strachu lub jak zwierzę"
   },
   {
     "id": "1397-wyrozniac",
@@ -7628,7 +7724,8 @@
       "https://en.wiktionary.org/wiki/wyr%C3%B3%C5%BCnia%C4%87",
       "https://pl.wiktionary.org/wiki/wyr%C3%B3%C5%BCnia%C4%87"
     ],
-    "reviewStatus": "wiktionary-enriched"
+    "reviewStatus": "wiktionary-enriched",
+    "definitionPl": "odróżniać od innych; nadawać komuś szczególne uznanie"
   },
   {
     "id": "1398-wysadzic",
@@ -7707,7 +7804,8 @@
       "https://en.wiktionary.org/wiki/wysadzi%C4%87",
       "https://pl.wiktionary.org/wiki/wysadzi%C4%87"
     ],
-    "reviewStatus": "wiktionary-enriched"
+    "reviewStatus": "wiktionary-enriched",
+    "definitionPl": "spowodować wybuch; zawieźć kogoś i pozwolić mu wysiąść"
   },
   {
     "id": "1399-ozywic",
@@ -7787,7 +7885,8 @@
       "https://pl.wiktionary.org/wiki/o%C5%BCywi%C4%87"
     ],
     "reviewStatus": "wiktionary-enriched",
-    "aspectPair": "ożywiać"
+    "aspectPair": "ożywiać",
+    "definitionPl": "przywrócić życie lub energię; uczynić coś żywszym i ciekawszym"
   },
   {
     "id": "1400-podlaczyc",
@@ -7866,6 +7965,7 @@
       "https://en.wiktionary.org/wiki/pod%C5%82%C4%85czy%C4%87",
       "https://pl.wiktionary.org/wiki/pod%C5%82%C4%85czy%C4%87"
     ],
-    "reviewStatus": "wiktionary-enriched"
+    "reviewStatus": "wiktionary-enriched",
+    "definitionPl": "połączyć urządzenie, przewód lub instalację z innym źródłem"
   }
 ]

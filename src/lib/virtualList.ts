@@ -1,4 +1,4 @@
-export const virtualRowHeight = 82
+export const virtualRowHeight = 98
 export const virtualListThreshold = 150
 export const virtualOverscan = 8
 

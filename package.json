@@ -8,6 +8,7 @@
     "generate:verbs": "node scripts/generate-verbs.mjs",
     "rewrite:examples": "node scripts/rewrite-examples.mjs",
     "rewrite:examples:901-plus": "node scripts/rewrite-examples-901-plus.mjs",
+    "rewrite:definitions": "node scripts/rewrite-polish-definitions.mjs",
     "rewrite:metadata": "node scripts/rewrite-metadata.mjs",
     "rewrite:translations:all": "node scripts/rewrite-translations-all.mjs",
     "cleanup:verbs": "node scripts/cleanup-verbs.mjs",

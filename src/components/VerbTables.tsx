@@ -105,6 +105,7 @@ export function VerbDetail({
   onPracticeFamily,
 }: VerbDetailProps) {
   const example = verb.examples[0]
+  const definitionPl = verb.definitionPl ?? ''
   const related = getRelatedVerbs(verb, allVerbs)
   const [polishVoice, setPolishVoice] = useState<SpeechSynthesisVoice | null>(null)
   const canSpeak = Boolean(polishVoice)
@@ -154,7 +155,8 @@ export function VerbDetail({
           <h2>
             <HighlightedText text={verb.infinitive} query={highlightQuery} />
           </h2>
-          <p>
+          {definitionPl ? <p className="detail-definition">{definitionPl}</p> : null}
+          <p className="detail-translations">
             <HighlightedText text={verb.translations.uk.join(', ')} query={highlightQuery} /> ·{' '}
             <HighlightedText text={verb.translations.en.join(', ')} query={highlightQuery} />
           </p>
